@@ -1588,7 +1588,6 @@ image::24_DP_eingabefeldliste_aufgeklappt.png[align="center"]
 Die Listenelemente sind mindestens 44px hoch und entsprechend dem dazugehörigen Element breit (hier exemplarisch das Eingabefeld).
 Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
 
-//ToDo: Hier weiter mit Verweisen, Review, etc.
 [[menu-button]]
 === Menü-Button
 
