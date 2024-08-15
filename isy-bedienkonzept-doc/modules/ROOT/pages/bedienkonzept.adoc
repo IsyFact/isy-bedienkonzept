@@ -13,9 +13,9 @@ Es soll sicherstellen, dass Nutzende das Frontend ohne Schwierigkeiten nutzen k�
 
 In den folgenden Kapiteln werden die benötigten Elemente zum Erreichen einer herausragenden Benutzeroberfläche von "klein nach groß" beschrieben.
 *Der allgemeine Rahmen und die übergreifenden Prinzipien* werden in den ersten Kapiteln beschrieben.
-Darauf folgen die *<<basiselemente>>* (wie z.B. <<text>> und <<farben>>), die den Grundstein für die dahinterliegenden Kapitel schaffen und essenziell wichtig sind.
+Darauf folgen die *<<basiselemente>>* (wie z.B. <<text>> und <<farben>>), die den Grundstein für die nachfolgenden Kapitel legen und von essenzieller Bedeutung sind.
 Danach kommen die *<<bedienelemente>>*, die einfachste Ausprägung eines Interaktionselements.
-*<<design-pattern>>* stellen eine Menge aus Bedienelementen und Basiselementen dar und können letztendlich in beliebiger weiterer Kombination als vollständiger *<<use-cases,Use Case>>* beschrieben werden.
+*<<design-pattern>>* stellen eine Menge aus Bedienelementen und Basiselementen dar und können letztendlich in beliebiger Kombination als vollständige *<<use-cases>>* beschrieben werden.
 
 Eine Live-Demo zu den Richtlinien dieses Bedienkonzepts finden Sie unter:
 https://isyfact.github.io/isy-angular-widgets/
@@ -36,7 +36,7 @@ Die Gültigkeit des Bedienkonzepts für Altanwendungen bleibt zum damaligen Zeit
 Das Bedienkonzept ist weit mehr als nur ein Dokument mit Gestaltungsrichtlinien.
 Es ist ein umfassendes Werkzeug, das die Grundlage für die Entwicklung einer erfolgreichen Benutzeroberfläche bildet.
 Indem es einheitliche Standards und Best Practices festlegt, trägt es maßgeblich zur Erreichung der Ziele eines Frontends bei.
-Diese Ziele können von der Steigerung der Benutzerzufriedenheit, über die Verbesserung der Effizienz, bis hin zur Stärkung der Markenidentität reichen.
+Diese Ziele können von der Steigerung der Benutzerzufriedenheit über die Verbesserung der Effizienz bis hin zur Stärkung der Markenidentität reichen.
 
 *_Rolle von Designenden, Entwickelnden und Fachlichkeit_*
 
@@ -212,7 +212,7 @@ Ein effizientes Design stellt sicher, dass Nutzende ihre Ziele schnell erreichen
 
 Das Designprinzip der "Zugänglichkeit" soll sicherstellen, dass ein Frontend für alle Nutzenden, unabhängig von ihren individuellen Fähigkeiten oder Einschränkungen, leicht zugänglich ist.
 Dies beinhaltet die Gestaltung und Entwicklung des Frontends unter Berücksichtigung verschiedener Bedürfnisse, wie zum Beispiel Sehbehinderungen, Hörbehinderungen oder motorische Einschränkungen.
-Zugängliches Design beinhaltet die Verwendung von klaren und verständlichen <<text,Texten>>, <<barrierefreier-einsatz-von-farben,ausreichendem Kontrast>> zwischen Text und Hintergrund, Tastaturzugänglichkeit, <<alt-tag,alternative Texte für Bilder>> und die Vermeidung von Technologien (z.B. Gestensteuerung), die für einige Personengruppen hinderlich sein könnten.
+Zugängliches Design beinhaltet die Verwendung von verständlichen <<text,Texten>>, von <<barrierefreier-einsatz-von-farben,ausreichendem Kontrast zwischen Text und Hintergrund>>, von Tastaturzugänglichkeit und von <<alt-tag,alternativen Texten für Bilder>>, sowie die Vermeidung von Technologien (z.B. Gestensteuerung), die für einige Personengruppen hinderlich sein könnten.
 Ein zugängliches Design gewährleistet, dass alle Nutzenden die Informationen und Funktionen des Frontends nutzen können, was zu einer inklusiven und positiven Benutzererfahrung führt.
 Dieses Prinzip wird im Kapitel <<barrierefreiheit>> und unter den einzelnen <<bedienelemente,Bedienelementen>> detaillierter beschrieben.
 
@@ -240,7 +240,7 @@ Alle hier genannten Maßnahmen sind zur Steigerung der Awareness und Transparenz
 * <<eingabefeld,Eingabefelder>> müssen nach der Aktivierung eines Hochkontrastmodus/Farbfilters zu 50 % bestehen bleiben – eine einzelne Linie als Bestandteil ist nicht ausreichend als Identifizierung eines Eingabefeldes.
 * Die Textgröße soll im Standard mindestens 14pt betragen.
 * Der Textkontrast muss immer mindestens 4,5:1 und bei großen Texten mindestens 3:1 betragen.
-Für Haupt- & Einstiegsseiten und Seiten mit rechtlicher Relevanz muss der Kontrast 7:1 betragen.
+Für Haupt- & Einstiegsseiten, sowie Seiten mit rechtlicher Relevanz muss der Kontrast 7:1 betragen.
 * Es sollten keine Schriftgrafiken genutzt werden.
 * Alle Bilder benötigen ein inhaltlich sinnvolles beschreibendes <<alt-tag,Alt-Attribut>>.
 * <<grafiken,Bilder>>, die ausschließlich der Gestaltung dienen (z.B. Trennlinien), müssen als solche (Schmuckgrafik) gekennzeichnet werden.
@@ -735,7 +735,7 @@ Ein Unterschreiten von Mindestgrößen zugunsten des Platzgewinns muss vermieden
 Stattdessen werden andere, platzsparende Mechanismen angewandt, wie z.B. Expander (Progressive Disclosure).
 * Die Anzahl verschiedener Schriftgrößen muss auf ein notwendiges Minimum reduziert werden
 * Es muss sichergestellt sein, dass der <<barrierefreier-einsatz-von-farben,Kontrast der Schriftfarbe zur Hintergrundfarbe>> ausreichend groß ist.
-Hier ist der Kontrast größtmöglich zu wählen (z.B. dunkelgraue Schrift auf weißen Hintergrund).
+Hier ist der Kontrast größtmöglich zu wählen (z.B. dunkelgraue Schrift auf weißem Hintergrund).
 Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss der Kontrast bei kleiner Schrift mindestens 4,5:1 entsprechen.
 * <<ueberschriften,Überschriften>> und großer/dicker Text muss mindestens einen Kontrast von 3:1 aufweisen.
 
@@ -756,7 +756,7 @@ Details werden im entsprechenden Kapitel genauer erläutert.
 * Schmuckgrafiken müssen als solche gekennzeichnet sein.
 * Schmuckgrafiken benötigen keine Alt-Attribute.
 * Es ist darauf zu achten, dass durch Bilder kein horizontales Scrolling entsteht.
-* Es ist darauf zu achten, dass das Bildmaterial ausreichend hoch aufgelöst ist, sodass keine einzelnen Fragmente zu erkennen sind.
+* Es ist darauf zu achten, dass das Bildmaterial ausreichend hoch aufgelöst ist, sodass keine Fragmente erkennbar sind.
 
 [[ueberschriften]]
 === Überschriften
@@ -973,12 +973,12 @@ image::24_BE_Outlined_Buttons.png[align="center"]
 In der invertierten Button-Variante ist die Button-Farbe für jeden Aktionsbutton weiß und nur die Schrift und die Button-Border farblich eingefärbt.
 Die unterschiedlichen Button-Zustände lassen sich wie bei den farblich gefüllten Buttons voneinander abgrenzen.
 D.h. bei den Zuständen "Hover" und "Pressed" wird die Button-Farbe, die nicht mehr weiß, sondern mit der Button-Schriftfarbe vermischt ist, dunkler und beim Zustand "Disabled" heller.
-Im "aktiven" bzw. "fokussierten" Zustand bekommt der Button einen Fokus-Rahmen, der einen helleren Ton hat als die Button-Rahmenfarbe.
+Im "aktiven" bzw. "fokussierten" Zustand erhält der Button einen Fokus-Rahmen, der einen helleren Ton als die Button-Rahmenfarbe aufweist.
 
 [TIP]
 Invertierte Buttons werden häufig genutzt, wenn es mehr als zwei Aktionen auf einer Seite gibt oder wenn einer Aktion ein besonderer Fokus eingeräumt werden soll, wie zum Beispiel beim "Registieren".
 D.h. nach der Nutzung des <<colored-button,kolorierten Buttons>> in der Primärfarbe kann auf die invertierten Buttons umgestiegen werden.
-Eine Mischung aller farblichen kolorierten und invertierten Buttons ist jedoch nicht zulässig.
+Eine Kombination aus farblich kolorierten und invertierten Buttons ist jedoch nicht zulässig.
 Es sollte eine der beiden Varianten konsistent im gesamten Frontend benutzt werden.
 
 [[icon-button]]
@@ -1058,7 +1058,7 @@ Altanwendungen, die nicht angepasst werden müssen, können weiterhin ihrem zum 
 Alle hier gezeigten Grafiken beziehen sich auf die aktuelle und zukünftige Umsetzung.
 
 Eingabefelder sind dynamisch.
-Sie bestehen aus dem Eingabefeld an sich, einem vorbelegten <<placeholder,Placeholder>> und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
+Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten <<placeholder,Placeholder>> und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
 
 *_Normal:_*
 
@@ -1066,8 +1066,8 @@ Sie bestehen aus dem Eingabefeld an sich, einem vorbelegten <<placeholder,Placeh
 .Eingabefeld mit Platzhalter
 image::24_BE_eingabefeld_normal.png[align="center"]
 
-Im normalen Status ist das Eingabefeld mit einem bündigen static <<label>> in dunkelgrau versehen.
-Der Platzhalter ist in einem helleren grau gehalten.
+Im normalen Zustand ist das Eingabefeld mit einem bündigen, statischen <<label>> in Dunkelgrau versehen.
+Der Platzhalter ist in einem helleren Grau gehalten.
 Platzhalter müssen sinnvolle Eingabeunterstützungen (im einfachsten Fall das Label selbst) enthalten.
 
 *_Aktiv:_*
@@ -1076,8 +1076,8 @@ Platzhalter müssen sinnvolle Eingabeunterstützungen (im einfachsten Fall das L
 .Eingabefeld aktiv
 image::24_BE_eingabefeld_aktiv.png[align="center"]
 
-Aktive Eingabefelder sind in der Highlightfarbe blau dargestellt.
-Sie haben zusätzlich zur veränderten Farbe eine 1px dickere Border.
+Aktive Eingabefelder sind in der Highlightfarbe Blau dargestellt.
+Sie haben zusätzlich zur veränderten Farbe eine 1px dickere Umrandung.
 
 Aktive Eingabefelder verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung <<image-eingabefeldaktiv>>) oder eine Mask enthalten (siehe Abbildung <<image-eingabefeldmask>>).
 
@@ -1087,7 +1087,7 @@ Aktive Eingabefelder verlieren ihren Platzhalter und können entweder geleert we
 .Eingabefeld befüllt nicht aktiv
 image::24_BE_eingabefeld_filled.png[align="center"]
 
-Wenn eine Eingabe in einem Eingabefeld getätigt wurde und das Feld wieder verlassen wird, wechselt das Eingabefeld seinen Status wieder auf die Werte des „normalen“ Eingabefelds.
+Wenn eine Eingabe in einem Eingabefeld getätigt wurde und das Feld wieder verlassen wird, wechselt das Eingabefeld seinen Zustand wieder auf die Werte des „normalen“ Eingabefelds.
 Der Platzhalter ist verschwunden und die Eingabe wird in der Schriftfarbe angezeigt.
 
 *_Disabled:_*
@@ -1105,7 +1105,7 @@ Deaktivierte Eingabefelder (disabled) sind grau hinterlegt und geben zusätzlich
 image::24_BE_eingabefeld_error.png[align="center"]
 
 Eingabefelder mit Fehlermeldung sind rot.
-Das Eingabefeld färbt sich rot und es wird ein inhaltlich logischer Hinweistext angegeben, damit die Eingabe korrigiert werden kann.
+Das Eingabefeld färbt sich rot und es wird ein inhaltlich passender Hinweistext angezeigt, damit die Eingabe korrigiert werden kann.
 
 Eingabefelder, die eine Erläuterung benötigen, sollen diese immer so kurz wie möglich und so lang wie nötig gestalten.
 Erläuterungen können dabei in verschiedenen Möglichkeiten realisiert werden, sortiert von kurz nach lang:
@@ -1127,7 +1127,7 @@ Die Angaben beziehen sich auf die in der Grafik vorzufindenden Elemente.
 Ein Eingabefeld kann den fachlichen Bedingungen entsprechend kürzer oder auch länger sein.
 Die Mindesthöhe von 44px darf nicht unterschritten werden, um die Barrierefreiheit von Input-Optionen zu gewährleisten.
 
-Die Schriftgröße der Labels, Platzhalter und Hinweistexten sollte 14pt nicht unterschreiten.
+Die Schriftgröße von Labeln, Platzhaltern und Hinweistexten sollte 14pt nicht unterschreiten.
 Der Abstand eines Eingabefelds zum darunter liegenden Label eines weiteren Eingabefelds soll ca. dem doppelten Abstand zwischen einem Label-Eingabefeld-Paar entsprechen, um eine eindeutige Zuordnung zu gewährleisten.
 
 *_Do's:_*
@@ -1515,7 +1515,7 @@ Die Filter lassen sich in beliebiger Weise kombinieren.
 
 * Eine Spalte kann mehrere Filter anwenden.
 * Filter sind nur pro Spalte gültig.
-* Es können gleichzeitig mehrere Filter auf unterschiedlichen Spalten gesetzt werden.
+* Es können gleichzeitig mehrere Filter auf unterschiedlichen Spalten angewendet werden.
 * Filter werden sofort nach Auswahl angewandt (Aktualisierung der Tabelle).
 * Aktive Filter sollten deutlich erkennbar sein.
 
@@ -1524,7 +1524,7 @@ Die Filter lassen sich in beliebiger Weise kombinieren.
 
 Wie im allgemeinen Kapitel zu <<tabelle,Tabellen>> beschrieben, gibt es verschiedene Möglichkeiten ein Element in der Tabelle zu selektieren.
 Dabei ist die notwendige Fachlichkeit maßgeblich für das Verhalten verantwortlich.
-So kann es sein, dass es in einer Anwendung Sinn macht eine große Datenmenge auszuwählen und in einer anderen Anwendung wiederum gar keine Auswahl zuzulassen.
+Es kann vorkommen, dass es in einer Anwendung sinnvoll ist, eine große Datenmenge auszuwählen, während in einer anderen Anwendung möglicherweise gar keine Auswahl zugelassen wird.
 
 Alle nachfolgenden Punkte sind Möglichkeiten, die eingesetzt werden *können*.
 Sollte ein entsprechendes Verhalten angewandt werden, so ist darauf zu achten, dass die Tabellen sich in der Anwendung konsistent verhalten.
