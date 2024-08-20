@@ -1895,16 +1895,11 @@ _Fortschritts-Spinner (kreisrunde Fortschrittsanzeige):_
 * Für die Dauer der Operation dreht sich der Fortschritts-Spinner und signalisiert Nutzenden damit, dass sich ein Prozess in Gang befindet.
 Der Fortschritts-Spinner empfiehlt sich aufgrund seiner geringen Ausmaße insbesondere in Situationen, in denen Platzbedarf von großer Bedeutung ist.
 
-[[fehlermeldungen]]
-=== Fehlermeldungen
+[[system-meldungen]]
+==== System-Meldungen
 
-*_Korrekte Darstellung von Fehlern und Hilfestellungen bei der Korrektur:_*
-
-Fehlermeldungen sind unvermeidlich, aber wie sie präsentiert werden, kann einen großen Unterschied für die Benutzererfahrung ausmachen.
-Fehlermeldungen sollten deutlich sichtbar sein, in verständlicher Sprache verfasst sein und klare Anweisungen zur Behebung des Fehlers enthalten.
-Idealerweise sollten Fehlermeldungen in unmittelbarer Nähe von betroffenen Objekten platziert werden (siehe als Beispiel: <<image-eingabefelderror,Eingabefelder - Fehlermeldung>>), um Nutzenden sofortiges Feedback zu geben und sie bei der Fehlerbehebung zu unterstützen.
-
-Neben Fehlermeldungen, die am Eingabeobjekt auftreten können, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden (*Achtung:* dynamisch nachgeladene Elemente müssen auch einem Screenreader mitgeteilt werden, sodass auch Personen mit Einschränkungen diese Hinweise mitbekommen).
+Beim Verfassen von System-Benachrichtigungen – wie z.B. <<fehlermeldungen>> – muss auf eine verständliche und konsistente Formulierung geachtet werden.
+Neben <<image-eingabefelderror,Fehlermeldungen, die am Eingabeobjekt auftreten können>>, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden (*Achtung:* dynamisch nachgeladene Elemente müssen auch einem Screenreader mitgeteilt werden, sodass auch Personen mit Einschränkungen diese Hinweise mitbekommen).
 Dies geschieht mithilfe von Toast-Notifications, welche immer am unteren rechten Rand des Browserfensters angezeigt werden.
 
 Jede Toast-Notification muss eine Schließen-Aktion für den Nutzenden anbieten.
@@ -1920,3 +1915,54 @@ Folgende Meldungsarten können als Toast-Notification verwendet werden:
 [[image-toastnotification]]
 .Verschiedene Toast-Notifications
 image::24_UC_toast_notification.png[align="center"]
+
+*_Do's_*
+
+* *Allgemeinverständliche und positive Sprache*
+** _Inkorrekt_:
+„Soll das Objekt gelöscht werden?“
+** _Besser_:
+„Wollen Sie das gewählte Objekt XY löschen?“
+* Verwenden einer einfachen und konsistenten Satzstruktur
+* *Präzise Formulierungen*:
+** _Inkorrekt_:
+„Nichts selektiert"
+** _Besser_:
+„Bitte selektieren Sie ein Objekt in der Liste"
+* *Positive Formulierungen*:
+** _Inkorrekt_:
+„Illegale String-Länge aufgetreten.“
+** _Besser_:
+„Es wurden zu viele Zeichen eingegeben.
+Es sind maximal 20 Zeichen möglich.“
+* Es soll nicht nur das Problem geschildert, sondern auch eine mögliche Lösung mitgeliefert werden.
+
+*_Don'ts_*
+
+* Vermeidung von redundanten Informationen
+* Vermeidung von mehrdeutigen Beschreibungen
+
+[[fehlermeldungen]]
+=== Fehlermeldungen
+
+Fehlermeldungen sind unvermeidlich, aber wie sie präsentiert werden, kann einen großen Unterschied für die Benutzererfahrung ausmachen.
+Fehlermeldungen sollten deutlich sichtbar sein, in verständlicher Sprache verfasst sein und klare Anweisungen zur Behebung des Fehlers enthalten.
+Idealerweise sollten Fehlermeldungen in unmittelbarer Nähe von betroffenen Objekten platziert werden (siehe als Beispiel: <<image-eingabefelderror,Eingabefelder - Fehlermeldung>>), um Nutzenden sofortiges Feedback zu geben und sie bei der Fehlerbehebung zu unterstützen.
+Neben Fehlermeldungen, die am Eingabeobjekt auftreten können, kann zusätzlich ein zusammenfassender Hinweis, wie im Kapitel <<system-meldungen>> beschrieben, angezeigt werden.
+
+Ein häufig auftretendes Problem ist dabei die Verwendung von negativ anmutenden Formulierungen, die Benutzende demotivieren können.
+Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquivalente:
+
+[cols="5a,5a", options="header", align="center"]
+|====
+|Negativer Begriff |Neutraler Begriff
+
+|Illegal
+|Nicht korrekt
+
+|Fehler
+|Problem
+
+|Fehlschlagen („Speichern ist fehlgeschlagen")
+|Nicht können („Es konnte nicht gespeichert werden")
+|====
