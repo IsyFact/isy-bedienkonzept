@@ -741,6 +741,31 @@ Zu einem klaren, professionellen Gesamterscheinungsbild trägt auch eine korrekt
 Während für englischsprachige Frontends zwischen verschiedenen Formen der Groß- und Kleinschreibung unterschieden wird, muss für deutschsprachige Frontends lediglich die korrekte deutsche Rechtschreibung angewendet werden.
 Eine Ausnahme besteht darin, dass das erste Wort der Beschriftung eines <<bedienelemente,Bedienelements>> immer großgeschrieben wird, unabhängig von der jeweiligen Wortart.
 
+*_Vermeidung von technischem Jargon_*
+
+Text muss immer in der Sprache der Nutzenden verfasst werden.
+Im Folgenden werden einige Beispiele für technische Begriffe und ihre entsprechende Übersetzung in eine allgemein verständliche Sprache aufgezeigt.
+
+[cols="5a,5a", options="header", align="center"]
+|====
+|Technischer Begriff |Allgemeiner Begriff
+
+|Dirty State
+|Nicht gespeicherte Änderungen
+
+|Mouse-Up-Event
+|Maus-Klick
+
+|Reboot
+|Neustart
+
+|String-Länge
+|Anzahl der Zeichen
+
+|Data Grid
+|Tabelle
+|====
+
 *_Do's_*
 
 * Die Verwendung verschiedener Schriftarten, über die im Bedienkonzept hinaus vorgegebenen Schriftarten, muss vermieden werden.
