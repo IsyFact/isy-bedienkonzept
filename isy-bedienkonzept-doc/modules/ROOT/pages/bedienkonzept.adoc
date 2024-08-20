@@ -5,7 +5,7 @@ include::glossary:licence:partial$licence.adoc[]
 [[einfuehrung]]
 == Einführung
 
-Das Bedienkonzept nimmt eine zentrale Rolle in der Entwicklung von xref:referenzarchitektur:software-technisch/frontend.adoc[Frontends] ein.
+Das Bedienkonzept nimmt eine zentrale Rolle in der Entwicklung von xref:isyfact-standards-doku:isyfact-standards-doc:referenzarchitektur:software-technisch/frontend.adoc[Frontends] ein.
 Es dient als umfassendes Regelwerk, dass die Gestaltung und die Interaktionselemente definiert, sowie als Fundament für eine konsistente und benutzerfreundliche Benutzeroberfläche.
 
 Das Hauptziel des Bedienkonzepts ist es, eine herausragende Benutzererfahrung zu schaffen, die die Zufriedenheit und Produktivität der Nutzenden maximiert.
