@@ -735,6 +735,12 @@ Die Standard-Schriftart für <<bedienelemente>> und Inhalte ist BundesSans 14 pt
 Grundsätzlich gilt, ausreichende Schriftgrößen sind abhängig vom Betrachtungsabstand, von der Art des Textes und von der Sehschärfe der Lesenden.
 Individuelle Schriftgrößen können Sie mit dem Schriftgrößenrechner auf https://www.leserlich.info/werkzeuge/schriftgroessenrechner/index.php[leserlich.info] ermitteln und entsprechend an den Nutzungskreis anpassen.
 
+*_Rechtschreibung_*
+
+Zu einem klaren, professionellen Gesamterscheinungsbild trägt auch eine korrekte Rechtschreibung, sowie eine konsistente Groß- und Kleinschreibung bei.
+Während für englischsprachige Frontends zwischen verschiedenen Formen der Groß- und Kleinschreibung unterschieden wird, muss für deutschsprachige Frontends lediglich die korrekte deutsche Rechtschreibung angewendet werden.
+Eine Ausnahme besteht darin, dass das erste Wort der Beschriftung eines <<bedienelemente,Bedienelements>> immer großgeschrieben wird, unabhängig von der jeweiligen Wortart.
+
 *_Do's_*
 
 * Die Verwendung verschiedener Schriftarten, über die im Bedienkonzept hinaus vorgegebenen Schriftarten, muss vermieden werden.
