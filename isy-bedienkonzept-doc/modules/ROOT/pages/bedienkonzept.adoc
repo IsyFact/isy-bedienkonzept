@@ -678,7 +678,13 @@ a|image::primeicons/star-fill.svg[width=32,height=32]
 [[text]]
 === Text
 
-Die Textelemente spielen eine entscheidende Rolle bei der Kommunikation mit den Nutzenden.
+Textelemente spielen eine entscheidende Rolle bei der Kommunikation mit den Nutzenden.
+Um benutzerfreundliche Texte verfassen zu können, ist es wichtig, die Art und Weise zu verstehen, wie Nutzende Texte auffassen und verarbeiten.
+In westlichen Kulturen wird in der Regel von links nach rechts und von oben nach unten gelesen.
+In Bezug auf Software und User Interface Design kann auf diese Tatsache jedoch nur eingeschränkt zurückgegriffen werden, denn Nutzende lesen die Texte auf einem Screen nicht, vielmehr wird dieser nach relevanten Informationen gescannt.
+
+Verschiedenartige Informationen rufen dabei unterschiedliche Aufmerksamkeitsstufen hervor.
+So werden <<button,Schaltflächen>>, <<label,Labels>> und andere interaktive Elemente gewöhnlich zuerst gescannt, während statischer Text eher selten gelesen wird.
 Dieser Abschnitt definiert die typografischen Standards, sprachlichen Richtlinien und Längenbeschränkungen, die dazu beitragen, dass die Texte klar, verständlich und ansprechend sind.
 
 Frontends des Bundes sollen über die IT-Landschaft hinweg ein einheitliches Look-and-Feel bieten.
@@ -723,11 +729,13 @@ In diesem konkreten Beispiel kommt die BundesSans zum Tragen.
 *_Barrierefreiheit von Text_*
 
 Zusätzlich zu einem klar leserlichen Schriftschnitt sind auch die Gestaltungsmerkmale von Text, <<farben,Farbe>> und Größe entsprechend zu berücksichtigen.
+Die fehlerhafte Anwendung von Texten kann somit direkt zu einer Reduzierung der Usability des entsprechenden Frontends führen.
+
 Die Standard-Schriftart für <<bedienelemente>> und Inhalte ist BundesSans 14 pt regular in dunkelgrau.
 Grundsätzlich gilt, ausreichende Schriftgrößen sind abhängig vom Betrachtungsabstand, von der Art des Textes und von der Sehschärfe der Lesenden.
 Individuelle Schriftgrößen können Sie mit dem Schriftgrößenrechner auf https://www.leserlich.info/werkzeuge/schriftgroessenrechner/index.php[leserlich.info] ermitteln und entsprechend an den Nutzungskreis anpassen.
 
-*_Richtlinien zur Anwendung:_*
+*_Do's_*
 
 * Die Verwendung verschiedener Schriftarten, über die im Bedienkonzept hinaus vorgegebenen Schriftarten, muss vermieden werden.
 * Die Schriftgröße muss immer ausreichend groß sein.
@@ -737,7 +745,17 @@ Stattdessen werden andere, platzsparende Mechanismen angewandt, wie z.B. Expande
 * Es muss sichergestellt sein, dass der <<barrierefreier-einsatz-von-farben,Kontrast der Schriftfarbe zur Hintergrundfarbe>> ausreichend groß ist.
 Hier ist der Kontrast größtmöglich zu wählen (z.B. dunkelgraue Schrift auf weißem Hintergrund).
 Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss der Kontrast bei kleiner Schrift mindestens 4,5:1 entsprechen.
-* <<ueberschriften,Überschriften>> und großer/dicker Text muss mindestens einen Kontrast von 3:1 aufweisen.
+* <<ueberschriften>> und großer/dicker Text muss mindestens einen Kontrast von 3:1 aufweisen.
+* Die Nutzung von Fachterminologie muss entsprechend konsistent verwendet werden.
+
+*_Don'ts_*
+
+* Inkonsistente Terminologie.
+* Inkonsistente und falsche Groß- und Kleinschreibung.
+* Die Verwendung von zu langen Texten und Textblöcken.
+* Nutzung von unterstrichenem Text in Textpassagen, außer für <<link,Hyperlinks>>.
+* Die Verwendung von redundanten Textinformationen.
+* Nutzung von technischem Jargon statt der Sprache der Nutzenden.
 
 [[grafiken]]
 === Grafiken
@@ -748,7 +766,8 @@ Details werden im entsprechenden Kapitel genauer erläutert.
 
 * Bilder unterliegen in erster Linie der notwendigen Fachlichkeit.
 * Jedes Bild benötigt eine Bildunterschrift.
-* Jedes Bild benötigt ein aussagekräftiges <<alt-tag,Alt-Attribut>>.
+* Um die Barrierefreiheit von Frontends zu unterstützen, benötigt jedes Bild ein aussagekräftiges <<alt-tag,Alt-Attribut>>.
+So können die Inhalte für alternative Ausgabegeräte oder beim fehlerhaften Laden zugänglich gemacht werden.
 * Bilder dürfen nicht gegen deutsches Recht verstoßen, politisch, sexuell oder angreifend sein.
 * Bilder dürfen keine Schriftgrafiken enthalten; in Ausnahmen muss die Schriftgrafik durch z.B. Alt-Attribute ausreichend beschrieben sein.
 * Schmuckgrafiken können genutzt werden.
