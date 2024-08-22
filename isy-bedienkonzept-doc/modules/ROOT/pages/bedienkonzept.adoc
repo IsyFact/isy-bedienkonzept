@@ -29,7 +29,7 @@ Dieses Konzept ist für jedes Frontend relevant, unabhängig von dessen Komplexi
 Es ist gültig für alle Neuentwicklungen und Überarbeitungen von Frontends, die einem Major Change oder Technologiewechsel unterliegen.
 Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Altanwendungen.
 Das Bedienkonzept ist gültig ab Q1 – 2024.
-Die Gültigkeit des Bedienkonzepts für Altanwendungen bleibt zum damaligen Zeitpunkt mit den damalig gültigen Inhalten weiterhin aktiv.
+Die Gültigkeit des https://isyfact.github.io/isyfact-standards-doku/3.0.x/isy-bedienkonzept/bedienkonzept.html[Bedienkonzepts für Altanwendungen] bleibt zum damaligen Zeitpunkt mit den damalig gültigen Inhalten weiterhin aktiv.
 
 *_Bedeutung des Bedienkonzepts_*
 
@@ -1119,7 +1119,7 @@ Sie kommen in verschiedensten Formen und Kontexten vor, sei es in Form von Textf
 Die Gestaltung und Platzierung von Eingabefeldern hat direkten Einfluss auf die Benutzererfahrung und die Effizienz der Dateneingabe.
 
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin ihrem zum Umsetzungszeitpunkt gültigen Bedienkonzept entsprechen.
+Altanwendungen, die nicht angepasst werden müssen, können weiterhin ihrem https://isyfact.github.io/isyfact-standards-doku/3.0.x/isy-bedienkonzept/bedienkonzept.html[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 Alle hier gezeigten Grafiken beziehen sich auf die aktuelle und zukünftige Umsetzung.
 
 Eingabefelder sind dynamisch.
@@ -1686,7 +1686,7 @@ Bekannte Gruppen sind personenbezogene Daten wie z.B.: Angaben zur Person, Ortsd
 
 Diese Gruppen bestehen immer aus mindestens einer Gruppenüberschrift/Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und ggf. weiteren <<bedienelemente,Bedienelementen>>.
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin ihrem zum Umsetzungszeitpunkt gültigen Bedienkonzept entsprechen.
+Altanwendungen, die nicht angepasst werden müssen, können weiterhin ihrem https://isyfact.github.io/isyfact-standards-doku/3.0.x/isy-bedienkonzept/bedienkonzept.html[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 Alle hier gezeigten Grafiken beziehen sich auf die aktuelle und zukünftige Umsetzung.
 
 *_Beispiel einer Eingabefeldgruppe "Persönliche Angaben":_*
@@ -1756,7 +1756,7 @@ Formulare können einem 1-spaltigen, 2-spaltigen oder 3-spaltigen Layout folgen.
 Dabei sind alle Spalten innerhalb eines Formulars gleich breit aufgebaut.
 
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin ihrem zum Umsetzungszeitpunkt gültigen Bedienkonzept entsprechen.
+Altanwendungen, die nicht angepasst werden müssen, können weiterhin ihrem https://isyfact.github.io/isyfact-standards-doku/3.0.x/isy-bedienkonzept/bedienkonzept.html[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 Alle hier gezeigten Grafiken beziehen sich auf die aktuelle und zukünftige Umsetzung.
 
 *_Beispielhaftes Formular 3-spaltig:_*
