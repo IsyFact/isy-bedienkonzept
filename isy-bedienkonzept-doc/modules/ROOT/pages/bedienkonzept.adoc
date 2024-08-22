@@ -731,7 +731,7 @@ In diesem konkreten Beispiel kommt die BundesSans zum Tragen.
 Zusätzlich zu einem klar leserlichen Schriftschnitt sind auch die Gestaltungsmerkmale von Text, <<farben,Farbe>> und Größe entsprechend zu berücksichtigen.
 Die fehlerhafte Anwendung von Texten kann somit direkt zu einer Reduzierung der Usability des entsprechenden Frontends führen.
 
-Die Standard-Schriftart für <<bedienelemente>> und Inhalte ist BundesSans 14 pt regular in dunkelgrau.
+Die Standard-Schriftart für <<bedienelemente>> und Inhalte ist BundesSans 14pt regular in dunkelgrau (#212529).
 Grundsätzlich gilt, ausreichende Schriftgrößen sind abhängig vom Betrachtungsabstand, von der Art des Textes und von der Sehschärfe der Lesenden.
 Individuelle Schriftgrößen können Sie mit dem Schriftgrößenrechner auf https://www.leserlich.info/werkzeuge/schriftgroessenrechner/index.php[leserlich.info] ermitteln und entsprechend an den Nutzungskreis anpassen.
 
@@ -772,7 +772,8 @@ Im Folgenden werden einige Beispiele für technische Begriffe und ihre entsprech
 * Die Schriftgröße muss immer ausreichend groß sein.
 Ein Unterschreiten von Mindestgrößen zugunsten des Platzgewinns muss vermieden werden.
 Stattdessen werden andere, platzsparende Mechanismen angewandt, wie z.B. Expander (Progressive Disclosure).
-* Die Anzahl verschiedener Schriftgrößen muss auf ein notwendiges Minimum reduziert werden
+* Die Anzahl verschiedener Schriftgrößen muss auf ein notwendiges Minimum reduziert werden.
+* Als Standard-Schrift wird BundesSans 14pt regular in dunkelgrau (#212529) empfohlen.
 * Es muss sichergestellt sein, dass der <<barrierefreier-einsatz-von-farben,Kontrast der Schriftfarbe zur Hintergrundfarbe>> ausreichend groß ist.
 Hier ist der Kontrast größtmöglich zu wählen (z.B. dunkelgraue Schrift auf weißem Hintergrund).
 Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss der Kontrast bei kleiner Schrift mindestens 4,5:1 entsprechen.
@@ -791,22 +792,36 @@ Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss d
 [[grafiken]]
 === Grafiken
 
-Bilder und Grafiken ergänzen den Text und vermitteln Informationen auf visuelle Weise.
-Hier werden die Leitlinien für die Verwendung von Grafiken festgelegt, einschließlich Stilrichtlinien, Bildgrößen und im Ansatz deren Barrierefreiheit.
-Details werden im entsprechenden Kapitel genauer erläutert.
+Bilder und Grafiken ergänzen den <<text>> und vermitteln Informationen auf visuelle Weise.
+Sie unterliegen in erster Linie der notwendigen Fachlichkeit.
+Hier werden die Leitlinien für die Verwendung von Grafiken festgelegt, einschließlich Stilrichtlinien, Bildgrößen und im Ansatz deren <<barrierefreiheit>>.
 
-* Bilder unterliegen in erster Linie der notwendigen Fachlichkeit.
-* Jedes Bild benötigt eine Bildunterschrift.
-* Um die Barrierefreiheit von Frontends zu unterstützen, benötigt jedes Bild ein aussagekräftiges <<alt-tag,Alt-Attribut>>.
+Jedes Bild benötigt eine Bildunterschrift und ein aussagekräftiges <<alt-tag,Alt-Attribut>>, um die Barrierefreiheit von Frontends zu unterstützen.
 So können die Inhalte für alternative Ausgabegeräte oder beim fehlerhaften Laden zugänglich gemacht werden.
+Des Weiteren soll die Bildgröße dem Inhalt entsprechend gewählt werden, damit Nutzenden die Informationen übermittelt werden und kein horizontales Scrolling entsteht.
+
+*_Schriftgrafiken_*
+
+Schriftgrafiken können nicht oder nur eingeschränkt an Benutzeranforderungen angepasst werden, weshalb sie nicht genutzt werden dürfen.
+Logos sind hiervon ausgenommen.
+Gründe dafür sind, dass ihre Farben und Schriftgrößen nicht individuell eingestellt werden können und bei der Zoomvergrößerung die Schriftkanten meist unscharf werden.
+
+*_Schmuckgrafiken_*
+
+Schmuckgrafiken können zwar genutzt werden, sollten jedoch so wenig wie möglich eingesetzt werden.
+Solche Grafiken müssen entsprechend als Schmuckgrafik gekennzeichnet sein und benötigen deshalb auch keine Alt-Attribute.
+
+*_Do's_*
+
+* Bilder benötigen eine Bildunterschrift.
+* Grafiken müssen ein aussagekräftiges <<alt-tag,Alt-Attribut>> besitzen.
+* Das Bildmaterial muss ausreichend hoch aufgelöst sein, sodass keine Fragmente erkennbar sind.
+* Schmuckgrafiken sind erlaubt, jedoch entsprechend zu kennzeichnen.
+
+*_Don'ts_*
+
 * Bilder dürfen nicht gegen deutsches Recht verstoßen, politisch, sexuell oder angreifend sein.
-* Bilder dürfen keine Schriftgrafiken enthalten; in Ausnahmen muss die Schriftgrafik durch z.B. Alt-Attribute ausreichend beschrieben sein.
-* Schmuckgrafiken können genutzt werden.
-* Schmuckgrafiken sollen so wenig wie möglich genutzt werden.
-* Schmuckgrafiken müssen als solche gekennzeichnet sein.
-* Schmuckgrafiken benötigen keine Alt-Attribute.
-* Es ist darauf zu achten, dass durch Bilder kein horizontales Scrolling entsteht.
-* Es ist darauf zu achten, dass das Bildmaterial ausreichend hoch aufgelöst ist, sodass keine Fragmente erkennbar sind.
+* Bilder dürfen keine Schriftgrafiken enthalten, mit Ausnahme von Logos; in Ausnahmen muss die Schriftgrafik durch z.B. Alt-Attribute ausreichend beschrieben sein.
 
 [[ueberschriften]]
 === Überschriften
