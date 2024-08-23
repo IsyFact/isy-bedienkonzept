@@ -6,7 +6,7 @@ include::glossary:licence:partial$licence.adoc[]
 == Einführung
 
 Das Bedienkonzept nimmt eine zentrale Rolle in der Entwicklung von xref:referenzarchitektur:software-technisch/frontend.adoc[Frontends] ein.
-Es dient als umfassendes Regelwerk, dass die Gestaltung und die Interaktionselemente definiert, sowie als Fundament für eine konsistente und benutzerfreundliche Benutzeroberfläche.
+Es dient als umfassendes Regelwerk, das die Gestaltung und die Interaktionselemente definiert, sowie als Fundament für eine konsistente und benutzerfreundliche Benutzeroberfläche.
 
 Das Hauptziel des Bedienkonzepts ist es, eine herausragende Benutzererfahrung zu schaffen, die die Zufriedenheit und Produktivität der Nutzenden maximiert.
 Es soll sicherstellen, dass Nutzende das Frontend ohne Schwierigkeiten nutzen können und dabei ihre Ziele *effizient* erreichen.
@@ -153,7 +153,7 @@ Usability befasst sich hauptsächlich mit den funktionalen Aspekten der Interakt
 Usability kann durch spezifische Metriken wie Fehlerquote, Zeitaufwand und Benutzerzufriedenheit gemessen werden.
 UX erfordert jedoch eine umfassendere Bewertung, die qualitative und quantitative Methoden kombiniert, um das gesamte Benutzererlebnis zu verstehen.
 
-*_Grundlegende Do's, die die Benutzerfreundlichkeit einer Benutzeroberfläche in Frontends erhöhen:_*
+*_Grundlegende Dos, die die Benutzerfreundlichkeit einer Benutzeroberfläche in Frontends erhöhen:_*
 
 * *Klare Anweisungen und Fehlermeldungen:*
 Nutzende sollten stets verstehen, was von ihnen erwartet wird.
@@ -168,7 +168,7 @@ Stellen Sie sicher, dass Informationen kontextbezogen und schrittweise offenbart
 Um sicherzustellen, dass Ihre Oberfläche für eine breite Palette von Nutzenden zugänglich ist, ist es wichtig, Tests mit verschiedenen Personengruppen durchzuführen.
 Berücksichtigen Sie dabei Nutzende mit unterschiedlichen Fähigkeiten, Geräten und technischen Kenntnissen.
 
-Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind am jeweiligen <<bedienelemente,Bedienelement>>, am <<design-pattern>> oder an den <<eingabehilfen-und-fehlermeldungen>> zu finden (siehe jeweils bei den Unterkapiteln "Do's" und "Don'ts").
+Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind am jeweiligen <<bedienelemente,Bedienelement>>, am <<design-pattern>> oder an den <<eingabehilfen-und-fehlermeldungen>> zu finden (siehe jeweils bei den Unterkapiteln "Dos" und "Don'ts").
 
 [[allgemeine-prinzipien]]
 === Allgemeine Prinzipien
@@ -426,22 +426,16 @@ Dieses Theme kann bei Bedarf auch durch ein projektspezifisches Theme ersetzt we
 [[farben]]
 === Farben
 
-Farben tragen maßgeblich zur visuellen Identität eines Frontends bei und beeinflussen die Stimmung und Wahrnehmung der Nutzenden:
-
-* Die Standardpalette wird vom IsyFact Theme mit ausgeliefert und entsprechend der aktuellen gesetzlichen Entwicklung aktualisiert.
-Deshalb kann die Palette von dem hier dokumentierten Stand abweichen.
-* Die <<image-farbmatrix,Standardpalette>> (zum Zeitpunkt: 03.07.2024) wird im Bereich <<barrierefreiheit>> mit einer Kontrast-Tabelle angegeben.
-* Die Verwendung einer Anwendungsfarbe muss vom Projekt auf Barrierefreiheit geprüft werden und ist frei wählbar.
-
-Es kommt folgende Farbpalette zum Einsatz:
+Farben tragen maßgeblich zur visuellen Identität eines Frontends bei und beeinflussen die Stimmung und Wahrnehmung der Nutzenden. Im Rahmen dieses Bedienkonzeptes ist die folgende Farbpalette vorgegeben (Stand 03.07.2024):
 
 [[image-farbpalette]]
 .Farbpalette
 image::24_BE_farbpalette.png[align="center"]
 
-Die Farben sind entsprechend ihres Namens und ihrer bekannten Bedeutung zu nutzen (z.B. Rot = Fehler)!
 
-*_Do's_*
+Die Standardpalette wird mit dem IsyFact-Theme ausgeliefert und entsprechend der aktuellen gesetzlichen Lage aktualisiert. Deshalb kann die ausgelieferte Palette von dem hier dokumentierten Stand abweichen. Die dazugehörige <<image-farbmatrix,Kontrasttabelle>> der Standardpalette ist im Kapitel <<barrierefreiheit>> zu finden. Die Farbpalette legt ebenfalls fest, zu welchen Zweck bestimmten Farben eingesetzt werden sollen, zum Beispiel Rot (#A4252C) zur Markierung von Alerts. 
+
+*_Dos_*
 
 * Grün = Erfolg, Bestätigung, Korrekt, etc ...
 * Rot = Fehler, Abbruch, Stopp, etc ...
@@ -451,12 +445,12 @@ Die Farben sind entsprechend ihres Namens und ihrer bekannten Bedeutung zu nutze
 * Grün = Abbruch, Fehler, Stopp, etc ...
 * Lila = Weiter, Sekundärbutton, Löschen, etc ...
 
+Die Anwendungsfarbe ist frei wählbar, aber muss vom Projket auf Barrierefreiheit geprüft werden.
+
 === Applikationsfarben
 
-Pro Applikationsgruppe kann eine Farbe definiert werden, welche an verschiedenen Stellen des Applikationsportals eingesetzt wird und so einen Wiedererkennungswert schafft.
-Kann eine Applikation keiner Gruppe zugeordnet werden, so kann sie ihre eigene Farbe erhalten.
-Bei der Wahl der Farben sind die generellen Richtlinien zur Benutzung von <<farben>> zu berücksichtigen.
-Die Farben sollten auch so gewählt werden, dass ein harmonisches Gesamtbild erhalten bleibt.
+//ToDo (Kurze Erläuterung, was eine Applikationsgruppe sein kann? Mir ist hier nicht klar, was genau gemeint ist) 
+Pro Applikationsgruppe kann eine Farbe definiert werden, welche an verschiedenen Stellen des Applikationsportals eingesetzt wird und so einen Wiedererkennungswert schafft. Wenn eine Applikation keiner Gruppe zugeordnet werden kann, kann sie ihre eigene Farbe erhalten. Bei der Wahl der Farben sind die generellen Richtlinien zur Nutzung von <<farben>> zu berücksichtigen. Die Farben sollten so gewählt werden, dass ein harmonisches Gesamtbild erhalten bleibt.
 
 Die Applikationsfarbe kommt an folgenden Stellen zum Einsatz:
 
@@ -467,7 +461,7 @@ Die Applikationsfarbe kommt an folgenden Stellen zum Einsatz:
 * Titelzeile von Detailseiten – Hintergrundfarbe der Titelzeile
 * Dialoge der Applikation – Farbbalken oberhalb der Titelzeile
 
-*_Do's_*
+*_Dos_*
 
 * Die Applikationsfarbe repräsentiert eine Gruppe von Applikationen oder eine einzelne Applikation, sofern sie keiner Gruppe zugeordnet werden kann.
 * Eine Applikationsgruppe kann immer nur eine Farbe annehmen.
@@ -940,7 +934,7 @@ Stattdessen werden <<radiobutton,Radiobuttons>>, <<checkbox,Checkboxen>> oder <<
 Generell wird kein Button verwendet, wenn nur das Textlabel ohne farbliche und räumliche Abgrenzung zum Hintergrund eingesetzt wird, sondern ein <<link>>.
 Dies kommt bspw. bei Fließtexten oder Seitenleisten zum Einsatz.
 
-*_Do's_*
+*_Dos_*
 
 * Beim Aktivieren eines Buttons wird immer eine Funktion ausgelöst oder eine (Fehler-)Meldung sichtbar.
 * Buttons mit dem wichtigsten Ziel bzw. mit der am häufigsten genutzten Aktion werden in der Primärfarbe dargestellt.
@@ -1003,7 +997,7 @@ Sie unterscheiden sich lediglich in der Form und Größe.
 Beim Hovern über einen Icon-Button kann ein Tooltip angezeigt werden, der die entsprechende Funktionalität beschreibt.
 Ist diese Beschreibung jedoch zu lang (mehr als 3 Wörter), ist das Icon nicht dafür geeignet einen beschrifteten Button zu ersetzen.
 
-*_Do's_*
+*_Dos_*
 
 * Die Schaltfläche für Icon-Buttons beträgt mindestens 44px x 44px.
 * Ein Icon-Button ohne Border muss so platziert werden, dass Beziehungen zu anderen Elementen deutlich werden.
@@ -1130,7 +1124,7 @@ Die Mindesthöhe von 44px darf nicht unterschritten werden, um die Barrierefreih
 Die Schriftgröße von Labeln, Platzhaltern und Hinweistexten sollte 14pt nicht unterschreiten.
 Der Abstand eines Eingabefelds zum darunter liegenden Label eines weiteren Eingabefelds soll ca. dem doppelten Abstand zwischen einem Label-Eingabefeld-Paar entsprechen, um eine eindeutige Zuordnung zu gewährleisten.
 
-*_Do's:_*
+*_Dos:_*
 
 * Die unmittelbare Nähe der <<label,Labels>> zu den dazugehörigen <<bedienelemente,Bedienelementen>> verbessert die visuelle Verbindung und ermöglicht es den Nutzenden, <<formulare>> schneller und effizienter auszufüllen.
 * Gleichmäßige Feldlängen unterstützen den Lesefluss des Nutzendens.
@@ -1222,7 +1216,7 @@ Bei langen Einträgen können auch sinnvolle Abkürzungen genutzt werden.
 Die Listenelemente sind mindestens 44px hoch und entsprechend dem dazugehörigen Element breit (hier exemplarisch das Eingabefeld).
 Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
 
-*_Do's_*
+*_Dos_*
 
 * Gestalte Listen inhaltlich so einfach wie möglich.
 * Listeneinträge sind eindeutig unterscheidbar.
@@ -1274,7 +1268,7 @@ Für eine homogene Darstellung sind folgende Abstände einzuhalten.
 .Vermaßung von Checkboxen horizontal und vertikal
 image::24_BE_checkboxen_measured.png[align="center"]
 
-*_Do's_*
+*_Dos_*
 
 * Das Ein- oder Ausschalten einer Checkbox kann dazu genutzt werden, um andere Elemente dynamisch zu aktivieren/anzuzeigen oder zu deaktivieren/unsichtbar zu machen, z.B. „Abweichende Lieferanschrift“ (einzig zulässige Funktion).
 * Nicht nur die Box und Target-Area, sondern auch das Label sollten klickbar sein.
@@ -1325,7 +1319,7 @@ Für eine homogene Darstellung sind folgende Abstände einzuhalten.
 .Vermaßung von Radiobuttons horizontal und vertikal
 image::24_BE_radiobutton_measured.png[align="center"]
 
-*_Do's_*
+*_Dos_*
 
 * Die Verwendung von Radiobuttons empfiehlt sich für eine kleinere Anzahl an Optionen.
 Ist die Menge der zur Verfügung stehenden Optionen sehr groß oder hat der Platzbedarf eine große Bedeutung, so kann der Einsatz eines <<dropdown,Dropdowns>> in Betracht gezogen werden.
@@ -1351,7 +1345,7 @@ Das verwendete Label sollte aussagekräftig und eindeutig sein.
 .Input Switch
 image::24_BE_Input_Switch.png[align="center"]
 
-*_Do's_*
+*_Dos_*
 
 * Benutze einen Input Switch zum Ein- und Ausschalten von Funktionen.
 * Benenne die Funktion eindeutig (z.B.: Zeige ausgeblendete Felder).
@@ -1422,7 +1416,7 @@ Icons sind mindestens 17px x 17px groß.
 .Exemplarische Vermaßung des Tabview
 image::24_BE_tabmenu_measured.png[align="center"]
 
-*_Do's:_*
+*_Dos:_*
 
 * Setze Tabs ein, wenn die Komplexität der UI reduziert werden soll und eine sinnvolle Gruppierung einzelner Bereiche vorgenommen werden kann.
 * Die optimale Anzahl an Tabs ist 4 – 7.
@@ -1469,7 +1463,7 @@ Wenn eine Zeile sich z.B. direkt in der Detailansicht öffnen lässt, so sollte 
 * Doppelklick = Detailansicht öffnen; folglich ist die erste/primäre Aktion = "Detailansicht öffnen".
 * Die aktive/fokussierte Zeile hat die Primärfarbe und der Hover entspricht dem PrimeNG Standard.
 
-*_Do's:_*
+*_Dos:_*
 
 * Tabellen werden genutzt, um große Mengen von Daten oder Objekten anzuzeigen.
 * Tabellen sollten übersichtlich bleiben.
