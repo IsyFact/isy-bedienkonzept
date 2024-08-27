@@ -1,4 +1,5 @@
 # 1.0.0
 ## Dokumentation
 - IFS-3928: Die Antora-Dokumentation für das Bedienkonzept wurde in dieses Git-Repository migriert
-- IFS-3928: Die Grafiken in den Kapiteln *Bedienelement*, *Design Pattern* und *Use Cases* wurden mit neuen Labeln versehen
+- IFS-3928: Die Grafiken in den Kapiteln *Bedienelemente*, *Design Pattern* und *Use Cases* wurden mit neuen Labeln versehen
+- IFS-2991: Der alte Abschnitt "UI Texte und Grafiken" wird in die Kapitel *Basiselemente* und *Eingabehilfen und Fehlermeldungen* integriert
