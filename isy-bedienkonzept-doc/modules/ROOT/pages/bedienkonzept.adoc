@@ -29,7 +29,7 @@ Dieses Konzept ist für jedes Frontend relevant, unabhängig von dessen Komplexi
 Es ist gültig für alle Neuentwicklungen und Überarbeitungen von Frontends, die einem Major Change oder Technologiewechsel unterliegen.
 Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Altanwendungen.
 Das Bedienkonzept ist gültig ab Q1 – 2024.
-Die Gültigkeit des https://isyfact.github.io/isyfact-standards-doku/3.0.x/isy-bedienkonzept/bedienkonzept.html[Bedienkonzepts für Altanwendungen] bleibt zum damaligen Zeitpunkt mit den damalig gültigen Inhalten weiterhin aktiv.
+Die Gültigkeit des https://isyfact.github.io/isyfact-standards-doku/3.0.x/isy-bedienkonzept/bedienkonzept.html[Bedienkonzepts für Altanwendungen] bleibt zum damaligen Zeitpunkt mit den damals gültigen Inhalten weiterhin bestehen.
 
 *_Bedeutung des Bedienkonzepts_*
 
@@ -681,7 +681,7 @@ a|image::primeicons/star-fill.svg[width=32,height=32]
 Textelemente spielen eine entscheidende Rolle bei der Kommunikation mit den Nutzenden.
 Um benutzerfreundliche Texte verfassen zu können, ist es wichtig, die Art und Weise zu verstehen, wie Nutzende Texte auffassen und verarbeiten.
 In westlichen Kulturen wird in der Regel von links nach rechts und von oben nach unten gelesen.
-In Bezug auf Software und User Interface Design kann auf diese Tatsache jedoch nur eingeschränkt zurückgegriffen werden, denn Nutzende lesen die Texte auf einem Screen nicht, vielmehr wird dieser nach relevanten Informationen gescannt.
+In Bezug auf Software und User-Interface-Design kann auf diese Tatsache jedoch nur eingeschränkt zurückgegriffen werden, denn Nutzende lesen die Texte auf einem Bildschirm nicht, vielmehr scannen sie diesen nach relevanten Informationen.
 
 Verschiedenartige Informationen rufen dabei unterschiedliche Aufmerksamkeitsstufen hervor.
 So werden <<button,Schaltflächen>>, <<label,Labels>> und andere interaktive Elemente gewöhnlich zuerst gescannt, während statischer Text eher selten gelesen wird.
@@ -729,22 +729,22 @@ In diesem konkreten Beispiel kommt die BundesSans zum Tragen.
 *_Barrierefreiheit von Text_*
 
 Zusätzlich zu einem klar leserlichen Schriftschnitt sind auch die Gestaltungsmerkmale von Text, <<farben,Farbe>> und Größe entsprechend zu berücksichtigen.
-Die fehlerhafte Anwendung von Texten kann somit direkt zu einer Reduzierung der Usability des entsprechenden Frontends führen.
+Die fehlerhafte Anwendung von Texten kann somit direkt zu einer Reduzierung der Benutzerfreundlichkeit des entsprechenden Frontends führen.
 
-Die Standard-Schriftart für <<bedienelemente>> und Inhalte ist BundesSans 14pt regular in dunkelgrau (#212529).
+Die Standard-Schriftart für <<bedienelemente>> und Inhalte ist BundesSans 14pt Regular in Dunkelgrau (#212529).
 Grundsätzlich gilt, ausreichende Schriftgrößen sind abhängig vom Betrachtungsabstand, von der Art des Textes und von der Sehschärfe der Lesenden.
 Individuelle Schriftgrößen können Sie mit dem Schriftgrößenrechner auf https://www.leserlich.info/werkzeuge/schriftgroessenrechner/index.php[leserlich.info] ermitteln und entsprechend an den Nutzungskreis anpassen.
 
 *_Rechtschreibung_*
 
 Zu einem klaren, professionellen Gesamterscheinungsbild trägt auch eine korrekte Rechtschreibung, sowie eine konsistente Groß- und Kleinschreibung bei.
-Während für englischsprachige Frontends zwischen verschiedenen Formen der Groß- und Kleinschreibung unterschieden wird, muss für deutschsprachige Frontends lediglich die korrekte deutsche Rechtschreibung angewendet werden.
+Während bei englischsprachigen Frontends zwischen verschiedenen Formen der Groß- und Kleinschreibung unterschieden wird, reicht es bei deutschsprachigen Frontends aus, die korrekte deutsche Rechtschreibung anzuwenden.
 Eine Ausnahme besteht darin, dass das erste Wort der Beschriftung eines <<bedienelemente,Bedienelements>> immer großgeschrieben wird, unabhängig von der jeweiligen Wortart.
 
 *_Vermeidung von technischem Jargon_*
 
 Text muss immer in der Sprache der Nutzenden verfasst werden.
-Im Folgenden werden einige Beispiele für technische Begriffe und ihre entsprechende Übersetzung in eine allgemein verständliche Sprache aufgezeigt.
+Im Folgenden werden einige Beispiele für technische Begriffe und deren Übersetzung in allgemein verständliche Sprache aufgezeigt.
 
 [cols="5a,5a", options="header", align="center"]
 |====
@@ -773,11 +773,11 @@ Im Folgenden werden einige Beispiele für technische Begriffe und ihre entsprech
 Ein Unterschreiten von Mindestgrößen zugunsten des Platzgewinns muss vermieden werden.
 Stattdessen werden andere, platzsparende Mechanismen angewandt, wie z.B. Expander (Progressive Disclosure).
 * Die Anzahl verschiedener Schriftgrößen muss auf ein notwendiges Minimum reduziert werden.
-* Als Standard-Schrift wird BundesSans 14pt regular in dunkelgrau (#212529) empfohlen.
+* Als Standard-Schrift wird BundesSans 14pt Regular in Dunkelgrau (#212529) empfohlen.
 * Es muss sichergestellt sein, dass der <<barrierefreier-einsatz-von-farben,Kontrast der Schriftfarbe zur Hintergrundfarbe>> ausreichend groß ist.
 Hier ist der Kontrast größtmöglich zu wählen (z.B. dunkelgraue Schrift auf weißem Hintergrund).
 Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss der Kontrast bei kleiner Schrift mindestens 4,5:1 entsprechen.
-* <<ueberschriften>> und großer/dicker Text muss mindestens einen Kontrast von 3:1 aufweisen.
+* <<ueberschriften>> und großer/dicker Text müssen einen Mindestkontrast von 3:1 aufweisen.
 * Die Nutzung von Fachterminologie muss entsprechend konsistent verwendet werden.
 
 *_Don'ts_*
@@ -798,13 +798,13 @@ Hier werden die Leitlinien für die Verwendung von Grafiken festgelegt, einschli
 
 Jedes Bild benötigt eine Bildunterschrift und ein aussagekräftiges <<alt-tag,Alt-Attribut>>, um die Barrierefreiheit von Frontends zu unterstützen.
 So können die Inhalte für alternative Ausgabegeräte oder beim fehlerhaften Laden zugänglich gemacht werden.
-Des Weiteren soll die Bildgröße dem Inhalt entsprechend gewählt werden, damit Nutzenden die Informationen übermittelt werden und kein horizontales Scrolling entsteht.
+Des Weiteren soll die Bildgröße an den Inhalt angepasst werden, um sicherzustellen, dass die Informationen den Nutzenden übermittelt werden und kein horizontales Scrolling erforderlich ist.
 
 *_Schriftgrafiken_*
 
 Schriftgrafiken können nicht oder nur eingeschränkt an Benutzeranforderungen angepasst werden, weshalb sie nicht genutzt werden dürfen.
 Logos sind hiervon ausgenommen.
-Gründe dafür sind, dass ihre Farben und Schriftgrößen nicht individuell eingestellt werden können und bei der Zoomvergrößerung die Schriftkanten meist unscharf werden.
+Gründe dafür sind, dass ihre Farben und Schriftgrößen nicht individuell eingestellt werden können und die Schriftkanten bei einer Zoomvergrößerung meist unscharf werden.
 
 *_Schmuckgrafiken_*
 
@@ -821,7 +821,8 @@ Solche Grafiken müssen entsprechend als Schmuckgrafik gekennzeichnet sein und b
 *_Don'ts_*
 
 * Bilder dürfen nicht gegen deutsches Recht verstoßen, politisch, sexuell oder angreifend sein.
-* Bilder dürfen keine Schriftgrafiken enthalten, mit Ausnahme von Logos; in Ausnahmen muss die Schriftgrafik durch z.B. Alt-Attribute ausreichend beschrieben sein.
+* Bilder dürfen keine Schriftgrafiken enthalten, ausgenommen Logos.
+In Ausnahmefällen muss die Schriftgrafik bspw. durch Alt-Attribute ausreichend beschrieben sein.
 
 [[ueberschriften]]
 === Überschriften
@@ -1913,7 +1914,7 @@ Der Fortschritts-Spinner empfiehlt sich aufgrund seiner geringen Ausmaße insbes
 [[system-meldungen]]
 ==== System-Meldungen
 
-Beim Verfassen von System-Benachrichtigungen – wie z.B. <<fehlermeldungen>> – muss auf eine verständliche und konsistente Formulierung geachtet werden.
+Beim Verfassen von System-Benachrichtigungen – wie bspw. <<fehlermeldungen>> – muss auf eine verständliche und konsistente Formulierung geachtet werden.
 Neben <<image-eingabefelderror,Fehlermeldungen, die am Eingabeobjekt auftreten können>>, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden (*Achtung:* dynamisch nachgeladene Elemente müssen auch einem Screenreader mitgeteilt werden, sodass auch Personen mit Einschränkungen diese Hinweise mitbekommen).
 Dies geschieht mithilfe von Toast-Notifications, welche immer am unteren rechten Rand des Browserfensters angezeigt werden.
 
@@ -1961,7 +1962,7 @@ Es sind maximal 20 Zeichen möglich.“
 === Fehlermeldungen
 
 Fehlermeldungen sind unvermeidlich, aber wie sie präsentiert werden, kann einen großen Unterschied für die Benutzererfahrung ausmachen.
-Fehlermeldungen sollten deutlich sichtbar sein, in verständlicher Sprache verfasst sein und klare Anweisungen zur Behebung des Fehlers enthalten.
+Fehlermeldungen sollten gut sichtbar, in verständlicher Sprache verfasst und mit klaren Anweisungen zur Behebung des Fehlers versehen sein.
 Idealerweise sollten Fehlermeldungen in unmittelbarer Nähe von betroffenen Objekten platziert werden (siehe als Beispiel: <<image-eingabefelderror,Eingabefelder - Fehlermeldung>>), um Nutzenden sofortiges Feedback zu geben und sie bei der Fehlerbehebung zu unterstützen.
 Neben Fehlermeldungen, die am Eingabeobjekt auftreten können, kann zusätzlich ein zusammenfassender Hinweis, wie im Kapitel <<system-meldungen>> beschrieben, angezeigt werden.
 
