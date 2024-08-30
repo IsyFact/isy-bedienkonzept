@@ -12,7 +12,7 @@ So soll sichergestellt werden, dass Nutzende das Frontend ohne Schwierigkeiten v
 
 In den folgenden Kapiteln werden die benötigten Elemente von "klein nach groß" beschrieben.
 *Der allgemeine Rahmen und die übergreifenden Prinzipien* werden in den ersten Kapiteln beschrieben.
-Darauf folgen die *<<basiselemente>>* (wie z.B. <<text>> und <<farben>>), die den Grundstein für die nachfolgenden Kapitel legen und von essenzieller Bedeutung sind.
+Darauf folgen die *<<basiselemente>>* (wie zum Beispiel <<text>> und <<farben>>), die den Grundstein für die nachfolgenden Kapitel legen und von essenzieller Bedeutung sind.
 Danach kommen die *<<bedienelemente>>*, die einfachste Ausprägung eines Interaktionselements.
 *<<design-pattern>>* stellen eine Bündelung von Bedienelementen und Basiselementen dar und können letztendlich in beliebiger Kombination als vollständige *<<use-cases>>* beschrieben werden.
 
@@ -241,7 +241,7 @@ Alle hier genannten Maßnahmen sind zur Steigerung der Awareness und Transparenz
 Für Haupt- und Einstiegsseiten sowie Seiten mit rechtlicher Relevanz muss der Kontrast 7:1 betragen.
 * Es sollten keine Schriftgrafiken genutzt werden.
 * Alle Bilder benötigen ein inhaltlich sinnvolles, beschreibendes <<alt-tag,Alt-Attribut>>.
-* <<grafiken,Bilder>>, die ausschließlich der Gestaltung dienen (z.B. Trennlinien), müssen als solche (Schmuckgrafik) gekennzeichnet werden.
+* <<grafiken,Bilder>>, die ausschließlich der Gestaltung dienen (zum Beispiel Trennlinien), müssen als solche (Schmuckgrafik) gekennzeichnet werden.
 * *Tastatur-Navigation:*
 Nicht alle Nutzenden können eine Maus verwenden.
 Daher ist es wichtig, dass alle Interaktionen auf dem Frontend auch über die Tastatur möglich sind.
@@ -250,7 +250,7 @@ Dies bedeutet, dass alle Navigationselemente, <<link,Links>> und interaktiven El
 Informationen sollten nicht allein durch <<farben,Farbe>> vermittelt werden, da einige Nutzende Farben nicht unterscheiden können.
 Daher sollten auch andere visuelle Elemente, wie <<icons,Symbole>> oder Muster genutzt werden, um wichtige Informationen zu vermitteln.
 * Schwache Kontraste zum Beispiel Hellblau auf Grau sollen vermieden werden.
-* Aktionen sollen nicht durch <<bedienelemente>> ausgelöst werden, wenn diese nicht dazu vorgesehen sind (z.B. <<radiobutton>> und <<checkbox,Checkboxen>>).
+* Aktionen sollen nicht durch <<bedienelemente>> ausgelöst werden, wenn diese nicht dazu vorgesehen sind (zum Beispiel <<radiobutton>> und <<checkbox,Checkboxen>>).
 
 [[barrierefreier-einsatz-von-farben]]
 === Barrierefreier Einsatz von Farben
@@ -698,7 +698,7 @@ Die Liste entspricht der Sprachenzeichennorm ISO 639-1-3.
 _Nicht-lateinische Fließtextschriften_
 
 Nicht-lateinische Schriften umfassen Schriftsysteme, die anstelle lateinischer Schriftzeichen zum Beispiel arabische, kyrillische oder chinesische Zeichen beinhalten.
-Mit einem Schriftsystem lassen sich meist mehrere Sprachen schreiben (z.B. mit dem arabischen Schriftsystem Sprachen, wie Arabisch, Urdu, Paschtu, Persisch (Dari/Farsi)).
+Mit einem Schriftsystem lassen sich meist mehrere Sprachen schreiben (zum Beispiel mit dem arabischen Schriftsystem Sprachen, wie Arabisch, Urdu, Paschtu, Persisch (Dari/Farsi)).
 Nicht-lateinischer Originaltext wird vom angegebenen Schriftfont erkannt und automatisch in den richtigen Schriftzeichen wiedergegeben.
 
 Die Notwendigkeit der Darstellung nicht-lateinischer Schriften ergibt sich durch die DIN 91379 „Zeichen und definierte Zeichensequenzen in Unicode für die elektronische Verarbeitung von Namen und den Datenaustausch in Europa“ mit Ausgabedatum 2022-08.
@@ -728,7 +728,7 @@ Ein Unterschreiten von Mindestgrößen zugunsten des Platzgewinns muss vermieden
 Stattdessen werden andere, platzsparende Mechanismen angewandt wie Expander (Progressive Disclosure).
 * Die Anzahl verschiedener Schriftgrößen muss auf ein notwendiges Minimum reduziert werden
 * Es muss sichergestellt sein, dass der <<barrierefreier-einsatz-von-farben,Kontrast der Schriftfarbe zur Hintergrundfarbe>> ausreichend groß ist.
-Hier ist der Kontrast größtmöglich zu wählen (z.B. dunkelgraue Schrift auf weißem Hintergrund).
+Hier ist der Kontrast größtmöglich zu wählen (zum Beispiel dunkelgraue Schrift auf weißem Hintergrund).
 Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss der Kontrast bei kleiner Schrift mindestens 4,5:1 entsprechen.
 * <<ueberschriften,Überschriften>> und großer/dicker Text muss mindestens einen Kontrast von 3:1 aufweisen.
 
@@ -744,7 +744,7 @@ Details werden im entsprechenden Kapitel genauer erläutert.
 * Jedes Bild benötigt eine Bildunterschrift.
 * Jedes Bild benötigt ein aussagekräftiges <<alt-tag,Alt-Attribut>>.
 * Bilder dürfen nicht gegen deutsches Recht verstoßen, politisch, sexuell oder angreifend sein.
-* Bilder dürfen keine Schriftgrafiken enthalten; in Ausnahmen muss die Schriftgrafik durch z.B. Alt-Attribute ausreichend beschrieben sein.
+* Bilder dürfen keine Schriftgrafiken enthalten; in Ausnahmen muss die Schriftgrafik durch zum Beispiel Alt-Attribute ausreichend beschrieben sein.
 * Schmuckgrafiken können genutzt werden, aber sollen so wenig wie möglich verwendet werden.
 * Schmuckgrafiken müssen als solche gekennzeichnet sein.
 * Schmuckgrafiken benötigen keine Alt-Attribute.
@@ -868,8 +868,9 @@ Nachfolgend werden die verschiedenen Arten von Buttons und ihre Anwendung in der
 [[colored-button]]
 ==== Kolorierte Button
 
-Die primär zur Anwendung kommenden Buttons sind die kolorierten Buttons.
-Mit ihrer kräftigen <<farben,Farbe>> unterstützen sie den Nutzenden aktiv beim Erreichen eines Ziels (z.B. Absenden, Speichern, uvm).
+Kolorierte Buttons oder auch farbig gefüllte Buttons sind die am häufigsten verwendete Button-Variante.
+//ToDo Wie unterstützen die Buttons denn mit ihrer Farbe das Erreichen des Ziels? Das Ziel wird durch Klicken auf den Button erreicht. Die Farbe dient dazu, dass man den Button leichter findet. Bitte entweder explizit schreiben oder weglassen.
+Mit ihrer kräftigen <<farben,Farbe>> unterstützen sie den Nutzenden aktiv beim Erreichen eines Ziels (zum Beispiel Absenden, Speichern, uvm).
 Deshalb werden sie auch CTA-Buttons (Call-To-Action Buttons) genannt.
 
 Buttons enthalten entweder ein <<label,Textlabel>>, ein <<icons,Icon>> oder eine Kombination aus beidem.
@@ -880,8 +881,7 @@ Je nach Zustand des Buttons, die in der Abbildung <<image-standardbutton>> darge
 .Zustände von beschrifteten Buttons in Primärfarbe
 image::24_BE_Primary_Button_States.png[align="center"]
 
-In diesem Beispiel wurde die Primärfarbe verwendet, um die unterschiedlichen Zustände eines Buttons zu veranschaulichen.
-Als Primärfarbe wird blau verwendet mit weißer Schrift.
+In diesem Beispiel wurde die Primärfarbe Blau (mit weißer Schrift) verwendet, um die unterschiedlichen Zustände eines Buttons zu veranschaulichen.
 In den Zuständen "Hover" und "Pressed" wird die Button-Farbe dunkler als im Normalzustand.
 Entsprechend wird die Button-Farbe im Zustand "Disabled" heller.
 Im "aktiven" bzw. "fokussierten" Zustand bekommt der Button einen Fokus-Rahmen, der einen helleren Ton hat als der Button selbst.
@@ -890,53 +890,53 @@ Dies lässt sich beim Einsatz der anderen Farben, wie in Abbildung <<image-butto
 
 *_Farbwahl bei Buttons_*
 
-Kolorierte Buttons oder auch farbig gefüllte Buttons sind die am häufigsten verwendete Button-Variante.
 Die hier gezeigten Farben sind die einzig zulässigen Farben, die im Frontend für Button-Elemente verwendet werden dürfen:
 
 [[image-buttoncolors]]
 .Farben von kolorierten Buttons
 image::24_BE_Colored_Buttons.png[align="center"]
 
-Hauptsächlich kommen die Primärfarbe blau und die Sekundärfarbe orange zum Einsatz, um die Wichtigkeit der einzelnen Aktionselemente innerhalb eines Frontends voneinander zu unterscheiden.
-Wenn mehrere Buttons in einem Frontend eingesetzt werden, wird der Button mit dem wichtigsten Ziel bzw. mit der am häufigsten genutzten Aktion innerhalb einer inhaltlichen Gruppe in der Primärfarbe dargestellt.
+Hauptsächlich kommen die Primärfarbe blau und die Sekundärfarbe Orange zum Einsatz, um die Wichtigkeit der einzelnen Aktionselemente innerhalb eines Frontends voneinander zu unterscheiden.
+Wenn mehrere Buttons in einem Frontend eingesetzt werden, wird der Button mit dem wichtigsten Ziel beziehungsweise mit der am häufigsten genutzten Aktion innerhalb einer inhaltlichen Gruppe in der Primärfarbe dargestellt.
 Ein Beispiel dafür sind Log-In-Seiten von Social-Media-Plattformen.
-Die Hauptaufgabe dieser Seite ist es neue Mitgliedschaften zu generieren, weshalb der Registrieren-Button die Primärfarbe erhält und nicht der Log-In-Button.
+Die Hauptaufgabe dieser Seite ist es, neue Mitgliedschaften zu generieren, weshalb der Registrieren-Button die Primärfarbe erhält und nicht der Log-In-Button.
 
 In der Regel wird nur ein Button innerhalb der sichtbaren Bedienoberfläche in der Primärfarbe eingefärbt.
 Dies hilft den Nutzenden sich auf die Hauptaktion zu fokussieren.
 Alle anderen Buttons werden in der Sekundärfarbe oder als <<inverted-button,Outlined Button>> dargestellt, falls keine spezifische Funktion zugrunde liegt.
 
-Für spezielle Aktionen gibt es neben der Primär- und Sekundärfarbe weitere Farben, wie grün für Erfolg oder rot für Alarm.
-Vor allem bei nicht wiederherstellbaren Aktionen, wie Löschen oder Entfernen, kann ein roter "Alarm"-Button sehr hilfreich sein.
+Für spezielle Aktionen gibt es neben der Primär- und Sekundärfarbe weitere Farben wie Grün für Erfolg oder Rot für Alarm.
+Vor allem bei Aktionen, die nicht wieder rückgängig zu machen sind, wie Löschen oder Entfernen, kann ein roter "Alarm"-Button sehr hilfreich sein.
 Diese Signalfarbe veranlasst den Nutzenden noch einmal über seine Aktion nachzudenken, da diese nach der Bestätigung endgültig ist.
 Jedoch sollte die Anzahl der genutzten Farben innerhalb einer Benutzeroberfläche mit Bedacht eingesetzt werden, um die Frontends nicht zu überladen.
 
 *_Platzierung der Buttons_*
 
 Bei der Platzierung der Buttons innerhalb eines Frontends wird zwischen zwei Use Cases unterschieden.
-Bei kleinen Dialogfenstern, in denen lediglich zwischen akzeptieren und abbrechen einer Aktion unterschieden wird, wird der Primär-Button rechts unten platziert.
+Bei kleinen Dialogfenstern, in denen lediglich zwischen Akzeptieren und Abbrechen einer Aktion unterschieden wird, wird der Primär-Button rechts unten platziert.
 
-Auf <<formulare,Formularseiten>> oder auch Full-Page Designs ist die Häufigkeit der Verwendung der zur Verfügung stehenden Buttons ausschlaggebend.
-Primäre, einleitende und abschließende Aktionen können sehr präsent in der Mitte des Frontends angeordnet werden.
-Navigierende und häufiger verwendete Aktionen werden bevorzugt rechts angeordnet.
+Auf <<formulare,Formularseiten>> oder auch Full-Page Designs ist die Häufigkeit der Verwendung der Buttons ausschlaggebend.
+Buttons für primäre, einleitende und abschließende Aktionen können sehr präsent in der Mitte des Frontends angeordnet werden.
+Buttons für navigierende und häufiger verwendete Aktionen werden bevorzugt rechts angeordnet.
 
-Dies liegt daran, dass die Aufmerksamkeit der Nutzenden während dem Lesen oder Hinzufügen von Informationen dorthin gerichtet ist.
-Es ist darauf zu achten, dass die Anordnung der Buttons mit identischem Zweck über alle Frontends hinweg konsistent eingesetzt wird.
+//ToDO: Gehört der Satz nicht zum Absatz darüber?
+Dies liegt daran, dass die Aufmerksamkeit der Nutzenden während des Lesens oder Hinzufügens von Informationen dorthin gerichtet ist.
+Es ist darauf zu achten, dass die Anordnung der Buttons mit identischem Zweck über alle Frontends hinweg konsistent bleibt.
 
 *_Abgrenzung zu anderen Bedienelementen_*
 
 Da Buttons als Aktionselemente eingesetzt werden, dürfen diese nicht genutzt werden, um Selektionen aus einer Gruppe von Optionen zu treffen.
 Stattdessen werden <<radiobutton,Radiobuttons>>, <<checkbox,Checkboxen>> oder <<input-switch,Input Switches>> verwendet.
 Generell wird kein Button verwendet, wenn nur das Textlabel ohne farbliche und räumliche Abgrenzung zum Hintergrund eingesetzt wird, sondern ein <<link>>.
-Dies kommt bspw. bei Fließtexten oder Seitenleisten zum Einsatz.
+Hyperlinks kommen beispielsweise bei Fließtexten oder Seitenleisten zum Einsatz.
 
 *_Dos_*
 
 * Beim Aktivieren eines Buttons wird immer eine Funktion ausgelöst oder eine (Fehler-)Meldung sichtbar.
-* Buttons mit dem wichtigsten Ziel bzw. mit der am häufigsten genutzten Aktion werden in der Primärfarbe dargestellt.
+* Buttons mit dem wichtigsten Ziel beziehngsweise mit der am häufigsten genutzten Aktion werden in der Primärfarbe dargestellt.
 Falls es unklar ist, welche Aktion wichtiger ist, wird die Standardaktion als primäre Aktion angesehen und entsprechend gefärbt.
 * Das <<label>> sollte kurz und selbsterklärend sein.
-* Das Label sollte die auszuführende Aktion widerspiegeln (z.B. Öffnen, Löschen, Speichern, Weiter).
+* Das Label sollte die auszuführende Aktion widerspiegeln (zum Beispiel Öffnen, Löschen, Speichern, Weiter).
 * Ruft ein Button einen Dialog auf, soll der resultierende Dialog die Beschriftung des Buttons als Titel wiederholen.
 * Die Schaltfläche für Buttons beträgt mindestens 44px x 44px.
 * Die Breite eines Buttons soll sich am enthaltenen Label orientieren.
@@ -946,15 +946,15 @@ Falls es unklar ist, welche Aktion wichtiger ist, wird die Standardaktion als pr
 
 *_Don'ts_*
 
-* Zum Selektieren oder Auswählen von Inhalten werden die Bedienelemente <<radiobutton>> und <<checkbox>> eingesetzt.
-* Zum Ein- oder Ausschalten von Inhalten werden spezielle <<input-switch,Input Switches>> verwendet.
-* Innerhalb von Fließtexten oder zum Verweisen auf externe Inhalte werden <<link,Links>> genutzt.
-* Um ein Frontend farblich nicht zu überladen, sollten die Button-Farben für spezielle Aktionen mit Bedacht eingesetzt werden.
+* Buttons werden nicht zum Selektieren oder Auswählen von Inhalten verwendet. Hier werden die Bedienelemente <<radiobutton>> und <<checkbox>> eingesetzt.
+* Zum Ein- oder Ausschalten von Inhalten werden keine Buttons verwendet, sondern spezielle <<input-switch,Input Switches>>.
+* Innerhalb von Fließtexten oder zum Verweisen auf externe Inhalte kommen keine Buttons zum Einsatz. Stattdessen werden <<link,Links>> genutzt.
+* Um ein Frontend farblich nicht zu überladen, sollten nicht zu viele Button-Farben für spezielle Aktionen eingesetzt werden.
 
 [[inverted-button]]
 ==== Invertierte Button
 
-Falls die <<image-buttoncolors,farblich gefüllten Buttons>> das Frontend zu bunt werden lassen, weil es zu viele Funktionen auf einer Seite gibt, können nach der Primärfunktion die invertieren Varianten genutzt werden:
+Falls die <<image-buttoncolors,farblich gefüllten Buttons>> das Frontend zu bunt werden lassen, weil es zu viele Funktionen auf einer Seite gibt, können für weniger wichtige oder sekundäre Funktionen die invertierten Varianten der Buttons genutzt werden.
 
 [[image-buttoncolors-inverted]]
 .Farben von invertierten Buttons
@@ -976,7 +976,7 @@ Es sollte eine der beiden Varianten konsistent im gesamten Frontend benutzt werd
 
 Icon-Buttons sind Buttons die kein sichtbares Label haben, sondern nur aus einem aussagekräftigen <<icons,Icon>> bestehen.
 Sie sind rund und haben einen farbigen Rand, um sich vom Hintergrund oder anderen <<basiselemente,Basis>>- und <<bedienelemente,Bedienelementen>> abzugrenzen.
-Deshalb ist es essenziell, dass das Icon die dahinterstehende Funktionalität ausdrückt.
+Dabei ist es essenziell, dass das Icon die dahinterstehende Funktionalität ausdrückt.
 Bei der Entwicklung muss darauf geachtet werden, dass Icon-Buttons durch ein <<aria-labels,ARIA-Label>> für Screenreader zugänglich werden.
 
 Generell sollten Icon-Buttons mit Bedacht eingesetzt werden und können somit nicht jeden beliebigen beschrifteten Button ersetzen.
@@ -993,6 +993,15 @@ Sie unterscheiden sich lediglich in der Form und Größe.
 Beim Hovern über einen Icon-Button kann ein Tooltip angezeigt werden, der die entsprechende Funktionalität beschreibt.
 Ist diese Beschreibung jedoch zu lang (mehr als 3 Wörter), ist das Icon nicht dafür geeignet einen beschrifteten Button zu ersetzen.
 
+Sonderfall:
+
+In speziellen Fällen werden Icon-Buttons auch ohne ihre Border dargestellt. Hierbei ist es besonders wichtig, dass die Icon-Buttons passend zum Design Pattern gewählt werden. Diese werden beispielsweise innerhalb von Tabellenheadern verwendet zum Sortieren und Filtern der Tabelleninhalte und sehen wie folgt aus:
+
+[[image-iconbuttons-withoutborder]]
+.Icon-Buttons ohne Border
+image::24_BE_Icons.png[align="center"]
+
+
 *_Dos_*
 
 * Die Schaltfläche für Icon-Buttons beträgt mindestens 44px x 44px.
@@ -1002,22 +1011,12 @@ Ist diese Beschreibung jedoch zu lang (mehr als 3 Wörter), ist das Icon nicht d
 
 Icon-Buttons ohne Border sollten nie ohne einen Bezug zu anderen <<bedienelemente,Bedienelementen>> eingesetzt werden.
 
-*_Sonderfall:_*
-
-In speziellen Fällen werden Icon-Buttons auch ohne ihre Border dargestellt.
-Hierbei ist besonders wichtig, dass die Icon-Buttons passend zum Design Pattern gewählt werden.
-Diese werden bspw. innerhalb von Tabellenheadern verwendet zum Sortieren und Filtern der Tabelleninhalte und sehen wie folgt aus:
-
-[[image-iconbuttons-withoutborder]]
-.Icon-Buttons ohne Border
-image::24_BE_Icons.png[align="center"]
-
 [[link]]
 === Hyperlink
 
-Hyperlinks folgen per Default einem einheitlichen Styling.
-Links sind in der Regel unterstrichen.
-Daher ist es nicht ratsam dies zu ändern, da der Nutzende es gelernt hat weiterführende Informationen/Links in einem Fließtext oder auf einer Seite anhand des unterstrichenen Textes zu erkennen.
+Hyperlinks folgen per Default einem einheitlichen Styling und Links sind in der Regel unterstrichen.
+Da Nutzende daran gewöhnt sind, weiterführende Informationen/Links in einem Fließtext oder auf einer Seite anhand des unterstrichenen Textes zu erkennen, ist es nicht ratsam, daran etwas zu ändern.
+//ToDo: Soll das heißen, dass das die Farbe der Links bei Bedarf geändert werden darf? Dann sollte das auch so geschrieben werden
 Viele Frontends greifen per CSS in das Styling ein und färben Links entsprechend ihrer Designregeln.
 
 Hyperlinks können einen Status (State) normal, hovered/focus und clicked haben.
@@ -1028,11 +1027,11 @@ image::24_BE_Links.png[align="center"]
 
 Hyperlinks dürfen nicht nur durch eine andere Farbe erkennbar sein.
 Sie benötigen zwingend ein farbunabhängiges Element zum Identifizieren und Erkennen des States.
-Hyperlinks sind verlinkte <<text,Texte>> (oder auch <<grafiken>>), die im Wesentlichen als Navigations-Mechanismus dienen – so z.B. um andere Inhalte wie Fenster zu öffnen.
+Hyperlinks sind verlinkte <<text,Texte>> (oder auch <<grafiken>>), die im Wesentlichen als Navigations-Mechanismus dienen, zum Beispiel um neue Fenster mit anderen Inhalten zu öffnen.
 Wird die Maus über einen Hyperlink bewegt, ändert sich der Cursor vom Pfeil zum Handsymbol.
 
 [TIP]
-Hyperlinks sollten einen aussagekräftigen Text zur Verfügung stellen.
+Hyperlinks sollten aussagekräftig beschriftet sein.
 Generische Phrasen wie „Hier klicken“ sind nicht hilfreich und sollten vermieden werden.
 
 [[eingabefeld]]
@@ -1048,7 +1047,7 @@ Altanwendungen, die nicht angepasst werden müssen, können weiterhin ihrem zum 
 Alle hier gezeigten Grafiken beziehen sich auf die aktuelle und zukünftige Umsetzung.
 
 Eingabefelder sind dynamisch.
-Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten <<placeholder,Placeholder>> und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
+Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter <<placeholder,Placeholder>> und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
 
 *_Normal:_*
 
@@ -1056,7 +1055,7 @@ Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten <<placeholder,Placeho
 .Eingabefeld mit Platzhalter
 image::24_BE_eingabefeld_normal.png[align="center"]
 
-Im normalen Zustand ist das Eingabefeld mit einem bündigen, statischen <<label>> in Dunkelgrau versehen.
+Im Normalzustand ist das Eingabefeld mit einem bündigen, statischen <<label>> in Dunkelgrau versehen.
 Der Platzhalter ist in einem helleren Grau gehalten.
 Platzhalter müssen sinnvolle Eingabeunterstützungen (im einfachsten Fall das Label selbst) enthalten.
 
@@ -1077,8 +1076,7 @@ Aktive Eingabefelder verlieren ihren Platzhalter und können entweder geleert we
 .Eingabefeld befüllt nicht aktiv
 image::24_BE_eingabefeld_filled.png[align="center"]
 
-Wenn eine Eingabe in einem Eingabefeld getätigt wurde und das Feld wieder verlassen wird, wechselt das Eingabefeld seinen Zustand wieder auf die Werte des „normalen“ Eingabefelds.
-Der Platzhalter ist verschwunden und die Eingabe wird in der Schriftfarbe angezeigt.
+Wenn eine Eingabe in einem Eingabefeld getätigt wurde und das Feld wieder verlassen wird, wechselt das Eingabefeld wieder in den Normalzustand mit dem Unterschied, dass der Platzhalter verschwunden ist und die Eingabe in der Schriftfarbe angezeigt wird.
 
 *_Disabled:_*
 
@@ -1086,7 +1084,7 @@ Der Platzhalter ist verschwunden und die Eingabe wird in der Schriftfarbe angeze
 .Eingabefeld disabled
 image::24_BE_eingabefeld_disabled.png[align="center"]
 
-Deaktivierte Eingabefelder (disabled) sind grau hinterlegt und geben zusätzlich über einen Mouse-Cursor-Wechsel beim Hovern den disabled State wieder.
+Deaktivierte Eingabefelder (disabled) sind grau hinterlegt und geben zusätzlich über einen Mouse-Cursor-Wechsel beim Hovern den Disabled State wieder.
 
 *_Eingabefeld mit Fehlermeldung und Hinweis:_*
 
@@ -1094,18 +1092,18 @@ Deaktivierte Eingabefelder (disabled) sind grau hinterlegt und geben zusätzlich
 .Eingabefeld mit Fehlermeldung und Hinweis
 image::24_BE_eingabefeld_error.png[align="center"]
 
-Eingabefelder mit Fehlermeldung sind rot.
-Das Eingabefeld färbt sich rot und es wird ein inhaltlich passender Hinweistext angezeigt, damit die Eingabe korrigiert werden kann.
+Bei einer Fehlermeldung färben sich das Eingabefeld und das Label rot und es wird ein inhaltlich logischer Hinweistext angegeben, damit die Eingabe korrigiert werden kann.
 
 Eingabefelder, die eine Erläuterung benötigen, sollen diese immer so kurz wie möglich und so lang wie nötig gestalten.
-Erläuterungen können dabei in verschiedenen Möglichkeiten realisiert werden, sortiert von kurz nach lang:
+Erläuterungen können dabei unterschiedlich realisiert werden, sortiert von kurz nach lang:
 
-* Als Platzhalter im Eingabefeld selbst.
-* Als Klammeranhang am Label, um das Label zu erläutern – z.B.: Name (gemeint ist der eingetragene Familienname).
-* Als maximal 2-zeiliger Hinweistext unter oder über dem Label (bitte nach Entscheidung konsistent im gesamten Frontend damit fortfahren).
-* Alle Erläuterungstexte, die länger als 2 Zeilen einer Eingabefeldlänge benötigen, sind zu komplex gestaltet und bedürfen einer fachlichen Neugestaltung.
+* als Platzhalter im Eingabefeld selbst.
+* als Klammeranhang am Label, um das Label zu erläutern, zum Beipiel: Name (gemeint ist der eingetragene Familienname).
+* als maximal zweizeiliger Hinweistext unter oder über dem Label (bitte nach Entscheidung konsistent im gesamten Frontend damit fortfahren).
+
+Alle Erläuterungstexte, die länger als 2 Zeilen einer Eingabefeldlänge benötigen, sind zu komplex gestaltet und bedürfen einer fachlichen Neugestaltung.
 Sollte dies nicht möglich sein, so ist ein vorangegangenes Textelement über dem Eingabefeld notwendig.
-* Erklärungshilfen, sollen nicht dynamisch versteckt werden – entweder ist die Erläuterung notwendig = sichtbar oder nicht notwendig = entfernen.
+Erklärungshilfen, sollen nicht dynamisch versteckt werden – entweder ist die Erläuterung notwendig, dass sollte sie sichtbar sein oder sie ist nicht notwendig, sodass sie entfernt werden kann.
 
 *_Exemplarische Vermaßung der verschiedenen Eingabefelder:_*
 
@@ -1123,16 +1121,16 @@ Der Abstand eines Eingabefelds zum darunter liegenden Label eines weiteren Einga
 *_Dos:_*
 
 * Die unmittelbare Nähe der <<label,Labels>> zu den dazugehörigen <<bedienelemente,Bedienelementen>> verbessert die visuelle Verbindung und ermöglicht es den Nutzenden, <<formulare>> schneller und effizienter auszufüllen.
-* Gleichmäßige Feldlängen unterstützen den Lesefluss des Nutzendens.
+* Gleichmäßige Feldlängen unterstützen den Lesefluss des Nutzenden.
 * Die Feldlängen sollten erwartungskonform gewählt werden.
-Soll z.B. eine Postleitzahl innerhalb Deutschlands eingegeben werden, so macht es Sinn die Feldlänge auf 5 Stellen zu begrenzen.
+Soll zum Beispiel eine Postleitzahl innerhalb Deutschlands eingegeben werden, so ist es sinnvoll, die Feldlänge auf fünf Stellen zu begrenzen.
 Optisch kann das Eingabefeld der Konsistenz entsprechend länger sein.
 * Pflichtfelder werden mit einem Asterisk (*) gekennzeichnet.
 
 *_Don't:_*
 
-Labels enden nicht mit einem Doppelpunkt.
-Bei sehr langen Labels sollten sinnvolle Abkürzungen verwendet werden.
+* Labels enden nicht mit einem Doppelpunkt.
+* Bei sehr langen Labels sollten sinnvolle Abkürzungen verwendet werden.
 
 [[eingabefeld-mit-mask]]
 ==== Eingabefeld mit Mask-Option
@@ -1146,21 +1144,21 @@ image::24_BE_eingabefeld_mask.png[align="center"]
 Eine Mask kann nur im aktiven State angezeigt werden und entspricht der regulären Schriftfarbe.
 Die Mask ist dem erwarteten Inhalt entsprechend fachlich logisch und nachvollziehbar gewählt.
 Zum Beispiel entspricht „mobile number“ dem Pattern: +0012 345 / 678 999 oder Ländervorwahl, Vorwahl, Rufnummer.
-Masks können dabei auch frei gestaltet werden und den fachlichen Bedürfnissen entsprechend angepasst werden, wie bspw. für Aktenzeichen.
+Masks können dabei auch frei gestaltet werden und den fachlichen Bedürfnissen entsprechend angepasst werden, beispielsweise für Aktenzeichen.
 Eine Mask kann in Einzelfällen auch dem Platzhalter entsprechen.
 
 [[eingabefeld-mit-button]]
 ==== Eingabefeld mit Input-Option
 
 Für häufig verwendete Eingaben gibt es Buttons, die als Input-Option in Eingabefeldern eingebaut werden können.
-Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, bspw. bei einem Date-Picker.
+Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsweise bei einem Date-Picker.
 
 [[image-eingabefeldinputoption]]
 .Eingabefeld mit Input-Option
 image::24_BE_eingabefeld_inputoption.png[align="center"]
 
 Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem <<image-eingabefeldplatzhalter,normalen Eingabefeld>>.
-Am Ende des Eingabefelds gibt es die Möglichkeit eine Eingabeoption zu aktivieren, wie z.B. die Optionen Sonderzeichen-Picker (zu sehen in der Abbildung <<image-eingabefeldinputoption>>) oder Datumseingabe.
+Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung Eingabefeld mit Input-Option) oder eine Datumseingabe. 
 Die Schaltfläche der Input-Option ist mindestens 44px x 44px.
 
 [[textbox]]
@@ -1174,8 +1172,7 @@ Diese unterscheiden sich in der Größe und Form von gewöhnlichen <<eingabefeld
 .Textbox
 image::24_BE_Textbox.png[align="center"]
 
-Textboxen lassen sich per Default in ihrer Größe verändern, damit der gesamte Inhalt angezeigt werden kann.
-Textboxen sollten mindestens so groß gestaltetet werden, dass der am häufigsten zu erwartende Inhalt hineinpasst, ohne manuell die Box zu verändern.
+Bei der Eingabe von Text können Textboxen manuell in ihrer Größe verändert werden, sodass der gesamte Inhalt angezeigt werden kann. Textboxen sollten mindestens so groß gestaltetet werden, dass der am häufigsten zu erwartende Inhalt hineinpasst, ohne manuell die Box zu anzupassen.
 
 [TIP]
 Textboxen haben die gleichen States und Styles wie Eingabefelder.
@@ -1184,19 +1181,18 @@ Textboxen haben die gleichen States und Styles wie Eingabefelder.
 === Liste
 
 Listen sind zentrale Bestandteile in Frontends und insbesondere von Fachanwendungen.
-Sie dienen dazu, Inhalte zu strukturieren und schnell zu erfassen.
+Sie dienen dazu, Inhalte zu strukturieren und erfassbar zu machen.
 Listen ermöglichen es dem Nutzenden darüber zulässige Werte auszuwählen.
 Dadurch werden Fehleingaben und unerwartete Ergebnisse reduziert.
 
-Listen sind in ihrer alleinigen Form recht simpel.
-Sie bestehen optisch aus einem geschlossenen Rahmen und bestenfalls aus logisch sortierten Elementen.
+Listen bestehen optisch aus einem geschlossenen Rahmen und bestenfalls aus logisch sortierten Elementen.
 
 Listen können in den verschiedensten Ausprägungen eingesetzt werden:
 
 * Eingabefeld + Liste
 * Eingabefeld + Suchbox + Liste
 * Menüitem + Liste
-* uvm
+* etc.
 
 Die einfachste Form einer Liste ist die rein textuelle Liste.
 
@@ -1205,7 +1201,7 @@ Die einfachste Form einer Liste ist die rein textuelle Liste.
 image::24_BE_liste.png[align="center"]
 
 Eine Liste kann theoretisch beliebig viele Einträge enthalten, was aber die <<usability-und-benutzerfreundlichkeit,Usability>> verschlechtert.
-Im optimalen Fall haben Liste eine logisch relevante überschaubare Anzahl an Einträgen.
+Im optimalen Fall haben Liste eine überschaubare Anzahl an logisch relevanten Einträgen.
 Die Einträge sind eindeutig und prägnant.
 Bei langen Einträgen können auch sinnvolle Abkürzungen genutzt werden.
 
@@ -1214,27 +1210,27 @@ Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
 
 *_Dos_*
 
-* Gestalte Listen inhaltlich so einfach wie möglich.
+* Listen sollen inhaltlich so einfach wie möglich gestaltet werden.
 * Listeneinträge sind eindeutig unterscheidbar.
-* Sollten Listen viele Einträge haben, sorge mit anderen Elementen für die Durchsuchbarkeit, Filterung oder Kategorisierung.
-* Listen helfen bei komplexen Eingaben, Fehler zu vermeiden.
-* Kombiniere Listen mit unterschiedlichen interaktiven Elementen, um dem Nutzenden eine Hilfestellung zu bieten.
-* Erwäge die Nutzung einer Radiobutton-Gruppe bei einer kleinen Liste.
+* Wenn Listen viele Einträge haben, so sollten andere Elemente für die Durchsuchbarkeit, Filterung oder Kategorisierung ermöglichen.
+* Listen können mit unterschiedlichen interaktiven Elementen kombiniert werden, um dem Nutzenden eine Hilfestellung zu bieten.
+* •	Bei einer kleinen Liste kann auch eine Radio-Button-Gruppe genutzt werden.
 
 *_Don'ts_*
 
 * Listeneinträge sind nie mehrzeilig.
 * Listeneinträge sind nicht doppelt vorhanden.
-* Listen sind unsortiert und sehr lang.
-* Listeneinträge sind als ganze Sätze formuliert.
+* Listen sind nicht unsortiert und sehr lang.
+//TODO: Ist die Verneinung richtig. Wenn ja, earum?
+* Listeneinträge sind nicht als ganze Sätze formuliert.
 
 [[checkbox]]
 === Checkbox
 
 Checkboxen ermöglichen es Nutzenden, *mehrere* Optionen aus einer (offenen) Liste auszuwählen und spielen eine wichtige Rolle bei der Interaktivität und Benutzerführung.
-Der gezielte Einsatz von Checkboxen bei kurzen Listen gibt dem Nutzenden die Möglichkeit seine Optionen schnell zu erkennen und auszufüllen.
+Der gezielte Einsatz von Checkboxen bei kurzen Listen gibt dem Nutzenden die Möglichkeit, seine Optionen schnell zu erkennen und auszufüllen.
 
-Checkboxen können auch alleinstehend, als boolean-Wert genutzt werden (z.B. als Bestätigung zum Lesen der AGB).
+Checkboxen können auch alleinstehend als boolean-Wert genutzt werden (zum Beispiel als Bestätigung beim Lesen der AGB).
 
 [[image-checkboxen]]
 .Checkboxen
@@ -1245,19 +1241,18 @@ Checkboxen haben immer ein rechtsstehendes Label mit einer Schriftgröße von mi
 
 Eine Checkbox repräsentiert eine unabhängige, nicht-exklusive Auswahl.
 Der Nutzende kann beliebige Optionen auswählen.
-Dabei können Checkboxen vertikal angeordnet werden.
+Dabei können Checkboxen vertikal oder auch horizontal angeordnet werden.
 
 [[image-checkboxen-vertikal]]
 .Vertikale Gruppe von Checkboxen
 image::24_BE_checkboxen_vertikal.png[align="center"]
 
-Oder auch horizontal angeordnet werden.
 
 [[image-checkboxen-horizontal]]
 .Horizontale Gruppe von Checkboxen
 image::24_BE_checkboxen_horizontal.png[align="center"]
 
-Wichtig ist, dass jede Checkbox ihrem Label zugeordnet ist.
+Wichtig ist, dass jede Checkbox einem Label zugeordnet ist.
 Für eine homogene Darstellung sind folgende Abstände einzuhalten.
 
 [[image-checkboxen-mit-einheiten]]
@@ -1266,10 +1261,12 @@ image::24_BE_checkboxen_measured.png[align="center"]
 
 *_Dos_*
 
-* Das Ein- oder Ausschalten einer Checkbox kann dazu genutzt werden, um andere Elemente dynamisch zu aktivieren/anzuzeigen oder zu deaktivieren/unsichtbar zu machen, z.B. „Abweichende Lieferanschrift“ (einzig zulässige Funktion).
-* Nicht nur die Box und Target-Area, sondern auch das Label sollten klickbar sein.
-* Eine Gruppe von Checkboxen sollte immer eine Beschriftung aufweisen, die entsprechend bei einer einzelnen Checkbox entfallen kann.
+* Das Ein- oder Ausschalten einer Checkbox kann dazu genutzt werden, andere Elemente dynamisch zu aktivieren/anzuzeigen oder zu deaktivieren/unsichtbar zu machen, zum Beispiel können Eingabefelder eingeblendet werden, wenn per Checkbox "Abweichende Lieferadresse" ausgewählt wird.
+* Nicht nur die Box und Target-Area, sondern auch das Label sollten anklickbar sein.
+* Eine Gruppe von Checkboxen sollte immer eine Beschriftung aufweisen. Bei einer einzelnen Checkbox kann dieses entfallen.
 * Für optimale Lesbarkeit sollten Checkboxen untereinander angeordnet sein.
+
+Bei Checkboxen mit mehreren Ebenen gilt:
 * Solange die Werte der untergeordneten Optionen gleich sind (alle „Aus“ oder alle „An“), zeigt dies die übergeordnete Checkbox mit dem entsprechenden Wert an.
 * Sind die Werte der untergeordneten Optionen jedoch nicht mehr homogen gesetzt, so schaltet die übergeordnete Checkbox in den Zustand „nicht definiert“.
 Dieser Zustand wird häufig mit einem Quadrat innerhalb der Checkbox symbolisiert.
@@ -1277,15 +1274,15 @@ Dieser Zustand wird häufig mit einem Quadrat innerhalb der Checkbox symbolisier
 *_Don'ts_*
 
 * Checkboxen sind kein alleinstehender Ein- und Ausschalter, dafür gibt es die technische Komponente _<<input-switch,p-inputSwitch>>_.
-* Eine Checkbox soll keine Funktionen (drucken, speichern, etc …) auslösen oder Seiten öffnen/verlinken.
+* Eine Checkbox soll keine Funktionen (drucken, speichern, etc.) auslösen oder Seiten öffnen/verlinken.
 
 [[radiobutton]]
 === Radiobutton
 
 Radiobutton ermöglichen es Nutzenden, *eine* Option aus einer (offenen) Liste auszuwählen und spielen eine wichtige Rolle bei der Interaktivität und Benutzerführung.
-Beim Einsatz von Radiobuttons wird dem Nutzenden sehr schnell gezeigt, dass er sich zwischen allen Optionen für eine entscheiden muss.
+Beim Einsatz von Radiobuttons wird den Nutzenden sehr schnell gezeigt, dass sie sich zwischen allen Optionen für eine entscheiden müssen.
 
-Radiobuttons können nicht alleinstehend verwendet werden, da sie nicht wieder abwählbar sind.
+Radiobuttons können nicht alleine verwendet werden, da sie nicht wieder abwählbar sind.
 
 [[image-radiobutton]]
 .Radiobuttons
@@ -1294,15 +1291,12 @@ image::24_BE_radiobutton.png[align="center"]
 Radiobuttons sind 24px groß, haben aber für mobile Geräte mindestens einen 44px x 44px großen Klickbereich (Click-Target-Area).
 Radiobuttons haben immer ein rechtsstehendes Label mit einer Schriftgröße von mindestens 14pt (hier exemplarisch 16pt).
 
-Ein Radiobutton repräsentiert eine exklusive Auswahl.
-Der Nutzende kann innerhalb der Gruppe genau eine Option auswählen.
-Dabei können Radiobuttons vertikal angeordnet werden.
+Ein Radiobutton repräsentiert eine exklusive Auswahl. Es kann innerhalb der Gruppe genau eine Option ausgewählt werden.
+Dabei können Radiobuttons vertikal oder horizontal angeordnet werden.
 
 [[image-radiobutton-vertikal]]
 .Vertikale Gruppe von Radiobuttons
 image::24_BE_radiobutton_vertikal.png[align="center"]
-
-Oder auch horizontal angeordnet werden.
 
 [[image-radiobutton-horizontal]]
 .Horizontale Gruppe von Radiobuttons
@@ -1343,14 +1337,14 @@ image::24_BE_Input_Switch.png[align="center"]
 
 *_Dos_*
 
-* Benutze einen Input Switch zum Ein- und Ausschalten von Funktionen.
-* Benenne die Funktion eindeutig (z.B.: Zeige ausgeblendete Felder).
+* Ein Input Switch wird zum Ein- und Ausschalten von Funktionen benutzt.
+* Die Funktion sollte eindeutig benannt werden (zum Beispiel: Zeige ausgeblendete Felder).
 
 *_Don'ts_*
 
-* Benutze den Input Switch nicht bei mehreren Optionen.
-* Baue den Input Switch nicht in Sätzen ein.
-* Bleibe konsistent und nutze entweder <<checkbox,Checkboxen>> oder Input Switches.
+* Der Input Switch sollte nicht bei mehr als einer Option gewählt werden.
+* Input Switches sollten nicht in Sätzen eingebaut werden.
+* <<checkbox,Checkboxen>> und Input Switches sollen nicht zusammen genutzt werden.
 Eine Kombination aus beiden <<bedienelemente,Bedienelementen>> zum Ein- und Ausschalten von Funktionalitäten ist nicht intuitiv für Nutzende.
 
 [[tabview]]
@@ -1360,9 +1354,7 @@ Ein Tabview ist ein wesentliches Element im modernen Design, das die Benutzererf
 Es bietet eine intuitive Möglichkeit, verschiedene Inhalte oder Abschnitte eines Frontends übersichtlich und platzsparend darzustellen.
 Durch die Verwendung von Tabs können Nutzende schnell und einfach zwischen verschiedenen Bereichen navigieren, ohne die Seite ständig neu laden zu müssen.
 Dies fördert nicht nur die Benutzerfreundlichkeit, sondern auch die Effizienz bei der Informationssuche.
-
-In der heutigen digitalen Welt, in der Nutzende eine schnelle und nahtlose Interaktion erwarten, ist ein gut gestaltetes Tabview ein unverzichtbares Werkzeug für jedes Frontend.
-Es ermöglicht Entwickelnden, Inhalte logisch zu organisieren und sorgt für eine klare Struktur, die die Benutzerbindung und Zufriedenheit steigert.
+Tabviews ermöglichen Entwickelnden, Inhalte logisch zu organisieren und sorgen für eine klare Struktur, die die Benutzerbindung und Zufriedenheit steigert.
 
 [[image-tabview]]
 .Tabview
@@ -1383,18 +1375,18 @@ Diese verhalten sich analog zum Tab-Label.
 .Tabview mit Icons und aktivem Reiter
 image::24_BE_tabmenu_icon.png[align="center"]
 
-Es ist ratsam ein Tabview zu nutzen, wenn der Inhalt nicht ohne massives Scrolling innerhalb des Screens dargestellt werden kann.
+Es ist ratsam ein Tabview zu nutzen, wenn der Inhalt nicht ohne starkes Scrolling innerhalb des Screens dargestellt werden kann.
 Dabei ist eine fachlich logische Aufgliederung vorauszusetzen.
 Die optimale Anzahl an Tabs liegt bei 4-7 Tabs.
 
 Sollte es fachlich zwingend notwendig sein, mehr Tabs anzubieten, so kann technisch ein „TabOverflow“ via Scrolling eingesetzt werden.
-Dieses Element ist ein „Überlangen-Tabview“.
+Dieses Element ist ein „Überlängen-Tabview“.
 
 [[image-tabview-overlong]]
 .Initiales Aussehen eines Überlängen-Tabview
 image::24_BE_tabmenu_long1.png[align="center"]
 
-Das Tabview nutzt dabei die volle, ihm zur Verfügung stehende, Breite und blasst (faded) den letzten sichtbaren Menüpunkt aus.
+Das Tabview nutzt dabei die volle, ihm zur Verfügung stehende Breite und graut (faded) den letzten sichtbaren Menüpunkt aus.
 Darüber liegt ein Pfeil, der es ermöglicht, zu den nächsten Tabs zu gelangen.
 Wurde dieser gedrückt, so springt das Tabview entsprechend viele Einträge weiter.
 
@@ -1414,22 +1406,21 @@ image::24_BE_tabmenu_measured.png[align="center"]
 
 *_Dos:_*
 
-* Setze Tabs ein, wenn die Komplexität der UI reduziert werden soll und eine sinnvolle Gruppierung einzelner Bereiche vorgenommen werden kann.
+*Tabs werden eingesetzt, wenn die Komplexität der UI reduziert werden soll und eine sinnvolle Gruppierung einzelner Bereiche vorgenommen werden kann.
 * Die optimale Anzahl an Tabs ist 4 – 7.
 * Labels für die Tabreiter sollten kurz und aussagekräftig sein.
 Es kann auch mit sinnvollen und verständlichen Abkürzungen gearbeitet werden.
-* Muss der Inhalt verschiedener Tabreiter verglichen/abgestimmt werden, ist eventuell ein dynamisches Panel das passendere Element.
-* Sollten es weniger als 3 Tabreiter sein, ist eventuell ein dynamisches Panel das passendere Element.
-* Verzichte, wenn möglich, auf ein Überlängen-Tabview.
+* Überlängen-Tabview sollten nur genutzt werden, wenn es keine andere Möglichkeit zur Gestaltung gibt.
 
 *_Don'ts:_*
 
-* Gestalte keine Seiten mit nur einem Tabreiter.
+* Seiten sollten nicht mit nur einem Tabreiter gestaltet werden. Bei weniger als drei Tabreitern, ist eventuell ein dynamisches Panel das passendere Element.
+* Muss der Inhalt verschiedener Tabreiter verglichen/abgestimmt werden, sollte anstelle eines Tabreiters leiber ein dynamisches Panel verwendet werden.
 * Tabreiter stellen nicht verschiedene Sichten zu gleichen Daten dar.
 * Tabreiter sind keine Prozessschritte.
-Für so etwas wird ein Wizard genutzt.
+Für diesen zweck wird ein Wizard genutzt.
 * Tabreiter sollen keine Abhängigkeiten zueinander haben.
-* Nutze keine Labels, die länger als 26 Zeichen sind.
+* Labels, die länger als 26 Zeichen sind sollten nicht genutzt werden.
 
 [[tabelle]]
 === Tabelle
@@ -1446,7 +1437,7 @@ So steht es der Anwendung frei:
 
 * Keine Zeile auswählbar zu machen.
 * Eine Zeile mit Klick auswählbar zu machen.
-* Eine Zeile mit Doppelklick z.B. direkt in der Detailansicht zu öffnen.
+* Eine Zeile mit Doppelklick zum Beispiel direkt in der Detailansicht zu öffnen.
 * Eine Zeile mit einer Spalte und Checkbox auswählbar zu machen.
 
 [IMPORTANT]
@@ -1454,7 +1445,7 @@ Es ist wichtig, das Verhalten der Tabelle innerhalb der Anwendung konsistent zu 
 Unterschiedliches Verhalten von Tabellen ist *NICHT* zulässig!
 
 Wenn keine oder eine Zeile auswählbar ist, dann erfolgen die Folgeaktionen über die Aktionselemente.
-Wenn eine Zeile sich z.B. direkt in der Detailansicht öffnen lässt, so sollte dies die primäre Funktion der Aktionen sein.
+Wenn eine Zeile sich zum Beispiel direkt in der Detailansicht öffnen lässt, so sollte dies die primäre Funktion der Aktionen sein.
 
 * Doppelklick = Detailansicht öffnen; folglich ist die erste/primäre Aktion = "Detailansicht öffnen".
 * Die aktive/fokussierte Zeile hat die Primärfarbe und der Hover entspricht dem PrimeNG Standard.
@@ -1520,7 +1511,7 @@ Alle nachfolgenden Punkte sind Möglichkeiten, die eingesetzt werden *können*.
 Sollte ein entsprechendes Verhalten angewandt werden, so ist darauf zu achten, dass die Tabellen sich in der Anwendung konsistent verhalten.
 
 * Die Kennzeichnung eines Objektes (Name, ID, etc...) kann als Link zur Navigation zu weiteren Details genutzt werden.
-* Der Doppelklick auf eine Zeile kann z.B. die Details eines Elements öffnen.
+* Der Doppelklick auf eine Zeile kann zum Beispiel die Details eines Elements öffnen.
 * Ausgewählte Zeilen müssen farbig hinterlegt sein.
 * Die erste Zeile kann per Default selektiert werden.
 
@@ -1583,7 +1574,7 @@ Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
 
 Menü-Buttons, technisch Split-Buttons, können zusammengehörige Funktionen zusammenfassen.
 Er ist eine Kombination aus einem <<button>> und einem <<dropdown,Dropdown>>.
-Die linke Hälfte des Buttons löst beim Betätigen eine Standardaktion aus (z.B. Speichern) und die rechte Hälfte öffnet eine Auswahl an Funktionen (z.B. Speichern als PDF, Speichern als XLS, uvm).
+Die linke Hälfte des Buttons löst beim Betätigen eine Standardaktion aus (zum Beispiel Speichern) und die rechte Hälfte öffnet eine Auswahl an Funktionen (zum Beispiel Speichern als PDF, Speichern als XLS, uvm).
 
 Diese Button-Art wird hauptsächlich in Toolbars eingesetzt und muss immer mehrere Funktionen, die in einen logischen Zusammenhang zueinander stehen, beinhalten.
 Eine mögliche Verwendung ist, dass zusammenfassen von mehreren Exportmöglichkeiten.
@@ -1599,7 +1590,7 @@ image::24_DP_Menue_Button.png[align="center"]
 
 [TIP]
 Das Icon sollte inhaltlich eindeutig zur Funktion passen.
-Nutzen Sie bereits bekannte Symbole (z.B. Diskette = Speichern).
+Nutzen Sie bereits bekannte Symbole (zum Beispiel Diskette = Speichern).
 Achten Sie bei der Gestaltung darauf, dass sie in ihrer Icon-Sprache über die gesamte Anwendung konsistent bleiben.
 
 [[eingabefeldgruppen]]
@@ -1607,7 +1598,7 @@ Achten Sie bei der Gestaltung darauf, dass sie in ihrer Icon-Sprache über die g
 
 Eingabefeldgruppen sind in fast jedem Frontend vorhanden.
 Sie haben stets einen unterschiedlichen fachlichen Schnitt, lassen sich aber in den häufigsten Anwendungsfällen in homogene Gruppen definieren.
-Bekannte Gruppen sind personenbezogene Daten wie z.B.: Angaben zur Person, Ortsdaten/Adresse, Bezahldaten.
+Bekannte Gruppen sind personenbezogene Daten wie zum Beispiel: Angaben zur Person, Ortsdaten/Adresse, Bezahldaten.
 
 Diese Gruppen bestehen immer aus mindestens einer Gruppenüberschrift/Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und ggf. weiteren <<bedienelemente,Bedienelementen>>.
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
