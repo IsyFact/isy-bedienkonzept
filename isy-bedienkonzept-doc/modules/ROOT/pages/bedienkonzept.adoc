@@ -1004,21 +1004,19 @@ image::24_BE_Icons.png[align="center"]
 [[link]]
 === Hyperlink
 
-Hyperlinks folgen per Default einem einheitlichen Styling und Links sind in der Regel unterstrichen.
+Hyperlinks sind verlinkte <<text,Texte>> (oder auch <<grafiken>>), die im Wesentlichen als Navigations-Mechanismus dienen, zum Beispiel um neue Fenster mit anderen Inhalten zu öffnen. Wird die Maus über einen Hyperlink bewegt, ändert sich der Cursor vom Pfeil zum Handsymbol.
+Hyperlinks folgen per Default einem einheitlichen Styling und sind in der Regel unterstrichen.
 Da Nutzende daran gewöhnt sind, weiterführende Informationen/Links in einem Fließtext oder auf einer Seite anhand des unterstrichenen Textes zu erkennen, ist es nicht ratsam, daran etwas zu ändern.
 //ToDo: Soll das heißen, dass das die Farbe der Links bei Bedarf geändert werden darf? Dann sollte das auch so geschrieben werden
 Viele Frontends greifen per CSS in das Styling ein und färben Links entsprechend ihrer Designregeln.
 
-Hyperlinks können einen Status (State) normal, hovered/focus und clicked haben.
+Hyperlinks können den Status (State) "normal", "hovered/focus" und "clicked" haben.
  
 [[image-hyperlinks]]
 .States von Hyperlinks
 image::24_BE_Links.png[align="center"]
 
-Hyperlinks dürfen nicht nur durch eine andere Farbe erkennbar sein.
-Sie benötigen zwingend ein farbunabhängiges Element zum Identifizieren und Erkennen des States.
-Hyperlinks sind verlinkte <<text,Texte>> (oder auch <<grafiken>>), die im Wesentlichen als Navigations-Mechanismus dienen, zum Beispiel um neue Fenster mit anderen Inhalten zu öffnen.
-Wird die Maus über einen Hyperlink bewegt, ändert sich der Cursor vom Pfeil zum Handsymbol.
+Hyperlinks benötigen zwingend ein farbunabhängiges Element zum Identifizieren und Erkennen des States.
 
 [TIP]
 Hyperlinks sollten aussagekräftig beschriftet sein.
@@ -1034,10 +1032,9 @@ Die Gestaltung und Platzierung von Eingabefeldern hat direkten Einfluss auf die 
 
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
 Altanwendungen, die nicht angepasst werden müssen, können weiterhin ihrem zum Umsetzungszeitpunkt gültigen Bedienkonzept entsprechen.
-Alle hier gezeigten Grafiken beziehen sich auf die aktuelle und zukünftige Umsetzung.
 
 Eingabefelder sind dynamisch.
-Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter <<placeholder,Placeholder>> und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
+Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (<<placeholder,Placeholder>>) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
 
 *_Normal:_*
 
@@ -1055,10 +1052,7 @@ Platzhalter müssen sinnvolle Eingabeunterstützungen (im einfachsten Fall das L
 .Eingabefeld aktiv
 image::24_BE_eingabefeld_aktiv.png[align="center"]
 
-Aktive Eingabefelder sind in der Highlightfarbe Blau dargestellt.
-Sie haben zusätzlich zur veränderten Farbe eine 1px dickere Umrandung.
-
-Aktive Eingabefelder verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung <<image-eingabefeldaktiv>>) oder eine Mask enthalten (siehe Abbildung <<image-eingabefeldmask>>).
+Aktive Eingabefelder werden mit einer 1px dickere Umrandung in der Highlightfrabe Blau dargestellt. Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung <<image-eingabefeldaktiv>>) oder eine Mask enthalten (siehe Abbildung <<image-eingabefeldmask>>).
 
 *_Befülltes Eingabefeld:_*
 
@@ -1066,7 +1060,7 @@ Aktive Eingabefelder verlieren ihren Platzhalter und können entweder geleert we
 .Eingabefeld befüllt nicht aktiv
 image::24_BE_eingabefeld_filled.png[align="center"]
 
-Wenn eine Eingabe in einem Eingabefeld getätigt wurde und das Feld wieder verlassen wird, wechselt das Eingabefeld wieder in den Normalzustand mit dem Unterschied, dass der Platzhalter verschwunden ist und die Eingabe in der Schriftfarbe angezeigt wird.
+Wenn eine Eingabe in einem Eingabefeld getätigt wurde und das Feld wieder verlassen wird, wechselt das Eingabefeld wieder in den Normalzustand mit dem Unterschied, dass der Platzhalter verschwunden ist und die Eingabe angezeigt wird.
 
 *_Disabled:_*
 
@@ -1091,9 +1085,9 @@ Erläuterungen können dabei unterschiedlich realisiert werden, sortiert von kur
 * als Klammeranhang am Label, um das Label zu erläutern, zum Beipiel: Name (gemeint ist der eingetragene Familienname).
 * als maximal zweizeiliger Hinweistext unter oder über dem Label (bitte nach Entscheidung konsistent im gesamten Frontend damit fortfahren).
 
-Alle Erläuterungstexte, die länger als 2 Zeilen einer Eingabefeldlänge benötigen, sind zu komplex gestaltet und bedürfen einer fachlichen Neugestaltung.
-Sollte dies nicht möglich sein, so ist ein vorangegangenes Textelement über dem Eingabefeld notwendig.
-Erklärungshilfen, sollen nicht dynamisch versteckt werden – entweder ist die Erläuterung notwendig, dass sollte sie sichtbar sein oder sie ist nicht notwendig, sodass sie entfernt werden kann.
+Alle Erläuterungstexte, die mehr als zwei Zeilen einer Eingabefeldlänge benötigen, sind zu komplex gestaltet und bedürfen einer fachlichen Neugestaltung.
+Sollte dies nicht möglich sein, so ist ein vorangehendes Textelement über dem Eingabefeld notwendig.
+Erklärungshilfen, sollen nicht dynamisch versteckt werden – entweder ist die Erläuterung notwendig, dann sollte sie sichtbar sein oder sie ist nicht notwendig, sodass sie entfernt werden kann.
 
 *_Exemplarische Vermaßung der verschiedenen Eingabefelder:_*
 
@@ -1111,7 +1105,7 @@ Der Abstand eines Eingabefelds zum darunter liegenden Label eines weiteren Einga
 *_Dos:_*
 
 * Die unmittelbare Nähe der <<label,Labels>> zu den dazugehörigen <<bedienelemente,Bedienelementen>> verbessert die visuelle Verbindung und ermöglicht es den Nutzenden, <<formulare>> schneller und effizienter auszufüllen.
-* Gleichmäßige Feldlängen unterstützen den Lesefluss des Nutzenden.
+* Gleichmäßige Feldlängen unterstützen den Lesefluss der Nutzenden.
 * Die Feldlängen sollten erwartungskonform gewählt werden.
 Soll zum Beispiel eine Postleitzahl innerhalb Deutschlands eingegeben werden, so ist es sinnvoll, die Feldlänge auf fünf Stellen zu begrenzen.
 Optisch kann das Eingabefeld der Konsistenz entsprechend länger sein.
@@ -1140,8 +1134,8 @@ Eine Mask kann in Einzelfällen auch dem Platzhalter entsprechen.
 [[eingabefeld-mit-button]]
 ==== Eingabefeld mit Input-Option
 
-Für häufig verwendete Eingaben gibt es Buttons, die als Input-Option in Eingabefeldern eingebaut werden können.
-Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsweise bei einem Date-Picker.
+Für häufig verwendete Eingaben gibt es die Möglichkeit Input-Optionen für das Eingabefeld anzeigen zu lassen..
+Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsweise die Eingabe eines Datums bei einem Date-Picker.
 
 [[image-eingabefeldinputoption]]
 .Eingabefeld mit Input-Option
@@ -1162,7 +1156,7 @@ Diese unterscheiden sich in der Größe und Form von gewöhnlichen <<eingabefeld
 .Textbox
 image::24_BE_Textbox.png[align="center"]
 
-Bei der Eingabe von Text können Textboxen manuell in ihrer Größe verändert werden, sodass der gesamte Inhalt angezeigt werden kann. Textboxen sollten mindestens so groß gestaltetet werden, dass der am häufigsten zu erwartende Inhalt hineinpasst, ohne manuell die Box zu anzupassen.
+Bei der Eingabe von Text können Textboxen manuell in ihrer Größe verändert werden, sodass der gesamte Inhalt angezeigt werden kann. Textboxen sollten mindestens so groß gestaltetet werden, dass der am häufigsten zu erwartende Inhalt hineinpasst, ohne manuell die Box anzupassen.
 
 [TIP]
 Textboxen haben die gleichen States und Styles wie Eingabefelder.
@@ -1172,7 +1166,7 @@ Textboxen haben die gleichen States und Styles wie Eingabefelder.
 
 Listen sind zentrale Bestandteile in Frontends und insbesondere von Fachanwendungen.
 Sie dienen dazu, Inhalte zu strukturieren und erfassbar zu machen.
-Listen ermöglichen es dem Nutzenden darüber zulässige Werte auszuwählen.
+Listen ermöglichen es dem Nutzenden, zulässige Werte auszuwählen.
 Dadurch werden Fehleingaben und unerwartete Ergebnisse reduziert.
 
 Listen bestehen optisch aus einem geschlossenen Rahmen und bestenfalls aus logisch sortierten Elementen.
@@ -1191,7 +1185,7 @@ Die einfachste Form einer Liste ist die rein textuelle Liste.
 image::24_BE_liste.png[align="center"]
 
 Eine Liste kann theoretisch beliebig viele Einträge enthalten, was aber die <<usability-und-benutzerfreundlichkeit,Usability>> verschlechtert.
-Im optimalen Fall haben Liste eine überschaubare Anzahl an logisch relevanten Einträgen.
+Im optimalen Fall haben Listen eine überschaubare Anzahl an logisch relevanten Einträgen.
 Die Einträge sind eindeutig und prägnant.
 Bei langen Einträgen können auch sinnvolle Abkürzungen genutzt werden.
 
@@ -1202,9 +1196,9 @@ Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
 
 * Listen sollen inhaltlich so einfach wie möglich gestaltet werden.
 * Listeneinträge sind eindeutig unterscheidbar.
-* Wenn Listen viele Einträge haben, so sollten andere Elemente für die Durchsuchbarkeit, Filterung oder Kategorisierung ermöglichen.
+* Wenn Listen viele Einträge haben, so sollten andere Elemente die Durchsuchbarkeit, Filterung oder Kategorisierung ermöglichen.
 * Listen können mit unterschiedlichen interaktiven Elementen kombiniert werden, um dem Nutzenden eine Hilfestellung zu bieten.
-* •	Bei einer kleinen Liste kann auch eine Radio-Button-Gruppe genutzt werden.
+* Bei einer kleinen Liste kann auch eine Radio-Button-Gruppe genutzt werden.
 
 *_Don'ts_*
 
@@ -1218,7 +1212,7 @@ Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
 === Checkbox
 
 Checkboxen ermöglichen es Nutzenden, *mehrere* Optionen aus einer (offenen) Liste auszuwählen und spielen eine wichtige Rolle bei der Interaktivität und Benutzerführung.
-Der gezielte Einsatz von Checkboxen bei kurzen Listen gibt dem Nutzenden die Möglichkeit, seine Optionen schnell zu erkennen und auszufüllen.
+Der gezielte Einsatz von Checkboxen bei kurzen Listen gibt den Nutzenden die Möglichkeit, die Optionen schnell zu erkennen und auszufüllen.
 
 Checkboxen können auch alleinstehend als boolean-Wert genutzt werden (zum Beispiel als Bestätigung beim Lesen der AGB).
 
