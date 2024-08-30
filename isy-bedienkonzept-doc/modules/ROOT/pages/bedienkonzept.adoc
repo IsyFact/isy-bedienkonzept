@@ -5,17 +5,16 @@ include::glossary:licence:partial$licence.adoc[]
 [[einfuehrung]]
 == Einführung
 
-Das Bedienkonzept nimmt eine zentrale Rolle in der Entwicklung von xref:referenzarchitektur:software-technisch/frontend.adoc[Frontends] ein.
-Es dient als umfassendes Regelwerk, das die Gestaltung und die Interaktionselemente definiert, sowie als Fundament für eine konsistente und benutzerfreundliche Benutzeroberfläche.
+Das vorliegende Bedienkonzept ist nicht nur ein Dokument mit Gestaltungsrichtlinien für xref:referenzarchitektur:software-technisch/frontend.adoc[Frontends], sondern ein umfassendes Werkezueg, das die Grundlage für die Entwicklung einer konsistenten und benutzerfreundlichen Benutzeroberfläche schafft. Indem es einheitliche Standards und Best Practices festlegt, trägt es maßgeblich zur Erreichung von Zielen wie der Steigerung der Benutzerzufriedenheit, der Verbesserung der Effizienz oder der Stärkung der Markenidentität bei.
 
-Das Hauptziel des Bedienkonzepts ist es, eine herausragende Benutzererfahrung zu schaffen, die die Zufriedenheit und Produktivität der Nutzenden maximiert.
-Es soll sicherstellen, dass Nutzende das Frontend ohne Schwierigkeiten nutzen können und dabei ihre Ziele *effizient* erreichen.
+Das Hauptziel ist dabei, die Benutzererfahrung zu verbessern und die Zufriedenheit und Produktivität der Nutzenden zu maximieren.
+So soll sichergestellt werden, dass Nutzende das Frontend ohne Schwierigkeiten verwenden können und dabei ihre Ziele *effizient* erreichen.
 
-In den folgenden Kapiteln werden die benötigten Elemente zum Erreichen einer herausragenden Benutzeroberfläche von "klein nach groß" beschrieben.
+In den folgenden Kapiteln werden die benötigten Elemente von "klein nach groß" beschrieben.
 *Der allgemeine Rahmen und die übergreifenden Prinzipien* werden in den ersten Kapiteln beschrieben.
 Darauf folgen die *<<basiselemente>>* (wie z.B. <<text>> und <<farben>>), die den Grundstein für die nachfolgenden Kapitel legen und von essenzieller Bedeutung sind.
 Danach kommen die *<<bedienelemente>>*, die einfachste Ausprägung eines Interaktionselements.
-*<<design-pattern>>* stellen eine Menge aus Bedienelementen und Basiselementen dar und können letztendlich in beliebiger Kombination als vollständige *<<use-cases>>* beschrieben werden.
+*<<design-pattern>>* stellen eine Bündelung von Bedienelementen und Basiselementen dar und können letztendlich in beliebiger Kombination als vollständige *<<use-cases>>* beschrieben werden.
 
 Eine Live-Demo zu den Richtlinien dieses Bedienkonzepts finden Sie unter:
 https://isyfact.github.io/isy-angular-widgets/
@@ -28,22 +27,17 @@ https://isyfact.github.io/isy-angular-widgets/
 Dieses Konzept ist für jedes Frontend relevant, unabhängig von dessen Komplexität oder Zielgruppe.
 Es ist gültig für alle Neuentwicklungen und Überarbeitungen von Frontends, die einem Major Change oder Technologiewechsel unterliegen.
 Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Altanwendungen.
+//ToDo: Q1-2024 gab es das Bedienkonzept noch ncht wirklich. Ich denke Q4 wäre besser.
 Das Bedienkonzept ist gültig ab Q1 – 2024.
-Die Gültigkeit des Bedienkonzepts für Altanwendungen bleibt zum damaligen Zeitpunkt mit den damalig gültigen Inhalten weiterhin aktiv.
-
-*_Bedeutung des Bedienkonzepts_*
-
-Das Bedienkonzept ist weit mehr als nur ein Dokument mit Gestaltungsrichtlinien.
-Es ist ein umfassendes Werkzeug, das die Grundlage für die Entwicklung einer erfolgreichen Benutzeroberfläche bildet.
-Indem es einheitliche Standards und Best Practices festlegt, trägt es maßgeblich zur Erreichung der Ziele eines Frontends bei.
-Diese Ziele können von der Steigerung der Benutzerzufriedenheit über die Verbesserung der Effizienz bis hin zur Stärkung der Markenidentität reichen.
+//To DO: Link zu älteren Versionen
+Für Altanwendungen gilt, dass das Bedienkonzept (beziehungsweise ehemals Styleguide) zum Zeitpunkt der Entwicklung der Altanwendung mit den damals geltenden Inhalten gültig bleibt.
 
 *_Rolle von Designenden, Entwickelnden und Fachlichkeit_*
 
 Designende und Entwickelnde spielen eine entscheidende Rolle bei der Umsetzung des Bedienkonzepts.
-Während Designende für die Gestaltung der Benutzeroberfläche verantwortlich sind und sicherstellen, dass sie den festgelegten Standards entspricht, liegt es in der Verantwortung der Entwickelnden, diese Gestaltung in ein funktionierendes Frontend umzusetzen.
+Während Designende für die Gestaltung der Benutzeroberfläche verantwortlich sind und sicherstellen, dass sie den festgelegten Standards entspricht, liegt es in der Verantwortung der Entwickelnden, diese Gestaltung in einem funktionierenden Frontend umzusetzen.
 Eine enge Zusammenarbeit zwischen Design- und Entwicklungsteams ist unerlässlich, um sicherzustellen, dass das Endprodukt den gestalterischen und funktionalen Anforderungen entspricht.
-Insbesondere bei komplexen Frontends ist es ratsam frühst möglich die Fachlichkeit hinzuzuziehen und den erarbeiteten Stand der Konzeption zu evaluieren.
+Insbesondere bei komplexen Frontends ist es ratsam so früh wie möglich die Fachlichkeit hinzuzuziehen und den erarbeiteten Stand der Konzeption zu evaluieren.
 
 *_Einhaltung von Standards und Best Practices_*
 
@@ -56,7 +50,7 @@ Die Entwicklungen und Änderungen werden entsprechend dem Stand der Technik und 
 
 *_Technische Kompatibilität_*
 
-Wenn Frontends anhand dieses Bedienkonzepts erstellt werden, müssen die korrekte Darstellung und Funktionsweisen des Frontends inklusive ihrer Browser-Funktionen, wie bspw. "Vor" und "Zurück", geprüft werden.
+Wenn Frontends anhand dieses Bedienkonzepts erstellt werden, müssen die korrekte Darstellung und Funktionsweisen des Frontends inklusive ihrer Browser-Funktionen, wie beispielsweise "Vor" und "Zurück", geprüft werden.
 Dafür muss für jedes Projekt der primäre Browser und dessen Versionen ermittelt und geprüft werden.
 
 In der Regel soll sichergestellt sein, dass folgende Browser unterstützt werden:
@@ -88,34 +82,34 @@ Dabei sind folgende Auflösungen zu berücksichtigen:
 Ein Bedienkonzept ist kein statisches Dokument, sondern sollte kontinuierlich weiterentwickelt und gepflegt werden.
 Mit dem Fortschreiten der Technologie und den sich ändernden Anforderungen der Nutzenden ist es wichtig, das Bedienkonzept regelmäßig zu überprüfen und anzupassen.
 Dadurch wird sichergestellt, dass das Bedienkonzept stets den aktuellen Standards und Best Practices entspricht.
-Diese kontinuierliche Weiterentwicklung erfordert eine enge Zusammenarbeit zwischen allen Beteiligten und eine offene Kommunikation über Änderungen und Aktualisierungen - insbesondere zwischen Umsetzungsprojekten, Stakeholdern und den Designenden, die mit diesem Dokument arbeiten.
+Diese kontinuierliche Weiterentwicklung erfordert eine enge Zusammenarbeit zwischen allen Beteiligten und eine offene Kommunikation über Änderungen und Aktualisierungen – insbesondere zwischen Umsetzungsprojekten, Stakeholdern und den Designenden, die mit diesem Dokument arbeiten.
 
 [[usability-und-benutzerfreundlichkeit]]
 === Usability (UI) und Benutzerfreundlichkeit (UX)
 
 Obwohl die Begriffe oft synonym verwendet werden, gibt es wichtige Unterschiede und Zusammenhänge, die sie voneinander unterscheiden und gleichzeitig miteinander verbinden.
 
-*_Begriff der Usability (UI)_*
+*_Begriff der Usability (User Interface - UI)_*
 
 Usability, oder Gebrauchstauglichkeit, bezieht sich auf die Benutzerfreundlichkeit einer Oberfläche (UI).
-Sie umfasst die Leichtigkeit, mit der Benutzende ein Frontend verstehen, erlernen und bedienen können.
+Dabei geht es darum, wie leicht Nutzende ein Frontend verstehen und die Bedienung erlernen können.
 Zu den Hauptkomponenten der Usability gehören:
 
 * *Effektivität:*
-Die Fähigkeit der Benutzenden, ihre Ziele präzise zu erreichen.
+Die Nutzende haben die Möglichkeit ihre Ziele zu erreichen.
 * *Effizienz:*
-Die Schnelligkeit und der Aufwand, mit dem Benutzende ihre Ziele erreichen.
+Die Nutzenden können ihre Ziele möglichst schnell und mit geringem Aufwand erledigen.
 * *Zufriedenheit:*
 Das Maß an Komfort und positiver Erfahrung der Benutzenden bei der Nutzung des Frontends.
 
 Usability ist eng mit dem Design der Benutzeroberfläche verknüpft.
-Eine gut gestaltete UI ermöglicht es den Benutzenden, intuitiv zu navigieren, schnell zu verstehen, wie sie Aufgaben ausführen können, und bietet klare, konsistente visuelle Hinweise.
+Eine gut gestaltete UI ermöglicht es den Benutzenden, intuitiv zu navigieren, schnell zu verstehen, wie sie Aufgaben ausführen können und bietet klare, konsistente visuelle Hinweise.
 Besonders bei komplexen Fachanwendungen ist es wichtig, dass eine gute UI sich nahtlos in die fachlich notwendigen Geschäftsprozesse integrieren lässt.
 
-*_Begriff der Benutzerfreundlichkeit (UX)_*
+*_Begriff der Benutzerfreundlichkeit (User Experience - UX)_*
 
-Benutzerfreundlichkeit oder User Experience (UX) geht über die reine Usability hinaus und bezieht sich auf das gesamte Erlebnis, das ein Benutzender mit einem Produkt oder einer Dienstleistung hat.
-UX umfasst alle Aspekte der Interaktion des Benutzenden, einschließlich der emotionalen, psychologischen und praktischen Reaktionen auf das Produkt.
+Benutzerfreundlichkeit oder User Experience (UX) geht über die reine Usability hinaus und bezieht sich auf das gesamte Erlebnis der Nutzenden mit einem Produkt oder einer Dienstleistung.
+UX umfasst alle Aspekte der Interaktion, einschließlich der emotionalen, psychologischen und praktischen Reaktionen auf das Produkt.
 
 *Hauptkomponenten der UX sind:*
 
@@ -146,9 +140,9 @@ Benutzende verbringen weniger Zeit und Mühe, um Aufgaben zu erledigen, was ihre
 Trotz ihrer engen Verbindung gibt es klare Unterschiede zwischen UI und UX:
 
 * *Fokusbereich:*
-Usability konzentriert sich auf die Effizienz und Effektivität der Benutzeroberfläche, während UX das gesamte Erlebnis des Benutzenden mit dem Produkt betrachtet.
+Usability konzentriert sich auf die Effizienz und Effektivität der Benutzeroberfläche, während UX das gesamte Erlebnis der Nutzenden mit dem Produkt betrachtet.
 * *Umfang:*
-Usability befasst sich hauptsächlich mit den funktionalen Aspekten der Interaktion, wie Navigation und Bedienbarkeit, während UX auch emotionale und psychologische Faktoren einbezieht, wie Freude und Zufriedenheit.
+Usability befasst sich hauptsächlich mit den funktionalen Aspekten der Interaktion wie Navigation und Bedienbarkeit, während UX auch emotionale und psychologische Faktoren einbezieht wie Freude und Zufriedenheit.
 * *Messbarkeit:*
 Usability kann durch spezifische Metriken wie Fehlerquote, Zeitaufwand und Benutzerzufriedenheit gemessen werden.
 UX erfordert jedoch eine umfassendere Bewertung, die qualitative und quantitative Methoden kombiniert, um das gesamte Benutzererlebnis zu verstehen.
@@ -159,16 +153,16 @@ UX erfordert jedoch eine umfassendere Bewertung, die qualitative und quantitativ
 Nutzende sollten stets verstehen, was von ihnen erwartet wird.
 Klare Anweisungen und verständliche Fehlermeldungen helfen dabei, Frustration zu vermeiden und den Nutzenden durch den Prozess zu führen.
 * *Validierung von Eingaben:*
-Validieren Sie Eingabefelder in Echtzeit, um Nutzende vor Fehlern zu warnen, bevor sie das Formular absenden.
+Eingabefelder sollten in Echtzeit validiert werden, um Nutzende vor Fehlern zu warnen, bevor sie das Formular absenden.
 Dadurch wird vermieden, dass Nutzende nach dem Absenden des Formulars feststellen, dass sie fehlerhafte oder unvollständige Informationen eingegeben haben.
 * *Progressive Offenbarung von Informationen:*
-Überladen Sie die Benutzeroberfläche nicht mit zu vielen Informationen auf einmal.
-Stellen Sie sicher, dass Informationen kontextbezogen und schrittweise offenbart werden, um Nutzende nicht zu überfordern.
+Die Benutzeroberfläche sollte nicht mit zu vielen Informationen auf einmal überladen werden.
+Informationen sollten kontextbezogen und schrittweise offenbart werden, um Nutzende nicht zu überfordern.
 * *Testen mit verschiedenen Nutzungsgruppen:*
-Um sicherzustellen, dass Ihre Oberfläche für eine breite Palette von Nutzenden zugänglich ist, ist es wichtig, Tests mit verschiedenen Personengruppen durchzuführen.
-Berücksichtigen Sie dabei Nutzende mit unterschiedlichen Fähigkeiten, Geräten und technischen Kenntnissen.
+Um sicherzustellen, dass die Oberfläche für eine breite Palette von Nutzenden zugänglich ist, ist es wichtig, Tests mit verschiedenen Personengruppen durchzuführen.
+Dabei sollten Nutzende mit unterschiedlichen Fähigkeiten, Geräten und technischen Kenntnissen berücksichtigt werden.
 
-Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind am jeweiligen <<bedienelemente,Bedienelement>>, am <<design-pattern>> oder an den <<eingabehilfen-und-fehlermeldungen>> zu finden (siehe jeweils bei den Unterkapiteln "Dos" und "Don'ts").
+Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Abshnitten zu den <<bedienelemente,Bedienelementen>>, <<design-pattern>> oder <<eingabehilfen-und-fehlermeldungen>> zu finden (siehe jeweils bei den Unterkapiteln "Dos" und "Don'ts").
 
 [[allgemeine-prinzipien]]
 === Allgemeine Prinzipien
@@ -180,51 +174,51 @@ Zusätzlich liefert https://lawsofux.com/[lawsofux] eine anschauliche Sammlung v
 
 *_Klarheit_*
 
-Im Design bezieht sich das Prinzip der "Klarheit" darauf, wie verständlich ein Frontend und wie einfach es zu navigieren ist.
+In Bezug auf das Design eines Frontends bezieht sich das Prinzip der "Klarheit" darauf, wie verständlich und einfach der Aufbau und die Navigation des Frontends gestaltet sind .
 Klarheit bedeutet, dass Informationen klar präsentiert werden, sodass Besuchende sofort verstehen, was das Frontend bietet und wie sie es nutzen können.
 Dies umfasst eine klare Strukturierung von Inhalten, eine leicht lesbare Typografie, gut platzierte Navigationselemente und eine konsistente visuelle Gestaltung.
 Durch die Priorisierung von Klarheit im Design können Designende sicherstellen, dass Nutzende sich leicht auf dem Frontend zurechtfinden und ihre Ziele effizient erreichen können.
 
 *_Konsistenz_*
 
-Im Design bezieht sich das Prinzip der "Konsistenz" auf die Notwendigkeit, ein einheitliches Erscheinungsbild und Verhalten über alle Seiten eines Frontends hinweg zu gewährleisten.
+Das Prinzip der "Konsistenz" bezieht sich auf die Notwendigkeit, ein einheitliches Erscheinungsbild und Verhalten über alle Seiten eines Frontends hinweg zu gewährleisten.
 Konsistenz bedeutet, dass Designelemente wie <<farben>>, <<text,Schriftarten>>, <<icons,Symbole>> und Layouts einheitlich angewendet werden, um eine nahtlose Benutzererfahrung zu schaffen.
 Durch die Aufrechterhaltung einer konsistenten Gestaltung können Nutzende das Frontend leichter verstehen und navigieren, da sie sich auf bereits bekannte Muster und Interaktionen verlassen können.
 Darüber hinaus trägt die Konsistenz dazu bei, das Markenimage zu stärken und das Vertrauen der Nutzenden in das Frontend zu fördern.
 
 *_Feedback_*
 
-Das Designprinzip des "Feedbacks" bezieht sich auf die kontinuierliche Kommunikation zwischen dem Frontend und ihren Nutzenden während deren Interaktionen.
+Das Designprinzip des "Feedbacks" bezieht sich auf die kontinuierliche Kommunikation zwischen dem Frontend und den Nutzenden.
 Feedback ist entscheidend, um den Nutzenden Rückmeldungen darüber zu geben, ob ihre Aktionen erfolgreich waren oder nicht.
-Dies kann in Form von visuellem Feedback, wie zum Beispiel einer Farbänderung eines <<button,Buttons>> nach einem Klick, oder durch informative Nachrichten, wie Bestätigungsmeldungen nach dem Absenden eines <<formulare,Formulars>>, erfolgen.
+Dies kann in Form von visuellem Feedback, zum Beispiel einer Farbänderung eines <<button,Buttons>> nach einem Klick oder durch informative Nachrichten wie Bestätigungsmeldungen nach dem Absenden eines <<formulare,Formulars>>, erfolgen.
 Durch effektives Feedback fühlen sich Nutzende unterstützt und informiert, was zu einer verbesserten Benutzererfahrung und einer höheren Zufriedenheit führt.
 Dies gilt insbesondere auch für Aspekte der <<barrierefreiheit>>.
-Technische Standardmöglichkeiten sollen genutzt und ggf. mit entsprechenden Hilfsmitteln (wie <<aria-labels,ARIA-Elementen>>) angereichert werden.
+Technische Standardmöglichkeiten sollen genutzt und gegebenenfalls mit entsprechenden Hilfsmitteln (wie <<aria-labels,ARIA-Elementen>>) angereichert werden.
 
 *_Effizienz_*
 
-Das Designprinzip der "Effizienz" bezieht sich darauf, wie gut ein Frontend die Bedürfnisse und Ziele ihrer Nutzenden mit minimalen Aufwänden erfüllt.
+Das Designprinzip der "Effizienz" bezieht sich darauf, wie gut ein Frontend die Bedürfnisse und Ziele der Nutzenden mit minimalen Aufwänden erfüllt.
 Effizientes Design strebt danach, unnötige Komplexität zu vermeiden und die Interaktionen der Nutzenden so reibungslos wie möglich zu gestalten.
 Dies umfasst Aspekte wie schnelle Ladezeiten, intuitive Navigation, gut platzierte Call-to-Actions und eine klare Informationsarchitektur.
-Ein effizientes Design stellt sicher, dass Nutzende ihre Ziele schnell erreichen können ohne dabei Zeit oder Mühe zu verschwenden - sei es beim Finden von Informationen, beim Abschließen eines Kaufs oder beim Ausführen einer bestimmten Aktion.
+Ein effizientes Design stellt sicher, dass Nutzende ihre Ziele schnell erreichen können, ohne dabei Zeit oder Mühe zu verschwenden – sei es beim Finden von Informationen, beim Abschließen eines Kaufs oder beim Ausführen einer bestimmten Aktion.
 
 *_Zugänglichkeit_*
 
 Das Designprinzip der "Zugänglichkeit" soll sicherstellen, dass ein Frontend für alle Nutzenden, unabhängig von ihren individuellen Fähigkeiten oder Einschränkungen, leicht zugänglich ist.
-Dies beinhaltet die Gestaltung und Entwicklung des Frontends unter Berücksichtigung verschiedener Bedürfnisse, wie zum Beispiel Sehbehinderungen, Hörbehinderungen oder motorische Einschränkungen.
-Zugängliches Design beinhaltet die Verwendung von verständlichen <<text,Texten>>, von <<barrierefreier-einsatz-von-farben,ausreichendem Kontrast zwischen Text und Hintergrund>>, von Tastaturzugänglichkeit und von <<alt-tag,alternativen Texten für Bilder>>, sowie die Vermeidung von Technologien (z.B. Gestensteuerung), die für einige Personengruppen hinderlich sein könnten.
+Dies beinhaltet die Gestaltung und Entwicklung des Frontends unter Berücksichtigung verschiedener Bedürfnisse, zum Beispiel Sehbehinderungen, Hörbehinderungen oder motorische Einschränkungen.
+Zugängliches Design beinhaltet die Verwendung von verständlichen <<text,Texten>>, von <<barrierefreier-einsatz-von-farben,ausreichendem Kontrast zwischen Text und Hintergrund>>, von Tastaturzugänglichkeit und von <<alt-tag,alternativen Texten für Bilder>>, sowie die Vermeidung von Technologien (zum Beispiel Gestensteuerung), die für einige Personengruppen hinderlich sein könnten.
 Ein zugängliches Design gewährleistet, dass alle Nutzenden die Informationen und Funktionen des Frontends nutzen können, was zu einer inklusiven und positiven Benutzererfahrung führt.
 Dieses Prinzip wird im Kapitel <<barrierefreiheit>> und unter den einzelnen <<bedienelemente,Bedienelementen>> detaillierter beschrieben.
 
 [[barrierefreiheit]]
 == Barrierefreiheit
 
-Die Zugänglichkeit ist ein wichtiges Prinzip, um sicherzustellen, dass alle, unabhängig von ihren Fähigkeiten, das Frontend nutzen können.
-Hier werden die Richtlinien zur Barrierefreiheit gemäß den Standards, wie z.B. WCAG, und Methoden zur Verbesserung der Zugänglichkeit erläutert.
+Barrierefreheit setzt das Prinzip der Zugänglichkeit um. Das heitßt, durch Barrierefreiheit soll sichergesetllt werden, dass alle, unabhängig von ihren Fähigkeiten, ein Frontend nutzen können.
+Im Folgenden werden die Richtlinien zur Barrierefreiheit gemäß den Standards wie WCAG und Methoden zur Verbesserung der Zugänglichkeit erläutert.
 
-Zugänglichkeitsstandards müssen berücksichtigt werden:
+Für dieses Bedienkonzept gilt, dass die Zugänglichkeitsstandards WCAG 2.1 und EN 305419 berücksichtigt werden müssen:
 
-* Alle Seiten mindestens bis zum Level AA.
+* Alle Seiten sonllten mindestens das Level AA oder höher erreichen.
 * Für Haupt- & Einstiegsseiten und Seiten mit rechtlicher Relevanz sollte das Level AAA berücksichtigt werden.
 
 Die detaillierten Anforderungen sind zu finden unter:
@@ -232,17 +226,21 @@ Die detaillierten Anforderungen sind zu finden unter:
 * https://www.w3.org/TR/WCAG21/[WCAG 2.1]
 * https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/en301549/en301549-node.html[EN 305419]
 
-Vor der Auflistung der einzelnen Kriterien sind im Kontext der IsyFact besondere Kriterien der Barrierefreiheit herauszustellen und bei der fachlichen Konzeption bereits zu berücksichtigen.
-In der Regel sind die genannten Anforderungen durch die Nutzung der Standardelemente der IsyFact erfüllt, oder es wird die Möglichkeit geboten, sicherzustellen, dass die fachlichen Elemente vorhanden sind.
-Alle hier genannten Maßnahmen sind zur Steigerung der Awareness und Transparenz aufgelistet:
+Vor der Auflistung der einzelnen Kriterien sind im Kontext der IsyFact einige Kriterien der Barrierefreiheit besonders herauszustellen und bereits bei der fachlichen Konzeption zu berücksichtigen.
+In der Regel sind die genannten Anforderungen durch die Nutzung der Standardelemente der IsyFact erfüllt 
+// TODO: Was soll das heißen?
+oder es wird die Möglichkeit geboten, sicherzustellen, dass die fachlichen Elemente vorhanden sind.
+//TODO: Was soll das heißen?
+Alle hier genannten Maßnahmen sind zur Steigerung der Awareness und Transparenz aufgelistet: 
 
-* Sorge dafür, dass alle Elemente auch ohne Maus erreichbar und bedienbar sind.
+*Dos*
+
 * <<eingabefeld,Eingabefelder>> müssen nach der Aktivierung eines Hochkontrastmodus/Farbfilters zu 50 % bestehen bleiben – eine einzelne Linie als Bestandteil ist nicht ausreichend als Identifizierung eines Eingabefeldes.
 * Die Textgröße soll im Standard mindestens 14pt betragen.
 * Der Textkontrast muss immer mindestens 4,5:1 und bei großen Texten mindestens 3:1 betragen.
-Für Haupt- & Einstiegsseiten, sowie Seiten mit rechtlicher Relevanz muss der Kontrast 7:1 betragen.
+Für Haupt- und Einstiegsseiten sowie Seiten mit rechtlicher Relevanz muss der Kontrast 7:1 betragen.
 * Es sollten keine Schriftgrafiken genutzt werden.
-* Alle Bilder benötigen ein inhaltlich sinnvolles beschreibendes <<alt-tag,Alt-Attribut>>.
+* Alle Bilder benötigen ein inhaltlich sinnvolles, beschreibendes <<alt-tag,Alt-Attribut>>.
 * <<grafiken,Bilder>>, die ausschließlich der Gestaltung dienen (z.B. Trennlinien), müssen als solche (Schmuckgrafik) gekennzeichnet werden.
 * *Tastatur-Navigation:*
 Nicht alle Nutzenden können eine Maus verwenden.
@@ -250,19 +248,20 @@ Daher ist es wichtig, dass alle Interaktionen auf dem Frontend auch über die Ta
 Dies bedeutet, dass alle Navigationselemente, <<link,Links>> und interaktiven Elemente leicht per Tastatur zugänglich sein müssen.
 * *Vermeidung von reinen Farbunterscheidungen:*
 Informationen sollten nicht allein durch <<farben,Farbe>> vermittelt werden, da einige Nutzende Farben nicht unterscheiden können.
-Nutzen Sie daher auch andere visuelle Elemente, wie <<icons,Symbole>> oder Muster, um wichtige Informationen zu vermitteln.
-* Vermeide schwache Kontraste z.B. hellblau auf Grau.
-* Löse keine Aktionen durch <<bedienelemente>> aus, wenn diese nicht dazu vorgesehen sind (z.B. <<radiobutton>> und <<checkbox,Checkboxen>>).
+Daher sollten auch andere visuelle Elemente, wie <<icons,Symbole>> oder Muster genutzt werden, um wichtige Informationen zu vermitteln.
+* Schwache Kontraste zum Beispiel Hellblau auf Grau sollen vermieden werden.
+* Aktionen sollen nicht durch <<bedienelemente>> ausgelöst werden, wenn diese nicht dazu vorgesehen sind (z.B. <<radiobutton>> und <<checkbox,Checkboxen>>).
 
 [[barrierefreier-einsatz-von-farben]]
 === Barrierefreier Einsatz von Farben
 
-<<farben>> sind ein Hauptbestandteil um Frontends zu gestalten und um die Nutzenden zu unterstützen.
+<<farben>> sind ein Hauptbestandteil, um Frontends zu gestalten und um die Nutzenden zu unterstützen.
 Um eine gute Erkennbarkeit der Elemente sicherzustellen, muss bei großer Schrift ein Kontrast von mindestens 3:1 gewährleistet sein.
 
-Nachfolgend sind alle in der Anwendung zur Verfügung stehenden Farben miteinander in ein Kontrastverhältnis gebracht.
+Nachfolgend sind die Kontrastverhältnisse aller zur Verfügung stehender Farben abgebildet.
 Farbkombinationen, die rot gelabelt sind und keinen ausreichenden Kontrast aufweisen, dürfen nicht verwendet werden.
-Andere Farbkombinationen sind entsprechend ihrem Text oder ihrer Elementgröße frei zu wählen.
+//TODO: Was soll das heißen?
+Andere Farbkombinationen sind entsprechend ihrem Text oder ihrer Elementgröße frei zu wählen. 
 Dabei soll der Kontrast so hoch wie möglich gewählt werden.
 
 [[image-farbmatrix]]
@@ -299,6 +298,7 @@ Beispiel:
 
 * *Kontextbezogen:*
 Der Alt-Text sollte den Kontext berücksichtigen, in dem das Bild verwendet wird.
+//TODO: Das Beispiel scheint mir nicht passend: Was hat das hier mit Kontext zu tun? In einem anderen Kontext wäre die Beschriftung eines Einkaufswagens wohl auch Einkaufwagen. 
 Beispiel:
 Bei einem Bild eines Einkaufswagens auf einer E-Commerce-Seite könnte der Alt-Text lauten:
 [source,xml]
@@ -323,7 +323,7 @@ Sie bieten zusätzliche Informationen für Screenreader, insbesondere für Eleme
 
 *_Implementierung von ARIA-Labels:_*
 
-ARIA-Labels kommen zum Einsatz, wenn ein <<bedienelemente,Bedienelement>> keinen eindeutigen, für Screenreader zugänglichen Text enthält.
+ARIA-Labels kommen zum Einsatz, wenn ein <<bedienelemente,Bedienelement>> keinen eindeutigen für Screenreader zugänglichen Text enthält.
 Hier sind die wichtigsten ARIA-Attribute und ihre Anwendungen:
 
 * *aria-label:*
@@ -368,7 +368,7 @@ Das Beachten der Best Practices beim Schreiben von Alt-Attributen und der Implem
 
 === Language Tag
 
-Das lang-Attribut informiert Browser und assistive Technologien über die Sprache des Inhalts.
+Das lang-Attribut informiert Browser und Unterstützungstechnologien über die Sprache des Inhalts.
 Dies hat mehrere Vorteile:
 
 * *Zugänglichkeit:*
@@ -376,7 +376,7 @@ Screenreader verwenden das lang-Attribut, um die richtige Aussprache und die kor
 * *Mehrsprachige Frontends:*
 Das lang-Attribut ermöglicht es, verschiedene Sprachversionen eines Frontends korrekt zu kennzeichnen und so die Benutzererfahrung zu verbessern.
 
-Nutzt dafür die standardisierten ISO 639-1 Sprachcodes (zwei Buchstaben), um die Sprache zu definieren (z.B. de = deutsch).
+Um die Sprache zu definieren, können die standardisierten ISO 639-1 Sprachcodes (zwei Buchstaben) genutzt werden (zum Beispiel: de = deutsch).
 Dabei gilt es folgende Grundregeln zu beachten:
 
 *_Festlegen der Hauptsprache eines Dokuments_*
@@ -388,7 +388,7 @@ Dies stellt sicher, dass alle Inhalte auf der Seite als in dieser Sprache verfas
 
 Wenn einzelne Abschnitte oder Elemente in einer anderen Sprache verfasst sind, sollte das lang-Attribut entsprechend auf diesen Elementen angewendet werden.
 Dies ist besonders wichtig für mehrsprachige Frontends, Dokumente und die korrekte Aussprache durch Screenreader.
-Wenn nötig, geben Sie hierfür spezifische Sprachvarianten oder Dialekte mithilfe von Codes für Regionen oder Länder an (z.B. en-US für amerikanisches Englisch, en-GB für britisches Englisch).
+Wenn nötig, können auch  spezifische Sprachvarianten oder Dialekte mithilfe von Codes für Regionen oder Länder angegeben werden (zum Beispiel: en-US für amerikanisches Englisch, en-GB für britisches Englisch).
 
 Das lang-Attribut wird nur verwendet, wenn der <<text>> tatsächlich in einer anderen Sprache verfasst ist.
 Es wird nicht aus ästhetischen oder stilistischen Gründen gesetzt.
@@ -411,11 +411,10 @@ Es wird nicht aus ästhetischen oder stilistischen Gründen gesetzt.
 == Technische Rahmenbedingungen
 
 Die technischen Rahmenbedingungen legen fest, welche Technologien und Plattformen für die Umsetzung des Bedienkonzepts verwendet werden sollen.
-Diese Einleitung bietet einen Überblick über die infrastrukturellen Anforderungen und unterstützten Technologien.
 
 * Für die Entwicklung von Frontends kommt primär die auf Angular basierte Widget Bibliothek https://primeng.org/installation[PrimeNG] zum Einsatz.
 * Ergänzend zu PrimeNG stellt die IsyFact einen Angular Baustein zur Verfügung.
-Dieser beinhaltet behördenspezifische Widgets, wie bspw. den Anwendungsrahmen oder Eingabefelder für Sonderzeichen.
+Dieser beinhaltet behördenspezifische Widgets wie den Anwendungsrahmen oder Eingabefelder für Sonderzeichen.
 * Der Baustein liefert ein eigenes Theme, welches die im Bedienkonzept beschriebenen <<allgemeine-prinzipien,allgemeinen Prinzipien>> weitestgehend umsetzt.
 Dieses Theme kann bei Bedarf auch durch ein projektspezifisches Theme ersetzt werden.
 * Das Frontend ist primär für die Nutzung auf Desktopgeräten konzipiert, kann aber mit ihrer Responsivität auch auf mobilen Geräten, sofern möglich, genutzt werden.
