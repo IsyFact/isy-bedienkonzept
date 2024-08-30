@@ -1425,8 +1425,7 @@ Für diesen zweck wird ein Wizard genutzt.
 [[tabelle]]
 === Tabelle
 
-Eine Tabelle dient der übersichtlichen Anzeige von größeren Datenmengen.
-Die Tabelle besteht aus mehreren Spalten, die zur Sortierung verwendet werden können.
+Eine Tabelle dient der übersichtlichen Anzeige von größeren Datenmengen und besteht aus mehreren Spalten, die zur Sortierung verwendet werden können.
 
 [[image-tabelle]]
 .Beispiel Tabelle
@@ -1444,6 +1443,7 @@ So steht es der Anwendung frei:
 Es ist wichtig, das Verhalten der Tabelle innerhalb der Anwendung konsistent zu halten.
 Unterschiedliches Verhalten von Tabellen ist *NICHT* zulässig!
 
+//ToDo: Abschnitt nicht verständlich
 Wenn keine oder eine Zeile auswählbar ist, dann erfolgen die Folgeaktionen über die Aktionselemente.
 Wenn eine Zeile sich zum Beispiel direkt in der Detailansicht öffnen lässt, so sollte dies die primäre Funktion der Aktionen sein.
 
@@ -1458,28 +1458,29 @@ Weniger wichtige Spalten können ausgeblendet werden.
 Es ist nicht zielführend alle Daten anzuzeigen.
 Die Fachlichkeit sollte sich auf eine Teilmenge von wichtigen Informationen beschränken.
 * Überlaufende Textlabels werden abgetrennt und mit einem Tooltip ergänzt.
-* Wähle Spaltentitel so kurz wie möglich und prägnant.
+* Spaltentitel sollten so kurz wie möglich und prägnant gewählt werden.
 Abkürzungen sind zulässig.
+//ToDo: Der Spaltentitel?
 * Die initiale oder maximale Breite von Spalten muss sich an den zu erwartenden Inhalten orientieren, auch wenn der Titel dadurch abgeschnitten wird (es gibt keine feste maximale Buchstabenanzahl).
+//ToDo: Was heißt das? Sollten breiter als der Rest der Spalten sein?
 * Die Spalten mit den größten Wortlängen sollten den maximal verfügbaren Platz einnehmen.
 * Vertikales Scrolling ist zu vermeiden.
 * Die Spalten sollten ihrer Wichtigkeit nach angeordnet werden.
 * Tabellen sollten nach Möglichkeit max. 20 Zeilen anzeigen und dann eine Paginierung nutzen.
 Sollte es fachlich notwendig sein, kann auch endless-scrolling eingesetzt werden.
-* Nutzt <<icons,Symbole>> und <<grafiken,Bilder>> zur schnelleren visuellen Unterscheidung von Listeneinträgen.
+* <<icons,Symbole>> und <<grafiken,Bilder>> können zur schnelleren visuellen Unterscheidung von Listeneinträgen genutzt werden.
 
 *_Don'ts:_*
 
-* Erzeuge keine Tabellen mit nur 1-2 Spalten.
+* Es sollten keine Tabellen mit nur 1-2 Spalten erzeugt werden.
 * Tabellen sollen nicht vertikal scrollen, also beschränke dich auf die nötigsten Informationen.
-* Wähle keine unnötig breite Spalte, weil ein einziger Eintrag länger ist als der Durchschnitt.
-* Verzichte auf Symbole oder Bilder, wenn diese sich nur wiederholen.
+* Wenn nur ein einziger Eintrag länger ist als der Durchschnitt, sollte sich die Breite der Spalten nicht nach diesem Eintrag richten. 
+* Wenn sich Symbole oder Bilder nur wiederholen, sollte auf sie verzichtet werden.
 
 [[sortierung-tabelle]]
 ==== Sortierung in einer Tabelle
 
-Tabellen sollten aufgrund ihrer großen Datenmengen pro Spalte sortierbar sein.
-Daher bieten Tabellen eine auf- und absteigende Sortierung an (zwei Pfeile im Tabellenheader).
+Tabellen sollten aufgrund ihrer großen Datenmengen pro Spalte sortierbar sein und eine auf- und absteigende Sortierung anbieten (zwei Pfeile im Tabellenheader).
 Der Klickbereich des Icons ist dabei 44px x 44px groß (s. <<image-tabelle>>).
 
 * Der erste Klick auf die Sortiericons sortiert die Tabelle nach den Werten in der gewählten Spalte aufsteigend.
@@ -1505,32 +1506,29 @@ Die Filter lassen sich in beliebiger Weise kombinieren.
 
 Wie im allgemeinen Kapitel zu <<tabelle,Tabellen>> beschrieben, gibt es verschiedene Möglichkeiten ein Element in der Tabelle zu selektieren.
 Dabei ist die notwendige Fachlichkeit maßgeblich für das Verhalten verantwortlich.
-Es kann vorkommen, dass es in einer Anwendung sinnvoll ist, eine große Datenmenge auszuwählen, während in einer anderen Anwendung möglicherweise gar keine Auswahl zugelassen wird.
+Es kann vorkommen, dass es in einer Anwendung sinnvoll ist, eine große Datenmenge auszuwählen und dass es in einer anderen Anwendung wiederum besser ist, gar keine Auswahl zu zulassen. Grundsätzlich gilt, dass ausgewählte Zeilen farbig hinterlegt werden müssen. Alle nachfolgenden Punkte sind Möglichkeiten, die eingesetzt werden *können*.
+Sollte ein entsprechendes Verhalten angewendet werden, so ist darauf zu achten, dass sich alle Tabellen in der Anwendung konsistent verhalten.
 
-Alle nachfolgenden Punkte sind Möglichkeiten, die eingesetzt werden *können*.
-Sollte ein entsprechendes Verhalten angewandt werden, so ist darauf zu achten, dass die Tabellen sich in der Anwendung konsistent verhalten.
-
-* Die Kennzeichnung eines Objektes (Name, ID, etc...) kann als Link zur Navigation zu weiteren Details genutzt werden.
+* Die Kennzeichnung eines Objektes (Name, ID, etc...) kann als Link zur Navigation genutzt werden, um weitere Details anzuzeigen.
 * Der Doppelklick auf eine Zeile kann zum Beispiel die Details eines Elements öffnen.
-* Ausgewählte Zeilen müssen farbig hinterlegt sein.
 * Die erste Zeile kann per Default selektiert werden.
 
 [[bigdata-tabelle]]
 ==== Große Datenmengen in einer Tabelle
 
 Tabellen können sehr viele Daten enthalten und gegebenenfalls sehr lang werden.
-Um dem Nutzenden den Umgang mit solchen Tabellen zu vereinfachen, werden zunächst nicht alle Daten initial in der Tabelle angezeigt.
+Um für Nutzende den Umgang mit solchen Tabellen zu vereinfachen, sollten zunächst nicht alle Daten initial in der Tabelle angezeigt werden.
 Über einen "Mehr anzeigen"-Button, Endless Scrolling oder einen Paginator kann der Benutzende sich bei Bedarf mehr Daten anzeigen lassen.
 
 *_Paginator_*
 
 * Der Paginator wird nach 10 oder 20 Zeilen am Ende der Tabelle angezeigt.
-* Der Paginator erlaubt es die nächste Seite anzuspringen, aber auch weiter entfernte Seiten auszuwählen.
+* Der Paginator erlaubt es, die nächste Seite aber auch weiter entfernte Seiten auszuwählen.
 
 *_Endless Scrolling_*
 
 * Die Tabelle wird initial mit den ersten 10 oder 20 Zeilen angezeigt.
-* Per Default wird eine vertikale Scrollbar angezeigt und beim Scrollen entsprechend viele weitere Datensätze geladen und sichtbar.
+* Standardmäßig erscheint eine Scrollbar und beim Scrollen werden nach und nach weitere Zeilen eingeblendet, während die oberen Zeilen aus dem View verschwinden
 
 [NOTE]
 Es kann Lazy Loading verwendet werden.
