@@ -868,14 +868,12 @@ Nachfolgend werden die verschiedenen Arten von Buttons und ihre Anwendung in der
 [[colored-button]]
 ==== Kolorierte Button
 
-Kolorierte Buttons oder auch farbig gefüllte Buttons sind die am häufigsten verwendete Button-Variante.
+Kolorierte Buttons oder auch farbig gefüllte Buttons sind die am häufigsten verwendete Button-Variante. Grundsätzlich handelt es sich um minimal abgerundete Rechtecke, die ein Textlabel, ein Icon oder eine Kombination aus beidem enthalten und farblich gefüllt sind.
 //ToDo Wie unterstützen die Buttons denn mit ihrer Farbe das Erreichen des Ziels? Das Ziel wird durch Klicken auf den Button erreicht. Die Farbe dient dazu, dass man den Button leichter findet. Bitte entweder explizit schreiben oder weglassen.
 Mit ihrer kräftigen <<farben,Farbe>> unterstützen sie den Nutzenden aktiv beim Erreichen eines Ziels (zum Beispiel Absenden, Speichern, uvm).
 Deshalb werden sie auch CTA-Buttons (Call-To-Action Buttons) genannt.
 
-Buttons enthalten entweder ein <<label,Textlabel>>, ein <<icons,Icon>> oder eine Kombination aus beidem.
-Grundsätzlich sind beschriftete Buttons minimal abgerundete Rechtecke, die farblich gefüllt sind.
-Je nach Zustand des Buttons, die in der Abbildung <<image-standardbutton>> dargestellt sind, unterscheiden sich die eingesetzten Farben und Fokus-Border voneinander:
+Je nach Zustand des Buttons unterscheiden sich die eingesetzten Farben und Fokus-Border voneinander. Dies ist in der Abbildung <<image-standardbutton>> dargestellt.
 
 [[image-standardbutton]]
 .Zustände von beschrifteten Buttons in Primärfarbe
@@ -885,12 +883,12 @@ In diesem Beispiel wurde die Primärfarbe Blau (mit weißer Schrift) verwendet, 
 In den Zuständen "Hover" und "Pressed" wird die Button-Farbe dunkler als im Normalzustand.
 Entsprechend wird die Button-Farbe im Zustand "Disabled" heller.
 Im "aktiven" bzw. "fokussierten" Zustand bekommt der Button einen Fokus-Rahmen, der einen helleren Ton hat als der Button selbst.
-Die Button-Farbe bleibt jedoch die gleiche, wie im Normalzustand.
+Die Button-Farbe bleibt jedoch die gleiche wie im Normalzustand.
 Dies lässt sich beim Einsatz der anderen Farben, wie in Abbildung <<image-buttoncolors>> exemplarisch zu sehen, ebenso anwenden.
 
 *_Farbwahl bei Buttons_*
 
-Die hier gezeigten Farben sind die einzig zulässigen Farben, die im Frontend für Button-Elemente verwendet werden dürfen:
+Die folgende Grafik zeigt die zulässigen Farben, die im Frontend für Button-Elemente verwendet werden dürfen:
 
 [[image-buttoncolors]]
 .Farben von kolorierten Buttons
@@ -903,32 +901,27 @@ Die Hauptaufgabe dieser Seite ist es, neue Mitgliedschaften zu generieren, wesha
 
 In der Regel wird nur ein Button innerhalb der sichtbaren Bedienoberfläche in der Primärfarbe eingefärbt.
 Dies hilft den Nutzenden sich auf die Hauptaktion zu fokussieren.
-Alle anderen Buttons werden in der Sekundärfarbe oder als <<inverted-button,Outlined Button>> dargestellt, falls keine spezifische Funktion zugrunde liegt.
 
-Für spezielle Aktionen gibt es neben der Primär- und Sekundärfarbe weitere Farben wie Grün für Erfolg oder Rot für Alarm.
-Vor allem bei Aktionen, die nicht wieder rückgängig zu machen sind, wie Löschen oder Entfernen, kann ein roter "Alarm"-Button sehr hilfreich sein.
-Diese Signalfarbe veranlasst den Nutzenden noch einmal über seine Aktion nachzudenken, da diese nach der Bestätigung endgültig ist.
-Jedoch sollte die Anzahl der genutzten Farben innerhalb einer Benutzeroberfläche mit Bedacht eingesetzt werden, um die Frontends nicht zu überladen.
+Für manche Aktionen sollten spezielle Farben verwendet werden, die eine bestimmte Bedeutung haben, zum Beispiel Grün für Erfolg oder Rot für Alarm.
+Vor allem bei Aktionen, die nicht wieder rückgängig gemacht werden können, wie Löschen oder Entfernen, kann ein roter "Alarm"-Button sehr hilfreich sein.
+Diese Signalfarbe veranlasst den Nutzenden noch einmal über seine Aktion nachzudenken, da diese nach der Bestätigung endgültig ist. Alle anderen Buttons werden in der Sekundärfarbe oder als <<inverted-button, Invertierter Button>> dargestellt.
+Insgesamt sollte die Anzahl der genutzten Farben innerhalb einer Benutzeroberfläche nicht zu hoch sein, um das Frontend nicht zu überladen.
 
 *_Platzierung der Buttons_*
 
 Bei der Platzierung der Buttons innerhalb eines Frontends wird zwischen zwei Use Cases unterschieden.
 Bei kleinen Dialogfenstern, in denen lediglich zwischen Akzeptieren und Abbrechen einer Aktion unterschieden wird, wird der Primär-Button rechts unten platziert.
 
-Auf <<formulare,Formularseiten>> oder auch Full-Page Designs ist die Häufigkeit der Verwendung der Buttons ausschlaggebend.
+Auf <<formulare,Formularseiten>> oder auch Full-Page-Designs ist die Häufigkeit der Verwendung der Buttons ausschlaggebend.
 Buttons für primäre, einleitende und abschließende Aktionen können sehr präsent in der Mitte des Frontends angeordnet werden.
-Buttons für navigierende und häufiger verwendete Aktionen werden bevorzugt rechts angeordnet.
-
-//ToDO: Gehört der Satz nicht zum Absatz darüber?
-Dies liegt daran, dass die Aufmerksamkeit der Nutzenden während des Lesens oder Hinzufügens von Informationen dorthin gerichtet ist.
-Es ist darauf zu achten, dass die Anordnung der Buttons mit identischem Zweck über alle Frontends hinweg konsistent bleibt.
+Buttons für navigierende und häufiger verwendete Aktionen werden bevorzugt rechts angeordnet, da die Aufmerksamkeit der Nutzenden während des Lesens oder Hinzufügens von Informationen dorthin gerichtet ist.
+Es ist darauf zu achten, dass die Anordnung der Buttons mit identischem Zweck über das gesamte Frontend hinweg konsistent bleibt.
 
 *_Abgrenzung zu anderen Bedienelementen_*
 
 Da Buttons als Aktionselemente eingesetzt werden, dürfen diese nicht genutzt werden, um Selektionen aus einer Gruppe von Optionen zu treffen.
 Stattdessen werden <<radiobutton,Radiobuttons>>, <<checkbox,Checkboxen>> oder <<input-switch,Input Switches>> verwendet.
-Generell wird kein Button verwendet, wenn nur das Textlabel ohne farbliche und räumliche Abgrenzung zum Hintergrund eingesetzt wird, sondern ein <<link>>.
-Hyperlinks kommen beispielsweise bei Fließtexten oder Seitenleisten zum Einsatz.
+Wenn nur das Textlabel ohne farbliche und räumliche Abgrenzung zum Hintergrund verwendet wird, kommt kein Button, sondern ein <<link>> zum Einsatz (beispielsweise bei Fließtexten oder Seitenleisten).
 
 *_Dos_*
 
@@ -936,13 +929,13 @@ Hyperlinks kommen beispielsweise bei Fließtexten oder Seitenleisten zum Einsatz
 * Buttons mit dem wichtigsten Ziel beziehngsweise mit der am häufigsten genutzten Aktion werden in der Primärfarbe dargestellt.
 Falls es unklar ist, welche Aktion wichtiger ist, wird die Standardaktion als primäre Aktion angesehen und entsprechend gefärbt.
 * Das <<label>> sollte kurz und selbsterklärend sein.
-* Das Label sollte die auszuführende Aktion widerspiegeln (zum Beispiel Öffnen, Löschen, Speichern, Weiter).
-* Ruft ein Button einen Dialog auf, soll der resultierende Dialog die Beschriftung des Buttons als Titel wiederholen.
+* Das Label sollte die auszuführende Aktion beschreiben (zum Beispiel Öffnen, Löschen, Speichern, Weiter).
+* Wenn ein Button einen Dialog aufruft, sollte der resultierende Dialog die Beschriftung des Buttons als Titel wiederholen.
 * Die Schaltfläche für Buttons beträgt mindestens 44px x 44px.
 * Die Breite eines Buttons soll sich am enthaltenen Label orientieren.
 * Nebeneinanderstehende Buttons können unterschiedlich breit sein, wenn die jeweiligen Labels unterschiedlich groß sind.
 * Ein Button soll nach Möglichkeit so platziert werden, dass mögliche Beziehungen zu anderen Elementen deutlich werden.
-* Wenn nach einem Klick auf einen Button die Ergebnisaktion nicht sofort ersichtlich ist, soll dies durch ein System-Feedback (z. B. durch eine <<fortschrittsanzeige>>) veranschaulicht werden.
+* Wenn nach einem Klick auf einen Button die Ergebnisaktion nicht sofort ersichtlich ist, soll dies durch ein System-Feedback (zum Beispiel durch eine <<fortschrittsanzeige>>) veranschaulicht werden.
 
 *_Don'ts_*
 
@@ -960,14 +953,15 @@ Falls die <<image-buttoncolors,farblich gefüllten Buttons>> das Frontend zu bun
 .Farben von invertierten Buttons
 image::24_BE_Outlined_Buttons.png[align="center"]
 
-In der invertierten Button-Variante ist die Button-Farbe für jeden Aktionsbutton weiß und nur die Schrift und die Button-Border farblich eingefärbt.
+Bei der invertierten Button-Variante ist die Button-Farbe für jeden Aktionsbutton weiß und nur die Schrift und die Button-Border farblich eingefärbt.
 Die unterschiedlichen Button-Zustände lassen sich wie bei den farblich gefüllten Buttons voneinander abgrenzen.
-D.h. bei den Zuständen "Hover" und "Pressed" wird die Button-Farbe, die nicht mehr weiß, sondern mit der Button-Schriftfarbe vermischt ist, dunkler und beim Zustand "Disabled" heller.
+Das heißt, bei den Zuständen "Hover" und "Pressed" wird die Button-Farbe, die nicht mehr weiß, sondern mit der Button-Schriftfarbe vermischt ist, dunkler und beim Zustand "Disabled" heller.
 Im "aktiven" bzw. "fokussierten" Zustand erhält der Button einen Fokus-Rahmen, der einen helleren Ton als die Button-Rahmenfarbe aufweist.
 
 [TIP]
 Invertierte Buttons werden häufig genutzt, wenn es mehr als zwei Aktionen auf einer Seite gibt oder wenn einer Aktion ein besonderer Fokus eingeräumt werden soll, wie zum Beispiel beim "Registieren".
-D.h. nach der Nutzung des <<colored-button,kolorierten Buttons>> in der Primärfarbe kann auf die invertierten Buttons umgestiegen werden.
+Das heißt. nach der Nutzung eines <<colored-button,kolorierten Buttons>> in der Primärfarbe kann auf die invertierten Buttons umgestiegen werden.
+//ToDo: Das wiederspricht sich doch. Im Satz darüber wird doch beschrieben, dass beide Buttonvarianten zusammen genutzt werden.
 Eine Kombination aus farblich kolorierten und invertierten Buttons ist jedoch nicht zulässig.
 Es sollte eine der beiden Varianten konsistent im gesamten Frontend benutzt werden.
 
@@ -977,7 +971,7 @@ Es sollte eine der beiden Varianten konsistent im gesamten Frontend benutzt werd
 Icon-Buttons sind Buttons die kein sichtbares Label haben, sondern nur aus einem aussagekräftigen <<icons,Icon>> bestehen.
 Sie sind rund und haben einen farbigen Rand, um sich vom Hintergrund oder anderen <<basiselemente,Basis>>- und <<bedienelemente,Bedienelementen>> abzugrenzen.
 Dabei ist es essenziell, dass das Icon die dahinterstehende Funktionalität ausdrückt.
-Bei der Entwicklung muss darauf geachtet werden, dass Icon-Buttons durch ein <<aria-labels,ARIA-Label>> für Screenreader zugänglich werden.
+Bei der Entwicklung muss darauf geachtet werden, dass Icon-Buttons durch ein <<aria-labels,ARIA-Label>> für Screenreader zugänglich sind.
 
 Generell sollten Icon-Buttons mit Bedacht eingesetzt werden und können somit nicht jeden beliebigen beschrifteten Button ersetzen.
 Am häufigsten wird diese Button-Art in Kombination mit einer Aktion eines Bedienelements oder <<design-pattern,Design Patterns>> genutzt, wie zum Beispiel in der Aktionsspalte einer Tabelle oder zum Hinzufügen oder Löschen von Elementen.
@@ -991,9 +985,9 @@ Für positive Aktionen wird das grüne Styling, für negative Aktionen das rote 
 Sie unterscheiden sich lediglich in der Form und Größe.
 
 Beim Hovern über einen Icon-Button kann ein Tooltip angezeigt werden, der die entsprechende Funktionalität beschreibt.
-Ist diese Beschreibung jedoch zu lang (mehr als 3 Wörter), ist das Icon nicht dafür geeignet einen beschrifteten Button zu ersetzen.
+Ist diese Beschreibung jedoch zu lang (mehr als drei Wörter), ist das Icon nicht dazu geeignet, einen beschrifteten Button zu ersetzen.
 
-Sonderfall:
+*Sonderfall:*
 
 In speziellen Fällen werden Icon-Buttons auch ohne ihre Border dargestellt. Hierbei ist es besonders wichtig, dass die Icon-Buttons passend zum Design Pattern gewählt werden. Diese werden beispielsweise innerhalb von Tabellenheadern verwendet zum Sortieren und Filtern der Tabelleninhalte und sehen wie folgt aus:
 
@@ -1005,11 +999,7 @@ image::24_BE_Icons.png[align="center"]
 *_Dos_*
 
 * Die Schaltfläche für Icon-Buttons beträgt mindestens 44px x 44px.
-* Ein Icon-Button ohne Border muss so platziert werden, dass Beziehungen zu anderen Elementen deutlich werden.
-
-*_Don't_*
-
-Icon-Buttons ohne Border sollten nie ohne einen Bezug zu anderen <<bedienelemente,Bedienelementen>> eingesetzt werden.
+* Ein Icon-Button ohne Border muss so platziert werden, dass die Beziehungen zu anderen Elementen deutlich werden.
 
 [[link]]
 === Hyperlink
