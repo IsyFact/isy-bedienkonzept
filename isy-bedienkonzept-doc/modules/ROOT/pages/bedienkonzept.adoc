@@ -882,7 +882,7 @@ image::24_BE_Primary_Button_States.png[align="center"]
 In diesem Beispiel wurde die Primärfarbe Blau (mit weißer Schrift) verwendet, um die unterschiedlichen Zustände eines Buttons zu veranschaulichen.
 In den Zuständen "Hover" und "Pressed" wird die Button-Farbe dunkler als im Normalzustand.
 Entsprechend wird die Button-Farbe im Zustand "Disabled" heller.
-Im "aktiven" bzw. "fokussierten" Zustand bekommt der Button einen Fokus-Rahmen, der einen helleren Ton hat als der Button selbst.
+Im "aktiven" beziehungsweise "fokussierten" Zustand bekommt der Button einen Fokus-Rahmen, der einen helleren Ton hat als der Button selbst.
 Die Button-Farbe bleibt jedoch die gleiche wie im Normalzustand.
 Dies lässt sich beim Einsatz der anderen Farben, wie in Abbildung <<image-buttoncolors>> exemplarisch zu sehen, ebenso anwenden.
 
@@ -956,7 +956,7 @@ image::24_BE_Outlined_Buttons.png[align="center"]
 Bei der invertierten Button-Variante ist die Button-Farbe für jeden Aktionsbutton weiß und nur die Schrift und die Button-Border farblich eingefärbt.
 Die unterschiedlichen Button-Zustände lassen sich wie bei den farblich gefüllten Buttons voneinander abgrenzen.
 Das heißt, bei den Zuständen "Hover" und "Pressed" wird die Button-Farbe, die nicht mehr weiß, sondern mit der Button-Schriftfarbe vermischt ist, dunkler und beim Zustand "Disabled" heller.
-Im "aktiven" bzw. "fokussierten" Zustand erhält der Button einen Fokus-Rahmen, der einen helleren Ton als die Button-Rahmenfarbe aufweist.
+Im "aktiven" beziehungsweise "fokussierten" Zustand erhält der Button einen Fokus-Rahmen, der einen helleren Ton als die Button-Rahmenfarbe aufweist.
 
 [TIP]
 Invertierte Buttons werden häufig genutzt, wenn es mehr als zwei Aktionen auf einer Seite gibt oder wenn einer Aktion ein besonderer Fokus eingeräumt werden soll, wie zum Beispiel beim "Registieren".
@@ -1214,17 +1214,16 @@ Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
 Checkboxen ermöglichen es Nutzenden, *mehrere* Optionen aus einer (offenen) Liste auszuwählen und spielen eine wichtige Rolle bei der Interaktivität und Benutzerführung.
 Der gezielte Einsatz von Checkboxen bei kurzen Listen gibt den Nutzenden die Möglichkeit, die Optionen schnell zu erkennen und auszufüllen.
 
-Checkboxen können auch alleinstehend als boolean-Wert genutzt werden (zum Beispiel als Bestätigung beim Lesen der AGB).
+Checkboxen können auch alleinstehend als boolean-Wert genutzt werden (zum Beispiel, um das Lesen der AGB zu bestätigen).
 
 [[image-checkboxen]]
 .Checkboxen
 image::24_BE_checkboxen.png[align="center"]
 
-Checkboxen sind 24px x 24px groß, haben aber für mobile Geräte mindestens einen 44px x 44px großen Klickbereich (Click-Target-Area).
+Checkboxen sind 24px x 24px groß und weisen für mobile Geräte mindestens einen 44px x 44px großen Klickbereich (Click-Target-Area) auf.
 Checkboxen haben immer ein rechtsstehendes Label mit einer Schriftgröße von mindestens 14pt (hier exemplarisch 16pt).
 
-Eine Checkbox repräsentiert eine unabhängige, nicht-exklusive Auswahl.
-Der Nutzende kann beliebige Optionen auswählen.
+Eine Checkbox repräsentiert eine unabhängige, nicht-exklusive Auswahl, bei der die Nutzenden beliebig viele Optionen auswählen können.
 Dabei können Checkboxen vertikal oder auch horizontal angeordnet werden.
 
 [[image-checkboxen-vertikal]]
@@ -1236,34 +1235,37 @@ image::24_BE_checkboxen_vertikal.png[align="center"]
 .Horizontale Gruppe von Checkboxen
 image::24_BE_checkboxen_horizontal.png[align="center"]
 
+
 Wichtig ist, dass jede Checkbox einem Label zugeordnet ist.
-Für eine homogene Darstellung sind folgende Abstände einzuhalten.
+Für eine homogene Darstellung sind folgende Abstände einzuhalten:
 
 [[image-checkboxen-mit-einheiten]]
 .Vermaßung von Checkboxen horizontal und vertikal
 image::24_BE_checkboxen_measured.png[align="center"]
 
+
 *_Dos_*
 
-* Das Ein- oder Ausschalten einer Checkbox kann dazu genutzt werden, andere Elemente dynamisch zu aktivieren/anzuzeigen oder zu deaktivieren/unsichtbar zu machen, zum Beispiel können Eingabefelder eingeblendet werden, wenn per Checkbox "Abweichende Lieferadresse" ausgewählt wird.
+* Das Ein- oder Ausschalten einer Checkbox kann dazu genutzt werden, andere Elemente dynamisch zu aktivieren/anzuzeigen oder zu deaktivieren/unsichtbar zu machen. Zum Beispiel können Eingabefelder eingeblendet werden, wenn per Checkbox "Abweichende Lieferadresse" ausgewählt wird.
 * Nicht nur die Box und Target-Area, sondern auch das Label sollten anklickbar sein.
 * Eine Gruppe von Checkboxen sollte immer eine Beschriftung aufweisen. Bei einer einzelnen Checkbox kann dieses entfallen.
 * Für optimale Lesbarkeit sollten Checkboxen untereinander angeordnet sein.
 
 Bei Checkboxen mit mehreren Ebenen gilt:
+
 * Solange die Werte der untergeordneten Optionen gleich sind (alle „Aus“ oder alle „An“), zeigt dies die übergeordnete Checkbox mit dem entsprechenden Wert an.
 * Sind die Werte der untergeordneten Optionen jedoch nicht mehr homogen gesetzt, so schaltet die übergeordnete Checkbox in den Zustand „nicht definiert“.
 Dieser Zustand wird häufig mit einem Quadrat innerhalb der Checkbox symbolisiert.
 
 *_Don'ts_*
 
-* Checkboxen sind kein alleinstehender Ein- und Ausschalter, dafür gibt es die technische Komponente _<<input-switch,p-inputSwitch>>_.
+* Checkboxen sind kein alleinstehender Ein- und Ausschalter, dafür gibt es die technische Komponente _<<input-switch,p-input Switch>>_.
 * Eine Checkbox soll keine Funktionen (drucken, speichern, etc.) auslösen oder Seiten öffnen/verlinken.
 
 [[radiobutton]]
 === Radiobutton
 
-Radiobutton ermöglichen es Nutzenden, *eine* Option aus einer (offenen) Liste auszuwählen und spielen eine wichtige Rolle bei der Interaktivität und Benutzerführung.
+Radiobuttons ermöglichen es Nutzenden, *eine* Option aus einer (offenen) Liste auszuwählen und spielen eine wichtige Rolle bei der Interaktivität und Benutzerführung.
 Beim Einsatz von Radiobuttons wird den Nutzenden sehr schnell gezeigt, dass sie sich zwischen allen Optionen für eine entscheiden müssen.
 
 Radiobuttons können nicht alleine verwendet werden, da sie nicht wieder abwählbar sind.
@@ -1272,7 +1274,7 @@ Radiobuttons können nicht alleine verwendet werden, da sie nicht wieder abwähl
 .Radiobuttons
 image::24_BE_radiobutton.png[align="center"]
 
-Radiobuttons sind 24px groß, haben aber für mobile Geräte mindestens einen 44px x 44px großen Klickbereich (Click-Target-Area).
+Radiobuttons sind 24px groß und weisen für mobile Geräte mindestens einen 44px x 44px großen Klickbereich (Click-Target-Area) auf.
 Radiobuttons haben immer ein rechtsstehendes Label mit einer Schriftgröße von mindestens 14pt (hier exemplarisch 16pt).
 
 Ein Radiobutton repräsentiert eine exklusive Auswahl. Es kann innerhalb der Gruppe genau eine Option ausgewählt werden.
@@ -1286,8 +1288,9 @@ image::24_BE_radiobutton_vertikal.png[align="center"]
 .Horizontale Gruppe von Radiobuttons
 image::24_BE_radiobutton_horizontal.png[align="center"]
 
-Wichtig ist, dass jeder Radiobutton seinem Label zugeordnet ist.
-Für eine homogene Darstellung sind folgende Abstände einzuhalten.
+
+Wichtig ist, dass jeder Radiobutton einem Label zugeordnet ist.
+Für eine homogene Darstellung sind folgende Abstände einzuhalten:
 
 [[image-radiobutton-mit-einheiten]]
 .Vermaßung von Radiobuttons horizontal und vertikal
@@ -1299,20 +1302,20 @@ image::24_BE_radiobutton_measured.png[align="center"]
 Ist die Menge der zur Verfügung stehenden Optionen sehr groß oder hat der Platzbedarf eine große Bedeutung, so kann der Einsatz eines <<dropdown,Dropdowns>> in Betracht gezogen werden.
 * Eine Gruppe von Radiobuttons sollte immer eine Beschriftung aufweisen.
 * Für optimale Lesbarkeit sollten Radiobuttons untereinander angeordnet sein.
-* Falls alle oder keine der angebotenen Optionen zutreffen können, sollte eine zusätzliche allgemeine Meta-Option, wie zum Beispiel "Keine Option" oder "Alle", hinzugefügt werden.
+* Falls alle oder keine der angebotenen Optionen zutreffen können, sollte eine zusätzliche allgemeine Meta-Option, zum Beispiel "Keine Option" oder "Alle", hinzugefügt werden.
 
 *_Don't_*
 
-Ein Radiobutton darf nicht genutzt werden, um unmittelbar Funktionen auszuführen oder Aktionen auszulösen.
+* Ein Radiobutton darf nicht genutzt werden, um unmittelbar Funktionen auszuführen oder Aktionen auszulösen.
 Für diese Zwecke sollten <<button,Buttons>> verwendet werden.
 
 [[input-switch]]
 === Input Switch
 
 Ein Input Switch, auch Eingabeschalter genannt, kommt zum Einsatz, wenn eine bestimmte Funktion oder Eigenschaft ein- und ausgeschaltet werden muss.
-Per Default ist immer ein Wert gesetzt, entweder inaktiv (ausgeschaltet) oder aktiv (eingeschaltet).
+Per Default ist immer ein Wert gesetzt: inaktiv (ausgeschaltet) oder aktiv (eingeschaltet).
 
-Um den Nutzenden zu vermitteln welche Funktion oder Eigenschaft ein- bzw. ausgeschaltet werden kann, sollte ein <<label>> links oder rechts neben dem Input Switch platziert werden.
+Um den Nutzenden zu vermitteln welche Funktion oder Eigenschaft ein- beziehungsweise ausgeschaltet werden kann, sollte ein <<label>> links oder rechts neben dem Input Switch platziert werden.
 Das verwendete Label sollte aussagekräftig und eindeutig sein.
 
 [[image-inputswitch]]
@@ -1321,13 +1324,13 @@ image::24_BE_Input_Switch.png[align="center"]
 
 *_Dos_*
 
-* Ein Input Switch wird zum Ein- und Ausschalten von Funktionen benutzt.
+* Ein Input Switch wird zum Ein- und Ausschalten von Funktionen oder Eigenschaften benutzt.
 * Die Funktion sollte eindeutig benannt werden (zum Beispiel: Zeige ausgeblendete Felder).
 
 *_Don'ts_*
 
-* Der Input Switch sollte nicht bei mehr als einer Option gewählt werden.
-* Input Switches sollten nicht in Sätzen eingebaut werden.
+* Input Switches sollten nicht bei mehr als einer Option gewählt werden.
+* Input Switches sollten nicht in Sätze eingebaut werden.
 * <<checkbox,Checkboxen>> und Input Switches sollen nicht zusammen genutzt werden.
 Eine Kombination aus beiden <<bedienelemente,Bedienelementen>> zum Ein- und Ausschalten von Funktionalitäten ist nicht intuitiv für Nutzende.
 
@@ -1346,7 +1349,7 @@ image::24_BE_tabmenu.png[align="center"]
 
 Ein Tabview hat initial einen aktivierten, aber nicht markierten/fokussierten State (siehe <<image-tabview>>).
 Sobald ein Tab aktiv ausgewählt wird, wird auch die Markierung im Reiter visuell deutlich.
-Der aktive Tab erhält eine 3px dicke Markierungslinie und ein gefärbtes Label in der Highlightfarbe (hier exemplarisch blau).
+Der aktive Tab erhält eine 3px dicke Markierungslinie und ein gefärbtes Label in der Highlightfarbe (hier exemplarisch Blau).
 
 [[image-tabview-active]]
 .Tabview mit aktivem Reiter
@@ -1361,7 +1364,6 @@ image::24_BE_tabmenu_icon.png[align="center"]
 
 Es ist ratsam ein Tabview zu nutzen, wenn der Inhalt nicht ohne starkes Scrolling innerhalb des Screens dargestellt werden kann.
 Dabei ist eine fachlich logische Aufgliederung vorauszusetzen.
-Die optimale Anzahl an Tabs liegt bei 4-7 Tabs.
 
 Sollte es fachlich zwingend notwendig sein, mehr Tabs anzubieten, so kann technisch ein „TabOverflow“ via Scrolling eingesetzt werden.
 Dieses Element ist ein „Überlängen-Tabview“.
@@ -1372,7 +1374,7 @@ image::24_BE_tabmenu_long1.png[align="center"]
 
 Das Tabview nutzt dabei die volle, ihm zur Verfügung stehende Breite und graut (faded) den letzten sichtbaren Menüpunkt aus.
 Darüber liegt ein Pfeil, der es ermöglicht, zu den nächsten Tabs zu gelangen.
-Wurde dieser gedrückt, so springt das Tabview entsprechend viele Einträge weiter.
+Wurde dieser angeklickt, so springt das Tabview entsprechend viele Einträge weiter.
 
 [[image-tabview-overlong-skipped]]
 .Überlängen-Tabview mit mindestens einem Seitensprung
@@ -1390,7 +1392,7 @@ image::24_BE_tabmenu_measured.png[align="center"]
 
 *_Dos:_*
 
-*Tabs werden eingesetzt, wenn die Komplexität der UI reduziert werden soll und eine sinnvolle Gruppierung einzelner Bereiche vorgenommen werden kann.
+* Tabs werden eingesetzt, wenn die Komplexität der UI reduziert werden soll und eine sinnvolle Gruppierung einzelner Bereiche vorgenommen werden kann.
 * Die optimale Anzahl an Tabs ist 4 – 7.
 * Labels für die Tabreiter sollten kurz und aussagekräftig sein.
 Es kann auch mit sinnvollen und verständlichen Abkürzungen gearbeitet werden.
@@ -1399,12 +1401,12 @@ Es kann auch mit sinnvollen und verständlichen Abkürzungen gearbeitet werden.
 *_Don'ts:_*
 
 * Seiten sollten nicht mit nur einem Tabreiter gestaltet werden. Bei weniger als drei Tabreitern, ist eventuell ein dynamisches Panel das passendere Element.
-* Muss der Inhalt verschiedener Tabreiter verglichen/abgestimmt werden, sollte anstelle eines Tabreiters leiber ein dynamisches Panel verwendet werden.
+* Muss der Inhalt verschiedener Tabreiter verglichen/abgestimmt werden, sollte anstelle eines Tabreiters lieber ein dynamisches Panel verwendet werden.
 * Tabreiter stellen nicht verschiedene Sichten zu gleichen Daten dar.
 * Tabreiter sind keine Prozessschritte.
-Für diesen zweck wird ein Wizard genutzt.
-* Tabreiter sollen keine Abhängigkeiten zueinander haben.
-* Labels, die länger als 26 Zeichen sind sollten nicht genutzt werden.
+Für diesen Zweck wird ein Wizard genutzt.
+* Tabreiter sollen keine Abhängigkeiten untereinander haben.
+* Labels, die länger als 26 Zeichen sind, sollten nicht genutzt werden.
 
 [[tabelle]]
 === Tabelle
@@ -1420,15 +1422,16 @@ So steht es der Anwendung frei:
 
 * Keine Zeile auswählbar zu machen.
 * Eine Zeile mit Klick auswählbar zu machen.
-* Eine Zeile mit Doppelklick zum Beispiel direkt in der Detailansicht zu öffnen.
+* Eine Zeile mit Doppelklick, zum Beispiel direkt in der Detailansicht, zu öffnen.
 * Eine Zeile mit einer Spalte und Checkbox auswählbar zu machen.
 
 [IMPORTANT]
-Es ist wichtig, das Verhalten der Tabelle innerhalb der Anwendung konsistent zu halten.
+Es ist wichtig, das Verhalten von Tabellen innerhalb der Anwendung konsistent zu halten.
 Unterschiedliches Verhalten von Tabellen ist *NICHT* zulässig!
 
 //ToDo: Abschnitt nicht verständlich
-Wenn keine oder eine Zeile auswählbar ist, dann erfolgen die Folgeaktionen über die Aktionselemente.
+Wenn keine oder eine Zeile auswählbar ist, dann erfolgen Folgeaktionen über die Aktionselemente.
+//ToDo: Nicht verständlich.
 Wenn eine Zeile sich zum Beispiel direkt in der Detailansicht öffnen lässt, so sollte dies die primäre Funktion der Aktionen sein.
 
 * Doppelklick = Detailansicht öffnen; folglich ist die erste/primäre Aktion = "Detailansicht öffnen".
@@ -1450,14 +1453,14 @@ Abkürzungen sind zulässig.
 * Die Spalten mit den größten Wortlängen sollten den maximal verfügbaren Platz einnehmen.
 * Vertikales Scrolling ist zu vermeiden.
 * Die Spalten sollten ihrer Wichtigkeit nach angeordnet werden.
-* Tabellen sollten nach Möglichkeit max. 20 Zeilen anzeigen und dann eine Paginierung nutzen.
+* Tabellen sollten nach Möglichkeit maximal 20 Zeilen anzeigen und dann eine Paginierung nutzen.
 Sollte es fachlich notwendig sein, kann auch endless-scrolling eingesetzt werden.
 * <<icons,Symbole>> und <<grafiken,Bilder>> können zur schnelleren visuellen Unterscheidung von Listeneinträgen genutzt werden.
 
 *_Don'ts:_*
 
 * Es sollten keine Tabellen mit nur 1-2 Spalten erzeugt werden.
-* Tabellen sollen nicht vertikal scrollen, also beschränke dich auf die nötigsten Informationen.
+* Bei Tabellen sollte nicht vertikal gescrollt werden.
 * Wenn nur ein einziger Eintrag länger ist als der Durchschnitt, sollte sich die Breite der Spalten nicht nach diesem Eintrag richten. 
 * Wenn sich Symbole oder Bilder nur wiederholen, sollte auf sie verzichtet werden.
 
@@ -1481,16 +1484,16 @@ Die Filter lassen sich in beliebiger Weise kombinieren.
 
 * Eine Spalte kann mehrere Filter anwenden.
 * Filter sind nur pro Spalte gültig.
-* Es können gleichzeitig mehrere Filter auf unterschiedlichen Spalten angewendet werden.
+* Es können gleichzeitig mehrere Filter auf unterschiedliche Spalten angewendet werden.
 * Filter werden sofort nach Auswahl angewandt (Aktualisierung der Tabelle).
 * Aktive Filter sollten deutlich erkennbar sein.
 
 [[selektionsverhalten-tabelle]]
 ==== Selektionsverhalten in einer Tabelle
 
-Wie im allgemeinen Kapitel zu <<tabelle,Tabellen>> beschrieben, gibt es verschiedene Möglichkeiten ein Element in der Tabelle zu selektieren.
+Es gibt verschiedene Möglichkeiten, ein Element in einer Tabelle zu selektieren.
 Dabei ist die notwendige Fachlichkeit maßgeblich für das Verhalten verantwortlich.
-Es kann vorkommen, dass es in einer Anwendung sinnvoll ist, eine große Datenmenge auszuwählen und dass es in einer anderen Anwendung wiederum besser ist, gar keine Auswahl zu zulassen. Grundsätzlich gilt, dass ausgewählte Zeilen farbig hinterlegt werden müssen. Alle nachfolgenden Punkte sind Möglichkeiten, die eingesetzt werden *können*.
+Es kann vorkommen, dass es in einer Anwendung sinnvoll ist, große Datenmengen auszuwählen und dass es in einer anderen Anwendung wiederum besser ist, gar keine Auswahl zu zulassen. Grundsätzlich gilt, dass ausgewählte Zeilen farbig hinterlegt werden müssen. Alle nachfolgenden Punkte sind Möglichkeiten, die eingesetzt werden *können*.
 Sollte ein entsprechendes Verhalten angewendet werden, so ist darauf zu achten, dass sich alle Tabellen in der Anwendung konsistent verhalten.
 
 * Die Kennzeichnung eines Objektes (Name, ID, etc...) kann als Link zur Navigation genutzt werden, um weitere Details anzuzeigen.
@@ -1501,8 +1504,8 @@ Sollte ein entsprechendes Verhalten angewendet werden, so ist darauf zu achten, 
 ==== Große Datenmengen in einer Tabelle
 
 Tabellen können sehr viele Daten enthalten und gegebenenfalls sehr lang werden.
-Um für Nutzende den Umgang mit solchen Tabellen zu vereinfachen, sollten zunächst nicht alle Daten initial in der Tabelle angezeigt werden.
-Über einen "Mehr anzeigen"-Button, Endless Scrolling oder einen Paginator kann der Benutzende sich bei Bedarf mehr Daten anzeigen lassen.
+Um für Nutzende den Umgang mit solchen Tabellen zu vereinfachen, sollten nicht alle Daten initial in der Tabelle angezeigt werden.
+Über einen Paginator, Endless Scrolling oder einen "Mehr anzeigen"-Button können Nutzende sich bei Bedarf mehr Daten anzeigen lassen.
 
 *_Paginator_*
 
@@ -1512,14 +1515,15 @@ Um für Nutzende den Umgang mit solchen Tabellen zu vereinfachen, sollten zunäc
 *_Endless Scrolling_*
 
 * Die Tabelle wird initial mit den ersten 10 oder 20 Zeilen angezeigt.
-* Standardmäßig erscheint eine Scrollbar und beim Scrollen werden nach und nach weitere Zeilen eingeblendet, während die oberen Zeilen aus dem View verschwinden
+* Standardmäßig erscheint eine Scrollbar und beim Scrollen werden nach und nach weitere Zeilen eingeblendet, während die oberen Zeilen aus dem View verschwinden.
 
 [NOTE]
 Es kann Lazy Loading verwendet werden.
 
 *_"Mehr anzeigen"-Button_*
 
-Die Tabelle wird initial mit den ersten 10 oder 20 Zeilen angezeigt und nach einem Klick auf den "Mehr anzeigen"-Button werden die nächsten 9 oder 19 Items nachgeladen.
+* Die Tabelle wird initial mit den ersten 10 oder 20 Zeilen angezeigt.
+* Nach einem Klick auf den "Mehr anzeigen"-Button werden die nächsten 9 oder 19 Items nachgeladen.
 Dadurch soll erkenntlich sein, dass es genau am Ende des letzten Eintrags weitergeht.
 
 [[design-pattern]]
