@@ -441,15 +441,15 @@ Die Standardpalette wird mit dem IsyFact-Theme ausgeliefert und entsprechend der
 
 *_Dos_*
 
-* Grün = Erfolg, Bestätigung, Korrekt, etc ...
-* Rot = Fehler, Abbruch, Stopp, etc ...
+* Grün = Erfolg, Bestätigung, Korrekt, etc.
+* Rot = Fehler, Abbruch, Stopp, etc.
 
 *_Don'ts_*
 
-* Grün = Abbruch, Fehler, Stopp, etc ...
-* Lila = Weiter, Sekundärbutton, Löschen, etc ...
+* Grün = Abbruch, Fehler, Stopp, etc.
+* Lila = Weiter, Sekundärbutton, Löschen, etc.
 
-Die Anwendungsfarbe ist frei wählbar, aber muss vom Projket auf Barrierefreiheit geprüft werden.
+Die Anwendungsfarbe ist frei wählbar, aber muss vom Projekt auf Barrierefreiheit geprüft werden.
 
 === Applikationsfarben
 
@@ -476,11 +476,11 @@ Die Applikationen innerhalb einer Gruppe erhalten keine unterschiedlichen Farben
 === Icons
 
 Icons können als zusätzliche Elemente genutzt werden, um Funktionen und Inhalte auch visuell kenntlich zu machen.
-Dabei sollten Icons primär immer mit <<text>> genutzt werden und so wenig wie möglich alleine stehen.
+Dabei sollten Icons primär mit <<text>> genutzt werden und so wenig wie möglich alleine stehen.
 Wenn Icons alleine als <<icon-button,Icon-Buttons>> oder Aktionselemente genutzt werden, sollte sich auf eine kleinstmögliche Menge beschränkt werden.
-Es wird empfohlen alleinstehende Icons mit einem weit verbreiteten und allgemein bekannten Zweck zu nutzen.
+Es wird empfohlen alleinstehende Icons mit einer weit verbreiteten und allgemein bekannten Bedeutung zu nutzen.
 
-In der folgenden Tabelle sind mögliche Icons und deren Funktionen dargestellt, sowie die dazugehörige CSS-Klasse.
+In der folgenden Tabelle sind mögliche Icons, deren Funktionen sowie die dazugehörigen CSS-Klasse aufgeführt.
 Eine Gesamtübersicht der zur Verfügung stehenden Icons ist unter https://www.primefaces.org/diamond/icons.xhtml[PrimeFaces Icons] zu finden.
 
 .Übersicht häufig verwendeter Icons
@@ -682,7 +682,7 @@ Dieser Abschnitt definiert die typografischen Standards, sprachlichen Richtlinie
 Frontends des Bundes sollen über die IT-Landschaft hinweg ein einheitliches Look-and-Feel bieten.
 Dies wird über den Einsatz der IsyFact und deren Komponenten gewährleistet.
 Dafür ist es notwendig auch bei der Schrift (im weiteren Font) einheitlich vorzugehen.
-Zur Anwendung kommt primär:
+Zur Anwendung kommt primär BundesSans.
 
 *_BundesSans_*
 
