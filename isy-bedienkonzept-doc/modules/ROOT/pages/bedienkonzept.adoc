@@ -5,7 +5,7 @@ include::glossary:licence:partial$licence.adoc[]
 [[einfuehrung]]
 == Einführung
 
-Das vorliegende Bedienkonzept ist nicht nur ein Dokument mit Gestaltungsrichtlinien für xref:referenzarchitektur:software-technisch/frontend.adoc[Frontends], sondern ein umfassendes Werkezueg, das die Grundlage für die Entwicklung einer konsistenten und benutzerfreundlichen Benutzeroberfläche schafft. Indem es einheitliche Standards und Best Practices festlegt, trägt es maßgeblich zur Erreichung von Zielen wie der Steigerung der Benutzerzufriedenheit, der Verbesserung der Effizienz oder der Stärkung der Markenidentität bei.
+Das vorliegende Bedienkonzept ist nicht nur ein Dokument mit Gestaltungsrichtlinien für xref:referenzarchitektur:software-technisch/frontend.adoc[Frontends], sondern ein umfassendes Werkzeug, das die Grundlage für die Entwicklung einer konsistenten und benutzerfreundlichen Benutzeroberfläche schafft. Indem es einheitliche Standards und Best Practices festlegt, trägt es maßgeblich zur Erreichung von Zielen wie der Steigerung der Benutzerzufriedenheit, der Verbesserung der Effizienz oder der Stärkung der Markenidentität bei.
 
 Das Hauptziel ist dabei, die Benutzererfahrung zu verbessern und die Zufriedenheit und Produktivität der Nutzenden zu maximieren.
 So soll sichergestellt werden, dass Nutzende das Frontend ohne Schwierigkeiten verwenden können und dabei ihre Ziele *effizient* erreichen.
@@ -25,7 +25,7 @@ https://isyfact.github.io/isy-angular-widgets/
 *_Gültigkeit und Anwendung_*
 
 Dieses Konzept ist für jedes Frontend relevant, unabhängig von dessen Komplexität oder Zielgruppe.
-Es ist gültig für alle Neuentwicklungen und Überarbeitungen von Frontends, die einem Major Change oder Technologiewechsel unterliegen.
+Es ist gültig für alle Neuentwicklungen und für Überarbeitungen von Frontends, die einem Major Change oder Technologiewechsel unterliegen.
 Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Altanwendungen.
 //ToDo: Q1-2024 gab es das Bedienkonzept noch ncht wirklich. Ich denke Q4 wäre besser.
 Das Bedienkonzept ist gültig ab Q1 – 2024.
@@ -91,7 +91,7 @@ Obwohl die Begriffe oft synonym verwendet werden, gibt es wichtige Unterschiede 
 
 *_Begriff der Usability (User Interface - UI)_*
 
-Usability, oder Gebrauchstauglichkeit, bezieht sich auf die Benutzerfreundlichkeit einer Oberfläche (UI).
+Usability oder Gebrauchstauglichkeit bezieht sich auf die Benutzerfreundlichkeit einer Oberfläche (UI).
 Dabei geht es darum, wie leicht Nutzende ein Frontend verstehen und die Bedienung erlernen können.
 Zu den Hauptkomponenten der Usability gehören:
 
@@ -114,7 +114,7 @@ UX umfasst alle Aspekte der Interaktion, einschließlich der emotionalen, psycho
 *Hauptkomponenten der UX sind:*
 
 * *Nützlichkeit:*
-Ob das Produkt den Bedürfnissen und Anforderungen des Benutzenden entspricht.
+Ob das Produkt den Bedürfnissen und Anforderungen der Benutzenden entspricht.
 * *Verfügbarkeit:*
 Die Zugänglichkeit und Erreichbarkeit des Produkts für verschiedene Gruppen.
 * *Glaubwürdigkeit:*
@@ -122,18 +122,18 @@ Das Vertrauen der Benutzenden in das Produkt und die Marke.
 * *Wert:*
 Die Wahrnehmung des Nutzens und der Wertschöpfung durch das Produkt.
 
-UX berücksichtigt nicht nur die Interaktion mit der Benutzeroberfläche, sondern auch die gesamte Benutzerreise, von der ersten Wahrnehmung des Produkts bis zur fortlaufenden Nutzung und Unterstützung.
+UX berücksichtigt nicht nur die Interaktion mit der Benutzeroberfläche, sondern auch die gesamte Benutzerreise von der ersten Wahrnehmung des Produkts bis zur fortlaufenden Nutzung und Unterstützung.
 
 *_Zusammenhänge zwischen Usability (UI) und Benutzerfreundlichkeit (UX)_*
 
 Usability ist ein integraler Bestandteil der Benutzerfreundlichkeit.
-Ein benutzerfreundliches Frontend muss eine hohe Usability aufweisen, da die Benutzeroberfläche der primäre Kontaktpunkt zwischen dem Benutzendem und dem Frontend ist.
+Ein benutzerfreundliches Frontend muss eine hohe Usability aufweisen, da die Benutzeroberfläche der primäre Kontaktpunkt zwischen den Benutzenden und dem Frontend ist.
 Gute Usability sorgt für:
 
 * *Reibungslose und intuitive Interaktion:*
 Benutzende können problemlos navigieren und ihre Ziele erreichen, was zu einer positiven UX beiträgt.
 * *Effizienz:*
-Benutzende verbringen weniger Zeit und Mühe, um Aufgaben zu erledigen, was ihre Zufriedenheit erhöht und die Gesamt-UX verbessert.
+Benutzende brauchen weniger Zeit und Mühe, um Aufgaben zu erledigen, was ihre Zufriedenheit erhöht und die Gesamt-UX verbessert.
 
 *_Unterschiede zwischen Usability (UI) und Benutzerfreundlichkeit (UX)_*
 
@@ -174,7 +174,7 @@ Zusätzlich liefert https://lawsofux.com/[lawsofux] eine anschauliche Sammlung v
 
 *_Klarheit_*
 
-In Bezug auf das Design eines Frontends bezieht sich das Prinzip der "Klarheit" darauf, wie verständlich und einfach der Aufbau und die Navigation des Frontends gestaltet sind .
+In Bezug auf das Design eines Frontends bezieht sich das Prinzip der "Klarheit" darauf, wie verständlich und einfach der Aufbau und die Navigation des Frontends gestaltet sind.
 Klarheit bedeutet, dass Informationen klar präsentiert werden, sodass Besuchende sofort verstehen, was das Frontend bietet und wie sie es nutzen können.
 Dies umfasst eine klare Strukturierung von Inhalten, eine leicht lesbare Typografie, gut platzierte Navigationselemente und eine konsistente visuelle Gestaltung.
 Durch die Priorisierung von Klarheit im Design können Designende sicherstellen, dass Nutzende sich leicht auf dem Frontend zurechtfinden und ihre Ziele effizient erreichen können.
