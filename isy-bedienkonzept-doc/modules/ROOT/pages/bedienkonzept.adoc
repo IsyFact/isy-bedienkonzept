@@ -1674,7 +1674,7 @@ Hierbei ist wichtig, dass die Inhaltselemente über eine Gruppenüberschrift log
 .Drei-Spalten Layout mit unterschiedlich breiten inhaltlichen Gruppen
 image::24_UC_vertikaler_schnitt.png[align="center"]
 
-Durch die saubere Anwendung der Gruppenüberschriften, Titeln und Eingabefeldgruppen ist auch ein Wechsel der vertikalen Gruppierungsgröße nicht negativ auffällig.
+Durch die saubere Anwendung der Gruppenüberschriften, Titel und Eingabefeldgruppen ist auch ein Wechsel der vertikalen Gruppierungsgröße nicht negativ auffällig.
 Jede inhaltliche Gruppe (dreispaltig in der ersten Gruppe (rosa, orange, gelb) und einspaltig in der nächsten Gruppe (grün)) wird ganzheitlich als logisches Element wahrgenommen.
 
 *_Wahrnehmung der inhaltlichen Gruppen:_*
@@ -1683,9 +1683,9 @@ Jede inhaltliche Gruppe (dreispaltig in der ersten Gruppe (rosa, orange, gelb) u
 .Wahrnehmung der inhaltlichen Gruppen Hierarchie
 image::24_UC_horizontale_inhaltlichte_gruppe.png[align="center"]
 
-Gleichmäßige Feldlängen unterstützen den Lesefluss des Nutzendens.
+Gleichmäßige Feldlängen unterstützen den Lesefluss der Nutzenden.
 Die letzten Eingabefelder können bei Bedarf ihrem Inhalt entsprechend gekürzt werden.
-Dies unterstützt die inhaltlich logische Gruppierung und signalisiert dem Nutzenden auch visuell ein Ende der inhaltlichen Gruppe.
+Dies unterstützt die inhaltlich logische Gruppierung und signalisiert den Nutzenden auch visuell ein Ende der inhaltlichen Gruppe.
 
 Bei geringeren Auflösungen sollten Eingabefelder untereinander angeordnet werden, um sich der begrenzten Breite anzupassen.
 
@@ -1694,7 +1694,7 @@ Die Größenanpassung erfolgt innerhalb von gewissen Bereichen:
 * Wird das Browserfenster kleiner als der darzustellende Inhalt (in der Regel bei Tablets und Smartphones), so wird das gesamte Fenster vertikal scrollbar.
 * Der vertikale Abstand zwischen Gruppen und Eingabefeldern bleibt unabhängig von der Bildschirmgröße konstant.
 * Der Abstand zwischen Eingabefeldern und Labeln bleibt ebenfalls unverändert.
-* Bei einer Veränderung der Browserfenster-Größe sollten sich die Breiten der Spalten dynamisch an den verfügbaren Platz anpassen, ohne dabei die Lesbarkeit zu beeinträchtigen.
+* Bei einer Veränderung der Browserfenster-Größe sollten sich die Breite der Spalten dynamisch an den verfügbaren Platz anpassen, ohne dabei die Lesbarkeit zu beeinträchtigen.
 
 *_Beispielhafte Gesamtumsetzung eines Formulars im Anwendungsrahmen:_*
 
@@ -1706,7 +1706,7 @@ image::24_UC_fullexample_formular.png[align="center"]
 == Eingabehilfen und Fehlermeldungen
 
 Eingabehilfen und Fehlermeldungen sind essenziell wichtig, um die <<usability-und-benutzerfreundlichkeit,Benutzerfreundlichkeit>> eines Frontends zu erhöhen.
-Im folgenden Kapitel sollen die Grundlagen zur erfolgreichen Gestaltung von Eingabehilfen und Fehlermeldungen erläutert werden.
+Im folgenden Kapitel werden die Grundlagen zur erfolgreichen Gestaltung von Eingabehilfen und Fehlermeldungen erläutert.
 
 [[eingabehilfen]]
 === Eingabehilfen
@@ -1751,7 +1751,7 @@ Sie geben das gewünschte Eingabepattern vor und lassen sich fast vollständig f
 
 Bei komplexeren <<formulare,Formularen>> oder spezifischen Eingabeanforderungen können Hinweistexte hilfreich sein, um den Nutzenden zusätzliche Anleitungen oder Kontext zu bieten.
 Diese Texte sollten in der Nähe des entsprechenden Eingabefelds platziert werden und sollten klar und präzise sein.
-Sie können beispielsweise erklären, welche Art von Informationen erwartet werden oder auf spezielle Formatierungsanforderungen hinweisen.
+Sie können beispielsweise erklären, welche Art von Informationen erwartet wird oder auf spezielle Formatierungsanforderungen hinweisen.
 
 [[autosuggestion]]
 ==== Autosuggestion
@@ -1767,12 +1767,12 @@ image::24_EF_autosuggestion.png[align="center"]
 
 Sobald die Nutzenden mit der Eingabe beginnen, werden mögliche Werte, die mit von den Nutzenden gemachten Eingabe beginnen, in einem Menü unterhalb des Textfelds angezeigt.
 Nutzende können nun weiter tippen oder direkt einen Wert aus dem Menü auswählen und somit ihre Eingabe verkürzen.
-Gibt es mehr als 10 mögliche passende Werte, so werden die ersten 10 Werte angezeigt, gefolgt von einer Information, dass mehr als 10 Einträge existieren.
+Gibt es mehr als zehn mögliche passende Werte, so werden die ersten zehn Werte angezeigt, gefolgt von einer Information, dass mehr als zehn Einträge existieren.
 
 [[fortschrittsanzeige]]
 ==== Fortschrittsanzeige
 
-Feedback-Konzepte für Ladezeiten sind ein sehr wichtiges Instrument zur Erreichung guter User Experience.
+Feedback-Konzepte für Ladezeiten sind ein sehr wichtiges Instrument, um eine User Experience zu erreichen.
 Für längere Operationen kann ein Fortschritts-Balken (Progress Bar) genutzt werden, der sich entsprechend dem Fortschritt des Vorgangs füllt.
 Für kürzere Vorgänge kann ein Fortschritts-Spinner (kreisrunde Fortschrittsanzeige) verwendet werden.
 
@@ -1791,15 +1791,13 @@ image::24_EF_spinner_and_bar_in_list.png[align="center"]
 * Fortschrittsanzeigen werden in der Regel nur für Wartezeiten verwendet, die sich aus System-Operationen ergeben.
 Für Wartezeiten, die sich auf die Bedienung der Nutzenden zurückführen lassen, werden keine Fortschrittsanzeigen eingesetzt.
 
-*_Balken oder Spinner_*
-
-_Fortschritts-Balken (Progress Bar):_
+*_Fortschritts-Balken (Progress Bar):_*
 
 * Fortschritts-Balken werden in der Regel für Ladevorgänge mit bestimmbarer Gesamtlänge verwendet.
 * Ein Balken zeigt den Grad der Zielerreichung an.
 Dabei füllt sich der Balken von links (0%) nach rechts (100%).
 
-_Fortschritts-Spinner (kreisrunde Fortschrittsanzeige):_
+*_Fortschritts-Spinner (kreisrunde Fortschrittsanzeige):_*
 
 * Fortschritts-Spinner werden für Ladevorgänge verwendet, deren Gesamtlänge unbekannt ist.
 * Für die Dauer der Operation dreht sich der Fortschritts-Spinner und signalisiert Nutzenden damit, dass sich ein Prozess in Gang befindet.
@@ -1808,15 +1806,15 @@ Der Fortschritts-Spinner empfiehlt sich aufgrund seiner geringen Maße insbesond
 [[fehlermeldungen]]
 === Fehlermeldungen
 
-Fehlermeldungen sind unvermeidlich, aber wie sie präsentiert werden, kann einen großen Unterschied für die Benutzererfahrung ausmachen.
+Fehlermeldungen sind unvermeidlich, aber wie sie präsentiert werden, kann einen großen Unterschied für die Benutzererfahrung bedeuten.
 Fehlermeldungen sollten deutlich sichtbar sein, in verständlicher Sprache verfasst sein und klare Anweisungen zur Behebung des Fehlers enthalten.
 Idealerweise sollten Fehlermeldungen in unmittelbarer Nähe von betroffenen Objekten platziert werden (siehe als Beispiel: <<image-eingabefelderror,Eingabefelder - Fehlermeldung>>), um Nutzenden sofortiges Feedback zu geben und sie bei der Fehlerbehebung zu unterstützen.
 
-Neben Fehlermeldungen, die am Eingabeobjekt auftreten können, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden (*Achtung:* dynamisch nachgeladene Elemente müssen auch einem Screenreader zugänglich sein, sodass auch Personen mit Einschränkungen diese Hinweise mitbekommen).
+Neben Fehlermeldungen, die am Eingabeobjekt auftreten, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden (*Achtung:* dynamisch nachgeladene Elemente müssen für einen Screenreader zugänglich sein, sodass auch Personen mit Einschränkungen diese Hinweise mitbekommen).
 Dies geschieht mithilfe von Toast-Notifications, welche immer am unteren rechten Rand des Browserfensters angezeigt werden.
 
 Jede Toast-Notification muss eine Schließen-Aktion für den Nutzenden anbieten.
-Um die <<barrierefreiheit>> einzuhalten, muss die Notification dauerhaft eingeblendet bleiben, bis der Nutzende sie schließt, siehe https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html[WCAG 2.1 Kriterium 1.4.13a].
+Um die <<barrierefreiheit>> einzuhalten, muss die Notification dauerhaft eingeblendet bleiben, bis sie von den Nutzende geschlossen wird, siehe https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html[WCAG 2.1 Kriterium 1.4.13a].
 
 Folgende Meldungsarten können als Toast-Notification verwendet werden:
 
