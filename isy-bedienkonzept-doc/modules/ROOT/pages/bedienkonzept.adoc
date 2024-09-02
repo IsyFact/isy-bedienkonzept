@@ -214,7 +214,7 @@ Dieses Prinzip wird im Kapitel <<barrierefreiheit>> und unter den einzelnen <<be
 == Barrierefreiheit
 
 Barrierefreheit setzt das Prinzip der Zugänglichkeit um. Das heitßt, durch Barrierefreiheit soll sichergesetllt werden, dass alle, unabhängig von ihren Fähigkeiten, ein Frontend nutzen können.
-Im Folgenden werden die Richtlinien zur Barrierefreiheit gemäß den Standards wie WCAG und Methoden zur Verbesserung der Zugänglichkeit erläutert.
+Im Folgenden werden die Richtlinien zur Barrierefreiheit gemäß Standards wie WCAG und andere Methoden zur Verbesserung der Zugänglichkeit erläutert.
 
 Für dieses Bedienkonzept gilt, dass die Zugänglichkeitsstandards WCAG 2.1 und EN 305419 berücksichtigt werden müssen:
 
@@ -236,21 +236,25 @@ Alle hier genannten Maßnahmen sind zur Steigerung der Awareness und Transparenz
 *Dos*
 
 * <<eingabefeld,Eingabefelder>> müssen nach der Aktivierung eines Hochkontrastmodus/Farbfilters zu 50 % bestehen bleiben – eine einzelne Linie als Bestandteil ist nicht ausreichend als Identifizierung eines Eingabefeldes.
-* Die Textgröße soll im Standard mindestens 14pt betragen.
-* Der Textkontrast muss immer mindestens 4,5:1 und bei großen Texten mindestens 3:1 betragen.
+* Die Textgröße soll standardmäßig mindestens 14pt betragen.
+* Der Textkontrast muss immer mindestens 4,5:1 und bei großer Schrift mindestens 3:1 betragen.
 Für Haupt- und Einstiegsseiten sowie Seiten mit rechtlicher Relevanz muss der Kontrast 7:1 betragen.
-* Es sollten keine Schriftgrafiken genutzt werden.
 * Alle Bilder benötigen ein inhaltlich sinnvolles, beschreibendes <<alt-tag,Alt-Attribut>>.
 * <<grafiken,Bilder>>, die ausschließlich der Gestaltung dienen (zum Beispiel Trennlinien), müssen als solche (Schmuckgrafik) gekennzeichnet werden.
 * *Tastatur-Navigation:*
 Nicht alle Nutzenden können eine Maus verwenden.
 Daher ist es wichtig, dass alle Interaktionen auf dem Frontend auch über die Tastatur möglich sind.
 Dies bedeutet, dass alle Navigationselemente, <<link,Links>> und interaktiven Elemente leicht per Tastatur zugänglich sein müssen.
+
+*Don'ts*
+
+* Es sollten keine Schriftgrafiken genutzt werden.
+* Schwache Kontraste zum Beispiel Hellblau auf Grau sollen vermieden werden.
 * *Vermeidung von reinen Farbunterscheidungen:*
 Informationen sollten nicht allein durch <<farben,Farbe>> vermittelt werden, da einige Nutzende Farben nicht unterscheiden können.
 Daher sollten auch andere visuelle Elemente, wie <<icons,Symbole>> oder Muster genutzt werden, um wichtige Informationen zu vermitteln.
-* Schwache Kontraste zum Beispiel Hellblau auf Grau sollen vermieden werden.
 * Aktionen sollen nicht durch <<bedienelemente>> ausgelöst werden, wenn diese nicht dazu vorgesehen sind (zum Beispiel <<radiobutton>> und <<checkbox,Checkboxen>>).
+
 
 [[barrierefreier-einsatz-von-farben]]
 === Barrierefreier Einsatz von Farben
@@ -386,7 +390,7 @@ Dies stellt sicher, dass alle Inhalte auf der Seite als in dieser Sprache verfas
 
 *_Festlegen der Sprache für spezifische Elemente_*
 
-Wenn einzelne Abschnitte oder Elemente in einer anderen Sprache verfasst sind, sollte das lang-Attribut entsprechend auf diesen Elementen angewendet werden.
+Wenn einzelne Abschnitte oder Elemente in einer anderen Sprache verfasst sind, sollte das lang-Attribut entsprechend auf diese Elemente angewendet werden.
 Dies ist besonders wichtig für mehrsprachige Frontends, Dokumente und die korrekte Aussprache durch Screenreader.
 Wenn nötig, können auch  spezifische Sprachvarianten oder Dialekte mithilfe von Codes für Regionen oder Länder angegeben werden (zum Beispiel: en-US für amerikanisches Englisch, en-GB für britisches Englisch).
 
@@ -413,11 +417,12 @@ Es wird nicht aus ästhetischen oder stilistischen Gründen gesetzt.
 Die technischen Rahmenbedingungen legen fest, welche Technologien und Plattformen für die Umsetzung des Bedienkonzepts verwendet werden sollen.
 
 * Für die Entwicklung von Frontends kommt primär die auf Angular basierte Widget Bibliothek https://primeng.org/installation[PrimeNG] zum Einsatz.
-* Ergänzend zu PrimeNG stellt die IsyFact einen Angular Baustein zur Verfügung.
+* Ergänzend zu PrimeNG stellt die IsyFact einen Angular-Baustein zur Verfügung.
 Dieser beinhaltet behördenspezifische Widgets wie den Anwendungsrahmen oder Eingabefelder für Sonderzeichen.
 * Der Baustein liefert ein eigenes Theme, welches die im Bedienkonzept beschriebenen <<allgemeine-prinzipien,allgemeinen Prinzipien>> weitestgehend umsetzt.
 Dieses Theme kann bei Bedarf auch durch ein projektspezifisches Theme ersetzt werden.
-* Das Frontend ist primär für die Nutzung auf Desktopgeräten konzipiert, kann aber mit ihrer Responsivität auch auf mobilen Geräten, sofern möglich, genutzt werden.
+//ToDo: Welches Frontend? Ist hier der Buastein gemeint?
+* Das Frontend ist primär für die Nutzung auf Desktopgeräten konzipiert, kann aber durch die grundlegende Responsivität auch auf mobilen Geräten genutzt werden.
 
 [[basiselemente]]
 == Basiselemente
