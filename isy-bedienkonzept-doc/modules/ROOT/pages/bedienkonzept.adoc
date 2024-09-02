@@ -1561,7 +1561,7 @@ Ein Menü-Button, technisch Split-Button, ist eine Kombination aus einem <<butto
 Die linke Hälfte des Buttons löst beim Betätigen eine Standardaktion aus (zum Beispiel Speichern) und die rechte Hälfte öffnet eine Auswahl an Funktionen (zum Beispiel Speichern als PDF oder Speichern als XLS).
 
 Diese Button-Art wird hauptsächlich in Toolbars eingesetzt und muss immer mehrere Funktionen, die in einen logischen Zusammenhang zueinander stehen, beinhalten.
-Eine mögliche Verwendung ist, dass zusammenfassen von mehreren Exportmöglichkeiten.
+Eine mögliche Verwendung ist das Zusammenfassen von mehreren Exportmöglichkeiten.
 
 Menü-Buttons bestehen aus zwei Bestandteilen:
 
@@ -1598,7 +1598,7 @@ Es wird  wird ein eispaltiges inhaltliches Layout verwendet.
 Jedes Eingabefeld ist ein Pflichtfeld, gekennzeichnet durch einen Asterisk (*).
 Eingabefeldgruppen bedürfen keiner zusätzlichen optischen Gruppierung.
 //ToDo: Welches grundlegendes dreispaltiges Layout? Kommt bisher noch nicht vor
-Sie können durch ihre inhaltliche logische Struktur dem grundlegenden dreispaltigen Layout folgen.
+Sie können durch ihre inhaltlich logische Struktur dem grundlegenden dreispaltigen Layout folgen.
 
 *_Beispiel einer Eingabefeldgruppe mit bedingten Pflichtfeldern (ehemals Optionale Pflichtfelder):_*
 
@@ -1614,7 +1614,7 @@ Der Prozess sieht vor, dass ein Nachweis über die Identität erbracht wird.
 Dies kann jedoch über verschiedene Dokumente erfolgen.
 Somit wird unter der Gruppe „Identitätsnachweisdokument“ in verschiedenen Eingabefeldern die Möglichkeit gegeben sich für eine Nachweisart zu entscheiden und entsprechend ihrer Art entweder eine Auswahl zu treffen oder eine entsprechende Nummer anzugeben.
 
-Dabei ist nicht das einzelne Eingabefeld ein Pflichtfeld, sondern das Ausfüllen mindestens einer Option innerhalb einer Eingabefeldgruppe ist verpflichtend-
+Dabei ist nicht das einzelne Eingabefeld ein Pflichtfeld, sondern das Ausfüllen mindestens einer Option innerhalb einer Eingabefeldgruppe ist verpflichtend.
 Sobald eine Möglichkeit innerhalb der Gruppe ausgewählt/befüllt wurde, wird die bedingte Pflichtfeldgruppe für den Identitätsnachweis als positiv bestätigt.
 
 Dies ist technisch ein sogenanntes „Fieldset“.
