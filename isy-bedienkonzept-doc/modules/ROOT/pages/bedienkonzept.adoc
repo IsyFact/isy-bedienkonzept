@@ -5,7 +5,8 @@ include::glossary:licence:partial$licence.adoc[]
 [[einfuehrung]]
 == Einführung
 
-Das vorliegende Bedienkonzept ist nicht nur ein Dokument mit Gestaltungsrichtlinien für xref:referenzarchitektur:software-technisch/frontend.adoc[Frontends], sondern ein umfassendes Werkzeug, das die Grundlage für die Entwicklung einer konsistenten und benutzerfreundlichen Benutzeroberfläche schafft. Indem es einheitliche Standards und Best Practices festlegt, trägt es maßgeblich zur Erreichung von Zielen wie der Steigerung der Benutzerzufriedenheit, der Verbesserung der Effizienz oder der Stärkung der Markenidentität bei.
+Das vorliegende Bedienkonzept ist nicht nur ein Dokument mit Gestaltungsrichtlinien für xref:https://isyfact.github.io/isyfact-standards-doku/dev/referenzarchitektur/software-technisch/frontend.html[Frontends], sondern ein umfassendes Werkzeug, das die Grundlage für die Entwicklung einer konsistenten und benutzerfreundlichen Benutzeroberfläche schafft.
+Indem es einheitliche Standards und Best Practices festlegt, trägt es maßgeblich zur Erreichung von Zielen wie der Steigerung der Benutzerzufriedenheit, der Verbesserung der Effizienz oder der Stärkung der Markenidentität bei.
 
 Das Hauptziel ist dabei, die Benutzererfahrung zu verbessern und die Zufriedenheit und Produktivität der Nutzenden zu maximieren.
 So soll sichergestellt werden, dass Nutzende das Frontend ohne Schwierigkeiten verwenden können und dabei ihre Ziele *effizient* erreichen.
@@ -27,10 +28,11 @@ https://isyfact.github.io/isy-angular-widgets/
 Dieses Konzept ist für jedes Frontend relevant, unabhängig von dessen Komplexität oder Zielgruppe.
 Es ist gültig für alle Neuentwicklungen und für Überarbeitungen von Frontends, die einem Major Change oder Technologiewechsel unterliegen.
 Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Altanwendungen.
+
 //ToDo: Q1-2024 gab es das Bedienkonzept noch ncht wirklich. Ich denke Q4 wäre besser.
-Das Bedienkonzept ist gültig ab Q1 – 2024.
-//To DO: Link zu älteren Versionen
-Für Altanwendungen gilt, dass das Bedienkonzept (beziehungsweise ehemals Styleguide) zum Zeitpunkt der Entwicklung der Altanwendung mit den damals geltenden Inhalten gültig bleibt.
+Das Bedienkonzept ist gültig ab Q4 – 2024.
+//ToDo: Link zu älteren Versionen
+Für Altanwendungen gilt, dass https://isyfact.github.io/isyfact-standards-doku/current/isy-bedienkonzept/bedienkonzept.html[das Bedienkonzept (beziehungsweise ehemals Styleguide) zum Zeitpunkt der Entwicklung der Altanwendung] mit den damals geltenden Inhalten gültig bleibt.
 
 *_Rolle von Designenden, Entwickelnden und Fachlichkeit_*
 
@@ -95,10 +97,11 @@ Usability oder Gebrauchstauglichkeit bezieht sich auf die Benutzerfreundlichkeit
 Dabei geht es darum, wie leicht Nutzende ein Frontend verstehen und die Bedienung erlernen können.
 Zu den Hauptkomponenten der Usability gehören:
 
+//Anmerkung: Hier steht an erster Stelle, was bei den Begriffen im Fokus steht (Fähigkeit, Schnelligkeit und Aufwand, Komfort und positive Erfahrung)
 * *Effektivität:*
-Die Nutzende haben die Möglichkeit ihre Ziele zu erreichen.
+Die Fähigkeit eines Frontends, den Nutzenden die Möglichkeit zu geben, ihre Ziele zu erreichen.
 * *Effizienz:*
-Die Nutzenden können ihre Ziele möglichst schnell und mit geringem Aufwand erledigen.
+Die Schnelligkeit und der Aufwand, mit dem Nutzende ihre Ziele erreichen.
 * *Zufriedenheit:*
 Das Maß an Komfort und positiver Erfahrung der Benutzenden bei der Nutzung des Frontends.
 
@@ -162,7 +165,7 @@ Informationen sollten kontextbezogen und schrittweise offenbart werden, um Nutze
 Um sicherzustellen, dass die Oberfläche für eine breite Palette von Nutzenden zugänglich ist, ist es wichtig, Tests mit verschiedenen Personengruppen durchzuführen.
 Dabei sollten Nutzende mit unterschiedlichen Fähigkeiten, Geräten und technischen Kenntnissen berücksichtigt werden.
 
-Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Abshnitten zu den <<bedienelemente,Bedienelementen>>, <<design-pattern>> oder <<eingabehilfen-und-fehlermeldungen>> zu finden (siehe jeweils bei den Unterkapiteln "Dos" und "Don'ts").
+Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Abschnitten zu den <<basiselemente,Basiselementen>>, <<bedienelemente,Bedienelementen>>, <<design-pattern>>, <<use-cases>> oder <<eingabehilfen-und-fehlermeldungen>> zu finden (siehe jeweils bei den Unterkapiteln "Dos" und "Don'ts").
 
 [[allgemeine-prinzipien]]
 === Allgemeine Prinzipien
@@ -170,11 +173,11 @@ Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Abshn
 Das Bedienkonzept basiert auf einer Reihe von allgemeinen Prinzipien, die als Leitfaden für die Gestaltung von Benutzeroberflächen dienen.
 Diese Prinzipien umfassen Klarheit, Konsistenz, Feedback, Effizienz und Zugänglichkeit und bilden das Fundament für eine benutzerzentrierte Gestaltung.
 Viele dieser Prinzipien werden beispielsweise in der https://de.wikipedia.org/wiki/ISO_9241[ISO 9241] und in https://en.wikipedia.org/wiki/Web_usability#Web_Usability_Criteria[Nielsen’s Web Usability Criteria] beschrieben.
-Zusätzlich liefert https://lawsofux.com/[lawsofux] eine anschauliche Sammlung von Designprinzipien.
+Zusätzlich liefert https://lawsofux.com/[lawsofux] eine anschauliche Sammlung von *Designprinzipien*.
 
 *_Klarheit_*
 
-In Bezug auf das Design eines Frontends bezieht sich das Prinzip der "Klarheit" darauf, wie verständlich und einfach der Aufbau und die Navigation des Frontends gestaltet sind.
+In Bezug auf das Design bezieht sich das Prinzip der "Klarheit" darauf, wie verständlich und einfach der Aufbau und die Navigation des Frontends gestaltet sind.
 Klarheit bedeutet, dass Informationen klar präsentiert werden, sodass Besuchende sofort verstehen, was das Frontend bietet und wie sie es nutzen können.
 Dies umfasst eine klare Strukturierung von Inhalten, eine leicht lesbare Typografie, gut platzierte Navigationselemente und eine konsistente visuelle Gestaltung.
 Durch die Priorisierung von Klarheit im Design können Designende sicherstellen, dass Nutzende sich leicht auf dem Frontend zurechtfinden und ihre Ziele effizient erreichen können.
@@ -213,12 +216,13 @@ Dieses Prinzip wird im Kapitel <<barrierefreiheit>> und unter den einzelnen <<be
 [[barrierefreiheit]]
 == Barrierefreiheit
 
-Barrierefreheit setzt das Prinzip der Zugänglichkeit um. Das heitßt, durch Barrierefreiheit soll sichergesetllt werden, dass alle, unabhängig von ihren Fähigkeiten, ein Frontend nutzen können.
+Barrierefreiheit setzt das Prinzip der Zugänglichkeit um.
+Das heißt durch Barrierefreiheit soll sichergestellt werden, dass alle, unabhängig von ihren Fähigkeiten, ein Frontend nutzen können.
 Im Folgenden werden die Richtlinien zur Barrierefreiheit gemäß Standards wie WCAG und andere Methoden zur Verbesserung der Zugänglichkeit erläutert.
 
 Für dieses Bedienkonzept gilt, dass die Zugänglichkeitsstandards WCAG 2.1 und EN 305419 berücksichtigt werden müssen:
 
-* Alle Seiten sonllten mindestens das Level AA oder höher erreichen.
+* Alle Seiten sollten mindestens das Level AA oder höher erreichen.
 * Für Haupt- & Einstiegsseiten und Seiten mit rechtlicher Relevanz sollte das Level AAA berücksichtigt werden.
 
 Die detaillierten Anforderungen sind zu finden unter:
@@ -227,16 +231,15 @@ Die detaillierten Anforderungen sind zu finden unter:
 * https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/en301549/en301549-node.html[EN 305419]
 
 Vor der Auflistung der einzelnen Kriterien sind im Kontext der IsyFact einige Kriterien der Barrierefreiheit besonders herauszustellen und bereits bei der fachlichen Konzeption zu berücksichtigen.
-In der Regel sind die genannten Anforderungen durch die Nutzung der Standardelemente der IsyFact erfüllt
 // TODO: Was soll das heißen?
-oder es wird die Möglichkeit geboten, sicherzustellen, dass die fachlichen Elemente vorhanden sind.
-//TODO: Was soll das heißen?
-Alle hier genannten Maßnahmen sind zur Steigerung der Awareness und Transparenz aufgelistet:
+In der Regel sind die genannten Anforderungen durch die Nutzung der Standardelemente der IsyFact erfüllt oder es wird die Möglichkeit geboten, zum Beispiel durch das Theme, diese in einem Frontend umzusetzen.
+// TODO: Was soll das heißen?
+Alle hier genannten Maßnahmen sind besonders hervorzuheben und unabdinglich für ein barrierefreies Frontend.
 
 *Dos*
 
 * <<eingabefeld,Eingabefelder>> müssen nach der Aktivierung eines Hochkontrastmodus/Farbfilters zu 50 % bestehen bleiben – eine einzelne Linie als Bestandteil ist nicht ausreichend als Identifizierung eines Eingabefeldes.
-* Die Textgröße soll standardmäßig mindestens 14pt betragen.
+* Die Textgröße soll zum Erreichen der AA-Kriterien mindestens 14pt für Labels und 12pt für Fließtexte betragen.
 * Der Textkontrast muss immer mindestens 4,5:1 und bei großer Schrift mindestens 3:1 betragen.
 Für Haupt- und Einstiegsseiten sowie Seiten mit rechtlicher Relevanz muss der Kontrast 7:1 betragen.
 * Alle Bilder benötigen ein inhaltlich sinnvolles, beschreibendes <<alt-tag,Alt-Attribut>>.
@@ -249,7 +252,7 @@ Dies bedeutet, dass alle Navigationselemente, <<link,Links>> und interaktiven El
 *Don'ts*
 
 * Es sollten keine Schriftgrafiken genutzt werden.
-* Schwache Kontraste zum Beispiel Hellblau auf Grau sollen vermieden werden.
+* Schwache Kontraste, zum Beispiel Hellblau auf Grau, sollen vermieden werden.
 * *Vermeidung von reinen Farbunterscheidungen:*
 Informationen sollten nicht allein durch <<farben,Farbe>> vermittelt werden, da einige Nutzende Farben nicht unterscheiden können.
 Daher sollten auch andere visuelle Elemente, wie <<icons,Symbole>> oder Muster genutzt werden, um wichtige Informationen zu vermitteln.
@@ -264,8 +267,8 @@ Um eine gute Erkennbarkeit der Elemente sicherzustellen, muss bei großer Schrif
 
 Nachfolgend sind die Kontrastverhältnisse aller zur Verfügung stehender Farben abgebildet.
 Farbkombinationen, die rot gelabelt sind und keinen ausreichenden Kontrast aufweisen, dürfen nicht verwendet werden.
-//TODO: Was soll das heißen?
-Andere Farbkombinationen sind entsprechend ihrem Text oder ihrer Elementgröße frei zu wählen.
+// TODO: Was soll das heißen?
+Andere Farbkombinationen sind entsprechend ihrer Textart oder Elementgröße frei zu wählen - Fließtext & Label 4,5:1, Überschrift 3:1, Haupt-/Einstiegsseiten & Seiten mit rechtlicher Relevanz 7:1.
 Dabei soll der Kontrast so hoch wie möglich gewählt werden.
 
 [[image-farbmatrix]]
@@ -306,7 +309,7 @@ Der Alt-Text sollte den Kontext berücksichtigen, in dem das Bild verwendet wird
 Beispiel:
 Bei einem Bild eines Einkaufswagens auf einer E-Commerce-Seite könnte der Alt-Text lauten:
 [source,xml]
-<img src="cart.png" alt="Einkaufswagen">.
+<img src="cart.png" alt="Warenkorb">.
 
 * *Keine redundante Information:*
 Informationen, die bereits im umgebenden Text enthalten sind, müssen nicht im Alt-Text wiederholt werden.
@@ -392,7 +395,7 @@ Dies stellt sicher, dass alle Inhalte auf der Seite als in dieser Sprache verfas
 
 Wenn einzelne Abschnitte oder Elemente in einer anderen Sprache verfasst sind, sollte das lang-Attribut entsprechend auf diese Elemente angewendet werden.
 Dies ist besonders wichtig für mehrsprachige Frontends, Dokumente und die korrekte Aussprache durch Screenreader.
-Wenn nötig, können auch  spezifische Sprachvarianten oder Dialekte mithilfe von Codes für Regionen oder Länder angegeben werden (zum Beispiel: en-US für amerikanisches Englisch, en-GB für britisches Englisch).
+Wenn nötig, können auch spezifische Sprachvarianten oder Dialekte mithilfe von Codes für Regionen oder Länder angegeben werden (zum Beispiel: en-US für amerikanisches Englisch, en-GB für britisches Englisch).
 
 Das lang-Attribut wird nur verwendet, wenn der <<text>> tatsächlich in einer anderen Sprache verfasst ist.
 Es wird nicht aus ästhetischen oder stilistischen Gründen gesetzt.
@@ -422,7 +425,7 @@ Dieser beinhaltet behördenspezifische Widgets wie den Anwendungsrahmen oder Ein
 * Der Baustein liefert ein eigenes Theme, welches die im Bedienkonzept beschriebenen <<allgemeine-prinzipien,allgemeinen Prinzipien>> weitestgehend umsetzt.
 Dieses Theme kann bei Bedarf auch durch ein projektspezifisches Theme ersetzt werden.
 //ToDo: Welches Frontend? Ist hier der Buastein gemeint?
-* Das Frontend ist primär für die Nutzung auf Desktopgeräten konzipiert, kann aber durch die grundlegende Responsivität auch auf mobilen Geräten genutzt werden.
+* Primär ist der Baustein für die Nutzung auf Desktopgeräten konzipiert, kann aber durch die grundlegende Responsivität auch auf mobilen Geräten genutzt werden.
 
 [[basiselemente]]
 == Basiselemente
@@ -430,14 +433,17 @@ Dieses Theme kann bei Bedarf auch durch ein projektspezifisches Theme ersetzt we
 [[farben]]
 === Farben
 
-Farben tragen maßgeblich zur visuellen Identität eines Frontends bei und beeinflussen die Stimmung und Wahrnehmung der Nutzenden. Im Rahmen dieses Bedienkonzeptes ist die folgende Farbpalette vorgegeben (Stand 03.07.2024):
+Farben tragen maßgeblich zur visuellen Identität eines Frontends bei und beeinflussen die Stimmung und Wahrnehmung der Nutzenden.
+Im Rahmen dieses Bedienkonzeptes ist die folgende Farbpalette vorgegeben (Stand 03.07.2024):
 
 [[image-farbpalette]]
 .Farbpalette
 image::24_BE_farbpalette.png[align="center"]
 
-
-Die Standardpalette wird mit dem IsyFact-Theme ausgeliefert und entsprechend der aktuellen gesetzlichen Lage aktualisiert. Deshalb kann die ausgelieferte Palette von dem hier dokumentierten Stand abweichen. Die dazugehörige <<image-farbmatrix,Kontrasttabelle>> der Standardpalette ist im Kapitel <<barrierefreiheit>> zu finden. Die Farbpalette legt ebenfalls fest, zu welchen Zweck bestimmten Farben eingesetzt werden sollen, zum Beispiel Rot (#A4252C) zur Markierung von Alerts.
+Die Standardpalette wird mit dem IsyFact-Theme ausgeliefert und entsprechend der aktuellen gesetzlichen Lage aktualisiert.
+Deshalb kann die ausgelieferte Palette von dem hier dokumentierten Stand abweichen.
+Die dazugehörige <<image-farbmatrix,Kontrasttabelle>> der Standardpalette ist im Kapitel <<barrierefreiheit>> zu finden.
+Die Farbpalette legt ebenfalls fest, zu welchem Zweck bestimmte Farben eingesetzt werden sollen, zum Beispiel Rot (#A4252C) zur Markierung von Alerts.
 
 *_Dos_*
 
@@ -449,12 +455,16 @@ Die Standardpalette wird mit dem IsyFact-Theme ausgeliefert und entsprechend der
 * Grün = Abbruch, Fehler, Stopp, etc.
 * Lila = Weiter, Sekundärbutton, Löschen, etc.
 
-Die Anwendungsfarbe ist frei wählbar, aber muss vom Projekt auf Barrierefreiheit geprüft werden.
+Die Anwendungsfarbe des Frontends ist frei wählbar, aber muss vom Projekt auf Barrierefreiheit geprüft werden.
 
 === Applikationsfarben
 
 //ToDo (Kurze Erläuterung, was eine Applikationsgruppe sein kann? Mir ist hier nicht klar, was genau gemeint ist)
-Pro Applikationsgruppe kann eine Farbe definiert werden, welche an verschiedenen Stellen des Applikationsportals eingesetzt wird und so einen Wiedererkennungswert schafft. Wenn eine Applikation keiner Gruppe zugeordnet werden kann, kann sie ihre eigene Farbe erhalten. Bei der Wahl der Farben sind die generellen Richtlinien zur Nutzung von <<farben>> zu berücksichtigen. Die Farben sollten so gewählt werden, dass ein harmonisches Gesamtbild erhalten bleibt.
+Sofern es möglich und sinnvoll ist, werden Applikationen aufgrund ihrer Fachlichkeit in Gruppen zusammengefasst.
+Pro Applikationsgruppe kann eine Farbe definiert werden, welche an verschiedenen Stellen des Applikationsportals eingesetzt wird und so einen Wiedererkennungswert schafft.
+Wenn eine Applikation keiner Gruppe zugeordnet werden kann, kann sie für sich alleine stehen und ihre eigene Farbe erhalten.
+Bei der Wahl der Farben sind die generellen Richtlinien zur Nutzung von <<farben>> zu berücksichtigen.
+Die Farben sollten so gewählt werden, dass ein harmonisches Gesamtbild erhalten bleibt.
 
 Die Applikationsfarbe kommt an folgenden Stellen zum Einsatz:
 
@@ -480,7 +490,7 @@ Dabei sollten Icons primär mit <<text>> genutzt werden und so wenig wie möglic
 Wenn Icons alleine als <<icon-button,Icon-Buttons>> oder Aktionselemente genutzt werden, sollte sich auf eine kleinstmögliche Menge beschränkt werden.
 Es wird empfohlen alleinstehende Icons mit einer weit verbreiteten und allgemein bekannten Bedeutung zu nutzen.
 
-In der folgenden Tabelle sind mögliche Icons, deren Funktionen sowie die dazugehörigen CSS-Klasse aufgeführt.
+In der folgenden Tabelle sind mögliche Icons, deren Funktionen sowie die dazugehörige CSS-Klasse aufgeführt.
 Eine Gesamtübersicht der zur Verfügung stehenden Icons ist unter https://www.primefaces.org/diamond/icons.xhtml[PrimeFaces Icons] zu finden.
 
 .Übersicht häufig verwendeter Icons
@@ -677,7 +687,6 @@ a|image::primeicons/star-fill.svg[width=32,height=32]
 === Text
 
 Textelemente spielen eine entscheidende Rolle bei der Kommunikation mit den Nutzenden.
-Textelemente spielen eine entscheidende Rolle bei der Kommunikation mit den Nutzenden.
 Um benutzerfreundliche Texte verfassen zu können, ist es wichtig, die Art und Weise zu verstehen, wie Nutzende Texte auffassen und verarbeiten.
 In westlichen Kulturen wird in der Regel von links nach rechts und von oben nach unten gelesen.
 In Bezug auf Software und User-Interface-Design kann auf diese Tatsache jedoch nur eingeschränkt zurückgegriffen werden, denn Nutzende lesen die Texte auf einem Bildschirm nicht, vielmehr scannen sie diesen nach relevanten Informationen.
@@ -714,13 +723,15 @@ Mit einem Schriftsystem lassen sich meist mehrere Sprachen schreiben (zum Beispi
 
 Die Notwendigkeit der Darstellung nicht-lateinischer Schriften ergibt sich durch die DIN 91379 „Zeichen und definierte Zeichensequenzen in Unicode für die elektronische Verarbeitung von Namen und den Datenaustausch in Europa“ mit Ausgabedatum 2022-08.
 Basierend auf UNICODE wurde für jedes nicht-lateinische Zeichen, das in EU-Mitgliedsstaaten verwendet wird, beispielsweise griechische oder kyrillische Zeichen, eine eindeutige Zuordnung zu einem lateinischen Zeichen vorgenommen.
-Die DIN 91379 wendet sich vorrangig an Behörden und Organisationen, die IT-Verfahren betreiben, welche dem behördenübergreifenden Datenaustausch oder dem Datenaustausch mit Bürgerinnen und Bürgern und Wirtschaft dienen und deckt in ihrer Gesamtheit die EU-Amtssprachen und die Amtssprachen Islands, Liechtensteins, Norwegens und der Schweiz ab sowie die deutschen Minderheitensprachen.
-Um fehlende UNICODE-Zeichen in der BundesSans zu ergänzen kommt sekundär die Schriftart *Liberation* zum Einsatz.
+Die DIN 91379 wendet sich vorrangig an Behörden und Organisationen, die IT-Verfahren betreiben, welche dem behördenübergreifenden Datenaustausch oder dem Datenaustausch mit Bürgerinnen, Bürgern sowie der Wirtschaft dienen und deckt in ihrer Gesamtheit die EU-Amtssprachen und die Amtssprachen Islands, Liechtensteins, Norwegens und der Schweiz ab sowie die deutschen Minderheitensprachen.
+Um fehlende UNICODE-Zeichen in der BundesSans zu ergänzen, kommt sekundär die Schriftart *Liberation* zum Einsatz.
 
 *_Liberation_*
 
 //ToDo: Ist das gemeint? Problem: Hier sehen I und  l auch gleich aus. Das ist etwas unschön...
-Beim Ensatz von Liberation muss beachtet werden, dass bei dieser Schriftart das große I und das kleine l leicht verwechselt werden können. Da dies einen Verstoß gegen die BITV (Barrierefreie-Informationstechnik-Verordnung) bedeuten würde, muss bei der Darstellung von I und l in jeden Fall auf BundesSans zurückgegriffen werden.
+Die Schriftart Liberation soll ausschließlich für fehlende UNICODE-Zeichen in der BundesSans verwendet werden.
+Denn beim Einsatz von Liberation muss beachtet werden, dass bei dieser Schriftart das große I und das kleine l leicht verwechselt werden können.
+Da dies einen Verstoß gegen die BITV (Barrierefreie-Informationstechnik-Verordnung) bedeuten würde, muss bei der Darstellung von I und l in jeden Fall auf BundesSans zurückgegriffen werden.
 
 *_Barrierefreiheit von Text_*
 
@@ -762,7 +773,7 @@ Im Folgenden werden einige Beispiele für technische Begriffe und deren Überset
 |Tabelle
 |====
 
-*_Do's_*
+*_Dos_*
 
 * Die Verwendung verschiedener Schriftarten (über die im Bedienkonzept hinaus vorgegebenen Schriftarten) muss vermieden werden.
 * Die Schriftgröße muss immer ausreichend groß sein.
@@ -790,7 +801,7 @@ Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss d
 
 Bilder und Grafiken ergänzen den <<text>> und vermitteln Informationen auf visuelle Weise.
 //ToDo: Was soll das heißen, dass sie der Fachlichkeit unterliegen?
-Sie unterliegen in erster Linie der notwendigen Fachlichkeit.
+Sie unterliegen in erster Linie der Fachlichkeit beziehungsweise dem inhaltlichen Kontext und sollten nicht allzu oft als Schmuckgrafiken in Frontends integriert werden.
 Hier werden die Leitlinien für die Verwendung von Grafiken festgelegt, einschließlich Stilrichtlinien, Bildgrößen und im Ansatz deren <<barrierefreiheit>>.
 
 Jedes Bild benötigt eine Bildunterschrift und ein aussagekräftiges <<alt-tag,Alt-Attribut>>, um die Barrierefreiheit von Frontends zu unterstützen.
@@ -808,7 +819,7 @@ Gründe dafür sind, dass ihre Farben und Schriftgrößen nicht individuell eing
 Schmuckgrafiken können zwar genutzt werden, sollten jedoch so wenig wie möglich eingesetzt werden.
 Solche Grafiken müssen entsprechend als Schmuckgrafik gekennzeichnet sein und benötigen deshalb auch keine Alt-Attribute.
 
-*_Do's_*
+*_Dos_*
 
 * Bilder benötigen eine Bildunterschrift.
 * Grafiken müssen ein aussagekräftiges <<alt-tag,Alt-Attribut>> besitzen.
@@ -819,7 +830,7 @@ Solche Grafiken müssen entsprechend als Schmuckgrafik gekennzeichnet sein und b
 
 * Bilder dürfen nicht gegen deutsches Recht verstoßen, politisch, sexuell oder angreifend sein.
 * Bilder dürfen keine Schriftgrafiken enthalten, ausgenommen Logos.
-In Ausnahmefällen muss die Schriftgrafik bspw. durch Alt-Attribute ausreichend beschrieben sein.
+In Ausnahmefällen muss die Schriftgrafik beispielsweise durch Alt-Attribute ausreichend beschrieben sein.
 
 [[ueberschriften]]
 === Überschriften
@@ -852,7 +863,7 @@ Beispiel:
 *_Typografie und Design_*
 
 * *Klarheit und Lesbarkeit:*
-Die zu verwendende Schriftart ist Bundes Sans und sollte mindestens 14pt groß sein.
+Die zu verwendende Schriftart ist BundesSans und sollte mindestens 14pt groß sein.
 Die Hauptüberschrift sollte deutlich größer und auffälliger als der normale <<text>> sein.
 * *Kontrast:*
 Der Kontrast sollte mindestens 4,5:1 sein, um die Lesbarkeit zu maximieren.
@@ -913,7 +924,7 @@ Einheitliche <<text,Schriftarten>>, Größen und Abstände tragen zur Benutzerfr
 
 *_Interaktive Elemente_*
 
-* *Schaltflächen und Links:*
+*Schaltflächen und Links:*
 Labels können auch für interaktive Elemente wie <<button,Schaltflächen>> und <<link,Links>> verwendet werden.
 Hier sollten <<aria-labels,ARIA-Labels>> (aria-label) oder ARIA-Beschreibungen (aria-labelledby) eingesetzt werden, um die Zugänglichkeit zu verbessern.
 Beispiel:
@@ -938,12 +949,13 @@ Nachfolgend werden die verschiedenen Arten von Buttons und ihre Anwendung in der
 [[colored-button]]
 ==== Kolorierte Button
 
-Kolorierte Buttons oder auch farbig gefüllte Buttons sind die am häufigsten verwendete Button-Variante. Grundsätzlich handelt es sich um minimal abgerundete Rechtecke, die ein Textlabel, ein Icon oder eine Kombination aus beidem enthalten und farblich gefüllt sind.
+Kolorierte Buttons oder auch farbig gefüllte Buttons sind die am häufigsten verwendete Button-Variante.
+Grundsätzlich handelt es sich um minimal abgerundete Rechtecke, die ein <<label,Textlabel>>, ein <<icons,Icon>> oder eine Kombination aus beidem enthalten und farblich gefüllt sind.
 //ToDo Wie unterstützen die Buttons denn mit ihrer Farbe das Erreichen des Ziels? Das Ziel wird durch Klicken auf den Button erreicht. Die Farbe dient dazu, dass man den Button leichter findet. Bitte entweder explizit schreiben oder weglassen.
-Mit ihrer kräftigen <<farben,Farbe>> unterstützen sie den Nutzenden aktiv beim Erreichen eines Ziels (zum Beispiel Absenden, Speichern, uvm).
-Deshalb werden sie auch CTA-Buttons (Call-To-Action Buttons) genannt.
+Aufgrund ihrer kräftigen <<farben,Farbe>> werden sie auch CTA-Buttons (Call-To-Action Buttons) genannt.
 
-Je nach Zustand des Buttons unterscheiden sich die eingesetzten Farben und Fokus-Border voneinander. Dies ist in der Abbildung <<image-standardbutton>> dargestellt.
+Je nach Zustand des Buttons unterscheiden sich die eingesetzten Farben und Fokus-Border voneinander.
+Dies ist in der folgenden Abbildung <<image-standardbutton>> dargestellt.
 
 [[image-standardbutton]]
 .Zustände von beschrifteten Buttons in Primärfarbe
@@ -964,7 +976,7 @@ Die folgende Grafik zeigt die zulässigen Farben, die im Frontend für Button-El
 .Farben von kolorierten Buttons
 image::24_BE_Colored_Buttons.png[align="center"]
 
-Hauptsächlich kommen die Primärfarbe blau und die Sekundärfarbe Orange zum Einsatz, um die Wichtigkeit der einzelnen Aktionselemente innerhalb eines Frontends voneinander zu unterscheiden.
+Hauptsächlich kommen die Primärfarbe Blau und die Sekundärfarbe Orange zum Einsatz, um die Wichtigkeit der einzelnen Aktionselemente innerhalb eines Frontends voneinander zu unterscheiden.
 Wenn mehrere Buttons in einem Frontend eingesetzt werden, wird der Button mit dem wichtigsten Ziel beziehungsweise mit der am häufigsten genutzten Aktion innerhalb einer inhaltlichen Gruppe in der Primärfarbe dargestellt.
 Ein Beispiel dafür sind Log-In-Seiten von Social-Media-Plattformen.
 Die Hauptaufgabe dieser Seite ist es, neue Mitgliedschaften zu generieren, weshalb der Registrieren-Button die Primärfarbe erhält und nicht der Log-In-Button.
@@ -974,7 +986,8 @@ Dies hilft den Nutzenden sich auf die Hauptaktion zu fokussieren.
 
 Für manche Aktionen sollten spezielle Farben verwendet werden, die eine bestimmte Bedeutung haben, zum Beispiel Grün für Erfolg oder Rot für Alarm.
 Vor allem bei Aktionen, die nicht wieder rückgängig gemacht werden können, wie Löschen oder Entfernen, kann ein roter "Alarm"-Button sehr hilfreich sein.
-Diese Signalfarbe veranlasst den Nutzenden noch einmal über seine Aktion nachzudenken, da diese nach der Bestätigung endgültig ist. Alle anderen Buttons werden in der Sekundärfarbe oder als <<inverted-button, Invertierter Button>> dargestellt.
+Diese Signalfarbe veranlasst den Nutzenden noch einmal über seine Aktion nachzudenken, da diese nach der Bestätigung endgültig ist.
+Alle anderen Buttons werden in der Sekundärfarbe oder als <<inverted-button,invertierte Buttons>> dargestellt.
 Insgesamt sollte die Anzahl der genutzten Farben innerhalb einer Benutzeroberfläche nicht zu hoch sein, um das Frontend nicht zu überladen.
 
 *_Platzierung der Buttons_*
@@ -1009,15 +1022,19 @@ Falls es unklar ist, welche Aktion wichtiger ist, wird die Standardaktion als pr
 
 *_Don'ts_*
 
-* Buttons werden nicht zum Selektieren oder Auswählen von Inhalten verwendet. Hier werden die Bedienelemente <<radiobutton>> und <<checkbox>> eingesetzt.
+* Buttons werden nicht zum Selektieren oder Auswählen von Inhalten verwendet.
+Hier werden die Bedienelemente <<radiobutton>> und <<checkbox>> eingesetzt.
 * Zum Ein- oder Ausschalten von Inhalten werden keine Buttons verwendet, sondern spezielle <<input-switch,Input Switches>>.
-* Innerhalb von Fließtexten oder zum Verweisen auf externe Inhalte kommen keine Buttons zum Einsatz. Stattdessen werden <<link,Links>> genutzt.
+* Innerhalb von Fließtexten oder zum Verweisen auf externe Inhalte kommen keine Buttons zum Einsatz.
+Stattdessen werden <<link,Links>> genutzt.
 * Um ein Frontend farblich nicht zu überladen, sollten nicht zu viele Button-Farben für spezielle Aktionen eingesetzt werden.
 
 [[inverted-button]]
 ==== Invertierte Button
 
-Falls die <<image-buttoncolors,farblich gefüllten Buttons>> das Frontend zu bunt werden lassen, weil es zu viele Funktionen auf einer Seite gibt, können für weniger wichtige oder sekundäre Funktionen die invertierten Varianten der Buttons genutzt werden.
+Falls die <<image-buttoncolors,farblich gefüllten Buttons>> das Frontend zu bunt werden lassen, weil es zu viele Funktionen auf einer Seite gibt, können für sekundäre Funktionen die invertierten Varianten der Buttons genutzt werden.
+Jedoch braucht es innerhalb einer Frontend-Seite immer einen farblich kolorierten Button in der Primärfarbe, der die Hauptaktion darstellt.
+Dieser Button kann nicht durch seine invertierte Variante ersetzt werden.
 
 [[image-buttoncolors-inverted]]
 .Farben von invertierten Buttons
@@ -1030,9 +1047,9 @@ Im "aktiven" beziehungsweise "fokussierten" Zustand erhält der Button einen Fok
 
 [TIP]
 Invertierte Buttons werden häufig genutzt, wenn es mehr als zwei Aktionen auf einer Seite gibt oder wenn einer Aktion ein besonderer Fokus eingeräumt werden soll, wie zum Beispiel beim "Registieren".
-Das heißt. nach der Nutzung eines <<colored-button,kolorierten Buttons>> in der Primärfarbe kann auf die invertierten Buttons umgestiegen werden.
+Das heißt nach der Nutzung eines <<colored-button,kolorierten Buttons>> in der Primärfarbe kann auf die invertierten Buttons umgestiegen werden.
 //ToDo: Das wiederspricht sich doch. Im Satz darüber wird doch beschrieben, dass beide Buttonvarianten zusammen genutzt werden.
-Eine Kombination aus farblich kolorierten und invertierten Buttons ist jedoch nicht zulässig.
+Eine Kombination aus farblich kolorierten (ausgenommen der Primärfarbe) und invertierten Buttons ist jedoch nicht zulässig.
 Es sollte eine der beiden Varianten konsistent im gesamten Frontend benutzt werden.
 
 [[icon-button]]
@@ -1059,7 +1076,9 @@ Ist diese Beschreibung jedoch zu lang (mehr als drei Wörter), ist das Icon nich
 
 *Sonderfall:*
 
-In speziellen Fällen werden Icon-Buttons auch ohne ihre Border dargestellt. Hierbei ist es besonders wichtig, dass die Icon-Buttons passend zum Design Pattern gewählt werden. Diese werden beispielsweise innerhalb von Tabellenheadern verwendet zum Sortieren und Filtern der Tabelleninhalte und sehen wie folgt aus:
+In speziellen Fällen werden Icon-Buttons auch ohne ihre Border dargestellt.
+Hierbei ist es besonders wichtig, dass die Icon-Buttons passend zum Design Pattern gewählt werden.
+Diese werden beispielsweise innerhalb von Tabellenheadern verwendet zum Sortieren und Filtern der Tabelleninhalte und sehen wie folgt aus:
 
 [[image-iconbuttons-withoutborder]]
 .Icon-Buttons ohne Border
@@ -1074,11 +1093,11 @@ image::24_BE_Icons.png[align="center"]
 [[link]]
 === Hyperlink
 
-Hyperlinks sind verlinkte <<text,Texte>> (oder auch <<grafiken>>), die im Wesentlichen als Navigations-Mechanismus dienen, zum Beispiel um neue Fenster mit anderen Inhalten zu öffnen. Wird die Maus über einen Hyperlink bewegt, ändert sich der Cursor vom Pfeil zum Handsymbol.
+Hyperlinks sind verlinkte <<text,Texte>> (oder auch <<grafiken>>), die im Wesentlichen als Navigations-Mechanismus dienen, zum Beispiel um neue Fenster mit anderen Inhalten zu öffnen.
+Wird die Maus über einen Hyperlink bewegt, ändert sich der Cursor vom Pfeil zum Handsymbol.
 Hyperlinks folgen per Default einem einheitlichen Styling und sind in der Regel unterstrichen.
 Da Nutzende daran gewöhnt sind, weiterführende Informationen/Links in einem Fließtext oder auf einer Seite anhand des unterstrichenen Textes zu erkennen, ist es nicht ratsam, daran etwas zu ändern.
 //ToDo: Soll das heißen, dass das die Farbe der Links bei Bedarf geändert werden darf? Dann sollte das auch so geschrieben werden
-Viele Frontends greifen per CSS in das Styling ein und färben Links entsprechend ihrer Designregeln.
 
 Hyperlinks können den Status (State) "normal", "hovered/focus" und "clicked" haben.
  
@@ -1101,7 +1120,7 @@ Sie kommen in verschiedensten Formen und Kontexten vor, sei es in Form von Textf
 Die Gestaltung und Platzierung von Eingabefeldern hat direkten Einfluss auf die Benutzererfahrung und die Effizienz der Dateneingabe.
 
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem https://isyfact.github.io/isyfact-standards-doku/3.0.x/isy-bedienkonzept/bedienkonzept.html[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
+Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem https://isyfact.github.io/isyfact-standards-doku/current/isy-bedienkonzept/bedienkonzept.html[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 
 Eingabefelder sind dynamisch.
 Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (<<placeholder,Placeholder>>) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
@@ -1122,7 +1141,8 @@ Platzhalter müssen sinnvolle Eingabeunterstützungen (im einfachsten Fall das L
 .Eingabefeld aktiv
 image::24_BE_eingabefeld_aktiv.png[align="center"]
 
-Aktive Eingabefelder werden mit einer 1px dickere Umrandung in der Highlightfrabe Blau dargestellt. Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung <<image-eingabefeldaktiv>>) oder eine Mask enthalten (siehe Abbildung <<image-eingabefeldmask>>).
+Aktive Eingabefelder werden mit einer 1px dickeren Umrandung in der Highlightfarbe Blau dargestellt.
+Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung <<image-eingabefeldaktiv>>) oder eine Mask enthalten (siehe Abbildung <<image-eingabefeldmask>>).
 
 *_Befülltes Eingabefeld:_*
 
@@ -1146,7 +1166,8 @@ Deaktivierte Eingabefelder (disabled) sind grau hinterlegt und geben zusätzlich
 .Eingabefeld mit Fehlermeldung und Hinweis
 image::24_BE_eingabefeld_error.png[align="center"]
 
-Bei einer Fehlermeldung färben sich das Eingabefeld und das Label rot und es wird ein inhaltlich logischer Hinweistext angegeben, damit die Eingabe korrigiert werden kann.
+Bei einer Fehlermeldung färbt sich das Eingabefeld rot und es wird ein inhaltlich logischer Hinweistext (auch in Rot) angegeben, damit die Eingabe korrigiert werden kann.
+Das Label des Eingabefeldes wird bei einem Fehler nicht verändert.
 
 Eingabefelder, die eine Erläuterung benötigen, sollen diese immer so kurz wie möglich und so lang wie nötig gestalten.
 Erläuterungen können dabei unterschiedlich realisiert werden, sortiert von kurz nach lang:
@@ -1181,7 +1202,7 @@ Soll zum Beispiel eine Postleitzahl innerhalb Deutschlands eingegeben werden, so
 Optisch kann das Eingabefeld der Konsistenz entsprechend länger sein.
 * Pflichtfelder werden mit einem Asterisk (*) gekennzeichnet.
 
-*_Don't:_*
+*_Don'ts:_*
 
 * Labels enden nicht mit einem Doppelpunkt.
 * Bei sehr langen Labels sollten sinnvolle Abkürzungen verwendet werden.
@@ -1204,7 +1225,7 @@ Eine Mask kann in Einzelfällen auch dem Platzhalter entsprechen.
 [[eingabefeld-mit-button]]
 ==== Eingabefeld mit Input-Option
 
-Für häufig verwendete Eingaben gibt es die Möglichkeit Input-Optionen für das Eingabefeld anzeigen zu lassen..
+Für häufig verwendete Eingaben gibt es die Möglichkeit Input-Optionen für das Eingabefeld anzeigen zu lassen.
 Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsweise die Eingabe eines Datums bei einem Date-Picker.
 
 [[image-eingabefeldinputoption]]
@@ -1212,7 +1233,7 @@ Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsw
 image::24_BE_eingabefeld_inputoption.png[align="center"]
 
 Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem <<image-eingabefeldplatzhalter,normalen Eingabefeld>>.
-Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung Eingabefeld mit Input-Option) oder eine Datumseingabe.
+Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung <<image-eingabefeldinputoption>>) oder eine Datumseingabe.
 Die Schaltfläche der Input-Option ist mindestens 44px x 44px.
 
 [[textbox]]
@@ -1226,7 +1247,8 @@ Diese unterscheiden sich in der Größe und Form von gewöhnlichen <<eingabefeld
 .Textbox
 image::24_BE_Textbox.png[align="center"]
 
-Bei der Eingabe von Text können Textboxen manuell in ihrer Größe verändert werden, sodass der gesamte Inhalt angezeigt werden kann. Textboxen sollten mindestens so groß gestaltetet werden, dass der am häufigsten zu erwartende Inhalt hineinpasst, ohne manuell die Box anzupassen.
+Bei der Eingabe von Text können Textboxen manuell in ihrer Größe verändert werden, sodass der gesamte Inhalt angezeigt werden kann.
+Textboxen sollten mindestens so groß gestaltetet werden, dass der am häufigsten zu erwartende Inhalt hineinpasst, ohne manuell die Box anzupassen.
 
 [TIP]
 Textboxen haben die gleichen States und Styles wie Eingabefelder.
@@ -1236,7 +1258,7 @@ Textboxen haben die gleichen States und Styles wie Eingabefelder.
 
 Listen sind zentrale Bestandteile in Frontends und insbesondere von Fachanwendungen.
 Sie dienen dazu, Inhalte zu strukturieren und erfassbar zu machen.
-Listen ermöglichen es dem Nutzenden, zulässige Werte auszuwählen.
+Listen ermöglichen es Nutzenden, zulässige Werte auszuwählen.
 Dadurch werden Fehleingaben und unerwartete Ergebnisse reduziert.
 
 Listen bestehen optisch aus einem geschlossenen Rahmen und bestenfalls aus logisch sortierten Elementen.
@@ -1272,11 +1294,11 @@ Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
 
 *_Don'ts_*
 
-* Listeneinträge sind nie mehrzeilig.
-* Listeneinträge sind nicht doppelt vorhanden.
-* Listen sind nicht unsortiert und sehr lang.
 //TODO: Ist die Verneinung richtig. Wenn ja, earum?
-* Listeneinträge sind nicht als ganze Sätze formuliert.
+* Listeneinträge sollten nie mehrzeilig sein.
+* Listeneinträge sollten nicht doppelt vorhanden sein.
+* Listen sollten nicht unsortiert und sehr lang sein.
+* Listeneinträge sollten nicht als ganze Sätze formuliert werden.
 
 [[checkbox]]
 === Checkbox
@@ -1300,11 +1322,9 @@ Dabei können Checkboxen vertikal oder auch horizontal angeordnet werden.
 .Vertikale Gruppe von Checkboxen
 image::24_BE_checkboxen_vertikal.png[align="center"]
 
-
 [[image-checkboxen-horizontal]]
 .Horizontale Gruppe von Checkboxen
 image::24_BE_checkboxen_horizontal.png[align="center"]
-
 
 Wichtig ist, dass jede Checkbox einem Label zugeordnet ist.
 Für eine homogene Darstellung sind folgende Abstände einzuhalten:
@@ -1313,23 +1333,22 @@ Für eine homogene Darstellung sind folgende Abstände einzuhalten:
 .Vermaßung von Checkboxen horizontal und vertikal
 image::24_BE_checkboxen_measured.png[align="center"]
 
-
 *_Dos_*
 
-* Das Ein- oder Ausschalten einer Checkbox kann dazu genutzt werden, andere Elemente dynamisch zu aktivieren/anzuzeigen oder zu deaktivieren/unsichtbar zu machen. Zum Beispiel können Eingabefelder eingeblendet werden, wenn per Checkbox "Abweichende Lieferadresse" ausgewählt wird.
+* Das Ein- oder Ausschalten einer Checkbox kann dazu genutzt werden, andere Elemente dynamisch zu aktivieren/anzuzeigen oder zu deaktivieren/unsichtbar zu machen.
+Zum Beispiel können Eingabefelder eingeblendet werden, wenn per Checkbox "Abweichende Lieferadresse" ausgewählt wird.
 * Nicht nur die Box und Target-Area, sondern auch das Label sollten anklickbar sein.
-* Eine Gruppe von Checkboxen sollte immer eine Beschriftung aufweisen. Bei einer einzelnen Checkbox kann dieses entfallen.
+* Eine Gruppe von Checkboxen sollte immer eine Beschriftung aufweisen.
+Bei einer einzelnen Checkbox kann diese entfallen.
 * Für optimale Lesbarkeit sollten Checkboxen untereinander angeordnet sein.
-
-Bei Checkboxen mit mehreren Ebenen gilt:
-
-* Solange die Werte der untergeordneten Optionen gleich sind (alle „Aus“ oder alle „An“), zeigt dies die übergeordnete Checkbox mit dem entsprechenden Wert an.
-* Sind die Werte der untergeordneten Optionen jedoch nicht mehr homogen gesetzt, so schaltet die übergeordnete Checkbox in den Zustand „nicht definiert“.
+* Bei Checkboxen mit mehreren Ebenen gilt:
+** Solange die Werte der untergeordneten Optionen gleich sind (alle „Aus“ oder alle „An“), zeigt dies die übergeordnete Checkbox mit dem entsprechenden Wert an.
+** Sind die Werte der untergeordneten Optionen jedoch nicht mehr homogen gesetzt, so schaltet die übergeordnete Checkbox in den Zustand „nicht definiert“.
 Dieser Zustand wird häufig mit einem Quadrat innerhalb der Checkbox symbolisiert.
 
 *_Don'ts_*
 
-* Checkboxen sind kein alleinstehender Ein- und Ausschalter, dafür gibt es die technische Komponente _<<input-switch,p-input Switch>>_.
+* Checkboxen sind kein alleinstehender Ein- und Ausschalter, dafür gibt es die Komponente _<<input-switch>>_.
 * Eine Checkbox soll keine Funktionen (drucken, speichern, etc.) auslösen oder Seiten öffnen/verlinken.
 
 [[radiobutton]]
@@ -1347,7 +1366,8 @@ image::24_BE_radiobutton.png[align="center"]
 Radiobuttons sind 24px groß und weisen für mobile Geräte mindestens einen 44px x 44px großen Klickbereich (Click-Target-Area) auf.
 Radiobuttons haben immer ein rechtsstehendes Label mit einer Schriftgröße von mindestens 14pt (hier exemplarisch 16pt).
 
-Ein Radiobutton repräsentiert eine exklusive Auswahl. Es kann innerhalb der Gruppe genau eine Option ausgewählt werden.
+Ein Radiobutton repräsentiert eine exklusive Auswahl.
+Es kann innerhalb der Gruppe genau eine Option ausgewählt werden.
 Dabei können Radiobuttons vertikal oder horizontal angeordnet werden.
 
 [[image-radiobutton-vertikal]]
@@ -1357,7 +1377,6 @@ image::24_BE_radiobutton_vertikal.png[align="center"]
 [[image-radiobutton-horizontal]]
 .Horizontale Gruppe von Radiobuttons
 image::24_BE_radiobutton_horizontal.png[align="center"]
-
 
 Wichtig ist, dass jeder Radiobutton einem Label zugeordnet ist.
 Für eine homogene Darstellung sind folgende Abstände einzuhalten:
@@ -1376,7 +1395,7 @@ Ist die Menge der zur Verfügung stehenden Optionen sehr groß oder hat der Plat
 
 *_Don't_*
 
-* Ein Radiobutton darf nicht genutzt werden, um unmittelbar Funktionen auszuführen oder Aktionen auszulösen.
+Ein Radiobutton darf nicht genutzt werden, um unmittelbar Funktionen auszuführen oder Aktionen auszulösen.
 Für diese Zwecke sollten <<button,Buttons>> verwendet werden.
 
 [[input-switch]]
@@ -1470,7 +1489,8 @@ Es kann auch mit sinnvollen und verständlichen Abkürzungen gearbeitet werden.
 
 *_Don'ts:_*
 
-* Seiten sollten nicht mit nur einem Tabreiter gestaltet werden. Bei weniger als drei Tabreitern, ist eventuell ein dynamisches Panel das passendere Element.
+* Seiten sollten nicht mit nur einem Tabreiter gestaltet werden.
+Bei weniger als drei Tabreitern, ist eventuell ein dynamisches Panel das passendere Element.
 * Muss der Inhalt verschiedener Tabreiter verglichen/abgestimmt werden, sollte anstelle eines Tabreiters lieber ein dynamisches Panel verwendet werden.
 * Tabreiter stellen nicht verschiedene Sichten zu gleichen Daten dar.
 * Tabreiter sind keine Prozessschritte.
@@ -1500,9 +1520,9 @@ Es ist wichtig, das Verhalten von Tabellen innerhalb der Anwendung konsistent zu
 Unterschiedliches Verhalten von Tabellen ist *NICHT* zulässig!
 
 //ToDo: Abschnitt nicht verständlich
-Wenn keine oder eine Zeile auswählbar ist, dann erfolgen Folgeaktionen über die Aktionselemente.
+Wenn mehrere Aktionen für eine Tabellenzeile erfolgen können, dann werden Folgeaktionen über Aktionselemente in der letzten Spalte "Aktionen" bereitgestellt.
 //ToDo: Nicht verständlich.
-Wenn eine Zeile sich zum Beispiel direkt in der Detailansicht öffnen lässt, so sollte dies die primäre Funktion der Aktionen sein.
+Falls eine Doppelklick-Aktion in einer Zeile implementiert wird, sollte dies die primäre Funktion der möglichen Tabellenzeilen-Aktionen sein.
 
 * Doppelklick = Detailansicht öffnen; folglich ist die erste/primäre Aktion = "Detailansicht öffnen".
 * Die aktive/fokussierte Zeile hat die Primärfarbe und der Hover entspricht dem PrimeNG Standard.
@@ -1518,9 +1538,9 @@ Die Fachlichkeit sollte sich auf eine Teilmenge von wichtigen Informationen besc
 * Spaltentitel sollten so kurz wie möglich und prägnant gewählt werden.
 Abkürzungen sind zulässig.
 //ToDo: Der Spaltentitel?
-* Die initiale oder maximale Breite von Spalten muss sich an den zu erwartenden Inhalten orientieren, auch wenn der Titel dadurch abgeschnitten wird (es gibt keine feste maximale Buchstabenanzahl).
+* Die initiale oder maximale Breite von Spalten muss sich an den zu erwartenden Inhalten orientieren, auch wenn der Spaltentitel dadurch abgeschnitten wird (es gibt keine feste maximale Buchstabenanzahl).
 //ToDo: Was heißt das? Sollten breiter als der Rest der Spalten sein?
-* Die Spalten mit den größten Wortlängen sollten den maximal verfügbaren Platz einnehmen.
+* Tabellenspalten können unterschiedlich breit sein.
 * Vertikales Scrolling ist zu vermeiden.
 * Die Spalten sollten ihrer Wichtigkeit nach angeordnet werden.
 * Tabellen sollten nach Möglichkeit maximal 20 Zeilen anzeigen und dann eine Paginierung nutzen.
@@ -1563,10 +1583,13 @@ Die Filter lassen sich in beliebiger Weise kombinieren.
 
 Es gibt verschiedene Möglichkeiten, ein Element in einer Tabelle zu selektieren.
 Dabei ist die notwendige Fachlichkeit maßgeblich für das Verhalten verantwortlich.
-Es kann vorkommen, dass es in einer Anwendung sinnvoll ist, große Datenmengen auszuwählen und dass es in einer anderen Anwendung wiederum besser ist, gar keine Auswahl zu zulassen. Grundsätzlich gilt, dass ausgewählte Zeilen farbig hinterlegt werden müssen. Alle nachfolgenden Punkte sind Möglichkeiten, die eingesetzt werden *können*.
+
+Es kann vorkommen, dass es in einer Anwendung sinnvoll ist, große Datenmengen auszuwählen und dass es in einer anderen Anwendung wiederum besser ist, gar keine Auswahl zuzulassen.
+Grundsätzlich gilt, dass ausgewählte Zeilen farbig hinterlegt werden müssen.
+Alle nachfolgenden Punkte sind Möglichkeiten, die eingesetzt werden *können*.
 Sollte ein entsprechendes Verhalten angewendet werden, so ist darauf zu achten, dass sich alle Tabellen in der Anwendung konsistent verhalten.
 
-* Die Kennzeichnung eines Objektes (Name, ID, etc...) kann als Link zur Navigation genutzt werden, um weitere Details anzuzeigen.
+* Die Kennzeichnung eines Objektes (Name, ID, etc.) kann als Link zur Navigation genutzt werden, um weitere Details anzuzeigen.
 * Der Doppelklick auf eine Zeile kann zum Beispiel die Details eines Elements öffnen.
 * Die erste Zeile kann per Default selektiert werden.
 
@@ -1574,7 +1597,7 @@ Sollte ein entsprechendes Verhalten angewendet werden, so ist darauf zu achten, 
 ==== Große Datenmengen in einer Tabelle
 
 Tabellen können sehr viele Daten enthalten und gegebenenfalls sehr lang werden.
-Um für Nutzende den Umgang mit solchen Tabellen zu vereinfachen, sollten nicht alle Daten initial in der Tabelle angezeigt werden.
+Um den Umgang mit solchen Tabellen zu vereinfachen, sollten nicht alle Daten initial in der Tabelle angezeigt werden.
 Über einen Paginator, Endless Scrolling oder einen "Mehr anzeigen"-Button können Nutzende sich bei Bedarf mehr Daten anzeigen lassen.
 
 *_Paginator_*
@@ -1621,7 +1644,7 @@ Beim Klick auf das gesamte Element klappt die Liste aus und ein Element kann ang
 .Aktives Dropdown
 image::24_DP_eingabefeldliste_aufgeklappt.png[align="center"]
 
-Die Listenelemente sind mindestens 44px hoch und so breit wie das dazugehörigen Element (hier exemplarisch das Eingabefeld).
+Die Listenelemente sind mindestens 44px hoch und so breit wie das dazugehörige Element (hier exemplarisch das Eingabefeld).
 Aktive Listenelemente sind in der Highlightfarbe und hinterlegt dargestellt.
 
 [[menu-button]]
@@ -1635,8 +1658,8 @@ Eine mögliche Verwendung ist das Zusammenfassen von mehreren Exportmöglichkeit
 
 Menü-Buttons bestehen aus zwei Bestandteilen:
 
-* einem <<icons,Icon>> beziehungsweise einem <<label>> oder einer Kombination von Icon und Label
-* einem Pfeil-Icon
+* einem <<icons,Icon>> beziehungsweise einem <<label>> oder einer Kombination von Icon und Label.
+* einem Pfeil-Icon, das per Klick die Dropdown-Liste öffnet.
 
 [[image-menuebuttonbeispiel]]
 .Menü-Button
@@ -1651,11 +1674,12 @@ Bei der Gestaltung sollte darauf geachtet werden, dass die Icon-Sprache über di
 === Eingabefeldgruppen
 
 In fast jedem Frontend beziehungsweise in den häufigsten Anwendungsfällen lassen sich Eingabefelder inhaltlich zu (homogenen) Gruppen zusammenfassen.
-Häufig verwendete Gruppen sind beispielsweise „Angaben zur Person“ (mit den Eingabefeldern Vorname, Familienname, Nationalität, Geschlecht etc.), Adressdaten (Straße, Hausnummer, Postleitzahl, Ort) oder Bezahldaten (Art der Bezahlung, Kartennummer etc.). Eingabefeldgruppen sind eine Möglichkeit solche Gruppierungen darzustellen.
+Häufig verwendete Gruppen sind beispielsweise „Angaben zur Person“ (mit den Eingabefeldern Vorname, Familienname, Nationalität, Geschlecht etc.), Adressdaten (Straße, Hausnummer, Postleitzahl, Ort) oder Bezahldaten (Art der Bezahlung, Kartennummer etc.).
+Eingabefeldgruppen sind eine Möglichkeit solche Gruppierungen darzustellen.
 
 Eingabefeldgruppen bestehen immer aus mindestens einer Gruppenüberschrift beziehungsweise einem Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und gegebenenfalls weiteren <<bedienelemente,Bedienelementen>>.
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem https://isyfact.github.io/isyfact-standards-doku/3.0.x/isy-bedienkonzept/bedienkonzept.html[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
+Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem https://isyfact.github.io/isyfact-standards-doku/current/isy-bedienkonzept/bedienkonzept.html[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 
 *_Beispiel einer Eingabefeldgruppe "Persönliche Angaben":_*
 
@@ -1664,11 +1688,11 @@ Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem https:
 image::24_DP_persoenliche_angaben.png[align="center"]
 
 //ToDo: Was ist ein inhlatliches Layout?
-Es wird  wird ein eispaltiges inhaltliches Layout verwendet.
+Es wird ein einspaltiges Layout verwendet.
 Jedes Eingabefeld ist ein Pflichtfeld, gekennzeichnet durch einen Asterisk (*).
 Eingabefeldgruppen bedürfen keiner zusätzlichen optischen Gruppierung.
 //ToDo: Welches grundlegendes dreispaltiges Layout? Kommt bisher noch nicht vor
-Sie können durch ihre inhaltlich logische Struktur dem grundlegenden dreispaltigen Layout folgen.
+Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends (siehe <<image-vertikalerschnitt>>) folgen.
 
 *_Beispiel einer Eingabefeldgruppe mit bedingten Pflichtfeldern (ehemals Optionale Pflichtfelder):_*
 
@@ -1676,7 +1700,7 @@ Sie können durch ihre inhaltlich logische Struktur dem grundlegenden dreispalti
 .Eingabefeldgruppe mit bedingten Pflichtfeldern
 image::24_DP_bedingte_pflichtfeldgruppe.png[align="center"]
 
-Bei einer bedingte Pfichtfeldgruppe ist das Ausfüllen mindestens eines Feldes in einer Eingabefeldgruppe Voraussetzung, um den Prozess abzuschließen.
+Bei einer bedingten Pflichtfeldgruppe ist das Ausfüllen mindestens eines Feldes in einer Eingabefeldgruppe Voraussetzung, um den Prozess abzuschließen.
 
 _Im konkreten Beispiel: Identitätsnachweisdokument_
 
@@ -1723,7 +1747,7 @@ Formulare sollen einem einspaltigen, zweispaltigen oder dreispaltigen Layout fol
 Dabei sind alle Spalten innerhalb eines Formulars gleich breit aufgebaut.
 
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem https://isyfact.github.io/isyfact-standards-doku/3.0.x/isy-bedienkonzept/bedienkonzept.html[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
+Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem https://isyfact.github.io/isyfact-standards-doku/current/isy-bedienkonzept/bedienkonzept.html[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 
 *_Beispielhaftes Formular dreispaltig:_*
 
@@ -1764,7 +1788,7 @@ Die Größenanpassung erfolgt innerhalb von gewissen Bereichen:
 * Wird das Browserfenster kleiner als der darzustellende Inhalt (in der Regel bei Tablets und Smartphones), so wird das gesamte Fenster vertikal scrollbar.
 * Der vertikale Abstand zwischen Gruppen und Eingabefeldern bleibt unabhängig von der Bildschirmgröße konstant.
 * Der Abstand zwischen Eingabefeldern und Labeln bleibt ebenfalls unverändert.
-* Bei einer Veränderung der Browserfenster-Größe sollten sich die Breite der Spalten dynamisch an den verfügbaren Platz anpassen, ohne dabei die Lesbarkeit zu beeinträchtigen.
+* Bei einer Veränderung der Browserfenster-Größe sollte sich die Breite der Spalten dynamisch an den verfügbaren Platz anpassen, ohne dabei die Lesbarkeit zu beeinträchtigen.
 
 *_Beispielhafte Gesamtumsetzung eines Formulars im Anwendungsrahmen:_*
 
@@ -1835,14 +1859,14 @@ Sie schließt sich, wenn Nutzende neben die Eingabehilfe klicken oder innerhalb 
 .Darstellung einer funktionalen Autosuggestion
 image::24_EF_autosuggestion.png[align="center"]
 
-Sobald die Nutzenden mit der Eingabe beginnen, werden mögliche Werte, die mit von den Nutzenden gemachten Eingabe beginnen, in einem Menü unterhalb des Textfelds angezeigt.
+Sobald die Nutzenden mit der Eingabe beginnen, werden mögliche Werte, die mit der getätigten Eingabe beginnen, in einem Menü unterhalb des Textfelds angezeigt.
 Nutzende können nun weiter tippen oder direkt einen Wert aus dem Menü auswählen und somit ihre Eingabe verkürzen.
 Gibt es mehr als zehn mögliche passende Werte, so werden die ersten zehn Werte angezeigt, gefolgt von einer Information, dass mehr als zehn Einträge existieren.
 
 [[fortschrittsanzeige]]
 ==== Fortschrittsanzeige
 
-Feedback-Konzepte für Ladezeiten sind ein sehr wichtiges Instrument, um eine User Experience zu erreichen.
+Feedback-Konzepte für Ladezeiten sind ein sehr wichtiges Instrument, um eine gute User Experience zu erreichen.
 Für längere Operationen kann ein Fortschritts-Balken (Progress Bar) genutzt werden, der sich entsprechend dem Fortschritt des Vorgangs füllt.
 Für kürzere Vorgänge kann ein Fortschritts-Spinner (kreisrunde Fortschrittsanzeige) verwendet werden.
 
@@ -1876,12 +1900,12 @@ Der Fortschritts-Spinner empfiehlt sich aufgrund seiner geringen Maße insbesond
 [[system-meldungen]]
 ==== System-Meldungen
 
-Beim Verfassen von System-Benachrichtigungen – wie bspw. <<fehlermeldungen>> – muss auf eine verständliche und konsistente Formulierung geachtet werden.
+Beim Verfassen von System-Benachrichtigungen – wie beispielsweise <<fehlermeldungen>> – muss auf eine verständliche und konsistente Formulierung geachtet werden.
 Neben <<image-eingabefelderror,Fehlermeldungen, die am Eingabeobjekt auftreten>>, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden (*Achtung:* dynamisch nachgeladene Elemente müssen auch einem Screenreader mitgeteilt werden, sodass auch Personen mit Einschränkungen diese Hinweise mitbekommen).
 Dies geschieht mithilfe von Toast-Notifications, welche immer am unteren rechten Rand des Browserfensters angezeigt werden.
 
 Jede Toast-Notification muss eine Schließen-Aktion für den Nutzenden anbieten.
-Um die <<barrierefreiheit>> einzuhalten, muss die Notification dauerhaft eingeblendet bleiben, bis sie von den Nutzende geschlossen wird, siehe https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html[WCAG 2.1 Kriterium 1.4.13a].
+Um die <<barrierefreiheit>> einzuhalten, muss die Notification dauerhaft eingeblendet bleiben, bis sie von den Nutzenden geschlossen wird, siehe https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html[WCAG 2.1 Kriterium 1.4.13a].
 
 Folgende Meldungsarten können als Toast-Notification verwendet werden:
 
@@ -1894,7 +1918,7 @@ Folgende Meldungsarten können als Toast-Notification verwendet werden:
 .Verschiedene Toast-Notifications
 image::24_UC_toast_notification.png[align="center"]
 
-*_Do's_*
+*_Dos_*
 
 * *Allgemeinverständliche und positive Sprache*
 ** _Inkorrekt_:
