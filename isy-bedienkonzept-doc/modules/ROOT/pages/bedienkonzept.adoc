@@ -227,11 +227,11 @@ Die detaillierten Anforderungen sind zu finden unter:
 * https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/en301549/en301549-node.html[EN 305419]
 
 Vor der Auflistung der einzelnen Kriterien sind im Kontext der IsyFact einige Kriterien der Barrierefreiheit besonders herauszustellen und bereits bei der fachlichen Konzeption zu berücksichtigen.
-In der Regel sind die genannten Anforderungen durch die Nutzung der Standardelemente der IsyFact erfüllt 
+In der Regel sind die genannten Anforderungen durch die Nutzung der Standardelemente der IsyFact erfüllt
 // TODO: Was soll das heißen?
 oder es wird die Möglichkeit geboten, sicherzustellen, dass die fachlichen Elemente vorhanden sind.
 //TODO: Was soll das heißen?
-Alle hier genannten Maßnahmen sind zur Steigerung der Awareness und Transparenz aufgelistet: 
+Alle hier genannten Maßnahmen sind zur Steigerung der Awareness und Transparenz aufgelistet:
 
 *Dos*
 
@@ -265,7 +265,7 @@ Um eine gute Erkennbarkeit der Elemente sicherzustellen, muss bei großer Schrif
 Nachfolgend sind die Kontrastverhältnisse aller zur Verfügung stehender Farben abgebildet.
 Farbkombinationen, die rot gelabelt sind und keinen ausreichenden Kontrast aufweisen, dürfen nicht verwendet werden.
 //TODO: Was soll das heißen?
-Andere Farbkombinationen sind entsprechend ihrem Text oder ihrer Elementgröße frei zu wählen. 
+Andere Farbkombinationen sind entsprechend ihrem Text oder ihrer Elementgröße frei zu wählen.
 Dabei soll der Kontrast so hoch wie möglich gewählt werden.
 
 [[image-farbmatrix]]
@@ -302,7 +302,7 @@ Beispiel:
 
 * *Kontextbezogen:*
 Der Alt-Text sollte den Kontext berücksichtigen, in dem das Bild verwendet wird.
-//TODO: Das Beispiel scheint mir nicht passend: Was hat das hier mit Kontext zu tun? In einem anderen Kontext wäre die Beschriftung eines Einkaufswagens wohl auch Einkaufwagen. 
+//TODO: Das Beispiel scheint mir nicht passend: Was hat das hier mit Kontext zu tun? In einem anderen Kontext wäre die Beschriftung eines Einkaufswagens wohl auch Einkaufwagen.
 Beispiel:
 Bei einem Bild eines Einkaufswagens auf einer E-Commerce-Seite könnte der Alt-Text lauten:
 [source,xml]
@@ -437,7 +437,7 @@ Farben tragen maßgeblich zur visuellen Identität eines Frontends bei und beein
 image::24_BE_farbpalette.png[align="center"]
 
 
-Die Standardpalette wird mit dem IsyFact-Theme ausgeliefert und entsprechend der aktuellen gesetzlichen Lage aktualisiert. Deshalb kann die ausgelieferte Palette von dem hier dokumentierten Stand abweichen. Die dazugehörige <<image-farbmatrix,Kontrasttabelle>> der Standardpalette ist im Kapitel <<barrierefreiheit>> zu finden. Die Farbpalette legt ebenfalls fest, zu welchen Zweck bestimmten Farben eingesetzt werden sollen, zum Beispiel Rot (#A4252C) zur Markierung von Alerts. 
+Die Standardpalette wird mit dem IsyFact-Theme ausgeliefert und entsprechend der aktuellen gesetzlichen Lage aktualisiert. Deshalb kann die ausgelieferte Palette von dem hier dokumentierten Stand abweichen. Die dazugehörige <<image-farbmatrix,Kontrasttabelle>> der Standardpalette ist im Kapitel <<barrierefreiheit>> zu finden. Die Farbpalette legt ebenfalls fest, zu welchen Zweck bestimmten Farben eingesetzt werden sollen, zum Beispiel Rot (#A4252C) zur Markierung von Alerts.
 
 *_Dos_*
 
@@ -453,7 +453,7 @@ Die Anwendungsfarbe ist frei wählbar, aber muss vom Projekt auf Barrierefreihei
 
 === Applikationsfarben
 
-//ToDo (Kurze Erläuterung, was eine Applikationsgruppe sein kann? Mir ist hier nicht klar, was genau gemeint ist) 
+//ToDo (Kurze Erläuterung, was eine Applikationsgruppe sein kann? Mir ist hier nicht klar, was genau gemeint ist)
 Pro Applikationsgruppe kann eine Farbe definiert werden, welche an verschiedenen Stellen des Applikationsportals eingesetzt wird und so einen Wiedererkennungswert schafft. Wenn eine Applikation keiner Gruppe zugeordnet werden kann, kann sie ihre eigene Farbe erhalten. Bei der Wahl der Farben sind die generellen Richtlinien zur Nutzung von <<farben>> zu berücksichtigen. Die Farben sollten so gewählt werden, dass ein harmonisches Gesamtbild erhalten bleibt.
 
 Die Applikationsfarbe kommt an folgenden Stellen zum Einsatz:
@@ -677,6 +677,13 @@ a|image::primeicons/star-fill.svg[width=32,height=32]
 === Text
 
 Textelemente spielen eine entscheidende Rolle bei der Kommunikation mit den Nutzenden.
+Textelemente spielen eine entscheidende Rolle bei der Kommunikation mit den Nutzenden.
+Um benutzerfreundliche Texte verfassen zu können, ist es wichtig, die Art und Weise zu verstehen, wie Nutzende Texte auffassen und verarbeiten.
+In westlichen Kulturen wird in der Regel von links nach rechts und von oben nach unten gelesen.
+In Bezug auf Software und User-Interface-Design kann auf diese Tatsache jedoch nur eingeschränkt zurückgegriffen werden, denn Nutzende lesen die Texte auf einem Bildschirm nicht, vielmehr scannen sie diesen nach relevanten Informationen.
+
+Verschiedenartige Informationen rufen dabei unterschiedliche Aufmerksamkeitsstufen hervor.
+So werden <<button,Schaltflächen>>, <<label,Labels>> und andere interaktive Elemente gewöhnlich zuerst gescannt, während statischer Text eher selten gelesen wird.
 Dieser Abschnitt definiert die typografischen Standards, sprachlichen Richtlinien und Längenbeschränkungen, die dazu beitragen, dass die Texte klar, verständlich und ansprechend sind.
 
 Frontends des Bundes sollen über die IT-Landschaft hinweg ein einheitliches Look-and-Feel bieten.
@@ -718,40 +725,101 @@ Beim Ensatz von Liberation muss beachtet werden, dass bei dieser Schriftart das 
 *_Barrierefreiheit von Text_*
 
 Zusätzlich zu einem klar leserlichen Schriftschnitt sind auch die Gestaltungsmerkmale von Text, <<farben,Farbe>> und Größe entsprechend zu berücksichtigen.
-Die Standard-Schriftart für <<bedienelemente>> und Inhalte ist BundesSans (14pt, regular, dunkelgrau).
+Die fehlerhafte Anwendung von Texten kann somit direkt zu einer Reduzierung der Benutzerfreundlichkeit des entsprechenden Frontends führen.
+
+Die Standard-Schriftart für <<bedienelemente>> und Inhalte ist BundesSans (14pt, regular, dunkelgrau #212529).
 Grundsätzlich gilt, ausreichende Schriftgrößen sind abhängig vom Betrachtungsabstand, von der Art des Textes und von der Sehschärfe der Lesenden.
 Individuelle Schriftgrößen können mit dem Schriftgrößenrechner auf https://www.leserlich.info/werkzeuge/schriftgroessenrechner/index.php[leserlich.info] ermittelt und entsprechend an den Nutzungskreis angepasst werden.
 
-*_Richtlinien zur Anwendung:_*
+*_Rechtschreibung_*
+
+Zu einem klaren, professionellen Gesamterscheinungsbild trägt auch eine korrekte Rechtschreibung, sowie eine konsistente Groß- und Kleinschreibung bei.
+Während bei englischsprachigen Frontends zwischen verschiedenen Formen der Groß- und Kleinschreibung unterschieden wird, reicht es bei deutschsprachigen Frontends aus, die korrekte deutsche Rechtschreibung anzuwenden.
+Eine Ausnahme besteht darin, dass das erste Wort der Beschriftung eines <<bedienelemente,Bedienelements>> immer großgeschrieben wird, unabhängig von der jeweiligen Wortart.
+
+*_Vermeidung von technischem Jargon_*
+
+Text muss immer in der Sprache der Nutzenden verfasst werden.
+Im Folgenden werden einige Beispiele für technische Begriffe und deren Übersetzung in allgemein verständliche Sprache aufgezeigt.
+
+[cols="5a,5a", options="header", align="center"]
+|====
+|Technischer Begriff |Allgemeiner Begriff
+
+|Dirty State
+|Nicht gespeicherte Änderungen
+
+|Mouse-Up-Event
+|Maus-Klick
+
+|Reboot
+|Neustart
+
+|String-Länge
+|Anzahl der Zeichen
+
+|Data Grid
+|Tabelle
+|====
+
+*_Do's_*
 
 * Die Verwendung verschiedener Schriftarten (über die im Bedienkonzept hinaus vorgegebenen Schriftarten) muss vermieden werden.
 * Die Schriftgröße muss immer ausreichend groß sein.
 Ein Unterschreiten von Mindestgrößen zugunsten des Platzgewinns muss vermieden werden.
 Stattdessen werden andere, platzsparende Mechanismen angewandt wie Expander (Progressive Disclosure).
 * Die Anzahl verschiedener Schriftgrößen muss auf ein notwendiges Minimum reduziert werden.
+* Als Standard-Schrift wird BundesSans 14pt Regular in Dunkelgrau (#212529) empfohlen.
 * Es muss sichergestellt sein, dass der <<barrierefreier-einsatz-von-farben,Kontrast der Schriftfarbe zur Hintergrundfarbe>> ausreichend groß ist.
 Hier ist der Kontrast größtmöglich zu wählen (zum Beispiel dunkelgraue Schrift auf weißem Hintergrund).
 Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss der Kontrast bei kleiner Schrift mindestens 4,5:1 entsprechen.
-* <<ueberschriften,Überschriften>> und großer/dicker Text muss mindestens einen Kontrast von 3:1 aufweisen.
+* <<ueberschriften>> und großer/dicker Text müssen einen Mindestkontrast von 3:1 aufweisen.
+* Die Nutzung von Fachterminologie muss entsprechend konsistent verwendet werden.
+
+*_Don'ts_*
+
+* Inkonsistente Terminologie.
+* Inkonsistente und falsche Groß- und Kleinschreibung.
+* Die Verwendung von zu langen Texten und Textblöcken.
+* Nutzung von unterstrichenem Text in Textpassagen, außer für <<link,Hyperlinks>>.
+* Die Verwendung von redundanten Textinformationen.
+* Nutzung von technischem Jargon statt der Sprache der Nutzenden.
 
 [[grafiken]]
 === Grafiken
 
-Bilder und Grafiken ergänzen den Text und vermitteln Informationen auf visuelle Weise.
-Hier werden die Leitlinien für die Verwendung von Grafiken festgelegt, einschließlich Stilrichtlinien, Bildgrößen und im Ansatz deren Barrierefreiheit.
-Details werden im entsprechenden Kapitel genauer erläutert.
-
+Bilder und Grafiken ergänzen den <<text>> und vermitteln Informationen auf visuelle Weise.
 //ToDo: Was soll das heißen, dass sie der Fachlichkeit unterliegen?
-* Bilder unterliegen in erster Linie der notwendigen Fachlichkeit.
-* Jedes Bild benötigt eine Bildunterschrift.
-* Jedes Bild benötigt ein aussagekräftiges <<alt-tag,Alt-Attribut>>.
+Sie unterliegen in erster Linie der notwendigen Fachlichkeit.
+Hier werden die Leitlinien für die Verwendung von Grafiken festgelegt, einschließlich Stilrichtlinien, Bildgrößen und im Ansatz deren <<barrierefreiheit>>.
+
+Jedes Bild benötigt eine Bildunterschrift und ein aussagekräftiges <<alt-tag,Alt-Attribut>>, um die Barrierefreiheit von Frontends zu unterstützen.
+So können die Inhalte für alternative Ausgabegeräte oder beim fehlerhaften Laden zugänglich gemacht werden.
+Des Weiteren soll die Bildgröße an den Inhalt angepasst werden, um sicherzustellen, dass die Informationen den Nutzenden übermittelt werden und kein horizontales Scrolling erforderlich ist.
+
+*_Schriftgrafiken_*
+
+Schriftgrafiken können nicht oder nur eingeschränkt an Benutzeranforderungen angepasst werden, weshalb sie nicht genutzt werden dürfen.
+Logos sind hiervon ausgenommen.
+Gründe dafür sind, dass ihre Farben und Schriftgrößen nicht individuell eingestellt werden können und die Schriftkanten bei einer Zoomvergrößerung meist unscharf werden.
+
+*_Schmuckgrafiken_*
+
+Schmuckgrafiken können zwar genutzt werden, sollten jedoch so wenig wie möglich eingesetzt werden.
+Solche Grafiken müssen entsprechend als Schmuckgrafik gekennzeichnet sein und benötigen deshalb auch keine Alt-Attribute.
+
+*_Do's_*
+
+* Bilder benötigen eine Bildunterschrift.
+* Grafiken müssen ein aussagekräftiges <<alt-tag,Alt-Attribut>> besitzen.
+* Das Bildmaterial muss ausreichend hoch aufgelöst sein, sodass keine Fragmente erkennbar sind.
+* Schmuckgrafiken sind erlaubt, jedoch entsprechend zu kennzeichnen.
+
+*_Don'ts_*
+
 * Bilder dürfen nicht gegen deutsches Recht verstoßen, politisch, sexuell oder angreifend sein.
-* Bilder dürfen keine Schriftgrafiken enthalten; in Ausnahmen muss die Schriftgrafik durch zum Beispiel Alt-Attribute ausreichend beschrieben sein.
-* Schmuckgrafiken können genutzt werden, aber sollen so wenig wie möglich verwendet werden.
-* Schmuckgrafiken müssen als solche gekennzeichnet sein.
-* Schmuckgrafiken benötigen keine Alt-Attribute.
-* Es ist darauf zu achten, dass durch Bilder kein horizontales Scrolling entsteht.
-* Es ist darauf zu achten, dass das Bildmaterial ausreichend hoch aufgelöst ist, sodass keine Fragmente erkennbar sind.
+* Bilder dürfen keine Schriftgrafiken enthalten, ausgenommen Logos.
+In Ausnahmefällen muss die Schriftgrafik bspw. durch Alt-Attribute ausreichend beschrieben sein.
 
 [[ueberschriften]]
 === Überschriften
@@ -1033,7 +1101,7 @@ Sie kommen in verschiedensten Formen und Kontexten vor, sei es in Form von Textf
 Die Gestaltung und Platzierung von Eingabefeldern hat direkten Einfluss auf die Benutzererfahrung und die Effizienz der Dateneingabe.
 
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin ihrem zum Umsetzungszeitpunkt gültigen Bedienkonzept entsprechen.
+Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem https://isyfact.github.io/isyfact-standards-doku/3.0.x/isy-bedienkonzept/bedienkonzept.html[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 
 Eingabefelder sind dynamisch.
 Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (<<placeholder,Placeholder>>) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
@@ -1144,7 +1212,7 @@ Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsw
 image::24_BE_eingabefeld_inputoption.png[align="center"]
 
 Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem <<image-eingabefeldplatzhalter,normalen Eingabefeld>>.
-Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung Eingabefeld mit Input-Option) oder eine Datumseingabe. 
+Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung Eingabefeld mit Input-Option) oder eine Datumseingabe.
 Die Schaltfläche der Input-Option ist mindestens 44px x 44px.
 
 [[textbox]]
@@ -1463,7 +1531,7 @@ Sollte es fachlich notwendig sein, kann auch endless-scrolling eingesetzt werden
 
 * Es sollten keine Tabellen mit nur 1-2 Spalten erzeugt werden.
 * Bei Tabellen sollte nicht vertikal gescrollt werden.
-* Wenn nur ein einziger Eintrag länger ist als der Durchschnitt, sollte sich die Breite der Spalten nicht nach diesem Eintrag richten. 
+* Wenn nur ein einziger Eintrag länger ist als der Durchschnitt, sollte sich die Breite der Spalten nicht nach diesem Eintrag richten.
 * Wenn sich Symbole oder Bilder nur wiederholen, sollte auf sie verzichtet werden.
 
 [[sortierung-tabelle]]
@@ -1582,12 +1650,12 @@ Bei der Gestaltung sollte darauf geachtet werden, dass die Icon-Sprache über di
 [[eingabefeldgruppen]]
 === Eingabefeldgruppen
 
-In fast jedem Frontend beziehungsweise in den häufigsten Anwendungsfällen lassen sich Eingabefelder inhaltlich zu (homogenen) Gruppen zusammenfassen. 
+In fast jedem Frontend beziehungsweise in den häufigsten Anwendungsfällen lassen sich Eingabefelder inhaltlich zu (homogenen) Gruppen zusammenfassen.
 Häufig verwendete Gruppen sind beispielsweise „Angaben zur Person“ (mit den Eingabefeldern Vorname, Familienname, Nationalität, Geschlecht etc.), Adressdaten (Straße, Hausnummer, Postleitzahl, Ort) oder Bezahldaten (Art der Bezahlung, Kartennummer etc.). Eingabefeldgruppen sind eine Möglichkeit solche Gruppierungen darzustellen.
 
 Eingabefeldgruppen bestehen immer aus mindestens einer Gruppenüberschrift beziehungsweise einem Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und gegebenenfalls weiteren <<bedienelemente,Bedienelementen>>.
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem zum Umsetzungszeitpunkt gültigen Bedienkonzept entsprechen.
+Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem https://isyfact.github.io/isyfact-standards-doku/3.0.x/isy-bedienkonzept/bedienkonzept.html[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 
 *_Beispiel einer Eingabefeldgruppe "Persönliche Angaben":_*
 
@@ -1655,7 +1723,7 @@ Formulare sollen einem einspaltigen, zweispaltigen oder dreispaltigen Layout fol
 Dabei sind alle Spalten innerhalb eines Formulars gleich breit aufgebaut.
 
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin ihrem zum Umsetzungszeitpunkt gültigen Bedienkonzept entsprechen.
+Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem https://isyfact.github.io/isyfact-standards-doku/3.0.x/isy-bedienkonzept/bedienkonzept.html[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 
 *_Beispielhaftes Formular dreispaltig:_*
 
@@ -1805,14 +1873,11 @@ Dabei füllt sich der Balken von links (0%) nach rechts (100%).
 * Für die Dauer der Operation dreht sich der Fortschritts-Spinner und signalisiert Nutzenden damit, dass sich ein Prozess in Gang befindet.
 Der Fortschritts-Spinner empfiehlt sich aufgrund seiner geringen Maße insbesondere in Situationen, in denen Platzbedarf von großer Bedeutung ist.
 
-[[fehlermeldungen]]
-=== Fehlermeldungen
+[[system-meldungen]]
+==== System-Meldungen
 
-Fehlermeldungen sind unvermeidlich, aber wie sie präsentiert werden, kann einen großen Unterschied für die Benutzererfahrung bedeuten.
-Fehlermeldungen sollten deutlich sichtbar sein, in verständlicher Sprache verfasst sein und klare Anweisungen zur Behebung des Fehlers enthalten.
-Idealerweise sollten Fehlermeldungen in unmittelbarer Nähe von betroffenen Objekten platziert werden (siehe als Beispiel: <<image-eingabefelderror,Eingabefelder - Fehlermeldung>>), um Nutzenden sofortiges Feedback zu geben und sie bei der Fehlerbehebung zu unterstützen.
-
-Neben Fehlermeldungen, die am Eingabeobjekt auftreten, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden (*Achtung:* dynamisch nachgeladene Elemente müssen für einen Screenreader zugänglich sein, sodass auch Personen mit Einschränkungen diese Hinweise mitbekommen).
+Beim Verfassen von System-Benachrichtigungen – wie bspw. <<fehlermeldungen>> – muss auf eine verständliche und konsistente Formulierung geachtet werden.
+Neben <<image-eingabefelderror,Fehlermeldungen, die am Eingabeobjekt auftreten>>, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden (*Achtung:* dynamisch nachgeladene Elemente müssen auch einem Screenreader mitgeteilt werden, sodass auch Personen mit Einschränkungen diese Hinweise mitbekommen).
 Dies geschieht mithilfe von Toast-Notifications, welche immer am unteren rechten Rand des Browserfensters angezeigt werden.
 
 Jede Toast-Notification muss eine Schließen-Aktion für den Nutzenden anbieten.
@@ -1828,3 +1893,54 @@ Folgende Meldungsarten können als Toast-Notification verwendet werden:
 [[image-toastnotification]]
 .Verschiedene Toast-Notifications
 image::24_UC_toast_notification.png[align="center"]
+
+*_Do's_*
+
+* *Allgemeinverständliche und positive Sprache*
+** _Inkorrekt_:
+„Soll das Objekt gelöscht werden?“
+** _Besser_:
+„Wollen Sie das gewählte Objekt XY löschen?“
+* Verwenden einer einfachen und konsistenten Satzstruktur
+* *Präzise Formulierungen*:
+** _Inkorrekt_:
+„Nichts selektiert"
+** _Besser_:
+„Bitte selektieren Sie ein Objekt in der Liste"
+* *Positive Formulierungen*:
+** _Inkorrekt_:
+„Illegale String-Länge aufgetreten.“
+** _Besser_:
+„Es wurden zu viele Zeichen eingegeben.
+Es sind maximal 20 Zeichen möglich.“
+* Es soll nicht nur das Problem geschildert, sondern auch eine mögliche Lösung mitgeliefert werden.
+
+*_Don'ts_*
+
+* Vermeidung von redundanten Informationen
+* Vermeidung von mehrdeutigen Beschreibungen
+
+[[fehlermeldungen]]
+=== Fehlermeldungen
+
+Fehlermeldungen sind unvermeidlich, aber wie sie präsentiert werden, kann einen großen Unterschied für die Benutzererfahrung bedeuten.
+Fehlermeldungen sollten gut sichtbar, in verständlicher Sprache verfasst sein und klare Anweisungen zur Behebung des Fehlers enthalten.
+Idealerweise sollten Fehlermeldungen in unmittelbarer Nähe von betroffenen Objekten platziert werden (siehe als Beispiel: <<image-eingabefelderror,Eingabefelder - Fehlermeldung>>), um Nutzenden sofortiges Feedback zu geben und sie bei der Fehlerbehebung zu unterstützen.
+Neben Fehlermeldungen, die am Eingabeobjekt auftreten, kann zusätzlich ein zusammenfassender Hinweis, wie im Kapitel <<system-meldungen>> beschrieben, angezeigt werden.
+
+Ein häufig auftretendes Problem ist dabei die Verwendung von negativ anmutenden Formulierungen, die Benutzende demotivieren können.
+Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquivalente:
+
+[cols="5a,5a", options="header", align="center"]
+|====
+|Negativer Begriff |Neutraler Begriff
+
+|Illegal
+|Nicht korrekt
+
+|Fehler
+|Problem
+
+|Fehlschlagen („Speichern ist fehlgeschlagen")
+|Nicht können („Es konnte nicht gespeichert werden")
+|====
