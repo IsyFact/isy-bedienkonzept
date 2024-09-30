@@ -95,11 +95,10 @@ Usability oder Gebrauchstauglichkeit bezieht sich auf die Benutzerfreundlichkeit
 Dabei geht es darum, wie leicht Nutzende ein Frontend verstehen und die Bedienung erlernen können.
 Zu den Hauptkomponenten der Usability gehören:
 
-//Anmerkung: Hier steht an erster Stelle, was bei den Begriffen im Fokus steht (Fähigkeit, Schnelligkeit und Aufwand, Komfort und positive Erfahrung)
 * *Effektivität:*
 Die Fähigkeit eines Frontends, den Nutzenden die Möglichkeit zu geben, ihre Ziele zu erreichen.
 * *Effizienz:*
-Die Schnelligkeit und der Aufwand, mit dem Nutzende ihre Ziele erreichen.
+Die Fähigkeit eines Frontends den Nutzenden zu ermöglichen, ihre Ziele mit möglichst geringem Zeit- und Arbeitsaufwand zu erreichen.
 * *Zufriedenheit:*
 Das Maß an Komfort und positiver Erfahrung der Benutzenden bei der Nutzung des Frontends.
 
@@ -460,6 +459,7 @@ Die Farben sollten so gewählt werden, dass ein harmonisches Gesamtbild erhalten
 
 Die Applikationsfarbe kommt an folgenden Stellen zum Einsatz:
 
+// ToDo: Beispielbild kann hier ergänzend eingefügt werden
 * Hauptnavigation – Farbbalken unterhalb des Headers
 * Submenü (Flyout) – Farbbalken am oberen Rand des Menüs
 * Widget auf Dashboard – Farbbalken am oberen Rand
@@ -1273,6 +1273,7 @@ Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
 *_Dos_*
 
 * Listen sollen inhaltlich so einfach wie möglich gestaltet werden.
+* Listeneinträge sollten so kurz wie möglich formuliert sein.
 * Listeneinträge sind eindeutig unterscheidbar.
 * Wenn Listen viele Einträge haben, so sollten andere Elemente die Durchsuchbarkeit, Filterung oder Kategorisierung ermöglichen.
 * Listen können mit unterschiedlichen interaktiven Elementen kombiniert werden, um dem Nutzenden eine Hilfestellung zu bieten.
@@ -1280,11 +1281,10 @@ Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
 
 *_Don'ts_*
 
-//TODO: Ist die Verneinung richtig. Wenn ja, warum?
 * Listeneinträge sollten nie mehrzeilig sein.
 * Listeneinträge sollten nicht doppelt vorhanden sein.
 * Listen sollten nicht unsortiert und sehr lang sein.
-* Listeneinträge sollten nicht als ganze Sätze formuliert werden.
+* Listeneinträge mit ganzen Sätzen sollten, wenn möglich, vermieden werden.
 
 [[checkbox]]
 === Checkbox
