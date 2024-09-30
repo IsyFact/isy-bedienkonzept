@@ -29,9 +29,7 @@ Dieses Konzept ist für jedes Frontend relevant, unabhängig von dessen Komplexi
 Es ist gültig für alle Neuentwicklungen und für Überarbeitungen von Frontends, die einem Major Change oder Technologiewechsel unterliegen.
 Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Altanwendungen.
 
-//ToDo: Q1-2024 gab es das Bedienkonzept noch ncht wirklich. Ich denke Q4 wäre besser.
 Das Bedienkonzept ist gültig ab Q4 – 2024.
-//ToDo: Link zu älteren Versionen
 Für Altanwendungen gilt, dass https://isyfact.github.io/isyfact-standards-doku/current/isy-bedienkonzept/bedienkonzept.html[das Bedienkonzept (beziehungsweise ehemals Styleguide) zum Zeitpunkt der Entwicklung der Altanwendung] mit den damals geltenden Inhalten gültig bleibt.
 
 *_Rolle von Designenden, Entwickelnden und Fachlichkeit_*
@@ -231,9 +229,7 @@ Die detaillierten Anforderungen sind zu finden unter:
 * https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/en301549/en301549-node.html[EN 305419]
 
 Vor der Auflistung der einzelnen Kriterien sind im Kontext der IsyFact einige Kriterien der Barrierefreiheit besonders herauszustellen und bereits bei der fachlichen Konzeption zu berücksichtigen.
-// TODO: Was soll das heißen?
 In der Regel sind die genannten Anforderungen durch die Nutzung der Standardelemente der IsyFact erfüllt oder es wird die Möglichkeit geboten, zum Beispiel durch das Theme, diese in einem Frontend umzusetzen.
-// TODO: Was soll das heißen?
 Alle hier genannten Maßnahmen sind besonders hervorzuheben und unabdinglich für ein barrierefreies Frontend.
 
 *Dos*
@@ -267,7 +263,6 @@ Um eine gute Erkennbarkeit der Elemente sicherzustellen, muss bei großer Schrif
 
 Nachfolgend sind die Kontrastverhältnisse aller zur Verfügung stehender Farben abgebildet.
 Farbkombinationen, die rot gelabelt sind und keinen ausreichenden Kontrast aufweisen, dürfen nicht verwendet werden.
-// TODO: Was soll das heißen?
 Andere Farbkombinationen sind entsprechend ihrer Textart oder Elementgröße frei zu wählen - Fließtext & Label 4,5:1, Überschrift 3:1, Haupt-/Einstiegsseiten & Seiten mit rechtlicher Relevanz 7:1.
 Dabei soll der Kontrast so hoch wie möglich gewählt werden.
 
@@ -305,7 +300,6 @@ Beispiel:
 
 * *Kontextbezogen:*
 Der Alt-Text sollte den Kontext berücksichtigen, in dem das Bild verwendet wird.
-//TODO: Das Beispiel scheint mir nicht passend: Was hat das hier mit Kontext zu tun? In einem anderen Kontext wäre die Beschriftung eines Einkaufswagens wohl auch Einkaufwagen.
 Beispiel:
 Bei einem Bild eines Einkaufswagens auf einer E-Commerce-Seite könnte der Alt-Text lauten:
 [source,xml]
@@ -424,7 +418,6 @@ Die technischen Rahmenbedingungen legen fest, welche Technologien und Plattforme
 Dieser beinhaltet behördenspezifische Widgets wie den Anwendungsrahmen oder Eingabefelder für Sonderzeichen.
 * Der Baustein liefert ein eigenes Theme, welches die im Bedienkonzept beschriebenen <<allgemeine-prinzipien,allgemeinen Prinzipien>> weitestgehend umsetzt.
 Dieses Theme kann bei Bedarf auch durch ein projektspezifisches Theme ersetzt werden.
-//ToDo: Welches Frontend? Ist hier der Buastein gemeint?
 * Primär ist der Baustein für die Nutzung auf Desktopgeräten konzipiert, kann aber durch die grundlegende Responsivität auch auf mobilen Geräten genutzt werden.
 
 [[basiselemente]]
@@ -459,7 +452,6 @@ Die Anwendungsfarbe des Frontends ist frei wählbar, aber muss vom Projekt auf B
 
 === Applikationsfarben
 
-//ToDo (Kurze Erläuterung, was eine Applikationsgruppe sein kann? Mir ist hier nicht klar, was genau gemeint ist)
 Sofern es möglich und sinnvoll ist, werden Applikationen aufgrund ihrer Fachlichkeit in Gruppen zusammengefasst.
 Pro Applikationsgruppe kann eine Farbe definiert werden, welche an verschiedenen Stellen des Applikationsportals eingesetzt wird und so einen Wiedererkennungswert schafft.
 Wenn eine Applikation keiner Gruppe zugeordnet werden kann, kann sie für sich alleine stehen und ihre eigene Farbe erhalten.
@@ -468,7 +460,6 @@ Die Farben sollten so gewählt werden, dass ein harmonisches Gesamtbild erhalten
 
 Die Applikationsfarbe kommt an folgenden Stellen zum Einsatz:
 
-// ToDo: Beispielbild kann hier ergänzend eingefügt werden
 * Hauptnavigation – Farbbalken unterhalb des Headers
 * Submenü (Flyout) – Farbbalken am oberen Rand des Menüs
 * Widget auf Dashboard – Farbbalken am oberen Rand
@@ -689,11 +680,11 @@ a|image::primeicons/star-fill.svg[width=32,height=32]
 Textelemente spielen eine entscheidende Rolle bei der Kommunikation mit den Nutzenden.
 Um benutzerfreundliche Texte verfassen zu können, ist es wichtig, die Art und Weise zu verstehen, wie Nutzende Texte auffassen und verarbeiten.
 In westlichen Kulturen wird in der Regel von links nach rechts und von oben nach unten gelesen.
-In Bezug auf Software und User-Interface-Design kann auf diese Tatsache jedoch nur eingeschränkt zurückgegriffen werden, denn Nutzende lesen die Texte auf einem Bildschirm nicht, vielmehr scannen sie diesen nach relevanten Informationen.
+In Bezug auf Software und User-Interface-Design gilt diese Tatsache jedoch nur eingeschränkt, denn Nutzende lesen die Texte auf einem Bildschirm meistens nicht vollständig, sondern überfliegen sie nur kurz, um die für sie relevanten Informationen zu finden.
 
-Verschiedenartige Informationen rufen dabei unterschiedliche Aufmerksamkeitsstufen hervor.
-So werden <<button,Schaltflächen>>, <<label,Labels>> und andere interaktive Elemente gewöhnlich zuerst gescannt, während statischer Text eher selten gelesen wird.
-Dieser Abschnitt definiert die typografischen Standards, sprachlichen Richtlinien und Längenbeschränkungen, die dazu beitragen, dass die Texte klar, verständlich und ansprechend sind.
+Die beim Design eines Frontends eingesetzten Elemente unterscheiden sich auch dadurch, wie stark sie die Aufmerksamkeit der Nutzenden auf sich ziehen.
+So werden <<button,Schaltflächen>>, <<label,Labels>> und andere interaktive Elemente gewöhnlich zuerst wahrgenommen, während statischer Text eher selten gelesen wird.
+Dieser Abschnitt definiert die typografischen Standards, sprachlichen Richtlinien und Längenbeschränkungen, die dazu beitragen, dass Texte klar, verständlich und ansprechend sind.
 
 Frontends des Bundes sollen über die IT-Landschaft hinweg ein einheitliches Look-and-Feel bieten.
 Dies wird über den Einsatz der IsyFact und deren Komponenten gewährleistet.
@@ -728,7 +719,6 @@ Um fehlende UNICODE-Zeichen in der BundesSans zu ergänzen, kommt sekundär die 
 
 *_Liberation_*
 
-//ToDo: Ist das gemeint? Problem: Hier sehen I und  l auch gleich aus. Das ist etwas unschön...
 Die Schriftart Liberation soll ausschließlich für fehlende UNICODE-Zeichen in der BundesSans verwendet werden.
 Denn beim Einsatz von Liberation muss beachtet werden, dass bei dieser Schriftart das große I und das kleine l leicht verwechselt werden können.
 Da dies einen Verstoß gegen die BITV (Barrierefreie-Informationstechnik-Verordnung) bedeuten würde, muss bei der Darstellung von I und l in jeden Fall auf BundesSans zurückgegriffen werden.
@@ -744,7 +734,7 @@ Individuelle Schriftgrößen können mit dem Schriftgrößenrechner auf https://
 
 *_Rechtschreibung_*
 
-Zu einem klaren, professionellen Gesamterscheinungsbild trägt auch eine korrekte Rechtschreibung, sowie eine konsistente Groß- und Kleinschreibung bei.
+Zu einem klaren, professionellen Gesamterscheinungsbild trägt auch eine korrekte Rechtschreibung sowie eine konsistente Groß- und Kleinschreibung bei.
 Während bei englischsprachigen Frontends zwischen verschiedenen Formen der Groß- und Kleinschreibung unterschieden wird, reicht es bei deutschsprachigen Frontends aus, die korrekte deutsche Rechtschreibung anzuwenden.
 Eine Ausnahme besteht darin, dass das erste Wort der Beschriftung eines <<bedienelemente,Bedienelements>> immer großgeschrieben wird, unabhängig von der jeweiligen Wortart.
 
@@ -800,7 +790,6 @@ Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss d
 === Grafiken
 
 Bilder und Grafiken ergänzen den <<text>> und vermitteln Informationen auf visuelle Weise.
-//ToDo: Was soll das heißen, dass sie der Fachlichkeit unterliegen?
 Sie unterliegen in erster Linie der Fachlichkeit beziehungsweise dem inhaltlichen Kontext und sollten nicht allzu oft als Schmuckgrafiken in Frontends integriert werden.
 Hier werden die Leitlinien für die Verwendung von Grafiken festgelegt, einschließlich Stilrichtlinien, Bildgrößen und im Ansatz deren <<barrierefreiheit>>.
 
@@ -824,7 +813,7 @@ Solche Grafiken müssen entsprechend als Schmuckgrafik gekennzeichnet sein und b
 * Bilder benötigen eine Bildunterschrift.
 * Grafiken müssen ein aussagekräftiges <<alt-tag,Alt-Attribut>> besitzen.
 * Das Bildmaterial muss ausreichend hoch aufgelöst sein, sodass keine Fragmente erkennbar sind.
-* Schmuckgrafiken sind erlaubt, jedoch entsprechend zu kennzeichnen.
+* Schmuckgrafiken sind erlaubt, müssen jedoch entsprechend gekennzeichnet werden.
 
 *_Don'ts_*
 
@@ -951,7 +940,6 @@ Nachfolgend werden die verschiedenen Arten von Buttons und ihre Anwendung in der
 
 Kolorierte Buttons oder auch farbig gefüllte Buttons sind die am häufigsten verwendete Button-Variante.
 Grundsätzlich handelt es sich um minimal abgerundete Rechtecke, die ein <<label,Textlabel>>, ein <<icons,Icon>> oder eine Kombination aus beidem enthalten und farblich gefüllt sind.
-//ToDo Wie unterstützen die Buttons denn mit ihrer Farbe das Erreichen des Ziels? Das Ziel wird durch Klicken auf den Button erreicht. Die Farbe dient dazu, dass man den Button leichter findet. Bitte entweder explizit schreiben oder weglassen.
 Aufgrund ihrer kräftigen <<farben,Farbe>> werden sie auch CTA-Buttons (Call-To-Action Buttons) genannt.
 
 Je nach Zustand des Buttons unterscheiden sich die eingesetzten Farben und Fokus-Border voneinander.
@@ -1048,7 +1036,6 @@ Im "aktiven" beziehungsweise "fokussierten" Zustand erhält der Button einen Fok
 [TIP]
 Invertierte Buttons werden häufig genutzt, wenn es mehr als zwei Aktionen auf einer Seite gibt oder wenn einer Aktion ein besonderer Fokus eingeräumt werden soll, wie zum Beispiel beim "Registieren".
 Das heißt nach der Nutzung eines <<colored-button,kolorierten Buttons>> in der Primärfarbe kann auf die invertierten Buttons umgestiegen werden.
-//ToDo: Das wiederspricht sich doch. Im Satz darüber wird doch beschrieben, dass beide Buttonvarianten zusammen genutzt werden.
 Eine Kombination aus farblich kolorierten (ausgenommen der Primärfarbe) und invertierten Buttons ist jedoch nicht zulässig.
 Es sollte eine der beiden Varianten konsistent im gesamten Frontend benutzt werden.
 
@@ -1097,7 +1084,6 @@ Hyperlinks sind verlinkte <<text,Texte>> (oder auch <<grafiken>>), die im Wesent
 Wird die Maus über einen Hyperlink bewegt, ändert sich der Cursor vom Pfeil zum Handsymbol.
 Hyperlinks folgen per Default einem einheitlichen Styling und sind in der Regel unterstrichen.
 Da Nutzende daran gewöhnt sind, weiterführende Informationen/Links in einem Fließtext oder auf einer Seite anhand des unterstrichenen Textes zu erkennen, ist es nicht ratsam, daran etwas zu ändern.
-//ToDo: Soll das heißen, dass das die Farbe der Links bei Bedarf geändert werden darf? Dann sollte das auch so geschrieben werden
 
 Hyperlinks können den Status (State) "normal", "hovered/focus" und "clicked" haben.
  
@@ -1294,7 +1280,7 @@ Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
 
 *_Don'ts_*
 
-//TODO: Ist die Verneinung richtig. Wenn ja, earum?
+//TODO: Ist die Verneinung richtig. Wenn ja, warum?
 * Listeneinträge sollten nie mehrzeilig sein.
 * Listeneinträge sollten nicht doppelt vorhanden sein.
 * Listen sollten nicht unsortiert und sehr lang sein.
@@ -1519,9 +1505,7 @@ So steht es der Anwendung frei:
 Es ist wichtig, das Verhalten von Tabellen innerhalb der Anwendung konsistent zu halten.
 Unterschiedliches Verhalten von Tabellen ist *NICHT* zulässig!
 
-//ToDo: Abschnitt nicht verständlich
 Wenn mehrere Aktionen für eine Tabellenzeile erfolgen können, dann werden Folgeaktionen über Aktionselemente in der letzten Spalte "Aktionen" bereitgestellt.
-//ToDo: Nicht verständlich.
 Falls eine Doppelklick-Aktion in einer Zeile implementiert wird, sollte dies die primäre Funktion der möglichen Tabellenzeilen-Aktionen sein.
 
 * Doppelklick = Detailansicht öffnen; folglich ist die erste/primäre Aktion = "Detailansicht öffnen".
@@ -1537,9 +1521,7 @@ Die Fachlichkeit sollte sich auf eine Teilmenge von wichtigen Informationen besc
 * Überlaufende Textlabels werden abgetrennt und mit einem Tooltip ergänzt.
 * Spaltentitel sollten so kurz wie möglich und prägnant gewählt werden.
 Abkürzungen sind zulässig.
-//ToDo: Der Spaltentitel?
 * Die initiale oder maximale Breite von Spalten muss sich an den zu erwartenden Inhalten orientieren, auch wenn der Spaltentitel dadurch abgeschnitten wird (es gibt keine feste maximale Buchstabenanzahl).
-//ToDo: Was heißt das? Sollten breiter als der Rest der Spalten sein?
 * Tabellenspalten können unterschiedlich breit sein.
 * Vertikales Scrolling ist zu vermeiden.
 * Die Spalten sollten ihrer Wichtigkeit nach angeordnet werden.
@@ -1687,11 +1669,9 @@ Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem https:
 .Eingabefeldgruppe Beispiel: Persönliche Angaben
 image::24_DP_persoenliche_angaben.png[align="center"]
 
-//ToDo: Was ist ein inhlatliches Layout?
 Es wird ein einspaltiges Layout verwendet.
 Jedes Eingabefeld ist ein Pflichtfeld, gekennzeichnet durch einen Asterisk (*).
 Eingabefeldgruppen bedürfen keiner zusätzlichen optischen Gruppierung.
-//ToDo: Welches grundlegendes dreispaltiges Layout? Kommt bisher noch nicht vor
 Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends (siehe <<image-vertikalerschnitt>>) folgen.
 
 *_Beispiel einer Eingabefeldgruppe mit bedingten Pflichtfeldern (ehemals Optionale Pflichtfelder):_*
@@ -1948,11 +1928,11 @@ Es sind maximal 20 Zeichen möglich.“
 === Fehlermeldungen
 
 Fehlermeldungen sind unvermeidlich, aber wie sie präsentiert werden, kann einen großen Unterschied für die Benutzererfahrung bedeuten.
-Fehlermeldungen sollten gut sichtbar, in verständlicher Sprache verfasst sein und klare Anweisungen zur Behebung des Fehlers enthalten.
+Fehlermeldungen sollten gut sichtbar und in verständlicher Sprache verfasst sein sowie klare Anweisungen zur Behebung des Fehlers enthalten.
 Idealerweise sollten Fehlermeldungen in unmittelbarer Nähe von betroffenen Objekten platziert werden (siehe als Beispiel: <<image-eingabefelderror,Eingabefelder - Fehlermeldung>>), um Nutzenden sofortiges Feedback zu geben und sie bei der Fehlerbehebung zu unterstützen.
 Neben Fehlermeldungen, die am Eingabeobjekt auftreten, kann zusätzlich ein zusammenfassender Hinweis, wie im Kapitel <<system-meldungen>> beschrieben, angezeigt werden.
 
-Ein häufig auftretendes Problem ist dabei die Verwendung von negativ anmutenden Formulierungen, die Benutzende demotivieren können.
+Ein häufig gemachter Fehler ist dabei die Verwendung von negativ anmutenden Formulierungen, die Benutzende demotivieren können.
 Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquivalente:
 
 [cols="5a,5a", options="header", align="center"]
