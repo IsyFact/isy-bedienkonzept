@@ -215,7 +215,7 @@ Dieses Prinzip wird im Kapitel <<barrierefreiheit>> und unter den einzelnen <<be
 
 Barrierefreiheit setzt das Prinzip der Zugänglichkeit um.
 Das heißt durch Barrierefreiheit soll sichergestellt werden, dass alle, unabhängig von ihren Fähigkeiten, ein Frontend nutzen können.
-Im Folgenden werden die Richtlinien zur Barrierefreiheit gemäß Standards wie WCAG und andere Methoden zur Verbesserung der Zugänglichkeit erläutert.
+Im Folgenden werden die Richtlinien zur Barrierefreiheit gemäß Standards wie WCAG und Methoden zur Verbesserung der Zugänglichkeit erläutert.
 
 Für dieses Bedienkonzept gilt, dass die Zugänglichkeitsstandards WCAG 2.1 und EN 305419 berücksichtigt werden müssen:
 
@@ -260,7 +260,7 @@ Daher sollten auch andere visuelle Elemente, wie <<icons,Symbole>> oder Muster g
 <<farben>> sind ein Hauptbestandteil, um Frontends zu gestalten und um die Nutzenden zu unterstützen.
 Um eine gute Erkennbarkeit der Elemente sicherzustellen, muss bei großer Schrift ein Kontrast von mindestens 3:1 gewährleistet sein.
 
-Nachfolgend sind die Kontrastverhältnisse aller zur Verfügung stehender Farben abgebildet.
+Nachfolgend sind die Kontrastverhältnisse aller zur Verfügung stehenden Farben abgebildet.
 Farbkombinationen, die rot gelabelt sind und keinen ausreichenden Kontrast aufweisen, dürfen nicht verwendet werden.
 Andere Farbkombinationen sind entsprechend ihrer Textart oder Elementgröße frei zu wählen - Fließtext & Label 4,5:1, Überschrift 3:1, Haupt-/Einstiegsseiten & Seiten mit rechtlicher Relevanz 7:1.
 Dabei soll der Kontrast so hoch wie möglich gewählt werden.
@@ -721,7 +721,7 @@ Um fehlende UNICODE-Zeichen in der BundesSans zu ergänzen, kommt sekundär die 
 
 Die Schriftart Liberation soll ausschließlich für fehlende UNICODE-Zeichen in der BundesSans verwendet werden.
 Denn beim Einsatz von Liberation muss beachtet werden, dass bei dieser Schriftart das große I und das kleine l leicht verwechselt werden können.
-Da dies einen Verstoß gegen die BITV (Barrierefreie-Informationstechnik-Verordnung) bedeuten würde, muss bei der Darstellung von I und l in jeden Fall auf BundesSans zurückgegriffen werden.
+Da dies einen Verstoß gegen die BITV (Barrierefreie-Informationstechnik-Verordnung) bedeuten würde, muss bei der Darstellung von I und l in jedem Fall auf BundesSans zurückgegriffen werden.
 
 *_Barrierefreiheit von Text_*
 
@@ -997,7 +997,7 @@ Wenn nur das Textlabel ohne farbliche und räumliche Abgrenzung zum Hintergrund 
 *_Dos_*
 
 * Beim Aktivieren eines Buttons wird immer eine Funktion ausgelöst oder eine (Fehler-)Meldung sichtbar.
-* Buttons mit dem wichtigsten Ziel beziehngsweise mit der am häufigsten genutzten Aktion werden in der Primärfarbe dargestellt.
+* Buttons mit dem wichtigsten Ziel beziehungsweise mit der am häufigsten genutzten Aktion werden in der Primärfarbe dargestellt.
 Falls es unklar ist, welche Aktion wichtiger ist, wird die Standardaktion als primäre Aktion angesehen und entsprechend gefärbt.
 * Das <<label>> sollte kurz und selbsterklärend sein.
 * Das Label sollte die auszuführende Aktion beschreiben (zum Beispiel Öffnen, Löschen, Speichern, Weiter).
@@ -1065,7 +1065,7 @@ Ist diese Beschreibung jedoch zu lang (mehr als drei Wörter), ist das Icon nich
 
 In speziellen Fällen werden Icon-Buttons auch ohne ihre Border dargestellt.
 Hierbei ist es besonders wichtig, dass die Icon-Buttons passend zum Design Pattern gewählt werden.
-Diese werden beispielsweise innerhalb von Tabellenheadern verwendet zum Sortieren und Filtern der Tabelleninhalte und sehen wie folgt aus:
+Diese werden beispielsweise innerhalb von Tabellenheadern zum Sortieren und Filtern der Tabelleninhalte verwendet und sehen wie folgt aus:
 
 [[image-iconbuttons-withoutborder]]
 .Icon-Buttons ohne Border
@@ -1080,7 +1080,7 @@ image::24_BE_Icons.png[align="center"]
 [[link]]
 === Hyperlink
 
-Hyperlinks sind verlinkte <<text,Texte>> (oder auch <<grafiken>>), die im Wesentlichen als Navigations-Mechanismus dienen, zum Beispiel um neue Fenster mit anderen Inhalten zu öffnen.
+Hyperlinks sind verlinkte <<text,Texte>> (oder auch <<grafiken>>), die im Wesentlichen als Navigationsmechanismus dienen, zum Beispiel um neue Fenster mit anderen Inhalten zu öffnen.
 Wird die Maus über einen Hyperlink bewegt, ändert sich der Cursor vom Pfeil zum Handsymbol.
 Hyperlinks folgen per Default einem einheitlichen Styling und sind in der Regel unterstrichen.
 Da Nutzende daran gewöhnt sind, weiterführende Informationen/Links in einem Fließtext oder auf einer Seite anhand des unterstrichenen Textes zu erkennen, ist es nicht ratsam, daran etwas zu ändern.
@@ -1159,7 +1159,7 @@ Eingabefelder, die eine Erläuterung benötigen, sollen diese immer so kurz wie 
 Erläuterungen können dabei unterschiedlich realisiert werden, sortiert von kurz nach lang:
 
 * als Platzhalter im Eingabefeld selbst.
-* als Klammeranhang am Label, um das Label zu erläutern, zum Beipiel: Name (gemeint ist der eingetragene Familienname).
+* als Klammeranhang am Label, um das Label zu erläutern, zum Beispiel: Name (gemeint ist der eingetragene Familienname).
 * als maximal zweizeiliger Hinweistext unter oder über dem Label (bitte nach Entscheidung konsistent im gesamten Frontend damit fortfahren).
 
 Alle Erläuterungstexte, die mehr als zwei Zeilen einer Eingabefeldlänge benötigen, sind zu komplex gestaltet und bedürfen einer fachlichen Neugestaltung.
@@ -1205,7 +1205,7 @@ image::24_BE_eingabefeld_mask.png[align="center"]
 Eine Mask kann nur im aktiven State angezeigt werden und entspricht der regulären Schriftfarbe.
 Die Mask ist dem erwarteten Inhalt entsprechend fachlich logisch und nachvollziehbar gewählt.
 Zum Beispiel entspricht „mobile number“ dem Pattern: +0012 345 / 678 999 oder Ländervorwahl, Vorwahl, Rufnummer.
-Masks können dabei auch frei gestaltet werden und den fachlichen Bedürfnissen entsprechend angepasst werden, beispielsweise für Aktenzeichen.
+Masks können dabei auch frei gestaltet und den fachlichen Bedürfnissen entsprechend angepasst werden, beispielsweise für Aktenzeichen.
 Eine Mask kann in Einzelfällen auch dem Platzhalter entsprechen.
 
 [[eingabefeld-mit-button]]
@@ -1234,7 +1234,7 @@ Diese unterscheiden sich in der Größe und Form von gewöhnlichen <<eingabefeld
 image::24_BE_Textbox.png[align="center"]
 
 Bei der Eingabe von Text können Textboxen manuell in ihrer Größe verändert werden, sodass der gesamte Inhalt angezeigt werden kann.
-Textboxen sollten mindestens so groß gestaltetet werden, dass der am häufigsten zu erwartende Inhalt hineinpasst, ohne manuell die Box anzupassen.
+Textboxen sollten mindestens so groß gestaltet werden, dass der am häufigsten zu erwartende Inhalt hineinpasst, ohne manuell die Box anzupassen.
 
 [TIP]
 Textboxen haben die gleichen States und Styles wie Eingabefelder.
@@ -1276,7 +1276,7 @@ Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
 * Listeneinträge sollten so kurz wie möglich formuliert sein.
 * Listeneinträge sind eindeutig unterscheidbar.
 * Wenn Listen viele Einträge haben, so sollten andere Elemente die Durchsuchbarkeit, Filterung oder Kategorisierung ermöglichen.
-* Listen können mit unterschiedlichen interaktiven Elementen kombiniert werden, um dem Nutzenden eine Hilfestellung zu bieten.
+* Listen können mit unterschiedlichen interaktiven Elementen kombiniert werden, um den Nutzenden eine Hilfestellung zu bieten.
 * Bei einer kleinen Liste kann auch eine Radio-Button-Gruppe genutzt werden.
 
 *_Don'ts_*
@@ -1688,7 +1688,7 @@ Der Prozess sieht vor, dass ein Nachweis über die Identität erbracht wird.
 Dies kann jedoch über verschiedene Dokumente erfolgen.
 Somit wird unter der Gruppe „Identitätsnachweisdokument“ in verschiedenen Eingabefeldern die Möglichkeit gegeben sich für eine Nachweisart zu entscheiden und entsprechend ihrer Art entweder eine Auswahl zu treffen oder eine entsprechende Nummer anzugeben.
 
-Dabei ist nicht das einzelne Eingabefeld ein Pflichtfeld, sondern das Ausfüllen mindestens einer Option innerhalb einer Eingabefeldgruppe ist verpflichtend.
+Dabei ist nicht das einzelne Eingabefeld ein Pflichtfeld, sondern das Ausfüllen mindestens einer Option innerhalb einer Eingabefeldgruppe verpflichtend.
 Sobald eine Möglichkeit innerhalb der Gruppe ausgewählt/befüllt wurde, wird die bedingte Pflichtfeldgruppe für den Identitätsnachweis als positiv bestätigt.
 
 Dies ist technisch ein sogenanntes „Fieldset“.
@@ -1710,7 +1710,7 @@ image::24_DP_variation_eingabefeldgruppen.png[align="center"]
 .Mehrspaltige inhaltliche Gruppe
 image::24_DP_mehrspaltige_inhaltliche_Gruppe.png[align="center"]
 
-Hier wird deutlich das in einem mehrspaltigen Layout verschiedene Kombinationen an Eingabefeldern in zweispaltiger (horizontaler) Anordnung einer Hauptgruppe (in Lila) unterliegen.
+Hier wird deutlich, dass in einem mehrspaltigen Layout verschiedene Kombinationen an Eingabefeldern in zweispaltiger (horizontaler) Anordnung einer Hauptgruppe (in Lila) unterliegen.
 Die blockartige Anordnung erleichtert das Erfassen und ermöglicht eine thematische Untergruppen-Clusterung.
 
 [[use-cases]]
@@ -1818,7 +1818,7 @@ Es wird eine Telefonnummer erwartet
 *Don't:*
 Deine Telefon- oder Handynummer
 
-Sobald die Nutzenden in das Eingabefeld klicken, wird der Platzhalter ausgeblendet und es besteht die Möglichkeit eine Mask anzeigen zu lassen (siehe Kapitel <<eingabefeld,Eingabefelder>>).
+Sobald die Nutzenden in das Eingabefeld klicken, wird der Platzhalter ausgeblendet und es besteht die Möglichkeit, eine Mask anzeigen zu lassen (siehe Kapitel <<eingabefeld,Eingabefelder>>).
 Sie geben das gewünschte Eingabepattern vor und lassen sich fast vollständig frei gestalten.
 
 *_Gute Hinweistexte zur Erläuterung bei Eingabefeldern und Fehlermeldungen:_*
@@ -1908,9 +1908,9 @@ image::24_UC_toast_notification.png[align="center"]
 * Verwenden einer einfachen und konsistenten Satzstruktur
 * *Präzise Formulierungen*:
 ** _Inkorrekt_:
-„Nichts selektiert"
+„Nichts selektiert“
 ** _Besser_:
-„Bitte selektieren Sie ein Objekt in der Liste"
+„Bitte selektieren Sie ein Objekt in der Liste“
 * *Positive Formulierungen*:
 ** _Inkorrekt_:
 „Illegale String-Länge aufgetreten.“
@@ -1945,6 +1945,6 @@ Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquiv
 |Fehler
 |Problem
 
-|Fehlschlagen („Speichern ist fehlgeschlagen")
-|Nicht können („Es konnte nicht gespeichert werden")
+|Fehlschlagen („Speichern ist fehlgeschlagen“)
+|Nicht können („Es konnte nicht gespeichert werden“)
 |====
