@@ -1146,6 +1146,10 @@ image::24_BE_eingabefeld_disabled.png[align="center"]
 
 Deaktivierte Eingabefelder (disabled) sind grau hinterlegt und geben zusätzlich über einen Mouse-Cursor-Wechsel beim Hovern den Disabled State wieder.
 
+*_Readonly:_* WiP
+
+*_Eingabefeld als Pflichtfeld:_* WiP
+
 *_Eingabefeld mit Fehlermeldung und Hinweis:_*
 
 [[image-eingabefelderror]]
@@ -1221,6 +1225,12 @@ image::24_BE_eingabefeld_inputoption.png[align="center"]
 Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem <<image-eingabefeldplatzhalter,normalen Eingabefeld>>.
 Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung <<image-eingabefeldinputoption>>) oder eine Datumseingabe.
 Die Schaltfläche der Input-Option ist mindestens 44px x 44px.
+
+*_Date-Picker_* *WiP*
+
+*_Time-Picker_* *WiP*
+
+*_Sonderzeichen-Picker_* *WiP*
 
 [[textbox]]
 ==== Textbox
@@ -1713,11 +1723,58 @@ image::24_DP_mehrspaltige_inhaltliche_Gruppe.png[align="center"]
 Hier wird deutlich, dass in einem mehrspaltigen Layout verschiedene Kombinationen an Eingabefeldern in zweispaltiger (horizontaler) Anordnung einer Hauptgruppe (in Lila) unterliegen.
 Die blockartige Anordnung erleichtert das Erfassen und ermöglicht eine thematische Untergruppen-Clusterung.
 
+[[mehrfacheingabe]]
+=== Mehrfacheingabe eines Eingabeobjekts
+
+*WiP* (beispielsweise mehrere Telefonnummern oder Adressen)
+
+[[listpicker]]
+=== Listen-Picker
+
+*WiP* (ehemals Browse & Collect)
+
+[[stepper]]
+=== Stepper
+
+*WiP* (auch Wizard genannt)
+
+[[suche]]
+=== Suchfunktion
+
+*WiP*
+
+[[toolbar]]
+=== Toolbar
+
+*WiP*
+
+*_Seitentoolbar_* *WiP*
+
 [[use-cases]]
 == Use Cases
 
 Use Cases stellen typische Szenarien oder Seiten dar, die bestimmte Funktionalitäten oder Aktionen erfordern.
 Dieser Abschnitt kombiniert <<design-pattern,Design Patterns>>, um benutzerfreundliche Lösungen für spezifische Anwendungsfälle zu präsentieren und ihre Umsetzung anhand von Beispiel-Screens zu veranschaulichen.
+
+[[hauptfenster]]
+=== Hauptfenster
+
+*WiP*
+
+[[hauptnavigation]]
+==== Hauptnavigation
+
+*WiP*
+
+[[linksnavigation]]
+==== Linksnavigation
+
+*WiP*
+
+[[informationsbereich]]
+==== Informationsbereich
+
+*WiP*
 
 [[formulare]]
 === Formulare
@@ -1775,6 +1832,41 @@ Die Größenanpassung erfolgt innerhalb von gewissen Bereichen:
 [[image-beispielgesamtumsetzung]]
 .Beispielhafte Gesamtumsetzung eines Beispielformulars im Anwendungsrahmen
 image::24_UC_fullexample_formular.png[align="center"]
+
+[[login]]
+=== Login
+
+*WiP*
+
+[[anwendungsbeispiele]]
+=== Anwendungsbeispiele
+
+*WiP*
+
+[[objekt-suche]]
+==== Objekt suchen
+
+*WiP*
+
+[[objekt-anzeigen]]
+==== Objekt anzeigen
+
+*WiP*
+
+[[objekt-beabeiten]]
+==== Objekt bearbeiten
+
+*WiP*
+
+[[objekt-loeschen]]
+==== Objekt löschen
+
+*WiP*
+
+[[objekt-neu-anlegen]]
+==== Objekt neu anlegen
+
+*WiP*
 
 [[eingabehilfen-und-fehlermeldungen]]
 == Eingabehilfen und Fehlermeldungen
@@ -1843,6 +1935,11 @@ Sobald die Nutzenden mit der Eingabe beginnen, werden mögliche Werte, die mit d
 Nutzende können nun weiter tippen oder direkt einen Wert aus dem Menü auswählen und somit ihre Eingabe verkürzen.
 Gibt es mehr als zehn mögliche passende Werte, so werden die ersten zehn Werte angezeigt, gefolgt von einer Information, dass mehr als zehn Einträge existieren.
 
+[[tastatursteuerung]]
+==== Tastatursteuerung
+
+*WiP*
+
 [[fortschrittsanzeige]]
 ==== Fortschrittsanzeige
 
@@ -1898,6 +1995,8 @@ Folgende Meldungsarten können als Toast-Notification verwendet werden:
 .Verschiedene Toast-Notifications
 image::24_UC_toast_notification.png[align="center"]
 
+*_Hinweisdialoge und -popups_* WiP
+
 *_Dos_*
 
 * *Allgemeinverständliche und positive Sprache*
@@ -1948,3 +2047,18 @@ Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquiv
 |Fehlschlagen („Speichern ist fehlgeschlagen“)
 |Nicht können („Es konnte nicht gespeichert werden“)
 |====
+
+[[leitplanken]]
+== Leitplanken für Design Patterns und Use Cases
+
+*WiP*
+
+[[modale-dialoge]]
+=== Umgang mit modalen Dialogen
+
+*WiP*
+
+[[strukturierung-von-frontend-seiten]]
+=== Strukturierung von Frontend-Seiten
+
+*WiP* (Wann setze ich Panels, Akkordeons und/oder Überschriften ein?)
