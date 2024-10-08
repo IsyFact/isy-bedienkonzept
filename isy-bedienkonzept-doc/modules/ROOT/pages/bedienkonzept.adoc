@@ -30,7 +30,7 @@ Es ist gültig für alle Neuentwicklungen und für Überarbeitungen von Frontend
 Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Altanwendungen.
 
 Das Bedienkonzept ist gültig ab Q4 – 2024.
-Für Altanwendungen gilt, dass das xref:3.1.x@isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[Bedienkonzept (beziehungsweise ehemals Styleguide) zum Zeitpunkt der Entwicklung der Altanwendung] mit den damals geltenden Inhalten gültig bleibt.
+Für Altanwendungen gilt, dass das xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[Bedienkonzept (beziehungsweise ehemals Styleguide) zum Zeitpunkt der Entwicklung der Altanwendung] mit den damals geltenden Inhalten gültig bleibt.
 
 *_Rolle von Designenden, Entwickelnden und Fachlichkeit_*
 
@@ -1106,7 +1106,7 @@ Sie kommen in verschiedensten Formen und Kontexten vor, sei es in Form von Textf
 Die Gestaltung und Platzierung von Eingabefeldern hat direkten Einfluss auf die Benutzererfahrung und die Effizienz der Dateneingabe.
 
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:3.1.x@isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
+Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 
 Eingabefelder sind dynamisch.
 Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (<<placeholder,Placeholder>>) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
@@ -1671,7 +1671,7 @@ Eingabefeldgruppen sind eine Möglichkeit solche Gruppierungen darzustellen.
 
 Eingabefeldgruppen bestehen immer aus mindestens einer Gruppenüberschrift beziehungsweise einem Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und gegebenenfalls weiteren <<bedienelemente,Bedienelementen>>.
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:3.1.x@isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
+Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 
 *_Beispiel einer Eingabefeldgruppe "Persönliche Angaben":_*
 
@@ -1784,7 +1784,7 @@ Formulare sollen einem einspaltigen, zweispaltigen oder dreispaltigen Layout fol
 Dabei sind alle Spalten innerhalb eines Formulars gleich breit aufgebaut.
 
 Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:3.1.x@isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
+Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 
 *_Beispielhaftes Formular dreispaltig:_*
 
