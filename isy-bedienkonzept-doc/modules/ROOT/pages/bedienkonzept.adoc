@@ -1748,6 +1748,8 @@ Die blockartige Anordnung erleichtert das Erfassen und ermöglicht eine thematis
 
 *WiP*
 
+*_Standard-Toolbar_* *WiP*
+
 *_Seitentoolbar_* *WiP*
 
 [[use-cases]]
@@ -1755,26 +1757,6 @@ Die blockartige Anordnung erleichtert das Erfassen und ermöglicht eine thematis
 
 Use Cases stellen typische Szenarien oder Seiten dar, die bestimmte Funktionalitäten oder Aktionen erfordern.
 Dieser Abschnitt kombiniert <<design-pattern,Design Patterns>>, um benutzerfreundliche Lösungen für spezifische Anwendungsfälle zu präsentieren und ihre Umsetzung anhand von Beispiel-Screens zu veranschaulichen.
-
-[[hauptfenster]]
-=== Hauptfenster
-
-*WiP*
-
-[[hauptnavigation]]
-==== Hauptnavigation
-
-*WiP*
-
-[[linksnavigation]]
-==== Linksnavigation
-
-*WiP*
-
-[[informationsbereich]]
-==== Informationsbereich
-
-*WiP*
 
 [[formulare]]
 === Formulare
@@ -1838,33 +1820,28 @@ image::24_UC_fullexample_formular.png[align="center"]
 
 *WiP*
 
-[[anwendungsbeispiele]]
-=== Anwendungsbeispiele
-
-*WiP*
-
 [[objekt-suche]]
-==== Objekt suchen
+=== Objekt suchen
 
 *WiP*
 
 [[objekt-anzeigen]]
-==== Objekt anzeigen
+=== Objekt anzeigen
 
 *WiP*
 
 [[objekt-beabeiten]]
-==== Objekt bearbeiten
+=== Objekt bearbeiten
 
 *WiP*
 
 [[objekt-loeschen]]
-==== Objekt löschen
+=== Objekt löschen
 
 *WiP*
 
 [[objekt-neu-anlegen]]
-==== Objekt neu anlegen
+=== Objekt neu anlegen
 
 *WiP*
 
@@ -2048,13 +2025,8 @@ Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquiv
 |Nicht können („Es konnte nicht gespeichert werden“)
 |====
 
-[[leitplanken]]
-== Leitplanken für Design Patterns und Use Cases
-
-*WiP*
-
-[[modale-dialoge]]
-=== Umgang mit modalen Dialogen
+[[designrichtlinien]]
+== Designrichtlinien
 
 *WiP*
 
@@ -2062,3 +2034,32 @@ Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquiv
 === Strukturierung von Frontend-Seiten
 
 *WiP* (Wann setze ich Panels, Akkordeons und/oder Überschriften ein?)
+
+[[Screenareas]]
+==== Screenbereiche (Screenareas)
+
+*WiP* (beinhaltet die Grundstruktur einer Frontend-Seite anhand der isy-angular-widgets Komponente isy-hauptfenster)
+
+[[Header]]
+===== Header
+
+*WiP* (beinhaltet die Hauptnavigation des isy-hauptfensters)
+
+[[Contentarea]]
+===== Contentbereich (Contentarea)
+
+*WiP*
+
+*_Content only (Fullsize)_* *WiP*
+
+*_Content mit Sidebar_* *WiP* (beinhaltet die Linksnavigation und den Informationsbereich des isy-hauptfensters)
+
+[[Footer]]
+===== Footer
+
+*WiP*
+
+[[modale-dialoge]]
+=== Umgang mit modalen Dialogen
+
+*WiP*
