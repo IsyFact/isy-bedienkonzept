@@ -1232,7 +1232,7 @@ Ein Pflichtfeld kann zusätzlich durch die Deklaration des Platzhalters mit "Pfl
 *_Eingabefeld mit Fehlermeldung und Hinweis:_*
 
 [[image-eingabefelderror]]
-.Eingabefeld und Fehlermeldung und Hinweis
+.Eingabefeld und Fehlermeldung
 image::24_BE_eingabefeld_error.png[align="center"]
 
 oder
@@ -1327,7 +1327,7 @@ Die Schaltfläche der Input-Option ist mindestens 44px x 44px.
 *_Sonderzeichen-Picker_*
 
 Der Sonderzeichen-Picker ist eine Input-Option, um nicht übliche Zeichen ohne weitere Hilfsmittel eingeben zu können.
-Der Sonderzeichen-Picker ist entweder vollständig ausgefüllt mit der Primärfarbe oder alternativ im "Outline"-Styling (siehe Bilder).
+Die Input-Option des Sonderzeichen-Picker ist immer am Ende eines Eingabefelds und entweder vollständig ausgefüllt mit der Primärfarbe oder alternativ im "Outline"-Styling (siehe folgende Abbildungen).
 
 [[image-eingabefeldinputoption-full]]
 .Eingabefeld und Input-Option Sonderzeichen
