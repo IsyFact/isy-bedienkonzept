@@ -447,6 +447,20 @@ Die Farbpalette legt ebenfalls fest, zu welchem Zweck bestimmte Farben eingesetz
 * Grün = Abbruch, Fehler, Stopp, etc.
 * Lila = Weiter, Sekundärbutton, Löschen, etc.
 
+[NOTE]
+Sollte die Standardfarbpalette aufgrund der fachlichen Anforderungen nicht ausreichen oder dem Zweck entsprechen, so kann in Einzelfällen von der Standardfarbpalette abgeleitet werden.
+
+[[image-farbpalette-30per]]
+.Abgeleitete Farbpalette
+image::24_BE_farbpalette_30per.png[align="center"]
+
+Die Ableitung der Standardfarbe für Flächen und Hintergründe liegt bei 30% Opacity.
+Die Ableitung der Standardfarbe für Schriften, Border und Akzente liegt bei +30% black Opacity, damit ein ausreichend hoher Kontrast gewährleistet werden kann.
+Der daraus resultierende Kontrast erfüllt die Bedingungen bis zum Level AAA - große Schrift.
+
+[IMPORTANT]
+Die leichten Farben sind auf hellen Hintergrund nicht mehr barrierefrei!
+
 Die Anwendungsfarbe des Frontends ist frei wählbar, aber muss vom Projekt auf Barrierefreiheit geprüft werden.
 
 === Applikationsfarben
@@ -880,6 +894,9 @@ Ein korrekt implementiertes Label sorgt dafür, dass alle Nutzenden, unabhängig
 * *Eindeutige Beschreibung:*
 Labels sollten klar und eindeutig beschreiben, was von den Nutzenden erwartet wird.
 Beispielsweise sollte ein Label für ein Namensfeld "Vollständiger Name" und nicht nur "Name" lauten.
+* *Eindeutige Kennzeichnung von Pflichtfeldern:*
+Labels, die ein Pflichtfeld kennzeichnen, werden immer am Ende mit einem Asterisk (*) gekennzeichnet.
+Es wird empfohlen das Asterisk farblich nicht vom Label abzuheben.
 * *Kurze Formulierungen:*
 Labels sollten kurz und prägnant sein, um die Benutzerfreundlichkeit zu maximieren.
 Labels mit mehr als drei Wörtern sollten vermieden werden.
@@ -905,7 +922,7 @@ Dies kann die Benutzerfreundlichkeit und Zugänglichkeit beeinträchtigen.
 *_Stil und Design_*
 
 * *Lesbarkeit:*
-Labels sollten in einer gut lesbaren Schriftart und -größe dargestellt werden.
+Labels sollten in einer gut lesbaren Schriftart und -größe dargestellt werden - mindestens 14pt.
 Der Kontrast muss mindestens 4,5:1 betragen, um auch bei schlechten Lichtverhältnissen gut lesbar zu sein.
 * *Konsistenz:*
 Die Gestaltung von Labels sollte über das gesamte Frontend hinweg konsistent sein.
@@ -1110,12 +1127,20 @@ Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:i
 
 Eingabefelder sind dynamisch.
 Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (<<placeholder,Placeholder>>) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
+Bei der Gestaltung des Labels gibt es zwei Möglichkeiten.
+Das Label ist "regular" oder "bold".
 
 *_Normal:_*
 
 [[image-eingabefeldplatzhalter]]
 .Eingabefeld mit Platzhalter
 image::24_BE_eingabefeld_normal.png[align="center"]
+
+oder
+
+[[image-eingabefeldplatzhalter-bold]]
+.Eingabefeld mit Platzhalter und "bold"-Label
+image::24_BE_eingabefeld_bold_normal.png[align="center"]
 
 Im Normalzustand ist das Eingabefeld mit einem bündigen, statischen <<label>> in Dunkelgrau versehen.
 Der Platzhalter ist in einem helleren Grau gehalten.
@@ -1125,7 +1150,13 @@ Platzhalter müssen sinnvolle Eingabeunterstützungen (im einfachsten Fall das L
 
 [[image-eingabefeldaktiv]]
 .Eingabefeld aktiv
-image::24_BE_eingabefeld_aktiv.png[align="center"]
+image::24_BE_eingabefeld_active.png[align="center"]
+
+oder
+
+[[image-eingabefeldaktiv-bold]]
+.Eingabefeld aktiv mit "bold"-Label
+image::24_BE_eingabefeld_bold_active.png[align="center"]
 
 Aktive Eingabefelder werden mit einer 1px dickeren Umrandung in der Highlightfarbe Blau dargestellt.
 Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung <<image-eingabefeldaktiv>>) oder eine Mask enthalten (siehe Abbildung <<image-eingabefeldmask>>).
@@ -1133,8 +1164,15 @@ Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbil
 *_Befülltes Eingabefeld:_*
 
 [[image-eingabefeldfilled]]
-.Eingabefeld befüllt nicht aktiv
+.Eingabefeld befüllt, nicht aktiv
 image::24_BE_eingabefeld_filled.png[align="center"]
+
+oder
+
+[[image-eingabefeldfilled-bold]]
+.Eingabefeld befüllt, nicht aktiv mit "bold"-Label
+image::24_BE_eingabefeld_filled.png[align="center"]
+
 
 Wenn eine Eingabe in einem Eingabefeld getätigt wurde und das Feld wieder verlassen wird, wechselt das Eingabefeld wieder in den Normalzustand mit dem Unterschied, dass der Platzhalter verschwunden ist und die Eingabe angezeigt wird.
 
@@ -1144,17 +1182,64 @@ Wenn eine Eingabe in einem Eingabefeld getätigt wurde und das Feld wieder verla
 .Eingabefeld disabled
 image::24_BE_eingabefeld_disabled.png[align="center"]
 
+oder
+
+[[image-eingabefelddisabled-bold]]
+.Eingabefeld disabled mit "bold"-Label
+image::24_BE_eingabefeld_bold_disabled.png[align="center"]
+
 Deaktivierte Eingabefelder (disabled) sind grau hinterlegt und geben zusätzlich über einen Mouse-Cursor-Wechsel beim Hovern den Disabled State wieder.
+Disabled Felder werden *nur* eingesetzt, wenn der Inhalt zum aktuellen Zeitpunkt nicht relevant ist.
+Disabled-Elemente müssen nicht für den Screenreader oder andere Unterstützungstechnologien zugänglich sein.
 
-*_Readonly:_* WiP
+*_Readonly:_*
 
-*_Eingabefeld als Pflichtfeld:_* WiP
+[[image-eingabefeldreadonly]]
+.Eingabefeld Readonly
+image::24_BE_eingabefeld_read_only.png[align="center"]
+
+oder
+
+[[image-eingabefeldreadonly-bold]]
+.Eingabefeld Readonly mit "bold"-Label
+image::24_BE_eingabefeld_bold_readonly.png[align="center"]
+
+Im Gegensatz zu einem deaktivierten Eingabefeld sind Readonly Eingabefelder zugänglich und relevant.
+Deaktivierte Felder haben einen Standardhintergrund und sehr hellen Rand.
+Die enthaltene Information lässt sich aus dem Eingabefeld auslesen (auch durch Screenreader oder andere Unterstützungstechnologien) zum Beispiel durch die Tastenkombination "Strg + C".
+Die Information ist zum aktuellen Zeitpunkt relevant, kann aber nicht verändert werden.
+
+*_Eingabefeld als Pflichtfeld:_*
+
+[[image-eingabefeldpflichtfeld]]
+.Eingabefeld als Pflichtfeld
+image::24_BE_eingabefeld_required.png[align="center"]
+
+oder
+
+[[image-eingabefeldpflichtfeld-bold]]
+.Eingabefeld als Pflichtfeld mit "bold"-Label
+image::24_BE_eingabefeld_bold_required.png[align="center"]
+
+Ein Eingabefeld als Pflichtfeld ist im Grunde ein normales Eingabefeld mit der Besonderheit, dass es befüllt werden muss.
+Die "Pflicht"-Kennzeichnung erfolgt dabei durch das Label und wird durch einen Asterisk (*) dargestellt.
+Der Asterisk wird immer ans Ende eines Labels gestellt.
+Pflichtfelder haben immer eine Validierung und eine entsprechende Fehlermeldung, die bei einer fehlerhaften Eingabe unterhalb des Eingabefeldes sichtbar wird (siehe zum Beispiel Abbildung <<image-eingabefelderror>>).
+
+[NOTE]
+Ein Pflichtfeld kann zusätzlich durch die Deklaration des Platzhalters mit "Pflichtfeld" oder "required" gekennzeichnet werden.
 
 *_Eingabefeld mit Fehlermeldung und Hinweis:_*
 
 [[image-eingabefelderror]]
-.Eingabefeld mit Fehlermeldung und Hinweis
+.Eingabefeld und Fehlermeldung
 image::24_BE_eingabefeld_error.png[align="center"]
+
+oder
+
+[[image-eingabefelderror-bold]]
+.Eingabefeld und Fehlermeldung mit "bold"-Label
+image::24_BE_eingabefeld_bold_error.png[align="center"]
 
 Bei einer Fehlermeldung färbt sich das Eingabefeld rot und es wird ein inhaltlich logischer Hinweistext (auch in Rot) angegeben, damit die Eingabe korrigiert werden kann.
 Das Label des Eingabefeldes wird bei einem Fehler nicht verändert.
@@ -1170,15 +1255,12 @@ Alle Erläuterungstexte, die mehr als zwei Zeilen einer Eingabefeldlänge benöt
 Sollte dies nicht möglich sein, so ist ein vorangehendes Textelement über dem Eingabefeld notwendig.
 Erklärungshilfen, sollen nicht dynamisch versteckt werden – entweder ist die Erläuterung notwendig, dann sollte sie sichtbar sein oder sie ist nicht notwendig, sodass sie entfernt werden kann.
 
-*_Exemplarische Vermaßung der verschiedenen Eingabefelder:_*
+*_Allgemeine Hinweise zu Eingabefeldern:_*
 
-[[image-eingabefeldvermassung]]
-.Eingabefelder und exemplarische Vermaßung
-image::24_BE_eingabefeld_vermassung.png[align="center"]
-
-Die Angaben beziehen sich auf die in der Grafik vorzufindenden Elemente.
-Ein Eingabefeld kann den fachlichen Bedingungen entsprechend kürzer oder auch länger sein.
-Die Mindesthöhe von 44px darf nicht unterschritten werden, um die Barrierefreiheit von Input-Optionen zu gewährleisten.
+Ein Eingabefeld hat keine fixe Länge.
+Ein Eingabefeld ist so lang, wie es der fachliche Kontext notwendig macht.
+Wenn beispielsweise 95% der erwarteten Eingaben deutlich kürzer sind als Einzelfälle, sollte die Länge so gewählt werden, dass 95% der Eingaben ohne Interaktion vollständig gelesen werden können.
+Die Mindesthöhe eines Eingabefelds von 44px darf nicht unterschritten werden, um die Barrierefreiheit von <<eingabefeld-mit-button,Input-Optionen>> zu gewährleisten.
 
 Die Schriftgröße von Labeln, Platzhaltern und Hinweistexten sollte 14pt nicht unterschreiten.
 Der Abstand eines Eingabefelds zum darunter liegenden Label eines weiteren Eingabefelds soll ca. dem doppelten Abstand zwischen einem Label-Eingabefeld-Paar entsprechen, um eine eindeutige Zuordnung zu gewährleisten.
@@ -1203,8 +1285,14 @@ Optisch kann das Eingabefeld der Konsistenz entsprechend länger sein.
 Um das erwartete Eingabeformat von Eingabefeldern anzuzeigen und als Bedienhilfe die Fehlerwahrscheinlichkeit zu minimieren, werden Masks verwendet.
 
 [[image-eingabefeldmask]]
-.Eingabefeld mit Mask
+.Eingabefeld und Mask
 image::24_BE_eingabefeld_mask.png[align="center"]
+
+oder
+
+[[image_eingabefeldmask-bold]]
+.Eingabefeld und Mask mit "bold"-Label
+image::24_BE_eingabefeld_bold_mask.png[align="center"]
 
 Eine Mask kann nur im aktiven State angezeigt werden und entspricht der regulären Schriftfarbe.
 Die Mask ist dem erwarteten Inhalt entsprechend fachlich logisch und nachvollziehbar gewählt.
@@ -1216,11 +1304,17 @@ Eine Mask kann in Einzelfällen auch dem Platzhalter entsprechen.
 ==== Eingabefeld mit Input-Option
 
 Für häufig verwendete Eingaben gibt es die Möglichkeit Input-Optionen für das Eingabefeld anzeigen zu lassen.
-Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsweise die Eingabe eines Datums bei einem Date-Picker.
+Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsweise die Eingabe eines Datums bei einem Date-Picker oder die Sicherstellung besonderer Zeichen beim "Sonderzeichenpicker".
 
-[[image-eingabefeldinputoption]]
-.Eingabefeld mit Input-Option
-image::24_BE_eingabefeld_inputoption.png[align="center"]
+[[image-eingabefeldinputoption-sonderzeichen]]
+.Eingabefeld und Input-Option Sonderzeichen
+image::24_BE_eingabefeld_input_full.png[align="center"]
+
+oder
+
+[[image-eingabefeldinputoption_bold-sonderzeichen]]
+.Eingabefeld und Input-Option Sonderzeichen mit "bold"-Label
+image::24_BE_eingabefeld_bold_input_full.png[align="center"]
 
 Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem <<image-eingabefeldplatzhalter,normalen Eingabefeld>>.
 Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung <<image-eingabefeldinputoption>>) oder eine Datumseingabe.
@@ -1230,7 +1324,40 @@ Die Schaltfläche der Input-Option ist mindestens 44px x 44px.
 
 *_Time-Picker_* *WiP*
 
-*_Sonderzeichen-Picker_* *WiP*
+*_Sonderzeichen-Picker_*
+
+Der Sonderzeichen-Picker ist eine Input-Option, um nicht übliche Zeichen ohne weitere Hilfsmittel eingeben zu können.
+Die Input-Option des Sonderzeichen-Picker ist immer am Ende eines Eingabefelds und entweder vollständig ausgefüllt mit der Primärfarbe oder alternativ im "Outline"-Styling (siehe folgende Abbildungen).
+
+[[image-eingabefeldinputoption-full]]
+.Eingabefeld und Input-Option Sonderzeichen
+image::24_BE_eingabefeld_input_full.png[align="center"]
+
+oder
+
+[[image-eingabefeldinputoption-bold-full]]
+.Eingabefeld und Input-Option Sonderzeichen mit "bold"-Label
+image::24_BE_eingabefeld_bold_input_full.png[align="center"]
+
+Alternativ:
+
+[[image-eingabefeldinputoption]]
+.Eingabefeld und Input-Option Sonderzeichen im "Outline"-Style
+image::24_BE_eingabefeld_input.png[align="center"]
+
+oder
+
+[[image-eingabefeldinputoption_bold]]
+.Eingabefeld und Input-Option Sonderzeichen mit "bold"-Label im "Outline"-Style
+image::24_BE_eingabefeld_bold_input.png[align="center"]
+
+Beim Klick auf die Input-Option öffnet sich in der Mitte des Frontends der Sonderzeichenpicker als Overlay.
+
+[[image_sonderzeichenpicker]]
+.Sonderzeichen-Picker
+image::24_BE_sonderzeichenpicker.png[align="center"]
+
+Mit dem Sonderzeichenpicker lässt sich nun ein Sonderzeichen wählen und einfügen.
 
 [[textbox]]
 ==== Textbox
@@ -2063,3 +2190,64 @@ Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquiv
 === Umgang mit modalen Dialogen
 
 *WiP*
+
+[[readonly-vs-disabled]]
+=== Readonly vs. Disabled
+
+<<readonlystate,Readonly>> und<<disabledstate,Disabled>> Zustände habe klar definierte Unterschiede, die gezielt genutzt werden können.
+
+[[readonlystate]]
+==== "Readonly" State
+
+Ein "Readonly"-Feld erlaubt es, die darin enthaltenen Daten zu sehen, jedoch nicht zu ändern.
+Dies ist besonders dann nützlich, wenn Informationen relevant sind, jedoch nicht modifiziert werden sollen.
+
+*_Merkmale:_*
+
+* *Sichtbarkeit:* Der Inhalt des Feldes kann von Nutzenden vollständig gesehen und von Screenreadern erfasst werden.
+* *Interaktivität:* Die Daten können nicht bearbeitet werden, jedoch bleiben Funktionen wie das Markieren und Kopieren erhalten.
+* *Design:* Optisch wird das <<image-eingabefeldreadonly,Eingabefeld>> leicht modifiziert mit leichteren Farben oder Formen dargestellt.
+
+*_Anwendungsfälle:_*
+
+* *Bestätigungsseiten:* Nach der Eingabe eines Formulars kann ein "Readonly"-Zustand verwendet werden, um die eingegebenen Daten zur Überprüfung anzuzeigen.
+* *Informationsanzeige:* Felder, die wichtige Daten enthalten, die jedoch von bestimmten Nutzergruppen nicht verändert werden sollen (zum Beispiel automatisch generierte ID-Nummern, erfasste Zeitstempel).
+
+*_Handlungsempfehlungen:_*
+
+Verwende "Readonly" für Felder, deren Inhalte für Nutzende relevant sind, aber nicht verändert werden dürfen.
+Gestalte das Design so, dass die visuelle Unterscheidung klar, aber nicht störend ist – zum Beispiel durch subtile Farbveränderungen.
+Erlaube Nutzenden weiterhin Inhalte aus dem "Readonly"-Feld zu kopieren.
+
+[[disabledstate]]
+==== "Disabled" State
+
+Ein "Disabled"-Feld hingegen ist vollständig inaktiv.
+Nutzende können den Inhalt nicht oder schlecht sehen, nicht bearbeiten und auch keine Interaktion (wie Kopieren) durchführen.
+Diese Option wird verwendet, um Nutzenden zu signalisieren, dass bestimmte Funktionen oder Eingaben derzeit nicht zur Verfügung stehen.
+
+*_Merkmale:_*
+
+* *Sichtbarkeit:* Oft wird der Inhalt des Feldes ausgegraut oder gar nicht sichtbar gemacht.
+* *Interaktivität:* Keine Interaktion möglich – weder das Bearbeiten, noch das Kopieren von Inhalten.
+* *Design:* Meist visuell hervorgehoben durch ausgegraute Felder oder abweichende Farbschemata, um den Zustand klar zu kommunizieren.
+
+*_Anwendungsfälle:_*
+
+* *Zugriffssteuerung:* Felder, die nur von Nutzergruppen mit bestimmten Rechten bearbeitet werden dürfen, können für andere "disabled" sein.
+* *Bedingte Formularfelder:* Wenn bestimmte Eingaben erst aktiviert werden sollen, nachdem vorherige Felder korrekt ausgefüllt wurden, können diese initial "disabled" sein.
+
+*_Handlungsempfehlungen:_*
+
+Nutze "Disabled" für Felder, die Nutzenden derzeit nicht zugänglich sein sollen, um Fehlinteraktionen zu verhindern.
+Vermeide "Disabled" für wichtige Informationen, die Nutzende sehen müssen – in solchen Fällen ist "Readonly" besser geeignet.
+Mache den "Disabled"-Status klar ersichtlich, indem eine deutliche visuelle Abgrenzung durch Ausgrauen oder andere farbliche Mittel verwendet wird.
+
+*_Vergleich und Fazit_*
+
+Der wesentliche Unterschied zwischen "Readonly" und "Disabled" liegt in der Sichtbarkeit und der Interaktivität der Felder.
+Während "Readonly"-Felder Nutzenden Informationen präsentieren, die sie nicht bearbeiten dürfen, aber weiterhin sehen und kopieren können, sind "Disabled"-Felder vollständig gesperrt und weder sichtbar noch interaktiv.
+Für die Anwendung in Formularen sollten folgende Grundsätze beachtet werden:
+
+* "Readonly" ist ideal, wenn die Informationen wichtig sind und für Nutzende sichtbar bleiben müssen, aber nicht verändert werden sollen.
+* "Disabled" eignet sich, wenn Nutzende keine Informationen im Feld sehen oder bearbeiten sollen – zum Beispiel bei unzugänglichen Funktionen oder Bedingungen, die erst später erfüllt werden müssen.
