@@ -895,7 +895,7 @@ Ein korrekt implementiertes Label sorgt dafür, dass alle Nutzenden, unabhängig
 Labels sollten klar und eindeutig beschreiben, was von den Nutzenden erwartet wird.
 Beispielsweise sollte ein Label für ein Namensfeld "Vollständiger Name" und nicht nur "Name" lauten.
 * *Eindeutige Kennzeichnung von Pflichtfeldern:*
-Labels die ein Pflichtfeld kennzeichnen werden immer am Ende mit einem Asterisk (*) gekennzeichnet.
+Labels, die ein Pflichtfeld kennzeichnen, werden immer am Ende mit einem Asterisk (*) gekennzeichnet.
 Es wird empfohlen das Asterisk farblich nicht vom Label abzuheben.
 * *Kurze Formulierungen:*
 Labels sollten kurz und prägnant sein, um die Benutzerfreundlichkeit zu maximieren.
@@ -1222,8 +1222,8 @@ oder
 image::24_BE_eingabefeld_bold_required.png[align="center"]
 
 Ein Eingabefeld als Pflichtfeld ist im Grunde ein normales Eingabefeld mit der Besonderheit, dass es befüllt werden muss.
-Die "Pflicht"-Kennzeichnung erfolgt dabei durch das Label und wird durch ein Asterisk (*) dargestellt.
-Das Asterisk wird immer ans Ende eines Labels gestellt.
+Die "Pflicht"-Kennzeichnung erfolgt dabei durch das Label und wird durch einen Asterisk (*) dargestellt.
+Der Asterisk wird immer ans Ende eines Labels gestellt.
 Pflichtfelder haben immer eine Validierung und eine entsprechende Fehlermeldung, die bei einer fehlerhaften Eingabe unterhalb des Eingabefeldes sichtbar wird (siehe zum Beispiel Abbildung <<image-eingabefelderror>>).
 
 [NOTE]
@@ -1351,7 +1351,8 @@ oder
 .Eingabefeld und Input-Option Sonderzeichen mit "bold"-Label im "Outline"-Style
 image::24_BE_eingabefeld_bold_input.png[align="center"]
 
-Beim Klick auf die Input-Option öffnet sich in der Mitte des Frontends der Sonderzeichenpicker als Overlay .
+Beim Klick auf die Input-Option öffnet sich in der Mitte des Frontends der Sonderzeichenpicker als Overlay.
+
 [[image_sonderzeichenpicker]]
 .Sonderzeichen-Picker
 image::24_BE_sonderzeichenpicker.png[align="center"]
@@ -2193,8 +2194,9 @@ Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquiv
 [[readonly-vs-disabled]]
 === Readonly vs. Disabled
 
-Readonly und Disabled Zustände habe klar definierte Unterschiede, die gezielt genutzt werden können.
+<<readonlystate,Readonly>> und<<disabledstate,Disabled>> Zustände habe klar definierte Unterschiede, die gezielt genutzt werden können.
 
+[[readonlystate]]
 ==== "Readonly" State
 
 Ein "Readonly"-Feld erlaubt es, die darin enthaltenen Daten zu sehen, jedoch nicht zu ändern.
@@ -2202,9 +2204,9 @@ Dies ist besonders dann nützlich, wenn Informationen relevant sind, jedoch nich
 
 *_Merkmale:_*
 
-* *Sichtbarkeit:* Der Inhalt des Feldes kann von Nutzenden vollständig sehen und von Screenreadern erfasst werden.
+* *Sichtbarkeit:* Der Inhalt des Feldes kann von Nutzenden vollständig gesehen und von Screenreadern erfasst werden.
 * *Interaktivität:* Die Daten können nicht bearbeitet werden, jedoch bleiben Funktionen wie das Markieren und Kopieren erhalten.
-* *Design:* Optisch wird das <<image-eingabefeldreadonly, Eingabefeld>> leicht modifiziert mit leichteren Farben oder Formen dargestellt.
+* *Design:* Optisch wird das <<image-eingabefeldreadonly,Eingabefeld>> leicht modifiziert mit leichteren Farben oder Formen dargestellt.
 
 *_Anwendungsfälle:_*
 
@@ -2217,11 +2219,13 @@ Verwende "Readonly" für Felder, deren Inhalte für Nutzende relevant sind, aber
 Gestalte das Design so, dass die visuelle Unterscheidung klar, aber nicht störend ist – zum Beispiel durch subtile Farbveränderungen.
 Erlaube Nutzenden weiterhin Inhalte aus dem "Readonly"-Feld zu kopieren.
 
+[[disabledstate]]
 ==== "Disabled" State
 
 Ein "Disabled"-Feld hingegen ist vollständig inaktiv.
-Der Benutzende kann den Inhalt nicht oder schlecht sehen, nicht bearbeiten und auch keine Interaktion (wie Kopieren) durchführen.
+Nutzende können den Inhalt nicht oder schlecht sehen, nicht bearbeiten und auch keine Interaktion (wie Kopieren) durchführen.
 Diese Option wird verwendet, um Nutzenden zu signalisieren, dass bestimmte Funktionen oder Eingaben derzeit nicht zur Verfügung stehen.
+
 *_Merkmale:_*
 
 * *Sichtbarkeit:* Oft wird der Inhalt des Feldes ausgegraut oder gar nicht sichtbar gemacht.
@@ -2242,7 +2246,7 @@ Mache den "Disabled"-Status klar ersichtlich, indem eine deutliche visuelle Abgr
 *_Vergleich und Fazit_*
 
 Der wesentliche Unterschied zwischen "Readonly" und "Disabled" liegt in der Sichtbarkeit und der Interaktivität der Felder.
-Während "Readonly"-Felder den Nutzenden Informationen präsentieren, die sie nicht bearbeiten dürfen, aber weiterhin sehen und kopieren können, sind "Disabled"-Felder vollständig gesperrt und weder sichtbar noch interaktiv.
+Während "Readonly"-Felder Nutzenden Informationen präsentieren, die sie nicht bearbeiten dürfen, aber weiterhin sehen und kopieren können, sind "Disabled"-Felder vollständig gesperrt und weder sichtbar noch interaktiv.
 Für die Anwendung in Formularen sollten folgende Grundsätze beachtet werden:
 
 * "Readonly" ist ideal, wenn die Informationen wichtig sind und für Nutzende sichtbar bleiben müssen, aber nicht verändert werden sollen.
