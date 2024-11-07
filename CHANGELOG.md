@@ -5,3 +5,5 @@
 - IFS-2991: Der alte Abschnitt "UI Texte und Grafiken" wird in die Kapitel *Basiselemente* und *Eingabehilfen und Fehlermeldungen* integriert
 - IFS-4987: Das gesamte Bedienkonzept wurde sprachlich überarbeitet
 - IFS-4987: Platzhalter für zukünftige Inhalte wurden eingefügt
+- IFS-3971: Eingabefelder wurden konkretisiert (required, read only), "bold label" für Eingabefelder
+- IFS-2995: Navigation und Pagination hinzugefügt
