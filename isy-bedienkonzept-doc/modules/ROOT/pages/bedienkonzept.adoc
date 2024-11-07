@@ -1753,7 +1753,7 @@ Dadurch soll erkenntlich sein, dass es genau am Ende des letzten Eintrags weiter
 
 Design Patterns sind wiederkehrende Lösungen für Designprobleme, die sich über verschiedene Teile des Frontends erstrecken können.
 
-[Navigation]
+[navigation]
 === Navigation
 
 Alle Use Cases einer Fachanwendung müssen, gegebenenfalls nach Anwendungskomponenten oder Anwendungen gruppiert, direkt über einen Eintrag in der Navigation ansprechbar sein.
@@ -1768,36 +1768,23 @@ Die IsyFact sieht drei Navigationsebenen vor:
 * Die darin enthaltene Subnavigation (Menütimes der Hauptnavigation)
 * Die Linksnavigation (Liste von Einträgen am linken Rand der Applikation)
 
-Festlegungen auf höherer Ebene (zum Beispiel der Anwendungslandschaft) gelten für alle in ihr enthaltenen Fachanwendungen.
 Innerhalb einer Anwendungslandschaft oder einer einzelnen Fachanwendung muss die Navigation einheitlich strukturiert sein.
 
-Je nach Komplexität der Anwendung oder Anwendungslandschaft gibt verschiedene Möglichkeiten eine Navigation zu gestalten.
-Alle Navigationen haben gemeinsam, dass Sie ihren Use Case auf letzter Ebene in der Linksnavigation haben.
+Je nach Komplexität der Anwendung oder Anwendungslandschaft gibt es verschiedene Möglichkeiten eine Navigation zu gestalten.
+Alle Navigationen haben gemeinsam, dass sie ihren Use Case auf letzter Ebene in der Linksnavigation haben.
 Die Subnavigation kann dabei die übergeordnete Anwendungskomponente oder Anwendung enthalten.
-Die Hauptnavigation bildet entsprechend der Subnavigation die Anwendung (oder logische Gruppe der Anwendungkomponenten) oder sogar eine Anwendungsgruppe ab.
+Die Hauptnavigation bildet entsprechend der Subnavigation die Anwendung (oder eine logische Gruppe der Anwendungkomponenten) oder sogar eine Anwendungsgruppe ab.
 
 Dies sieht in einfachen Fällen wie folgt aus:
 
-* Anwendung (Hauptnavigation)
-
-enthält
-
-* Anwendungskomponente (Subnavigation)
-
-enthält
-
+* Anwendung (Hauptnavigation) enthält
+* Anwendungskomponente (Subnavigation) enthält
 * Use Case (Linksnavigation)
 
-In komplexeren übergreifenden Szenarien kann eine Navigation wie folt aussehen:
+In komplexeren übergreifenden Szenarien kann eine Navigation wie folgt aussehen:
 
-* Anwendungsgruppen (Hauptnavigation)
-
-enthält
-
-* Anwendungen (Subnavigation)
-
-enthält
-
+* Anwendungsgruppen (Hauptnavigation) enthält
+* Anwendungen (Subnavigation) enthält
 * Use Case (Linksnavigation, nach Möglichkeit gruppiert)
 
 [NOTE]
@@ -1807,7 +1794,7 @@ Dies sind nur exemplarische Möglichkeiten eine Hierarchie innerhalb der zur Ver
 ==== Hauptnavigation
 
 Die Hauptnavigation ist eine horizontale Navigation, die stets am unteren Rand des Header-Bereichs dargestellt wird.
-Die Hauptnavigation wird mit Menüpunkten von links nach rechts befüllt.
+Sie wird mit Menüpunkten von links nach rechts befüllt.
 Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
 Im optimalen Fall hat die Hauptnavigation nicht mehr als 4-7 Menüpunkte.
 Die Hauptnavigation ist nicht scrollbar und enthält kein Taboverflow.
@@ -1824,7 +1811,7 @@ Die Subnavigation öffnet sich per Mausklick.
 ==== Subnavigation
 
 Die Subnavigation ist eine vertikale Navigation, die immer an einem Menüpunkt der Hauptnavigation beginnt.
-Die Subnavigation wird mit Menüpunkten von oben nach unten befüllt.
+Sie wird mit Menüpunkten von oben nach unten befüllt.
 Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
 Nach Möglichkeit sind die Menüpunkte logisch gruppiert.
 Die Subnavigation ist nicht scrollbar.
@@ -1833,14 +1820,13 @@ Die Subnavigation ist nicht scrollbar.
 .Subnavigation
 image::24_DP_subnavigation.png[align="center"]
 
-Die Subnavigation wird zum Öffnen von Anwendungskomponenten oder Anwendungen genutzt.
-Deren Navigation sich in der Linksnavigation fortsetzt.
+Die Subnavigation wird zum Öffnen von Anwendungskomponenten oder Anwendungen, deren Navigation sich in der Linksnavigation fortsetzt, genutzt.
 
 [linksnavigation]
 ==== Linksnavigation
 
-Die Linksnavigation ist eine vertikale Navigation, am linken Bildschirmrand.
-Die Linksnavigation lässt sich ein und ausblenden.
+Die Linksnavigation ist eine vertikale Navigation am linken Bildschirmrand.
+Sie lässt sich ein und ausblenden.
 Die Linksnavigation wird mit Menüpunkten von oben nach unten befüllt.
 Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
 Nach Möglichkeit sind die Menüpunkte logisch gruppiert.
@@ -1860,7 +1846,7 @@ Die Linksnavigation enthält optional übergeordnet den Anwendungs- oder Anwendu
 Über die Linksnavigation ist kein Anwendungswechsel möglich.
 
 [TIP]
-Muss der Anwendende häufig bestimmte Funktionen oder Objekte zugreifen, so kann es sinnvoll sein im Schnellzugriffe einzurichten.
+Muss der Anwendende häufig auf bestimmte Funktionen oder Objekte zugreifen, so kann es sinnvoll sein Schnellzugriffe einzurichten.
 Diese können statisch implementiert sein (zum Beispiel über "häufige Aufgaben") oder sich dynamisch ändern, je nach Nutzung (zum Beispiel über "häufig benutzt").
 
 [[dropdown]]
