@@ -1753,12 +1753,12 @@ Dadurch soll erkenntlich sein, dass es genau am Ende des letzten Eintrags weiter
 
 Design Patterns sind wiederkehrende Lösungen für Designprobleme, die sich über verschiedene Teile des Frontends erstrecken können.
 
-[navigation]
+[[navigation]]
 === Navigation
 
 Alle Use Cases einer Fachanwendung müssen, gegebenenfalls nach Anwendungskomponenten oder Anwendungen gruppiert, direkt über einen Eintrag in der Navigation ansprechbar sein.
 
-[image_beispiel_navigation]
+[[image_beispiel_navigation]]
 .Beispielnavigation
 image::24_DP_beispiel_navigation.png[align="center"]
 
@@ -1790,7 +1790,7 @@ In komplexeren übergreifenden Szenarien kann eine Navigation wie folgt aussehen
 [NOTE]
 Dies sind nur exemplarische Möglichkeiten eine Hierarchie innerhalb der zur Verfügung stehenden Elemente aufzubauen.
 
-[hauptnavigation]
+[[hauptnavigation]]
 ==== Hauptnavigation
 
 Die Hauptnavigation ist eine horizontale Navigation, die stets am unteren Rand des Header-Bereichs dargestellt wird.
@@ -1799,7 +1799,7 @@ Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
 Im optimalen Fall hat die Hauptnavigation nicht mehr als 4-7 Menüpunkte.
 Die Hauptnavigation ist nicht scrollbar und enthält kein Taboverflow.
 
-[image-hauptnavigation]
+[[image-hauptnavigation]]
 .Hauptnavigation
 image::24_DP_hauptnavigation.png[align="center"]
 
@@ -1807,7 +1807,7 @@ Unterhalb der Hauptnavigation wird ein Farbbalken angezeigt.
 Die Farbe repräsentiert eine Anwendung oder eine Anwendungsgruppe und kann entsprechend ihrer aktiven Auswahl die Farbe ändern.
 Die Subnavigation öffnet sich per Mausklick.
 
-[subnavigation]
+[[subnavigation]]
 ==== Subnavigation
 
 Die Subnavigation ist eine vertikale Navigation, die immer an einem Menüpunkt der Hauptnavigation beginnt.
@@ -1816,13 +1816,13 @@ Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
 Nach Möglichkeit sind die Menüpunkte logisch gruppiert.
 Die Subnavigation ist nicht scrollbar.
 
-[image-subnavigation]
+[[image-subnavigation]]
 .Subnavigation
 image::24_DP_subnavigation.png[align="center"]
 
 Die Subnavigation wird zum Öffnen von Anwendungskomponenten oder Anwendungen, deren Navigation sich in der Linksnavigation fortsetzt, genutzt.
 
-[linksnavigation]
+[[linksnavigation]]
 ==== Linksnavigation
 
 Die Linksnavigation ist eine vertikale Navigation am linken Bildschirmrand.
@@ -1831,13 +1831,13 @@ Die Linksnavigation wird mit Menüpunkten von oben nach unten befüllt.
 Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
 Nach Möglichkeit sind die Menüpunkte logisch gruppiert.
 
-[image-linksnavigation]
+[[image-linksnavigation]]
 .Linksnavigation geschlossen (gruppiert)
 image::24_DP_linksnavigation_closed.png[align="center"]
 
 Per Mausklick lassen sich in der Linksnavigation die Gruppierungen öffnen.
 
-[image-linknavigation-offen]
+[[image-linknavigation-offen]]
 .Linksnavigation geöffnet (gruppiert)
 image::24_DP_linksnavigation_open.png[align="center"]
 
