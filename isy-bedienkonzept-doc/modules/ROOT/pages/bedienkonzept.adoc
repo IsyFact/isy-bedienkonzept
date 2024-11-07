@@ -1758,7 +1758,7 @@ Design Patterns sind wiederkehrende Lösungen für Designprobleme, die sich übe
 
 Alle Use Cases einer Fachanwendung müssen, gegebenenfalls nach Anwendungskomponenten oder Anwendungen gruppiert, direkt über einen Eintrag in der Navigation ansprechbar sein.
 
-[image_beispiel_navigation]
+[[image_beispiel_navigation]]
 .Beispielnavigation
 image::24_DP_beispiel_navigation.png[align="center"]
 
