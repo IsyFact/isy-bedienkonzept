@@ -1721,8 +1721,18 @@ Um den Umgang mit solchen Tabellen zu vereinfachen, sollten nicht alle Daten ini
 
 *_Paginator_*
 
-* Der Paginator wird nach 10 oder 20 Zeilen am Ende der Tabelle angezeigt.
+* Der Paginator wird nach 5, 10 oder 20 Zeilen am Ende der Tabelle angezeigt.
 * Der Paginator erlaubt es, die nächste Seite aber auch weiter entfernte Seiten auszuwählen.
+* Der Paginator zeigt immer den Stand der angezeigten Menge an (zum Beispiel: "1-10").
+* Der Paginator bietet die Möglichkeit ganz ans Ende oder ganz an den Anfang zu springen.
+
+[[image-initial-paginator]]
+.Initialer Paginator
+image::24_DP_Initial_paginator.png[align="center"]
+
+[[image-active-paginator]]
+.Aktive Auswahl am Paginator (Seite 5 ausgewählt)
+image::24_DP_active-item_paginator.png[align="center"]
 
 *_Endless Scrolling_*
 
@@ -1742,6 +1752,102 @@ Dadurch soll erkenntlich sein, dass es genau am Ende des letzten Eintrags weiter
 == Design Pattern
 
 Design Patterns sind wiederkehrende Lösungen für Designprobleme, die sich über verschiedene Teile des Frontends erstrecken können.
+
+[navigation]
+=== Navigation
+
+Alle Use Cases einer Fachanwendung müssen, gegebenenfalls nach Anwendungskomponenten oder Anwendungen gruppiert, direkt über einen Eintrag in der Navigation ansprechbar sein.
+
+[image_beispiel_navigation]
+.Beispielnavigation
+image::24_DP_beispiel_navigation.png[align="center"]
+
+Die IsyFact sieht drei Navigationsebenen vor:
+
+* Die Hauptnavigation (auch horizontale Navigation genannt)
+* Die darin enthaltene Subnavigation (Menütimes der Hauptnavigation)
+* Die Linksnavigation (Liste von Einträgen am linken Rand der Applikation)
+
+Innerhalb einer Anwendungslandschaft oder einer einzelnen Fachanwendung muss die Navigation einheitlich strukturiert sein.
+
+Je nach Komplexität der Anwendung oder Anwendungslandschaft gibt es verschiedene Möglichkeiten eine Navigation zu gestalten.
+Alle Navigationen haben gemeinsam, dass sie ihren Use Case auf letzter Ebene in der Linksnavigation haben.
+Die Subnavigation kann dabei die übergeordnete Anwendungskomponente oder Anwendung enthalten.
+Die Hauptnavigation bildet entsprechend der Subnavigation die Anwendung (oder eine logische Gruppe der Anwendungkomponenten) oder sogar eine Anwendungsgruppe ab.
+
+Dies sieht in einfachen Fällen wie folgt aus:
+
+* Anwendung (Hauptnavigation) enthält
+* Anwendungskomponente (Subnavigation) enthält
+* Use Case (Linksnavigation)
+
+In komplexeren übergreifenden Szenarien kann eine Navigation wie folgt aussehen:
+
+* Anwendungsgruppen (Hauptnavigation) enthält
+* Anwendungen (Subnavigation) enthält
+* Use Case (Linksnavigation, nach Möglichkeit gruppiert)
+
+[NOTE]
+Dies sind nur exemplarische Möglichkeiten eine Hierarchie innerhalb der zur Verfügung stehenden Elemente aufzubauen.
+
+[hauptnavigation]
+==== Hauptnavigation
+
+Die Hauptnavigation ist eine horizontale Navigation, die stets am unteren Rand des Header-Bereichs dargestellt wird.
+Sie wird mit Menüpunkten von links nach rechts befüllt.
+Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
+Im optimalen Fall hat die Hauptnavigation nicht mehr als 4-7 Menüpunkte.
+Die Hauptnavigation ist nicht scrollbar und enthält kein Taboverflow.
+
+[image-hauptnavigation]
+.Hauptnavigation
+image::24_DP_hauptnavigation.png[align="center"]
+
+Unterhalb der Hauptnavigation wird ein Farbbalken angezeigt.
+Die Farbe repräsentiert eine Anwendung oder eine Anwendungsgruppe und kann entsprechend ihrer aktiven Auswahl die Farbe ändern.
+Die Subnavigation öffnet sich per Mausklick.
+
+[subnavigation]
+==== Subnavigation
+
+Die Subnavigation ist eine vertikale Navigation, die immer an einem Menüpunkt der Hauptnavigation beginnt.
+Sie wird mit Menüpunkten von oben nach unten befüllt.
+Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
+Nach Möglichkeit sind die Menüpunkte logisch gruppiert.
+Die Subnavigation ist nicht scrollbar.
+
+[image-subnavigation]
+.Subnavigation
+image::24_DP_subnavigation.png[align="center"]
+
+Die Subnavigation wird zum Öffnen von Anwendungskomponenten oder Anwendungen, deren Navigation sich in der Linksnavigation fortsetzt, genutzt.
+
+[linksnavigation]
+==== Linksnavigation
+
+Die Linksnavigation ist eine vertikale Navigation am linken Bildschirmrand.
+Sie lässt sich ein und ausblenden.
+Die Linksnavigation wird mit Menüpunkten von oben nach unten befüllt.
+Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
+Nach Möglichkeit sind die Menüpunkte logisch gruppiert.
+
+[image-linksnavigation]
+.Linksnavigation geschlossen (gruppiert)
+image::24_DP_linksnavigation_closed.png[align="center"]
+
+Per Mausklick lassen sich in der Linksnavigation die Gruppierungen öffnen.
+
+[image-linknavigation-offen]
+.Linksnavigation geöffnet (gruppiert)
+image::24_DP_linksnavigation_open.png[align="center"]
+
+Diese bleiben auch beim weiteren Öffnen von anderen Gruppen weiterhin offen und verhalten sich an dieser Stelle wie ein Panel.
+Die Linksnavigation enthält optional übergeordnet den Anwendungs- oder Anwendungskomponentennamen.
+Über die Linksnavigation ist kein Anwendungswechsel möglich.
+
+[TIP]
+Muss der Anwendende häufig auf bestimmte Funktionen oder Objekte zugreifen, so kann es sinnvoll sein Schnellzugriffe einzurichten.
+Diese können statisch implementiert sein (zum Beispiel über "häufige Aufgaben") oder sich dynamisch ändern, je nach Nutzung (zum Beispiel über "häufig benutzt").
 
 [[dropdown]]
 === Eingabefeldliste (Dropdown)
