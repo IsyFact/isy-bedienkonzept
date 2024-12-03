@@ -1765,7 +1765,7 @@ image::24_DP_beispiel_navigation.png[align="center"]
 Die IsyFact sieht drei Navigationsebenen vor:
 
 * Die Hauptnavigation (auch horizontale Navigation genannt)
-* Die darin enthaltene Subnavigation (Menütimes der Hauptnavigation)
+* Die darin enthaltene Subnavigation (Menüitems der Hauptnavigation)
 * Die Linksnavigation (Liste von Einträgen am linken Rand der Applikation)
 
 Innerhalb einer Anwendungslandschaft oder einer einzelnen Fachanwendung muss die Navigation einheitlich strukturiert sein.
@@ -1773,7 +1773,7 @@ Innerhalb einer Anwendungslandschaft oder einer einzelnen Fachanwendung muss die
 Je nach Komplexität der Anwendung oder Anwendungslandschaft gibt es verschiedene Möglichkeiten eine Navigation zu gestalten.
 Alle Navigationen haben gemeinsam, dass sie ihren Use Case auf letzter Ebene in der Linksnavigation haben.
 Die Subnavigation kann dabei die übergeordnete Anwendungskomponente oder Anwendung enthalten.
-Die Hauptnavigation bildet entsprechend der Subnavigation die Anwendung (oder eine logische Gruppe der Anwendungkomponenten) oder sogar eine Anwendungsgruppe ab.
+Die Hauptnavigation bildet entsprechend der Subnavigation die Anwendung (oder eine logische Gruppe der Anwendungskomponenten) oder sogar eine Anwendungsgruppe ab.
 
 Dies sieht in einfachen Fällen wie folgt aus:
 
@@ -1797,7 +1797,7 @@ Die Hauptnavigation ist eine horizontale Navigation, die stets am unteren Rand d
 Sie wird mit Menüpunkten von links nach rechts befüllt.
 Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
 Im optimalen Fall hat die Hauptnavigation nicht mehr als 4-7 Menüpunkte.
-Die Hauptnavigation ist nicht scrollbar und enthält kein Taboverflow.
+Die Hauptnavigation ist nicht scrollbar und enthält kein TabOverflow.
 
 [[image-hauptnavigation]]
 .Hauptnavigation
@@ -1846,7 +1846,7 @@ Die Linksnavigation enthält optional übergeordnet den Anwendungs- oder Anwendu
 Über die Linksnavigation ist kein Anwendungswechsel möglich.
 
 [TIP]
-Muss der Anwendende häufig auf bestimmte Funktionen oder Objekte zugreifen, so kann es sinnvoll sein Schnellzugriffe einzurichten.
+Müssen Anwendende häufig auf bestimmte Funktionen oder Objekte zugreifen, so kann es sinnvoll sein, Schnellzugriffe einzurichten.
 Diese können statisch implementiert sein (zum Beispiel über "häufige Aufgaben") oder sich dynamisch ändern, je nach Nutzung (zum Beispiel über "häufig benutzt").
 
 [[dropdown]]
