@@ -1,7 +1,7 @@
 name: isy-bedienkonzept-doc
 title: Bedienkonzept
 version:
-  master: '1.0.x'
+  main: '1.0.x'
   release/(*): $1
   (*): $1
 display_version: '1.0 (DEV)'
