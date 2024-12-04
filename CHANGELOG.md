@@ -7,3 +7,4 @@
 - IFS-4987: Platzhalter für zukünftige Inhalte wurden eingefügt
 - IFS-3971: Eingabefelder wurden konkretisiert (required, read only), "bold label" für Eingabefelder
 - IFS-2995: Navigation und Pagination hinzugefügt
+- IFS-4249: Die Antora-Version der Online-Dokumentation wird nun durch Git gesetzt
