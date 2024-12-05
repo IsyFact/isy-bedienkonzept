@@ -1,0 +1,16 @@
+# Ignore Eclipse project and build files
+.project
+.classpath
+.metadata
+bin/
+.settings/
+
+# Ignore IntelliJ project and build files
+*.iml
+.idea/
+
+# Ignore VS Code files
+.vscode
+
+# Ignore diagrams.net-specific files
+*.dn.svg.bkp
