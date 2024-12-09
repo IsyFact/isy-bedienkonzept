@@ -1674,7 +1674,7 @@ Sollte es fachlich notwendig sein, kann auch endless-scrolling eingesetzt werden
 * Wenn sich Symbole oder Bilder nur wiederholen, sollte auf sie verzichtet werden.
 
 [[sortierung-tabelle]]
-==== Sortierung in einer Tabelle
+==== Sortierung
 
 Tabellen sollten aufgrund ihrer großen Datenmengen pro Spalte sortierbar sein und eine auf- und absteigende Sortierung anbieten (zwei Pfeile im Tabellenheader).
 Der Klickbereich des Icons ist dabei 44px x 44px groß (s. <<image-tabelle>>).
@@ -1684,7 +1684,7 @@ Der Klickbereich des Icons ist dabei 44px x 44px groß (s. <<image-tabelle>>).
 * Das wechselnde Icon zeigt die aktuelle Sortierung an.
 
 [[filterung-tabelle]]
-==== Filterung in einer Tabelle
+==== Filterung
 
 Es bietet sich an, dass Tabellen auch filterbar gestaltet werden.
 Dafür können verschiedene fachliche Filter definiert werden.
@@ -1698,7 +1698,7 @@ Die Filter lassen sich in beliebiger Weise kombinieren.
 * Aktive Filter sollten deutlich erkennbar sein.
 
 [[selektionsverhalten-tabelle]]
-==== Selektionsverhalten in einer Tabelle
+==== Selektionsverhalten
 
 Es gibt verschiedene Möglichkeiten, ein Element in einer Tabelle zu selektieren.
 Dabei ist die notwendige Fachlichkeit maßgeblich für das Verhalten verantwortlich.
@@ -1713,7 +1713,7 @@ Sollte ein entsprechendes Verhalten angewendet werden, so ist darauf zu achten, 
 * Die erste Zeile kann per Default selektiert werden.
 
 [[bigdata-tabelle]]
-==== Große Datenmengen in einer Tabelle
+==== Große Datenmengen
 
 Tabellen können sehr viele Daten enthalten und gegebenenfalls sehr lang werden.
 Um den Umgang mit solchen Tabellen zu vereinfachen, sollten nicht alle Daten initial in der Tabelle angezeigt werden.
@@ -1849,6 +1849,24 @@ Die Linksnavigation enthält optional übergeordnet den Anwendungs- oder Anwendu
 Müssen Anwendende häufig auf bestimmte Funktionen oder Objekte zugreifen, so kann es sinnvoll sein, Schnellzugriffe einzurichten.
 Diese können statisch implementiert sein (zum Beispiel über "häufige Aufgaben") oder sich dynamisch ändern, je nach Nutzung (zum Beispiel über "häufig benutzt").
 
+[[toolbar]]
+=== Toolbar
+
+*WiP*
+
+*_Standard-Toolbar_* *WiP*
+
+*_Seitentoolbar_* *WiP*
+
+[[expander]]
+=== Expander (Progressive Disclosure)
+
+[[akkordeon]]
+==== Akkordeon
+
+[[panel]]
+==== Panel
+
 [[dropdown]]
 === Eingabefeldliste (Dropdown)
 
@@ -1975,15 +1993,6 @@ Die blockartige Anordnung erleichtert das Erfassen und ermöglicht eine thematis
 === Suchfunktion
 
 *WiP*
-
-[[toolbar]]
-=== Toolbar
-
-*WiP*
-
-*_Standard-Toolbar_* *WiP*
-
-*_Seitentoolbar_* *WiP*
 
 [[use-cases]]
 == Use Cases
