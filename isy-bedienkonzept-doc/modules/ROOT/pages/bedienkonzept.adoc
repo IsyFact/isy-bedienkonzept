@@ -782,7 +782,7 @@ Im Folgenden werden einige Beispiele für technische Begriffe und deren Überset
 * Die Verwendung verschiedener Schriftarten (über die im Bedienkonzept hinaus vorgegebenen Schriftarten) muss vermieden werden.
 * Die Schriftgröße muss immer ausreichend groß sein.
 Ein Unterschreiten von Mindestgrößen zugunsten des Platzgewinns muss vermieden werden.
-Stattdessen werden andere, platzsparende Mechanismen angewandt wie Expander (Progressive Disclosure).
+Stattdessen werden andere, platzsparende Mechanismen angewandt wie <<expander>>.
 * Die Anzahl verschiedener Schriftgrößen muss auf ein notwendiges Minimum reduziert werden.
 * Als Standard-Schrift wird BundesSans 14pt Regular in Dunkelgrau (#212529) empfohlen.
 * Es muss sichergestellt sein, dass der <<barrierefreier-einsatz-von-farben,Kontrast der Schriftfarbe zur Hintergrundfarbe>> ausreichend groß ist.
@@ -939,8 +939,6 @@ Beispiel:
 
 [[bedienelemente]]
 == Bedienelemente
-
-*_Einleitung und Allgemeines:_*
 
 Bedienelemente sind die Bausteine der Benutzeroberfläche, die es den Nutzenden ermöglichen, mit dem Frontend zu interagieren.
 Dieser Abschnitt definiert die verschiedenen Bedienelemente und legt fest, wie sie gestaltet und angeordnet werden sollen, um eine intuitive Benutzererfahrung zu gewährleisten.
@@ -1861,11 +1859,65 @@ Diese können statisch implementiert sein (zum Beispiel über "häufige Aufgaben
 [[expander]]
 === Expander (Progressive Disclosure)
 
+Mit einem Expander können bestimmte Inhaltsbereiche per Mausklick dynamisch ein- und ausgeblendet werden.
+Das zugrundeliegende Prinzip wird häufig als „Progressive Disclosure“ („schrittweises Enthüllen“) oder auch als „Information Hiding“ („Ausblenden von Information“) bezeichnet.
+
+Ein Expander wird genutzt, um die Informationskomplexität zu reduzieren und um vertikal Platz einzusparen (beispielsweise bei langen <<formulare,Formularen>>.
+Hierfür werden die Inhalte in logische Gruppen zusammengefasst, die sich zur besseren Übersicht ein- und ausklappen lassen.
+In einem Expander können sowohl <<basiselemente,Basis>>- und <<bedienelemente>> als auch <<design-pattern,Design Patterns>> angezeigt werden.
+
+Der grundlegende Aufbau eines Expanders ist wie folgt:
+
+* Einen Header-Bereich mit
+** einem gruppierenden <<label>>, das den Inhalt der Gruppe prägnant beschreibt,
+** und einem <<icons,Icon>>, das den Zustand des Expanders anzeigt.
+* Einen Content-Bereich, der die Inhalte der Gruppe enthält.
+
+Expander nehmen dabei immer die ihnen zur Verfügung stehende Breite ein.
+
 [[akkordeon]]
 ==== Akkordeon
 
+In einem Akkordeon werden zu einem übergeordneten Thema strukturiert und gegliedert Inhalte dargestellt.
+Dabei lässt sich nur ein Akkordeonelement gleichzeitig ausklappen.
+Alle anderen Akkordeonelemente sind oder werden eingeklappt.
+So wird der Fokus auf genau dieses Inhaltsfragment gelegt.
+
+[[image-akkordeon-eingeklappt]]
+.Akkordeon ohne ausgeklapptes Element
+image::TODO-Bild[align="center"]
+
+[[image-akkordeon-ausgeklappt]]
+.Akkordeon mit ausgeklapptem Element
+image::TODO-Bild[align="center"]
+
+Fürs Aus- und Einklappen eines Akkordeonelements kann der gesamte Akkordeon-Header angeklickt werden.
+Zusätzlich befindet sich auf der rechten Seite neben dem Label ein Icon, das den Zustand (ein- oder ausgeklappt) des Akkordeonelements anzeigt.
+
+Die Interaktion wird dabei in der Regel auf die reine Wissensvermittlung reduziert.
+Eine klassische Anwendung hat das Akkordeon beispielsweise in FAQs.
+
 [[panel]]
 ==== Panel
+
+Ein Panel ist einem Akkordeon recht ähnlich.
+In einem Panel werden ebenso zu einem übergeordneten Thema kompakt Gruppen an Informationen dargestellt.
+Dabei lässt sich das ausgewählte Panel ausklappen.
+Weitere Panels innerhalb des Frontends werden durch ein aus-/einklappen nicht beeinflusst.
+So können Nutzende alle Informationsgruppen eigenständig anzeigen oder bei Bedarf ausblenden lassen.
+
+[[image-panel-eingeklappt]]
+.Eingeklapptes Panel
+image::TODO-Bild[align="center"]
+
+[[image-panel-ausgeklappt]]
+.Ausgeklapptes Panel
+image::TODO-Bild[align="center"]
+
+Fürs Aus- und Einklappen eines Panels befindet sich auf der rechten Seite auf der Höhe des Labels ein Icon.
+Die Interaktion steht hier im Vordergrund.
+Panels werden klassischerweise in Formularstrecken verwendet.
+Technisch sind Panel-Widgets meist flexibler beziehungsweise nicht so restriktiv wie ein Akkordeon.
 
 [[dropdown]]
 === Eingabefeldliste (Dropdown)
@@ -2013,7 +2065,7 @@ Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:i
 *_Beispielhaftes Formular dreispaltig:_*
 
 [[image-dreispaltenlayout]]
-. Drei-Spalten Layout
+.Drei-Spalten Layout
 image::24_UC_3_spalten.png[align="center"]
 
 Formulare bestehen mindestens aus einer <<eingabefeldgruppen,Eingabefeldgruppe>> und einer beliebigen Anzahl weiterer Elemente.
