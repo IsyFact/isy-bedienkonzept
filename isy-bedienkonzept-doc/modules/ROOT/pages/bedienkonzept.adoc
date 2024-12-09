@@ -2324,23 +2324,18 @@ Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquiv
 
 *WiP*
 
-[[strukturierung-von-frontend-seiten]]
-=== Strukturierung von Frontend-Seiten
-
-*WiP* (Wann setze ich Panels, Akkordeons und/oder Überschriften ein?)
-
 [[Screenareas]]
-==== Screenbereiche (Screenareas)
+=== Screenbereiche (Screenareas)
 
 *WiP* (beinhaltet die Grundstruktur einer Frontend-Seite anhand der isy-angular-widgets Komponente isy-hauptfenster)
 
 [[Header]]
-===== Header
+==== Header
 
 *WiP* (beinhaltet die Hauptnavigation des isy-hauptfensters)
 
 [[Contentarea]]
-===== Contentbereich (Contentarea)
+==== Contentbereich (Contentarea)
 
 *WiP*
 
@@ -2349,7 +2344,7 @@ Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquiv
 *_Content mit Sidebar_* *WiP* (beinhaltet die Linksnavigation und den Informationsbereich des isy-hauptfensters)
 
 [[Footer]]
-===== Footer
+==== Footer
 
 *WiP*
 
@@ -2418,3 +2413,8 @@ Für die Anwendung in Formularen sollten folgende Grundsätze beachtet werden:
 
 * "Readonly" ist ideal, wenn die Informationen wichtig sind und für Nutzende sichtbar bleiben müssen, aber nicht verändert werden sollen.
 * "Disabled" eignet sich, wenn Nutzende keine Informationen im Feld sehen oder bearbeiten sollen – zum Beispiel bei unzugänglichen Funktionen oder Bedingungen, die erst später erfüllt werden müssen.
+
+[[panel-vs-akkordeon-ueberschrift]]
+=== Panel vs. Akkordeon vs. Überschrift
+
+*WiP* (Wann setze ich Panels, Akkordeons und/oder Überschriften ein?)
