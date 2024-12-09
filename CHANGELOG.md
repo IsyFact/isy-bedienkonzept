@@ -9,3 +9,4 @@
 - IFS-2995: Navigation und Pagination hinzugefügt
 - IFS-4369: Build-Fehler der Antora-Dokumentation wurden behoben
 - IFS-4249: Die Antora-Version der Online-Dokumentation wird nun durch Git gesetzt
+- IFS-3898: Das Kapitel *Design Pattern* wurde durch die Unterkapitel *Expander* und *Toolbar* erweitert
