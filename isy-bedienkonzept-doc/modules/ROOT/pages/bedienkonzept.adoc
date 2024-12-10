@@ -1875,6 +1875,12 @@ Der grundlegende Aufbau eines Expanders ist wie folgt:
 
 Expander nehmen dabei immer die ihnen zur Verfügung stehende Breite ein.
 
+[NOTE]
+Anstatt mehrere Expander in einer Ansicht zu nutzen, sollte überlegt werden, ob die fachlich gesplitteten Gruppierungen besser in <<tabview,Tabs>> oder sogar in eigenen Frontendseiten dargestellt werden sollten.
+Dadurch wird die kognitive Belastung der Nutzenden reduziert und das Fehlerhandling vereinfacht.
+Des Weiteren ist es barrierefreier, wenn weniger Inhalt auf einem Frontend direkt sichtbar ist.
+Screenreader können dadurch schneller und einfacher durch die Inhalte navigieren.
+
 [[akkordeon]]
 ==== Akkordeon
 
