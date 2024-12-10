@@ -665,7 +665,7 @@ a|image::primeicons/save.svg[width=32,height=32]
 
 a|image::primeicons/search.svg[width=32,height=32]
 |pi-search
-|Suchen, Suche wiederholen. Neue Suche, Durchsuchen, letzte Suche
+|Suchen, Suche wiederholen, Neue Suche, Durchsuchen, letzte Suche
 
 a|image::primeicons/arrow-circle-left.svg[width=32,height=32]
 |pi-arrow-circle-left
@@ -717,7 +717,7 @@ _Sprachumfang_
 
 Folgende Sprachen werden von den Schriften BundesSerif, BundesSans und BundesSans Condensed unterstützt (nur lateinische Schriftzeichen):
 
-Afrikaans, Albanisch, Aserbaidschanisch, Asu, Baskisch, Bemba, Bena, Bosnisch, Bretonisch, Cebuano, Chiga, Deutsch, Dänisch, Embu, Englisch, Esperanto, Estnisch, Filipino, Finnisch, Französisch,  Friaulisch, Färöisch, Galizisch, Ganda, Grönländisch, Gusii, Hawaiianisch, Ido, Inari-Samisch, Indonesisch, Interlingua, Irisch, Isländisch, Italienisch, Javanisch, Jju, Jola-Fonyi, Kabuverdianu, Kalenjin, Kamba, Katalanisch, Kikuyu, Kinyarwanda, Kornisch, Korsisch, Kroatisch, Kurdisch, Kölnisch, Lettisch, Ligurisch, Litauisch, Lojban, Lombardisch, Luhya, Luo, Luxemburgisch, Machame, Makhuwa, Makhuwa-Meetto, Makonde, Malagasy, Malaiisch, Maltesisch, Manx, Meru, Mohawk, Morisyen, Māori, Niederdeutsch, Niederländisch. Niedersorbisch, Nord-Ndebele, Nord-Sami, Nord-Sotho, Norwegisch (Bokmål), Norwegisch (Nynorsk), Nyanja, Nyankole, Obersorbisch, Okzitanisch, Oromo, Polnisch, Portugiesisch, Quechua, Rejang, Rombo, Rukiga, Rumänisch, Rundi, Rwa, Rätoromanisch, Samburu, Samoanisch, Sango, Sangu, Sardisch, Schlesisch, Schottisches Gälisch, Schwedisch, Schweizerdeutsch, Sena, Shambala, Shona, Siswati, Slowakisch, Slowenisch, Soga, Somali, Spanisch, Sundanesisch, Swahili, Süd-Ndebele, Süd-Sotho, Taita, Taroko, Teso, Tongaisch, Tschechisch, Tsong, Tswana, Turkmenisch, Türkisch, Ungarisch, Usbekisch, Vunjo, Walisisch, Walliserdeutsch, Wallonisch, Westfriesisch, Wolastoqey, Wolof, Xhosa, Zhuang, Zulu
+Afrikaans, Albanisch, Aserbaidschanisch, Asu, Baskisch, Bemba, Bena, Bosnisch, Bretonisch, Cebuano, Chiga, Deutsch, Dänisch, Embu, Englisch, Esperanto, Estnisch, Filipino, Finnisch, Französisch,  Friaulisch, Färöisch, Galizisch, Ganda, Grönländisch, Gusii, Hawaiianisch, Ido, Inari-Samisch, Indonesisch, Interlingua, Irisch, Isländisch, Italienisch, Javanisch, Jju, Jola-Fonyi, Kabuverdianu, Kalenjin, Kamba, Katalanisch, Kikuyu, Kinyarwanda, Kornisch, Korsisch, Kroatisch, Kurdisch, Kölnisch, Lettisch, Ligurisch, Litauisch, Lojban, Lombardisch, Luhya, Luo, Luxemburgisch, Machame, Makhuwa, Makhuwa-Meetto, Makonde, Malagasy, Malaiisch, Maltesisch, Manx, Meru, Mohawk, Morisyen, Māori, Niederdeutsch, Niederländisch, Niedersorbisch, Nord-Ndebele, Nord-Sami, Nord-Sotho, Norwegisch (Bokmål), Norwegisch (Nynorsk), Nyanja, Nyankole, Obersorbisch, Okzitanisch, Oromo, Polnisch, Portugiesisch, Quechua, Rejang, Rombo, Rukiga, Rumänisch, Rundi, Rwa, Rätoromanisch, Samburu, Samoanisch, Sango, Sangu, Sardisch, Schlesisch, Schottisches Gälisch, Schwedisch, Schweizerdeutsch, Sena, Shambala, Shona, Siswati, Slowakisch, Slowenisch, Soga, Somali, Spanisch, Sundanesisch, Swahili, Süd-Ndebele, Süd-Sotho, Taita, Taroko, Teso, Tongaisch, Tschechisch, Tsong, Tswana, Turkmenisch, Türkisch, Ungarisch, Usbekisch, Vunjo, Walisisch, Walliserdeutsch, Wallonisch, Westfriesisch, Wolastoqey, Wolof, Xhosa, Zhuang, Zulu
 
 Die Liste entspricht der Sprachenzeichennorm ISO 639-1-3.
 
@@ -1608,7 +1608,7 @@ Es kann auch mit sinnvollen und verständlichen Abkürzungen gearbeitet werden.
 *_Don'ts:_*
 
 * Seiten sollten nicht mit nur einem Tabreiter gestaltet werden.
-Bei weniger als drei Tabreitern, ist eventuell ein dynamisches Panel das passendere Element.
+Bei weniger als drei Tabreitern, ist eventuell ein dynamisches <<panel>> das passendere Element.
 * Muss der Inhalt verschiedener Tabreiter verglichen/abgestimmt werden, sollte anstelle eines Tabreiters lieber ein dynamisches Panel verwendet werden.
 * Tabreiter stellen nicht verschiedene Sichten zu gleichen Daten dar.
 * Tabreiter sind keine Prozessschritte.
@@ -1672,7 +1672,7 @@ Sollte es fachlich notwendig sein, kann auch endless-scrolling eingesetzt werden
 ==== Sortierung
 
 Tabellen sollten aufgrund ihrer großen Datenmengen pro Spalte sortierbar sein und eine auf- und absteigende Sortierung anbieten (zwei Pfeile im Tabellenheader).
-Der Klickbereich des Icons ist dabei 44px x 44px groß (s. <<image-tabelle>>).
+Der Klickbereich des Icons ist dabei 44px x 44px groß (siehe <<image-tabelle>>).
 
 * Der erste Klick auf die Sortiericons sortiert die Tabelle nach den Werten in der gewählten Spalte aufsteigend.
 * Ein zweiter Klick auf die Sortiericons sortiert die Tabelle entsprechend absteigend.
@@ -1836,7 +1836,7 @@ Per Mausklick lassen sich in der Linksnavigation die Gruppierungen öffnen.
 .Linksnavigation geöffnet (gruppiert)
 image::24_DP_linksnavigation_open.png[align="center"]
 
-Diese bleiben auch beim weiteren Öffnen von anderen Gruppen weiterhin offen und verhalten sich an dieser Stelle wie ein Panel.
+Diese bleiben auch beim weiteren Öffnen von anderen Gruppen weiterhin offen und verhalten sich an dieser Stelle wie ein <<panel>>.
 Die Linksnavigation enthält optional übergeordnet den Anwendungs- oder Anwendungskomponentennamen.
 Über die Linksnavigation ist kein Anwendungswechsel möglich.
 
@@ -1905,7 +1905,7 @@ Entsprechend soll auf weiterführende Interaktion, über das aus- und einklappen
 [[panel]]
 ==== Panel
 
-Ein Panel ist einem Akkordeon recht ähnlich.
+Ein Panel ist einem <<akkordeon>> recht ähnlich.
 In einem Panel werden ebenso zu einem übergeordneten Thema kompakt Gruppen an Informationen dargestellt.
 Dabei lässt sich das ausgewählte Panel ausklappen.
 Weitere Panels innerhalb des Frontends werden durch ein aus-/einklappen nicht beeinflusst.
