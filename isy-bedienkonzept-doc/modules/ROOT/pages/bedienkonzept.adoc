@@ -410,6 +410,8 @@ Es wird nicht aus ästhetischen oder stilistischen Gründen gesetzt.
 [[technische-rahmenbedingungen]]
 == Technische Rahmenbedingungen
 
+=== Allgemeine Rahmenbedingungen
+
 Die technischen Rahmenbedingungen legen fest, welche Technologien und Plattformen für die Umsetzung des Bedienkonzepts verwendet werden sollen.
 
 * Für die Entwicklung von Frontends kommt primär die auf Angular basierte Widget Bibliothek https://primeng.org/installation[PrimeNG] zum Einsatz.
@@ -418,6 +420,80 @@ Dieser beinhaltet behördenspezifische Widgets wie den Anwendungsrahmen oder Ein
 * Der Baustein liefert ein eigenes Theme, welches die im Bedienkonzept beschriebenen <<allgemeine-prinzipien,allgemeinen Prinzipien>> weitestgehend umsetzt.
 Dieses Theme kann bei Bedarf auch durch ein projektspezifisches Theme ersetzt werden.
 * Primär ist der Baustein für die Nutzung auf Desktopgeräten konzipiert, kann aber durch die grundlegende Responsivität auch auf mobilen Geräten genutzt werden.
+
+=== Tastaturbedienbarkeit und Tastaturkombinationen
+
+Die Tastastursteuerung ist eine elementare Art der Navigation für Webanwendungen.
+Wichtig ist dabei die Einhaltung standardisierter Bedienmuster, um eine intuitive und konfliktfreie Nutzung zu gewährleisten.
+Anwendungen der ISYFact nutzen daher die bekannten Standartkombinationen und verzichten auf eigene Tastenkombinationen und bilden so die Basis für eine einheitliche und barrierefreie Bedienung. Beispiele hierfür sind:
+
+* Tabulator: Navigation zwischen interaktiven Elementen wie Links, Buttons oder Eingabefeldern.
+* Shift + Tab: Navigation rückwärts zwischen interaktiven Elementen.
+* Enter: Aktivierung von Buttons, Links und anderen interaktiven Elementen.
+* Leertaste: Scrollen in Seiten (bei nicht fokussierten Elementen) oder Aktivieren von Checkboxen (bei fokussierten Checkboxen).
+* Pfeiltasten: Navigation in Listen, Dropdowns oder Textfeldern.
+* Esc: Schließen von Dialogen, Modalen oder Dropdowns.
+
+Der reine Einsatz von Standardkombinationen in der Tastatursteuerung ist nicht ausreichend, eine größtmögliche Barrierefreiheit sicherzustellen. So gibt es noch weitere Dos and Don´ts im Rahmen der Tastatursteuerung zu beachten:
+
+*_Dos_*
+
+* Fokussteuerung: Alle interaktiven Elemente müssen in einer logischen Reihenfolge fokussierbar sein, ohne unerwartete Wechsel oder Sprünge.
+* Tastaturzugänglichkeit: Dynamische Elemente wie Dropdowns, Dialoge oder modale Fenster sind vollständig mit der Tastatur bedienbar.
+* Feedback: Fehlermeldungen und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
+* Standardbedienmuster: Es werden nur Standard-Tastenkombinationen verwendet, um Konflikte mit Browserfunktionen oder Assistenzsoftware zu vermeiden.
+
+*_Don’ts_*
+
+* Eingeschränkte Zugänglichkeit: Kein interaktives Element darf ausschließlich mit der Maus bedienbar sein.
+* Unklare Zustände: Elemente wie Buttons oder Links dürfen keinen unklaren oder schwer erkennbaren Fokuszustand haben.
+* Unübersichtliche Navigation: Eine übermäßige Anzahl von Tab-Stops oder unlogische Fokuswechsel müssen vermieden werden.
+
+Unter Beachtung der oben genannten Richtlinien ist eine effiziente und klare Bedienung möglich. Weitere Kombinationen im Browser zur Steigerung der Effektivität sind (Kann in seltenen Fällen abweichen):
+
+*_Navigation und grundlegende Aktionen_*
+
+1.	Strg + L / Cmd + L: Fokus auf die Adressleiste.
+2.	Strg + T / Cmd + T: Öffnen eines neuen Tabs.
+3.	Strg + W / Cmd + W: Schließen des aktuellen Tabs.
+4.	Strg + Tab / Cmd + Tab: Wechseln zum nächsten Tab.
+5.	Strg + Shift + Tab / Cmd + Shift + Tab: Wechseln zum vorherigen Tab.
+6.	Strg + R / Cmd + R: Neuladen der aktuellen Seite.
+7.	Alt + Pfeil nach links: Zurück zur vorherigen Seite.
+8.	Alt + Pfeil nach rechts: Vorwärts zur nächsten Seite.
+9.	F5: Neuladen der Seite.
+10.	Shift + F5: Erzwungenes Neuladen (ohne Cache).
+
+*_Textbearbeitung und Eingabe_*
+
+1.	Strg + A / Cmd + A: Gesamten Text auswählen.
+2.	Strg + C / Cmd + C: Kopieren des ausgewählten Textes.
+3.	Strg + V / Cmd + V: Einfügen aus der Zwischenablage.
+4.	Strg + X / Cmd + X: Ausschneiden des ausgewählten Textes.
+5.	Strg + Z / Cmd + Z: Rückgängig machen der letzten Aktion.
+6.	Strg + Y / Cmd + Shift + Z: Wiederholen der zuletzt rückgängig gemachten Aktion.
+7.	Strg + F / Cmd + F: Öffnen der Suchfunktion.
+8.	F3: Weiter zur nächsten Suchergebnismarkierung springen.
+9.	Strg + P / Cmd + P: Öffnen des Druckdialogs.
+10.	Tab: Wechsel zwischen Formularfeldern oder interaktiven Elementen.
+11.	Shift + Enter: Absenden eines Formulars (bei ausgewählten Textfeldern oder Buttons).
+
+*_Zoom und Anzeige_*
+
+1.	Strg + Plus (+) / Cmd + Plus (+): Vergrößern des Seiteninhalts.
+2.	Strg + Minus (-) / Cmd + Minus (-): Verkleinern des Seiteninhalts.
+3.	Strg + 0 / Cmd + 0: Zurücksetzen des Zooms auf die Standardgröße.
+4.	F11: Umschalten in den Vollbildmodus.
+
+*_Bedienung mit Screenreadern_*
+
+1.	Tab: Wechseln zwischen Fokusbereichen.
+2.	Shift + Tab: Rückwärts navigieren zwischen Fokusbereichen.
+3.	Pfeil nach unten / oben: Zeilenweises Navigieren in Listen und Text.
+4.	Strg + Pfeil nach rechts / links: Springen zwischen Wörtern in Textfeldern.
+5.	Alt + Shift + Pfeil nach unten / oben: Navigieren zwischen Absätzen.
+
+Diese Kombinationen ergänzen die grundlegenden Funktionen und gewährleisten eine nahtlose Integration mit Browser-Standards und assistiven Technologien wie Screenreadern. Die Einhaltung dieser Standards ermöglicht eine barrierefreie und effiziente Navigation für alle Nutzenden.
 
 [[basiselemente]]
 == Basiselemente
@@ -1956,25 +2032,344 @@ image::24_DP_mehrspaltige_inhaltliche_Gruppe.png[align="center"]
 Hier wird deutlich, dass in einem mehrspaltigen Layout verschiedene Kombinationen an Eingabefeldern in zweispaltiger (horizontaler) Anordnung einer Hauptgruppe (in Lila) unterliegen.
 Die blockartige Anordnung erleichtert das Erfassen und ermöglicht eine thematische Untergruppen-Clusterung.
 
-[[mehrfacheingabe]]
-=== Mehrfacheingabe eines Eingabeobjekts
+[[wertehilfen]]
+=== Wertehilfen
 
-*WiP* (beispielsweise mehrere Telefonnummern oder Adressen)
+Wertehilfen in Webanwendungen sind interaktive Unterstützungselemente, die Benutzenden helfen, Formulare schneller und fehlerfrei auszufüllen.
+Sie dienen dazu, die Eingabe durch vorgeschlagene oder vorausgewählte Werte zu erleichtern (zum Beispiel als Datepicker).
 
-[[listpicker]]
-=== Listen-Picker
+*_Anforderungen an Wertehilfen:_*
 
-*WiP* (ehemals Browse & Collect)
+*_Barrierefreiheit_*
 
-[[stepper]]
-=== Stepper
+* Tastaturzugänglichkeit: Wertehilfen müssen vollständig mit der Tastatur bedienbar sein, einschließlich Navigation, Auswahl und Schließen.
+* Screenreader-Unterstützung: Alle interaktiven Elemente müssen mit sinnvollen Labels versehen sein und korrekt angekündigt werden (z. B. mittels aria-label oder aria-live-Regionen).
 
-*WiP* (auch Wizard genannt)
+*_Usability_*
 
-[[suche]]
-=== Suchfunktion
+* Intuitive Nutzung: Wertehilfen sollten verständlich gestaltet und optisch hervorgehoben werden, sobald sie aktiv sind.
+* Fehlerminimierung: Eingabevalidierungen sollten Nutzenden bei ungültigen Werten direkt Hinweise geben.
 
-*WiP*
+*_Responsive Design_*
+* Wertehilfen müssen auf verschiedenen Bildschirmgrößen und bei Zoom (mindestens 200 %) einwandfrei funktionieren.
+
+[NOTE]
+Sollte eine barrierefreie Umsetzung der Wertehilfe nicht möglich sein, oder gar eine Barriere darstellen, so sollte diese vor assistiven Technologien verborgen werden und es muss eine (alternative) barrierefreie Tastatureingabe möglich sein.
+
+*_Beispiele für Wertehilfen_*
+
+*_Dropdowns:_*
+Zur Auswahl vordefinierter Werte, z. B. aus einer Liste von Bundesländern.
+
+*_Autovervollständigung:_*
+Nutzende geben Text ein, und die Anwendung schlägt passende Werte vor.
+
+*_Datumsauswahl:_*
+Ein Kalender-Widget unterstützt bei der Auswahl eines Datums.
+
+*_Zahlen-Spinners:_*
+Ermöglicht die Erhöhung oder Verringerung eines Wertes durch Pfeiltasten.
+
+
+*_Dos:_*
+
+* Hinweise bei ungültigen Eingaben direkt am Interaktionselement anzeigen.
+* Inhalte und Beschriftungen so gestalten, dass sie klar und leicht verständlich sind.
+
+*_Don’ts:_*
+
+* Keine zwingende Nutzung von Werten aus der Hilfe, wenn eine manuelle Eingabe zulässig ist.
+* Keine automatische Aktivierung von Wertehilfen, die ohne Nutzerinteraktion starten.
+
+Die für die ISYFact gültigen Wertehilfen basieren auf primeNG-Komponenten, diese werden ständig weiterentwickelt und aktualisiert und kann optisch von dem hier dokumentierten Stand abweichen. Die folgenden Rahmenbedingungen müssen Versionsunabhängig eingehalten werden.
+
+[[datepicker-wertehilfe]]
+==== Datepicker
+
+TODO: Image
+
+*_Funktionalität:_* Ermöglicht die Auswahl eines Datums oder Zeitpunkts über ein interaktives Widget.
+
+*_Bedienung:_*
+
+* Maus: Klick auf das Eingabefeld öffnet den Kalender, ein weiterer Klick auf das gewünschte Datum wählt dieses aus.
+* Tastatur: Tabulator zur Fokussierung, Pfeiltasten zur Navigation, Enter zur Auswahl.
+
+*_Barrierefreiheit:_* Screenreader sollten die aktuelle Auswahl sowie Navigationsanweisungen klar ansagen.
+
+[[InputNumber-wertehilfe]]
+==== Inputnumber
+
+TODO: Image
+
+*_Funktionalität:_* Ermöglicht das Eingeben numerischer Werte mit optionalen Steuerelementen (z. B. Pfeile).
+
+*_Bedienung:_*
+
+* Maus: Pfeilsymbole erhöhen oder verringern den Wert.
+* Tastatur: Direkte Eingabe von Zahlen, Pfeiltasten zur Erhöhung/Verringerung.
+
+*_Barrierefreiheit:_* Klare Beschriftungen und ARIA-Attribute für eine verständliche Ansage durch Screenreader.
+
+[[cascadeselect-wertehilfe]]
+==== CascadeSelect
+
+TODO: Image
+
+*_Funktionalität:_* Bietet hierarchische Auswahlmöglichkeiten, die sich in Unterkategorien verzweigen.
+
+*_Bedienung:_*
+
+* Maus: Klick auf die oberste Kategorie öffnet die Unterkategorien.
+* Tastatur: Navigation mit Tab und Pfeiltasten, Enter zur Auswahl.
+
+*_Barrierefreiheit:_* Jede Ebene sollte korrekt fokussierbar sein, mit klaren Hinweisen auf Unterkategorien.
+
+[[dropdown-wertehilfe]]
+==== Dropdown
+
+TODO: Image
+
+*_Funktionalität:_* Ermöglicht die Auswahl eines einzigen Wertes aus einer vordefinierten Liste.
+
+*_Bedienung:_*
+
+* Maus: Klick öffnet die Liste, ein weiterer Klick wählt den Eintrag.
+* Tastatur: Tab zur Navigation, Pfeiltasten zur Auswahl, Enter zur Bestätigung.
+
+*_Barrierefreiheit:_* Dropdown-Elemente müssen deutlich beschriftet sein, mit guter Unterstützung für Screenreader.
+
+[[multiselect-wertehilfe]]
+==== Multiselect
+
+TODO: Image
+
+*_Funktionalität:_* Ermöglicht die Auswahl mehrerer Werte aus einer Liste.
+
+*_Bedienung:_*
+
+* Maus: Klick auf Kontrollkästchen oder Listenpunkte zur Mehrfachauswahl.
+* Tastatur: Tabulator zur Fokussierung, Pfeiltasten zur Navigation, Space zur Auswahl.
+
+*_Barrierefreiheit:_* Klarer Fokus und Ansagen für den Status (ausgewählt/nicht ausgewählt) bei Screenreadern.
+
+[[context-Group-wertehilfe]]
+==== Context Group
+
+TODO: Image
+
+*_Funktionalität:_* Ermöglicht das Hinzufügen oder entfernen einer oder mehrerer kontextbezogenen gruppierten Eingabefeldern und Eingabemöglichkeiten.
+
+*_Bedienung:_*
+
+* Maus: Klick auf „+ weiteres Element“ erzeugt eine weitere Context-Group, klick auf „Mülltonne“ löscht die ausgewählte Context-Group.
+* Tastatur: Tabulator zur Fokussierung, Pfeiltasten zur Navigation, Enter zur Auswahl.
+
+*_Barrierefreiheit:_* Klarer Fokus und Ansagen für den Status (ausgewählt/nicht ausgewählt) bei Screenreadern.
+
+[[selektion]]
+=== Selektion
+
+Selektionsmöglichkeiten in einer Webanwendung sind grundlegend bei der Bedienung einer Webanwendung notwendig.
+Sie dienen zur Auswahl einzelner oder mehrerer Werte aus einer meist vordefinierten Menge.
+Sie können beliebig kombiniert werden, um die Fehleranfälligkeit zu reduzieren und die Auswahlmöglichkeiten zu optimieren.
+
+Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein Design Pattern und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
+Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden Unterkapitel des Kapitels „Bedienelemente“ einzusehen.
+
+[[checkboxen-selektion]]
+==== Checkboxen
+*_Funktionalität:_* Erlauben die Auswahl mehrerer unabhängiger Optionen.
+
+*_Best Practices:_*
+
+* Klarer visueller Fokus bei Navigation mit der Tastatur.
+* Zustände (aktiviert, deaktiviert, teilweise ausgewählt) müssen durch Screenreader korrekt angesagt werden.
+* Mindestkontrast von 4,5:1 für alle Zustände (inkl. Hover und Fokus).
+
+*_Barrierefreiheit:_*
+
+* Nutzung von aria-checked und aria-label zur Beschreibung.
+* Gruppierung ähnlicher Checkboxen mit fieldset und legend.
+
+[[radiobuttons-selektion]]
+==== Radiobuttons
+
+*_Funktionalität:_* Erlauben die Auswahl einer einzigen Option aus einer Gruppe.
+
+*_Best Practices:_*
+
+* Radiobuttons sollten immer beschriftet und in logischer Reihenfolge angeordnet sein.
+* Fokus- und Hover-Stile müssen klar erkennbar sein.
+
+*_Barrierefreiheit:_*
+
+* Verwendung von role="radiogroup" für zusammengehörige Optionen.
+* Klare Statusmeldung wie "Ausgewählt" über Screenreader.
+
+[[dropdown-selektion]]
+==== Dropdown
+
+*_Funktionalität:_* Bieten eine kompakte Möglichkeit zur Auswahl eines Wertes aus einer Liste.
+
+*_Best Practices:_*
+
+* Dropdowns sollten sich mit der Tastatur öffnen, navigieren und schließen lassen.
+* Keine automatische Auswahl beim Öffnen; Nutzer:innen müssen die Auswahl explizit bestätigen.
+*_Barrierefreiheit:_*
+* Nutzung von aria-expanded und aria-haspopup zur Kommunikation des Zustands.
+* Liste muss tastaturzugänglich sein, und der Fokus sollte nicht verloren gehen.
+
+[[multiselcts-selektion]]
+==== Multiselects
+
+*_Funktionalität:_* Erlauben die Auswahl mehrerer Werte aus einer Liste.
+
+*_Best Practices:_*
+
+* Ausgewählte Elemente sollten visuell hervorgehoben werden.
+* Klarer Hinweis, wenn die maximale Auswahlanzahl erreicht ist.
+
+*_Barrierefreiheit:_*
+
+* Verwendung von aria-selected zur Kennzeichnung ausgewählter Elemente.
+* Unterstützung von Tastenkombinationen für das schnelle Auswählen/Deselektieren.
+
+[[suche-selektion]]
+==== Suche
+
+*_Funktionalität:_* Die Suche ermöglicht es, gezielt Inhalte oder Daten innerhalb einer Anwendung zu finden.
+
+*_Best Practices:_*
+
+* Eingabefeld: Sollte klar beschriftet und mit einer Autovervollständigungsfunktion ausgestattet sein, falls sinnvoll.
+* Filterbare Ergebnisse: Die Suchergebnisse sollten weiter eingegrenzt werden können (z. B. durch zusätzliche Filteroptionen).
+
+*_Barrierefreiheit:_*
+
+* Einsatz von aria-live für dynamische Ergebnislisten.
+* Sicherstellung, dass Screenreader alle Interaktionen klar kommunizieren (z. B. „X Ergebnisse gefunden“).
+
+[[filter-selektion]]
+==== Filter
+
+*_Funktionalität:_* Filter ermöglichen das Eingrenzen von Datenmengen anhand vordefinierter Kriterien (z. B. Kategorien, Preisbereiche).
+
+*_Best Practices:_*
+
+* Logische Gruppierung: Filteroptionen sollten thematisch gruppiert und leicht zugänglich sein.
+* Interaktivität: Änderungen an Filtereinstellungen sollten das Ergebnis direkt aktualisieren (z. B. durch Live-Aktualisierung).
+
+*_Barrierefreiheit:_*
+
+* Filterkomponenten sollten mittels fieldset und legend strukturiert sein.
+* Klarer visueller Fokus und hörbare Rückmeldungen für Screenreader bei Änderungen.
+
+*_Integration von Suche und Filter_*
+
+* Die Kombination aus Such- und Filterfunktionen erhöht die Effizienz bei der Navigation durch große Datenmengen.
+* Alle Interaktionen müssen tastaturzugänglich und in dynamischen Kontexten (aria-live) barrierefrei implementiert werden.
+* Sicherstellung, dass Filtereinstellungen beim Verlassen der Seite erhalten bleiben, sofern es sinnvoll ist.
+
+[[browse-and-collect]]
+==== Browse & Collect
+
+*_Funktionalität:_* Die Browse & Collect-Funktion ermöglicht es Benutzenden, durch umfangreiche Inhalte zu navigieren und dabei relevante Elemente zu markieren oder in eine Sammlung aufzunehmen.
+Dies wird häufig in Kontexten genutzt, in denen eine Auswahl von Daten für spätere Aktionen erforderlich ist (z. B. Warenkorb, Favoritenliste).
+
+*_Best Practices:_*
+
+* Übersichtliche Navigation: Inhalte sollten logisch gegliedert und mit Filter-, Such- und Selektionsmöglichkeiten kombinierbar sein.
+* Markierung und Rückmeldung: Markierte Elemente sollten visuell hervorgehoben und durch dynamische Hinweise (z. B. Toast-Benachrichtigungen) bestätigt werden.
+* Sammlung bearbeiten: Benutzende müssen die Möglichkeit haben, gesammelte Elemente zu überprüfen, zu ändern oder zu entfernen.
+
+*_Barrierefreiheit:_*
+
+* Tastaturbedienung: Alle Aktionen müssen mit der Tastatur steuerbar sein, z. B. durch Tab- und Enter-Tasten oder spezifische Pfeiltasten-Navigation.
+* Screenreader-Unterstützung: Markierte Elemente und deren Status müssen eindeutig angesagt werden.
+* Visuelle Kontraste: Hervorgehobene und markierte Elemente sollten mindestens ein Kontrastverhältnis von 4,5:1 erfüllen.
+
+*_Beispielanwendung:_*
+
+* Durchstöbern eines digitalen Archivs mit der Möglichkeit, relevante Dokumente zu markieren und später als PDF herunterzuladen.
+
+Diese Funktionalität verbessert die Benutzerfreundlichkeit in datenintensiven Anwendungen und stellt sicher, dass alle Interaktionen den Anforderungen an Barrierefreiheit und Benutzererlebnis gerecht werden.
+
+Alle Selektionskomponenten müssen die Anforderungen an Barrierefreiheit und Nutzerfreundlichkeit erfüllen, einschließlich:
+
+* Tastaturzugänglichkeit für alle Funktionen.
+* Screenreader-Kompatibilität durch semantische ARIA-Attribute.
+* Visuelle Klarheit durch hohe Kontraste und verständliche Beschriftungen.
+
+[[output]]
+=== Ausgabe
+
+[[Data-output-via-table]]
+==== Datenausgabe mit Tabellen
+
+Zur strukturierten Darstellung von vielen Daten bietet es sich an Tabellen zu nutzen.
+Bei der Nutzung von Tabellen sind in der ISYFact über die grundsätzlich zur Tabelle geltendenen Regeln folgende Richtlinien zu berücksichtigen:
+
+* Klare Struktur: Überschriften müssen mit semantischen Tags (<th>) ausgezeichnet sein, um die Bedeutung der Inhalte zu verdeutlichen.
+* Responsives Design: Tabellen sollen sich an verschiedene Bildschirmgrößen anpassen und bei Platzmangel scrollbar sein.
+* Barrierefreiheit: Screenreader-Unterstützung durch ARIA-Attribute wie aria-labelledby und klare Fokusführung bei der Navigation.
+* Interaktivität: Sortier-, Filter- und Exportmöglichkeiten, die über Tastatur und Maus zugänglich sind.
+
+Tabellen fördern die effiziente Verarbeitung und Analyse umfangreicher Datenmengen.
+Für eine bestmögliche Verwendung in den verschiedensten Anwendungen der ISYFact ist es ratsam ein einheitliches Action Pattern zu berücksichtigen.
+Tabelleneinträge können mit der Maus und Tastatur ausgewählt werden und mit Klick oder Enter zur Ansicht/Bearbeitung geöffnet werden.
+Optional ist es mögliche eine „adhoc“- Detailansicht unterhalb der Tabelle einzusetzen, diese ist vom Fachbereich individuell zu definieren.
+Weiterführende Aktionen, wie zum Beispiel: Schnellbearbeitung, Drucken, Download, Löschen, sind in der Aktionsleiste unterzubringen.
+Durch die vielen verschiedenen fachlichen Ansprüche ist es nicht möglich und sinnvoll alle Ausprägungen an weiterführenden Aktionen abzubilden und vorzudefinieren, die „häufig genutzten Aktionen, wie: Schnellbearbeitung (editable Row), Drucken, Download, Löschen, sollten über alle Anwendungen hinweg einheitlich genutzt werden.
+
+[[editable-row-output]]
+==== Schnellbearbeitung in Tabellen
+
+Schnellbearbeitung (Editable Row) ermöglicht das direkte Bearbeiten von Daten innerhalb einer Tabellenzeile. Dies verbessert die Effizienz, da Benutzende nicht zwischen Ansichts- und Bearbeitungsmodi wechseln müssen.
+
+*_Funktionalität:_* Durch einen Klick oder eine Tastaturinteraktion wird eine Zeile in den Bearbeitungsmodus versetzt, und Eingabefelder werden aktiviert. Änderungen können direkt gespeichert oder verworfen werden.
+
+*_Barrierefreiheit:_*
+
+* Fokussierung aller interaktiven Elemente innerhalb der Zeile per Tabulator.
+* Klare visuelle und sprachliche Rückmeldungen bei Aktionen (z. B. „Änderung gespeichert“).
+* Beschriftungen und ARIA-Attribute für Screenreader.
+
+Diese Funktionalität fördert eine intuitive und zugängliche Datenbearbeitung.
+
+[[print-output]]
+==== Drucken
+
+Drucken ermöglicht das direkte Drucken von Daten der Tabellenzeile. Dabei können nicht nur die aus der Tabelle angezeigten Daten gedrückt werden, sondern, je nach Funktionalität auch weiterführenden Daten aus einer optionalen Detailansicht.
+
+*_Funktionalität:_* Durch einen Klick oder eine Tastaturinteraktion wird eine Zeile mit optional weiterführenden Daten ausgedruckt (Die Druckvorschau des Browsers wird geöffnet).
+
+*_Barrierefreiheit:_*
+
+* Beschriftungen und ARIA-Attribute für Screenreader.
+
+[[export-output]]
+==== Exportieren
+
+Export ermöglicht den direkten Export eines Datensatzes als gewünschtes Zielformat.
+
+*_Funktionalität:_* Durch einen Klick oder eine Tastaturinteraktion wird eine Zeile in das vordefinierte Format der Anwendung exportiert.
+
+*_Barrierefreiheit:_*
+
+* Beschriftungen und ARIA-Attribute für Screenreader.
+
+[[delete-output]]
+==== Löschen
+
+Löschen ermöglicht das direkte Löschen einer gesamten Tabellenzeile. Dies verbessert die Effizienz, da Benutzende nicht zwischen Ansichts- und Bearbeitungsmodi wechseln müssen. Zur Vermeidung von versehentlichen Aktionen sollte diese Aktion zusätzlich über einen Modaldialog (zum Beispiel: Sind Sie sich sicher, diesen Datensatz zu löschen? Ja/Nein) abgesichert werden.
+
+*_Funktionalität:_* Durch einen Klick oder eine Tastaturinteraktion wird eine Zeile gelöscht.
+
+*_ Barrierefreiheit:_*
+
+* Klare visuelle und sprachliche Rückmeldungen bei Aktionen (z. B. „Datensatz gelöscht“).
+* Beschriftungen und ARIA-Attribute für Screenreader.
 
 [[toolbar]]
 === Toolbar
