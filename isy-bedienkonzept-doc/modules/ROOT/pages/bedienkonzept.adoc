@@ -1120,9 +1120,6 @@ Sie spielen eine zentrale Rolle bei der Interaktion zwischen Nutzenden und Syste
 Sie kommen in verschiedensten Formen und Kontexten vor, sei es in Form von Textfeldern, <<dropdown,Dropdown-Menüs>>, <<liste,Auswahllisten>> oder Datumsauswahlkalendern.
 Die Gestaltung und Platzierung von Eingabefeldern hat direkten Einfluss auf die Benutzererfahrung und die Effizienz der Dateneingabe.
 
-Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
-
 Eingabefelder sind dynamisch.
 Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (<<placeholder,Placeholder>>) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
 Bei der Gestaltung des Labels gibt es zwei Möglichkeiten.
@@ -1985,11 +1982,10 @@ In fast jedem Frontend beziehungsweise in den häufigsten Anwendungsfällen lass
 Häufig verwendete Gruppen sind beispielsweise „Angaben zur Person“ (mit den Eingabefeldern Vorname, Familienname, Nationalität, Geschlecht etc.), Adressdaten (Straße, Hausnummer, Postleitzahl, Ort) oder Bezahldaten (Art der Bezahlung, Kartennummer etc.).
 Eingabefeldgruppen sind eine Möglichkeit solche Gruppierungen darzustellen.
 
-Eingabefeldgruppen bestehen immer aus mindestens einer Gruppenüberschrift beziehungsweise einem Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und gegebenenfalls weiteren <<bedienelemente,Bedienelementen>>.
-Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
+Eingabefeldgruppen bestehen immer aus mindestens einer Gruppenüberschrift beziehungsweise einem Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und gegebenenfalls weiteren <<bedienelemente,Bedienelementen>>. +
+Dies lässt sich durch zwei Möglichkeiten realisieren: <<ueberschriften,Überschrift>> + <<bedienelemente>> oder Fieldset mit Bedienelementen.
 
-*_Beispiel einer Eingabefeldgruppe "Persönliche Angaben":_*
+*_Eingabefeldgruppe mit Überschrift und Bedienelement:_*
 
 [[image-eingabefeldgruppe]]
 .Eingabefeldgruppe Beispiel: Persönliche Angaben
@@ -2000,13 +1996,13 @@ Jedes Eingabefeld ist ein Pflichtfeld, gekennzeichnet durch einen Asterisk (*).
 Eingabefeldgruppen bedürfen keiner zusätzlichen optischen Gruppierung.
 Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends (siehe <<image-vertikalerschnitt>>) folgen.
 
-*_Beispiel einer Eingabefeldgruppe mit bedingten Pflichtfeldern (ehemals Optionale Pflichtfelder):_*
+*_Eingabefeldgruppe mit Fieldset:_*
 
 [[image-bedingtepflichtfeldgruppe]]
 .Eingabefeldgruppe mit bedingten Pflichtfeldern
 image::24_DP_bedingte_pflichtfeldgruppe.png[align="center"]
 
-Bei einer bedingten Pflichtfeldgruppe ist das Ausfüllen mindestens eines Feldes in einer Eingabefeldgruppe Voraussetzung, um den Prozess abzuschließen.
+Bei einer bedingten Pflichtfeldgruppe (ehemals Optionale Pflichtfelder) ist das Ausfüllen mindestens eines Feldes in einer Eingabefeldgruppe Voraussetzung, um den Prozess abzuschließen.
 
 _Im konkreten Beispiel: Identitätsnachweisdokument_
 
@@ -2016,8 +2012,6 @@ Somit wird unter der Gruppe „Identitätsnachweisdokument“ in verschiedenen E
 
 Dabei ist nicht das einzelne Eingabefeld ein Pflichtfeld, sondern das Ausfüllen mindestens einer Option innerhalb einer Eingabefeldgruppe verpflichtend.
 Sobald eine Möglichkeit innerhalb der Gruppe ausgewählt/befüllt wurde, wird die bedingte Pflichtfeldgruppe für den Identitätsnachweis als positiv bestätigt.
-
-Dies ist technisch ein sogenanntes „Fieldset“.
 
 Für komplexere fachliche Konstellationen kann eine textuelle Hilfestellung mit Signalwörtern verwendet werden.
 Der Einsatz solcher komplexen bedingten Pflichtfelder ist aus Sicht der Benutzerfreundlichkeit nur im *absoluten Ausnahmefall* zu wählen.
@@ -2071,9 +2065,6 @@ Dieser Abschnitt kombiniert <<design-pattern,Design Patterns>>, um benutzerfreun
 Inhalte von Formularen sollten sich an einem virtuellen, nicht visuell dargestellten Raster ausrichten.
 Formulare sollen einem einspaltigen, zweispaltigen oder dreispaltigen Layout folgen.
 Dabei sind alle Spalten innerhalb eines Formulars gleich breit aufgebaut.
-
-Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 
 *_Beispielhaftes Formular dreispaltig:_*
 
