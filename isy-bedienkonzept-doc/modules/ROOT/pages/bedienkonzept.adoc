@@ -1882,20 +1882,22 @@ In einem Akkordeon werden zu einem übergeordneten Thema strukturiert und geglie
 Dabei lässt sich nur ein Akkordeonelement gleichzeitig ausklappen.
 Alle anderen Akkordeonelemente sind oder werden eingeklappt.
 So wird der Fokus auf genau dieses Inhaltsfragment gelegt.
+Eine klassische Anwendung hat das Akkordeon beispielsweise in FAQs.
 
 [[image-akkordeon-eingeklappt]]
 .Akkordeon ohne ausgeklapptes Element
-image::TODO-Bild[align="center"]
+image::24_DP_akkordeon_eingeklappt.png[align="center"]
 
 [[image-akkordeon-ausgeklappt]]
 .Akkordeon mit ausgeklapptem Element
-image::TODO-Bild[align="center"]
+image::24_DP_akkordeon_ausgeklappt.png[align="center"]
 
 Fürs Aus- und Einklappen eines Akkordeonelements kann der gesamte Akkordeon-Header angeklickt werden.
-Zusätzlich befindet sich auf der rechten Seite neben dem Label ein Icon, das den Zustand (ein- oder ausgeklappt) des Akkordeonelements anzeigt.
+Zusätzlich befindet sich auf der linken Seite neben dem Label ein Icon, das den Zustand (ein- oder ausgeklappt) des Akkordeonelements anzeigt.
+Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen <<image-akkordeon-ausgeklappt>> und <<image-akkordeon-eingeklappt>>).
 
 Die Interaktion wird dabei in der Regel auf die reine Wissensvermittlung reduziert.
-Eine klassische Anwendung hat das Akkordeon beispielsweise in FAQs.
+Entsprechend soll auf weiterführende Interaktion, über das aus- und einklappen hinaus, verzichtet werden.
 
 [[panel]]
 ==== Panel
@@ -1905,19 +1907,24 @@ In einem Panel werden ebenso zu einem übergeordneten Thema kompakt Gruppen an I
 Dabei lässt sich das ausgewählte Panel ausklappen.
 Weitere Panels innerhalb des Frontends werden durch ein aus-/einklappen nicht beeinflusst.
 So können Nutzende alle Informationsgruppen eigenständig anzeigen oder bei Bedarf ausblenden lassen.
+Klassischerweise werden Panels in <<formulare,Formularstrecken>> verwendet.
 
 [[image-panel-eingeklappt]]
 .Eingeklapptes Panel
-image::TODO-Bild[align="center"]
+image::24_DP_panel_eingeklappt.png[align="center"]
 
 [[image-panel-ausgeklappt]]
 .Ausgeklapptes Panel
-image::TODO-Bild[align="center"]
+image::24_DP_panel_ausgeklappt.png[align="center"]
 
-Fürs Aus- und Einklappen eines Panels befindet sich auf der rechten Seite auf der Höhe des Labels ein Icon.
+Fürs Aus- und Einklappen eines Panels befindet sich auf der linken Seite auf der Höhe des Labels ein Icon.
+Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen <<image-panel-ausgeklappt>> und <<image-panel-eingeklappt>>).
+
 Die Interaktion steht hier im Vordergrund.
-Panels werden klassischerweise in Formularstrecken verwendet.
+Weiterführende Aktionen können entweder rechts im Panel Header oder in einer Footer Sektion unterhalb des Inhaltsbereichs eingebaut werden.
+
 Technisch sind Panel-Widgets meist flexibler beziehungsweise nicht so restriktiv wie ein Akkordeon.
+Eine Gegenüberstellung, wann ein Panel und wann ein Akkordeon sinnvoll ist, befindet sich im Kapitel <<panel-akkordeon-ueberschrift>>.
 
 [[dropdown]]
 === Eingabefeldliste (Dropdown)
@@ -2414,7 +2421,33 @@ Für die Anwendung in Formularen sollten folgende Grundsätze beachtet werden:
 * "Readonly" ist ideal, wenn die Informationen wichtig sind und für Nutzende sichtbar bleiben müssen, aber nicht verändert werden sollen.
 * "Disabled" eignet sich, wenn Nutzende keine Informationen im Feld sehen oder bearbeiten sollen – zum Beispiel bei unzugänglichen Funktionen oder Bedingungen, die erst später erfüllt werden müssen.
 
-[[panel-vs-akkordeon-ueberschrift]]
+[[panel-akkordeon-ueberschrift]]
 === Panel vs. Akkordeon vs. Überschrift
 
-*WiP* (Wann setze ich Panels, Akkordeons und/oder Überschriften ein?)
+Allein aus der Beschreibung der einzelnen Elemente, <<panel>>, <<akkordeon>> und <<ueberschriften,Überschrift>>, lässt sich eine konkrete und präferierte Anwendung der einzelnen Elemente ableiten.
+Alle Elemente erfüllen ihren eigenen Zweck.
+Auffällig ist jedoch die sehr ähnliche Gestaltung des Akkordeons und des Panels.
+Dies liegt an der historischen Annäherung der Elemente.
+Für Nutzende ist eine solch differenzierte Betrachtung auf die technischen Elemente in den meisten Fällen nicht möglich und auch nicht notwendig.
+Weshalb auf eine optische historisch gewachsene minimale Differenzierung der beiden Elemente zu Gunsten der Usability verzichtet werden kann.
+
+Alle drei Elemente werden zur Strukturierung von Frontends und deren Inhalte benötigt.
+
+*_Elemente:_*
+
+* Überschriften sind aus Sicht der Barrierefreiheit mindestens in erster Ebene notwendig und sollten zur Strukturierung des Frontends genutzt werden.
+* Akkordeons sollten für lange und rein informative Inhalte genutzt werden (zum Beispiel FAQ-Bereich)
+* Panels sollten für lange und komplexe interaktive Inhalte genutzt werden (zum Beispiel <<formulare>>)
+
+*_Übergeordnete Verwendung:_*
+
+Eine Frontend-Page sollte mindestens eine Überschrift (h1) enthalten und nur einen Widget-Typ nutzen (Akkordeon oder Panel).
+Eine Vermengung beider Elemente soll vermieden werden, da unterschiedliches Verhalten optisch ähnlicher Elemente Verwirrung bei Nutzenden herbeiführt.
+
+Zur Vereinfachung der Usability wird empfohlen die <<design-pattern>> Akkordeon und Panel optisch anzunähern.
+Beide Elemente sollten sich über das gleiche Symbol aus- und einklappen lassen.
+Im IsyFact Kontext ist dies ein Chevron beziehungsweise Pfeil-rechts und Pfeil-unten.
+Die Funktion sollte links vom Label gegeben sein.
+
+Weiterführende Aktionen des Panels sollten sich rechtsbündig befinden oder in einer Footer Sektion nach dem Inhaltsbereich.
+Beim Akkordeon soll auf weiterführende Interaktion, über das aus- und einklappen hinaus, verzichtet werden.
