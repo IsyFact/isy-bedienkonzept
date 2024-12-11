@@ -1195,16 +1195,16 @@ Disabled-Elemente müssen nicht für den Screenreader oder andere Unterstützung
 *_Readonly:_*
 
 [[image-eingabefeldreadonly]]
-.Eingabefeld Readonly
+.Readonly-Eingabefeld
 image::24_BE_eingabefeld_read_only.png[align="center"]
 
 oder
 
 [[image-eingabefeldreadonly-bold]]
-.Eingabefeld Readonly mit "bold"-Label
+.Readonly-Eingabefeld mit "bold"-Label
 image::24_BE_eingabefeld_bold_readonly.png[align="center"]
 
-Im Gegensatz zu einem deaktivierten Eingabefeld sind Readonly Eingabefelder zugänglich und relevant.
+Im Gegensatz zu einem deaktivierten Eingabefeld sind Readonly-Eingabefelder für Screenreader und andere Unterstützungstechnologien zugänglich und und ihr Inhalt für die Nutzenden zum Zeitpunkt der Interaktion relevant.
 Deaktivierte Felder haben einen Standardhintergrund und sehr hellen Rand.
 Die enthaltene Information lässt sich aus dem Eingabefeld auslesen (auch durch Screenreader oder andere Unterstützungstechnologien) zum Beispiel durch die Tastenkombination "Strg + C".
 Die Information ist zum aktuellen Zeitpunkt relevant, kann aber nicht verändert werden.
@@ -2321,7 +2321,7 @@ Dies ist besonders dann nützlich, wenn Informationen relevant sind, jedoch nich
 
 *_Handlungsempfehlungen:_*
 
-Verwende "Readonly" für Felder, deren Inhalte für Nutzende relevant sind, aber nicht verändert werden dürfen.
+"Readonly" sollte für Felder verwendet werden, deren Inhalte für Nutzende relevant sind, aber nicht verändert werden dürfen.
 Gestalte das Design so, dass die visuelle Unterscheidung klar, aber nicht störend ist – zum Beispiel durch subtile Farbveränderungen.
 Erlaube Nutzenden weiterhin Inhalte aus dem "Readonly"-Feld zu kopieren.
 
@@ -2345,7 +2345,7 @@ Diese Option wird verwendet, um Nutzenden zu signalisieren, dass bestimmte Funkt
 
 *_Handlungsempfehlungen:_*
 
-Nutze "Disabled" für Felder, die Nutzenden derzeit nicht zugänglich sein sollen, um Fehlinteraktionen zu verhindern.
+"Disabled" sollte für Felder verwendet werden, die Nutzenden derzeit nicht zugänglich sein sollen, um Fehlinteraktionen zu verhindern.
 Vermeide "Disabled" für wichtige Informationen, die Nutzende sehen müssen – in solchen Fällen ist "Readonly" besser geeignet.
 Mache den "Disabled"-Status klar ersichtlich, indem eine deutliche visuelle Abgrenzung durch Ausgrauen oder andere farbliche Mittel verwendet wird.
 
