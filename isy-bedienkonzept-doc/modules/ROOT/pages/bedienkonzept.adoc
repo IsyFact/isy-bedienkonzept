@@ -1204,7 +1204,7 @@ oder
 .Readonly-Eingabefeld mit "bold"-Label
 image::24_BE_eingabefeld_bold_readonly.png[align="center"]
 
-Im Gegensatz zu einem deaktivierten Eingabefeld sind Readonly-Eingabefelder für Screenreader und andere Unterstützungstechnologien zugänglich und und ihr Inhalt für die Nutzenden zum Zeitpunkt der Interaktion relevant.
+Im Gegensatz zu einem deaktivierten Eingabefeld sind Readonly-Eingabefelder für Screenreader und andere Unterstützungstechnologien zugänglich und ihr Inhalt für die Nutzenden zum Zeitpunkt der Interaktion relevant.
 Deaktivierte Felder haben einen Standardhintergrund und sehr hellen Rand.
 Die enthaltene Information lässt sich aus dem Eingabefeld auslesen (auch durch Screenreader oder andere Unterstützungstechnologien) zum Beispiel durch die Tastenkombination "Strg + C".
 Die Information ist zum aktuellen Zeitpunkt relevant, kann aber nicht verändert werden.
