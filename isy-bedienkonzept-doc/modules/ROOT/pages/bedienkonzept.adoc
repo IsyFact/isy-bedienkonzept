@@ -2089,7 +2089,9 @@ Die folgenden Rahmenbedingungen müssen Versionsunabhängig eingehalten werden.
 [[datepicker-wertehilfe]]
 ==== Datepicker und Timepicker
 
-TODO: Image
+[[image-datepicker-werte]]
+.Beispiel eines Datepicker
+image::24_DP_Datepicker-werte.png[align="center"]
 
 *_Funktionalität:_* Ermöglicht die Auswahl eines Datums oder Zeitpunkts über ein interaktives Widget.
 
@@ -2103,7 +2105,9 @@ TODO: Image
 [[inputnumber-wertehilfe]]
 ==== InputNumber
 
-TODO: Image
+[[image-inputnumber-werte]]
+.Beispiel eines InputNumber-Elements
+image::24_DP_Inputnumber-werte.png[align="center"]
 
 *_Funktionalität:_* Ermöglicht das Eingeben numerischer Werte mit optionalen Steuerelementen (zum Beispiel Pfeile).
 
@@ -2117,7 +2121,9 @@ TODO: Image
 [[cascadeselect-wertehilfe]]
 ==== CascadeSelect
 
-TODO: Image
+[[image-cascadeselect-werte]]
+.Beispiel eines CascadeSelect-Elements
+image::24_DP_Cascadeselect-werte.png[align="center"]
 
 *_Funktionalität:_* Bietet hierarchische Auswahlmöglichkeiten, die sich in Unterkategorien verzweigen.
 
@@ -2133,7 +2139,9 @@ TODO: Image
 
 Genaue Details zur Umsetzung eines Dropdowns sind im Kapitel Bedienelemente, <<dropdown, Dropdown>> zu finden.
 
-TODO: Image
+[[image-dropdown-werte]]
+.Beispiel eines Dropdown-Elements
+image::24_DP_Dropdown-werte.png[align="center"]
 
 *_Funktionalität:_* Ermöglicht die Auswahl eines einzigen Wertes aus einer vordefinierten Liste.
 
@@ -2147,7 +2155,9 @@ TODO: Image
 [[multiselect-wertehilfe]]
 ==== MultiSelect
 
-TODO: Image
+[[image-multiselect-werte]]
+.Beispiel eines MultiSelect-Elements
+image::24_DP_Multiselect-werte.png[align="center"]
 
 *_Funktionalität:_* Ermöglicht die Auswahl mehrerer Werte aus einer Liste.
 
@@ -2161,7 +2171,9 @@ TODO: Image
 [[context-Group-wertehilfe]]
 ==== Context Group
 
-TODO: Image
+[[image-context-group-werte]]
+.Beispiel einer Context Group
+image::24_DP_Contextgroup-werte.png[align="center"]
 
 *_Funktionalität:_* Ermöglicht das Hinzufügen oder entfernen einer oder mehrerer kontextbezogenen gruppierten Eingabefeldern und Eingabemöglichkeiten (zum Beispiel "Wohnort", bestehend aus mehreren Adressinformationen).
 
