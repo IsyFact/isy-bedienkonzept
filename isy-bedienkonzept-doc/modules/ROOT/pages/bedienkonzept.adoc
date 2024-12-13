@@ -1847,11 +1847,61 @@ Diese können statisch implementiert sein (zum Beispiel über "häufige Aufgaben
 [[toolbar]]
 === Toolbar
 
-*WiP*
+Eine Toolbar stellt ein Set von <<bedienelemente,Bedienelementen>>, wie zum Beispiel <<button,Buttons>> oder <<dropdown,Dropdown-Menüs>>, in einer Leiste zur Verfügung.
+Diese ist oberhalb eines bestimmten Inhaltsbereichs angebracht und sollte optisch, beispielsweise durch eine vertikale Trennlinie, von diesem abgegrenzt sein.
+Die einzelnen Funktionen innerhalb der Toolbar werden typischerweise durch ein aussagekräftiges <<icons,Icon>>, gegebenenfalls ergänzt um ein zusätzliches <<label>>, repräsentiert.
 
-*_Standard-Toolbar_* *WiP*
+Die Toolbar soll das Gefühl einer schnellen und simplen Interaktion vermitteln.
+Daher sollten keine komplexen Funktionalitäten in der Toolbar untergebracht werden.
+Gängige Funktionen wie Drucken oder Löschen sind typische Beispiele für eine Toolbar.
+Im Vergleich zu einem Menü sind die Funktionen in einer Toolbar immer sichtbar und direkt erreichbar.
 
-*_Seitentoolbar_* *WiP*
+Folgende Toolbars gibt es:
+
+* Seiten-Toolbar
+* Tabellen-Toolbar
+* Eingabefeldgruppen mit Toolbar
+
+*_Dos:_*
+
+* In einer Toolbar finden sich die wichtigsten oder am häufigsten genutzten Funktionen an einem zentralen Platz.
+* Bedienelemente in einer Toolbar sollten entsprechend ihrer Verfügbarkeit aktiviert oder deaktiviert werden.
+* Nicht aussagekräftige Icons sollten mit einem Label versehen werden.
+* Die Anordnung der Elemente innerhalb einer Toolbar sollte nach deren Priorität beziehungsweise nach deren Nutzungsfrequenz erfolgen – häufig genutzte Funktionen links, weniger häufig genutzte Funktionen rechts.
+* Zusammengehörige Funktionen können aus Platzgründen in <<menu-button,Menü-Buttons>> zusammengefasst werden.
+* Wird die Größe des Browserfensters verändert, so wächst die Toolbar in die Breite mit.
+Die Elemente in der Toolbar behalten ihre ursprüngliche Größe und Position bei.
+
+*_Don'ts:_*
+
+* Eine Toolbar sollte nicht mit allen zur Verfügung stehenden Bedienelementen überladen werden.
+Stattdessen sollten die am häufigsten benötigten oder sehr wichtige Funktionen repräsentiert werden.
+* Es sollten keine mehrzeiligen Toolbars eingesetzt werden.
+
+*_Seiten-Toolbar_* *WiP*
+
+Die Seiten-Toolbar kann als Bestandteil der Frontendstruktur unterhalb der <<hauptnavigation>> eingebaut werden (wie beispielhaft in <<image_beispiel_navigation>> zu sehen).
+Sie beinhaltet Funktionen, welche für das gesamte Frontend gelten, zum Beispiel „Zurück zur Übersicht“, „Seite drucken“ oder „Hilfe“.
+
+[[image-seitentoolbar]]
+.Seiten-Toolbar
+image::ToDo[align="center"]
+
+Auf der linken Seite befindet sich in jeder Seiten-Toolbar eine <<link,Verlinkung>>, die zurück zur dazugehörigen Hauptseite führt.
+Der Navigationslink wird mit einer Kombination aus Icon und Label implementiert.
+Alle anderen Funktionen sind als Icon-Buttons einzubauen.
+
+*_Tabellen-Toolbar_* *WiP*
+
+[[image-tabellentoolbar]]
+.Tabellen-Toolbar
+image::ToDo[align="center"]
+
+*_Eingabefeldgruppen mit Toolbar_* *WiP*
+
+[[image-eingabefeldgruppe-mit-toolbar]]
+.Eingabefeldgruppen mit Toolbar
+image::ToDo[align="center"]
 
 [[expander]]
 === Expander (Progressive Disclosure)
