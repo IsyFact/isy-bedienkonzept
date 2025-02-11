@@ -162,7 +162,7 @@ Informationen sollten kontextbezogen und schrittweise offenbart werden, um Nutze
 Um sicherzustellen, dass die Oberfläche für eine breite Palette von Nutzenden zugänglich ist, ist es wichtig, Tests mit verschiedenen Personengruppen durchzuführen.
 Dabei sollten Nutzende mit unterschiedlichen Fähigkeiten, Geräten und technischen Kenntnissen berücksichtigt werden.
 
-Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Abschnitten zu den <<basiselemente,Basiselementen>>, <<bedienelemente,Bedienelementen>>, <<design-pattern>>, <<use-cases>> oder <<eingabehilfen-und-fehlermeldungen>> zu finden (siehe jeweils bei den Unterkapiteln "Dos" und "Don'ts").
+Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Abschnitten zu den <<basiselemente,Basiselementen>>, <<bedienelemente,Bedienelementen>>, <<design-pattern>>, <<use-cases>> oder <<eingabehilfen-und-fehlermeldungen>> zu finden (siehe jeweils bei den Unterkapiteln "Dos and Don'ts").
 
 [[allgemeine-prinzipien]]
 === Allgemeine Prinzipien
@@ -269,7 +269,7 @@ Beispiele hierfür sind:
 * *Esc:* Schließen von Dialogen oder Dropdowns.
 
 Der reine Einsatz von Standardkombinationen in der Tastatursteuerung ist nicht ausreichend, eine größtmögliche <<barrierefreiheit,Barrierefreiheit>> sicherzustellen.
-So gibt es noch weitere Dos and Dont's im Rahmen der Tastatursteuerung zu beachten:
+So gibt es noch weitere "Dos and Don'ts" im Rahmen der Tastatursteuerung zu beachten:
 
 *_Dos_*
 
@@ -278,7 +278,7 @@ So gibt es noch weitere Dos and Dont's im Rahmen der Tastatursteuerung zu beacht
 * *Feedback:* <<fehlermeldungen,Fehlermeldungen>> und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
 * S**tandardbedienmuster:** Es werden nur Standard-Tastenkombinationen verwendet, um Konflikte mit Browserfunktionen oder Assistenzsoftware zu vermeiden.
 
-*_Dont's_*
+*_Don'ts_*
 
 * *Eingeschränkte Zugänglichkeit:* Kein interaktives Element darf ausschließlich mit der Maus bedienbar sein.
 * *Unklare Zustände:* Elemente wie Buttons oder Links dürfen keinen unklaren oder schwer erkennbaren Fokuszustand haben.
@@ -2078,7 +2078,7 @@ Sollte eine barrierefreie Umsetzung der Wertehilfe nicht möglich sein, oder gar
 * Hinweise bei ungültigen Eingaben direkt am Interaktionselement anzeigen.
 * Inhalte und Beschriftungen so gestalten, dass sie klar und leicht verständlich sind.
 
-*_Dont's:_*
+*_Don'ts:_*
 
 * Keine zwingende Nutzung von Werten aus der Hilfe, wenn eine manuelle Eingabe zulässig ist.
 * Keine automatische Aktivierung von Wertehilfen, die ohne Nutzerinteraktion starten.
