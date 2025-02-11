@@ -275,8 +275,8 @@ So gibt es noch weitere "Dos and Don'ts" im Rahmen der Tastatursteuerung zu beac
 
 * *Fokussteuerung:* Alle interaktiven Elemente müssen in einer logischen Reihenfolge fokussierbar sein, ohne unerwartete Wechsel oder Sprünge.
 * *Tastaturzugänglichkeit:* Dynamische Elemente wie Dropdowns, Dialoge oder modale Fenster sind vollständig mit der Tastatur bedienbar.
-* *Feedback:* <<fehlermeldungen,Fehlermeldungen>> und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
-* S**tandardbedienmuster:** Es werden nur Standard-Tastenkombinationen verwendet, um Konflikte mit Browserfunktionen oder Assistenzsoftware zu vermeiden.
+* *Feedback:* <<fehlermeldungen>> und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
+* *Standardbedienmuster:* Es werden nur Standard-Tastenkombinationen verwendet, um Konflikte mit Browserfunktionen oder Assistenzsoftware zu vermeiden.
 
 *_Don'ts_*
 
@@ -289,45 +289,45 @@ Weitere Kombinationen im Browser zur Steigerung der Effektivität sind (kann in 
 
 *_Navigation und grundlegende Aktionen_*
 
-.	Strg + L / Cmd + L: Fokus auf die Adressleiste.
-.	Strg + T / Cmd + T: Öffnen eines neuen Tabs.
-.	Strg + W / Cmd + W: Schließen des aktuellen Tabs.
-.	Strg + Tab / Cmd + Tab: Wechseln zum nächsten Tab.
-.	Strg + Shift + Tab / Cmd + Shift + Tab: Wechseln zum vorherigen Tab.
-.	Strg + R / Cmd + R: Neuladen der aktuellen Seite.
-.	Alt + Pfeil nach links: Zurück zur vorherigen Seite.
-.	Alt + Pfeil nach rechts: Vorwärts zur nächsten Seite.
-.	F5: Neuladen der Seite.
-.	Shift + F5: Erzwungenes Neuladen (ohne Cache).
+. Strg + L / Cmd + L: Fokus auf die Adressleiste.
+. Strg + T / Cmd + T: Öffnen eines neuen Tabs.
+. Strg + W / Cmd + W: Schließen des aktuellen Tabs.
+. Strg + Tab / Cmd + Tab: Wechseln zum nächsten Tab.
+. Strg + Shift + Tab / Cmd + Shift + Tab: Wechseln zum vorherigen Tab.
+. Strg + R / Cmd + R: Neuladen der aktuellen Seite.
+. Alt + Pfeil nach links: Zurück zur vorherigen Seite.
+. Alt + Pfeil nach rechts: Vorwärts zur nächsten Seite.
+. F5: Neuladen der Seite.
+. Shift + F5: Erzwungenes Neuladen (ohne Cache).
 
 *_Textbearbeitung und Eingabe_*
 
-.	Strg + A / Cmd + A: Gesamten Text auswählen.
-.	Strg + C / Cmd + C: Kopieren des ausgewählten Textes.
-.	Strg + V / Cmd + V: Einfügen aus der Zwischenablage.
-.	Strg + X / Cmd + X: Ausschneiden des ausgewählten Textes.
-.	Strg + Z / Cmd + Z: Rückgängig machen der letzten Aktion.
-.	Strg + Y / Cmd + Shift + Z: Zurückholen der zuletzt rückgängig gemachten Aktion.
-.	Strg + F / Cmd + F: Öffnen der Suchfunktion.
-.	F3: Weiter zur nächsten Suchergebnismarkierung springen.
-.	Strg + P / Cmd + P: Öffnen des Druckdialogs.
-.	Tab: Wechsel zwischen Formularfeldern oder interaktiven Elementen.
-.	Shift + Enter: Absenden eines Formulars (bei ausgewählten Textfeldern oder Buttons).
+. Strg + A / Cmd + A: Gesamten Text auswählen.
+. Strg + C / Cmd + C: Kopieren des ausgewählten Textes.
+. Strg + V / Cmd + V: Einfügen aus der Zwischenablage.
+. Strg + X / Cmd + X: Ausschneiden des ausgewählten Textes.
+. Strg + Z / Cmd + Z: Rückgängig machen der letzten Aktion.
+. Strg + Y / Cmd + Shift + Z: Zurückholen der zuletzt rückgängig gemachten Aktion.
+. Strg + F / Cmd + F: Öffnen der Suchfunktion.
+. F3: Weiter zur nächsten Suchergebnismarkierung springen.
+. Strg + P / Cmd + P: Öffnen des Druckdialogs.
+. Tab: Wechsel zwischen Formularfeldern oder interaktiven Elementen.
+. Shift + Enter: Absenden eines Formulars (bei ausgewählten Textfeldern oder Buttons).
 
 *_Zoom und Anzeige_*
 
-.	Strg + Plus (+) / Cmd + Plus (+): Vergrößern des Seiteninhalts.
-.	Strg + Minus (-) / Cmd + Minus (-): Verkleinern des Seiteninhalts.
-.	Strg + 0 / Cmd + 0: Zurücksetzen des Zooms auf die Standardgröße.
-.	F11: Umschalten in den Vollbildmodus.
+. Strg + Plus (\+) / Cmd + Plus (+): Vergrößern des Seiteninhalts.
+. Strg + Minus (-) / Cmd + Minus (-): Verkleinern des Seiteninhalts.
+. Strg + 0 / Cmd + 0: Zurücksetzen des Zooms auf die Standardgröße.
+. F11: Umschalten in den Vollbildmodus.
 
 *_Bedienung mit Screenreadern_*
 
-.   Tab: Navigieren zwischen Fokusbereichen.
-.	Shift + Tab: Rückwärts navigieren zwischen Fokusbereichen.
-.	Pfeil nach unten / oben: Zeilenweises Navigieren in Listen und Text.
-.	Strg + Pfeil nach rechts / links: Springen zwischen Wörtern in Textfeldern.
-.	Alt + Shift + Pfeil nach unten / oben: Navigieren zwischen Absätzen.
+. Tab: Navigieren zwischen Fokusbereichen.
+. Shift + Tab: Rückwärts navigieren zwischen Fokusbereichen.
+. Pfeil nach unten / oben: Zeilenweises Navigieren in Listen und Text.
+. Strg + Pfeil nach rechts / links: Springen zwischen Wörtern in Textfeldern.
+. Alt + Shift + Pfeil nach unten / oben: Navigieren zwischen Absätzen.
 
 Diese Kombinationen ergänzen die grundlegenden Funktionen und gewährleisten eine nahtlose Integration mit Browser-Standards und assistiven Technologien wie Screenreadern.
 Die Einhaltung dieser Standards ermöglicht eine barrierefreie und effiziente Navigation für alle Nutzergruppen.
@@ -2044,15 +2044,11 @@ Sie dienen dazu, die Eingabe durch vorgeschlagene oder vorausgewählte Werte zu 
 *_Anforderungen an Wertehilfen:_*
 
 * *_Barrierefreiheit_*
-
-** <<tastatursteuerung,Tastaturzugänglichkeit>>: Wertehilfen müssen vollständig mit der Tastatur bedienbar sein, einschließlich <<navigation,Navigation>>, Auswahl und Schließen.
+** Tastaturzugänglichkeit: Wertehilfen müssen vollständig mit der Tastatur bedienbar sein, einschließlich <<navigation>>, Auswahl und Schließen.
 ** Screenreader-Unterstützung: Alle interaktiven Elemente müssen mit sinnvollen Labels versehen sein und korrekt angekündigt werden (zum Beispiel mittels <<aria-labels,aria-label>> oder aria-live-Regionen).
-
 * *_Usability_*
-
 ** Intuitive Nutzung: Wertehilfen sollten verständlich gestaltet und optisch hervorgehoben werden, sobald sie aktiv sind.
 ** Fehlerminimierung: Eingabevalidierungen sollten Nutzenden bei ungültigen Werten direkt Hinweise geben.
-
 * *_Responsive Design_*
 ** Wertehilfen müssen auf verschiedenen Bildschirmgrößen und bei Zoom (mindestens 200%) einwandfrei funktionieren.
 
@@ -2063,13 +2059,10 @@ Sollte eine barrierefreie Umsetzung der Wertehilfe nicht möglich sein, oder gar
 
 * *_<<dropdown,Dropdowns:>>_*
 ** Zur Auswahl vordefinierter Werte, zum Beispiel aus einer Liste von Bundesländern.
-
 * *_<<autosuggestion,Autovervollständigung:>>_*
 ** Nutzende geben Text ein, und die Anwendung schlägt passende Werte vor.
-
 * *_<<datepicker-wertehilfe,Datumsauswahl:>>_*
 ** Ein Kalender-Widget unterstützt bei der Auswahl eines Datums.
-
 * *_Zahlen-Spinner:_*
 ** Ermöglicht die Erhöhung oder Verringerung eines Wertes durch Pfeiltasten.
 
@@ -2083,8 +2076,10 @@ Sollte eine barrierefreie Umsetzung der Wertehilfe nicht möglich sein, oder gar
 * Keine zwingende Nutzung von Werten aus der Hilfe, wenn eine manuelle Eingabe zulässig ist.
 * Keine automatische Aktivierung von Wertehilfen, die ohne Nutzerinteraktion starten.
 
-Die für die IsyFact gültigen Wertehilfen basieren auf PrimeNG-Komponenten, diese werden ständig weiterentwickelt und aktualisiert und kann optisch von dem hier dokumentierten Stand abweichen.
-Die folgenden Rahmenbedingungen müssen Versionsunabhängig eingehalten werden.
+IMPORTANT: Die für die IsyFact gültigen Wertehilfen basieren auf PrimeNG-Komponenten.
+Diese werden ständig weiterentwickelt und aktualisiert.
+Dadurch können sie optisch von dem hier dokumentierten Stand abweichen.
+Die folgenden Rahmenbedingungen müssen versionsunabhängig eingehalten werden.
 
 [[datepicker-wertehilfe]]
 ==== Datepicker und Timepicker
@@ -2137,7 +2132,7 @@ image::24_DP_Cascadeselect-werte.png[align="center"]
 [[dropdown-wertehilfe]]
 ==== Dropdown
 
-Genaue Details zur Umsetzung eines Dropdowns sind im Kapitel Bedienelemente, <<dropdown,Dropdown>> zu finden.
+Genaue Details zur Umsetzung eines Dropdowns sind im Kapitel <<dropdown>> zu finden.
 
 [[image-dropdown-werte]]
 .Beispiel eines Dropdown-Elements
@@ -2175,7 +2170,7 @@ image::24_DP_Multiselect-werte.png[align="center"]
 .Beispiel einer Context Group
 image::24_DP_Contextgroup-werte.png[align="center"]
 
-*_Funktionalität:_* Ermöglicht das Hinzufügen oder entfernen einer oder mehrerer kontextbezogenen gruppierten Eingabefeldern und Eingabemöglichkeiten (zum Beispiel "Wohnort", bestehend aus mehreren Adressinformationen).
+*_Funktionalität:_* Ermöglicht das Hinzufügen oder Entfernen eines oder mehrerer kontextbezogener gruppierten Eingabefelder und Eingabemöglichkeiten (zum Beispiel "Wohnort", bestehend aus mehreren Adressinformationen).
 
 *_Bedienung:_*
 
@@ -2191,8 +2186,8 @@ Selektionsmöglichkeiten in einem Frontend sind grundlegend bei der Bedienung ei
 Sie dienen zur Auswahl einzelner oder mehrerer Werte aus einer meist vordefinierten Menge.
 Sie können beliebig kombiniert werden, um die Fehleranfälligkeit zu reduzieren und die Auswahlmöglichkeiten zu optimieren.
 
-Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern,Design>> Pattern und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
-Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden Unterkapitel des Kapitels <<bedienelemente,Bedienelemente>> einzusehen.
+Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern>> und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
+Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden Unterkapitel des Kapitels <<bedienelemente>> einzusehen.
 
 [[checkbox-selektion]]
 ==== Checkbox
@@ -2296,7 +2291,7 @@ Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden
 [[browse-and-collect]]
 ==== Browse & Collect
 
-In der IsyFact wird als Basis das primeNG Widget "PickList" genutzt.
+In der IsyFact wird als Basis das PrimeNG Widget "PickList" genutzt.
 
 *_Funktionalität:_* Die Browse & Collect-Funktion ermöglicht es Benutzenden, durch umfangreiche Inhalte zu navigieren und dabei relevante Elemente zu markieren oder in eine Sammlung aufzunehmen.
 Dies wird häufig in Kontexten genutzt, in denen eine Auswahl von Daten für spätere Aktionen erforderlich ist (zum Beispiel Warenkorb, Favoritenliste).
@@ -2343,7 +2338,7 @@ Tabelleneinträge können mit der Maus und Tastatur ausgewählt werden und mit K
 Optional ist es mögliche eine „adhoc“- Detailansicht unterhalb der Tabelle einzusetzen, diese ist vom Fachbereich individuell zu definieren.
 Weiterführende Aktionen, wie zum Beispiel Schnellbearbeitung, Drucken, Download oder Löschen, sind in der Aktionsleiste unterzubringen.
 Durch die vielen verschiedenen fachlichen Ansprüche ist es nicht möglich und sinnvoll alle Ausprägungen an weiterführenden Aktionen abzubilden und vorzudefinieren.
-Die „häufig genutzten Aktionen, wie: Schnellbearbeitung (<<editable-row-output,editable Row>>), Drucken, Download und Löschen, sollten über alle Anwendungen hinweg einheitlich genutzt werden.
+Die häufig genutzten Aktionen, wie Schnellbearbeitung (<<editable-row-output,editable Row>>), Drucken, Download und Löschen, sollten über alle Anwendungen hinweg einheitlich genutzt werden.
 
 [[editable-row-output]]
 ==== Schnellbearbeitung in Tabellen
