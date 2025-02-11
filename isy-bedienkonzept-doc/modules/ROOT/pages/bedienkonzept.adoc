@@ -68,7 +68,7 @@ In der Regel soll sichergestellt sein, dass folgende Browser unterstützt werden
 |Stable Channel
 |===
 
-Soweit notwendig wird auf browserspezifische Eigenheiten eingegangen.
+Soweit notwendig wird auf browser-spezifische Eigenheiten eingegangen.
 Dabei sind folgende Auflösungen zu berücksichtigen:
 
 // ToDo: Notwendigen Auflösungen sollten noch diskutiert und entsprechend angepasst werden!
@@ -285,7 +285,7 @@ So gibt es noch weitere "Dos and Don'ts" im Rahmen der Tastatursteuerung zu beac
 * *Unübersichtliche Navigation:* Eine übermäßige Anzahl von Tab-Stops oder unlogische Fokuswechsel müssen vermieden werden.
 
 Unter Beachtung der oben genannten Richtlinien ist eine effiziente und klare Bedienung möglich.
-Weitere Kombinationen im Browser zur Steigerung der Effektivität sind (kann in seltenen Fällen abweichen):
+Weitere Kombinationen im Browser zur Steigerung der Effektivität sind (Abweichungen möglich):
 
 *_Navigation und grundlegende Aktionen_*
 
@@ -316,7 +316,7 @@ Weitere Kombinationen im Browser zur Steigerung der Effektivität sind (kann in 
 
 *_Zoom und Anzeige_*
 
-. Strg + Plus (\+) / Cmd + Plus (+): Vergrößern des Seiteninhalts.
+. Strg + Plus (pass:[+]) / Cmd + Plus (pass:[+]): Vergrößern des Seiteninhalts.
 . Strg + Minus (-) / Cmd + Minus (-): Verkleinern des Seiteninhalts.
 . Strg + 0 / Cmd + 0: Zurücksetzen des Zooms auf die Standardgröße.
 . F11: Umschalten in den Vollbildmodus.
@@ -533,8 +533,8 @@ Sollte die Standardfarbpalette aufgrund der fachlichen Anforderungen nicht ausre
 .Abgeleitete Farbpalette
 image::24_BE_farbpalette_30per.png[align="center"]
 
-Die Ableitung der Standardfarbe für Flächen und Hintergründe liegt bei 30% Opacity.
-Die Ableitung der Standardfarbe für Schriften, Border und Akzente liegt bei +30% black Opacity, damit ein ausreichend hoher Kontrast gewährleistet werden kann.
+Die Ableitung der Standardfarbe für Flächen und Hintergründe liegt bei 30 % Opacity.
+Die Ableitung der Standardfarbe für Schriften, Border und Akzente liegt bei +30 % black Opacity, damit ein ausreichend hoher Kontrast gewährleistet werden kann.
 Der daraus resultierende Kontrast erfüllt die Bedingungen bis zum Level AAA - große Schrift.
 
 [IMPORTANT]
@@ -974,7 +974,7 @@ Ein korrekt implementiertes Label sorgt dafür, dass alle Nutzenden, unabhängig
 Labels sollten klar und eindeutig beschreiben, was von den Nutzenden erwartet wird.
 Beispielsweise sollte ein Label für ein Namensfeld "Vollständiger Name" und nicht nur "Name" lauten.
 * *Eindeutige Kennzeichnung von Pflichtfeldern:*
-Labels, die ein Pflichtfeld kennzeichnen, werden immer am Ende mit einem Asterisk (*) gekennzeichnet.
+Labels, die ein Pflichtfeld kennzeichnen, werden immer am Ende mit einem Asterisk (pass:[*]) gekennzeichnet.
 Es wird empfohlen das Asterisk farblich nicht vom Label abzuheben.
 * *Kurze Formulierungen:*
 Labels sollten kurz und prägnant sein, um die Benutzerfreundlichkeit zu maximieren.
@@ -1130,7 +1130,7 @@ Das heißt, bei den Zuständen "Hover" und "Pressed" wird die Button-Farbe, die 
 Im "aktiven" beziehungsweise "fokussierten" Zustand erhält der Button einen Fokus-Rahmen, der einen helleren Ton als die Button-Rahmenfarbe aufweist.
 
 [TIP]
-Invertierte Buttons werden häufig genutzt, wenn es mehr als zwei Aktionen auf einer Seite gibt oder wenn einer Aktion ein besonderer Fokus eingeräumt werden soll, wie zum Beispiel beim "Registieren".
+Invertierte Buttons werden häufig genutzt, wenn es mehr als zwei Aktionen auf einer Seite gibt oder wenn einer Aktion ein besonderer Fokus eingeräumt werden soll, wie zum Beispiel beim "Registrieren".
 Das heißt nach der Nutzung eines <<colored-button,kolorierten Buttons>> in der Primärfarbe kann auf die invertierten Buttons umgestiegen werden.
 Eine Kombination aus farblich kolorierten (ausgenommen der Primärfarbe) und invertierten Buttons ist jedoch nicht zulässig.
 Es sollte eine der beiden Varianten konsistent im gesamten Frontend benutzt werden.
@@ -1338,7 +1338,7 @@ Erklärungshilfen, sollen nicht dynamisch versteckt werden – entweder ist die 
 
 Ein Eingabefeld hat keine fixe Länge.
 Ein Eingabefeld ist so lang, wie es der fachliche Kontext notwendig macht.
-Wenn beispielsweise 95% der erwarteten Eingaben deutlich kürzer sind als Einzelfälle, sollte die Länge so gewählt werden, dass 95% der Eingaben ohne Interaktion vollständig gelesen werden können.
+Wenn beispielsweise 95 % der erwarteten Eingaben deutlich kürzer sind als Einzelfälle, sollte die Länge so gewählt werden, dass 95 % der Eingaben ohne Interaktion vollständig gelesen werden können.
 Die Mindesthöhe eines Eingabefelds von 44px darf nicht unterschritten werden, um die Barrierefreiheit von <<eingabefeld-mit-button,Input-Optionen>> zu gewährleisten.
 
 Die Schriftgröße von Labeln, Platzhaltern und Hinweistexten sollte 14pt nicht unterschreiten.
@@ -1550,7 +1550,7 @@ Dieser Zustand wird häufig mit einem Quadrat innerhalb der Checkbox symbolisier
 
 *_Don'ts_*
 
-* Checkboxen sind kein alleinstehender Ein- und Ausschalter, dafür gibt es die Komponente _<<input-switch>>_.
+* Checkboxen sind kein alleinstehender Ein- und Aus-Schalter, dafür gibt es die Komponente _<<input-switch>>_.
 * Eine Checkbox soll keine Funktionen (drucken, speichern, etc.) auslösen oder Seiten öffnen/verlinken.
 
 [[radiobutton]]
@@ -1593,7 +1593,7 @@ image::24_BE_radiobutton_measured.png[align="center"]
 Ist die Menge der zur Verfügung stehenden Optionen sehr groß oder hat der Platzbedarf eine große Bedeutung, so kann der Einsatz eines <<dropdown,Dropdowns>> in Betracht gezogen werden.
 * Eine Gruppe von Radiobuttons sollte immer eine Beschriftung aufweisen.
 * Für optimale Lesbarkeit sollten Radiobuttons untereinander angeordnet sein.
-* Falls alle oder keine der angebotenen Optionen zutreffen können, sollte eine zusätzliche allgemeine Meta-Option, zum Beispiel "Keine Option" oder "Alle", hinzugefügt werden.
+* Falls alle oder keine der angebotenen Optionen zutreffen können, sollte eine zusätzliche allgemeine Meta-Option, zum Beispiel "keine Option" oder "alle", hinzugefügt werden.
 
 *_Don't_*
 
@@ -1978,7 +1978,7 @@ Bei der Gestaltung sollte darauf geachtet werden, dass die Icon-Sprache über di
 === Eingabefeldgruppen
 
 In fast jedem Frontend beziehungsweise in den häufigsten Anwendungsfällen lassen sich Eingabefelder inhaltlich zu (homogenen) Gruppen zusammenfassen.
-Häufig verwendete Gruppen sind beispielsweise „Angaben zur Person“ (mit den Eingabefeldern Vorname, Familienname, Nationalität, Geschlecht etc.), Adressdaten (Straße, Hausnummer, Postleitzahl, Ort) oder Bezahldaten (Art der Bezahlung, Kartennummer etc.).
+Häufig verwendete Gruppen sind beispielsweise „Angaben zur Person“ (mit den Eingabefeldern Vorname, Familienname, Nationalität, Geschlecht etc.), Adressdaten (Straße, Hausnummer, Postleitzahl, Ort) oder Bezahldaten (Art der Bezahlung, Kartennummer etc).
 Eingabefeldgruppen sind eine Möglichkeit solche Gruppierungen darzustellen.
 
 Eingabefeldgruppen bestehen immer aus mindestens einer Gruppenüberschrift beziehungsweise einem Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und gegebenenfalls weiteren <<bedienelemente,Bedienelementen>>.
@@ -2050,7 +2050,7 @@ Sie dienen dazu, die Eingabe durch vorgeschlagene oder vorausgewählte Werte zu 
 ** Intuitive Nutzung: Wertehilfen sollten verständlich gestaltet und optisch hervorgehoben werden, sobald sie aktiv sind.
 ** Fehlerminimierung: Eingabevalidierungen sollten Nutzenden bei ungültigen Werten direkt Hinweise geben.
 * *_Responsive Design_*
-** Wertehilfen müssen auf verschiedenen Bildschirmgrößen und bei Zoom (mindestens 200%) einwandfrei funktionieren.
+** Wertehilfen müssen auf verschiedenen Bildschirmgrößen und bei Zoom (mindestens 200 %) einwandfrei funktionieren.
 
 [NOTE]
 Sollte eine barrierefreie Umsetzung der Wertehilfe nicht möglich sein, oder gar eine Barriere darstellen, so sollte diese vor assistiven Technologien verborgen werden und es muss eine (alternative) barrierefreie Tastatureingabe möglich sein.
@@ -2187,7 +2187,7 @@ Sie dienen zur Auswahl einzelner oder mehrerer Werte aus einer meist vordefinier
 Sie können beliebig kombiniert werden, um die Fehleranfälligkeit zu reduzieren und die Auswahlmöglichkeiten zu optimieren.
 
 Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern>> und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
-Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden Unterkapitel des Kapitels <<bedienelemente>> einzusehen.
+Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entsprechenden Unterkapitel des Kapitels <<bedienelemente>> einzusehen.
 
 [[checkbox-selektion]]
 ==== Checkbox
@@ -2218,7 +2218,7 @@ Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden
 
 *_Barrierefreiheit:_*
 
-* Verwendung von role="radiogroup" für zusammengehörige Optionen.
+* Verwendung von `role="radiogroup"` für zusammengehörige Optionen.
 * Klare Statusmeldung wie "ausgewählt" über Screenreader.
 * Click-Target-Area ist mindestens 44x44 Pixel.
 
@@ -2280,7 +2280,7 @@ Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden
 *_Barrierefreiheit:_*
 
 * Einsatz von aria-live für dynamische Ergebnislisten.
-* Sicherstellung, dass Screenreader alle Interaktionen klar kommunizieren (zum Beiospiel „X Ergebnisse gefunden“).
+* Sicherstellung, dass Screenreader alle Interaktionen klar kommunizieren (zum Beispiel „X Ergebnisse gefunden“).
 
 *_Integration von Suche und Filter_*
 
@@ -2325,7 +2325,7 @@ Alle Selektionskomponenten müssen die Anforderungen an Barrierefreiheit und Nut
 ==== Datenausgabe mit Tabellen
 
 Zur strukturierten Darstellung von vielen Daten bietet es sich an <<tabelle,Tabellen>> zu nutzen.
-Bei der Nutzung von Tabellen sind in der IsyFact über die grundsätzlich zur Tabelle geltendenen Regeln folgende Richtlinien zu berücksichtigen:
+Bei der Nutzung von Tabellen sind in der IsyFact über die grundsätzlich zur Tabelle geltenden Regeln folgende Richtlinien zu berücksichtigen:
 
 * Klare Struktur: Überschriften müssen mit semantischen Tags (<th>) ausgezeichnet sein, um die Bedeutung der Inhalte zu verdeutlichen.
 * Responsives Design: Tabellen sollen sich an verschiedene Bildschirmgrößen anpassen und bei Platzmangel scrollbar sein.
@@ -2381,7 +2381,7 @@ Exportieren ermöglicht die Überführung eines Datensatzes in ein gewünschtes 
 
 Löschen ermöglicht das direkte Löschen einer gesamten Tabellenzeile.
 Dies verbessert die Effizienz, da Benutzende nicht zwischen Ansichts- und Bearbeitungsmodi wechseln müssen.
-Zur Vermeidung von versehentlichen Aktionen sollte die Löschfunktion zusätzlich über einen Modaldialog (zum Beispiel: Sind Sie sich sicher, diesen Datensatz zu löschen? Ja/Nein) abgesichert werden.
+Zur Vermeidung von versehentlichen Aktionen sollte die Löschfunktion zusätzlich über einen modalen Dialog (zum Beispiel: "Sind Sie sich sicher, diesen Datensatz zu löschen?" "Ja/Nein") abgesichert werden.
 
 *_Funktionalität:_* Durch einen Klick oder eine Tastaturinteraktion wird eine Zeile gelöscht.
 
@@ -2591,7 +2591,7 @@ Für Wartezeiten, die sich auf die Bedienung der Nutzenden zurückführen lassen
 
 * Fortschritts-Balken werden in der Regel für Ladevorgänge mit bestimmbarer Gesamtlänge verwendet.
 * Ein Balken zeigt den Grad der Zielerreichung an.
-Dabei füllt sich der Balken von links (0%) nach rechts (100%).
+Dabei füllt sich der Balken von links (0 %) nach rechts (100 %).
 
 *_Fortschritts-Spinner (kreisrunde Fortschrittsanzeige):_*
 
