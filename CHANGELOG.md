@@ -9,3 +9,4 @@
 - IFS-2995: Navigation und Pagination hinzugefügt
 - IFS-4369: Build-Fehler der Antora-Dokumentation wurden behoben
 - IFS-4249: Die Antora-Version der Online-Dokumentation wird nun durch Git gesetzt
+- IFS-4508: Verweis auf Angular-Referenzimplementierung prominent platziert
