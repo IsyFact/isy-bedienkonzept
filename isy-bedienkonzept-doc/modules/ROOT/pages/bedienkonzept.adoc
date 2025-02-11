@@ -261,21 +261,21 @@ Wichtig ist dabei die Einhaltung standardisierter Bedienmuster, um eine intuitiv
 Anwendungen der IsyFact nutzen daher die bekannten Standardkombinationen, verzichten somit auf eigene Tastenkombinationen und bilden so die Basis für eine einheitliche und barrierefreie Bedienung.
 Beispiele hierfür sind:
 
-* *Tabulator:* Navigation zwischen interaktiven Elementen wie <<link, Links>>, <<button, Buttons>> oder <<eingabefeld, Eingabefeldern>>.
+* *Tabulator:* Navigation zwischen interaktiven Elementen wie <<link,Links>>, <<button,Buttons>> oder <<eingabefeld,Eingabefeldern>>.
 * *Shift + Tab:* Navigation rückwärts zwischen interaktiven Elementen.
-* *Enter:* Aktivierung von Buttons, <<link, Links>> und anderen interaktiven Elementen.
-* *Leertaste:* Scrollen in Seiten (bei nicht fokussierten Elementen) oder Aktivieren von <<checkbox, Checkboxen>> (bei fokussierten Checkboxen).
-* *Pfeiltasten:* Navigation in <<liste, Listen>>, <<dropdown, Dropdowns>> oder <<textbox, Textfeldern>>.
+* *Enter:* Aktivierung von Buttons, <<link,Links>> und anderen interaktiven Elementen.
+* *Leertaste:* Scrollen in Seiten (bei nicht fokussierten Elementen) oder Aktivieren von <<checkbox,Checkboxen>> (bei fokussierten Checkboxen).
+* *Pfeiltasten:* Navigation in <<liste,Listen>>, <<dropdown,Dropdowns>> oder <<textbox,Textfeldern>>.
 * *Esc:* Schließen von Dialogen oder Dropdowns.
 
-Der reine Einsatz von Standardkombinationen in der Tastatursteuerung ist nicht ausreichend, eine größtmögliche <<barrierefreiheit, Barrierefreiheit>> sicherzustellen.
+Der reine Einsatz von Standardkombinationen in der Tastatursteuerung ist nicht ausreichend, eine größtmögliche <<barrierefreiheit,Barrierefreiheit>> sicherzustellen.
 So gibt es noch weitere Dos and Dont's im Rahmen der Tastatursteuerung zu beachten:
 
 *_Dos_*
 
 * *Fokussteuerung:* Alle interaktiven Elemente müssen in einer logischen Reihenfolge fokussierbar sein, ohne unerwartete Wechsel oder Sprünge.
 * *Tastaturzugänglichkeit:* Dynamische Elemente wie Dropdowns, Dialoge oder modale Fenster sind vollständig mit der Tastatur bedienbar.
-* *Feedback:* <<fehlermeldungen, Fehlermeldungen>> und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
+* *Feedback:* <<fehlermeldungen,Fehlermeldungen>> und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
 * S**tandardbedienmuster:** Es werden nur Standard-Tastenkombinationen verwendet, um Konflikte mit Browserfunktionen oder Assistenzsoftware zu vermeiden.
 
 *_Dont's_*
@@ -2039,14 +2039,14 @@ Die blockartige Anordnung erleichtert das Erfassen und ermöglicht eine thematis
 === Wertehilfen
 
 Wertehilfen in Frontends sind interaktive Unterstützungselemente, die Benutzenden helfen, Formulare schneller und fehlerfrei auszufüllen.
-Sie dienen dazu, die Eingabe durch vorgeschlagene oder vorausgewählte Werte zu erleichtern (zum Beispiel als <<datepicker-wertehilfe, Datepicker>>).
+Sie dienen dazu, die Eingabe durch vorgeschlagene oder vorausgewählte Werte zu erleichtern (zum Beispiel als <<datepicker-wertehilfe,Datepicker>>).
 
 *_Anforderungen an Wertehilfen:_*
 
 * *_Barrierefreiheit_*
 
-** <<tastatursteuerung, Tastaturzugänglichkeit>>: Wertehilfen müssen vollständig mit der Tastatur bedienbar sein, einschließlich <<navigation, Navigation>>, Auswahl und Schließen.
-** Screenreader-Unterstützung: Alle interaktiven Elemente müssen mit sinnvollen Labels versehen sein und korrekt angekündigt werden (zum Beispiel mittels <<aria-labels, aria-label>> oder aria-live-Regionen).
+** <<tastatursteuerung,Tastaturzugänglichkeit>>: Wertehilfen müssen vollständig mit der Tastatur bedienbar sein, einschließlich <<navigation,Navigation>>, Auswahl und Schließen.
+** Screenreader-Unterstützung: Alle interaktiven Elemente müssen mit sinnvollen Labels versehen sein und korrekt angekündigt werden (zum Beispiel mittels <<aria-labels,aria-label>> oder aria-live-Regionen).
 
 * *_Usability_*
 
@@ -2061,13 +2061,13 @@ Sollte eine barrierefreie Umsetzung der Wertehilfe nicht möglich sein, oder gar
 
 *_Beispiele für Wertehilfen_*
 
-* *_<<dropdown, Dropdowns:>>_*
+* *_<<dropdown,Dropdowns:>>_*
 ** Zur Auswahl vordefinierter Werte, zum Beispiel aus einer Liste von Bundesländern.
 
-* *_<<autosuggestion, Autovervollständigung:>>_*
+* *_<<autosuggestion,Autovervollständigung:>>_*
 ** Nutzende geben Text ein, und die Anwendung schlägt passende Werte vor.
 
-* *_<<datepicker-wertehilfe, Datumsauswahl:>>_*
+* *_<<datepicker-wertehilfe,Datumsauswahl:>>_*
 ** Ein Kalender-Widget unterstützt bei der Auswahl eines Datums.
 
 * *_Zahlen-Spinner:_*
@@ -2137,7 +2137,7 @@ image::24_DP_Cascadeselect-werte.png[align="center"]
 [[dropdown-wertehilfe]]
 ==== Dropdown
 
-Genaue Details zur Umsetzung eines Dropdowns sind im Kapitel Bedienelemente, <<dropdown, Dropdown>> zu finden.
+Genaue Details zur Umsetzung eines Dropdowns sind im Kapitel Bedienelemente, <<dropdown,Dropdown>> zu finden.
 
 [[image-dropdown-werte]]
 .Beispiel eines Dropdown-Elements
@@ -2191,8 +2191,8 @@ Selektionsmöglichkeiten in einem Frontend sind grundlegend bei der Bedienung ei
 Sie dienen zur Auswahl einzelner oder mehrerer Werte aus einer meist vordefinierten Menge.
 Sie können beliebig kombiniert werden, um die Fehleranfälligkeit zu reduzieren und die Auswahlmöglichkeiten zu optimieren.
 
-Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern, Design>> Pattern und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
-Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden Unterkapitel des Kapitels <<bedienelemente, Bedienelemente>> einzusehen.
+Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern,Design>> Pattern und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
+Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden Unterkapitel des Kapitels <<bedienelemente,Bedienelemente>> einzusehen.
 
 [[checkbox-selektion]]
 ==== Checkbox
@@ -2207,8 +2207,8 @@ Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden
 
 *_Barrierefreiheit:_*
 
-* Nutzung von aria-checked und <<aria-labels, aria-label>> zur Beschreibung.
-* Gruppierung ähnlicher <<checkbox, Checkboxen>> mit fieldset und legend.
+* Nutzung von aria-checked und <<aria-labels,aria-label>> zur Beschreibung.
+* Gruppierung ähnlicher <<checkbox,Checkboxen>> mit fieldset und legend.
 * Click-Target-Area ist mindestens 44x44 Pixel.
 
 [[radiobutton-selektion]]
@@ -2218,7 +2218,7 @@ Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden
 
 *_Best Practices:_*
 
-* <<radiobutton, Radiobuttons>> sollten immer beschriftet und in logischer Reihenfolge angeordnet sein.
+* <<radiobutton,Radiobuttons>> sollten immer beschriftet und in logischer Reihenfolge angeordnet sein.
 * Fokus- und Hover-Stile müssen klar erkennbar sein.
 
 *_Barrierefreiheit:_*
@@ -2234,7 +2234,7 @@ Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden
 
 *_Best Practices:_*
 
-* <<dropdown, Dropdowns>> sollten sich mit der Tastatur öffnen, navigieren und schließen lassen.
+* <<dropdown,Dropdowns>> sollten sich mit der Tastatur öffnen, navigieren und schließen lassen.
 * Keine automatische Auswahl beim Öffnen; Nutzende müssen die Auswahl explizit bestätigen.
 
 *_Barrierefreiheit:_*
@@ -2279,8 +2279,8 @@ Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden
 
 *_Best Practices:_*
 
-* Eingabefeld: Sollte klar beschriftet und mit einer <<autosuggestion, Autovervollständigungsfunktion>> ausgestattet sein, falls sinnvoll.
-* Filterbare Ergebnisse: Die Suchergebnisse sollten weiter eingegrenzt werden können (zum Beispiel durch zusätzliche <<filter-selektion, Filteroptionen>>).
+* Eingabefeld: Sollte klar beschriftet und mit einer <<autosuggestion,Autovervollständigungsfunktion>> ausgestattet sein, falls sinnvoll.
+* Filterbare Ergebnisse: Die Suchergebnisse sollten weiter eingegrenzt werden können (zum Beispiel durch zusätzliche <<filter-selektion,Filteroptionen>>).
 
 *_Barrierefreiheit:_*
 
@@ -2303,8 +2303,8 @@ Dies wird häufig in Kontexten genutzt, in denen eine Auswahl von Daten für sp�
 
 *_Best Practices:_*
 
-* Übersichtliche Navigation: Inhalte sollten logisch gegliedert und mit <<filter-selektion, Filter>>-, <<suche-selektion, Such>>- und <<selektion, Selektionsmöglichkeiten>> kombinierbar sein.
-* Markierung und <<system-meldungen, Rückmeldung>>: Markierte Elemente sollten visuell hervorgehoben und durch dynamische Hinweise (zum Beispiel Toast-Benachrichtigungen) bestätigt werden.
+* Übersichtliche Navigation: Inhalte sollten logisch gegliedert und mit <<filter-selektion,Filter>>-, <<suche-selektion,Such>>- und <<selektion,Selektionsmöglichkeiten>> kombinierbar sein.
+* Markierung und <<system-meldungen,Rückmeldung>>: Markierte Elemente sollten visuell hervorgehoben und durch dynamische Hinweise (zum Beispiel Toast-Benachrichtigungen) bestätigt werden.
 * Sammlung bearbeiten: Benutzende müssen die Möglichkeit haben, gesammelte Elemente zu überprüfen, zu ändern oder zu entfernen.
 
 *_Barrierefreiheit:_*
@@ -2315,7 +2315,7 @@ Dies wird häufig in Kontexten genutzt, in denen eine Auswahl von Daten für sp�
 
 *_Beispielanwendung:_* Durchstöbern eines digitalen Archivs mit der Möglichkeit, relevante Dokumente zu markieren und später als PDF herunterzuladen.
 
-Diese Funktionalität verbessert die Benutzerfreundlichkeit in datenintensiven Anwendungen und stellt sicher, dass alle Interaktionen den Anforderungen an <<barrierefreiheit, Barrierefreiheit>> und Benutzererlebnis gerecht werden.
+Diese Funktionalität verbessert die Benutzerfreundlichkeit in datenintensiven Anwendungen und stellt sicher, dass alle Interaktionen den Anforderungen an <<barrierefreiheit,Barrierefreiheit>> und Benutzererlebnis gerecht werden.
 
 Alle Selektionskomponenten müssen die Anforderungen an Barrierefreiheit und Nutzerfreundlichkeit erfüllen, einschließlich:
 
@@ -2329,7 +2329,7 @@ Alle Selektionskomponenten müssen die Anforderungen an Barrierefreiheit und Nut
 [[output-via-table]]
 ==== Datenausgabe mit Tabellen
 
-Zur strukturierten Darstellung von vielen Daten bietet es sich an <<tabelle, Tabellen>> zu nutzen.
+Zur strukturierten Darstellung von vielen Daten bietet es sich an <<tabelle,Tabellen>> zu nutzen.
 Bei der Nutzung von Tabellen sind in der IsyFact über die grundsätzlich zur Tabelle geltendenen Regeln folgende Richtlinien zu berücksichtigen:
 
 * Klare Struktur: Überschriften müssen mit semantischen Tags (<th>) ausgezeichnet sein, um die Bedeutung der Inhalte zu verdeutlichen.
@@ -2343,7 +2343,7 @@ Tabelleneinträge können mit der Maus und Tastatur ausgewählt werden und mit K
 Optional ist es mögliche eine „adhoc“- Detailansicht unterhalb der Tabelle einzusetzen, diese ist vom Fachbereich individuell zu definieren.
 Weiterführende Aktionen, wie zum Beispiel Schnellbearbeitung, Drucken, Download oder Löschen, sind in der Aktionsleiste unterzubringen.
 Durch die vielen verschiedenen fachlichen Ansprüche ist es nicht möglich und sinnvoll alle Ausprägungen an weiterführenden Aktionen abzubilden und vorzudefinieren.
-Die „häufig genutzten Aktionen, wie: Schnellbearbeitung (<<editable-row-output, editable Row>>), Drucken, Download und Löschen, sollten über alle Anwendungen hinweg einheitlich genutzt werden.
+Die „häufig genutzten Aktionen, wie: Schnellbearbeitung (<<editable-row-output,editable Row>>), Drucken, Download und Löschen, sollten über alle Anwendungen hinweg einheitlich genutzt werden.
 
 [[editable-row-output]]
 ==== Schnellbearbeitung in Tabellen
@@ -2357,7 +2357,7 @@ Dies verbessert die Effizienz, da Benutzende nicht zwischen Ansichts- und Bearbe
 *_Barrierefreiheit:_*
 
 * Fokussierung aller interaktiven Elemente innerhalb der Zeile per Tabulator.
-* Klare visuelle und sprachliche <<system-meldungen, Rückmeldungen>> bei Aktionen (zum Beispiel „Änderung gespeichert“).
+* Klare visuelle und sprachliche <<system-meldungen,Rückmeldungen>> bei Aktionen (zum Beispiel „Änderung gespeichert“).
 * Beschriftungen und ARIA-Attribute für Screenreader.
 
 Diese Funktionalität fördert eine intuitive und zugängliche Datenbearbeitung.
@@ -2392,7 +2392,7 @@ Zur Vermeidung von versehentlichen Aktionen sollte die Löschfunktion zusätzlic
 
 *_ Barrierefreiheit:_*
 
-* Klare visuelle und sprachliche <<system-meldungen, Rückmeldungen>> bei Aktionen (zum Beispiel „Datensatz gelöscht“).
+* Klare visuelle und sprachliche  bei Aktionen (zum Beispiel „Datensatz gelöscht“).
 * Beschriftungen und ARIA-Attribute für Screenreader.
 
 
