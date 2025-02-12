@@ -2387,7 +2387,7 @@ Zur Vermeidung von versehentlichen Aktionen sollte die Löschfunktion zusätzlic
 
 *_ Barrierefreiheit:_*
 
-* Klare visuelle und sprachliche  bei Aktionen (zum Beispiel „Datensatz gelöscht“).
+* Klare visuelle und sprachliche <<system-meldungen,Rückmeldungen>> bei Aktionen (zum Beispiel „Datensatz gelöscht“).
 * Beschriftungen und ARIA-Attribute für Screenreader.
 
 
