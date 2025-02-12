@@ -68,7 +68,7 @@ In der Regel soll sichergestellt sein, dass folgende Browser unterstützt werden
 |Stable Channel
 |===
 
-Soweit notwendig wird auf browserspezifische Eigenheiten eingegangen.
+Soweit notwendig wird auf browser-spezifische Eigenheiten eingegangen.
 Dabei sind folgende Auflösungen zu berücksichtigen:
 
 // ToDo: Notwendigen Auflösungen sollten noch diskutiert und entsprechend angepasst werden!
@@ -162,7 +162,7 @@ Informationen sollten kontextbezogen und schrittweise offenbart werden, um Nutze
 Um sicherzustellen, dass die Oberfläche für eine breite Palette von Nutzenden zugänglich ist, ist es wichtig, Tests mit verschiedenen Personengruppen durchzuführen.
 Dabei sollten Nutzende mit unterschiedlichen Fähigkeiten, Geräten und technischen Kenntnissen berücksichtigt werden.
 
-Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Abschnitten zu den <<basiselemente,Basiselementen>>, <<bedienelemente,Bedienelementen>>, <<design-pattern>>, <<use-cases>> oder <<eingabehilfen-und-fehlermeldungen>> zu finden (siehe jeweils bei den Unterkapiteln "Dos" und "Don'ts").
+Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Abschnitten zu den <<basiselemente,Basiselementen>>, <<bedienelemente,Bedienelementen>>, <<design-pattern>>, <<use-cases>> oder <<eingabehilfen-und-fehlermeldungen>> zu finden (siehe jeweils bei den Unterkapiteln "Dos and Don'ts").
 
 [[allgemeine-prinzipien]]
 === Allgemeine Prinzipien
@@ -261,73 +261,73 @@ Wichtig ist dabei die Einhaltung standardisierter Bedienmuster, um eine intuitiv
 Anwendungen der IsyFact nutzen daher die bekannten Standardkombinationen, verzichten somit auf eigene Tastenkombinationen und bilden so die Basis für eine einheitliche und barrierefreie Bedienung.
 Beispiele hierfür sind:
 
-* *Tabulator:* Navigation zwischen interaktiven Elementen wie <<link, Links>>, <<button, Buttons>> oder <<eingabefeld, Eingabefeldern>>.
+* *Tabulator:* Navigation zwischen interaktiven Elementen wie <<link,Links>>, <<button,Buttons>> oder <<eingabefeld,Eingabefeldern>>.
 * *Shift + Tab:* Navigation rückwärts zwischen interaktiven Elementen.
-* *Enter:* Aktivierung von Buttons, <<link, Links>> und anderen interaktiven Elementen.
-* *Leertaste:* Scrollen in Seiten (bei nicht fokussierten Elementen) oder Aktivieren von <<checkbox, Checkboxen>> (bei fokussierten Checkboxen).
-* *Pfeiltasten:* Navigation in <<liste, Listen>>, <<dropdown, Dropdowns>> oder <<textbox, Textfeldern>>.
+* *Enter:* Aktivierung von Buttons, <<link,Links>> und anderen interaktiven Elementen.
+* *Leertaste:* Scrollen in Seiten (bei nicht fokussierten Elementen) oder Aktivieren von <<checkbox,Checkboxen>> (bei fokussierten Checkboxen).
+* *Pfeiltasten:* Navigation in <<liste,Listen>>, <<dropdown,Dropdowns>> oder <<textbox,Textfeldern>>.
 * *Esc:* Schließen von Dialogen oder Dropdowns.
 
-Der reine Einsatz von Standardkombinationen in der Tastatursteuerung ist nicht ausreichend, eine größtmögliche <<barrierefreiheit, Barrierefreiheit>> sicherzustellen.
-So gibt es noch weitere Dos and Dont's im Rahmen der Tastatursteuerung zu beachten:
+Der reine Einsatz von Standardkombinationen in der Tastatursteuerung ist nicht ausreichend, eine größtmögliche <<barrierefreiheit,Barrierefreiheit>> sicherzustellen.
+So gibt es noch weitere "Dos and Don'ts" im Rahmen der Tastatursteuerung zu beachten:
 
 *_Dos_*
 
 * *Fokussteuerung:* Alle interaktiven Elemente müssen in einer logischen Reihenfolge fokussierbar sein, ohne unerwartete Wechsel oder Sprünge.
 * *Tastaturzugänglichkeit:* Dynamische Elemente wie Dropdowns, Dialoge oder modale Fenster sind vollständig mit der Tastatur bedienbar.
-* *Feedback:* <<fehlermeldungen, Fehlermeldungen>> und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
-* S**tandardbedienmuster:** Es werden nur Standard-Tastenkombinationen verwendet, um Konflikte mit Browserfunktionen oder Assistenzsoftware zu vermeiden.
+* *Feedback:* <<fehlermeldungen>> und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
+* *Standardbedienmuster:* Es werden nur Standard-Tastenkombinationen verwendet, um Konflikte mit Browserfunktionen oder Assistenzsoftware zu vermeiden.
 
-*_Dont's_*
+*_Don'ts_*
 
 * *Eingeschränkte Zugänglichkeit:* Kein interaktives Element darf ausschließlich mit der Maus bedienbar sein.
 * *Unklare Zustände:* Elemente wie Buttons oder Links dürfen keinen unklaren oder schwer erkennbaren Fokuszustand haben.
 * *Unübersichtliche Navigation:* Eine übermäßige Anzahl von Tab-Stops oder unlogische Fokuswechsel müssen vermieden werden.
 
 Unter Beachtung der oben genannten Richtlinien ist eine effiziente und klare Bedienung möglich.
-Weitere Kombinationen im Browser zur Steigerung der Effektivität sind (kann in seltenen Fällen abweichen):
+Weitere Kombinationen im Browser zur Steigerung der Effektivität sind (Abweichungen möglich):
 
 *_Navigation und grundlegende Aktionen_*
 
-.	Strg + L / Cmd + L: Fokus auf die Adressleiste.
-.	Strg + T / Cmd + T: Öffnen eines neuen Tabs.
-.	Strg + W / Cmd + W: Schließen des aktuellen Tabs.
-.	Strg + Tab / Cmd + Tab: Wechseln zum nächsten Tab.
-.	Strg + Shift + Tab / Cmd + Shift + Tab: Wechseln zum vorherigen Tab.
-.	Strg + R / Cmd + R: Neuladen der aktuellen Seite.
-.	Alt + Pfeil nach links: Zurück zur vorherigen Seite.
-.	Alt + Pfeil nach rechts: Vorwärts zur nächsten Seite.
-.	F5: Neuladen der Seite.
-.	Shift + F5: Erzwungenes Neuladen (ohne Cache).
+. Strg + L / Cmd + L: Fokus auf die Adressleiste.
+. Strg + T / Cmd + T: Öffnen eines neuen Tabs.
+. Strg + W / Cmd + W: Schließen des aktuellen Tabs.
+. Strg + Tab / Cmd + Tab: Wechseln zum nächsten Tab.
+. Strg + Shift + Tab / Cmd + Shift + Tab: Wechseln zum vorherigen Tab.
+. Strg + R / Cmd + R: Neuladen der aktuellen Seite.
+. Alt + Pfeil nach links: Zurück zur vorherigen Seite.
+. Alt + Pfeil nach rechts: Vorwärts zur nächsten Seite.
+. F5: Neuladen der Seite.
+. Shift + F5: Erzwungenes Neuladen (ohne Cache).
 
 *_Textbearbeitung und Eingabe_*
 
-.	Strg + A / Cmd + A: Gesamten Text auswählen.
-.	Strg + C / Cmd + C: Kopieren des ausgewählten Textes.
-.	Strg + V / Cmd + V: Einfügen aus der Zwischenablage.
-.	Strg + X / Cmd + X: Ausschneiden des ausgewählten Textes.
-.	Strg + Z / Cmd + Z: Rückgängig machen der letzten Aktion.
-.	Strg + Y / Cmd + Shift + Z: Zurückholen der zuletzt rückgängig gemachten Aktion.
-.	Strg + F / Cmd + F: Öffnen der Suchfunktion.
-.	F3: Weiter zur nächsten Suchergebnismarkierung springen.
-.	Strg + P / Cmd + P: Öffnen des Druckdialogs.
-.	Tab: Wechsel zwischen Formularfeldern oder interaktiven Elementen.
-.	Shift + Enter: Absenden eines Formulars (bei ausgewählten Textfeldern oder Buttons).
+. Strg + A / Cmd + A: Gesamten Text auswählen.
+. Strg + C / Cmd + C: Kopieren des ausgewählten Textes.
+. Strg + V / Cmd + V: Einfügen aus der Zwischenablage.
+. Strg + X / Cmd + X: Ausschneiden des ausgewählten Textes.
+. Strg + Z / Cmd + Z: Rückgängig machen der letzten Aktion.
+. Strg + Y / Cmd + Shift + Z: Zurückholen der zuletzt rückgängig gemachten Aktion.
+. Strg + F / Cmd + F: Öffnen der Suchfunktion.
+. F3: Weiter zur nächsten Suchergebnismarkierung springen.
+. Strg + P / Cmd + P: Öffnen des Druckdialogs.
+. Tab: Wechsel zwischen Formularfeldern oder interaktiven Elementen.
+. Shift + Enter: Absenden eines Formulars (bei ausgewählten Textfeldern oder Buttons).
 
 *_Zoom und Anzeige_*
 
-.	Strg + Plus (+) / Cmd + Plus (+): Vergrößern des Seiteninhalts.
-.	Strg + Minus (-) / Cmd + Minus (-): Verkleinern des Seiteninhalts.
-.	Strg + 0 / Cmd + 0: Zurücksetzen des Zooms auf die Standardgröße.
-.	F11: Umschalten in den Vollbildmodus.
+. Strg + Plus (pass:[+]) / Cmd + Plus (pass:[+]): Vergrößern des Seiteninhalts.
+. Strg + Minus (-) / Cmd + Minus (-): Verkleinern des Seiteninhalts.
+. Strg + 0 / Cmd + 0: Zurücksetzen des Zooms auf die Standardgröße.
+. F11: Umschalten in den Vollbildmodus.
 
 *_Bedienung mit Screenreadern_*
 
-.   Tab: Navigieren zwischen Fokusbereichen.
-.	Shift + Tab: Rückwärts navigieren zwischen Fokusbereichen.
-.	Pfeil nach unten / oben: Zeilenweises Navigieren in Listen und Text.
-.	Strg + Pfeil nach rechts / links: Springen zwischen Wörtern in Textfeldern.
-.	Alt + Shift + Pfeil nach unten / oben: Navigieren zwischen Absätzen.
+. Tab: Navigieren zwischen Fokusbereichen.
+. Shift + Tab: Rückwärts navigieren zwischen Fokusbereichen.
+. Pfeil nach unten / oben: Zeilenweises Navigieren in Listen und Text.
+. Strg + Pfeil nach rechts / links: Springen zwischen Wörtern in Textfeldern.
+. Alt + Shift + Pfeil nach unten / oben: Navigieren zwischen Absätzen.
 
 Diese Kombinationen ergänzen die grundlegenden Funktionen und gewährleisten eine nahtlose Integration mit Browser-Standards und assistiven Technologien wie Screenreadern.
 Die Einhaltung dieser Standards ermöglicht eine barrierefreie und effiziente Navigation für alle Nutzergruppen.
@@ -533,8 +533,8 @@ Sollte die Standardfarbpalette aufgrund der fachlichen Anforderungen nicht ausre
 .Abgeleitete Farbpalette
 image::24_BE_farbpalette_30per.png[align="center"]
 
-Die Ableitung der Standardfarbe für Flächen und Hintergründe liegt bei 30% Opacity.
-Die Ableitung der Standardfarbe für Schriften, Border und Akzente liegt bei +30% black Opacity, damit ein ausreichend hoher Kontrast gewährleistet werden kann.
+Die Ableitung der Standardfarbe für Flächen und Hintergründe liegt bei 30 % Opacity.
+Die Ableitung der Standardfarbe für Schriften, Border und Akzente liegt bei +30 % black Opacity, damit ein ausreichend hoher Kontrast gewährleistet werden kann.
 Der daraus resultierende Kontrast erfüllt die Bedingungen bis zum Level AAA - große Schrift.
 
 [IMPORTANT]
@@ -974,7 +974,7 @@ Ein korrekt implementiertes Label sorgt dafür, dass alle Nutzenden, unabhängig
 Labels sollten klar und eindeutig beschreiben, was von den Nutzenden erwartet wird.
 Beispielsweise sollte ein Label für ein Namensfeld "Vollständiger Name" und nicht nur "Name" lauten.
 * *Eindeutige Kennzeichnung von Pflichtfeldern:*
-Labels, die ein Pflichtfeld kennzeichnen, werden immer am Ende mit einem Asterisk (*) gekennzeichnet.
+Labels, die ein Pflichtfeld kennzeichnen, werden immer am Ende mit einem Asterisk (pass:[*]) gekennzeichnet.
 Es wird empfohlen das Asterisk farblich nicht vom Label abzuheben.
 * *Kurze Formulierungen:*
 Labels sollten kurz und prägnant sein, um die Benutzerfreundlichkeit zu maximieren.
@@ -1130,7 +1130,7 @@ Das heißt, bei den Zuständen "Hover" und "Pressed" wird die Button-Farbe, die 
 Im "aktiven" beziehungsweise "fokussierten" Zustand erhält der Button einen Fokus-Rahmen, der einen helleren Ton als die Button-Rahmenfarbe aufweist.
 
 [TIP]
-Invertierte Buttons werden häufig genutzt, wenn es mehr als zwei Aktionen auf einer Seite gibt oder wenn einer Aktion ein besonderer Fokus eingeräumt werden soll, wie zum Beispiel beim "Registieren".
+Invertierte Buttons werden häufig genutzt, wenn es mehr als zwei Aktionen auf einer Seite gibt oder wenn einer Aktion ein besonderer Fokus eingeräumt werden soll, wie zum Beispiel beim "Registrieren".
 Das heißt nach der Nutzung eines <<colored-button,kolorierten Buttons>> in der Primärfarbe kann auf die invertierten Buttons umgestiegen werden.
 Eine Kombination aus farblich kolorierten (ausgenommen der Primärfarbe) und invertierten Buttons ist jedoch nicht zulässig.
 Es sollte eine der beiden Varianten konsistent im gesamten Frontend benutzt werden.
@@ -1338,7 +1338,7 @@ Erklärungshilfen, sollen nicht dynamisch versteckt werden – entweder ist die 
 
 Ein Eingabefeld hat keine fixe Länge.
 Ein Eingabefeld ist so lang, wie es der fachliche Kontext notwendig macht.
-Wenn beispielsweise 95% der erwarteten Eingaben deutlich kürzer sind als Einzelfälle, sollte die Länge so gewählt werden, dass 95% der Eingaben ohne Interaktion vollständig gelesen werden können.
+Wenn beispielsweise 95 % der erwarteten Eingaben deutlich kürzer sind als Einzelfälle, sollte die Länge so gewählt werden, dass 95 % der Eingaben ohne Interaktion vollständig gelesen werden können.
 Die Mindesthöhe eines Eingabefelds von 44px darf nicht unterschritten werden, um die Barrierefreiheit von <<eingabefeld-mit-button,Input-Optionen>> zu gewährleisten.
 
 Die Schriftgröße von Labeln, Platzhaltern und Hinweistexten sollte 14pt nicht unterschreiten.
@@ -1550,7 +1550,7 @@ Dieser Zustand wird häufig mit einem Quadrat innerhalb der Checkbox symbolisier
 
 *_Don'ts_*
 
-* Checkboxen sind kein alleinstehender Ein- und Ausschalter, dafür gibt es die Komponente _<<input-switch>>_.
+* Checkboxen sind kein alleinstehender Ein- und Aus-Schalter, dafür gibt es die Komponente _<<input-switch>>_.
 * Eine Checkbox soll keine Funktionen (drucken, speichern, etc.) auslösen oder Seiten öffnen/verlinken.
 
 [[radiobutton]]
@@ -1593,7 +1593,7 @@ image::24_BE_radiobutton_measured.png[align="center"]
 Ist die Menge der zur Verfügung stehenden Optionen sehr groß oder hat der Platzbedarf eine große Bedeutung, so kann der Einsatz eines <<dropdown,Dropdowns>> in Betracht gezogen werden.
 * Eine Gruppe von Radiobuttons sollte immer eine Beschriftung aufweisen.
 * Für optimale Lesbarkeit sollten Radiobuttons untereinander angeordnet sein.
-* Falls alle oder keine der angebotenen Optionen zutreffen können, sollte eine zusätzliche allgemeine Meta-Option, zum Beispiel "Keine Option" oder "Alle", hinzugefügt werden.
+* Falls alle oder keine der angebotenen Optionen zutreffen können, sollte eine zusätzliche allgemeine Meta-Option, zum Beispiel "keine Option" oder "alle", hinzugefügt werden.
 
 *_Don't_*
 
@@ -1978,7 +1978,7 @@ Bei der Gestaltung sollte darauf geachtet werden, dass die Icon-Sprache über di
 === Eingabefeldgruppen
 
 In fast jedem Frontend beziehungsweise in den häufigsten Anwendungsfällen lassen sich Eingabefelder inhaltlich zu (homogenen) Gruppen zusammenfassen.
-Häufig verwendete Gruppen sind beispielsweise „Angaben zur Person“ (mit den Eingabefeldern Vorname, Familienname, Nationalität, Geschlecht etc.), Adressdaten (Straße, Hausnummer, Postleitzahl, Ort) oder Bezahldaten (Art der Bezahlung, Kartennummer etc.).
+Häufig verwendete Gruppen sind beispielsweise „Angaben zur Person“ (mit den Eingabefeldern Vorname, Familienname, Nationalität, Geschlecht etc.), Adressdaten (Straße, Hausnummer, Postleitzahl, Ort) oder Bezahldaten (Art der Bezahlung, Kartennummer etc).
 Eingabefeldgruppen sind eine Möglichkeit solche Gruppierungen darzustellen.
 
 Eingabefeldgruppen bestehen immer aus mindestens einer Gruppenüberschrift beziehungsweise einem Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und gegebenenfalls weiteren <<bedienelemente,Bedienelementen>>.
@@ -2039,37 +2039,30 @@ Die blockartige Anordnung erleichtert das Erfassen und ermöglicht eine thematis
 === Wertehilfen
 
 Wertehilfen in Frontends sind interaktive Unterstützungselemente, die Benutzenden helfen, Formulare schneller und fehlerfrei auszufüllen.
-Sie dienen dazu, die Eingabe durch vorgeschlagene oder vorausgewählte Werte zu erleichtern (zum Beispiel als <<datepicker-wertehilfe, Datepicker>>).
+Sie dienen dazu, die Eingabe durch vorgeschlagene oder vorausgewählte Werte zu erleichtern (zum Beispiel als <<datepicker-wertehilfe,Datepicker>>).
 
 *_Anforderungen an Wertehilfen:_*
 
 * *_Barrierefreiheit_*
-
-** <<tastatursteuerung, Tastaturzugänglichkeit>>: Wertehilfen müssen vollständig mit der Tastatur bedienbar sein, einschließlich <<navigation, Navigation>>, Auswahl und Schließen.
-** Screenreader-Unterstützung: Alle interaktiven Elemente müssen mit sinnvollen Labels versehen sein und korrekt angekündigt werden (zum Beispiel mittels <<aria-labels, aria-label>> oder aria-live-Regionen).
-
+** Tastaturzugänglichkeit: Wertehilfen müssen vollständig mit der Tastatur bedienbar sein, einschließlich <<navigation>>, Auswahl und Schließen.
+** Screenreader-Unterstützung: Alle interaktiven Elemente müssen mit sinnvollen Labels versehen sein und korrekt angekündigt werden (zum Beispiel mittels <<aria-labels,aria-label>> oder aria-live-Regionen).
 * *_Usability_*
-
 ** Intuitive Nutzung: Wertehilfen sollten verständlich gestaltet und optisch hervorgehoben werden, sobald sie aktiv sind.
 ** Fehlerminimierung: Eingabevalidierungen sollten Nutzenden bei ungültigen Werten direkt Hinweise geben.
-
 * *_Responsive Design_*
-** Wertehilfen müssen auf verschiedenen Bildschirmgrößen und bei Zoom (mindestens 200%) einwandfrei funktionieren.
+** Wertehilfen müssen auf verschiedenen Bildschirmgrößen und bei Zoom (mindestens 200 %) einwandfrei funktionieren.
 
 [NOTE]
 Sollte eine barrierefreie Umsetzung der Wertehilfe nicht möglich sein, oder gar eine Barriere darstellen, so sollte diese vor assistiven Technologien verborgen werden und es muss eine (alternative) barrierefreie Tastatureingabe möglich sein.
 
 *_Beispiele für Wertehilfen_*
 
-* *_<<dropdown, Dropdowns:>>_*
+* *_<<dropdown,Dropdowns:>>_*
 ** Zur Auswahl vordefinierter Werte, zum Beispiel aus einer Liste von Bundesländern.
-
-* *_<<autosuggestion, Autovervollständigung:>>_*
+* *_<<autosuggestion,Autovervollständigung:>>_*
 ** Nutzende geben Text ein, und die Anwendung schlägt passende Werte vor.
-
-* *_<<datepicker-wertehilfe, Datumsauswahl:>>_*
+* *_<<datepicker-wertehilfe,Datumsauswahl:>>_*
 ** Ein Kalender-Widget unterstützt bei der Auswahl eines Datums.
-
 * *_Zahlen-Spinner:_*
 ** Ermöglicht die Erhöhung oder Verringerung eines Wertes durch Pfeiltasten.
 
@@ -2078,13 +2071,15 @@ Sollte eine barrierefreie Umsetzung der Wertehilfe nicht möglich sein, oder gar
 * Hinweise bei ungültigen Eingaben direkt am Interaktionselement anzeigen.
 * Inhalte und Beschriftungen so gestalten, dass sie klar und leicht verständlich sind.
 
-*_Dont's:_*
+*_Don'ts:_*
 
 * Keine zwingende Nutzung von Werten aus der Hilfe, wenn eine manuelle Eingabe zulässig ist.
 * Keine automatische Aktivierung von Wertehilfen, die ohne Nutzerinteraktion starten.
 
-Die für die IsyFact gültigen Wertehilfen basieren auf PrimeNG-Komponenten, diese werden ständig weiterentwickelt und aktualisiert und kann optisch von dem hier dokumentierten Stand abweichen.
-Die folgenden Rahmenbedingungen müssen Versionsunabhängig eingehalten werden.
+IMPORTANT: Die für die IsyFact gültigen Wertehilfen basieren auf PrimeNG-Komponenten.
+Diese werden ständig weiterentwickelt und aktualisiert.
+Dadurch können sie optisch von dem hier dokumentierten Stand abweichen.
+Die folgenden Rahmenbedingungen müssen versionsunabhängig eingehalten werden.
 
 [[datepicker-wertehilfe]]
 ==== Datepicker und Timepicker
@@ -2137,7 +2132,7 @@ image::24_DP_Cascadeselect-werte.png[align="center"]
 [[dropdown-wertehilfe]]
 ==== Dropdown
 
-Genaue Details zur Umsetzung eines Dropdowns sind im Kapitel Bedienelemente, <<dropdown, Dropdown>> zu finden.
+Genaue Details zur Umsetzung eines Dropdowns sind im Kapitel <<dropdown>> zu finden.
 
 [[image-dropdown-werte]]
 .Beispiel eines Dropdown-Elements
@@ -2175,7 +2170,7 @@ image::24_DP_Multiselect-werte.png[align="center"]
 .Beispiel einer Context Group
 image::24_DP_Contextgroup-werte.png[align="center"]
 
-*_Funktionalität:_* Ermöglicht das Hinzufügen oder entfernen einer oder mehrerer kontextbezogenen gruppierten Eingabefeldern und Eingabemöglichkeiten (zum Beispiel "Wohnort", bestehend aus mehreren Adressinformationen).
+*_Funktionalität:_* Ermöglicht das Hinzufügen oder Entfernen eines oder mehrerer kontextbezogener gruppierten Eingabefelder und Eingabemöglichkeiten (zum Beispiel "Wohnort", bestehend aus mehreren Adressinformationen).
 
 *_Bedienung:_*
 
@@ -2191,8 +2186,8 @@ Selektionsmöglichkeiten in einem Frontend sind grundlegend bei der Bedienung ei
 Sie dienen zur Auswahl einzelner oder mehrerer Werte aus einer meist vordefinierten Menge.
 Sie können beliebig kombiniert werden, um die Fehleranfälligkeit zu reduzieren und die Auswahlmöglichkeiten zu optimieren.
 
-Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern, Design>> Pattern und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
-Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden Unterkapitel des Kapitels <<bedienelemente, Bedienelemente>> einzusehen.
+Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern>> und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
+Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entsprechenden Unterkapitel des Kapitels <<bedienelemente>> einzusehen.
 
 [[checkbox-selektion]]
 ==== Checkbox
@@ -2207,8 +2202,8 @@ Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden
 
 *_Barrierefreiheit:_*
 
-* Nutzung von aria-checked und <<aria-labels, aria-label>> zur Beschreibung.
-* Gruppierung ähnlicher <<checkbox, Checkboxen>> mit fieldset und legend.
+* Nutzung von aria-checked und <<aria-labels,aria-label>> zur Beschreibung.
+* Gruppierung ähnlicher <<checkbox,Checkboxen>> mit fieldset und legend.
 * Click-Target-Area ist mindestens 44x44 Pixel.
 
 [[radiobutton-selektion]]
@@ -2218,12 +2213,12 @@ Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden
 
 *_Best Practices:_*
 
-* <<radiobutton, Radiobuttons>> sollten immer beschriftet und in logischer Reihenfolge angeordnet sein.
+* <<radiobutton,Radiobuttons>> sollten immer beschriftet und in logischer Reihenfolge angeordnet sein.
 * Fokus- und Hover-Stile müssen klar erkennbar sein.
 
 *_Barrierefreiheit:_*
 
-* Verwendung von role="radiogroup" für zusammengehörige Optionen.
+* Verwendung von `role="radiogroup"` für zusammengehörige Optionen.
 * Klare Statusmeldung wie "ausgewählt" über Screenreader.
 * Click-Target-Area ist mindestens 44x44 Pixel.
 
@@ -2234,7 +2229,7 @@ Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden
 
 *_Best Practices:_*
 
-* <<dropdown, Dropdowns>> sollten sich mit der Tastatur öffnen, navigieren und schließen lassen.
+* <<dropdown,Dropdowns>> sollten sich mit der Tastatur öffnen, navigieren und schließen lassen.
 * Keine automatische Auswahl beim Öffnen; Nutzende müssen die Auswahl explizit bestätigen.
 
 *_Barrierefreiheit:_*
@@ -2279,13 +2274,13 @@ Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden
 
 *_Best Practices:_*
 
-* Eingabefeld: Sollte klar beschriftet und mit einer <<autosuggestion, Autovervollständigungsfunktion>> ausgestattet sein, falls sinnvoll.
-* Filterbare Ergebnisse: Die Suchergebnisse sollten weiter eingegrenzt werden können (zum Beispiel durch zusätzliche <<filter-selektion, Filteroptionen>>).
+* Eingabefeld: Sollte klar beschriftet und mit einer <<autosuggestion,Autovervollständigungsfunktion>> ausgestattet sein, falls sinnvoll.
+* Filterbare Ergebnisse: Die Suchergebnisse sollten weiter eingegrenzt werden können (zum Beispiel durch zusätzliche <<filter-selektion,Filteroptionen>>).
 
 *_Barrierefreiheit:_*
 
 * Einsatz von aria-live für dynamische Ergebnislisten.
-* Sicherstellung, dass Screenreader alle Interaktionen klar kommunizieren (zum Beiospiel „X Ergebnisse gefunden“).
+* Sicherstellung, dass Screenreader alle Interaktionen klar kommunizieren (zum Beispiel „X Ergebnisse gefunden“).
 
 *_Integration von Suche und Filter_*
 
@@ -2296,15 +2291,15 @@ Die genaue Definition und Umsetzung der einzelnen Elemente ist im entsprechenden
 [[browse-and-collect]]
 ==== Browse & Collect
 
-In der IsyFact wird als Basis das primeNG Widget "PickList" genutzt.
+In der IsyFact wird als Basis das PrimeNG Widget "PickList" genutzt.
 
 *_Funktionalität:_* Die Browse & Collect-Funktion ermöglicht es Benutzenden, durch umfangreiche Inhalte zu navigieren und dabei relevante Elemente zu markieren oder in eine Sammlung aufzunehmen.
 Dies wird häufig in Kontexten genutzt, in denen eine Auswahl von Daten für spätere Aktionen erforderlich ist (zum Beispiel Warenkorb, Favoritenliste).
 
 *_Best Practices:_*
 
-* Übersichtliche Navigation: Inhalte sollten logisch gegliedert und mit <<filter-selektion, Filter>>-, <<suche-selektion, Such>>- und <<selektion, Selektionsmöglichkeiten>> kombinierbar sein.
-* Markierung und <<system-meldungen, Rückmeldung>>: Markierte Elemente sollten visuell hervorgehoben und durch dynamische Hinweise (zum Beispiel Toast-Benachrichtigungen) bestätigt werden.
+* Übersichtliche Navigation: Inhalte sollten logisch gegliedert und mit <<filter-selektion,Filter>>-, <<suche-selektion,Such>>- und <<selektion,Selektionsmöglichkeiten>> kombinierbar sein.
+* Markierung und <<system-meldungen,Rückmeldung>>: Markierte Elemente sollten visuell hervorgehoben und durch dynamische Hinweise (zum Beispiel Toast-Benachrichtigungen) bestätigt werden.
 * Sammlung bearbeiten: Benutzende müssen die Möglichkeit haben, gesammelte Elemente zu überprüfen, zu ändern oder zu entfernen.
 
 *_Barrierefreiheit:_*
@@ -2315,7 +2310,7 @@ Dies wird häufig in Kontexten genutzt, in denen eine Auswahl von Daten für sp�
 
 *_Beispielanwendung:_* Durchstöbern eines digitalen Archivs mit der Möglichkeit, relevante Dokumente zu markieren und später als PDF herunterzuladen.
 
-Diese Funktionalität verbessert die Benutzerfreundlichkeit in datenintensiven Anwendungen und stellt sicher, dass alle Interaktionen den Anforderungen an <<barrierefreiheit, Barrierefreiheit>> und Benutzererlebnis gerecht werden.
+Diese Funktionalität verbessert die Benutzerfreundlichkeit in datenintensiven Anwendungen und stellt sicher, dass alle Interaktionen den Anforderungen an <<barrierefreiheit,Barrierefreiheit>> und Benutzererlebnis gerecht werden.
 
 Alle Selektionskomponenten müssen die Anforderungen an Barrierefreiheit und Nutzerfreundlichkeit erfüllen, einschließlich:
 
@@ -2329,8 +2324,8 @@ Alle Selektionskomponenten müssen die Anforderungen an Barrierefreiheit und Nut
 [[output-via-table]]
 ==== Datenausgabe mit Tabellen
 
-Zur strukturierten Darstellung von vielen Daten bietet es sich an <<tabelle, Tabellen>> zu nutzen.
-Bei der Nutzung von Tabellen sind in der IsyFact über die grundsätzlich zur Tabelle geltendenen Regeln folgende Richtlinien zu berücksichtigen:
+Zur strukturierten Darstellung von vielen Daten bietet es sich an <<tabelle,Tabellen>> zu nutzen.
+Bei der Nutzung von Tabellen sind in der IsyFact über die grundsätzlich zur Tabelle geltenden Regeln folgende Richtlinien zu berücksichtigen:
 
 * Klare Struktur: Überschriften müssen mit semantischen Tags (<th>) ausgezeichnet sein, um die Bedeutung der Inhalte zu verdeutlichen.
 * Responsives Design: Tabellen sollen sich an verschiedene Bildschirmgrößen anpassen und bei Platzmangel scrollbar sein.
@@ -2343,7 +2338,7 @@ Tabelleneinträge können mit der Maus und Tastatur ausgewählt werden und mit K
 Optional ist es mögliche eine „adhoc“- Detailansicht unterhalb der Tabelle einzusetzen, diese ist vom Fachbereich individuell zu definieren.
 Weiterführende Aktionen, wie zum Beispiel Schnellbearbeitung, Drucken, Download oder Löschen, sind in der Aktionsleiste unterzubringen.
 Durch die vielen verschiedenen fachlichen Ansprüche ist es nicht möglich und sinnvoll alle Ausprägungen an weiterführenden Aktionen abzubilden und vorzudefinieren.
-Die „häufig genutzten Aktionen, wie: Schnellbearbeitung (<<editable-row-output, editable Row>>), Drucken, Download und Löschen, sollten über alle Anwendungen hinweg einheitlich genutzt werden.
+Die häufig genutzten Aktionen, wie Schnellbearbeitung (<<editable-row-output,editable Row>>), Drucken, Download und Löschen, sollten über alle Anwendungen hinweg einheitlich genutzt werden.
 
 [[editable-row-output]]
 ==== Schnellbearbeitung in Tabellen
@@ -2357,7 +2352,7 @@ Dies verbessert die Effizienz, da Benutzende nicht zwischen Ansichts- und Bearbe
 *_Barrierefreiheit:_*
 
 * Fokussierung aller interaktiven Elemente innerhalb der Zeile per Tabulator.
-* Klare visuelle und sprachliche <<system-meldungen, Rückmeldungen>> bei Aktionen (zum Beispiel „Änderung gespeichert“).
+* Klare visuelle und sprachliche <<system-meldungen,Rückmeldungen>> bei Aktionen (zum Beispiel „Änderung gespeichert“).
 * Beschriftungen und ARIA-Attribute für Screenreader.
 
 Diese Funktionalität fördert eine intuitive und zugängliche Datenbearbeitung.
@@ -2386,13 +2381,13 @@ Exportieren ermöglicht die Überführung eines Datensatzes in ein gewünschtes 
 
 Löschen ermöglicht das direkte Löschen einer gesamten Tabellenzeile.
 Dies verbessert die Effizienz, da Benutzende nicht zwischen Ansichts- und Bearbeitungsmodi wechseln müssen.
-Zur Vermeidung von versehentlichen Aktionen sollte die Löschfunktion zusätzlich über einen Modaldialog (zum Beispiel: Sind Sie sich sicher, diesen Datensatz zu löschen? Ja/Nein) abgesichert werden.
+Zur Vermeidung von versehentlichen Aktionen sollte die Löschfunktion zusätzlich über einen modalen Dialog (zum Beispiel: "Sind Sie sich sicher, diesen Datensatz zu löschen?" "Ja/Nein") abgesichert werden.
 
 *_Funktionalität:_* Durch einen Klick oder eine Tastaturinteraktion wird eine Zeile gelöscht.
 
 *_ Barrierefreiheit:_*
 
-* Klare visuelle und sprachliche <<system-meldungen, Rückmeldungen>> bei Aktionen (zum Beispiel „Datensatz gelöscht“).
+* Klare visuelle und sprachliche <<system-meldungen,Rückmeldungen>> bei Aktionen (zum Beispiel „Datensatz gelöscht“).
 * Beschriftungen und ARIA-Attribute für Screenreader.
 
 
@@ -2596,7 +2591,7 @@ Für Wartezeiten, die sich auf die Bedienung der Nutzenden zurückführen lassen
 
 * Fortschritts-Balken werden in der Regel für Ladevorgänge mit bestimmbarer Gesamtlänge verwendet.
 * Ein Balken zeigt den Grad der Zielerreichung an.
-Dabei füllt sich der Balken von links (0%) nach rechts (100%).
+Dabei füllt sich der Balken von links (0 %) nach rechts (100 %).
 
 *_Fortschritts-Spinner (kreisrunde Fortschrittsanzeige):_*
 
