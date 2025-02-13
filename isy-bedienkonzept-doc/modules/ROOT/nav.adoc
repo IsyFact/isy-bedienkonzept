@@ -1,1 +1,1 @@
-* xref:bedienkonzept.adoc[Bedienkonzept]
+include::partial$baustein_nav.adoc[]
