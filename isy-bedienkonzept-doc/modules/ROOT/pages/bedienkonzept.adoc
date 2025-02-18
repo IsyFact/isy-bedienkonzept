@@ -2170,7 +2170,7 @@ image::24_DP_Multiselect-werte.png[align="center"]
 .Beispiel einer Context Group
 image::24_DP_Contextgroup-werte.png[align="center"]
 
-*_Funktionalität:_* Ermöglicht das Hinzufügen oder Entfernen von kontextbezogenen gruppierten Eingabefelder und Eingabemöglichkeiten (zum Beispiel "Wohnort", bestehend aus mehreren Adressinformationen).
+*_Funktionalität:_* Ermöglicht das Hinzufügen oder Entfernen von kontextbezogenen gruppierten Eingabefeldern und Eingabemöglichkeiten (zum Beispiel "Wohnort", bestehend aus mehreren Adressinformationen).
 
 *_Bedienung:_*
 
