@@ -2170,11 +2170,11 @@ image::24_DP_Multiselect-werte.png[align="center"]
 .Beispiel einer Context Group
 image::24_DP_Contextgroup-werte.png[align="center"]
 
-*_Funktionalität:_* Ermöglicht das Hinzufügen oder Entfernen eines oder mehrerer kontextbezogener gruppierten Eingabefelder und Eingabemöglichkeiten (zum Beispiel "Wohnort", bestehend aus mehreren Adressinformationen).
+*_Funktionalität:_* Ermöglicht das Hinzufügen oder Entfernen von kontextbezogenen gruppierten Eingabefeldern und Eingabemöglichkeiten (zum Beispiel "Wohnort", bestehend aus mehreren Adressinformationen).
 
 *_Bedienung:_*
 
-* Maus: Klick auf „+ weiteres Element“ erzeugt eine weitere Context Group, klick auf Delete-Icon löscht die ausgewählte Context-Group.
+* Maus: Ein Klick auf "+ weiteres Element" erzeugt eine weitere Context Group und ein Klick auf Delete-Icon löscht die ausgewählte Context-Group.
 * Tastatur: Tabulator zur Fokussierung, Pfeiltasten zur Navigation, Enter zur Auswahl.
 
 *_Barrierefreiheit:_* Klarer Fokus und Ansagen für den Status (ausgewählt/nicht ausgewählt) bei Screenreadern.
@@ -2192,7 +2192,7 @@ Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entspreche
 [[checkbox-selektion]]
 ==== Checkbox
 
-*_Funktionalität:_* Erlauben die Auswahl mehrerer unabhängiger Optionen.
+*_Funktionalität:_* Erlaubt die Auswahl mehrerer unabhängiger Optionen.
 
 *_Best Practices:_*
 
@@ -2209,7 +2209,7 @@ Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entspreche
 [[radiobutton-selektion]]
 ==== Radiobutton
 
-*_Funktionalität:_* Erlauben die Auswahl einer einzigen Option aus einer Gruppe.
+*_Funktionalität:_* Erlaubt die Auswahl einer einzigen Option aus einer Gruppe.
 
 *_Best Practices:_*
 
@@ -2225,7 +2225,7 @@ Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entspreche
 [[dropdown-selektion]]
 ==== Dropdown
 
-*_Funktionalität:_* Bieten eine kompakte Möglichkeit zur Auswahl eines Wertes aus einer Liste.
+*_Funktionalität:_* Bietet eine kompakte Möglichkeit zur Auswahl eines Wertes aus einer Liste.
 
 *_Best Practices:_*
 
@@ -2240,7 +2240,7 @@ Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entspreche
 [[multiselct-selektion]]
 ==== MultiSelect
 
-*_Funktionalität:_* Erlauben die Auswahl mehrerer Werte aus einer Liste.
+*_Funktionalität:_* Erlaubt die Auswahl mehrerer Werte aus einer Liste.
 
 *_Best Practices:_*
 
@@ -2255,7 +2255,7 @@ Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entspreche
 [[filter-selektion]]
 ==== Filter
 
-*_Funktionalität:_* Filter ermöglichen das Eingrenzen von Datenmengen anhand vordefinierter Kriterien (zum Beispiel Kategorien, Preisbereiche).
+*_Funktionalität:_* Ermöglicht das Eingrenzen von Datenmengen anhand vordefinierter Kriterien (zum Beispiel Kategorien, Preisbereiche).
 
 *_Best Practices:_*
 
@@ -2270,7 +2270,7 @@ Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entspreche
 [[suche-selektion]]
 ==== Suche
 
-*_Funktionalität:_* Die Suche ermöglicht es, gezielt Inhalte oder Daten innerhalb einer Anwendung zu finden.
+*_Funktionalität:_* Ermöglicht das gezielte Finden von Inhalte oder Daten innerhalb einer Anwendung.
 
 *_Best Practices:_*
 
@@ -2344,9 +2344,11 @@ Die häufig genutzten Aktionen, wie Schnellbearbeitung (<<editable-row-output,ed
 ==== Schnellbearbeitung in Tabellen
 
 Schnellbearbeitung (Editable Row) ermöglicht das direkte Bearbeiten von Daten innerhalb einer Tabellenzeile.
+
+*_Funktionalität:_* Ermöglicht das direkte Bearbeiten von Daten innerhalb einer Tabellenzeile.
 Dies verbessert die Effizienz, da Benutzende nicht zwischen Ansichts- und Bearbeitungsmodi wechseln müssen.
 
-*_Funktionalität:_* Durch einen Klick auf "Bearbeiten" wird eine Zeile in den Bearbeitungsmodus versetzt, und Eingabefelder werden aktiviert.
+*_Bedienung:_* Durch einen Klick auf "Bearbeiten" wird eine Zeile in den Bearbeitungsmodus versetzt, und Eingabefelder werden aktiviert.
 Änderungen können direkt gespeichert oder verworfen werden.
 
 *_Barrierefreiheit:_*
@@ -2379,11 +2381,11 @@ Exportieren ermöglicht die Überführung eines Datensatzes in ein gewünschtes 
 [[delete-output]]
 ==== Löschen
 
-Löschen ermöglicht das direkte Löschen einer gesamten Tabellenzeile.
+*_Funktionalität:_* Ermöglicht das direkte Löschen einer gesamten Tabellenzeile.
 Dies verbessert die Effizienz, da Benutzende nicht zwischen Ansichts- und Bearbeitungsmodi wechseln müssen.
-Zur Vermeidung von versehentlichen Aktionen sollte die Löschfunktion zusätzlich über einen modalen Dialog (zum Beispiel: "Sind Sie sich sicher, diesen Datensatz zu löschen?" "Ja/Nein") abgesichert werden.
 
-*_Funktionalität:_* Durch einen Klick oder eine Tastaturinteraktion wird eine Zeile gelöscht.
+*_Bedienung:_* Durch einen Klick oder eine Tastaturinteraktion wird eine Zeile gelöscht.
+Zur Vermeidung von versehentlichen Aktionen sollte die Löschfunktion zusätzlich über einen modalen Dialog (zum Beispiel: "Sind Sie sich sicher, diesen Datensatz zu löschen?" "Ja/Nein") abgesichert werden.
 
 *_ Barrierefreiheit:_*
 
