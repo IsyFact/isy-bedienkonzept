@@ -17,8 +17,7 @@ Darauf folgen die *<<basiselemente>>* (wie zum Beispiel <<text>> und <<farben>>)
 Danach kommen die *<<bedienelemente>>*, die einfachste Ausprägung eines Interaktionselements.
 *<<design-pattern>>* stellen eine Bündelung von Bedienelementen und Basiselementen dar und können letztendlich in beliebiger Kombination als vollständige *<<use-cases>>* beschrieben werden.
 
-Eine Live-Demo zu den Richtlinien dieses Bedienkonzepts finden Sie unter:
-https://isyfact.github.io/isy-angular-widgets/
+Es ist eine xref:referenzimplementierung.adoc[Referenzimplementierung ("Live-Demo")] zu den Richtlinien dieses Bedienkonzepts verfügbar.
 
 [[einfuehrung-in-das-bedienkonzept]]
 === Einführung in das Bedienkonzept
@@ -27,10 +26,9 @@ https://isyfact.github.io/isy-angular-widgets/
 
 Dieses Konzept ist für jedes Frontend relevant, unabhängig von dessen Komplexität oder Zielgruppe.
 Es ist gültig für alle Neuentwicklungen und für Überarbeitungen von Frontends, die einem Major Change oder Technologiewechsel unterliegen.
-Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Altanwendungen.
 
-Das Bedienkonzept ist gültig ab Q4 – 2024.
-Für Altanwendungen gilt, dass das xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[Bedienkonzept (beziehungsweise ehemals Styleguide) zum Zeitpunkt der Entwicklung der Altanwendung] mit den damals geltenden Inhalten gültig bleibt.
+IMPORTANT: Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Bestandsanwendungen.
+Für diese Fälle bleibt das xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[alte Bedienkonzept (ehemals Styleguide)] mit den damals geltenden Inhalten gültig.
 
 *_Rolle von Designenden, Entwickelnden und Fachlichkeit_*
 
@@ -1959,28 +1957,28 @@ Stattdessen sollten die am häufigsten benötigten oder sehr wichtige Funktionen
 
 *_Seiten-Toolbar_* *WiP*
 
-Die Seiten-Toolbar kann als Bestandteil der Frontendstruktur unterhalb der <<hauptnavigation>> eingebaut werden (wie beispielhaft in <<image_beispiel_navigation>> zu sehen).
-Sie beinhaltet Funktionen, welche für das gesamte Frontend gelten, zum Beispiel „Zurück zur Übersicht“, „Seite drucken“ oder „Hilfe“.
+//Die Seiten-Toolbar kann als Bestandteil der Frontendstruktur unterhalb der <<hauptnavigation>> eingebaut werden (wie beispielhaft in <<image_beispiel_navigation>> zu sehen).
+//Sie beinhaltet Funktionen, welche für das gesamte Frontend gelten, zum Beispiel „Zurück zur Übersicht“, „Seite drucken“ oder „Hilfe“.
 
-[[image-seitentoolbar]]
-.Seiten-Toolbar
-image::ToDo[align="center"]
+//[[image-seitentoolbar]]
+//.Seiten-Toolbar
+//image::ToDo[align="center"]
 
-Auf der linken Seite befindet sich in jeder Seiten-Toolbar eine <<link,Verlinkung>>, die zurück zur dazugehörigen Hauptseite führt.
-Der Navigationslink wird mit einer Kombination aus Icon und Label implementiert.
-Alle anderen Funktionen sind als Icon-Buttons einzubauen.
+//Auf der linken Seite befindet sich in jeder Seiten-Toolbar eine <<link,Verlinkung>>, die zurück zur dazugehörigen Hauptseite führt.
+//Der Navigationslink wird mit einer Kombination aus Icon und Label implementiert.
+//Alle anderen Funktionen sind als Icon-Buttons einzubauen.
 
 *_Tabellen-Toolbar_* *WiP*
 
-[[image-tabellentoolbar]]
-.Tabellen-Toolbar
-image::ToDo[align="center"]
+//[[image-tabellentoolbar]]
+//.Tabellen-Toolbar
+//image::ToDo[align="center"]
 
 *_Eingabefeldgruppen mit Toolbar_* *WiP*
 
-[[image-eingabefeldgruppe-mit-toolbar]]
-.Eingabefeldgruppen mit Toolbar
-image::ToDo[align="center"]
+//[[image-eingabefeldgruppe-mit-toolbar]]
+//.Eingabefeldgruppen mit Toolbar
+//image::ToDo[align="center"]
 
 [[expander]]
 === Expander (Progressive Disclosure)
@@ -1988,7 +1986,7 @@ image::ToDo[align="center"]
 Mit einem Expander können bestimmte Inhaltsbereiche per Mausklick dynamisch ein- und ausgeblendet werden.
 Das zugrundeliegende Prinzip wird häufig als „Progressive Disclosure“ („schrittweises Enthüllen“) oder auch als „Information Hiding“ („Ausblenden von Information“) bezeichnet.
 
-Ein Expander wird genutzt, um die Informationskomplexität zu reduzieren und um vertikal Platz einzusparen (beispielsweise bei langen <<formulare,Formularen>>.
+Ein Expander wird genutzt, um die Informationskomplexität zu reduzieren und um vertikal Platz einzusparen (beispielsweise bei langen <<formulare,Formularen>>).
 Hierfür werden die Inhalte in logische Gruppen zusammengefasst, die sich zur besseren Übersicht ein- und ausklappen lassen.
 In einem Expander können sowohl <<basiselemente,Basis>>- und <<bedienelemente>> als auch <<design-pattern,Design Patterns>> angezeigt werden.
 
@@ -2037,8 +2035,8 @@ Entsprechend soll auf weiterführende Interaktion, über das aus- und einklappen
 Ein Panel ist einem <<akkordeon>> recht ähnlich.
 In einem Panel werden ebenso zu einem übergeordneten Thema kompakt Gruppen an Informationen dargestellt.
 Dabei lässt sich das ausgewählte Panel ausklappen.
-Weitere Panels innerhalb des Frontends werden durch ein aus-/einklappen nicht beeinflusst.
-So können Nutzende alle Informationsgruppen eigenständig anzeigen oder bei Bedarf ausblenden lassen.
+Weitere Panels innerhalb des Frontends werden durch ein Aus- oder Einklappen nicht beeinflusst.
+So können Nutzende alle Informationsgruppen eigenständig anzeigen oder bei Bedarf ausblenden.
 Klassischerweise werden Panels in <<formulare,Formularstrecken>> verwendet.
 
 [[image-panel-eingeklappt]]
@@ -2055,7 +2053,7 @@ Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Elem
 Die Interaktion steht hier im Vordergrund.
 Weiterführende Aktionen können entweder rechts im Panel Header oder in einer Footer Sektion unterhalb des Inhaltsbereichs eingebaut werden.
 
-Technisch sind Panel-Widgets meist flexibler beziehungsweise nicht so restriktiv wie ein Akkordeon.
+Technisch sind Panels meist flexibler, beziehungsweise nicht so restriktiv, wie ein Akkordeon.
 Eine Gegenüberstellung, wann ein Panel und wann ein Akkordeon sinnvoll ist, befindet sich im Kapitel <<panel-akkordeon-ueberschrift>>.
 
 [[dropdown]]
@@ -2112,7 +2110,7 @@ Häufig verwendete Gruppen sind beispielsweise „Angaben zur Person“ (mit den
 Eingabefeldgruppen sind eine Möglichkeit solche Gruppierungen darzustellen.
 
 Eingabefeldgruppen bestehen immer aus mindestens einer Gruppenüberschrift beziehungsweise einem Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und gegebenenfalls weiteren <<bedienelemente,Bedienelementen>>. +
-Dies lässt sich durch zwei Möglichkeiten realisieren: <<ueberschriften,Überschrift>> + <<bedienelemente>> oder Fieldset mit Bedienelementen.
+Dies lässt sich durch zwei Möglichkeiten realisieren: <<ueberschriften,Überschrift>> und <<bedienelemente>> oder Fieldset mit Bedienelementen.
 
 *_Eingabefeldgruppe mit Überschrift und Bedienelement:_*
 
@@ -2131,16 +2129,17 @@ Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispal
 .Eingabefeldgruppe mit bedingten Pflichtfeldern
 image::24_DP_bedingte_pflichtfeldgruppe.png[align="center"]
 
-Bei einer bedingten Pflichtfeldgruppe (ehemals Optionale Pflichtfelder) ist das Ausfüllen mindestens eines Feldes in einer Eingabefeldgruppe Voraussetzung, um den Prozess abzuschließen.
+Bei einer bedingten Pflichtfeldgruppe (ehemals "optionale Pflichtfelder") ist das Ausfüllen mindestens eines Feldes in einer Eingabefeldgruppe Voraussetzung, um den Prozess abzuschließen.
 
-_Im konkreten Beispiel: Identitätsnachweisdokument_
-
+.Identitätsnachweisdokument
+====
 Der Prozess sieht vor, dass ein Nachweis über die Identität erbracht wird.
 Dies kann jedoch über verschiedene Dokumente erfolgen.
 Somit wird unter der Gruppe „Identitätsnachweisdokument“ in verschiedenen Eingabefeldern die Möglichkeit gegeben sich für eine Nachweisart zu entscheiden und entsprechend ihrer Art entweder eine Auswahl zu treffen oder eine entsprechende Nummer anzugeben.
 
 Dabei ist nicht das einzelne Eingabefeld ein Pflichtfeld, sondern das Ausfüllen mindestens einer Option innerhalb einer Eingabefeldgruppe verpflichtend.
-Sobald eine Möglichkeit innerhalb der Gruppe ausgewählt/befüllt wurde, wird die bedingte Pflichtfeldgruppe für den Identitätsnachweis als positiv bestätigt.
+Sobald eine Möglichkeit innerhalb der Gruppe ausgewählt bzw. befüllt wurde, wird die bedingte Pflichtfeldgruppe für den Identitätsnachweis als positiv bestätigt.
+====
 
 Für komplexere fachliche Konstellationen kann eine textuelle Hilfestellung mit Signalwörtern verwendet werden.
 Der Einsatz solcher komplexen bedingten Pflichtfelder ist aus Sicht der Benutzerfreundlichkeit nur im *absoluten Ausnahmefall* zu wählen.
@@ -2892,26 +2891,20 @@ Allein aus der Beschreibung der einzelnen Elemente, <<panel>>, <<akkordeon>> und
 Alle Elemente erfüllen ihren eigenen Zweck.
 Auffällig ist jedoch die sehr ähnliche Gestaltung des Akkordeons und des Panels.
 Dies liegt an der historischen Annäherung der Elemente.
-Für Nutzende ist eine solch differenzierte Betrachtung auf die technischen Elemente in den meisten Fällen nicht möglich und auch nicht notwendig.
-Weshalb auf eine optische historisch gewachsene minimale Differenzierung der beiden Elemente zu Gunsten der Usability verzichtet werden kann.
+Für Nutzende ist eine solch differenzierte Betrachtung auf die technischen Elemente in den meisten Fällen nicht möglich und auch nicht notwendig, weshalb auf eine optische und historisch gewachsene minimale Differenzierung der beiden Elemente zu Gunsten der Usability verzichtet werden kann.
 
 Alle drei Elemente werden zur Strukturierung von Frontends und deren Inhalte benötigt.
 
 *_Elemente:_*
 
 * Überschriften sind aus Sicht der Barrierefreiheit mindestens in erster Ebene notwendig und sollten zur Strukturierung des Frontends genutzt werden.
-* Akkordeons sollten für lange und rein informative Inhalte genutzt werden (zum Beispiel FAQ-Bereich)
-* Panels sollten für lange und komplexe interaktive Inhalte genutzt werden (zum Beispiel <<formulare>>)
+* Akkordeons sollten für lange und rein informative Inhalte genutzt werden (zum Beispiel FAQ-Bereich).
+* Panels sollten für lange und komplexe interaktive Inhalte genutzt werden (zum Beispiel <<formulare>>).
 
 *_Übergeordnete Verwendung:_*
 
-Eine Frontend-Page sollte mindestens eine Überschrift (h1) enthalten und nur einen Widget-Typ nutzen (Akkordeon oder Panel).
+Eine Frontend-Page sollte mindestens eine Überschrift (`h1`) enthalten und nur einen Widget-Typ nutzen (Akkordeon oder Panel).
 Eine Vermengung beider Elemente soll vermieden werden, da unterschiedliches Verhalten optisch ähnlicher Elemente Verwirrung bei Nutzenden herbeiführt.
 
-Zur Vereinfachung der Usability wird empfohlen die <<design-pattern>> Akkordeon und Panel optisch anzunähern.
+Zur Vereinfachung der Usability wird empfohlen, die <<akkordeon>> und <<panel>> optisch anzunähern.
 Beide Elemente sollten sich über das gleiche Symbol aus- und einklappen lassen.
-Im IsyFact Kontext ist dies ein Chevron beziehungsweise Pfeil-rechts und Pfeil-unten.
-Die Funktion sollte links vom Label gegeben sein.
-
-Weiterführende Aktionen des Panels sollten sich rechtsbündig befinden oder in einer Footer Sektion nach dem Inhaltsbereich.
-Beim Akkordeon soll auf weiterführende Interaktion, über das aus- und einklappen hinaus, verzichtet werden.
