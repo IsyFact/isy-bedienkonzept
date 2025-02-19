@@ -17,8 +17,7 @@ Darauf folgen die *<<basiselemente>>* (wie zum Beispiel <<text>> und <<farben>>)
 Danach kommen die *<<bedienelemente>>*, die einfachste Ausprägung eines Interaktionselements.
 *<<design-pattern>>* stellen eine Bündelung von Bedienelementen und Basiselementen dar und können letztendlich in beliebiger Kombination als vollständige *<<use-cases>>* beschrieben werden.
 
-Eine Live-Demo zu den Richtlinien dieses Bedienkonzepts finden Sie unter:
-https://isyfact.github.io/isy-angular-widgets/
+Es ist eine xref:referenzimplementierung.adoc[Referenzimplementierung ("Live-Demo")] zu den Richtlinien dieses Bedienkonzepts verfügbar.
 
 [[einfuehrung-in-das-bedienkonzept]]
 === Einführung in das Bedienkonzept
@@ -27,10 +26,9 @@ https://isyfact.github.io/isy-angular-widgets/
 
 Dieses Konzept ist für jedes Frontend relevant, unabhängig von dessen Komplexität oder Zielgruppe.
 Es ist gültig für alle Neuentwicklungen und für Überarbeitungen von Frontends, die einem Major Change oder Technologiewechsel unterliegen.
-Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Altanwendungen.
 
-Das Bedienkonzept ist gültig ab Q4 – 2024.
-Für Altanwendungen gilt, dass das xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[Bedienkonzept (beziehungsweise ehemals Styleguide) zum Zeitpunkt der Entwicklung der Altanwendung] mit den damals geltenden Inhalten gültig bleibt.
+IMPORTANT: Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Bestandsanwendungen.
+Für diese Fälle bleibt das xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[alte Bedienkonzept (ehemals Styleguide)] mit den damals geltenden Inhalten gültig.
 
 *_Rolle von Designenden, Entwickelnden und Fachlichkeit_*
 
@@ -744,7 +742,7 @@ a|image::primeicons/save.svg[width=32,height=32]
 
 a|image::primeicons/search.svg[width=32,height=32]
 |pi-search
-|Suchen, Suche wiederholen. Neue Suche, Durchsuchen, letzte Suche
+|Suchen, Suche wiederholen, Neue Suche, Durchsuchen, letzte Suche
 
 a|image::primeicons/arrow-circle-left.svg[width=32,height=32]
 |pi-arrow-circle-left
@@ -796,7 +794,7 @@ _Sprachumfang_
 
 Folgende Sprachen werden von den Schriften BundesSerif, BundesSans und BundesSans Condensed unterstützt (nur lateinische Schriftzeichen):
 
-Afrikaans, Albanisch, Aserbaidschanisch, Asu, Baskisch, Bemba, Bena, Bosnisch, Bretonisch, Cebuano, Chiga, Deutsch, Dänisch, Embu, Englisch, Esperanto, Estnisch, Filipino, Finnisch, Französisch,  Friaulisch, Färöisch, Galizisch, Ganda, Grönländisch, Gusii, Hawaiianisch, Ido, Inari-Samisch, Indonesisch, Interlingua, Irisch, Isländisch, Italienisch, Javanisch, Jju, Jola-Fonyi, Kabuverdianu, Kalenjin, Kamba, Katalanisch, Kikuyu, Kinyarwanda, Kornisch, Korsisch, Kroatisch, Kurdisch, Kölnisch, Lettisch, Ligurisch, Litauisch, Lojban, Lombardisch, Luhya, Luo, Luxemburgisch, Machame, Makhuwa, Makhuwa-Meetto, Makonde, Malagasy, Malaiisch, Maltesisch, Manx, Meru, Mohawk, Morisyen, Māori, Niederdeutsch, Niederländisch. Niedersorbisch, Nord-Ndebele, Nord-Sami, Nord-Sotho, Norwegisch (Bokmål), Norwegisch (Nynorsk), Nyanja, Nyankole, Obersorbisch, Okzitanisch, Oromo, Polnisch, Portugiesisch, Quechua, Rejang, Rombo, Rukiga, Rumänisch, Rundi, Rwa, Rätoromanisch, Samburu, Samoanisch, Sango, Sangu, Sardisch, Schlesisch, Schottisches Gälisch, Schwedisch, Schweizerdeutsch, Sena, Shambala, Shona, Siswati, Slowakisch, Slowenisch, Soga, Somali, Spanisch, Sundanesisch, Swahili, Süd-Ndebele, Süd-Sotho, Taita, Taroko, Teso, Tongaisch, Tschechisch, Tsong, Tswana, Turkmenisch, Türkisch, Ungarisch, Usbekisch, Vunjo, Walisisch, Walliserdeutsch, Wallonisch, Westfriesisch, Wolastoqey, Wolof, Xhosa, Zhuang, Zulu
+Afrikaans, Albanisch, Aserbaidschanisch, Asu, Baskisch, Bemba, Bena, Bosnisch, Bretonisch, Cebuano, Chiga, Deutsch, Dänisch, Embu, Englisch, Esperanto, Estnisch, Filipino, Finnisch, Französisch,  Friaulisch, Färöisch, Galizisch, Ganda, Grönländisch, Gusii, Hawaiianisch, Ido, Inari-Samisch, Indonesisch, Interlingua, Irisch, Isländisch, Italienisch, Javanisch, Jju, Jola-Fonyi, Kabuverdianu, Kalenjin, Kamba, Katalanisch, Kikuyu, Kinyarwanda, Kornisch, Korsisch, Kroatisch, Kurdisch, Kölnisch, Lettisch, Ligurisch, Litauisch, Lojban, Lombardisch, Luhya, Luo, Luxemburgisch, Machame, Makhuwa, Makhuwa-Meetto, Makonde, Malagasy, Malaiisch, Maltesisch, Manx, Meru, Mohawk, Morisyen, Māori, Niederdeutsch, Niederländisch, Niedersorbisch, Nord-Ndebele, Nord-Sami, Nord-Sotho, Norwegisch (Bokmål), Norwegisch (Nynorsk), Nyanja, Nyankole, Obersorbisch, Okzitanisch, Oromo, Polnisch, Portugiesisch, Quechua, Rejang, Rombo, Rukiga, Rumänisch, Rundi, Rwa, Rätoromanisch, Samburu, Samoanisch, Sango, Sangu, Sardisch, Schlesisch, Schottisches Gälisch, Schwedisch, Schweizerdeutsch, Sena, Shambala, Shona, Siswati, Slowakisch, Slowenisch, Soga, Somali, Spanisch, Sundanesisch, Swahili, Süd-Ndebele, Süd-Sotho, Taita, Taroko, Teso, Tongaisch, Tschechisch, Tsong, Tswana, Turkmenisch, Türkisch, Ungarisch, Usbekisch, Vunjo, Walisisch, Walliserdeutsch, Wallonisch, Westfriesisch, Wolastoqey, Wolof, Xhosa, Zhuang, Zulu
 
 Die Liste entspricht der Sprachenzeichennorm ISO 639-1-3.
 
@@ -861,7 +859,7 @@ Im Folgenden werden einige Beispiele für technische Begriffe und deren Überset
 * Die Verwendung verschiedener Schriftarten (über die im Bedienkonzept hinaus vorgegebenen Schriftarten) muss vermieden werden.
 * Die Schriftgröße muss immer ausreichend groß sein.
 Ein Unterschreiten von Mindestgrößen zugunsten des Platzgewinns muss vermieden werden.
-Stattdessen werden andere, platzsparende Mechanismen angewandt wie Expander (Progressive Disclosure).
+Stattdessen werden andere, platzsparende Mechanismen angewandt wie <<expander>>.
 * Die Anzahl verschiedener Schriftgrößen muss auf ein notwendiges Minimum reduziert werden.
 * Als Standard-Schrift wird BundesSans 14pt Regular in Dunkelgrau (#212529) empfohlen.
 * Es muss sichergestellt sein, dass der <<barrierefreier-einsatz-von-farben,Kontrast der Schriftfarbe zur Hintergrundfarbe>> ausreichend groß ist.
@@ -1018,8 +1016,6 @@ Beispiel:
 
 [[bedienelemente]]
 == Bedienelemente
-
-*_Einleitung und Allgemeines:_*
 
 Bedienelemente sind die Bausteine der Benutzeroberfläche, die es den Nutzenden ermöglichen, mit dem Frontend zu interagieren.
 Dieser Abschnitt definiert die verschiedenen Bedienelemente und legt fest, wie sie gestaltet und angeordnet werden sollen, um eine intuitive Benutzererfahrung zu gewährleisten.
@@ -1200,9 +1196,6 @@ Eingabefelder sind grundlegende Interaktionselemente in einer Benutzeroberfläch
 Sie spielen eine zentrale Rolle bei der Interaktion zwischen Nutzenden und System.
 Sie kommen in verschiedensten Formen und Kontexten vor, sei es in Form von Textfeldern, <<dropdown,Dropdown-Menüs>>, <<liste,Auswahllisten>> oder Datumsauswahlkalendern.
 Die Gestaltung und Platzierung von Eingabefeldern hat direkten Einfluss auf die Benutzererfahrung und die Effizienz der Dateneingabe.
-
-Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
 
 Eingabefelder sind dynamisch.
 Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (<<placeholder,Placeholder>>) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
@@ -1692,7 +1685,7 @@ Es kann auch mit sinnvollen und verständlichen Abkürzungen gearbeitet werden.
 *_Don'ts:_*
 
 * Seiten sollten nicht mit nur einem Tabreiter gestaltet werden.
-Bei weniger als drei Tabreitern, ist eventuell ein dynamisches Panel das passendere Element.
+Bei weniger als drei Tabreitern, ist eventuell ein dynamisches <<panel>> das passendere Element.
 * Muss der Inhalt verschiedener Tabreiter verglichen/abgestimmt werden, sollte anstelle eines Tabreiters lieber ein dynamisches Panel verwendet werden.
 * Tabreiter stellen nicht verschiedene Sichten zu gleichen Daten dar.
 * Tabreiter sind keine Prozessschritte.
@@ -1753,17 +1746,17 @@ Sollte es fachlich notwendig sein, kann auch endless-scrolling eingesetzt werden
 * Wenn sich Symbole oder Bilder nur wiederholen, sollte auf sie verzichtet werden.
 
 [[sortierung-tabelle]]
-==== Sortierung in einer Tabelle
+==== Sortierung
 
 Tabellen sollten aufgrund ihrer großen Datenmengen pro Spalte sortierbar sein und eine auf- und absteigende Sortierung anbieten (zwei Pfeile im Tabellenheader).
-Der Klickbereich des Icons ist dabei 44px x 44px groß (s. <<image-tabelle>>).
+Der Klickbereich des Icons ist dabei 44px x 44px groß (siehe <<image-tabelle>>).
 
 * Der erste Klick auf die Sortiericons sortiert die Tabelle nach den Werten in der gewählten Spalte aufsteigend.
 * Ein zweiter Klick auf die Sortiericons sortiert die Tabelle entsprechend absteigend.
 * Das wechselnde Icon zeigt die aktuelle Sortierung an.
 
 [[filterung-tabelle]]
-==== Filterung in einer Tabelle
+==== Filterung
 
 Es bietet sich an, dass Tabellen auch filterbar gestaltet werden.
 Dafür können verschiedene fachliche Filter definiert werden.
@@ -1777,7 +1770,7 @@ Die Filter lassen sich in beliebiger Weise kombinieren.
 * Aktive Filter sollten deutlich erkennbar sein.
 
 [[selektionsverhalten-tabelle]]
-==== Selektionsverhalten in einer Tabelle
+==== Selektionsverhalten
 
 Es gibt verschiedene Möglichkeiten, ein Element in einer Tabelle zu selektieren.
 Dabei ist die notwendige Fachlichkeit maßgeblich für das Verhalten verantwortlich.
@@ -1792,7 +1785,7 @@ Sollte ein entsprechendes Verhalten angewendet werden, so ist darauf zu achten, 
 * Die erste Zeile kann per Default selektiert werden.
 
 [[bigdata-tabelle]]
-==== Große Datenmengen in einer Tabelle
+==== Große Datenmengen
 
 Tabellen können sehr viele Daten enthalten und gegebenenfalls sehr lang werden.
 Um den Umgang mit solchen Tabellen zu vereinfachen, sollten nicht alle Daten initial in der Tabelle angezeigt werden.
@@ -1920,13 +1913,148 @@ Per Mausklick lassen sich in der Linksnavigation die Gruppierungen öffnen.
 .Linksnavigation geöffnet (gruppiert)
 image::24_DP_linksnavigation_open.png[align="center"]
 
-Diese bleiben auch beim weiteren Öffnen von anderen Gruppen weiterhin offen und verhalten sich an dieser Stelle wie ein Panel.
+Diese bleiben auch beim weiteren Öffnen von anderen Gruppen weiterhin offen und verhalten sich an dieser Stelle wie ein <<panel>>.
 Die Linksnavigation enthält optional übergeordnet den Anwendungs- oder Anwendungskomponentennamen.
 Über die Linksnavigation ist kein Anwendungswechsel möglich.
 
 [TIP]
 Müssen Anwendende häufig auf bestimmte Funktionen oder Objekte zugreifen, so kann es sinnvoll sein, Schnellzugriffe einzurichten.
 Diese können statisch implementiert sein (zum Beispiel über "häufige Aufgaben") oder sich dynamisch ändern, je nach Nutzung (zum Beispiel über "häufig benutzt").
+
+[[toolbar]]
+=== Toolbar
+
+Eine Toolbar stellt ein Set von <<bedienelemente,Bedienelementen>>, wie zum Beispiel <<button,Buttons>> oder <<dropdown,Dropdown-Menüs>>, in einer Leiste zur Verfügung.
+Diese ist oberhalb eines bestimmten Inhaltsbereichs angebracht und sollte optisch, beispielsweise durch eine vertikale Trennlinie, von diesem abgegrenzt sein.
+Die einzelnen Funktionen innerhalb der Toolbar werden typischerweise durch ein aussagekräftiges <<icons,Icon>>, gegebenenfalls ergänzt um ein zusätzliches <<label>>, repräsentiert.
+
+Die Toolbar soll das Gefühl einer schnellen und simplen Interaktion vermitteln.
+Daher sollten keine komplexen Funktionalitäten in der Toolbar untergebracht werden.
+Gängige Funktionen wie Drucken oder Löschen sind typische Beispiele für eine Toolbar.
+Im Vergleich zu einem Menü sind die Funktionen in einer Toolbar immer sichtbar und direkt erreichbar.
+
+Folgende Toolbars gibt es:
+
+* Seiten-Toolbar
+* Tabellen-Toolbar
+* Eingabefeldgruppen mit Toolbar
+
+*_Dos:_*
+
+* In einer Toolbar finden sich die wichtigsten oder am häufigsten genutzten Funktionen an einem zentralen Platz.
+* Bedienelemente in einer Toolbar sollten entsprechend ihrer Verfügbarkeit aktiviert oder deaktiviert werden.
+* Nicht aussagekräftige Icons sollten mit einem Label versehen werden.
+* Die Anordnung der Elemente innerhalb einer Toolbar sollte nach deren Priorität beziehungsweise nach deren Nutzungsfrequenz erfolgen – häufig genutzte Funktionen links, weniger häufig genutzte Funktionen rechts.
+* Zusammengehörige Funktionen können aus Platzgründen in <<menu-button,Menü-Buttons>> zusammengefasst werden.
+* Wird die Größe des Browserfensters verändert, so wächst die Toolbar in die Breite mit.
+Die Elemente in der Toolbar behalten ihre ursprüngliche Größe und Position bei.
+
+*_Don'ts:_*
+
+* Eine Toolbar sollte nicht mit allen zur Verfügung stehenden Bedienelementen überladen werden.
+Stattdessen sollten die am häufigsten benötigten oder sehr wichtige Funktionen repräsentiert werden.
+* Es sollten keine mehrzeiligen Toolbars eingesetzt werden.
+
+*_Seiten-Toolbar_* *WiP*
+
+//Die Seiten-Toolbar kann als Bestandteil der Frontendstruktur unterhalb der <<hauptnavigation>> eingebaut werden (wie beispielhaft in <<image_beispiel_navigation>> zu sehen).
+//Sie beinhaltet Funktionen, welche für das gesamte Frontend gelten, zum Beispiel „Zurück zur Übersicht“, „Seite drucken“ oder „Hilfe“.
+
+//[[image-seitentoolbar]]
+//.Seiten-Toolbar
+//image::ToDo[align="center"]
+
+//Auf der linken Seite befindet sich in jeder Seiten-Toolbar eine <<link,Verlinkung>>, die zurück zur dazugehörigen Hauptseite führt.
+//Der Navigationslink wird mit einer Kombination aus Icon und Label implementiert.
+//Alle anderen Funktionen sind als Icon-Buttons einzubauen.
+
+*_Tabellen-Toolbar_* *WiP*
+
+//[[image-tabellentoolbar]]
+//.Tabellen-Toolbar
+//image::ToDo[align="center"]
+
+*_Eingabefeldgruppen mit Toolbar_* *WiP*
+
+//[[image-eingabefeldgruppe-mit-toolbar]]
+//.Eingabefeldgruppen mit Toolbar
+//image::ToDo[align="center"]
+
+[[expander]]
+=== Expander (Progressive Disclosure)
+
+Mit einem Expander können bestimmte Inhaltsbereiche per Mausklick dynamisch ein- und ausgeblendet werden.
+Das zugrundeliegende Prinzip wird häufig als „Progressive Disclosure“ („schrittweises Enthüllen“) oder auch als „Information Hiding“ („Ausblenden von Information“) bezeichnet.
+
+Ein Expander wird genutzt, um die Informationskomplexität zu reduzieren und um vertikal Platz einzusparen (beispielsweise bei langen <<formulare,Formularen>>).
+Hierfür werden die Inhalte in logische Gruppen zusammengefasst, die sich zur besseren Übersicht ein- und ausklappen lassen.
+In einem Expander können sowohl <<basiselemente,Basis>>- und <<bedienelemente>> als auch <<design-pattern,Design Patterns>> angezeigt werden.
+
+Der grundlegende Aufbau eines Expanders ist wie folgt:
+
+* Einen Header-Bereich mit
+** einem gruppierenden <<label>>, das den Inhalt der Gruppe prägnant beschreibt,
+** und einem <<icons,Icon>>, das den Zustand des Expanders anzeigt.
+* Einen Content-Bereich, der die Inhalte der Gruppe enthält.
+
+Expander nehmen dabei immer die ihnen zur Verfügung stehende Breite ein.
+
+[NOTE]
+Anstatt mehrere Expander in einer Ansicht zu nutzen, sollte überlegt werden, ob die fachlich gesplitteten Gruppierungen besser in <<tabview,Tabs>> oder sogar in eigenen Frontendseiten dargestellt werden sollten.
+Dadurch wird die kognitive Belastung der Nutzenden reduziert und das Fehlerhandling vereinfacht.
+Des Weiteren ist es barrierefreier, wenn weniger Inhalt auf einem Frontend direkt sichtbar ist.
+Screenreader können dadurch schneller und einfacher durch die Inhalte navigieren.
+
+[[akkordeon]]
+==== Akkordeon
+
+In einem Akkordeon werden zu einem übergeordneten Thema strukturiert und gegliedert Inhalte dargestellt.
+Dabei lässt sich nur ein Akkordeonelement gleichzeitig ausklappen.
+Alle anderen Akkordeonelemente sind oder werden eingeklappt.
+So wird der Fokus auf genau dieses Inhaltsfragment gelegt.
+Eine klassische Anwendung hat das Akkordeon beispielsweise in FAQs.
+
+[[image-akkordeon-eingeklappt]]
+.Akkordeon ohne ausgeklapptes Element
+image::24_DP_akkordeon_eingeklappt.png[align="center"]
+
+[[image-akkordeon-ausgeklappt]]
+.Akkordeon mit ausgeklapptem Element
+image::24_DP_akkordeon_ausgeklappt.png[align="center"]
+
+Fürs Aus- und Einklappen eines Akkordeonelements kann der gesamte Akkordeon-Header angeklickt werden.
+Zusätzlich befindet sich auf der linken Seite neben dem Label ein Icon, das den Zustand (ein- oder ausgeklappt) des Akkordeonelements anzeigt.
+Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen <<image-akkordeon-ausgeklappt>> und <<image-akkordeon-eingeklappt>>).
+
+Die Interaktion wird dabei in der Regel auf die reine Wissensvermittlung reduziert.
+Entsprechend soll auf weiterführende Interaktion, über das aus- und einklappen hinaus, verzichtet werden.
+
+[[panel]]
+==== Panel
+
+Ein Panel ist einem <<akkordeon>> recht ähnlich.
+In einem Panel werden ebenso zu einem übergeordneten Thema kompakt Gruppen an Informationen dargestellt.
+Dabei lässt sich das ausgewählte Panel ausklappen.
+Weitere Panels innerhalb des Frontends werden durch ein Aus- oder Einklappen nicht beeinflusst.
+So können Nutzende alle Informationsgruppen eigenständig anzeigen oder bei Bedarf ausblenden.
+Klassischerweise werden Panels in <<formulare,Formularstrecken>> verwendet.
+
+[[image-panel-eingeklappt]]
+.Eingeklapptes Panel
+image::24_DP_panel_eingeklappt.png[align="center"]
+
+[[image-panel-ausgeklappt]]
+.Ausgeklapptes Panel
+image::24_DP_panel_ausgeklappt.png[align="center"]
+
+Fürs Aus- und Einklappen eines Panels befindet sich auf der linken Seite auf der Höhe des Labels ein Icon.
+Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen <<image-panel-ausgeklappt>> und <<image-panel-eingeklappt>>).
+
+Die Interaktion steht hier im Vordergrund.
+Weiterführende Aktionen können entweder rechts im Panel Header oder in einer Footer Sektion unterhalb des Inhaltsbereichs eingebaut werden.
+
+Technisch sind Panels meist flexibler, beziehungsweise nicht so restriktiv, wie ein Akkordeon.
+Eine Gegenüberstellung, wann ein Panel und wann ein Akkordeon sinnvoll ist, befindet sich im Kapitel <<panel-akkordeon-ueberschrift>>.
 
 [[dropdown]]
 === Eingabefeldliste (Dropdown)
@@ -1981,11 +2109,10 @@ In fast jedem Frontend beziehungsweise in den häufigsten Anwendungsfällen lass
 Häufig verwendete Gruppen sind beispielsweise „Angaben zur Person“ (mit den Eingabefeldern Vorname, Familienname, Nationalität, Geschlecht etc.), Adressdaten (Straße, Hausnummer, Postleitzahl, Ort) oder Bezahldaten (Art der Bezahlung, Kartennummer etc).
 Eingabefeldgruppen sind eine Möglichkeit solche Gruppierungen darzustellen.
 
-Eingabefeldgruppen bestehen immer aus mindestens einer Gruppenüberschrift beziehungsweise einem Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und gegebenenfalls weiteren <<bedienelemente,Bedienelementen>>.
-Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
+Eingabefeldgruppen bestehen immer aus mindestens einer Gruppenüberschrift beziehungsweise einem Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und gegebenenfalls weiteren <<bedienelemente,Bedienelementen>>. +
+Dies lässt sich durch zwei Möglichkeiten realisieren: <<ueberschriften,Überschrift>> und <<bedienelemente>> oder Fieldset mit Bedienelementen.
 
-*_Beispiel einer Eingabefeldgruppe "Persönliche Angaben":_*
+*_Eingabefeldgruppe mit Überschrift und Bedienelement:_*
 
 [[image-eingabefeldgruppe]]
 .Eingabefeldgruppe Beispiel: Persönliche Angaben
@@ -1996,24 +2123,23 @@ Jedes Eingabefeld ist ein Pflichtfeld, gekennzeichnet durch einen Asterisk (*).
 Eingabefeldgruppen bedürfen keiner zusätzlichen optischen Gruppierung.
 Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends (siehe <<image-vertikalerschnitt>>) folgen.
 
-*_Beispiel einer Eingabefeldgruppe mit bedingten Pflichtfeldern (ehemals Optionale Pflichtfelder):_*
+*_Eingabefeldgruppe mit Fieldset:_*
 
 [[image-bedingtepflichtfeldgruppe]]
 .Eingabefeldgruppe mit bedingten Pflichtfeldern
 image::24_DP_bedingte_pflichtfeldgruppe.png[align="center"]
 
-Bei einer bedingten Pflichtfeldgruppe ist das Ausfüllen mindestens eines Feldes in einer Eingabefeldgruppe Voraussetzung, um den Prozess abzuschließen.
+Bei einer bedingten Pflichtfeldgruppe (ehemals "optionale Pflichtfelder") ist das Ausfüllen mindestens eines Feldes in einer Eingabefeldgruppe Voraussetzung, um den Prozess abzuschließen.
 
-_Im konkreten Beispiel: Identitätsnachweisdokument_
-
+.Identitätsnachweisdokument
+====
 Der Prozess sieht vor, dass ein Nachweis über die Identität erbracht wird.
 Dies kann jedoch über verschiedene Dokumente erfolgen.
 Somit wird unter der Gruppe „Identitätsnachweisdokument“ in verschiedenen Eingabefeldern die Möglichkeit gegeben sich für eine Nachweisart zu entscheiden und entsprechend ihrer Art entweder eine Auswahl zu treffen oder eine entsprechende Nummer anzugeben.
 
 Dabei ist nicht das einzelne Eingabefeld ein Pflichtfeld, sondern das Ausfüllen mindestens einer Option innerhalb einer Eingabefeldgruppe verpflichtend.
-Sobald eine Möglichkeit innerhalb der Gruppe ausgewählt/befüllt wurde, wird die bedingte Pflichtfeldgruppe für den Identitätsnachweis als positiv bestätigt.
-
-Dies ist technisch ein sogenanntes „Fieldset“.
+Sobald eine Möglichkeit innerhalb der Gruppe ausgewählt bzw. befüllt wurde, wird die bedingte Pflichtfeldgruppe für den Identitätsnachweis als positiv bestätigt.
+====
 
 Für komplexere fachliche Konstellationen kann eine textuelle Hilfestellung mit Signalwörtern verwendet werden.
 Der Einsatz solcher komplexen bedingten Pflichtfelder ist aus Sicht der Benutzerfreundlichkeit nur im *absoluten Ausnahmefall* zu wählen.
@@ -2398,15 +2524,6 @@ Zur Vermeidung von versehentlichen Aktionen sollte die Löschfunktion zusätzlic
 
 *WiP*
 
-[[toolbar]]
-=== Toolbar
-
-*WiP*
-
-*_Standard-Toolbar_* *WiP*
-
-*_Seitentoolbar_* *WiP*
-
 [[use-cases]]
 == Use Cases
 
@@ -2420,13 +2537,10 @@ Inhalte von Formularen sollten sich an einem virtuellen, nicht visuell dargestel
 Formulare sollen einem einspaltigen, zweispaltigen oder dreispaltigen Layout folgen.
 Dabei sind alle Spalten innerhalb eines Formulars gleich breit aufgebaut.
 
-Die nachfolgenden Angaben beziehen sich immer auf Neuentwicklungen und Aktualisierungen.
-Altanwendungen, die nicht angepasst werden müssen, können weiterhin dem xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[zum Umsetzungszeitpunkt gültigen Bedienkonzept] entsprechen.
-
 *_Beispielhaftes Formular dreispaltig:_*
 
 [[image-dreispaltenlayout]]
-. Drei-Spalten Layout
+.Drei-Spalten Layout
 image::24_UC_3_spalten.png[align="center"]
 
 Formulare bestehen mindestens aus einer <<eingabefeldgruppen,Eingabefeldgruppe>> und einer beliebigen Anzahl weiterer Elemente.
@@ -2680,23 +2794,18 @@ Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquiv
 
 *WiP*
 
-[[strukturierung-von-frontend-seiten]]
-=== Strukturierung von Frontend-Seiten
-
-*WiP* (Wann setze ich Panels, Akkordeons und/oder Überschriften ein?)
-
 [[Screenareas]]
-==== Screenbereiche (Screenareas)
+=== Screenbereiche (Screenareas)
 
 *WiP* (beinhaltet die Grundstruktur einer Frontend-Seite anhand der isy-angular-widgets Komponente isy-hauptfenster)
 
 [[Header]]
-===== Header
+==== Header
 
 *WiP* (beinhaltet die Hauptnavigation des isy-hauptfensters)
 
 [[Contentarea]]
-===== Contentbereich (Contentarea)
+==== Contentbereich (Contentarea)
 
 *WiP*
 
@@ -2705,7 +2814,7 @@ Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquiv
 *_Content mit Sidebar_* *WiP* (beinhaltet die Linksnavigation und den Informationsbereich des isy-hauptfensters)
 
 [[Footer]]
-===== Footer
+==== Footer
 
 *WiP*
 
@@ -2774,3 +2883,28 @@ Für die Anwendung in Formularen sollten folgende Grundsätze beachtet werden:
 
 * "Readonly" ist ideal, wenn die Informationen wichtig sind und für Nutzende sichtbar bleiben müssen, aber nicht verändert werden sollen.
 * "Disabled" eignet sich, wenn Nutzende keine Informationen im Feld sehen oder bearbeiten sollen – zum Beispiel bei unzugänglichen Funktionen oder Bedingungen, die erst später erfüllt werden müssen.
+
+[[panel-akkordeon-ueberschrift]]
+=== Panel vs. Akkordeon vs. Überschrift
+
+Allein aus der Beschreibung der einzelnen Elemente, <<panel>>, <<akkordeon>> und <<ueberschriften,Überschrift>>, lässt sich eine konkrete und präferierte Anwendung der einzelnen Elemente ableiten.
+Alle Elemente erfüllen ihren eigenen Zweck.
+Auffällig ist jedoch die sehr ähnliche Gestaltung des Akkordeons und des Panels.
+Dies liegt an der historischen Annäherung der Elemente.
+Für Nutzende ist eine solch differenzierte Betrachtung auf die technischen Elemente in den meisten Fällen nicht möglich und auch nicht notwendig, weshalb auf eine optische und historisch gewachsene minimale Differenzierung der beiden Elemente zu Gunsten der Usability verzichtet werden kann.
+
+Alle drei Elemente werden zur Strukturierung von Frontends und deren Inhalte benötigt.
+
+*_Elemente:_*
+
+* Überschriften sind aus Sicht der Barrierefreiheit mindestens in erster Ebene notwendig und sollten zur Strukturierung des Frontends genutzt werden.
+* Akkordeons sollten für lange und rein informative Inhalte genutzt werden (zum Beispiel FAQ-Bereich).
+* Panels sollten für lange und komplexe interaktive Inhalte genutzt werden (zum Beispiel <<formulare>>).
+
+*_Übergeordnete Verwendung:_*
+
+Eine Frontend-Page sollte mindestens eine Überschrift (`h1`) enthalten und nur einen Widget-Typ nutzen (Akkordeon oder Panel).
+Eine Vermengung beider Elemente soll vermieden werden, da unterschiedliches Verhalten optisch ähnlicher Elemente Verwirrung bei Nutzenden herbeiführt.
+
+Zur Vereinfachung der Usability wird empfohlen, die <<akkordeon>> und <<panel>> optisch anzunähern.
+Beide Elemente sollten sich über das gleiche Symbol aus- und einklappen lassen.
