@@ -2,6 +2,8 @@
 ## Dokumentation
 - IFS-3898: Das Kapitel *Design Pattern* wurde durch die Unterkapitel *Expander* und *Toolbar* erweitert
 - IFS-4249: Die Antora-Version der Online-Dokumentation wird nun durch Git gesetzt
+- IFS-4508: Verweis auf Angular-Referenzimplementierung prominent platziert
+- IFS-3897: Design Patterns für Eingabe, Selektion und Ausgabe hinzugefügt 
 - IFS-4369: Build-Fehler der Antora-Dokumentation wurden behoben
 - IFS-2995: Navigation und Pagination hinzugefügt
 - IFS-3971: Eingabefelder wurden konkretisiert (required, read only), "bold label" für Eingabefelder

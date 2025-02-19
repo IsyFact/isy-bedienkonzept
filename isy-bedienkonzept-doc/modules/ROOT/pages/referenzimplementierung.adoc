@@ -1,0 +1,7 @@
+= Baustein Referenzimplementierung
+
+include::glossary:licence:partial$licence.adoc[]
+
+Eine Live-Demo zu den Richtlinien dieses Bedienkonzepts finden Sie unter:
+https://isyfact.github.io/isy-angular-widgets/
+
