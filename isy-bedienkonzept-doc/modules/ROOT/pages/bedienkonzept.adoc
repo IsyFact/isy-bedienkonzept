@@ -5,7 +5,7 @@ include::glossary:licence:partial$licence.adoc[]
 [[einfuehrung]]
 == Einführung
 
-Das vorliegende Bedienkonzept ist nicht nur ein Dokument mit Gestaltungsrichtlinien für xref:4.0.x@isyfact-standards-doku:referenzarchitektur:software-technisch/frontend.adoc[Frontends], sondern ein umfassendes Werkzeug, das die Grundlage für die Entwicklung einer konsistenten und benutzerfreundlichen Benutzeroberfläche schafft.
+Das vorliegende Bedienkonzept ist nicht nur ein Dokument mit Gestaltungsrichtlinien für xref:4.0.0@isyfact-standards-doku:referenzarchitektur:software-technisch/frontend.adoc[Frontends], sondern ein umfassendes Werkzeug, das die Grundlage für die Entwicklung einer konsistenten und benutzerfreundlichen Benutzeroberfläche schafft.
 Indem es einheitliche Standards und Best Practices festlegt, trägt es maßgeblich zur Erreichung von Zielen wie der Steigerung der Benutzerzufriedenheit, der Verbesserung der Effizienz oder der Stärkung der Markenidentität bei.
 
 Das Hauptziel ist dabei, die Benutzererfahrung zu verbessern und die Zufriedenheit und Produktivität der Nutzenden zu maximieren.
@@ -28,7 +28,7 @@ Dieses Konzept ist für jedes Frontend relevant, unabhängig von dessen Komplexi
 Es ist gültig für alle Neuentwicklungen und für Überarbeitungen von Frontends, die einem Major Change oder Technologiewechsel unterliegen.
 
 IMPORTANT: Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Bestandsanwendungen.
-Für diese Fälle bleibt das xref:isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[alte Bedienkonzept (ehemals Styleguide)] mit den damals geltenden Inhalten gültig.
+Für diese Fälle bleibt das xref:3.2.1@isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[alte Bedienkonzept (ehemals Styleguide)] mit den damals geltenden Inhalten gültig.
 
 *_Rolle von Designenden, Entwickelnden und Fachlichkeit_*
 
