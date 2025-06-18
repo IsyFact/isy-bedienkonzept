@@ -1,5 +1,6 @@
 # 1.0.0
 ## Dokumentation
+- IFS-4711: Kennzeichnung der Lizenz vereinheitlichen
 - IFS-4549: Verwaltung der Version der Online-Doku zentralisiert
 - IFS-3898: Das Kapitel *Design Pattern* wurde durch die Unterkapitel *Expander* und *Toolbar* erweitert
 - IFS-4249: Die Antora-Version der Online-Dokumentation wird nun durch Git gesetzt
