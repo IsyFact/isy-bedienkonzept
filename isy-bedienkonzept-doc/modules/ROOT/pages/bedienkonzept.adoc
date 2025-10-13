@@ -496,6 +496,522 @@ Dieser beinhaltet behördenspezifische Widgets wie den Anwendungsrahmen oder Ein
 Dieses Theme kann bei Bedarf auch durch ein projektspezifisches Theme ersetzt werden.
 * Primär ist der Baustein für die Nutzung auf Desktopgeräten konzipiert, kann aber durch die grundlegende Responsivität auch auf mobilen Geräten genutzt werden.
 
+[[fenstertypen-layout]]
+== Fenstertypen und Layout
+
+Fenstertypen und Layout bilden die verbindliche Grundlage für Struktur und Verhalten aller Seiten.
+Ziel ist eine einheitliche, effiziente und barrierefreie Nutzererfahrung in modernen Fachanwendungen.
+
+Die in Kapitel 2 <<Barrierefreiheit>> beschriebenen Anforderungen (WCAG 2.1 / EN 301 549) gelten uneingeschränkt und bilden den verbindlichen Rahmen.
+
+Die Vorgaben dieses Kapitels sind technologienah formuliert und berücksichtigen die Umsetzung mit Angular sowie den Frameworks PrimeNG und PrimeFlex.
+Grundlegende Interaktionsmuster werden im Kapitel <<design-pattern, Design Patterns>> beschrieben.
+
+Die folgenden Gestaltungsprinzipien definieren zentrale Regeln für Struktur, Lesbarkeit und Anpassungsfähigkeit der Benutzeroberfläche und sichern ein konsistentes Erscheinungsbild sowie eine barrierefreie Bedienung über alle Fenstertypen hinweg.
+
+[[gestaltungsprinzipien]]
+*_Gestaltungsprinzipien_*
+
+* *Lesbarkeit vor maximale Breite:* Textzeilen werden auf eine angemessene Breite begrenzt.
+Auf großen Bildschirmen entstehen bewusst Ränder, anstatt Texte zu strecken.
+So bleiben Zeilenlängen und Lesetempo angenehm und kontrollierbar.
+* *Reflow statt Schrumpfen:* Mit kleiner werdenden Viewports reduziert sich die Spaltenanzahl.
+Bedienelemente behalten ihre Mindestgröße;
+Schriften und Interaktionsflächen werden nicht bis zur Unbedienbarkeit verkleinert.
+* *Vorhersehbar und konsistent:* Breakpoints, Gutter und Containerbreiten sind klar definiert und wiederverwendbar.
+Nutzende erkennen vertraute Muster wieder und müssen keine neuen Bedienweisen erlernen.
+* *Standardmäßig barrierearm:* Fokuszustände sind deutlich sichtbar, die Reihenfolge semantisch korrekt, und überlagernde Elemente verdecken den Fokus nicht.
+Eine vollständige Tastaturbedienung ist jederzeit möglich.
+* *Flexibel, aber geprüft:* Abweichungen innerhalb definierter Spielräume – etwa bei maximalen Breiten – sind zulässig, sofern sie dokumentiert und die festgelegten Akzeptanzkriterien erfüllt sind.
+
+Die konkreten Fenster‑ und Seitentypen (z. B. Login, Portalstartseite, Dashboard-Unterseite, Applikationsseite, Applikations-Detailseite) sind im Kapitel Design Patterns <<fenster-und-seitentypen, Fenster- und Seitentypen>> beschrieben.
+Die hier definierten Prinzipien bilden die verbindliche Grundlage für deren Gestaltung und technische Umsetzung.
+
+[[layout-resizing]]
+=== Layout und Resizing
+
+==== Zielkorridor & Reflow
+
+Layout und Inhalt müssen auch bei Größenänderungen nutzbar bleiben.
+Reflows dürfen die Orientierung der Nutzenden nicht beeinträchtigen.
+Das Verhalten folgt den allgemeinen <<gestaltungsprinzipien, Prinzipien zur Lesbarkeit und Anpassungsfähigkeit>>.
+
+[[image-zielkorridor]]
+.Zielkorridor für responsive Layouts mit zentriertem, maximal begrenztem Inhaltsbereich
+image::zielkorridor_maxwidth.png[align="center", scaledwidth="100%",width="1123",height="750"]
+
+*_Richtlinien_*
+
+[[r-nutzungsbandbreite]]
+* *Nutzungsbandbreite:* Das Layout ist im Bereich von 320 bis mindestens 1920 CSS-Pixeln funktionsfähig.
+Der Hauptinhalt befindet sich in einem zentrierten Container mit begrenzter Zeilenlänge, um Lesbarkeit und Orientierung zu sichern.
+
+[[r-textvergroesserung-200]]
+* *Zoomsicherheit:* Eine Textvergrößerung um bis zu 200 % darf weder zu Funktions- noch zu Informationsverlust führen.
+[[r-reflow-400]]
+Im Fließtext darf auch bei 400 % Zoom kein horizontales Scrollen erforderlich sein.
+
+[[r-keine-layoutspruenge]]
+* *Planbarer Reflow:* Für dynamisch erscheinende Inhalte – etwa Bilder, Fehlermeldungen oder Platzhalter – wird ausreichend Raum vorgesehen, um Layoutsprünge zu vermeiden.
+
+[[r-fokus-nicht-ueberdeckt]]
+* *Stabile Überlagerungen:* Overlays und feste Elemente (z. B. Header oder Toolbars) überlagern den Inhalt, anstatt den Dokumentenfluss nachträglich zu verschieben.
+Der Fokus bleibt dabei steuerbar und stets sichtbar.
+
+==== Raster, Abstände und Layout-Hilfen
+
+Das Raster ordnet Inhalte in Spalten, während Container und Layout-Utilities die Abstände und die Ausrichtung der Elemente steuern.
+Ziel ist ein konsistentes, flexibles und leicht wartbares Layout über alle Bildschirmgrößen hinweg.
+
+[[image-raster-abstaende-layout]]
+.Responsives Layout - Breakpoint-basierte Spaltenzahl
+image::raster_abstaende_layout.png[align="center", scaledwidth="100%",width="1123",height="680"]
+
+*_Gestaltungsregeln_*
+
+[[r-spaltenreduktion-3-2-1]]
+* *Breakpoints*: Die Spaltenanzahl wird stufenweise je nach Bildschirmgröße definiert (z. B. 3 → 2 → 1); dies unterstützt skalierbare Layouts ohne Funktionsverlust.
+Individuelle Sondergrößen außerhalb der definierten Design-Tokens sind zu vermeiden.
+
+[[r-konsistente-abstaende]]
+* *Abstände*: Zwischenräume werden zentral über Container-Gaps gesteuert.
+Gestapelte Margins zwischen Komponenten sollen vermieden werden, um konsistente Abstände sicherzustellen.
+
+[[r-keine-festen-breiten]]
+* *Flexible Breiten*: Komponenten passen sich dynamisch der verfügbaren Spaltenbreite an.
+Feste Pixelbreiten sind zu vermeiden, damit Reflow und Zoom korrekt funktionieren.
+
+[[r-kontextabhaengige-dichte]]
+* *Kontextabhängige Dichte*: Auf großen Viewports darf das Layout kompakt, aber gut lesbar sein.
+Auf kleineren Geräten oder bei hohem Zoom werden Zeilenhöhe und Interaktionsflächen leicht vergrößert, um Bedienbarkeit und Lesbarkeit zu verbessern.
+
+==== Formular-Layouts
+
+Formulare führen Nutzende linear durch logisch zusammenhängende Feldgruppen.
+Bei geringer Bildschirmbreite oder eingeschränktem Platzangebot wird das Layout automatisch einspaltig dargestellt.
+
+[[image-formular-layouts]]
+.Formularraster - Spaltenzahl stufenweise über Breakpoints
+image::formular_layouts.png[align="center", scaledwidth="100%",width="1123",height="794"]
+
+*_Umsetzungshinweise_*
+
+[[r-label-feld-naehe]]
+* *Label-Feld-Einheit:* Labels und Eingabefelder werden räumlich zusammen platziert.
+Dies unterstützt die Blickführung und gewährleistet eine korrekte Interpretation durch assistive Technologien.
+
+[[r-formular-einspaltig]]
+* *Resizing:* Das Formularraster reduziert die Spalten je nach Breakpoint.
+Unterhalb des mittleren Breakpoints erfolgt die Darstellung einspaltig, um einen klaren, linearen Eingabefluss zu sichern.
+
+[[r-fehlermeldungen-feldnah]]
+* *Hinweise und Fehler:* Hilfetexte und Fehlermeldungen sind kurz, feldnah und in reservierten Bereichen anzuzeigen.
+Dadurch werden Layoutsprünge und visuelle Unruhe vermieden.
+
+* *Aktionen:* Primäraktionen (z. B. „Speichern“) stehen am Ende des Formulars.
+Sekundäraktionen bleiben sichtbar, sind jedoch gestalterisch zurückgenommen.
+
+[[r-tastatur-fokusreihenfolge]]
+* *Tastaturbedienung:* Die Fokusreihenfolge entspricht der visuellen Lesereihenfolge und bildet eine durchgängige „Focus Order“ gemäß WCAG 2.4.3 folgt den allgemeinen <<barrierefreies-layoutverhalten,Barrierefreiheitsvorgaben>>.
+Navigation mit Tab und Shift + Tab erfolgt ohne Sprünge.
+
+==== Tabellen und dichte Inhalte
+
+Tabellen müssen auch bei begrenztem Platz verständlich und gut nutzbar bleiben.
+Die Zuordnung von Spaltenköpfen zu Zellen ist jederzeit nachvollziehbar.
+
+*_Darstellungsstrategien_*
+
+[[r-tabellen-responsiv]]
+* *Responsives Verhalten:* Je nach Kontext kann zwischen einer gestapelten Darstellung (Zellen enthalten ihr Label) oder einem horizontal scrollbaren Container gewählt werden.
+In beiden Fällen bleiben Spaltenköpfe erkennbar.
+
+[[r-tabellen-priorisierung]]
+* *Inhaltliche Priorisierung:* Wichtige Spalten bleiben sichtbar; nachrangige Inhalte können gekürzt oder in Detailansichten ausgelagert werden.
+
+* *Erfassbarkeit:* Texte werden linksbündig, Zahlen rechtsbündig ausgerichtet.
+Zeilenhöhen bleiben kompakt, ohne die Bedienbarkeit zu beeinträchtigen.
+
+[[r-tabellen-stabilitaet]]
+* *Stabilität:* Leere, Lade- oder Fehlerzustände belegen konstanten Raum, damit das Layout ruhig und stabil bleibt. Das Scrollverhalten orientiert sich an den <<barrierefreies-layoutverhalten,Grundsätzen des barrierefreien Layoutverhaltens>>.
+
+[[barrierefreies-layoutverhalten]]
+==== Barrierefreies Layoutverhalten
+
+Barrierefreiheit ist integraler Bestandteil der Layoutlogik.
+Interaktionsziele müssen gut erreichbar, Fokuszustände klar erkennbar und Überläufe kontrolliert sein.
+
+*_Kriterien_*
+
+[[r-zielgroessen-minimum]]
+* *Zielgrößen:* Interaktive Elemente müssen mindestens 24 × 24 CSS-Pixel groß sein (WCAG AA).
+Für eine komfortable Touch-Bedienung wird eine Größe von 44 × 44 CSS-Pixel empfohlen (WCAG AAA).
+
+[[r-fokus-sichtbarkeit-reihenfolge]]
+* *Fokusführung:* Der Fokusindikator ist deutlich und kontrastreich.
+Die Reihenfolge des Fokus folgt der visuellen Lesereihenfolge.
+
+[[r-lange-inhalte-zugriff]]
+* *Lange Inhalte:* Lange Text- oder Datenwerte werden umgebrochen oder mit Auslassungspunkten verkürzt.
+Der vollständige Inhalt bleibt über Tooltip oder Detailansicht zugänglich.
+
+[[r-scrollrichtung-vertikal]]
+* *Scrollrichtung:* Bevorzugt wird eine vertikale Scrollrichtung.
+Horizontal wird nur gescrollt, wenn es fachlich erforderlich ist, beispielsweise bei sehr breiten Tabellen.
+
+[[hauptfenster]]
+=== Hauptfenster
+
+Das Hauptfenster bildet den zentralen Rahmen jeder Anwendung.
+Es definiert die Grundstruktur aus Header-Bereich und Inhaltsbereich und legt damit das Erscheinungsbild, die Orientierung und die Navigation fest.
+
+[[image-hauptfenster-aufbau]]
+.Allgemeiner Aufbau des Hauptfensters
+image::hauptfenster.mockup.drawio.svg[align="center"]
+
+*_Das Hauptfenster folgt modernen Usability-Grundsätzen:_*
+
+* *Konsistenz:* Einheitlicher Aufbau und wiedererkennbare Navigation über alle Seiten hinweg.
+
+* *Effizienz:* Schnell erfassbare Informationen und klarer Zugang zu Funktionen.
+
+* *Barrierefreiheit:* Erfüllung der Anforderungen gemäß WCAG 2.2 / EN 301 549, z. B. klare Fokusführung, ausreichende Kontraste und vollständige Tastaturbedienbarkeit.
+
+* *Responsivität:* Anpassungsfähigkeit an verschiedene Bildschirmgrößen ohne Informationsverlust.
+
+Der Header bleibt in Aufbau und Funktion über alle Anwendungen hinweg einheitlich.
+Inhaltliche Anpassungen erfolgen nur in einem definierten Rahmen (z. B. Logo der Anwendungslandschaft oder Hauptnavigation).
+Der Abschnitt <<header-bereich>> beschreibt die Möglichkeiten zur Gestaltung im Detail.
+
+[[header-bereich]]
+==== Header Bereich
+
+Der Header-Bereich enthält allgemeine Informationen zur Anwendungslandschaft, zu den verfügbaren Fachanwendungen und zum angemeldeten Nutzenden.
+
+[[image-header-aufbau]]
+.Aufbau des Header-Bereiches
+image::header.mockup.drawio.svg[align="center"]
+
+<<image-header-aufbau>> zeigt die Bestandteile des Headers:
+
+* *A* Logo des Anbieters der Anwendungslandschaft
+* *B* Balken in der Primärfarbe der Anwendungslandschaft
+* *C* Logo der Anwendungslandschaft
+* *D* Informationen zum angemeldeten Nutzenden
+* *E/F* Haupt- und Subnavigation als Flyout (zur Nutzung siehe <<hauptnavigation>>)
+
+[[r-header-barrierefrei]]
+Der Header ist für alle Seiten innerhalb einer Anwendungslandschaft gestalterisch identisch.
+Beim Anpassen der Fenstergröße bleiben links ausgerichtete Elemente links und rechts ausgerichtete Elemente rechts; der Raum dazwischen passt sich flexibel an.
+
+Der Header ist vollständig barrierefrei umgesetzt: Fokusreihenfolge, Kontrast und Tastaturbedienung entsprechen den in Kapitel <<barrierefreiheit>> definierten Anforderungen.
+Die Informationen zum angemeldeten Nutzenden zeigen mindestens den Namen oder die Kennung und sind auch über Screenreader eindeutig identifizierbar.
+
+*_Richtlinien_*
+
+[[r-skip-link]]
+* *Bypass Blocks / Skip-Link:* Am Seitenanfang ist ein fokussierbarer „Zum Inhalt springen“-Link vorhanden, der den Fokus korrekt ins `<main>` setzt.
+
+[[r-landmarks]]
+* *Semantische Landmark-Struktur:* Genau ein `<header>`/`role="banner"`, benannte `<nav>`-Landmarks und genau ein `<main>` pro Seite; Landmarks sind eindeutig und nicht redundant.
+
+[[r-konsistente-navigation]]
+* *Konsistente Navigation und Identifikation:* Reihenfolge und Bezeichnungen wiederkehrender Navigationsbestandteile sowie die Identifikation von Komponenten bleiben über Seiten hinweg konsistent.
+
+[[inhaltsbereich]]
+==== Inhaltsbereich
+
+Der Inhaltsbereich stellt den zentralen Arbeitsraum der Anwendung dar.
+Er nutzt ein gemeinsames, responsives Raster, das eine konsistente Anordnung von Komponenten, Formularen und Navigationselementen über alle Fenstertypen hinweg gewährleistet.
+Das Layout basiert auf der Angular-Implementierung der IsyFact-Widgets unter Verwendung von PrimeNG und PrimeFlex.
+
+Im Inhaltsbereich werden sowohl Fachinhalte als auch interaktive Elemente angezeigt.
+Die Gestaltung orientiert sich an den Prinzipien aus Kapitel <<layout-resizing>> (z. B. Reflow, Spacing, Barrierefreiheit) und berücksichtigt insbesondere:
+
+* *Konsistenz*: Einheitliche Struktur und Abstände für alle Seiten und Anwendungstypen.
+* *Responsivität*: Anpassung an verschiedene Bildschirmgrößen und Zoomstufen ohne Informationsverlust.
+* *Barrierefreiheit*: Klare Fokusreihenfolge, ausreichende Kontraste und vollständige Tastaturbedienbarkeit.
+* *Modularität*: Wiederverwendung standardisierter Komponenten (Widgets, Panels, Tabellen, Dialoge).
+Die konkreten Fenster- und Seitentypen, die dieses gemeinsame Raster verwenden, sind in Kapitel <<fenster-und-seitentypen>> detailliert beschrieben:
+
+** <<login>>
+** <<dashboard>>
+** <<dashboard-unterseite>>
+** <<applikationsseite>>
+** <<applikations-detailseite>>
+
+[[modalarme-interaktionen]]
+=== Modalarme Interaktionen (Grundsatz)
+Modale Dialoge unterbrechen den Arbeitsfluss und erschweren die Orientierung.
+Deshalb sollen Interaktionen möglichst im Kontext stattfinden – ohne blockierende Dialoge.
+Dieses Prinzip verbessert Effizienz, Barrierefreiheit und die allgemeine Nutzererfahrung.
+
+*_Grundprinzip_*
+
+* *Bevorzugte Muster:* Statt vollständig modaler Fenster werden bevorzugt kontextbezogene Interaktionsmuster eingesetzt – beispielsweise Drawer, Inline-Bestätigungsleisten, Popover, Tooltips oder aufklappbare Bereiche (Accordions/Expander).
+
+* *Modale Dialoge nur bei zwingendem Bedarf:* Ein modaler Dialog darf nur verwendet werden, wenn dies fachlich oder rechtlich erforderlich ist – etwa bei sicherheitsrelevanten oder bestätigungspflichtigen Aktionen.
+Solche Fälle müssen im Design-Review begründet werden.
+
+*_Fokus-Management_*
+
+[[r-dialog-fokus-beim-oeffnen]]
+* Beim Öffnen wird der Fokus automatisch auf das erste sinnvolle Element oder den Header des neu geöffneten Bereichs gesetzt.
+
+[[r-dialog-fokusfalle]]
+* Der Fokus ist innerhalb des Dialogs einzuschließen („Focus Trap“) – Tab und Shift+Tab dürfen nicht aus dem Dialog hinausführen.
+
+[[r-dialog-esc-schliessen]]
+* Der Escape-Key (ESC) sollte, sofern fachlich erlaubt, den Dialog schließen.
+
+[[r-dialog-fokus-zum-ausloeser]]
+* Beim Schließen kehrt der Fokus zum auslösenden Element zurück.
+
+[[r-keine-sticky-ueberdeckung]]
+* Fokuselemente dürfen niemals durch fixierte oder klebende (sticky) Layoutbereiche verdeckt werden.
+Falls erforderlich, ist dies durch geeignete Layout-Abstände (z. B. +scroll-margin-top+) sicherzustellen.
+
+*_Zielgrößen_*
+
+Interaktive Elemente müssen ausreichend groß und klar erkennbar sein, um sowohl per Maus als auch per Touch und Tastatur zuverlässig bedienbar zu bleiben.
+
+Für interaktive Elemente gelten die Mindestgrößen gemäß den Vorgaben im barrierefreien <<barrierefreies-layoutverhalten, Layoutverhalten>>.
+
+*_Alternativen zu Drag-Interaktionen_*
+
+[[r-drag-alternative]]
+Interaktionen, die standardmäßig Drag-and-Drop verwenden (z. B. Sortieren oder Umordnen), müssen immer auch ohne Drag-Gesten bedienbar sein – beispielsweise über Schaltflächen, Menüeinträge oder Tastaturbefehle.
+(Normbezug: WCAG 2.2 / EN 301 549, Abschnitt 5.2)
+
+*_Overflow und Lesbarkeit_*
+
+Layouts mit dichten Benutzeroberflächen sollen klar strukturiert und scrollbar bleiben.
+
+* Standard ist eine vertikale Scrollrichtung; horizontales Scrollen wird nur eingesetzt, wenn es fachlich zwingend erforderlich ist (z. B. bei breiten Tabellen).
+
+* Lange Texte oder Werte werden automatisch umgebrochen oder mit Auslassungspunkten verkürzt.
+Vollständige Inhalte bleiben über Tooltip oder Detailansicht zugänglich.
+
+* Inhalte dürfen nie abgeschnitten oder außerhalb des sichtbaren Bereichs verborgen sein.
+
+[[drucklayout]]
+=== Drucklayout
+
+Wenn Inhalte aus der Anwendung gedruckt oder als PDF exportiert werden, müssen sie für paged media optimiert sein.
+Grundlage bildet ein spezielles Print-Stylesheet über `@media print`.
+Wo möglich, werden ergänzend Seitenregeln über `@page` eingesetzt, um Format, Ränder und Kopf-/Fußbereiche zu definieren.
+Nicht benötigte UI-Elemente werden ausgeblendet; Farben, Abstände und Umbrüche sind auf gute Lesbarkeit und sparsame Ausgabe (Tinte/Toner) zu optimieren.
+
+[[image-seitendruck1]]
+.Seitendruck über Druck-Funktion des Browsers
+image::Druck_GesamteSeite.png[align="center", scaledwidth="96%"]
+
+==== Technische Grundlagen
+
+[[r-druck-print-stylesheet]]
+* *Print-Stylesheet aktivieren:* Druckspezifische Stile werden über `@media print` angewendet. Alternativ kann ein separates Stylesheet mit media="print" eingebunden werden.
+
+[[r-druck-seitenformat-raender]]
+* *Seitenformat, Ränder und Orientierung:* Mit `@page` werden Format (z. B. A4 hochkant) und Seitenränder definiert. 
+Diese Vorgaben müssen projektspezifisch geprüft und dokumentiert werden.
+
+[[r-druck-fragmentierung]]
+* *Seitenumbrüche und Fragmentierung:* Für stabile Druckausgaben sind die modernen CSS-Eigenschaften break-* (z. B. `break-inside: avoid;`) zu verwenden.
+Diese verhindern, dass Tabellenzeilen oder Inhaltsboxen auf mehrere Seiten „zerschnitten“ werden.
+
+[[r-druck-farbanpassung]]
+* *Farbanpassung beim Drucken:* Mit `print-color-adjust` lässt sich steuern, ob der Browser Farbwerte verändern darf.
+Standardmäßig ist Anpassung durch den User Agent erlaubt; mit dem Wert `exact` kann eine exakte Farbwiedergabe erzwungen werden (sofern vom Browser unterstützt).
+
+[[r-druck-margin-boxes]]
+* *Laufende Kopf-/Fußzeilen und Seitenzahlen:* In Chromium-basierten Browsern ab Version 131 (z. B. Chrome/Edge) können per `@page`-Margin-Boxes automatisch Inhalte wie Titel und Seitenzahlen in die Seitenränder gesetzt werden.
+Andere Browser (u. a. Firefox/Safari) befinden sich noch in der Umsetzung.
+Es sollte daher Progressive Enhancement mit `@supports` eingesetzt werden.
+Wo keine native Unterstützung besteht, kann auf Browser-Standardfunktionen oder spezialisierte Engines wie `Paged.js` oder `Prince` zurückgegriffen werden.
+
+==== Richtlinien zur Anwendung
+
+* *Nur relevante Inhalte drucken:* Navigationsleisten, Header, Footer und interaktive Controls (Buttons, Filter, Toolbars) dürfen nicht gedruckt werden.
+Sie werden über das Print-Stylesheet ausgeblendet. 
+
+* *Farben auf das notwendige Minimum reduzieren:* Für Hintergründe sind helle Töne zu verwenden; flächige Farben nur, wenn sie semantisch notwendig sind (z. B. Status- oder Legendenfarben).
+Farbmanagement erfolgt über `print-color-adjust`.
+
+* *Typografie und Kontrast:* Es muss ausreichender Kontrast im Ausdruck sichergestellt werden.
+Textfarben basieren auf den definierten Graustufen des Web-Themes. 
+
+* *Ziel­format:* Standardformat ist A4 hochkant.
+Querformat sollte nur bei fachlicher Notwendigkeit (z. B. breite Tabellen) eingesetzt werden.
+Das Format wird über `@page` size festgelegt.
+
+* *Metainformationen:* Jede Seite sollte Metainformationen wie Logo, Dokumenttitel, Datum und ggf. den angemeldeten Nutzenden enthalten.
+
+* *Start des Druckvorgangs:*
+** Browserdruck (Datei → Drucken / Ctrl + P) verwendet automatisch das Print-Stylesheet.
+** Eine explizite „Drucken“-Aktion im UI kann eine optimierte Druckvorschau-Ansicht öffnen, die die zu druckenden Inhalte vorab darstellt.
+
+==== Drucken bestimmter Inhaltsbereiche
+Einzelne Inhaltsbereiche (z. B. Tabellen, Detailansichten) können über dedizierte Druck-Buttons vorbereitet und ausgegeben werden.
+
+[[image-darstellungapplication]]
+.Tabelle – Darstellung in Applikation
+image::Druck_Ergebnisliste.png[align="center", scaledwidth="100%",width="627",height="272"]
+
+[[image-darstellungdruckoption]]
+.Tabelle – Darstellung in Druckvorschau
+image::Druck_Darstellung_Druckoption.png[align="center", scaledwidth="100%",width="629",height="385"]
+
+{nbsp} +
+
+{empty} +
+
+[[image-detaildarstellungapplication]]
+.Detailseite – Darstellung in Applikation
+image::Druck_Darstellung_Applikation.png[align="center", scaledwidth="100%",width="629",height="405"]
+
+[[image-darstellungdetaildruck]]
+.Detailseite – Darstellung in Druckvorschau
+image::Darstellung_In_Druckvorschau.png[align="center", scaledwidth="100%",width="500",height="773"]
+
+*_Richtlinien:_*
+
+* Die allgemeinen Regeln des Drucklayouts gelten weiterhin. Navigation, Buttons und Toolbars werden ausgeblendet, nur inhaltliche Daten werden ausgegeben.
+* Eine Druckvorschau-Ansicht sollte auf einer separaten, druckoptimierten Route dargestellt werden.
+** Oberhalb der Seite befindet sich ein prominenter „Drucken“-Button, der `window.print()` auslöst.
+** Versteckte oder verschachtelte Inhalte (z. B. Tabs, Master-Detail-Bereiche) müssen vollständig linearisiert werden, sodass alle Abschnitte untereinander erscheinen – jeweils mit klarer Überschrift.
+* Metainformationen wie Titel und Seitenzahl sollten pro Seite eingebunden werden (je nach Browser-Unterstützung über Margin-Boxen oder Fallbacks).
+
+*_Tabellen:_*
+
+* Spalteninhalte müssen vollständig und lesbar sein; Spaltenbreiten sollten automatisch angepasst werden (`table-layout: auto;`).
+* Tabellenzeilen und Kopfbereiche dürfen nicht getrennt werden (`break-inside: avoid;`).
+* Lange Tabellen sollen über mehrere Seiten hinweg sauber umbrechen.
+
+*_Formulare:_*
+
+* Formulare müssen in einer einspaltigen, linearisierten Struktur dargestellt werden.
+Labels erscheinen neben oder über den jeweiligen Werten.
+* Bei mehrspaltigen Formularen werden Spalten untereinander angeordnet, um Lesbarkeit und logische Reihenfolge zu gewährleisten.
+
+=== Normative Bezüge
+
+[cols="3,2,3", options="header"]
+|===
+| Anforderung | Normbezug | Akzeptanzkriterium
+
+| <<r-nutzungsbandbreite,Nutzungsbandbreite 320–≥1920 px>>
+| WCAG 2.2 SC 1.4.10
+| Ab 320 CSS-px ohne 2-D-Scroll; Hauptinhalt bleibt lesbar/zentriert.
+
+| <<r-textvergroesserung-200,200 % Text-Resize>>
+| WCAG 2.2 SC 1.4.4
+| Bei 200 % keine Funktions-/Informationsverluste.
+
+| <<r-reflow-400,Reflow 400 %/320 px ohne X-Scroll>>
+| WCAG 2.2 SC 1.4.10
+| Im Fließtext bei 400 %/320 px kein horizontales Scrollen.
+
+| <<r-keine-layoutspruenge,Reflow ohne Layoutsprünge>>
+| WCAG 2.2 SC 1.4.10
+| Dynamik (Bilder/Fehler/Platzhalter) erzeugt keine Sprünge.
+
+| <<r-fokus-nicht-ueberdeckt,Fokus nicht verdeckt (Sticky/Overlays)>>
+| WCAG 2.2 SC 2.4.11 / 2.4.12
+| Fokusindikator stets sichtbar, nicht überlagert.
+
+| <<r-spaltenreduktion-3-2-1,Spaltenreduktion 3→2→1>>
+| WCAG 2.2 SC 1.4.10
+| Reflow in Stufen ohne Informationsverlust.
+
+| <<r-konsistente-abstaende,Konsistente Abstände / Text-Spacing>>
+| WCAG 2.2 SC 1.4.12
+| Erhöhtes Spacing bricht Layout nicht.
+
+| <<r-keine-festen-breiten,Keine festen Pixelbreiten>>
+| WCAG 2.2 SC 1.4.10
+| Keine Hard-Widths, die X-Scroll erzwingen.
+
+| <<r-kontextabhaengige-dichte,Kontextabhängige Dichte>>
+| WCAG 2.2 SC 1.4.12
+| Bei hohem Zoom wachsen Zeilenhöhe/Targets leicht.
+
+| <<r-label-feld-naehe,Label-Feld-Nähe & Semantik>>
+| WCAG 2.2 SC 1.3.1 / 3.3.2
+| Labels programmatisch zugeordnet, visuell feldnah.
+
+| <<r-formular-einspaltig,Formulare einspaltig (schmal)>>
+| WCAG 2.2 SC 1.4.10
+| Unterhalb Mid-Breakpoint linearisiert.
+
+| <<r-fehlermeldungen-feldnah,Feldnahe Fehlermeldungen>>
+| WCAG 2.2 SC 3.3.1 / 3.3.3
+| Fehler feldnah, verständlich; Layout bleibt ruhig.
+
+| <<r-tastatur-fokusreihenfolge,Tastatur: Fokusreihenfolge>>
+| WCAG 2.2 SC 2.1.1 / 2.4.3
+| Vollständige Tastaturbedienung ohne Sprünge.
+
+| <<r-tabellen-responsiv,Tabellen responsiv (gestapelt/X-Scroll)>>
+| WCAG 2.2 SC 1.4.10 / 1.3.1
+| Schmal: gestapelt mit Labels; breit: X-Scroll, Köpfe sichtbar.
+
+| <<r-tabellen-priorisierung,Wesentliches priorisieren>>
+| WCAG 2.2 SC 1.3.1
+| Kernspalten sichtbar; Details ausgelagert.
+
+| <<r-tabellen-stabilitaet,Stabile Leer-/Lade-/Fehlerzustände>>
+| WCAG 2.2 SC 1.4.10
+| Zustände belegen konstanten Raum; keine Sprünge.
+
+| <<r-zielgroessen-minimum,Zielgrößen ≥ 24×24 (44×44 empfohlen)>>
+| WCAG 2.2 SC 2.5.8 / 2.5.5
+| Ziele ≥ 24×24 px; Touch 44×44 empfohlen.
+
+| <<r-fokus-sichtbarkeit-reihenfolge,Fokus sichtbar & Reihenfolge korrekt>>
+| WCAG 2.2 SC 2.4.7 / 2.4.11 / 2.4.12 / 2.4.3
+| Fokus klar sichtbar, nicht verdeckt; Reihenfolge logisch.
+
+| <<r-lange-inhalte-zugriff,Lange Inhalte: Zugriff behalten>>
+| WCAG 2.2 SC 1.4.13 / 1.4.10
+| Gekürztes via Tooltip/Detail vollständig zugänglich.
+
+| <<r-scrollrichtung-vertikal,Primär vertikales Scrollen>>
+| WCAG 2.2 SC 1.4.10
+| X-Scroll nur, wenn fachlich nötig.
+
+| <<r-header-barrierefrei,Header barrierefrei>>
+| WCAG 2.2 SC 2.4.3 / 2.4.7 / 1.4.11
+| Tastaturbedienbar; Fokus sichtbar; UI-Kontraste erfüllt.
+
+| <<r-skip-link,Bypass Blocks / Skip-Link>>
+| WCAG 2.2 SC 2.4.1
+| Fokussierbarer „Zum Inhalt springen“-Link setzt den Fokus korrekt ins `<main>`.
+
+| <<r-landmarks,Semantische Landmark-Struktur>>
+| WCAG 2.2 SC 1.3.1 / Technik ARIA11
+| Eindeutige Landmarks: ein `<header>`/banner, benannte `<nav>`, genau ein `<main>`.
+
+| <<r-konsistente-navigation,Konsistente Navigation und Identifikation>>
+| WCAG 2.2 SC 3.2.3 / 3.2.4
+| Reihenfolge/Bezeichnungen wiederkehrender Navigation bleiben konsistent.
+
+| <<r-druck-print-stylesheet,Print-Stylesheet & @page>>
+| CSS Paged Media
+| Druck/PDF via `@media print` + `@page` (Format, Ränder, Kopf/Fuß).
+
+| <<r-druck-fragmentierung,Seitenumbrüche stabil>>
+| CSS Fragmentation
+| `break-inside: avoid` verhindert „Zerschneiden“.
+
+| <<r-druck-farbanpassung,Farbhandhabung im Druck>>
+| CSS Color Adjustment
+| `print-color-adjust` (ggf. `exact`) steuert Farbwiedergabe.
+
+| <<r-druck-margin-boxes,@page Margin-Boxes (Chromium ≥ 131)>>
+| CSS Paged Media – Margin Boxes
+| Kopf-/Fußinhalte via Margin-Boxes; progressive Fallbacks.
+|===
+
 [[basiselemente]]
 == Basiselemente
 
@@ -1824,6 +2340,11 @@ Dadurch soll erkenntlich sein, dass es genau am Ende des letzten Eintrags weiter
 == Design Pattern
 
 Design Patterns sind wiederkehrende Lösungen für Designprobleme, die sich über verschiedene Teile des Frontends erstrecken können.
+
+[[fenster-und-seitentypen]]
+=== Fenster- und Seitentypen
+
+Im Folgenden werden die Fenster- und Seitentypen der Applikation beschrieben.
 
 [[navigation]]
 === Navigation
