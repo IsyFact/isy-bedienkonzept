@@ -745,6 +745,7 @@ Die konkreten Fenster- und Seitentypen, die dieses gemeinsame Raster verwenden, 
 Modale Dialoge unterbrechen den Arbeitsfluss und erschweren die Orientierung.
 Deshalb sollen Interaktionen möglichst im Kontext stattfinden – ohne blockierende Dialoge.
 Dieses Prinzip verbessert Effizienz, Barrierefreiheit und die allgemeine Nutzererfahrung.
+Umsetzungshinweise und Muster finden sich in <<design-pattern, Design Patterns>>.
 
 *_Grundprinzip_*
 
@@ -781,7 +782,6 @@ Für interaktive Elemente gelten die Mindestgrößen gemäß den Vorgaben im bar
 
 [[r-drag-alternative]]
 Interaktionen, die standardmäßig Drag-and-Drop verwenden (z. B. Sortieren oder Umordnen), müssen immer auch ohne Drag-Gesten bedienbar sein – beispielsweise über Schaltflächen, Menüeinträge oder Tastaturbefehle.
-(Normbezug: WCAG 2.2 / EN 301 549, Abschnitt 5.2)
 
 *_Overflow und Lesbarkeit_*
 
