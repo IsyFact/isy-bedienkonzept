@@ -2344,33 +2344,6 @@ Design Patterns sind wiederkehrende Lösungen für Designprobleme, die sich übe
 [[fenster-und-seitentypen]]
 === Fenster- und Seitentypen
 
-[[login]]
-==== Login
-
-
-[[image-loginscreen]]
-.Login Screen
-image::01_Login.png[align="center", width="629",height="528"]
-
-
-
-*Richtlinien zur Anwendung*
-
-* Die generelle Aufteilung der Login Seite entspricht die des Dashboard der Applikation.
-** Header
-** 3-spaltiger Inhaltsbereich
-
-* Der Header-Bereich wird ohne die Hauptnavigation dargestellt.
-In der Höhe bleibt der Header allerdings unverändert.
-+
-* Inhaltsbereich
-** Die linke Spalte bleibt leer.
-** Im mittleren Bereich befindet sich das Login-Formular.
-** In der rechten Spalte findet der Benutzer Kontaktinformationen.
-* Während des Logins sollte eine Validierung stattfinden.
-Feedback wird im Meldungsbereich (zwischen Überschrift und Benutzername) und an den Eingabefeldern dargestellt.
-Genauere Informationen hierzu können in Kapitel Validierung nachgelesen werden.
-
 *WiP*
 
 [[navigation]]
