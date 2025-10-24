@@ -742,7 +742,8 @@ Die konkreten Fenster- und Seitentypen, die dieses gemeinsame Raster verwenden, 
 
 [[modalarme-interaktionen]]
 === Modalarme Interaktionen (Grundsatz)
-Modale Dialoge unterbrechen den Arbeitsfluss und erschweren die Orientierung.
+Modale Dialoge sind blockierende Overlays innerhalb der Anwendung, die den Hintergrund sperren, den Tastaturfokus einfangen und eine Entscheidung erfordern, bevor weitergearbeitet werden kann.
+Dies unterbricht den Arbeitsfluss und erschwert die Orientierung.
 Deshalb sollen Interaktionen möglichst im Kontext stattfinden – ohne blockierende Dialoge.
 Dieses Prinzip verbessert Effizienz, Barrierefreiheit und die allgemeine Nutzererfahrung.
 
@@ -781,7 +782,6 @@ Für interaktive Elemente gelten die Mindestgrößen gemäß den Vorgaben im bar
 
 [[r-drag-alternative]]
 Interaktionen, die standardmäßig Drag-and-Drop verwenden (z. B. Sortieren oder Umordnen), müssen immer auch ohne Drag-Gesten bedienbar sein – beispielsweise über Schaltflächen, Menüeinträge oder Tastaturbefehle.
-(Normbezug: WCAG 2.2 / EN 301 549, Abschnitt 5.2)
 
 *_Overflow und Lesbarkeit_*
 
@@ -2343,6 +2343,33 @@ Design Patterns sind wiederkehrende Lösungen für Designprobleme, die sich übe
 
 [[fenster-und-seitentypen]]
 === Fenster- und Seitentypen
+
+[[login]]
+==== Login
+
+
+[[image-loginscreen]]
+.Login Screen
+image::01_Login.png[align="center", width="629",height="528"]
+
+
+
+*Richtlinien zur Anwendung*
+
+* Die generelle Aufteilung der Login Seite entspricht die des Dashboard der Applikation.
+** Header
+** 3-spaltiger Inhaltsbereich
+
+* Der Header-Bereich wird ohne die Hauptnavigation dargestellt.
+In der Höhe bleibt der Header allerdings unverändert.
++
+* Inhaltsbereich
+** Die linke Spalte bleibt leer.
+** Im mittleren Bereich befindet sich das Login-Formular.
+** In der rechten Spalte findet der Benutzer Kontaktinformationen.
+* Während des Logins sollte eine Validierung stattfinden.
+Feedback wird im Meldungsbereich (zwischen Überschrift und Benutzername) und an den Eingabefeldern dargestellt.
+Genauere Informationen hierzu können in Kapitel Validierung nachgelesen werden.
 
 *WiP*
 
