@@ -505,7 +505,7 @@ Ziel ist eine einheitliche, effiziente und barrierefreie Nutzererfahrung in mode
 Die in Kapitel 2 <<Barrierefreiheit>> beschriebenen Anforderungen (WCAG 2.1 / EN 301 549) gelten uneingeschränkt und bilden den verbindlichen Rahmen.
 
 Die Vorgaben dieses Kapitels sind technologienah formuliert und berücksichtigen die Umsetzung mit Angular sowie den Frameworks PrimeNG und PrimeFlex.
-Grundlegende Interaktionsmuster werden im Kapitel <<design-patterns,Design Patterns>> beschrieben.
+Grundlegende Interaktionsmuster werden im Kapitel <<Design Patterns>> beschrieben.
 
 Die folgenden Gestaltungsprinzipien definieren zentrale Regeln für Struktur, Lesbarkeit und Anpassungsfähigkeit der Benutzeroberfläche und sichern ein konsistentes Erscheinungsbild sowie eine barrierefreie Bedienung über alle Fenstertypen hinweg.
 
@@ -3311,6 +3311,11 @@ image::Stepper_Aufbau.png[align="center", scaledwidth="96%"]
 | WCAG 1.4.10
 | Stepper reflowt 3→2→1 ohne horizontales Scrollen; Leer/Lade/Fehlerzustände verursachen keine störenden Layoutsprünge.
 |===
+
+[[fenster-und-seitentypen]]
+=== Fenster- und Seitentypen
+
+*WiP*
 
 [[navigation]]
 === Navigation
