@@ -1,5 +1,6 @@
 # 1.0.0
 ## Dokumentation
+- IFS-2865: Die Kapitel *Primäre Fenstertypen*, *Sekundäre Fenstertypen* und *Interaktionsmuster* wurden hinzugefügt
 - IFS-2999: Das Kapitel *Fenstertypen und Layout* wurde hinzugefügt
 - IFS-4711: Kennzeichnung der Lizenz vereinheitlichen
 - IFS-4549: Verwaltung der Version der Online-Doku zentralisiert
