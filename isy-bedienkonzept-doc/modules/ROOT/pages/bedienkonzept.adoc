@@ -4071,7 +4071,7 @@ Die Größenanpassung erfolgt innerhalb von gewissen Bereichen:
 .Beispielhafte Gesamtumsetzung eines Beispielformulars im Anwendungsrahmen
 image::24_UC_fullexample_formular.png[align="center"]
 
-[[login]]
+[[login-form]]
 === Login
 
 *WiP*
