@@ -2456,9 +2456,9 @@ Im Vergleich zu einem Menü sind die Funktionen in einer Toolbar immer sichtbar 
 
 Folgende Toolbars gibt es:
 
-* Seiten-Toolbar
-* Tabellen-Toolbar
-* Eingabefeldgruppen mit Toolbar
+* <<seiten-toolbar,Seiten-Toolbar>>
+* <<tabellen-toolbar,Tabellen-Toolbar>>
+* <<eingabefeldgruppen-toolbar,Eingabefeldgruppen mit Toolbar>>
 
 *_Dos:_*
 
@@ -2476,30 +2476,119 @@ Die Elemente in der Toolbar behalten ihre ursprüngliche Größe und Position be
 Stattdessen sollten die am häufigsten benötigten oder sehr wichtige Funktionen repräsentiert werden.
 * Es sollten keine mehrzeiligen Toolbars eingesetzt werden.
 
-*_Seiten-Toolbar_* *WiP*
+[[seiten-toolbar]]
+*_Seiten-Toolbar_*
 
-//Die Seiten-Toolbar kann als Bestandteil der Frontendstruktur unterhalb der <<hauptnavigation>> eingebaut werden (wie beispielhaft in <<image_beispiel_navigation>> zu sehen).
-//Sie beinhaltet Funktionen, welche für das gesamte Frontend gelten, zum Beispiel „Zurück zur Übersicht“, „Seite drucken“ oder „Hilfe“.
+Die Seiten-Toolbar kommt auf Detailseiten von Dashboards und Applikationen zum Einsatz.
+Sie bündelt seitenspezifische Aktionen (z. B. Navigation, Drucken, Hilfe) und stellt diese oberhalb des Inhalts eindeutig abgegrenzt bereit.
+Ihre Ausgestaltung folgt den Vorgaben aus <<toolbar>> und konkretisiert deren Anwendung für Detailseiten.
+Die visuelle Trennung zum Inhaltsbereich ist durch eine Linie oder Schattierung klar und konsistent sicherzustellen.
 
-//[[image-seitentoolbar]]
-//.Seiten-Toolbar
-//image::ToDo[align="center"]
+.Seiten-Toolbar auf Detailseite
+[[image-seitentoolbardetailseite]]
+image::Toolbar_Seiten_Toolbar.png[align="center", width="626",height="25"]
 
-//Auf der linken Seite befindet sich in jeder Seiten-Toolbar eine <<link,Verlinkung>>, die zurück zur dazugehörigen Hauptseite führt.
-//Der Navigationslink wird mit einer Kombination aus Icon und Label implementiert.
-//Alle anderen Funktionen sind als Icon-Buttons einzubauen.
+*_Richtlinien zur Anwendung_*
 
-*_Tabellen-Toolbar_* *WiP*
+* *Funktionsumfang:* Die Seiten-Toolbar stellt ausschließlich Aktionen bereit, die für die gesamte Seite gelten. Hierzu gehören insbesondere „Zurück zur Liste“, „Seite drucken“ und „Hilfe“.
 
-//[[image-tabellentoolbar]]
-//.Tabellen-Toolbar
-//image::ToDo[align="center"]
+* *Rücksprung (links, verpflichtend):* Links außen befindet sich stets die Navigation zurück zur zugehörigen Haupt- bzw. Übersichtsseite.
 
-*_Eingabefeldgruppen mit Toolbar_* *WiP*
+* *Darstellung:* Der Rücksprung ist als Kombination aus Icon und Text auszuführen.
+Weitere Aktionen werden als Icon-Buttons mit eindeutigem sichtbaren Textlabel oder `aria-label` bereitgestellt.
+Die Beschriftung ist konsistent und normgerecht auszuführen.
 
-//[[image-eingabefeldgruppe-mit-toolbar]]
-//.Eingabefeldgruppen mit Toolbar
-//image::ToDo[align="center"]
+* *Responsives Verhalten:* 
+  ** Die Toolbar ist einzeilig und ohne horizontales Scrollen darzustellen.
+  ** Sekundäre Aktionen werden bei schmalen Viewports stufenweise reduziert
+  (Labelkürzung → Gruppierung → Overflow-Menü).
+  ** „Zurück zur Liste“ und Primäraktionen bleiben sichtbar.
+  ** Der Overflow-Trigger liegt rechts außen; die Aktionsreihenfolge bleibt stabil.
+  ** Eine optionale sticky-Ausführung unterhalb der Titelzeile ist zulässig, darf jedoch keine Inhalte überdecken.
+  ** Labels dürfen per Ellipsis verkürzt werden. Bedeutungstragende Icons sind beizubehalten.
+  ** Definierte Breakpoints sind einzuhalten; Layoutsprünge sind auszuschließen.
+
+* *Barrierefreiheit:* 
+** Benennungen und Reihenfolgen gelten anwendungsweit verbindlich.
+** Die Toolbar ist vollständig tastaturbedienbar.
+** Fokusindikatoren sind sichtbar und Kontraste erfüllen mindestens WCAG AA.
+
+[[tabellen-toolbar]]
+*_Tabellen-Toolbar_*
+
+Die Tabellen-Toolbar steht unmittelbar oberhalb einer Tabelle und bündelt Aktionen für die Tabelle sowie für ausgewählte Datensätze.
+Ihre Gestaltung und Interaktion folgen den allgemeinen Vorgaben aus <<toolbar>>.
+
+.Tabellen-Toolbar
+[[image-tabellentoolbar]]
+image::Toolbar_Tabelle.png[align="center", width="626",height="26"]
+
+*_Richtlinien zur Anwendung_*
+
+* *Darstellung & Erkennbarkeit:* Buttons sind vorrangig als Kombination aus Icon und Text bereitzustellen.
+Reine Icon-Buttons sind nur in begründeten Ausnahmefällen zulässig und müssen über einen eindeutig sprechenden Accessible Name verfügen.
+
+* *Filter rechts platzieren:* Ein Filter-Toggle zur Eingrenzung der angezeigten Daten ist immer rechtsbündig auszurichten.
+Der Zustand (aktiv/inaktiv) ist eindeutig zu kennzeichnen.
+Die Auslösung öffnet eine Filterleiste oder ein Panel.
+
+* *Reihenfolge & Benennung:* Tabellenbezogene Aktionen stehen links; primäre Aktionen zuerst, destruktive Aktionen eindeutig benannt (z. B. „Löschen“).
+Benennungen und Reihenfolgen sind anwendungsweit konsistent einzuhalten.
+
+* *Responsives Verhalten:*
+** Bei schmalen Viewports werden Buttons gruppenweise reduziert (zuerst Sekundäraktionen) und optional in ein Overflow-Menü überführt.
+** Horizontales Scrollen ist auszuschließen.
+** Eine sticky-Ausführung ist zulässig, sofern die Tabellenüberschrift nicht überdeckt wird.
+** Labels dürfen per Ellipsis verkürzt werden. Bedeutungstragende Icons sind beizubehalten.
+
+* *Barrierefreiheit:*
+** Die Toolbar ist mit `role="toolbar"` und einem zugänglichen Label (z. B. `aria-label="Tabellen-Aktionen"`) auszuzeichnen.
+** Icon-only-Aktionen erhalten einen eindeutig ermittelbaren Accessible Name.
+** Der Filter-Toggle nutzt `aria-pressed`.
+** Die Fokusreihenfolge entspricht der visuellen Ordnung und der Fokusindikator ist sichtbar.
+** Auswahlabhängige Aktionen werden deaktiviert oder mit einem Zähler versehen (z. B. „Löschen (3)“).
+** Änderungen der Auswahl sind über ein Status-Element (z. B. `role="status"`) auszugeben.
+
+[[eingabefeldgruppen-toolbar]]
+*_Eingabefeldgruppen mit Toolbar_*
+
+Auf Detailseiten kann eine Toolbar zur Bearbeitung von Objekten innerhalb von Eingabefeldgruppen eingesetzt werden.
+Die Ausgestaltung folgt den Vorgaben aus <<toolbar>>.
+
+.Eingabefeldgruppen mit Toolbar
+[[eingabefeldgruppen-mit-toolbar]]
+image::Eingabefeldgruppen_Toolbar.png[align="center", width="626", height="161"]
+
+*_Richtlinien zur Anwendung_*
+
+* *Darstellung:* Die Toolbar innerhalb von Eingabefeldgruppen verwendet ausschließlich Icon-Buttons.
+
+* *Zweck:* Sie stellt Funktionen zur Bearbeitung der Objekte bereit, die innerhalb der jeweiligen Eingabefeldgruppe enthalten sind.
+
+* *Geltungsbereich:* Die bereitgestellten Aktionen wirken stets auf alle Objekte und Untergruppen der jeweiligen Gruppe.
+
+* *Konsistenz je Gruppentyp:* Die verfügbaren Funktionen können je Gruppentyp variieren (vgl. <<eingabefeldgruppen>>), müssen jedoch innerhalb desselben Gruppentyps konsistent sein.
+Beispiel: Die Toolbar einer Hauptgruppe kann neue Elemente hinzufügen.
+Einzelne Elemente werden ausschließlich über die Toolbar ihrer eigenen Überschrift bearbeitet (z. B. Löschen, Drucken).
+
+* *Platzierung:* Die Buttons sind rechts neben der Gruppenüberschrift anzuordnen und innerhalb des Button-Clusters linksbündig auszurichten.
+
+* *Responsives Verhalten:*
+** Der Kopfbereich der Gruppe ist nach Möglichkeit einzeilig auszuführen.
+** Horizontales Scrollen ist auszuschließen.
+** Sekundäre Aktionen werden bei schmalen Viewports gebündelt oder in ein Overflow-Menü überführt.
+** Die Reihenfolge (Primär → Sekundär → Destruktiv → Mehr) bleibt verbindlich bestehen.
+** Falls ein Umbruch erforderlich ist, ist die Toolbar auf einer zweiten Zeile unterhalb der Überschrift darzustellen – ohne Änderungen der Aktionsreihenfolge und ohne Layoutsprünge.
+
+* *Barrierefreiheit:*
+** Die Gruppenüberschrift ist als semantische Überschrift auszuführen.
+** Die Toolbar erhält `role="toolbar"` und ein eindeutiges Label (z. B. `aria-label="Aktionen: Adressdaten"`).
+** Icon-Buttons verfügen über einen eindeutig ermittelbaren Accessible Name.
+** Toggle-Aktionen nutzen `aria-pressed`.
+** Die Fokusreihenfolge entspricht der visuellen Ordnung und der Fokusindikator ist sichtbar.
+** Beim Öffnen eines Overflow-Menüs wandert der Fokus in das Menü, beim Schließen zurück zum Auslöser.
+** Nicht verfügbare Aktionen werden deaktiviert statt ausgeblendet.
+** Kontraste erfüllen mindestens WCAG AA.
 
 [[expander]]
 === Expander (Progressive Disclosure)
