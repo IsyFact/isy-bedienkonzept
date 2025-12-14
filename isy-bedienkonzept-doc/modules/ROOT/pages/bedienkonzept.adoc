@@ -524,7 +524,11 @@ Nutzende erkennen vertraute Muster wieder und müssen keine neuen Bedienweisen e
 Eine vollständige Tastaturbedienung ist jederzeit möglich.
 * *Flexibel, aber geprüft:* Abweichungen innerhalb definierter Spielräume – etwa bei maximalen Breiten – sind zulässig, sofern sie dokumentiert und die festgelegten Akzeptanzkriterien erfüllt sind.
 
+<<<<<<< HEAD
 Die konkreten Fenster‑ und Seitentypen (z. B. Login, Dashboard, Dashboard-Unterseite, Applikationsseite, Applikations-Detailseite) sind im Kapitel Entwurfsmuster (<<primaere-fenstertypen>> und <<sekundaere-fenstertypen>>) beschrieben.
+=======
+Die konkreten Fenster‑ und Seitentypen (z. B. Login, Portalstartseite, Dashboard-Unterseite, Applikationsseite, Applikations-Detailseite) sind im Kapitel Design Patterns <<fenster-und-seitentypen, Fenster- und Seitentypen>> beschrieben.
+>>>>>>> origin/main
 Die hier definierten Prinzipien bilden die verbindliche Grundlage für deren Gestaltung und technische Umsetzung.
 
 [[layout-resizing]]
@@ -3307,6 +3311,11 @@ image::Stepper_Aufbau.png[align="center", scaledwidth="96%"]
 | WCAG 2.1.1 / 2.4.3 / 2.4.7
 | Stepper vollständig tastaturbedienbar; Fokus springt beim Schrittwechsel nachvollziehbar zur Überschrift oder zum ersten Inhalt.
 |===
+
+[[fenster-und-seitentypen]]
+=== Fenster- und Seitentypen
+
+*WiP*
 
 [[navigation]]
 === Navigation
