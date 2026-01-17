@@ -1,5 +1,6 @@
 # 1.0.0
 ## Dokumentation
+- IFS-4550: Beschreibungen für *Seiten-Toolbar*, *Tabellen-Toolbar* und *Eingabefeldgruppen mit Toolbar* wurden  hinzugefügt
 - IFS-2999: Das Kapitel *Fenstertypen und Layout* wurde hinzugefügt
 - IFS-4711: Kennzeichnung der Lizenz vereinheitlichen
 - IFS-4549: Verwaltung der Version der Online-Doku zentralisiert
