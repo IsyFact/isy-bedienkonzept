@@ -505,7 +505,7 @@ Ziel ist eine einheitliche, effiziente und barrierefreie Nutzererfahrung in mode
 Die in Kapitel 2 <<Barrierefreiheit>> beschriebenen Anforderungen (WCAG 2.1 / EN 301 549) gelten uneingeschränkt und bilden den verbindlichen Rahmen.
 
 Die Vorgaben dieses Kapitels sind technologienah formuliert und berücksichtigen die Umsetzung mit Angular sowie den Frameworks PrimeNG und PrimeFlex.
-Grundlegende Interaktionsmuster werden im Kapitel <<Design Patterns>> beschrieben.
+Grundlegende Interaktionsmuster werden im Kapitel <<design-patterns,Design Patterns>> beschrieben.
 
 Die folgenden Gestaltungsprinzipien definieren zentrale Regeln für Struktur, Lesbarkeit und Anpassungsfähigkeit der Benutzeroberfläche und sichern ein konsistentes Erscheinungsbild sowie eine barrierefreie Bedienung über alle Fenstertypen hinweg.
 
@@ -524,7 +524,7 @@ Nutzende erkennen vertraute Muster wieder und müssen keine neuen Bedienweisen e
 Eine vollständige Tastaturbedienung ist jederzeit möglich.
 * *Flexibel, aber geprüft:* Abweichungen innerhalb definierter Spielräume – etwa bei maximalen Breiten – sind zulässig, sofern sie dokumentiert und die festgelegten Akzeptanzkriterien erfüllt sind.
 
-Die konkreten Fenster‑ und Seitentypen (z. B. Login, Portalstartseite, Dashboard-Unterseite, Applikationsseite, Applikations-Detailseite) sind im Kapitel Design Patterns <<fenster-und-seitentypen, Fenster- und Seitentypen>> beschrieben.
+Die konkreten Fenster‑ und Seitentypen (z. B. Login, Dashboard, Dashboard-Unterseite, Applikationsseite, Applikations-Detailseite) sind im Kapitel Entwurfsmuster (<<primaere-fenstertypen>> und <<sekundaere-fenstertypen>>) beschrieben.
 Die hier definierten Prinzipien bilden die verbindliche Grundlage für deren Gestaltung und technische Umsetzung.
 
 [[layout-resizing]]
@@ -732,10 +732,10 @@ Die Gestaltung orientiert sich an den Prinzipien aus Kapitel <<layout-resizing>>
 * *Responsivität*: Anpassung an verschiedene Bildschirmgrößen und Zoomstufen ohne Informationsverlust.
 * *Barrierefreiheit*: Klare Fokusreihenfolge, ausreichende Kontraste und vollständige Tastaturbedienbarkeit.
 * *Modularität*: Wiederverwendung standardisierter Komponenten (Widgets, Panels, Tabellen, Dialoge).
-Die konkreten Fenster- und Seitentypen, die dieses gemeinsame Raster verwenden, sind in Kapitel <<fenster-und-seitentypen>> detailliert beschrieben:
+Die konkreten Fenster- und Seitentypen, die dieses gemeinsame Raster verwenden, sind in Kapitel <<primaere-fenstertypen>> detailliert beschrieben:
 
 ** <<login>>
-** <<dashboard>>
+** <<portalstartseite>>
 ** <<dashboard-unterseite>>
 ** <<applikationsseite>>
 ** <<applikations-detailseite>>
@@ -1056,6 +1056,7 @@ Die leichten Farben sind auf hellen Hintergrund nicht mehr barrierefrei!
 
 Die Anwendungsfarbe des Frontends ist frei wählbar, aber muss vom Projekt auf Barrierefreiheit geprüft werden.
 
+[[applikationsfarben]]
 === Applikationsfarben
 
 Sofern es möglich und sinnvoll ist, werden Applikationen aufgrund ihrer Fachlichkeit in Gruppen zusammengefasst.
@@ -2337,14 +2338,1038 @@ Es kann Lazy Loading verwendet werden.
 Dadurch soll erkenntlich sein, dass es genau am Ende des letzten Eintrags weitergeht.
 
 [[design-pattern]]
-== Design Pattern
+== Design Patterns
 
-Design Patterns sind wiederkehrende Lösungen für Designprobleme, die sich über verschiedene Teile des Frontends erstrecken können.
+Design Patterns beschreiben wiederkehrende und bewährte Lösungsansätze für Interaktions- und Darstellungsanforderungen.
+Sie erstrecken sich über mehrere Komponenten und Bereiche des Frontends und stellen sicher, dass vergleichbare Nutzungssituationen konsistent, verständlich und nutzungsorientiert umgesetzt werden.
+Sie bilden die verbindliche Grundlage für eine einheitliche Gestaltung und Interaktion innerhalb der Anwendung.
 
-[[fenster-und-seitentypen]]
-=== Fenster- und Seitentypen
+[NOTE]
+Für alle Design Patterns gelten die allgemeinen Anforderungen an Barrierefreiheit, Fokusführung und responsives Layoutverhalten gemäß den Kapiteln <<barrierefreiheit>> und <<fenstertypen-layout>>.
 
-*WiP*
+[[primaere-fenstertypen]]
+=== Primäre Fenstertypen
+
+Primäre Fenstertypen (Seitentypen) beschreiben die regulären, dauerhaft verfügbaren Arbeitsansichten im Hauptfenster der Anwendung.
+Sie definieren den kontextbezogenen Darstellungsrahmen sowie das funktionale und visuelle Grundverhalten für wiederkehrende Seitenlayouts.
+
+In ihrer Gesamtheit bilden die Seitentypen die verbindliche Strukturierungsgrundlage für sämtliche Ansichten im Hauptfenster.
+Die nachfolgend beschriebenen Festlegungen zu den einzelnen Seitentypen sind verbindlich anzuwenden.
+
+Die technische Umsetzung kann mit Angular sowie PrimeNG/PrimeFlex erfolgen.
+Genannte Komponenten dienen als Referenz für Interaktions- und Anzeigeverhalten.
+Gleichwertige Implementierungen sind zulässig, sofern die beschriebenen Anforderungen eingehalten werden.
+
+[[login]]
+==== Login
+
+Der Login stellt den initialen Zugang zur Fachanwendung bereit.
+Er ist klar, verständlich und auf einen reibungslosen Einstieg ausgerichtet.
+
+{empty} +
+
+[[image-loginscreen]]
+.Login Screen
+image::01_Login.png[align="center", width="629", height="528"]
+
+{empty} +
+
+*_Layout und Struktur_*
+
+* *Header:* Der Header ist ohne Hauptnavigation darzustellen.
+Aufbau, Landmark-Struktur und Fokusverhalten haben den allgemeinen Vorgaben des <<header-bereich>> zu entsprechen.
+Die visuelle Höhe ist konsistent zu halten.
+
+[[r-login-zentrierte-card]]
+* *Seitenrahmen:* Der Login-Bereich ist zentriert in einem responsiven Container anzuordnen.
+Die Seite folgt einem klaren, einspaltigen Aufbau ohne zusätzliche Layoutspalten.
+
+[[r-login-hilfe-kontakt]]
+* *Hilfe und Kontakt:* Hinweise zu Hilfe und Support sind unterhalb des Login-Formulars in den Inhaltsfluss zu integrieren, entweder als kompakter Support-Block oder über einen „Hilfe & Kontakt“-Expander.
+Eine separate, dauerhaft platzierte Spalte für Hilfe-, Support- oder andere funktionale Inhalte ist nicht vorgesehen.
+
+*_Formular und Eingabefelder_*
+
+[[r-login-felder-autocomplete]]
+* *Felder:* Das Login-Formular enthält mindestens Benutzername und Passwort.
+Optionale Ergänzungen wie „Angemeldet bleiben“ oder „Passwort vergessen?“ sind zulässig.
+
+[[r-login-validierung-inline-global]]
+* *Validierung:* Fehlermeldungen werden verständlich und in unmittelbarer Nähe zum betroffenen Feld angezeigt.
+Zusätzlich kann eine kompakte globale Rückmeldung vorgesehen werden.
+
+[[r-login-passwortmanager]]
+* *Passwortmanager:* Funktionen wie „Passwort anzeigen“ oder Autofill sind nutzerfreundlich und konsistent bereitzustellen.
+
+Details sind in Kapitel <<bedienelemente>> beschrieben.
+
+[[portalstartseite]]
+==== Portalstartseite
+
+Die Portalstartseite dient als zentraler Einstieg nach dem Login.
+Sie bietet eine rollen- und kontextabhängige Übersicht über verfügbare Applikationen und Informationen.
+Die Gestaltung unterstützt schnelle Orientierung und effiziente Navigation.
+
+{empty} +
+
+[[image-dashboard]]
+.Dashboard
+image::02_Dashboard.png[align="center", width="629", height="528"]
+
+[[image-aufbau-dashboard]]
+.Aufbau Dashboard
+image::Aufbau-Dashboard.png[align="center", width="629", height="526"]
+
+{empty} +
+
+*_Aufbau_*
+
+* *Headerbereich:* Der Aufbau entspricht vollständig dem definierten <<header-bereich>>.
+
+* *Inhaltsbereich:* Der Inhaltsbereich ist in drei Teilbereiche zu strukturieren:
+** Quicklinks (*A*)
+** Applikationen-Widgets (*B*)
+** Informationen (*C*)
+
+*_Richtlinien zur Anwendung (alle Teilbereiche)_*
+
+[[r-dashboard-grid]]
+* *Struktur:* Die Teilbereiche sind klar voneinander abgegrenzt und folgen einem responsiven Raster (vgl. <<layout-resizing>>).
+
+* *Relevanz:* Inhalte werden abhängig von Rolle und Nutzungskontext angezeigt.
+Nicht relevante Inhalte werden nicht dargestellt.
+
+* *Widget-Prinzip:* Jedes Widget repräsentiert genau einen Inhaltstyp.
+Es enthält einen Titel, optional ein Icon und klare Aktionen.
+[[r-dashboard-zustaende]]
+* *Zustände:* Lade-, Leer- und Fehlerzustände sind klar erkennbar, verständlich formuliert und stabil dargestellt.
+
+*_Quicklinks (A)_*
+
+* *Platzierung:* Teilbereich *A* liegt auf dem Desktop in der linken bzw. ersten Spalte.
+Auf mobilen Geräten und Tablets wird er oberhalb der Applikations-Widgets dargestellt.
+
+* *Zweck:* Quicklinks bieten Direkteinstiege zu häufig genutzten Funktionen oder Objekten (z. B. „Wiedervorlagen“, „Abgelegte Vorgänge“, „Häufig benutzte Funktionen“).
+
+* *Gruppierung und Umfang:* Quicklinks werden in logischen Gruppen (Widgets) zusammengefasst.
+Pro Gruppe sind in der Regel 5 Links vorzusehen.
+Abweichungen sind zu begründen.
+
+* *Interaktion:* Ziele sind im selben Fenster zu öffnen.
+Bestätigungspflichtige Aktionen erfolgen bevorzugt inline.
+
+*_Applikations-Widgets (B)_*
+
+* *Platzierung:* Teilbereich *B* liegt auf dem Desktop in der mittleren Spalte.
+
+* *Zweck:* Applikations-Widgets dienen als Einstieg zu Applikationen oder Applikationsgruppen.
+Sie werden als Kacheln oder Panels mit Titel, optionalem Icon und kurzer Beschreibung umgesetzt (z. B. `p-card`/`p-panel`).
+
+* *Gruppierung:* Applikationen sind thematisch zu bündeln; einzelne Applikationen können eigene Widgets erhalten.
+
+* *Nav-Parität:* Links innerhalb eines Widgets entsprechen inhaltlich der Navigationsebene 2 (siehe Kapitel <<navigation>>).
+
+* *Sichtbarkeit:* Die Sichtbarkeit erfolgt rollen- bzw. berechtigungsbasiert.
+
+* *Kennzeichnung:* <<applikationsfarben>> und ggf. Applikationsicons sind konsistent einzusetzen.
+
+*_Informationen \(C)_*
+
+* *Platzierung:* Auf dem Desktop liegt Teilbereich *C* rechts in der dritten Spalte.
+Auf mobilen Geräten ist er unterhalb der Applikations-Widgets anzuordnen.
+
+* *Zweck:* Teilbereich *C* enthält Benachrichtigungen, Benutzerinformationen oder Kontaktangaben.
+Er wird nur angezeigt, wenn entsprechende Inhalte vorliegen.
+
+* *Mehr Inhalte:* Weitere Inhalte sind über „Mehr anzeigen“ auf eine Unterseite auszulagern.
+
+{empty} +
+
+[[image-dashboard-elements]]
+.Dashboard-Elemente
+image::Dashboard_Elemente.png[align="center", width="629", height="120"]
+
+{empty} +
+
+*_Aufbau der Widgets_*
+
+* *Typ A/C:*
+** *Strukturelle Anforderungen:* Widgets des Typs A und C verfügen über eine klar erkennbare Überschrift.
+Die Verwendung eines Icons sowie eines „Mehr“-Links ist optional.
+
+** *Darstellung der Links:* Die innerhalb des Widgets bereitgestellten Links sind als Liste mit sichtbarem Textlabel bereitzustellen.
+Der Einsatz von Icons ist optional.
+
+** *Konsistenzanforderungen:* Wird in einem Link eine Kombination aus Icon und Text verwendet, ist diese Darstellungsform für sämtliche Links innerhalb desselben Widgets einheitlich anzuwenden.
+Dekorative Icons sind so umzusetzen, dass sie von assistiven Technologien ignoriert werden (z. B. `aria-hidden="true"`).
+
+* *Typ B:*
+** *Strukturelle Anforderungen:* Widgets des Typs B bestehen aus folgenden Elementen:
+*** einem Widget-Titel,
+*** der Bezeichnung der Applikationsgruppe oder der Applikation,
+*** optional einem Applikationsicon,
+*** einer Farbmarkierung gemäß den festgelegten <<applikationsfarben>>,
+*** Links zu Unterbereichen bzw. Funktionen (Benennung entsprechend <<navigation,Navigationsebene>> 2).
+
+** *Konsistenzanforderungen:* Farbmarkierungen sind pro Applikationsgruppe bzw. Applikation einheitlich einzusetzen.
+Icons derselben Ebene sind konsistent zu gestalten.
+Links verfügen über ein sichtbares Textlabel.
+
+[[dashboard-unterseite]]
+==== Dashboard-Unterseite
+
+Die Dashboard-Unterseite stellt weiterführende Inhalte bereit, die nicht vollständig auf dem Dashboard abgebildet werden können.
+
+{empty} +
+
+[[image-aufbau-dashboard-subpage]]
+.Aufbau Dashboard-Unterseite
+image::Aufbau-Dashboard-Unterseite.png[align="center", width="629", height="526"]
+
+{empty} +
+
+*_Aufbau_*
+
+* *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten <<header-bereich>>.
+
+* *Seiten-Toolbar:* Kontextbezogene Aktionen wie „Zurück zur Übersicht“, „Drucken“ oder „Hilfe“ sind konsistent bereitzustellen.
+
+* *Inhaltsbereich:* Inhalte sind modular aufgebaut und folgen denselben Strukturprinzipien wie das Dashboard.
+
+*_Richtlinien zur Anwendung_*
+
+[[r-dsub-bezug]]
+* *Bezug und Orientierung:* Titel, Icon und Farbmarkierung entsprechen der auslösenden Dashboard-Kachel bzw. -Gruppe.
+[[r-dsub-navigation]]
+* *Navigation:* „Zurück zur Übersicht“ führt zur auslösenden Stelle auf dem Dashboard (ggf. mit Anker).
+Listen bieten eine „Vorheriges/Nächstes“-Navigation innerhalb derselben Treffermenge.
+[[r-app-inhalte]]
+[[r-dsub-layout]]
+* *Layout und Inhalte:* Pro Abschnitt gilt das Ein-Inhaltstyp-Prinzip.
+Für umfangreiche Inhalte können Tabs oder Accordions eingesetzt werden.
+
+[[applikationsseite]]
+==== Applikationsseite
+
+Die Applikationsseite bildet den Einstieg in eine Applikation.
+Sie stellt zentrale Inhalte und Funktionen bereit und dient als Ausgangspunkt für weitere Unterseiten.
+
+{empty} +
+
+[[image-app-page]]
+.Abbildung: Applikationsseite (Beispiel)
+image::04_Applikationsseite.png[align="center", width="629", height="528"]
+
+[[image-app-page-structure]]
+.Aufbau einer Applikationsseite
+image::Aufbau-Applikationsseite.png[align="center", width="629", height="526"]
+
+{empty} +
+
+*_Aufbau_*
+
+* *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten <<header-bereich>>.
+
+* *Optionale Linksnavigation:* Die Linksnavigation bildet applikationsinterne Bereiche und Funktionsgruppen ab.
+
+* *Inhaltsbereich:* Applikationsrelevante Inhalte sind in modularen Abschnitten darzustellen.
+
+*_Richtlinien zur Anwendung_*
+
+* *Eigene Applikationsseite:* Jede Applikation verfügt über eine eigenständige Applikationsseite.
+
+* *Inhaltsumfang je Applikation:* Umfang und Struktur sind applikationsspezifisch festzulegen.
+
+* *Optionale Linksnavigation:* Die Applikationsseite kann eine optionale Linksnavigation enthalten, die applikationsinterne Bereiche und Funktionsgruppen abbildet (siehe Kapitel <<Linksnavigation>>).
+
+* *Inhaltsbereich ohne Linksnavigation:* Entfällt die Linksnavigation, nutzt der Inhaltsbereich die gesamte verfügbare Breite.
+[[r-app-erkennbarkeit]]
+* *Erkennbarkeit der Applikation:* Der Name der Applikation ist eindeutig erkennbar ausgewiesen, z. B. in der Linksnavigation oder in der ersten Gruppierungsüberschrift des Inhaltsbereichs.
+
+*_Kennzeichnung von Applikationsgruppen und Applikationen_*
+
+Applikationen sind, sofern fachlich möglich, zu Applikationsgruppen zusammenzufassen.
+Jede Applikationsgruppe bzw. jede eigenständige Applikation erhält eine eindeutige farbliche Kennzeichnung (<<applikationsfarben>>) und – sofern verwendet – ein konsistentes Applikationsicon.
+
+{empty} +
+
+[[image-farbmarkierung]]
+.Dashboard-Widget – Farbmarkierung und Applikationsicon
+image::Applikation_Widget.png[align="center", width="343",height="145"]
+
+[[image-farbmarkierungdetail]]
+.Farbmarkierung Detailseite und Dialog
+image::Applikation_Farbmarkierung.png[align="center", width="629",height="557"]
+
+{empty} +
+
+[[r-app-kennzeichnung]]
+*_Richtlinien zur Kennzeichnung_*
+
+* *Kennzeichnung über Applikationsfarben:* Jede Applikationsgruppe bzw. jede eigenständige Applikation ist durch eine farbliche Markierung zu kennzeichnen (siehe Kapitel <<applikationsfarben>>).
+
+* *Einsatzorte der Farbcodierung:* Die Applikationsfarbe ist an den folgenden Stellen der Anwendung konsistent einzusetzen:
+** Hauptnavigation – Farbbalken unterhalb des Headers
+** Subnavigation (Flyout) – Farbbalken am oberen Rand des Menüs
+** Dashboard-Widget – Farbbalken am oberen Rand
+** Detailseiten – Hintergrundfarbe der Titelzeile
+** Dialoge der Applikation – Farbbalken oberhalb der Titelzeile
+
+* *Applikationsicon:* Die Verwendung eines Applikationsicons ist optional.
+Wird ein Applikationsicon eingesetzt, ist es an allen vorgesehenen Stellen konsistent zu verwenden.
+
+* *Einsatzorte des Applikationsicons:* Das Applikationsicon kann an folgenden Stellen eingesetzt werden:
+** Dashboard-Widget – <<image-farbmarkierung,Farbmarkierung>> und Applikationsicon
+** Subnavigation (Flyout) – <<image-applikationsicon,Icon der Applikation>>
+** Gruppierungsüberschriften auf Applikationsseiten – <<image-applikationsicon,Icon in Überschriften>>
+
+{empty} +
+
+[[image-applikationsicon]]
+.Applikationsicon auf Applikationsseite
+image::Applikation_Hauptseite2a.png[align="center", width="627",height="521"]
+
+[[applikations-detailseite]]
+==== Applikations-Detailseite
+
+Die Applikations-Detailseite stellt genau ein einzelnes Objekt dar.
+Sie bündelt objektbezogene Informationen und Aktionen in einer klar strukturierten Darstellung.
+
+{empty} +
+
+[[image-applikationdetailbeispiel]]
+.Applikation Detailseite – Beispiel
+image::Detailseite_Beispiel2a.png[align="center", width="629",height="640"]
+
+[[image-aufbauapplikationdetail]]
+.Aufbau Applikation Detailseite
+image::aufbauapplikationdetail.png[align="center", width="629",height="526"]
+
+{empty} +
+
+*_Aufbau_*
+
+[[r-detail-headerbereich]]
+* *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten <<header-bereich>>.
+
+* *Titelzeile:* Die Titelzeile benennt Objekt und Kontext eindeutig.
+
+* *Seiten-Toolbar:* Die Seiten-Toolbar enthält objektbezogene Aktionen wie „Zurück“, „Bearbeiten“, „Drucken“ oder „Hilfe“.
+
+* *Inhaltsbereich:* Der Inhaltsbereich stellt den Objektinhalt in Basisdaten (optional) und Objektdetails dar.
+Ein Informationsbereich (optional) kann ein- und ausgeblendet werden.
+
+*_Richtlinien zur Anwendung_*
+
+[[r-detail-titelzeile]]
+* *Titelzeile (A):* Die Titelzeile besteht aus Varianten von Titel, Headline und einem Kontext-Breadcrumb (keine History-Breadcrumb).
+Ohne verständlichen, aussagekräftigen Text darf keine Detailseite bereitgestellt werden.
+Der Rücksprung in die auslösende Übersicht erfolgt über die Seiten-Toolbar („Zurück zur Liste“).
+
+** *Beispiele (Struktur):*
+*** *2 Ebenen:* _Label Ebene 2_: Objektname / ID
+*** *3 Ebenen:* _Label Ebene 2 – Label Ebene 3_: Objektname / ID
+
+[[r-detail-toolbar]]
+* *Seiten-Toolbar (B):* Die Seiten-Toolbar bündelt die zentralen objektbezogenen Aktionen wie „Zurück zur Liste“, „Drucken“ und „Hilfe“ sowie – sofern vorgesehen – Aktionen zum Bearbeiten.
+Beschriftung und Reihenfolge sind innerhalb der Anwendung konsistent zu halten.
+
+* *Informationsbereich (C, optional):*
+
+** *Ein- und Ausblendung:* Der Informationsbereich ist initial ausgeblendet.
+Er kann über einen eindeutig beschrifteten Button in der Seiten-Toolbar ein- und ausgeblendet werden.
+
+** *Inhaltlicher Zweck:* Der Informationsbereich enthält ausschließlich hilfreiche und ergänzende Informationen zum dargestellten Objekttyp und dessen Bearbeitung.
+
+** *Sichtbarkeit:* Der Informationsbereich und der zugehörige Toolbar-Button werden nur angezeigt, wenn tatsächlich relevante ergänzende Inhalte vorhanden sind.
+
+** *Layoutverhalten:* Beim Einblenden passt sich das Layout an, indem sich der Inhaltsbereich sichtbar nach unten bzw. zur Seite verschiebt.
+Inhalte werden dabei weder überdeckt noch in ihrer Bedienbarkeit beeinträchtigt.
+
+* *Inhaltsbereich (D):*
+
+** *Objektdetails:* Im Inhaltsbereich werden die Objektdetails angezeigt.
+
+** *Kopfdaten (optional):* Der Inhaltsbereich kann Kopfdaten enthalten.
+Sie unterstützen Nutzende dabei, wesentliche Informationen komplexer Objekte auf einen Blick zu erfassen und können optional mit einem Expander kombiniert werden, sodass sie bei Bedarf ein- oder ausgeblendet werden können.
+
+** *Strukturierung:* Umfangreiche Inhalte werden über Gruppierungs-Container und Expander (Progressive Disclosure) sinnvoll gegliedert.
+
+[[r-detail-tabs-accordion]]
+** *Tabs und Accordion:* Tabs dienen der Strukturierung gleichrangiger Inhalte.
+Accordions und Expander sind für nachgeordnete oder optionale Inhalte zu verwenden.
+Mischformen auf derselben Hierarchieebene sind zu vermeiden, um Orientierung und Reflow-Verhalten klar zu halten.
+
+==== Normative Bezüge
+
+[cols="3,2,3", options="header"]
+|===
+| Anforderung | Normbezug | Akzeptanzkriterium
+
+| <<r-login-zentrierte-card,Zentrierte Login-Card, reflow-fähig>>
+| WCAG 2.2 SC 1.4.10 / 1.3.2
+| Bis 400 %/320 px einspaltig nutzbar; Struktur/Lesereihenfolge bleibt erhalten.
+
+| <<r-login-hilfe-kontakt,Hilfe/Support unter Formular/Expander>>
+| WCAG 2.2 SC 3.2.6 / 4.1.2
+| Hilfe konsistent unter Formular oder im Expander; Expander fokussierbar.
+
+| <<r-login-felder-autocomplete,autocomplete für Benutzername/Passwort>>
+| WCAG 2.2 SC 1.3.5 / 3.3.8
+| Felder mit `autocomplete="username"` / `autocomplete="current-password"`; Passwortmanager funktionieren.
+
+| <<r-login-validierung-inline-global,Fehler feldnah und global, ohne Layoutsprünge>>
+| WCAG 2.2 SC 3.3.1 / 3.3.3 / 4.1.3
+| Fehler feldnah und global verständlich; programmatisch als Statusmeldung erkennbar.
+
+| <<r-login-passwortmanager,„Passwort anzeigen“-Toggle tastaturbedienbar>>
+| WCAG 2.2 SC 2.1.1 / 3.3.8 / 4.1.2
+| Toggle tastaturbedienbar, korrekt benannt; verhindert weder Einfügen noch Autofill.
+
+| <<r-dashboard-grid,Dashboard-Grid 3→2→1, kein X-Scroll>>
+| WCAG 2.2 SC 1.4.10
+| Dashboard reflowt 3→2→1 bis 400 %/320 px; kein horizontales Scrollen.
+
+| <<r-dashboard-zustaende,Leere/Lade/Fehler stabil, ohne Layoutsprünge>>
+| WCAG 2.2 SC 1.4.10 / 4.1.3
+| Leer-/Lade-/Fehlerzustände klar als Status erkennbar; keine Layoutsprünge.
+
+| <<r-dsub-bezug,Unterseite spiegelt Titel/Icon/Farbe der Kachel>>
+| WCAG 2.2 SC 3.2.4
+| Titel/Icon/Farbe kennzeichnen denselben Kontext konsistent.
+
+| <<r-dsub-navigation,„Zurück zur Übersicht“ und Vorheriges/Nächstes>>
+| WCAG 2.2 SC 2.4.3 / 2.4.5
+| Treffermenge seitenweise durchlaufbar; Rückkehr zur Übersicht jederzeit möglich.
+
+| <<r-dsub-layout,Unterseite: Grid 3→2→1, stabile Zustände>>
+| WCAG 2.2 SC 1.3.1 / 1.4.10
+| Inhalte in klaren Abschnitten; 3→2→1-Reflow ohne horizontales Scrollen.
+
+| <<r-app-erkennbarkeit,App-Name prominent/programmatisch erkennbar>>
+| WCAG 2.2 SC 2.4.6
+| App-Name als Überschrift/Label klar wahrnehmbar und programmatisch identifizierbar.
+
+| <<r-app-inhalte,Abschnitte ohne Misch-Widgets; Tabs/Accordion bei Bedarf>>
+| WCAG 2.2 SC 1.3.1 / 1.4.10
+| Pro Abschnitt ein Inhaltstyp; umfangreiche Inhalte via Tabs/Accordion strukturiert.
+
+| <<r-app-kennzeichnung,Farben/Icons konsistent, nicht allein Information>>
+| WCAG 2.2 SC 1.4.1 / 1.4.11
+| Farben/Icons kennzeichnen Apps konsistent; Information nicht nur über Farbe; Nicht-Text-Kontrast erfüllt.
+
+| <<r-detail-titelzeile,Titelzeile Pflicht; Kontext eindeutig>>
+| WCAG 2.2 SC 2.4.6
+| Titelzeile benennt Objekt und Kontext eindeutig; fungiert als Überschrift.
+
+| <<r-detail-toolbar,Toolbar konsistent; Enter/Esc-Konvention>>
+| WCAG 2.2 SC 2.1.1 / 3.2.3
+| Toolbar einheitlich, vollständig tastaturbedienbar; Verhalten appweit konsistent.
+
+| <<r-detail-tabs-accordion,Tabs für gleichrangig; Accordion für optional>>
+| WCAG 2.2 SC 1.3.1 / 1.4.10
+| Gleichrangiges in Tabs, optional/nachgeordnet in Accordions; Gliederung bleibt auch bei Reflow klar.
+|===
+
+[[sekundaere-fenstertypen]]
+=== Sekundäre Fenstertypen
+
+Sekundäre Fenstertypen ergänzen die in Kapitel <<primaere-fenstertypen>> beschriebenen Seitentypen um temporäre, kontextsensitive Anzeigekontexte.
+Sie werden als Overlays oder Dialoge außerhalb bzw. innerhalb des regulären Seitenflusses dargestellt und dienen insbesondere der Fokussierung, Bestätigung oder Ergänzung von Arbeitsvorgängen.
+
+Für sekundäre Fenstertypen gelten die gleichen Grundlagen zu <<barrierefreiheit>>, Struktur und technischer Umsetzung wie in Kapitel <<primaere-fenstertypen>> beschrieben.
+Zusätzlich ist ein modalarmes Interaktionsverhalten sicherzustellen.
+
+[[container-overlays]]
+==== Container und Overlays
+
+Container- und Overlay-Komponenten stellen eigenständige Anzeigekontexte dar, in denen Inhalte gezielt außerhalb oder innerhalb des regulären Seitenflusses dargestellt werden.
+
+Kontextnahe, nicht blockierende Muster (z. B. Drawer/Sidebars, Popover oder Inline-Leisten) sind grundsätzlich gegenüber stark modalen Lösungen zu bevorzugen.
+Modale Dialoge kommen ausschließlich dann zum Einsatz, wenn sie fachlich zwingend erforderlich sind (vgl. <<modalarme-interaktionen>>).
+
+Sekundäre Fenstertypen sind so zu gestalten, dass sie den Arbeitsfluss möglichst wenig unterbrechen und die Orientierung erhalten bleibt.
+
+Die folgenden Unterkapitel konkretisieren Aufbau, Inhalte und Interaktionsverhalten der einzelnen Overlay- und Dialogtypen.
+
+*_Barrierefreiheits-Baseline (Overlays)_*
+
+Detailanforderungen sind in Kapitel <<barrierefreiheit>> beschrieben.
+
+[[r-overlays-tastatur]]
+* *Tastaturbedienbarkeit:* Alle interaktiven Elemente innerhalb von Overlays sind vollständig per Tastatur bedienbar.
+Der aktuelle Fokus ist jederzeit sichtbar.
+
+[[r-overlays-fokus]]
+* *Fokusführung:* Beim Öffnen ist ein sinnvoller initialer Fokus zu setzen.
+Bei modalen Overlays ist eine Fokusfalle umzusetzen.
+Beim Schließen kehrt der Fokus an das auslösende Element zurück.
+
+[[r-overlays-name-rolle-wert]]
+* *Name, Rolle und Wert:* Relevante Informationen sind programmatisch ermittelbar (z. B. `aria-labelledby`, `aria-describedby`, bei Modalen zusätzlich `aria-modal="true"`).
+
+[[r-overlays-reflow]]
+* *Reflow und Responsivität:* Overlays sind im Rahmen der Reflow-Anforderungen ohne horizontales Scrollen nutzbar.
+Layoutsprünge bei Zustandsänderungen sind zu vermeiden.
+
+[[container-overlays-matrix]]
+*Entscheidungsmatrix*
+
+Die folgende Entscheidungsmatrix legt fest, welche Container- und Overlay-Typen für typische Interaktionsfälle einzusetzen sind.
+Sie stellt sicher, dass vergleichbare Situationen konsistent gelöst werden, die kognitive Last gering bleibt und grundlegende Anforderungen an Barrierefreiheit und User Experience eingehalten werden.
+
+[cols="3,3,4,2", options="header"]
+|===
+| Interaktionsfall | Empfohlener Container | Begründung | PrimeNG (Bezug)
+
+| Kurze, reversible Bestätigung
+| Popover nahe Auslöser
+| Die Entscheidung erfolgt im Kontext; minimaler Fokuswechsel; optionale Rückgängig-Option per Toast
+| `p-popover`, `p-toast`
+
+| Kontextnahe Bearbeitung (ein Formularabschnitt)
+| Drawer/Side Panel (nicht blockierend)
+| Der Arbeitskontext bleibt sichtbar; geringere kognitive Last als Modal
+| `p-sidebar`
+
+| Mehrschritt-Anlage oder komplexer Flow
+| Seiteneigener Stepper (nicht modal)
+| Bessere Orientierung, History und Deeplinks sind möglich; Inline-Validierung
+| `p-stepper`, `p-message`
+
+| Rechtlich/irreversibel/hochriskant
+| Modaler Dialog (nur wenn zwingend)
+| Explizite Willensbekundung ist erforderlich; Input-Fokus ist abgesichert
+| `p-dialog [modal]="true"`
+
+| Systemhinweis oder Status
+| Toast/Snackbar (global) oder Inline-Message
+| Nicht blockierend; Screenreader-kompatibles Live-Region-Verhalten
+| `p-toast`, `p-message`
+
+| Hilfe oder Kontextinfo
+| Popover oder Expander (inline)
+| Zusatzinfos ohne Unterbrechung des Workflows
+| `p-popover`, `p-accordion`, `p-panel`
+|===
+
+Die nachfolgenden Abschnitte konkretisieren den in dieser Entscheidungsmatrix aufgeführten Dialog als Overlay-Typ und legen Aufbau, Einsatz und spezielle Varianten (z. B. Meldungsdialoge für Bestätigungen und Warnungen) verbindlich fest.
+
+[[dialoge]]
+==== Dialoge
+
+Dialoge sind ein in <<container-overlays>> definierter Overlay-Typ.
+Sie sind sekundäre Fenster über dem Hauptinhalt, die bei modaler Verwendung den Seitenkontext blockieren.
+Sie werden primär eingesetzt für kurze, fokussierte Aufgaben, rechtlich notwendige Bestätigungen sowie kompakte Dateneingaben, die nicht sinnvoll inline oder im Drawer lösbar sind.
+
+*_Aufbau_*
+
+* *Titelzeile (A):* Die Titelzeile ist aussagekräftig und benennt Aktion und Zielobjekt (z. B. „Personalie XY löschen“).
+Ein optionaler Subtitel kann die Situation präzisieren (z. B. „Personalie hinzufügen – Registerdatensatz XY“; Haupttitel „Personalie hinzufügen“, Subtitel „Registerdatensatz XY“).
+Eine Farbmarkierung im Rahmen der Applikation ist zulässig.
+
+* *Inhaltsbereich (B):* Der Inhaltsbereich bleibt kompakt und beschränkt sich auf die konkrete Eingabe bzw. Information.
+Optional kann ein oberer Hinweis- oder Validierungsbereich zur Rückmeldung genutzt werden.
+
+* *Buttonleiste \(C):* Die Buttonleiste enthält Primäraktion (z. B. Löschen, Speichern), Sekundäraktion(en) und Abbrechen.
+Reihenfolge und Benennung sind in der gesamten Anwendung einheitlich zu halten.
+
+{empty} +
+
+[[image-aufbau-abc]]
+.Aufbau Dialog
+image::Dialog_Aufbau_ABC.png[align="center", width="627",height="249"]
+
+{empty} +
+
+*_Richtlinien zur Anwendung_*
+
+[[r-dialoge-modalitaet]]
+* *Modalität:* Modalität wird nur bei fachlicher Erforderlichkeit eingesetzt.
+Inline-Muster oder Confirm-Popups sind vorzuziehen.
+
+* *Stapelung:* Dialog-Kaskaden sind zu vermeiden.
+Eine zweite Ebene ist nur in Ausnahmefällen zulässig.
+Die Schließreihenfolge entspricht der Öffnungsreihenfolge.
+
+* *Größe:* Die Dialoggröße richtet sich nach dem Inhalt.
+Maximalmaße orientieren sich an Viewport bzw. Hauptfenster.
+Der Dialog darf intern scrollen; bei modaler Verwendung bleibt der Hintergrund gesperrt.
+Horizontales Scrollen ist zu vermeiden.
+
+* *Konsistentes Raster:* Formulare im Dialog folgen demselben Feldlayout wie im Ansichtsmodus.
+Die Anordnung passt sich responsiv an und bleibt auch in schmalen Viewports übersichtlich (vgl. <<layout-resizing>>).
+
+*Dialog-Typen*
+
+[cols="1,3,2", options="header"]
+|===
+| Dialog-Typ
+| Beschreibung und empfohlener Einsatz
+| PrimeNG (Bezug)
+
+| Modal
+| Blockiert den Hintergrund. Der Einsatz ist nur für rechtlich erforderliche, irreversible, sicherheitskritische oder transaktionale Commit-Aktionen vorgesehen.
+| `p-dialog [modal]="true"`
+
+| Modeless
+| Blockiert den Hintergrund nicht, überlagert nur den Inhalt. Der Einsatz ist für ergänzende, kurze Aufgaben vorgesehen (z. B. Details bearbeiten).
+| `p-dialog [modal]="false"`
+
+| Sheet (Bottom/Side Sheet)
+| Am Rand angedockt, weniger intrusiv. Der Einsatz ist für mobile bzw. kompakte Bestätigungen oder sekundäre Panels vorgesehen.
+| `p-dialog [modal]="true" position="bottom"` oder `p-sidebar position="right/left"`
+
+| Vollbild
+| Nutzt den gesamten Viewport. Der Einsatz ist nur bei sehr komplexen, zeitlich fokussierten Aufgaben mit klarer Rückkehr in den Ausgangskontext vorgesehen.
+| `p-dialog [modal]="true" [style]="{width:'100vw', height:'100vh'}` +
+oder eigene Route (bevorzugt)
+|===
+
+[[meldungsdialoge]]
+==== Meldungsdialoge
+
+Meldungsdialoge sind eine spezialisierte Form von Dialogen.
+Sie sind blockierende Overlays, die den Hintergrund sperren und eine sofortige, bewusste Entscheidung erfordern.
+Sie dienen der Absicherung kritischer Aktionen oder der Unterbindung riskanter Zustände.
+
+*_Zwingende Einsatzfälle für Meldungsdialoge_*
+
+[[r-meldungsdialoge-einsatzfaelle]]
+* Irreversible, rechtlich wirksame oder sicherheitskritische Aktionen sind abzusichern (z. B. Objekt löschen, Veröffentlichung freigeben, rechtlich bindend absenden).
+
+* Bei drohendem Datenverlust ist eine explizite Bestätigung erforderlich (z. B. „Ungespeicherte Änderungen verwerfen?“).
+
+* Nicht fortsetzbare Fehlerzustände erfordern eine unmittelbare Entscheidung (z. B. Sitzung abgelaufen, Authentifizierung fehlgeschlagen).
+
+* Meldungsdialoge sind nicht für reine Informationen oder reversible Aktionen einzusetzen.
+Dafür sind modalarme Alternativen zu verwenden (vgl. <<bestaetigen-rueckgaengig>>).
+
+{empty} +
+
+[[image-meldungsdialogobjloeschen]]
+.Meldungsdialog – Objekt löschen
+image::Dialog_Meldung_ObjektLoeschen.png[align="center", width="329",height="163"]
+
+
+[[image-aufbaumeldungsdialog]]
+.Aufbau Meldungsdialog
+image::Aufbau_Meldungsdialog.png[align="center", width="325",height="162"]
+
+{empty} +
+
+*_Aufbau_*
+
+* *Titelzeile (A):* Die Titelzeile formuliert Aktion und Zielobjekt eindeutig (z. B. „Vorgang 4711 löschen“).
+
+* *Meldungs-Icon (B):* Das Meldungs-Icon ist optional und abhängig von der Severity.
+Es unterstützt die Einordnung der Meldung (Info, Warnung, Fehler), ohne dass Farbe als alleiniges Unterscheidungsmerkmal dient.
+
+* *Beschreibung \(C):* Die Beschreibung ist als kurzer Satz zur Wirkung bzw. Folge zu formulieren.
+Technische Pfade oder IDs sind im Fließtext zu vermeiden.
+Zusätzliche Details (z. B. Fehlercodes oder Support-Hinweise) können bei Bedarf in einem Expander bereitgestellt werden (Progressive Disclosure).
+
+* *Dialogbuttons (D):* Die Dialogbuttons sind eindeutig und aktionsbezogen zu beschriften (statt „OK/Ja/Nein“).
+Es sind mindestens eine Primäraktion (z. B. „Löschen“) sowie „Abbrechen“ bereitzustellen.
+Redundante Kombinationen wie „Nein“ und „Abbrechen“ sind zu vermeiden.
+
+==== Normative Bezüge
+
+[cols="3,2,3", options="header"]
+|===
+| Anforderung | Normbezug | Akzeptanzkriterium
+
+| <<r-overlays-tastatur,Tastaturbedienbarkeit Overlays>>
+| WCAG 2.2 SC 2.1.1 / 2.1.2 / 2.4.7
+| Overlays vollständig per Tastatur bedienbar; sichtbarer Fokus; keine Tastaturfalle.
+
+| <<r-overlays-fokus,Fokusführung Overlays>>
+| WCAG 2.2 SC 2.4.3 / 2.4.7
+| Beim Öffnen sinnvoller Initialfokus; Fokusreihenfolge folgt der visuellen Struktur.
+
+| <<r-overlays-name-rolle-wert,Overlays programmatisch erkennbar (Name/Rolle/Wert)>>
+| WCAG 2.2 SC 4.1.2
+| Overlays und Controls mit programmatisch ermittelbarem Name/Rolle/Zustand; modale Overlays nutzen `aria-modal`.
+
+| <<r-overlays-reflow,Overlays: Reflow & Responsivität>>
+| WCAG 2.2 SC 1.4.10
+| Bis 400 %/320 px ohne horizontales Scrollen nutzbar; Inhalte/Funktionen bleiben erhalten.
+
+| <<r-dialoge-modalitaet,Dialoge: Modalität nur bei Erforderlichkeit>>
+| WCAG 2.2 SC 3.3.4
+| Stark modale Dialoge nur bei rechtlich/finanziell/datenkritischen Aktionen; unterstützen Prüfen/Bestätigen.
+
+| <<r-meldungsdialoge-einsatzfaelle,Meldungsdialoge: zwingende Einsatzfälle>>
+| WCAG 2.2 SC 3.3.4
+| Meldungsdialoge sperren Hintergrund nur bei irreversiblen, sicherheitskritischen Aktionen oder drohendem Datenverlust; sonst modalarme Muster.
+|===
+
+[[interaktionsmuster]]
+=== Interaktionsmuster
+
+Interaktionsmuster definieren wiederkehrende Abläufe und Rückmeldungen für häufige Use-Cases (z. B. Bestätigen und Rückgängig, Benachrichtigungen, Inline-Edit, Drill-Down, Assistent/Stepper).
+Ziel ist eine effiziente und konsistente Bedienung mit möglichst wenigen modalen Unterbrechungen.
+Inline-, Drawer-, Popover- oder Drill-Down-Lösungen haben Vorrang vor blockierenden Dialogen.
+Klare Aktionslabels, Rückgängig-Optionen (wo möglich) sowie feldnahe Validierung mit ergänzender Statusmeldung unterstützen dieses Ziel.
+
+Die Muster berücksichtigen die Anforderungen an Tastatur- und Screenreader-Bedienbarkeit gemäß Kapitel <<barrierefreiheit>> und greifen auf Angular und PrimeNG/PrimeFlex zurück (Komponenten dienen als Referenz).
+Entscheidungskriterien und Barrierefreiheitsgrundlagen sind in <<container-overlays>> beschrieben.
+
+[[bestaetigen-rueckgaengig]]
+==== Bestätigen und Rückgängig
+
+Bestätigungen und Rücknahmen erfolgen bevorzugt im Kontext, ohne den Arbeitsfluss oder die Lesereihenfolge unnötig zu unterbrechen.
+Wo immer fachlich vertretbar, ist eine Rückgängig-Option vorzusehen.
+
+*_Aufbau_*
+
+* *Inline-Bestätigungsleiste:* Am betroffenen Bereich erscheint eine kurze Bestätigung.
+Diese benennt Aktion und Objekt und zeigt eine eindeutig beschriftete Primär- sowie Alternativaktion.
+
+* *Angedockte Bestätigung am Auslöser:* Neben dem auslösenden Element erscheint ein kompakter Popover oder ConfirmPopup.
+Aktion und Objekt sind klar benannt; die Auswahl erfolgt direkt im Sichtkontext.
+
+* *Rückgängig-Hinweis:* Nach schnellen, reversiblen Aktionen ist eine Rückgängig-Option vorzusehen, die Nutzende unmittelbar ausführen können.
+
+*_Richtlinien zur Anwendung_*
+
+* *Kontextnah statt modal:* Bestätigungen erfolgen bevorzugt inline oder direkt am Auslöser.
+Modale Dialoge kommen nur zum Einsatz, wenn eine Bestätigung rechtlich relevant, irreversibel oder sicherheitskritisch ist.
+
+* *Eindeutige Sprache:* Aktionslabels benennen die konkrete Aktion und das Ergebnis (z. B. „Löschen“, „Archivieren“).
+Formulierungen wie „Ja/Nein“ sind zu vermeiden.
+
+[[r-bestaetigen-undo]]
+* *Rücknahme ermöglichen:* Reversible Aktionen erhalten eine Rückgängig-Option.
+Diese bleibt für eine angemessene Zeit verfügbar (in der Regel 5–10 s) und wird danach entfernt oder deaktiviert.
+
+* *Barrierefreiheit & Fokus:* Bestätigungen übernehmen den Fokus nicht dauerhaft.
+Beim Schließen kehrt der Fokus zum Auslöser zurück.
+Die Ankündigung von Statusmeldungen erfolgt über eine Live-Region, ohne dass sich der Fokus verschiebt.
+
+*_Verhalten_*
+
+* *Tastatur:* Enter aktiviert die Primäraktion, Esc schließt Dialoge oder bricht ab (kontextabhängig).
+Die Tab-Reihenfolge ist logisch, stabil und folgt dem Lesefluss.
+
+* *Screenreader:* Kurztexte und Labels benennen Aktion und Objekt (z. B. „Datei löschen“).
+„Rückgängig“ wird von Screenreadern als Bedienelement (z. B. Button oder Link) angekündigt.
+
+* *Mobil:* Touch-Ziele erfüllen die Mindestgröße und den Mindestabstand gemäß den geltenden <<barrierefreies-layoutverhalten,Barrierefreiheitsvorgaben>>.
+Platzierung und Größe von Popovers dürfen keine für den aktuellen Task erforderlichen Interaktionen verdecken.
+
+*_PrimeNG-Mapping (Referenz)_*
+
+* *Inline-Leiste:* Für Inline-Bestätigungen kommt eine Message-Komponente oder ein eigener Inline-Container mit `p-button` zum Einsatz.
+
+* *Angedockt:* Für angedockte Bestätigungen ist `p-popover` oder `p-confirmPopup` mit klar beschrifteten Aktionen vorgesehen.
+
+* *Rückgängig-Option:* Für die Rückgängig-Option kommt `p-toast` (via `MessageService`) mit interaktiver Aktion (Button oder Link) zum Einsatz.
+
+[[inline-edit_inline_validation]]
+==== Inline-Edit und Inline-Validation
+
+Inline-Edit und Inline-Validation sind der Standard für fachliche Änderungen im aktuellen Sichtkontext und vorzugsweise einzusetzen.
+
+Fachliche Änderungen erfolgen im Sichtkontext (Abschnitt, Karte, Tabellenzeile), ohne modale Blockade und ohne Seitenwechsel.
+Die Validierung erklärt feldnah die Ursache und bietet zusätzlich eine knappe globale Zusammenfassung.
+
+Dieses Muster ist zu verwenden, wenn Änderungen lokal, überschaubar und ohne komplexe fachliche oder technische Abhängigkeiten möglich sind.
+Sind diese Voraussetzungen nicht erfüllt, ist stattdessen das <<drilldown_detailansicht,Drill-Down-Pattern>> zu verwenden.
+
+*_Aufbau_*
+
+* *Inline-Edit im Kontext:* Bearbeitungsbereiche erscheinen dort, wo die Information gelesen wird – z. B. in einem Detailabschnitt, einer Karte oder in einer Tabellenzeile.
+Orientierung und Vergleichbarkeit bleiben erhalten.
+
+* *Feldnahe Hilfen und Fehler:* Hinweise und Fehlertexte sind eindeutig dem Feld zugeordnet, z. B. über `aria-describedby`.
+Die Fehlertexte enthalten konkrete Hinweise zur Behebung.
+
+* *Globale Statuszone:* Im Abschnitt oder Seitenkopf erscheint eine kompakte Zusammenfassung (z. B. „3 Felder prüfen“).
+Die Zusammenfassung kann als Sprungliste zu den betroffenen Feldern umgesetzt werden.
+
+*_Richtlinien zur Anwendung_*
+
+* *Start des Editierens:* Nach Aktivierung des Bearbeitungsmodus wechselt der Fokus auf das erste relevante Feld.
+Der Bearbeitungskontext ist visuell eindeutig erkennbar (z. B. durch Rahmen, Label „Bearbeitung aktiv“ oder Zeilenhervorhebung).
+
+* *Speichern und Abbrechen im lokalen Kontext:* Speichern und Abbrechen gelten nur für den aktuellen Bereich (Abschnitt oder Zeile) und verändern keine anderen Teile der Seite.
+Nach dem Speichern oder Abbrechen kehrt der Fokus zum Auslöser oder zur bearbeiteten Zeile zurück.
+
+* *Grenze von Inline-Edit:* Inline-Edit ist nicht zulässig, sobald viele Felder, mehrere Fachgruppen, feldübergreifende Validierung oder Anforderungen an Deeplinks und Browser-History vorliegen.
+In diesen Fällen ist das <<drilldown_detailansicht,Drill-Down-Pattern>> zu verwenden.
+
+[[r-inlineedit-validierung]]
+* *Validierung und Barrierefreiheit:* Die Validierung erfolgt feldnah (z. B. beim Verlassen des Feldes) oder beim Speichern; das Verhalten ist konsistent zu halten.
+Entweder ist die Primäraktion nur bei gültigen Eingaben aktiv, oder „Speichern“ löst die Validierung aus und setzt den Fokus zur Fehlerzusammenfassung oder auf das erste fehlerhafte Feld.
+Fehlerzustände erhalten die Kennzeichnung `aria-invalid="true"`.
+Die Verknüpfung von Hilfs- und Fehlertexten erfolgt über `aria-describedby`.
+
+*_Verhalten_*
+
+* *Tastatur:* Innerhalb des Bearbeitungsbereichs speichert Enter bei gültigen Eingaben; Esc verwirft die Änderungen im aktuellen Bereich.
+Ausgeblendete oder nicht relevante Bedienelemente sind von der Tab-Reihenfolge auszunehmen.
+
+* *Rückmeldung:* Erfolgsmeldungen erscheinen als nicht blockierende Hinweise (z. B. inline oder als Toast).
+Fehlermeldungen bleiben sichtbar und dem Feld zugeordnet, bis der Fehler behoben ist.
+
+* *Strukturierung:* Große Bereiche sind in Tabs oder Accordion-Panels zu gliedern.
+Die Panels bleiben einzeln validier- und speicherbar, sofern dies fachlich vorgesehen ist.
+
+*_PrimeNG-Mapping (Referenz)_*
+
+* *Formular-Implementierung:* Für die Umsetzung kommt Angular `FormGroup` mit PrimeNG-Inputs (`p-inputText`, `p-dropdown` usw.) und konsistenter, feldnaher Fehleranzeige zum Einsatz.
+
+* *Tabellen-Edit:* Die Bearbeitung in `p-table` erfolgt als Zeilen- oder Zellen-Edit mit Speichern und Abbrechen.
+Bei hoher Komplexität ist zusätzlich pro Zeile ein Drill-Down-Einstieg vorzusehen.
+
+* *Fehlermeldungen:* Die feldnahe Rückmeldung erfolgt über `p-message`, optional zusätzlich global über `p-toast` (z. B. für zusammenfassende Hinweise).
+
+[[drilldown_detailansicht]]
+==== Drill-Down (Detailansicht)
+
+Der Drill-Down wird eingesetzt, wenn die Bearbeitung den Rahmen von Inline-Edit und Inline-Validation übersteigt.
+Dies ist insbesondere der Fall bei vielen Feldern oder Fachgruppen, feldübergreifender Validierung, komplexen Abläufen (z. B. Rollen, Berechtigungen, Teilobjekte) oder bei Anforderungen an Deeplinks und Browser-Navigation.
+Fachliche Änderungen erfolgen in einer separaten Detailansicht (eigene Route) mit klarer Rückkehr zum Ausgangskontext (z. B. Liste oder Karte).
+
+*_Aufbau_*
+
+* *Auslöser im Ausgangskontext:* Pro Objekt ist eine eindeutig benannte Aktion vorgesehen (z. B. „Details“ oder „Bearbeiten“).
+Diese Aktion führt zur Detailansicht für die vollständige, strukturierte Bearbeitung.
+
+* *Detailkopf:* Der Kopfbereich enthält die Benennung von Objekt und Modus sowie eine eindeutig beschriftete Zurück-Aktion.
+Die Verwendung von Breadcrumbs ist optional.
+
+* *Statuszone und Fehlerübersicht:* Oberhalb des Formulars kann eine kompakte Statuszone stehen (z. B. „3 Felder prüfen“).
+Die Fehlerübersicht dient als Sprungliste mit direkter Navigation zu den betroffenen Feldern.
+
+* *Formular und Aktionen:* Die Inhalte sind nach Fachlogik gruppiert (Abschnitte, Tabs oder Accordion).
+Die Aktionen „Speichern“ und „Abbrechen“ sind konsistent platziert – immer an derselben Stelle, bei Bedarf oben und unten.
+Feldnahe Hilfen und Fehler bleiben sichtbar.
+
+*_Richtlinien zur Anwendung_*
+
+* *Einsatzkriterien:* Drill-Down eignet sich bei vielen Feldern oder Gruppen, feldübergreifender Validierung, komplexen Abläufen (z. B. Rollen, Berechtigungen, mehrere Teilobjekte) insbesondere wenn klare Überschriften, Landmarks und stabile Navigation erforderlich sind.
+
+* *Navigation und History:* Die Browser-Navigation (Zurück/Vorwärts) funktioniert erwartungsgemäß ohne unerwartete Sprünge oder Datenverlust.
+Deeplinks auf Ansicht und Bearbeitung sind möglich.
+Routen und Zustände bleiben konsistent.
+
+* *Rückkehr in den Kontext:* Beim Zurückkehren erfolgt die Wiederherstellung von Filter, Sortierung, Pagination und Scrollposition.
+Das bearbeitete Objekt ist im Ausgangskontext leicht auffindbar (z. B. durch Fokussierung oder Scrollposition).
+Eine Markierung wie „Aktualisiert“ ist zulässig.
+
+* *Validierung:* Die Validierung erfolgt beim Speichern, optional zusätzlich beim Verlassen eines Feldes (on blur).
+Feldfehler erhalten die Kennzeichnung `aria-invalid="true"`.
+Die Verknüpfung von erklärenden Texten erfolgt über `aria-describedby`.
+Eine optionale Fehlerübersicht oben erleichtert das Auffinden betroffener Felder.
+
+* *Ungespeicherte Änderungen:* Beim Verlassen mit ungespeicherten Änderungen erhalten Nutzende eine Entscheidungsmöglichkeit („Änderungen verwerfen“ oder „Weiter bearbeiten“).
+Modale Dialoge sind nur bei drohendem Datenverlust zulässig (vgl. <<meldungsdialoge>>).
+Bestätigungen erfolgen standardmäßig nicht-modal (z. B. Inline-Leiste oder Popover).
+
+[[r-drilldown-fokus-rueckkehr]]
+* *Barrierefreiheit und Fokusführung:* Beim Öffnen der Detailansicht erfolgt die Setzung eines sinnvollen Initialfokus (z. B. Seitenüberschrift oder erstes Eingabefeld).
+Beim Zurückkehren liegt der Fokus auf dem auslösenden Element oder der bearbeiteten Zeile.
+
+[[r-drilldown-validierung]]
+* *Barrierefreiheit und Fehlerbehandlung:* Bei Fehlern erfolgt die Anzeige einer Zusammenfassung (z. B. „3 Felder prüfen“) mit Links zu den betroffenen Feldern.
+Der Fokus wechselt zur Zusammenfassung oder zum ersten fehlerhaften Feld.
+Alle Links sind programmatisch fokussierbar und vollständig per Tastatur bedienbar.
+
+*_Verhalten_*
+
+* *Tastatur:* „Speichern“ ist per Tastatur erreichbar; Formular-Submit per Enter ist zulässig.
+Nach erfolgreichem Speichern bleibt der Fokus stabil.
+
+* *Screenreader:* Titel und Struktur benennen Objekt und Modus eindeutig.
+Die Ankündigung von Statusmeldungen erfolgt über eine Live-Region ohne Fokusübernahme.
+
+*_PrimeNG-Mapping (Referenz)_*
+
+* *Routing:* Der Angular Router unterstützt eine Rückkehrlogik für Fokus und Scrollposition.
+
+* *Orientierung:* Optional ist `p-breadcrumb` einsetzbar; im Kopfbereich steht eine `p-toolbar` mit Zurück-Button (`p-button`).
+
+* *Struktur:* Für die Strukturierung kommen `p-card` oder `p-panel` sowie `p-tabView` oder `p-accordion` zum Einsatz.
+
+* *Validierung und Feedback:* Die feldnahe Rückmeldung erfolgt über `p-message`, optional zusätzlich global über `p-toast`.
+
+* *Ungespeicherte Änderungen:* Das Abfangen erfolgt über einen Angular Guard; die Bestätigung erfolgt bevorzugt nicht-modal (Popover oder Inline-Leiste), ein Meldungsdialog ist nur bei drohendem Datenverlust zulässig (vgl. <<meldungsdialoge>>).
+
+[[benachrichtigungen]]
+==== Benachrichtigungen
+
+System- und Fachereignisse werden wahrnehmbar, aber nicht blockierend kommuniziert.
+Die Meldungen unterstützen das Verständnis und zeigen nächste Schritte auf, ohne den Fokus zu entziehen.
+
+*_Aufbau_*
+
+* *Globale Benachrichtigungen:* Für asynchrone Ereignisse (Erfolg, Hinweis, Warnung, Fehler) kommen Toast- oder Snackbar-Meldungen zum Einsatz.
+Die Meldungen sind kurz und verständlich zu halten.
+Hinweise auf nächste Schritte sind zulässig.
+
+* *Inline-Hinweise:* Hinweise mit Bezug zu einem Bereich oder Feld erscheinen direkt am betroffenen Kontext.
+Ursache und Behebung bleiben im selben Sichtbereich.
+
+* *Kombinierte Darstellung:* Bei Validierungsfällen erfolgt eine feldnahe Beschreibung des Fehlers sowie eine kompakte globale Zusammenfassung.
+Die feldnahen Fehlertexte bleiben die Primärquelle.
+
+*_Richtlinien zur Anwendung_*
+
+* *Schließen und Timeout:* Info-Toasts dürfen automatisch ausblenden.
+Warnungen und Fehler erfordern in der Regel ein explizites Schließen oder bleiben sichtbar, bis der Zustand behoben ist.
+
+[[r-benachrichtigungen-status]]
+* *Kein Fokus-Hijack:* Die Ankündigung von Meldungen erfolgt über `aria-live` (in der Regel `polite`).
+Der Fokus verbleibt bei den Nutzenden.
+
+* *Text statt Farbe:* Schweregrade sind sprachlich zu benennen (z. B. „Warnung“, „Fehler“).
+Die Farbe dient als ergänzendes Unterscheidungsmerkmal.
+
+* *Anzahl gleichzeitiger Meldungen:* Mehrere Meldungen dürfen keine Primäraktionen verdecken.
+Der Abbau der Meldungen erfolgt in geordneter Reihenfolge.
+Kritische Meldungen bleiben ausreichend lange zugänglich.
+
+*_Verhalten_*
+
+* *Screenreader:* Die Meldungstexte sind kurz und klar zu halten.
+Eine Option „Details anzeigen“ ist zulässig.
+Interaktive Elemente (z. B. Rückgängig-Link) sind per Tastatur erreichbar und aussagekräftig beschriftet.
+
+* *Mobil:* Platzierung und Größe der Meldungen dürfen keine primären Inhalte oder Aktionen verdecken.
+Wichtige Meldungen müssen auffindbar bleiben.
+
+*_PrimeNG-Mapping (Referenz)_*
+
+* *Global:* Für Ereignisse außerhalb des direkten Feldkontexts kommt `p-toast` (mit `MessageService`) zum Einsatz.
+
+* *Inline:* Für feld- oder abschnittsnahe Hinweise ist `p-message` vorgesehen.
+
+[[stepper]]
+==== Stepper
+
+Ein Stepper bildet eine geführte Abfolge von Interaktionsschritten ab.
+Der Einsatz ist vorgesehen, wenn Nutzende schrittweise durch eine komplexe Aufgabe geführt werden sollen (z. B. mehrstufige Objektanlage oder -konfiguration).
+Durch die Aufteilung in klar benannte Schritte sinkt die wahrgenommene Komplexität.
+
+Der Stepper wird seitenintern im Inhaltsbereich oder in einem Drawer eingesetzt.
+Blockierende Modaldialoge sind zu vermeiden und nur in begründeten Ausnahmefällen zulässig (z. B. rechtlich erforderliche Bestätigung).
+Als Technologie-Referenz dient der PrimeNG Stepper (ab Version 20) oder eine gleichwertige Umsetzung; das Layout erfolgt mit PrimeFlex oder CSS-Grid.
+
+[[image-stepper1]]
+.Beispiel eines Dialog Wizards
+image::Stepper_Beispiel.png[align="center", scaledwidth="96%"]
+
+[[image-stepper2]]
+.Aufbau eines Dialog Wizards
+image::Stepper_Aufbau.png[align="center", scaledwidth="96%"]
+
+*_Aufbau_*
+
+* *Titelzeile (A):* Die Titelzeile beschreibt die Aufgabe verständlich (z. B. „Neuen Antrag anlegen“) und verortet sie fachlich.
+Die Regeln für Titelzeilen entsprechen denen von Dialogen.
+
+* *Schrittanzeige (B):* Die Schrittanzeige zeigt eine lineare Abfolge von Schritten (horizontal oder vertikal).
+Der aktuelle Schritt ist visuell hervorgehoben; erledigte Schritte sind erkennbar (z. B. durch einen Haken).
+Optional ist die Anzeige des Fortschritts (n von gesamt) vorgesehen.
+
+* *Inhaltsbereich \(C):* Der Inhaltsbereich enthält Formulare und Komponenten des aktiven Schritts.
+Leer-, Lade- und Fehlerzustände sind zu definieren.
+Das Layout folgt dem allgemeinen Raster gemäß <<layout-resizing>>.
+
+* *Steuerleiste (D):* Die Primäraktionen umfassen „Weiter“ sowie „Abschließen“ (im letzten Schritt) und „Zurück“.
+Die Sekundäraktionen umfassen „Abbrechen“ und „Zwischenspeichern“ oder „Ablegen“ (falls fachlich sinnvoll).
+Position, Beschriftung und Tastaturverhalten sind konsistent zu halten.
+
+*_Richtlinien zur Anwendung_*
+
+* *Linearität und Navigation:* Standard ist ein linearer Stepper: „Weiter“ ist erst nach valider Eingabe aktiv.
+„Zurück“ ist jederzeit möglich; erledigte Schritte dürfen direkt angewählt werden.
+Die Vorwärtsnavigation per Schrittanzeige ist nur zulässig, wenn Folgeschritte inhaltlich unabhängig sind.
+
+[[r-stepper-validierung]]
+* *Validierung und Feedback:* Die Validierung erfolgt feldnah (inline) mit verständlichen Fehlertexten, ergänzt um eine globale Meldungszone (`role` oder `aria-live`) pro Schritt.
+„Weiter“ und „Abschließen“ bleiben deaktiviert, bis die Pflichtfelder valide sind.
+Bei „Weiter“ wechselt der Fokus zur Fehlerzusammenfassung oder zum ersten fehlerhaften Feld (programmatisch fokussierbar, z. B. `tabindex="-1"` mit Fokussetzung).
+Modale Fehlermeldungen sind zu vermeiden.
+
+[[r-stepper-navigation]]
+* *Fokusführung und Tastatur:* Beim Schrittwechsel erfolgt die Setzung des Fokus auf die Schritt-Überschrift oder den ersten sinnvollen Inhalt.
+Innerhalb des Steppers folgt die Tab-Reihenfolge der Sichtreihenfolge;
+Enter löst die jeweilige Primäraktion aus, Esc bricht ab (sofern kein Datenverlust droht, andernfalls erfolgt eine Bestätigung im Kontext).
+Die Schrittanzeige ist tastaturbedienbar (Links oder Buttons mit sichtbarem Fokus; semantisch als `tablist` oder `region`, abhängig von der Komponenten-API).
+
+[[r-stepper-reflow]]
+* *Zustände und Reflow:* Zustandswechsel erfolgen stabil und ohne störende Layoutsprünge.
+Die Darstellung passt sich responsiv an; die Steuerleiste bleibt erreichbar.
+
+* *Zwischenspeichern und Abbruch:* Zwischenspeichern oder Ablegen ermöglicht die Unterbrechung und spätere Fortsetzung (z. B. Wiedervorlage im Dashboard).
+„Abbrechen“ verwirft Änderungen nur nach klarer, nicht-modaler Bestätigung im Kontext (Bestätigungsleiste oder Popover) mit optionaler Rückgängig-Option.
+
+* *Anti-Pattern (vermeiden):* Ein Stepper im modalen Dialog ist ohne zwingenden Grund nicht zulässig.
+Komplexe Branching-Szenarien mit stark divergierenden Pfaden erschweren die Orientierung (besser: Vorab-Entscheid, dann schlanke Linie).
+Uneinheitliche Primäraktionen wie „OK“ statt „Weiter“ oder „Abschließen“ sind zu vermeiden.
+Fehler dürfen nicht ausschließlich als Toast ohne feldnahe Erklärung erscheinen.
+Der Formularzustand darf beim Navigieren (Zurück oder Weiter) nicht verloren gehen.
+
+*_Verhalten_*
+
+* *Tastatur:* Enter aktiviert die Primäraktion; Esc bricht ab oder löst eine Bestätigung aus (bei drohendem Datenverlust).
+Nach erfolgreichem Schrittwechsel bleibt der Fokus stabil auf dem neuen Inhalt.
+
+* *Screenreader:* Titel und Struktur des Steppers benennen den aktuellen Schritt und den Gesamtfortschritt eindeutig.
+Die Ankündigung von Statusmeldungen erfolgt über eine Live-Region ohne Fokusübernahme.
+
+*_PrimeNG-Mapping (Referenz)_*
+
+* *Stepper-Komponente:* Für die Umsetzung kommt `p-stepper` (ab Version 20) zum Einsatz.
+Die Schrittanzeige ist als `p-steplist` mit `p-step`-Elementen strukturiert.
+
+* *Inhaltsbereich:* Die Inhalte der einzelnen Schritte sind in `p-steppanels` mit `p-steppanel`-Elementen organisiert.
+
+* *Steuerleiste:* Für die Navigation kommen `p-button`-Elemente zum Einsatz; die Platzierung erfolgt konsistent am unteren Rand des Inhaltsbereichs.
+
+* *Validierung und Feedback:* Die feldnahe Rückmeldung erfolgt über `p-message`, optional zusätzlich global über `p-toast` (z. B. für zusammenfassende Hinweise).
+
+==== Normative Bezüge
+
+[cols="3,2,3", options="header"]
+|===
+| Anforderung | Normbezug | Akzeptanzkriterium
+
+| <<r-bestaetigen-undo,Bestätigen und Rückgängig: Rückgängig-Option>>
+| WCAG 2.2 SC 3.3.4 / 4.1.3
+| Reversible Aktionen mit zeitlich begrenzter Rückgängig-Option; Status-/Rückgängig-Meldungen programmatisch als Status erkennbar (z. B. `aria-live`).
+
+| <<r-inlineedit-validierung,Inline-Edit: Validierung & Fehlerbeschreibung>>
+| WCAG 2.2 SC 3.3.1 / 3.3.3 / 4.1.3
+| Fehler feldnah textlich beschrieben, ggf. zusammengefasst; konkrete Korrekturhinweise; Zuordnung z. B. via `aria-describedby`.
+
+| <<r-drilldown-fokus-rueckkehr,Drill-Down: Fokusführung & Rückkehr>>
+| WCAG 2.2 SC 2.4.3 / 2.4.7
+| Initialfokus in Detailansicht sinnvoll; beim Zurückkehren Fokus auf Auslöser/Zeile/Karte; keine „Fokus-Verluste“.
+
+| <<r-drilldown-validierung,Drill-Down: Fehlerzusammenfassung & Sprünge>>
+| WCAG 2.2 SC 3.3.1 / 3.3.3 / 4.1.3
+| Fehler feldnah und optional als Sprungliste zusammengefasst; Fokus zur Zusammenfassung oder zum ersten fehlerhaften Feld.
+
+| <<r-benachrichtigungen-status,Benachrichtigungen: Statusmeldungen ohne Fokus-Hijack>>
+| WCAG 2.2 SC 4.1.3
+| Benachrichtigungen per `aria-live` angekündigt, ohne Fokuswechsel; Schweregrad und nächste Schritte sprachlich beschrieben.
+
+| <<r-stepper-validierung,Stepper: Validierung und Fehlerbehandlung>>
+| WCAG 2.2 SC 3.3.1 / 3.3.3
+| Ungültige Pflichtfelder verhindern Fortfahren; Fehler textlich gekennzeichnet und ggf. zusammengefasst.
+
+| <<r-stepper-navigation,Stepper: Fokusführung & Tastaturbedienung>>
+| WCAG 2.2 SC 2.1.1 / 2.4.3 / 2.4.7
+| Stepper vollständig tastaturbedienbar; Fokus springt beim Schrittwechsel nachvollziehbar zur Überschrift oder zum ersten Inhalt.
+
+| <<r-stepper-reflow,Stepper: Zustände & Reflow>>
+| WCAG 2.2 SC 1.4.10
+| Stepper reflowt 3→2→1 ohne horizontales Scrollen; Leer/Lade/Fehlerzustände verursachen keine störenden Layoutsprünge.
+|===
 
 [[navigation]]
 === Navigation
@@ -3185,7 +4210,7 @@ Die Größenanpassung erfolgt innerhalb von gewissen Bereichen:
 .Beispielhafte Gesamtumsetzung eines Beispielformulars im Anwendungsrahmen
 image::24_UC_fullexample_formular.png[align="center"]
 
-[[login]]
+[[login-form]]
 === Login
 
 *WiP*
