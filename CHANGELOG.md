@@ -1,5 +1,6 @@
 # 1.0.0
 ## Dokumentation
+- IFS-5176: Entfernung konkreter Farbvorgaben und Umstellung auf allgemein gehaltene Farbangaben
 - IFS-2865: Die Kapitel *Primäre Fenstertypen*, *Sekundäre Fenstertypen* und *Interaktionsmuster* wurden hinzugefügt
 - IFS-4550: Beschreibungen für *Seiten-Toolbar*, *Tabellen-Toolbar* und *Eingabefeldgruppen mit Toolbar* wurden hinzugefügt
 - IFS-2999: Das Kapitel *Fenstertypen und Layout* wurde hinzugefügt
