@@ -334,24 +334,29 @@ Die Einhaltung dieser Standards ermöglicht eine barrierefreie und effiziente Na
 [[barrierefreier-einsatz-von-farben]]
 === Barrierefreier Einsatz von Farben
 
-<<farben>> sind ein Hauptbestandteil, um Frontends zu gestalten und um die Nutzenden zu unterstützen.
-Um eine gute Erkennbarkeit der Elemente sicherzustellen, muss bei großer Schrift ein Kontrast von mindestens 3:1 gewährleistet sein.
+Farben sind ein zentrales Gestaltungsmittel in Benutzeroberflächen und unterstützen die Orientierung sowie das Verständnis von Zuständen und Aktionen (siehe <<farben>>).
 
-Nachfolgend sind die Kontrastverhältnisse aller zur Verfügung stehenden Farben abgebildet.
-Farbkombinationen, die rot gelabelt sind und keinen ausreichenden Kontrast aufweisen, dürfen nicht verwendet werden.
-Andere Farbkombinationen sind entsprechend ihrer Textart oder Elementgröße frei zu wählen - Fließtext & Label 4,5:1, Überschrift 3:1, Haupt-/Einstiegsseiten & Seiten mit rechtlicher Relevanz 7:1.
-Dabei soll der Kontrast so hoch wie möglich gewählt werden.
+Um eine gute Wahrnehmbarkeit und Lesbarkeit sicherzustellen, müssen ausreichende Kontrastverhältnisse zwischen Vorder- und Hintergrund gewährleistet sein.
+Maßgeblich sind die jeweils gültigen Anforderungen der Web Content Accessibility Guidelines (WCAG) auf Konformitätsstufe AA.
 
-[[image-farbmatrix]]
-.Farbmatrix
-image::24_BE_colormatrix.png[align="center"]
+Folgende Mindestkontrastwerte sind einzuhalten:
 
-Eine interaktive und erweiterbare Tabelle ist unter link:++https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23000000%2C%20Black%0D%0A%23FFFFFF%2C%20White%0D%0A%23F2F2F2%2C%20light%20Grey%0D%0A%23DDDDDD%2C%20Grey%0D%0A%2383878c%2C%20medium%20Grey%0D%0A%23404040%2C%20Charcoal%0D%0A%23212529%2C%20dark%20Grey%0D%0A%230055B9%2C%20Active%20and%20Primary%0D%0A%2366AEE5%2C%20Primary%20disabled%0D%0A%23D45C00%2C%20Secondary%0D%0A%23A4252C%2C%20Alert%0D%0A%23498205%2C%20Success%0D%0A%23D47D00%2C%20Warning%0D%0A%23008EDB%2C%20Info%0D%0A%238378DE%2C%20Help%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp++[Farbmatrix] zu finden.
+* Fließtext und Labels (Normaltext): mindestens 4,5 : 1
+* Große Schrift (z. B. Überschriften ab 18 pt bzw. 14 pt fett): mindestens 3 : 1
+* Grafische Bedienelemente, Icons, Fokusindikatoren und andere nicht-textuelle UI-Komponenten: mindestens 3 : 1
 
-Die folgenden Links verweisen auf weitere Informationen zur Kontrast-Analyse:
+Für besonders wichtige Inhalte (z. B. rechtlich relevante Seiten oder zentrale Einstiegsbereiche) wird ein Kontrast von mindestens 7 : 1 empfohlen.
 
-* http://whocanuse.com[WhoCanUse?]
-* http://leserlich.info/kapitel/farben.php[leserlich.info]
+Der Kontrast ist grundsätzlich so hoch wie möglich zu wählen.
+
+Informationen dürfen nicht ausschließlich durch Farbe vermittelt werden.
+Status-, Warn- oder Fehlermeldungen sind zusätzlich durch Text, Symbole oder andere visuelle Merkmale eindeutig kenntlich zu machen.
+
+Kombinationen von Vorder- und Hintergrundfarben, die die Mindestanforderungen nicht erfüllen, dürfen nicht verwendet werden.
+Die Einhaltung der Kontrastanforderungen ist projektseitig zu prüfen und zu dokumentieren.
+
+Maßgeblich sind die jeweils projektspezifisch definierten Farben und deren nachgewiesene Kontrastverhältnisse gemäß den geltenden Barrierefreiheitsanforderungen.
+Nicht zulässige Kombinationen dürfen nicht eingesetzt werden.
 
 [[alt-tag]]
 === Alt-Attribute für Bilder
@@ -695,7 +700,7 @@ image::header.mockup.drawio.svg[align="center"]
 <<image-header-aufbau>> zeigt die Bestandteile des Headers:
 
 * *A* Logo des Anbieters der Anwendungslandschaft
-* *B* Balken in der Primärfarbe der Anwendungslandschaft
+* *B* Balken als Identitätselement der Anwendungslandschaft gemäß gestalterischen Vorgaben
 * *C* Logo der Anwendungslandschaft
 * *D* Informationen zum angemeldeten Nutzenden
 * *E/F* Haupt- und Subnavigation als Flyout (zur Nutzung siehe <<hauptnavigation>>)
@@ -837,8 +842,7 @@ Sie werden über das Print-Stylesheet ausgeblendet.
 * *Farben auf das notwendige Minimum reduzieren:* Für Hintergründe sind helle Töne zu verwenden; flächige Farben nur, wenn sie semantisch notwendig sind (z. B. Status- oder Legendenfarben).
 Farbmanagement erfolgt über `print-color-adjust`.
 
-* *Typografie und Kontrast:* Es muss ausreichender Kontrast im Ausdruck sichergestellt werden.
-Textfarben basieren auf den definierten Graustufen des Web-Themes. 
+* *Typografie und Kontrast:* Textfarben sind gemäß den gestalterischen Vorgaben festzulegen und müssen ausreichenden Kontrast gewährleisten.
 
 * *Ziel­format:* Standardformat ist A4 hochkant.
 Querformat sollte nur bei fachlicher Notwendigkeit (z. B. breite Tabellen) eingesetzt werden.
@@ -877,7 +881,7 @@ image::Darstellung_In_Druckvorschau.png[align="center", scaledwidth="100%",width
 
 * Die allgemeinen Regeln des Drucklayouts gelten weiterhin. Navigation, Buttons und Toolbars werden ausgeblendet, nur inhaltliche Daten werden ausgegeben.
 * Eine Druckvorschau-Ansicht sollte auf einer separaten, druckoptimierten Route dargestellt werden.
-** Oberhalb der Seite befindet sich ein prominenter „Drucken“-Button, der `window.print()` auslöst.
+** Oberhalb der Seite befindet sich ein prominenter „Drucken“-Button, der den Browser-Druckdialog auslöst.
 ** Versteckte oder verschachtelte Inhalte (z. B. Tabs, Master-Detail-Bereiche) müssen vollständig linearisiert werden, sodass alle Abschnitte untereinander erscheinen – jeweils mit klarer Überschrift.
 * Metainformationen wie Titel und Seitenzahl sollten pro Seite eingebunden werden (je nach Browser-Unterstützung über Margin-Boxen oder Fallbacks).
 
@@ -1018,54 +1022,64 @@ Labels erscheinen neben oder über den jeweiligen Werten.
 [[farben]]
 === Farben
 
-Farben tragen maßgeblich zur visuellen Identität eines Frontends bei und beeinflussen die Stimmung und Wahrnehmung der Nutzenden.
-Im Rahmen dieses Bedienkonzeptes ist die folgende Farbpalette vorgegeben (Stand 03.07.2024):
+Farben tragen maßgeblich zur visuellen Identität einer Benutzeroberfläche bei und beeinflussen die Stimmung und Wahrnehmung der Nutzenden.
 
-[[image-farbpalette]]
-.Farbpalette
-image::24_BE_farbpalette.png[align="center"]
+Dieses Bedienkonzept definiert keine konkreten Farbwerte, sondern regelt die semantische Verwendung von Farben innerhalb der Benutzeroberfläche.
+Die konkrete Ausprägung (Farbwerte, Kontraste, Ableitungen) ergibt sich aus den gestalterischen Vorgaben des Projekts.
 
-Die Standardpalette wird mit dem IsyFact-Theme ausgeliefert und entsprechend der aktuellen gesetzlichen Lage aktualisiert.
-Deshalb kann die ausgelieferte Palette von dem hier dokumentierten Stand abweichen.
-Die dazugehörige <<image-farbmatrix,Kontrasttabelle>> der Standardpalette ist im Kapitel <<barrierefreiheit>> zu finden.
-Die Farbpalette legt ebenfalls fest, zu welchem Zweck bestimmte Farben eingesetzt werden sollen, zum Beispiel Rot (#A4252C) zur Markierung von Alerts.
+Im Folgenden beziehen sich die Begriffe „Farbpalette“, „Statusvarianten“ und „Gestaltungsrichtlinien“ auf die projektspezifisch definierten Vorgaben.
+
+Die eingesetzte Farbpalette kann im Rahmen technischer, gesetzlicher oder gestalterischer Weiterentwicklungen angepasst werden.
+Die jeweils gültigen Farbdefinitionen sowie die zugehörigen Kontrastwerte sind der Designdokumentation zu entnehmen.
+Ergänzende Informationen zu Farbgrundlagen und Farbnutzung sind im https://styleguide.bundesregierung.de/sg-de/basiselemente/farben[Styleguide der Bundesregierung – Farben] zu finden.
+
+Farben sind funktional und semantisch konsistent einzusetzen.
+Folgende Bedeutungsbereiche sind visuell eindeutig unterscheidbar zu gestalten:
+
+* Bestätigung / Erfolg
+* Information
+* Warnung
+* Fehler / kritische Zustände
+* Primäre Aktion
+* Sekundäre Aktion
+* Destruktive Aktion
+
+Eine Farbe darf nicht für widersprüchliche Bedeutungen verwendet werden.
+Visuelle Hervorhebungen müssen eindeutig einer semantischen Rolle zugeordnet sein.
 
 *_Dos_*
 
-* Grün = Erfolg, Bestätigung, Korrekt, etc.
-* Rot = Fehler, Abbruch, Stopp, etc.
+* Positive Zustände und erfolgreiche Aktionen sind eindeutig als Bestätigung erkennbar.
+* Kritische oder destruktive Aktionen sind klar als solche gekennzeichnet.
+* Primäre und sekundäre Aktionen sind visuell unterscheidbar.
+* Die semantische Bedeutung einer Farbe ist innerhalb der Anwendung konsistent.
 
 *_Don'ts_*
 
-* Grün = Abbruch, Fehler, Stopp, etc.
-* Lila = Weiter, Sekundärbutton, Löschen, etc.
+* Eine Farbe wird nicht für unterschiedliche oder gegensätzliche Bedeutungen verwendet.
+* Positive Zustände dürfen nicht mit derselben visuellen Ausprägung dargestellt werden wie Fehler oder Abbrüche.
+* Sekundäre oder destruktive Aktionen dürfen nicht wie primäre Standardaktionen gestaltet sein.
 
-[NOTE]
-Sollte die Standardfarbpalette aufgrund der fachlichen Anforderungen nicht ausreichen oder dem Zweck entsprechen, so kann in Einzelfällen von der Standardfarbpalette abgeleitet werden.
+Sofern aus fachlichen Gründen zusätzliche Abstufungen erforderlich sind (z. B. für Hintergründe, Flächen oder Hervorhebungen), dürfen Farben aus der Farbpalette abgeleitet werden.
 
-[[image-farbpalette-30per]]
-.Abgeleitete Farbpalette
-image::24_BE_farbpalette_30per.png[align="center"]
+Dabei ist sicherzustellen:
 
-Die Ableitung der Standardfarbe für Flächen und Hintergründe liegt bei 30 % Opacity.
-Die Ableitung der Standardfarbe für Schriften, Border und Akzente liegt bei +30 % black Opacity, damit ein ausreichend hoher Kontrast gewährleistet werden kann.
-Der daraus resultierende Kontrast erfüllt die Bedingungen bis zum Level AAA - große Schrift.
+* ausreichender Kontrast gemäß den geltenden Barrierefreiheitsanforderungen
+* visuelle Konsistenz innerhalb der Anwendung
+* eindeutige Zuordnung zur jeweiligen semantischen Rolle
 
-[IMPORTANT]
-Die leichten Farben sind auf hellen Hintergrund nicht mehr barrierefrei!
-
-Die Anwendungsfarbe des Frontends ist frei wählbar, aber muss vom Projekt auf Barrierefreiheit geprüft werden.
+Helle Farbvarianten dürfen auf hellen Hintergründen nur eingesetzt werden, wenn die Anforderungen an Kontrast und Lesbarkeit erfüllt sind.
 
 [[applikationsfarben]]
 === Applikationsfarben
 
-Sofern es möglich und sinnvoll ist, werden Applikationen aufgrund ihrer Fachlichkeit in Gruppen zusammengefasst.
-Pro Applikationsgruppe kann eine Farbe definiert werden, welche an verschiedenen Stellen des Applikationsportals eingesetzt wird und so einen Wiedererkennungswert schafft.
-Wenn eine Applikation keiner Gruppe zugeordnet werden kann, kann sie für sich alleine stehen und ihre eigene Farbe erhalten.
-Bei der Wahl der Farben sind die generellen Richtlinien zur Nutzung von <<farben>> zu berücksichtigen.
-Die Farben sollten so gewählt werden, dass ein harmonisches Gesamtbild erhalten bleibt.
+Applikationen können aus Gründen der fachlichen Strukturierung in Gruppen zusammengefasst werden.
+Jeder Applikationsgruppe kann eine eindeutige Identifikationsfarbe zugeordnet werden.
 
-Die Applikationsfarbe kommt an folgenden Stellen zum Einsatz:
+Diese Identifikationsfarbe dient ausschließlich der Wiedererkennbarkeit und Navigation.
+Sie trägt keine semantische Bedeutung im Sinne von Status- oder Systemmeldungen.
+
+Die Identifikationsfarbe kann u. a. an folgenden Stellen eingesetzt werden:
 
 // ToDo: Beispielbild kann hier ergänzend eingefügt werden
 * Hauptnavigation – Farbbalken unterhalb des Headers
@@ -1076,10 +1090,14 @@ Die Applikationsfarbe kommt an folgenden Stellen zum Einsatz:
 
 *_Dos_*
 
-* Die Applikationsfarbe repräsentiert eine Gruppe von Applikationen oder eine einzelne Applikation, sofern sie keiner Gruppe zugeordnet werden kann.
-* Eine Applikationsgruppe kann immer nur eine Farbe annehmen.
-Die Applikationen innerhalb einer Gruppe erhalten keine unterschiedlichen Farben.
-* Die Farben sollten so gewählt werden, dass ein harmonisches Gesamtbild erhalten bleibt.
+* Eine Applikationsgruppe besitzt genau eine Identifikationsfarbe.
+* Applikationen innerhalb einer Gruppe verwenden dieselbe Identifikationsfarbe.
+* Die Farbwahl unterstützt ein harmonisches Gesamtbild.
+
+*_Don'ts_*
+
+* Identifikationsfarben dürfen nicht mit Statusfarben (z. B. Fehler, Warnung, Erfolg) verwechselt werden.
+* Innerhalb einer Applikationsgruppe werden keine unterschiedlichen Identifikationsfarben verwendet.
 
 [[icons]]
 === Icons
@@ -1336,7 +1354,7 @@ Da dies einen Verstoß gegen die BITV (Barrierefreie-Informationstechnik-Verordn
 Zusätzlich zu einem klar leserlichen Schriftschnitt sind auch die Gestaltungsmerkmale von Text, <<farben,Farbe>> und Größe entsprechend zu berücksichtigen.
 Die fehlerhafte Anwendung von Texten kann somit direkt zu einer Reduzierung der Benutzerfreundlichkeit des entsprechenden Frontends führen.
 
-Die Standard-Schriftart für <<bedienelemente>> und Inhalte ist BundesSans (14pt, regular, dunkelgrau #212529).
+Die Standard-Schriftart für <<bedienelemente>> und Inhalte ist BundesSans (14 pt, regular).
 Grundsätzlich gilt, ausreichende Schriftgrößen sind abhängig vom Betrachtungsabstand, von der Art des Textes und von der Sehschärfe der Lesenden.
 Individuelle Schriftgrößen können mit dem Schriftgrößenrechner auf https://www.leserlich.info/werkzeuge/schriftgroessenrechner/index.php[leserlich.info] ermittelt und entsprechend an den Nutzungskreis angepasst werden.
 
@@ -1378,7 +1396,7 @@ Im Folgenden werden einige Beispiele für technische Begriffe und deren Überset
 Ein Unterschreiten von Mindestgrößen zugunsten des Platzgewinns muss vermieden werden.
 Stattdessen werden andere, platzsparende Mechanismen angewandt wie <<expander>>.
 * Die Anzahl verschiedener Schriftgrößen muss auf ein notwendiges Minimum reduziert werden.
-* Als Standard-Schrift wird BundesSans 14pt Regular in Dunkelgrau (#212529) empfohlen.
+* Als Standard-Schrift wird BundesSans 14 pt Regular empfohlen.
 * Es muss sichergestellt sein, dass der <<barrierefreier-einsatz-von-farben,Kontrast der Schriftfarbe zur Hintergrundfarbe>> ausreichend groß ist.
 Hier ist der Kontrast größtmöglich zu wählen (zum Beispiel dunkelgraue Schrift auf weißem Hintergrund).
 Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss der Kontrast bei kleiner Schrift mindestens 4,5:1 entsprechen.
@@ -1471,7 +1489,7 @@ Der Kontrast sollte mindestens 4,5:1 sein, um die Lesbarkeit zu maximieren.
 Fettdruck oder Kursivschrift können verwendet werden, um wichtige Überschriften hervorzuheben, jedoch sollte dies sparsam geschehen, um eine Überladung zu vermeiden.
 * *Farben:*
 <<farben>> können verwendet werden, um Hierarchieebenen zu betonen, sollten jedoch mit Bedacht gewählt werden, um ein harmonisches Gesamtbild zu bewahren.
-Es wird empfohlen die Standardfarben zu nutzen.
+Es wird empfohlen, die festgelegte Farbpalette zu verwenden.
 
 [[label]]
 === Label
@@ -1545,47 +1563,48 @@ Bei der Gestaltung von Buttons ist es wichtig, auf klare Beschriftungen, ansprec
 Nachfolgend werden die verschiedenen Arten von Buttons und ihre Anwendung in der IsyFact beschrieben.
 
 [[colored-button]]
-==== Kolorierte Button
+==== Kolorierte Buttons
 
 Kolorierte Buttons oder auch farbig gefüllte Buttons sind die am häufigsten verwendete Button-Variante.
 Grundsätzlich handelt es sich um minimal abgerundete Rechtecke, die ein <<label,Textlabel>>, ein <<icons,Icon>> oder eine Kombination aus beidem enthalten und farblich gefüllt sind.
-Aufgrund ihrer kräftigen <<farben,Farbe>> werden sie auch CTA-Buttons (Call-To-Action Buttons) genannt.
+Aufgrund ihrer deutlichen visuellen Hervorhebung werden sie häufig als CTA-Buttons (Call-to-Action) bezeichnet.
 
-Je nach Zustand des Buttons unterscheiden sich die eingesetzten Farben und Fokus-Border voneinander.
-Dies ist in der folgenden Abbildung <<image-standardbutton>> dargestellt.
+Je nach Zustand des Buttons unterscheiden sich die visuelle Darstellung und die Interaktionsrückmeldungen.
+Dabei sind insbesondere die Zustände Normal, Hover, Pressed, Disabled sowie Focus/Active eindeutig voneinander unterscheidbar zu gestalten.
+
+Im Hover- und Pressed-Zustand wird die Darstellung des Buttons so angepasst, dass eine Interaktion klar erkennbar ist.
+Im Disabled-Zustand ist der Button als nicht verfügbar erkennbar und darf keine Aktion auslösen.
+Im aktiven beziehungsweise fokussierten Zustand ist ein sichtbarer Fokusindikator vorzusehen, der die Anforderungen an die Barrierefreiheit erfüllt.
 
 [[image-standardbutton]]
-.Zustände von beschrifteten Buttons in Primärfarbe
+.Beispielhafte Darstellung von Button-Zuständen
 image::24_BE_Primary_Button_States.png[align="center"]
 
-In diesem Beispiel wurde die Primärfarbe Blau (mit weißer Schrift) verwendet, um die unterschiedlichen Zustände eines Buttons zu veranschaulichen.
-In den Zuständen "Hover" und "Pressed" wird die Button-Farbe dunkler als im Normalzustand.
-Entsprechend wird die Button-Farbe im Zustand "Disabled" heller.
-Im "aktiven" beziehungsweise "fokussierten" Zustand bekommt der Button einen Fokus-Rahmen, der einen helleren Ton hat als der Button selbst.
-Die Button-Farbe bleibt jedoch die gleiche wie im Normalzustand.
-Dies lässt sich beim Einsatz der anderen Farben, wie in Abbildung <<image-buttoncolors>> exemplarisch zu sehen, ebenso anwenden.
+Die Abbildung dient ausschließlich der Veranschaulichung typischer Zustände von Buttons.
+Sie stellt keine verbindliche visuelle Vorgabe dar.
+Verbindlich sind die Gestaltungsrichtlinien sowie die Anforderungen an Barrierefreiheit.
 
-*_Farbwahl bei Buttons_*
+*_Visuelle Hierarchie bei Buttons_*
 
-Die folgende Grafik zeigt die zulässigen Farben, die im Frontend für Button-Elemente verwendet werden dürfen:
+Buttons werden entsprechend ihrer Bedeutung innerhalb einer inhaltlichen Gruppe unterschiedlich hervorgehoben.
+Innerhalb eines zusammengehörigen Bereichs darf genau eine Aktion als Primäraktion visuell hervorgehoben sein.
+Die Primäraktion ist die wichtigste oder am häufigsten genutzte Handlung innerhalb dieser Gruppe.
+Alle weiteren Aktionen sind als sekundäre oder alternative Aktionen visuell zurückhaltender zu gestalten.
+
+Pro sichtbarem Bereich ist in der Regel nur eine Primäraktion hervorzuheben, um eine klare Handlungsorientierung zu gewährleisten.
+
+Für Aktionen mit besonderer semantischer Bedeutung sind die definierten Statusvarianten zu verwenden.
+Insbesondere bei irreversiblen Aktionen ist eine deutlich erkennbare visuelle Kennzeichnung erforderlich, die zusätzlich durch Text, Symbole oder andere visuelle Merkmale unterstützt wird.
+
+Insgesamt sollte die Anzahl unterschiedlicher Hervorhebungsvarianten innerhalb einer Benutzeroberfläche begrenzt werden, um die Oberfläche nicht zu überladen.
 
 [[image-buttoncolors]]
-.Farben von kolorierten Buttons
+.Beispielhafte Varianten kolorierter Buttons
 image::24_BE_Colored_Buttons.png[align="center"]
 
-Hauptsächlich kommen die Primärfarbe Blau und die Sekundärfarbe Orange zum Einsatz, um die Wichtigkeit der einzelnen Aktionselemente innerhalb eines Frontends voneinander zu unterscheiden.
-Wenn mehrere Buttons in einem Frontend eingesetzt werden, wird der Button mit dem wichtigsten Ziel beziehungsweise mit der am häufigsten genutzten Aktion innerhalb einer inhaltlichen Gruppe in der Primärfarbe dargestellt.
-Ein Beispiel dafür sind Log-In-Seiten von Social-Media-Plattformen.
-Die Hauptaufgabe dieser Seite ist es, neue Mitgliedschaften zu generieren, weshalb der Registrieren-Button die Primärfarbe erhält und nicht der Log-In-Button.
-
-In der Regel wird nur ein Button innerhalb der sichtbaren Bedienoberfläche in der Primärfarbe eingefärbt.
-Dies hilft den Nutzenden sich auf die Hauptaktion zu fokussieren.
-
-Für manche Aktionen sollten spezielle Farben verwendet werden, die eine bestimmte Bedeutung haben, zum Beispiel Grün für Erfolg oder Rot für Alarm.
-Vor allem bei Aktionen, die nicht wieder rückgängig gemacht werden können, wie Löschen oder Entfernen, kann ein roter "Alarm"-Button sehr hilfreich sein.
-Diese Signalfarbe veranlasst den Nutzenden noch einmal über seine Aktion nachzudenken, da diese nach der Bestätigung endgültig ist.
-Alle anderen Buttons werden in der Sekundärfarbe oder als <<inverted-button,invertierte Buttons>> dargestellt.
-Insgesamt sollte die Anzahl der genutzten Farben innerhalb einer Benutzeroberfläche nicht zu hoch sein, um das Frontend nicht zu überladen.
+Die Abbildung dient ausschließlich der Veranschaulichung möglicher visueller Varianten kolorierter Buttons.
+Sie stellt keine verbindliche Festlegung konkreter Farben dar.
+Maßgeblich sind die semantischen Rollen (z. B. Primäraktion, Sekundäraktion, bestätigend, warnend, destruktiv) sowie die Anforderungen an Kontrast und Barrierefreiheit.
 
 *_Platzierung der Buttons_*
 
@@ -1593,7 +1612,7 @@ Bei der Platzierung der Buttons innerhalb eines Frontends wird zwischen zwei Use
 Bei kleinen Dialogfenstern, in denen lediglich zwischen Akzeptieren und Abbrechen einer Aktion unterschieden wird, wird der Primär-Button rechts unten platziert.
 
 Auf <<formulare,Formularseiten>> oder auch Full-Page-Designs ist die Häufigkeit der Verwendung der Buttons ausschlaggebend.
-Buttons für primäre, einleitende und abschließende Aktionen können sehr präsent in der Mitte des Frontends angeordnet werden.
+Buttons für primäre, einleitende und abschließende Aktionen können prominent in der Mitte des Frontends angeordnet werden.
 Buttons für navigierende und häufiger verwendete Aktionen werden bevorzugt rechts angeordnet, da die Aufmerksamkeit der Nutzenden während des Lesens oder Hinzufügens von Informationen dorthin gerichtet ist.
 Es ist darauf zu achten, dass die Anordnung der Buttons mit identischem Zweck über das gesamte Frontend hinweg konsistent bleibt.
 
@@ -1606,8 +1625,8 @@ Wenn nur das Textlabel ohne farbliche und räumliche Abgrenzung zum Hintergrund 
 *_Dos_*
 
 * Beim Aktivieren eines Buttons wird immer eine Funktion ausgelöst oder eine (Fehler-)Meldung sichtbar.
-* Buttons mit dem wichtigsten Ziel beziehungsweise mit der am häufigsten genutzten Aktion werden in der Primärfarbe dargestellt.
-Falls es unklar ist, welche Aktion wichtiger ist, wird die Standardaktion als primäre Aktion angesehen und entsprechend gefärbt.
+* Die wichtigste oder am häufigsten genutzte Aktion ist als Primäraktion visuell hervorgehoben darzustellen.
+  Falls unklar ist, welche Aktion wichtiger ist, gilt die fachlich vorgesehene Standardaktion als Primäraktion.
 * Das <<label>> sollte kurz und selbsterklärend sein.
 * Das Label sollte die auszuführende Aktion beschreiben (zum Beispiel Öffnen, Löschen, Speichern, Weiter).
 * Wenn ein Button einen Dialog aufruft, sollte der resultierende Dialog die Beschriftung des Buttons als Titel wiederholen.
@@ -1624,34 +1643,38 @@ Hier werden die Bedienelemente <<radiobutton>> und <<checkbox>> eingesetzt.
 * Zum Ein- oder Ausschalten von Inhalten werden keine Buttons verwendet, sondern spezielle <<input-switch,Input Switches>>.
 * Innerhalb von Fließtexten oder zum Verweisen auf externe Inhalte kommen keine Buttons zum Einsatz.
 Stattdessen werden <<link,Links>> genutzt.
-* Um ein Frontend farblich nicht zu überladen, sollten nicht zu viele Button-Farben für spezielle Aktionen eingesetzt werden.
+* Um die Benutzeroberfläche nicht zu überladen, sollen nicht zu viele unterschiedliche Hervorhebungsvarianten eingesetzt werden.
 
 [[inverted-button]]
-==== Invertierte Button
+==== Invertierte Buttons
 
-Falls die <<image-buttoncolors,farblich gefüllten Buttons>> das Frontend zu bunt werden lassen, weil es zu viele Funktionen auf einer Seite gibt, können für sekundäre Funktionen die invertierten Varianten der Buttons genutzt werden.
-Jedoch braucht es innerhalb einer Frontend-Seite immer einen farblich kolorierten Button in der Primärfarbe, der die Hauptaktion darstellt.
-Dieser Button kann nicht durch seine invertierte Variante ersetzt werden.
+Falls die hervorgehobenen Button-Varianten innerhalb einer Seite zu dominant wirken, können für sekundäre Funktionen zurückhaltendere Varianten verwendet werden.
+
+Innerhalb einer Seite muss eine Primäraktion klar visuell erkennbar sein.
+Diese darf nicht ausschließlich in einer zurückhaltenden oder sekundären Variante dargestellt werden.
 
 [[image-buttoncolors-inverted]]
-.Farben von invertierten Buttons
+.Invertierte Button-Variante
 image::24_BE_Outlined_Buttons.png[align="center"]
 
-Bei der invertierten Button-Variante ist die Button-Farbe für jeden Aktionsbutton weiß und nur die Schrift und die Button-Border farblich eingefärbt.
-Die unterschiedlichen Button-Zustände lassen sich wie bei den farblich gefüllten Buttons voneinander abgrenzen.
-Das heißt, bei den Zuständen "Hover" und "Pressed" wird die Button-Farbe, die nicht mehr weiß, sondern mit der Button-Schriftfarbe vermischt ist, dunkler und beim Zustand "Disabled" heller.
-Im "aktiven" beziehungsweise "fokussierten" Zustand erhält der Button einen Fokus-Rahmen, der einen helleren Ton als die Button-Rahmenfarbe aufweist.
+Bei der invertierten Button-Variante wird auf eine vollflächige Hervorhebung verzichtet.
+Stattdessen erfolgt die visuelle Abgrenzung über Kontur und Beschriftung.
+
+Die unterschiedlichen Button-Zustände sind eindeutig voneinander unterscheidbar zu gestalten.
+Im Hover- und Pressed-Zustand muss die Interaktion klar erkennbar sein.
+Im Disabled-Zustand ist der Button als nicht verfügbar erkennbar und darf keine Aktion auslösen.
+Im aktiven beziehungsweise fokussierten Zustand ist ein sichtbarer Fokusindikator vorzusehen, der die Anforderungen an die Barrierefreiheit erfüllt.
 
 [TIP]
 Invertierte Buttons werden häufig genutzt, wenn es mehr als zwei Aktionen auf einer Seite gibt oder wenn einer Aktion ein besonderer Fokus eingeräumt werden soll, wie zum Beispiel beim "Registrieren".
-Das heißt nach der Nutzung eines <<colored-button,kolorierten Buttons>> in der Primärfarbe kann auf die invertierten Buttons umgestiegen werden.
-Eine Kombination aus farblich kolorierten (ausgenommen der Primärfarbe) und invertierten Buttons ist jedoch nicht zulässig.
+Das heißt nach der Nutzung einer hervorgehobenen Primäraktion kann auf zurückhaltendere Varianten umgestiegen werden.
+Eine Kombination aus hervorgehobenen und zurückhaltenden Button-Varianten ist jedoch nicht zulässig.
 Es sollte eine der beiden Varianten konsistent im gesamten Frontend benutzt werden.
 
 [[icon-button]]
 ==== Icon-Button
 
-Icon-Buttons sind Buttons die kein sichtbares Label haben, sondern nur aus einem aussagekräftigen <<icons,Icon>> bestehen.
+Icon-Buttons sind Buttons, die kein sichtbares Label haben, sondern nur aus einem aussagekräftigen <<icons,Icon>> bestehen.
 Sie sind rund und haben einen farbigen Rand, um sich vom Hintergrund oder anderen <<basiselemente,Basis>>- und <<bedienelemente,Bedienelementen>> abzugrenzen.
 Dabei ist es essenziell, dass das Icon die dahinterstehende Funktionalität ausdrückt.
 Bei der Entwicklung muss darauf geachtet werden, dass Icon-Buttons durch ein <<aria-labels,ARIA-Label>> für Screenreader zugänglich sind.
@@ -1663,9 +1686,10 @@ Am häufigsten wird diese Button-Art in Kombination mit einer Aktion eines Bedie
 .Icon-Buttons
 image::24_BE_Round_Buttons.png[align="center"]
 
-Der Farbeinsatz und die verschiedenen Zustände der Icon-Buttons sind genauso wie bei den Button-Varianten zuvor.
-Für positive Aktionen wird das grüne Styling, für negative Aktionen das rote Styling und für informierende Aktionen das blaue Styling genutzt.
-Sie unterscheiden sich lediglich in der Form und Größe.
+Der Einsatz und die verschiedenen Zustände der Icon-Buttons entsprechen den zuvor beschriebenen Button-Varianten.
+Icon-Buttons können in unterschiedlichen semantischen Varianten eingesetzt werden (z. B. bestätigend, informierend oder destruktiv).
+Die jeweilige Ausprägung richtet sich nach den festgelegten Statusvarianten.
+Sie unterscheiden sich lediglich in Form und Größe von anderen Button-Varianten.
 
 Beim Hovern über einen Icon-Button kann ein Tooltip angezeigt werden, der die entsprechende Funktionalität beschreibt.
 Ist diese Beschreibung jedoch zu lang (mehr als drei Wörter), ist das Icon nicht dazu geeignet, einen beschrifteten Button zu ersetzen.
@@ -1673,7 +1697,7 @@ Ist diese Beschreibung jedoch zu lang (mehr als drei Wörter), ist das Icon nich
 *Sonderfall:*
 
 In speziellen Fällen werden Icon-Buttons auch ohne ihre Border dargestellt.
-Hierbei ist es besonders wichtig, dass die Icon-Buttons passend zum Design Pattern gewählt werden.
+Hierbei ist es besonders wichtig, dass die Icon-Buttons passend zum projektspezifisch definierten Design Pattern gewählt werden.
 Diese werden beispielsweise innerhalb von Tabellenheadern zum Sortieren und Filtern der Tabelleninhalte verwendet und sehen wie folgt aus:
 
 [[image-iconbuttons-withoutborder]]
@@ -1747,7 +1771,7 @@ oder
 .Eingabefeld aktiv mit "bold"-Label
 image::24_BE_eingabefeld_bold_active.png[align="center"]
 
-Aktive Eingabefelder werden mit einer 1px dickeren Umrandung in der Highlightfarbe Blau dargestellt.
+Aktive Eingabefelder werden durch eine um 1 px stärkere Umrandung visuell hervorgehoben.
 Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung <<image-eingabefeldaktiv>>) oder eine Mask enthalten (siehe Abbildung <<image-eingabefeldmask>>).
 
 *_Befülltes Eingabefeld:_*
@@ -1830,7 +1854,7 @@ oder
 .Eingabefeld und Fehlermeldung mit "bold"-Label
 image::24_BE_eingabefeld_bold_error.png[align="center"]
 
-Bei einer Fehlermeldung färbt sich das Eingabefeld rot und es wird ein inhaltlich logischer Hinweistext (auch in Rot) angegeben, damit die Eingabe korrigiert werden kann.
+Bei einer Fehlermeldung wird das betroffene Eingabefeld visuell als fehlerhaft gekennzeichnet und zusätzlich ein verständlicher Hinweistext ausgegeben. Die Kennzeichnung darf nicht ausschließlich über Farbe erfolgen.
 Das Label des Eingabefeldes wird bei einem Fehler nicht verändert.
 
 Eingabefelder, die eine Erläuterung benötigen, sollen diese immer so kurz wie möglich und so lang wie nötig gestalten.
@@ -2150,7 +2174,7 @@ image::24_BE_tabmenu.png[align="center"]
 
 Ein Tabview hat initial einen aktivierten, aber nicht markierten/fokussierten State (siehe <<image-tabview>>).
 Sobald ein Tab aktiv ausgewählt wird, wird auch die Markierung im Reiter visuell deutlich.
-Der aktive Tab erhält eine 3px dicke Markierungslinie und ein gefärbtes Label in der Highlightfarbe (hier exemplarisch Blau).
+Der aktive Tab erhält eine visuelle Hervorhebung, beispielsweise in Form einer Markierungslinie.
 
 [[image-tabview-active]]
 .Tabview mit aktivem Reiter
@@ -2173,7 +2197,7 @@ Dieses Element ist ein „Überlängen-Tabview“.
 .Initiales Aussehen eines Überlängen-Tabview
 image::24_BE_tabmenu_long1.png[align="center"]
 
-Das Tabview nutzt dabei die volle, ihm zur Verfügung stehende Breite und graut (faded) den letzten sichtbaren Menüpunkt aus.
+Das Tabview nutzt dabei die volle, ihm zur Verfügung stehende Breite und signalisiert visuell, dass weitere Tabs außerhalb des sichtbaren Bereichs vorhanden sind.
 Darüber liegt ein Pfeil, der es ermöglicht, zu den nächsten Tabs zu gelangen.
 Wurde dieser angeklickt, so springt das Tabview entsprechend viele Einträge weiter.
 
@@ -2235,7 +2259,7 @@ Wenn mehrere Aktionen für eine Tabellenzeile erfolgen können, dann werden Folg
 Falls eine Doppelklick-Aktion in einer Zeile implementiert wird, sollte dies die primäre Funktion der möglichen Tabellenzeilen-Aktionen sein.
 
 * Doppelklick = Detailansicht öffnen; folglich ist die erste/primäre Aktion = "Detailansicht öffnen".
-* Die aktive/fokussierte Zeile hat die Primärfarbe und der Hover entspricht dem PrimeNG Standard.
+* Die aktive oder fokussierte Zeile muss visuell eindeutig hervorgehoben sein.
 
 *_Dos:_*
 
