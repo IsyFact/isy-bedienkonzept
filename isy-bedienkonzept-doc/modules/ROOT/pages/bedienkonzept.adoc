@@ -355,13 +355,6 @@ Status-, Warn- oder Fehlermeldungen sind zusätzlich durch Text, Symbole oder an
 Kombinationen von Vorder- und Hintergrundfarben, die die Mindestanforderungen nicht erfüllen, dürfen nicht verwendet werden.
 Die Einhaltung der Kontrastanforderungen ist projektseitig zu prüfen und zu dokumentieren.
 
-[[image-kontrastmatrix]]
-.Beispielhafte Kontrastmatrix
-image::24_BE_colormatrix.png[align="center"]
-
-Die Abbildung zeigt eine beispielhafte Kontrastmatrix zur Veranschaulichung möglicher Farbkombinationen.
-Die dargestellten Farben und Kontrastwerte dienen ausschließlich als Beispiel und stellen keine verbindliche Festlegung dar.
-
 Maßgeblich sind die jeweils projektspezifisch definierten Farben und deren nachgewiesene Kontrastverhältnisse gemäß den geltenden Barrierefreiheitsanforderungen.
 Nicht zulässige Kombinationen dürfen nicht eingesetzt werden.
 
@@ -1778,7 +1771,7 @@ oder
 .Eingabefeld aktiv mit "bold"-Label
 image::24_BE_eingabefeld_bold_active.png[align="center"]
 
-Aktive Eingabefelder werden mit einer 1px dickeren Umrandung in der Highlightfarbe Blau dargestellt.
+Aktive Eingabefelder werden durch eine um 1 px stärkere Umrandung visuell hervorgehoben.
 Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung <<image-eingabefeldaktiv>>) oder eine Mask enthalten (siehe Abbildung <<image-eingabefeldmask>>).
 
 *_Befülltes Eingabefeld:_*
