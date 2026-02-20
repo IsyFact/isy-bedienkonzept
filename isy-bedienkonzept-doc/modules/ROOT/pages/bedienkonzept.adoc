@@ -2570,7 +2570,7 @@ image::Aufbau-Dashboard-Unterseite.png[align="center", width="629", height="526"
 * *Navigation:* „Zurück zur Übersicht“ führt zur auslösenden Stelle auf dem Dashboard (ggf. mit Anker).
 Listen bieten eine „Vorheriges/Nächstes“-Navigation innerhalb derselben Treffermenge.
 
-[[r-app-inhalte]][[r-dsub-layout]]
+[[r-app-inhalte-dsub-layout]]
 * *Layout und Inhalte:* Pro Abschnitt gilt das Ein-Inhaltstyp-Prinzip.
 Für umfangreiche Inhalte können Tabs oder Accordions eingesetzt werden.
 
@@ -2769,7 +2769,7 @@ Mischformen auf derselben Hierarchieebene sind zu vermeiden, um Orientierung und
 | WCAG 2.2 SC 2.4.3 / 2.4.5
 | Treffermenge seitenweise durchlaufbar; Rückkehr zur Übersicht jederzeit möglich.
 
-| <<r-dsub-layout,Unterseite: Grid 3→2→1, stabile Zustände>>
+| <<r-app-inhalte-dsub-layout,Unterseite: Grid 3→2→1, stabile Zustände>>
 | WCAG 2.2 SC 1.3.1 / 1.4.10
 | Inhalte in klaren Abschnitten; 3→2→1-Reflow ohne horizontales Scrollen.
 
@@ -2777,7 +2777,7 @@ Mischformen auf derselben Hierarchieebene sind zu vermeiden, um Orientierung und
 | WCAG 2.2 SC 2.4.6
 | App-Name als Überschrift/Label klar wahrnehmbar und programmatisch identifizierbar.
 
-| <<r-app-inhalte,Abschnitte ohne Misch-Widgets; Tabs/Accordion bei Bedarf>>
+| <<r-app-inhalte-dsub-layout,Abschnitte ohne Misch-Widgets; Tabs/Accordion bei Bedarf>>
 | WCAG 2.2 SC 1.3.1 / 1.4.10
 | Pro Abschnitt ein Inhaltstyp; umfangreiche Inhalte via Tabs/Accordion strukturiert.
 
