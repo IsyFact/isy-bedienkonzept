@@ -28,7 +28,7 @@ Dieses Konzept ist für jedes Frontend relevant, unabhängig von dessen Komplexi
 Es ist gültig für alle Neuentwicklungen und für Überarbeitungen von Frontends, die einem Major Change oder Technologiewechsel unterliegen.
 
 IMPORTANT: Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Bestandsanwendungen.
-Für diese Fälle bleibt das xref:3.2.1@isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[alte Bedienkonzept (ehemals Styleguide)] mit den damals geltenden Inhalten gültig.
+Für diese Fälle bleibt das xref:3.3.0@isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[alte Bedienkonzept (ehemals Styleguide)] mit den damals geltenden Inhalten gültig.
 
 *_Rolle von Designenden, Entwickelnden und Fachlichkeit_*
 
@@ -510,7 +510,7 @@ Ziel ist eine einheitliche, effiziente und barrierefreie Nutzererfahrung in mode
 Die in Kapitel 2 <<Barrierefreiheit>> beschriebenen Anforderungen (WCAG 2.1 / EN 301 549) gelten uneingeschränkt und bilden den verbindlichen Rahmen.
 
 Die Vorgaben dieses Kapitels sind technologienah formuliert und berücksichtigen die Umsetzung mit Angular sowie den Frameworks PrimeNG und PrimeFlex.
-Grundlegende Interaktionsmuster werden im Kapitel <<design-patterns,Design Patterns>> beschrieben.
+Grundlegende Interaktionsmuster werden im Kapitel <<design-pattern>> beschrieben.
 
 Die folgenden Gestaltungsprinzipien definieren zentrale Regeln für Struktur, Lesbarkeit und Anpassungsfähigkeit der Benutzeroberfläche und sichern ein konsistentes Erscheinungsbild sowie eine barrierefreie Bedienung über alle Fenstertypen hinweg.
 
