@@ -2465,6 +2465,7 @@ Nicht relevante Inhalte werden nicht dargestellt.
 
 * *Widget-Prinzip:* Jedes Widget repräsentiert genau einen Inhaltstyp.
 Es enthält einen Titel, optional ein Icon und klare Aktionen.
+
 [[r-dashboard-zustaende]]
 * *Zustände:* Lade-, Leer- und Fehlerzustände sind klar erkennbar, verständlich formuliert und stabil dargestellt.
 
@@ -2564,9 +2565,11 @@ image::Aufbau-Dashboard-Unterseite.png[align="center", width="629", height="526"
 
 [[r-dsub-bezug]]
 * *Bezug und Orientierung:* Titel, Icon und Farbmarkierung entsprechen der auslösenden Dashboard-Kachel bzw. -Gruppe.
+
 [[r-dsub-navigation]]
 * *Navigation:* „Zurück zur Übersicht“ führt zur auslösenden Stelle auf dem Dashboard (ggf. mit Anker).
 Listen bieten eine „Vorheriges/Nächstes“-Navigation innerhalb derselben Treffermenge.
+
 [[r-app-inhalte]]
 [[r-dsub-layout]]
 * *Layout und Inhalte:* Pro Abschnitt gilt das Ein-Inhaltstyp-Prinzip.
@@ -2607,6 +2610,7 @@ image::Aufbau-Applikationsseite.png[align="center", width="629", height="526"]
 * *Optionale Linksnavigation:* Die Applikationsseite kann eine optionale Linksnavigation enthalten, die applikationsinterne Bereiche und Funktionsgruppen abbildet (siehe Kapitel <<Linksnavigation>>).
 
 * *Inhaltsbereich ohne Linksnavigation:* Entfällt die Linksnavigation, nutzt der Inhaltsbereich die gesamte verfügbare Breite.
+
 [[r-app-erkennbarkeit]]
 * *Erkennbarkeit der Applikation:* Der Name der Applikation ist eindeutig erkennbar ausgewiesen, z. B. in der Linksnavigation oder in der ersten Gruppierungsüberschrift des Inhaltsbereichs.
 
