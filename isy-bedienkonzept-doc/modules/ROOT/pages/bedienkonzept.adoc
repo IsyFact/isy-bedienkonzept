@@ -2570,8 +2570,7 @@ image::Aufbau-Dashboard-Unterseite.png[align="center", width="629", height="526"
 * *Navigation:* „Zurück zur Übersicht“ führt zur auslösenden Stelle auf dem Dashboard (ggf. mit Anker).
 Listen bieten eine „Vorheriges/Nächstes“-Navigation innerhalb derselben Treffermenge.
 
-[[r-app-inhalte]]
-[[r-dsub-layout]]
+[[r-app-inhalte]][[r-dsub-layout]]
 * *Layout und Inhalte:* Pro Abschnitt gilt das Ein-Inhaltstyp-Prinzip.
 Für umfangreiche Inhalte können Tabs oder Accordions eingesetzt werden.
 
