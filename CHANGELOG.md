@@ -1,5 +1,6 @@
 # 1.0.0
 ## Dokumentation
+- IFS-2992: Kapitel Benutzereingaben wurde hinzugefügt
 - IFS-5176: Entfernung konkreter Farbvorgaben und Umstellung auf allgemein gehaltene Farbangaben
 - IFS-2865: Die Kapitel *Primäre Fenstertypen*, *Sekundäre Fenstertypen* und *Interaktionsmuster* wurden hinzugefügt
 - IFS-4550: Beschreibungen für *Seiten-Toolbar*, *Tabellen-Toolbar* und *Eingabefeldgruppen mit Toolbar* wurden hinzugefügt
