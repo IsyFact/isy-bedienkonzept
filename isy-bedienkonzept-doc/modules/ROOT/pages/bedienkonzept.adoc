@@ -2487,9 +2487,9 @@ Die Gestaltung unterstützt schnelle Orientierung und effiziente Navigation.
 .Dashboard
 image::02_Dashboard.png[align="center", width="629", height="528"]
 
-[[image-aufbau-dashboard]]
-.Aufbau Dashboard
-image::Aufbau-Dashboard.png[align="center", width="629", height="526"]
+[[image-aufbau-portalstartseite]]
+.Aufbau Portalstartseite
+image::portalstartseite.wireframe.drawio.svg[align="center"]
 
 {empty} +
 
@@ -2554,14 +2554,6 @@ Auf mobilen Geräten ist er unterhalb der Applikations-Widgets anzuordnen.
 Er wird nur angezeigt, wenn entsprechende Inhalte vorliegen.
 
 * *Mehr Inhalte:* Weitere Inhalte sind über „Mehr anzeigen“ auf eine Unterseite auszulagern.
-
-{empty} +
-
-[[image-dashboard-elements]]
-.Dashboard-Elemente
-image::Dashboard_Elemente.png[align="center", width="629", height="120"]
-
-{empty} +
 
 *_Aufbau der Widgets_*
 
