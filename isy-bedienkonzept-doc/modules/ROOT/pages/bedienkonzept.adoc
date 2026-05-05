@@ -2703,13 +2703,9 @@ Sie bündelt objektbezogene Informationen und Aktionen in einer klar strukturier
 
 {empty} +
 
-[[image-applikationdetailbeispiel]]
-.Applikation Detailseite – Beispiel
-image::Detailseite_Beispiel2a.png[align="center", width="629",height="640"]
-
 [[image-aufbauapplikationdetail]]
 .Aufbau Applikation Detailseite
-image::aufbauapplikationdetail.png[align="center", width="629",height="526"]
+image::applikation-detailseite.wireframe.drawio.svg[align="center", width="629",height="526"]
 
 {empty} +
 
