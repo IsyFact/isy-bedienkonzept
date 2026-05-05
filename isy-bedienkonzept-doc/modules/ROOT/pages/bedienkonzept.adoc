@@ -2588,7 +2588,7 @@ Die Dashboard-Unterseite stellt weiterführende Inhalte bereit, die nicht vollst
 
 [[image-aufbau-dashboard-subpage]]
 .Aufbau Dashboard-Unterseite
-image::Aufbau-Dashboard-Unterseite.png[align="center", width="629", height="526"]
+image::dashboard-unterseite.wireframe.drawio.svg[align="center"]
 
 {empty} +
 
