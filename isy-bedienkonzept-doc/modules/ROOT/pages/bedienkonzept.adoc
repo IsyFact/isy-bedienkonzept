@@ -3222,8 +3222,8 @@ Als Technologie-Referenz dient der PrimeNG Stepper (ab Version 20) oder eine gle
 image::Stepper_Beispiel.png[align="center", scaledwidth="96%"]
 
 [[image-stepper2]]
-.Aufbau eines Dialog Wizards
-image::Stepper_Aufbau.png[align="center", scaledwidth="96%"]
+.Aufbau eines Steppers
+image::stepper.wireframe.drawio.svg[align="center"]
 
 *_Aufbau_*
 
