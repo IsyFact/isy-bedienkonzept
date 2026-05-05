@@ -2869,7 +2869,7 @@ Reihenfolge und Benennung sind in der gesamten Anwendung einheitlich zu halten.
 
 [[image-aufbau-abc]]
 .Aufbau Dialog
-image::Dialog_Aufbau_ABC.png[align="center", width="627",height="249"]
+image::dialog.wireframe.drawio.svgC.png[align="center"]
 
 {empty} +
 
