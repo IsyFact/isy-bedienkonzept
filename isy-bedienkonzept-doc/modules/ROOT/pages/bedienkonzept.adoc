@@ -2635,7 +2635,7 @@ image::04_Applikationsseite.png[align="center", width="629", height="528"]
 
 [[image-app-page-structure]]
 .Aufbau einer Applikationsseite
-image::Aufbau-Applikationsseite.png[align="center", width="629", height="526"]
+image::applikationsseite.wireframe.drawio.svg[align="center"]
 
 {empty} +
 
@@ -2643,9 +2643,9 @@ image::Aufbau-Applikationsseite.png[align="center", width="629", height="526"]
 
 * *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten <<header-bereich>>.
 
-* *Optionale Linksnavigation:* Die Linksnavigation bildet applikationsinterne Bereiche und Funktionsgruppen ab.
+* *Optionale Linksnavigation (A):* Die Linksnavigation bildet applikationsinterne Bereiche und Funktionsgruppen ab.
 
-* *Inhaltsbereich:* Applikationsrelevante Inhalte sind in modularen Abschnitten darzustellen.
+* *Inhaltsbereich (B):* Applikationsrelevante Inhalte sind in modularen Abschnitten darzustellen.
 
 *_Richtlinien zur Anwendung_*
 
