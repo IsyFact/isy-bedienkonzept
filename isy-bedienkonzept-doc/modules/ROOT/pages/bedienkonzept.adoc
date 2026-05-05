@@ -2945,7 +2945,7 @@ image::Dialog_Meldung_ObjektLoeschen.png[align="center", width="329",height="163
 
 [[image-aufbaumeldungsdialog]]
 .Aufbau Meldungsdialog
-image::Aufbau_Meldungsdialog.png[align="center", width="325",height="162"]
+image::meldungsdialog.wireframe.drawio.svg[align="center"]
 
 {empty} +
 
