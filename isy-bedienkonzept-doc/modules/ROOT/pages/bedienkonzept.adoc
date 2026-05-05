@@ -672,7 +672,7 @@ Es definiert die Grundstruktur aus Header-Bereich und Inhaltsbereich und legt da
 
 [[image-hauptfenster-aufbau]]
 .Allgemeiner Aufbau des Hauptfensters
-image::hauptfenster.mockup.drawio.svg[align="center"]
+image::hauptfenster.wireframe.drawio.svg[align="center"]
 
 *_Das Hauptfenster folgt modernen Usability-Grundsätzen:_*
 
@@ -695,7 +695,7 @@ Der Header-Bereich enthält allgemeine Informationen zur Anwendungslandschaft, z
 
 [[image-header-aufbau]]
 .Aufbau des Header-Bereiches
-image::header.mockup.drawio.svg[align="center"]
+image::header.wireframe.drawio.svg[align="center"]
 
 <<image-header-aufbau>> zeigt die Bestandteile des Headers:
 
