@@ -1745,7 +1745,7 @@ Eingabefelder sind dynamisch.
 Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (<<placeholder,Placeholder>>) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
 
 
-:example-link-component: Eongabefeld
+:example-link-component: Eingabefeld
 :example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#inputtext
 include::partial$example-link-card.adoc[]
 
