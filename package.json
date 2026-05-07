@@ -1,0 +1,17 @@
+{
+  "name": "isy-bedienkonzept-local-docs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local Antora build for isy-bedienkonzept single module",
+  "scripts": {
+    "docs:build": "antora --clean antora-playbook.local.yml",
+    "docs:serve": "http-server build/site -p 8080 -c-1",
+    "docs:preview": "npm run docs:build && npm run docs:serve"
+  },
+  "devDependencies": {
+    "@antora/cli": "^3.1.10",
+    "@antora/site-generator": "^3.1.10",
+    "@antora/lunr-extension": "1.0.0-alpha.13",
+    "http-server": "^14.1.1"
+  }
+}

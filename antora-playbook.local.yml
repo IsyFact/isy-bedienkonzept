@@ -1,0 +1,36 @@
+site:
+  title: Bedienkonzept (lokal)
+  start_page: isy-bedienkonzept-doc::bedienkonzept.adoc
+
+content:
+  sources:
+    - url: .
+      start_path: isy-bedienkonzept-doc
+
+asciidoc:
+  attributes:
+    page-toctitle: Inhalt
+    sectnums: true
+    sectnumlevels: 5
+    caution-caption: Achtung
+    important-caption: Wichtig
+    note-caption: Hinweis
+    tip-caption: Tipp
+    warning-caption: Warnung
+    appendix-caption: Anhang
+    example-caption: Beispiel
+    figure-caption: Abbildung
+    table-caption: Tabelle
+    listing-caption: Listing
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+
+output:
+  dir: ./build/site
+
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+      languages: [en, de]
