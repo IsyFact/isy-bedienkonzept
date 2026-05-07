@@ -807,10 +807,6 @@ Grundlage bildet ein spezielles Print-Stylesheet über `@media print`.
 Wo möglich, werden ergänzend Seitenregeln über `@page` eingesetzt, um Format, Ränder und Kopf-/Fußbereiche zu definieren.
 Nicht benötigte UI-Elemente werden ausgeblendet; Farben, Abstände und Umbrüche sind auf gute Lesbarkeit und sparsame Ausgabe (Tinte/Toner) zu optimieren.
 
-[[image-seitendruck1]]
-.Seitendruck über Druck-Funktion des Browsers
-image::Druck_GesamteSeite.png[align="center", scaledwidth="96%"]
-
 ==== Technische Grundlagen
 
 [[r-druck-print-stylesheet]]
@@ -856,26 +852,6 @@ Das Format wird über `@page` size festgelegt.
 
 ==== Drucken bestimmter Inhaltsbereiche
 Einzelne Inhaltsbereiche (z. B. Tabellen, Detailansichten) können über dedizierte Druck-Buttons vorbereitet und ausgegeben werden.
-
-[[image-darstellungapplication]]
-.Tabelle – Darstellung in Applikation
-image::Druck_Ergebnisliste.png[align="center", scaledwidth="100%",width="627",height="272"]
-
-[[image-darstellungdruckoption]]
-.Tabelle – Darstellung in Druckvorschau
-image::Druck_Darstellung_Druckoption.png[align="center", scaledwidth="100%",width="629",height="385"]
-
-{nbsp} +
-
-{empty} +
-
-[[image-detaildarstellungapplication]]
-.Detailseite – Darstellung in Applikation
-image::Druck_Darstellung_Applikation.png[align="center", scaledwidth="100%",width="629",height="405"]
-
-[[image-darstellungdetaildruck]]
-.Detailseite – Darstellung in Druckvorschau
-image::Darstellung_In_Druckvorschau.png[align="center", scaledwidth="100%",width="500",height="773"]
 
 *_Richtlinien:_*
 
@@ -1623,14 +1599,6 @@ Im Hover- und Pressed-Zustand wird die Darstellung des Buttons so angepasst, das
 Im Disabled-Zustand ist der Button als nicht verfügbar erkennbar und darf keine Aktion auslösen.
 Im aktiven beziehungsweise fokussierten Zustand ist ein sichtbarer Fokusindikator vorzusehen, der die Anforderungen an die Barrierefreiheit erfüllt.
 
-[[image-standardbutton]]
-.Beispielhafte Darstellung von Button-Zuständen
-image::24_BE_Primary_Button_States.png[align="center"]
-
-Die Abbildung dient ausschließlich der Veranschaulichung typischer Zustände von Buttons.
-Sie stellt keine verbindliche visuelle Vorgabe dar.
-Verbindlich sind die Gestaltungsrichtlinien sowie die Anforderungen an Barrierefreiheit.
-
 *_Visuelle Hierarchie bei Buttons_*
 
 Buttons werden entsprechend ihrer Bedeutung innerhalb einer inhaltlichen Gruppe unterschiedlich hervorgehoben.
@@ -1645,13 +1613,9 @@ Insbesondere bei irreversiblen Aktionen ist eine deutlich erkennbare visuelle Ke
 
 Insgesamt sollte die Anzahl unterschiedlicher Hervorhebungsvarianten innerhalb einer Benutzeroberfläche begrenzt werden, um die Oberfläche nicht zu überladen.
 
-[[image-buttoncolors]]
-.Beispielhafte Varianten kolorierter Buttons
-image::24_BE_Colored_Buttons.png[align="center"]
-
-Die Abbildung dient ausschließlich der Veranschaulichung möglicher visueller Varianten kolorierter Buttons.
-Sie stellt keine verbindliche Festlegung konkreter Farben dar.
-Maßgeblich sind die semantischen Rollen (z. B. Primäraktion, Sekundäraktion, bestätigend, warnend, destruktiv) sowie die Anforderungen an Kontrast und Barrierefreiheit.
+:example-link-component: Button Varianten
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-button#colored-buttons
+include::partial$example-link-card.adoc[]
 
 *_Platzierung der Buttons_*
 
@@ -1700,9 +1664,9 @@ Falls die hervorgehobenen Button-Varianten innerhalb einer Seite zu dominant wir
 Innerhalb einer Seite muss eine Primäraktion klar visuell erkennbar sein.
 Diese darf nicht ausschließlich in einer zurückhaltenden oder sekundären Variante dargestellt werden.
 
-[[image-buttoncolors-inverted]]
-.Invertierte Button-Variante
-image::24_BE_Outlined_Buttons.png[align="center"]
+:example-link-component: Invertierte Buttons
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-button#outlined-buttons
+include::partial$example-link-card.adoc[]
 
 Bei der invertierten Button-Variante wird auf eine vollflächige Hervorhebung verzichtet.
 Stattdessen erfolgt die visuelle Abgrenzung über Kontur und Beschriftung.
@@ -1729,9 +1693,9 @@ Bei der Entwicklung muss darauf geachtet werden, dass Icon-Buttons durch ein <<a
 Generell sollten Icon-Buttons mit Bedacht eingesetzt werden und können somit nicht jeden beliebigen beschrifteten Button ersetzen.
 Am häufigsten wird diese Button-Art in Kombination mit einer Aktion eines Bedienelements oder <<design-pattern,Design Patterns>> genutzt, wie zum Beispiel in der Aktionsspalte einer Tabelle oder zum Hinzufügen oder Löschen von Elementen.
 
-[[image-iconbuttons]]
-.Icon-Buttons
-image::24_BE_Round_Buttons.png[align="center"]
+:example-link-component: Icon Buttons
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-button#icon-buttons
+include::partial$example-link-card.adoc[]
 
 Der Einsatz und die verschiedenen Zustände der Icon-Buttons entsprechen den zuvor beschriebenen Button-Varianten.
 Icon-Buttons können in unterschiedlichen semantischen Varianten eingesetzt werden (z. B. bestätigend, informierend oder destruktiv).
@@ -1746,10 +1710,6 @@ Ist diese Beschreibung jedoch zu lang (mehr als drei Wörter), ist das Icon nich
 In speziellen Fällen werden Icon-Buttons auch ohne ihre Border dargestellt.
 Hierbei ist es besonders wichtig, dass die Icon-Buttons passend zum projektspezifisch definierten Design Pattern gewählt werden.
 Diese werden beispielsweise innerhalb von Tabellenheadern zum Sortieren und Filtern der Tabelleninhalte verwendet und sehen wie folgt aus:
-
-[[image-iconbuttons-withoutborder]]
-.Icon-Buttons ohne Border
-image::24_BE_Icons.png[align="center"]
 
 
 *_Dos_*
@@ -1766,10 +1726,6 @@ Hyperlinks folgen per Default einem einheitlichen Styling und sind in der Regel 
 Da Nutzende daran gewöhnt sind, weiterführende Informationen/Links in einem Fließtext oder auf einer Seite anhand des unterstrichenen Textes zu erkennen, ist es nicht ratsam, daran etwas zu ändern.
 
 Hyperlinks können den Status (State) "normal", "hovered/focus" und "clicked" haben.
- 
-[[image-hyperlinks]]
-.States von Hyperlinks
-image::24_BE_Links.png[align="center"]
 
 Hyperlinks benötigen zwingend ein farbunabhängiges Element zum Identifizieren und Erkennen des States.
 
@@ -1787,66 +1743,19 @@ Die Gestaltung und Platzierung von Eingabefeldern hat direkten Einfluss auf die 
 
 Eingabefelder sind dynamisch.
 Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (<<placeholder,Placeholder>>) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
-Bei der Gestaltung des Labels gibt es zwei Möglichkeiten.
-Das Label ist "regular" oder "bold".
 
-*_Normal:_*
 
-[[image-eingabefeldplatzhalter]]
-.Eingabefeld mit Platzhalter
-image::24_BE_eingabefeld_normal.png[align="center"]
+:example-link-component: Eongabefeld
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#inputtext
+include::partial$example-link-card.adoc[]
 
-oder
-
-[[image-eingabefeldplatzhalter-bold]]
-.Eingabefeld mit Platzhalter und "bold"-Label
-image::24_BE_eingabefeld_bold_normal.png[align="center"]
-
-Im Normalzustand ist das Eingabefeld mit einem bündigen, statischen <<label>> in Dunkelgrau versehen.
-Der Platzhalter ist in einem helleren Grau gehalten.
-Platzhalter müssen sinnvolle Eingabeunterstützungen (im einfachsten Fall das Label selbst) enthalten.
-
-*_Aktiv:_*
-
-[[image-eingabefeldaktiv]]
-.Eingabefeld aktiv
-image::24_BE_eingabefeld_active.png[align="center"]
-
-oder
-
-[[image-eingabefeldaktiv-bold]]
-.Eingabefeld aktiv mit "bold"-Label
-image::24_BE_eingabefeld_bold_active.png[align="center"]
 
 Aktive Eingabefelder werden durch eine um 1 px stärkere Umrandung visuell hervorgehoben.
 Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung <<image-eingabefeldaktiv>>) oder eine Mask enthalten (siehe Abbildung <<image-eingabefeldmask>>).
 
-*_Befülltes Eingabefeld:_*
-
-[[image-eingabefeldfilled]]
-.Eingabefeld befüllt, nicht aktiv
-image::24_BE_eingabefeld_filled.png[align="center"]
-
-oder
-
-[[image-eingabefeldfilled-bold]]
-.Eingabefeld befüllt, nicht aktiv mit "bold"-Label
-image::24_BE_eingabefeld_filled.png[align="center"]
-
-
 Wenn eine Eingabe in einem Eingabefeld getätigt wurde und das Feld wieder verlassen wird, wechselt das Eingabefeld wieder in den Normalzustand mit dem Unterschied, dass der Platzhalter verschwunden ist und die Eingabe angezeigt wird.
 
 *_Disabled:_*
-
-[[image-eingabefelddisabled]]
-.Eingabefeld disabled
-image::24_BE_eingabefeld_disabled.png[align="center"]
-
-oder
-
-[[image-eingabefelddisabled-bold]]
-.Eingabefeld disabled mit "bold"-Label
-image::24_BE_eingabefeld_bold_disabled.png[align="center"]
 
 Deaktivierte Eingabefelder (disabled) sind grau hinterlegt und geben zusätzlich über einen Mouse-Cursor-Wechsel beim Hovern den Disabled State wieder.
 Disabled Felder werden *nur* eingesetzt, wenn der Inhalt zum aktuellen Zeitpunkt nicht relevant ist.
@@ -1854,32 +1763,12 @@ Disabled-Elemente müssen nicht für den Screenreader oder andere Unterstützung
 
 *_Readonly:_*
 
-[[image-eingabefeldreadonly]]
-.Readonly-Eingabefeld
-image::24_BE_eingabefeld_read_only.png[align="center"]
-
-oder
-
-[[image-eingabefeldreadonly-bold]]
-.Readonly-Eingabefeld mit "bold"-Label
-image::24_BE_eingabefeld_bold_readonly.png[align="center"]
-
 Im Gegensatz zu einem deaktivierten Eingabefeld sind Readonly-Eingabefelder für Screenreader und andere Unterstützungstechnologien zugänglich und ihr Inhalt für die Nutzenden zum Zeitpunkt der Interaktion relevant.
 Deaktivierte Felder haben einen Standardhintergrund und sehr hellen Rand.
 Die enthaltene Information lässt sich aus dem Eingabefeld auslesen (auch durch Screenreader oder andere Unterstützungstechnologien) zum Beispiel durch die Tastenkombination "Strg + C".
 Die Information ist zum aktuellen Zeitpunkt relevant, kann aber nicht verändert werden.
 
 *_Eingabefeld als Pflichtfeld:_*
-
-[[image-eingabefeldpflichtfeld]]
-.Eingabefeld als Pflichtfeld
-image::24_BE_eingabefeld_required.png[align="center"]
-
-oder
-
-[[image-eingabefeldpflichtfeld-bold]]
-.Eingabefeld als Pflichtfeld mit "bold"-Label
-image::24_BE_eingabefeld_bold_required.png[align="center"]
 
 Ein Eingabefeld als Pflichtfeld ist im Grunde ein normales Eingabefeld mit der Besonderheit, dass es befüllt werden muss.
 Die "Pflicht"-Kennzeichnung erfolgt dabei durch das Label und wird durch einen Asterisk (*) dargestellt.
@@ -1890,16 +1779,6 @@ Pflichtfelder haben immer eine Validierung und eine entsprechende Fehlermeldung,
 Ein Pflichtfeld kann zusätzlich durch die Deklaration des Platzhalters mit "Pflichtfeld" oder "required" gekennzeichnet werden.
 
 *_Eingabefeld mit Fehlermeldung und Hinweis:_*
-
-[[image-eingabefelderror]]
-.Eingabefeld und Fehlermeldung
-image::24_BE_eingabefeld_error.png[align="center"]
-
-oder
-
-[[image-eingabefelderror-bold]]
-.Eingabefeld und Fehlermeldung mit "bold"-Label
-image::24_BE_eingabefeld_bold_error.png[align="center"]
 
 Bei einer Fehlermeldung wird das betroffene Eingabefeld visuell als fehlerhaft gekennzeichnet und zusätzlich ein verständlicher Hinweistext ausgegeben. Die Kennzeichnung darf nicht ausschließlich über Farbe erfolgen.
 Das Label des Eingabefeldes wird bei einem Fehler nicht verändert.
@@ -2026,9 +1905,9 @@ Eingabefelder können auch eine unbestimmte Menge an Zeichen erwarten.
 Dann wird von einer Textbox gesprochen.
 Diese unterscheiden sich in der Größe und Form von gewöhnlichen <<eingabefeld,Eingabefeldern>>.
 
-[[image-textbox]]
-.Textbox
-image::24_BE_Textbox.png[align="center"]
+:example-link-component: Textbox
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#checkbox
+include::partial$example-link-card.adoc[]
 
 Bei der Eingabe von Text können Textboxen manuell in ihrer Größe verändert werden, sodass der gesamte Inhalt angezeigt werden kann.
 Textboxen sollten mindestens so groß gestaltet werden, dass der am häufigsten zu erwartende Inhalt hineinpasst, ohne manuell die Box anzupassen.
@@ -4950,3 +4829,6 @@ Beide Elemente sollten sich über das gleiche Symbol aus- und einklappen lassen.
 | WCAG 2.2 SC 1.4.10
 | Stepper reflowt 3→2→1 ohne horizontales Scrollen; Leer/Lade/Fehlerzustände verursachen keine störenden Layoutsprünge.
 |===
+
+:example-link-component!:
+:example-link-url!:
