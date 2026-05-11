@@ -1614,7 +1614,7 @@ Insbesondere bei irreversiblen Aktionen ist eine deutlich erkennbare visuelle Ke
 Insgesamt sollte die Anzahl unterschiedlicher Hervorhebungsvarianten innerhalb einer Benutzeroberfläche begrenzt werden, um die Oberfläche nicht zu überladen.
 
 :example-link-component: Button Varianten
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-button#colored-buttons
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-button#colored-buttons
 include::partial$example-link-card.adoc[]
 
 *_Platzierung der Buttons_*
@@ -1665,7 +1665,7 @@ Innerhalb einer Seite muss eine Primäraktion klar visuell erkennbar sein.
 Diese darf nicht ausschließlich in einer zurückhaltenden oder sekundären Variante dargestellt werden.
 
 :example-link-component: Invertierte Buttons
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-button#outlined-buttons
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-button#outlined-buttons
 include::partial$example-link-card.adoc[]
 
 Bei der invertierten Button-Variante wird auf eine vollflächige Hervorhebung verzichtet.
@@ -1694,7 +1694,7 @@ Generell sollten Icon-Buttons mit Bedacht eingesetzt werden und können somit ni
 Am häufigsten wird diese Button-Art in Kombination mit einer Aktion eines Bedienelements oder <<design-pattern,Design Patterns>> genutzt, wie zum Beispiel in der Aktionsspalte einer Tabelle oder zum Hinzufügen oder Löschen von Elementen.
 
 :example-link-component: Icon Buttons
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-button#icon-buttons
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-button#icon-buttons
 include::partial$example-link-card.adoc[]
 
 Der Einsatz und die verschiedenen Zustände der Icon-Buttons entsprechen den zuvor beschriebenen Button-Varianten.
@@ -1746,7 +1746,7 @@ Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (<<placeh
 
 
 :example-link-component: Eingabefeld
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#inputtext
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputtext
 include::partial$example-link-card.adoc[]
 
 
@@ -1824,7 +1824,7 @@ Optisch kann das Eingabefeld der Konsistenz entsprechend länger sein.
 Um das erwartete Eingabeformat von Eingabefeldern anzuzeigen und als Bedienhilfe die Fehlerwahrscheinlichkeit zu minimieren, werden Masks verwendet.
 
 :example-link-component: Eingabefeld mit Mask-Option
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#inputmask
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputmask
 include::partial$example-link-card.adoc[]
 
 Eine Mask kann nur im aktiven State angezeigt werden und entspricht der regulären Schriftfarbe.
@@ -1840,7 +1840,7 @@ Für häufig verwendete Eingaben gibt es die Möglichkeit Input-Optionen für da
 Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsweise die Eingabe eines Datums bei einem Date-Picker oder die Sicherstellung besonderer Zeichen beim "Sonderzeichenpicker".
 
 :example-link-component: Eingabefeld mit Input-Option
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#inputgroup
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputgroup
 include::partial$example-link-card.adoc[]
 
 Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem <<image-eingabefeldplatzhalter,normalen Eingabefeld>>.
@@ -1859,7 +1859,7 @@ Die Input-Option des Sonderzeichen-Picker ist immer am Ende eines Eingabefelds u
 Beim Klick auf die Input-Option öffnet sich in der Mitte des Frontends der Sonderzeichenpicker als Overlay.
 
 :example-link-component: Sonderzeichenpicker
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/isy-angular-components#inputchar
+:example-link-url: {demo-app-url}/isy-angular-widgets/isy-angular-components#inputchar
 include::partial$example-link-card.adoc[]
 
 Mit dem Sonderzeichenpicker lässt sich nun ein Sonderzeichen wählen und einfügen.
@@ -1872,7 +1872,7 @@ Dann wird von einer Textbox gesprochen.
 Diese unterscheiden sich in der Größe und Form von gewöhnlichen <<eingabefeld,Eingabefeldern>>.
 
 :example-link-component: Textbox
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#checkbox
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#textarea
 include::partial$example-link-card.adoc[]
 
 Bei der Eingabe von Text können Textboxen manuell in ihrer Größe verändert werden, sodass der gesamte Inhalt angezeigt werden kann.
@@ -1902,7 +1902,7 @@ Die einfachste Form einer Liste ist die rein textuelle Liste.
 
 
 :example-link-component: Liste
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#dropdown
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#dropdown
 include::partial$example-link-card.adoc[]
 
 Eine Liste kann theoretisch beliebig viele Einträge enthalten, was aber die <<usability-und-benutzerfreundlichkeit,Usability>> verschlechtert.
@@ -1944,7 +1944,7 @@ Eine Checkbox repräsentiert eine unabhängige, nicht-exklusive Auswahl, bei der
 Dabei können Checkboxen vertikal oder auch horizontal angeordnet werden.
 
 :example-link-component: Checkboxen
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#checkbox
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#checkbox
 include::partial$example-link-card.adoc[]
 
 Wichtig ist, dass jede Checkbox einem Label zugeordnet ist.
@@ -1988,7 +1988,7 @@ Es kann innerhalb der Gruppe genau eine Option ausgewählt werden.
 Dabei können Radiobuttons vertikal oder horizontal angeordnet werden.
 
 :example-link-component: Radiobuttons
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#radiobutton
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#radiobutton
 include::partial$example-link-card.adoc[]
 
 Wichtig ist, dass jeder Radiobutton einem Label zugeordnet ist.
@@ -2021,7 +2021,7 @@ Um den Nutzenden zu vermitteln welche Funktion oder Eigenschaft ein- beziehungsw
 Das verwendete Label sollte aussagekräftig und eindeutig sein.
 
 :example-link-component: Input Switch
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-form#inputswitch
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputswitch
 include::partial$example-link-card.adoc[]
 
 *_Dos_*
@@ -2063,7 +2063,7 @@ Darüber liegt ein Pfeil, der es ermöglicht, zu den nächsten Tabs zu gelangen.
 Wurde dieser angeklickt, so springt das Tabview entsprechend viele Einträge weiter.
 
 :example-link-component: Tabs
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-panel#tabs
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#tabs
 include::partial$example-link-card.adoc[]
 
 Die Schriftgröße eines Labels im Tabview sollte 14pt nicht unterschreiten.
@@ -2101,7 +2101,7 @@ Für diesen Zweck wird ein Wizard genutzt.
 Eine Tabelle dient der übersichtlichen Anzeige von größeren Datenmengen und besteht aus mehreren Spalten, die zur Sortierung verwendet werden können.
 
 :example-link-component: Tabelle
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-data#table
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-data#table
 include::partial$example-link-card.adoc[]
 
 Tabellenzeilen sind standardmäßig nicht anwählbar, was aber durch eine fachliche Notwendigkeit umgesetzt werden kann.
@@ -2201,7 +2201,7 @@ Um den Umgang mit solchen Tabellen zu vereinfachen, sollten nicht alle Daten ini
 * Der Paginator bietet die Möglichkeit ganz ans Ende oder ganz an den Anfang zu springen.
 
 :example-link-component: Paginator
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-data#paginator
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-data#paginator
 include::partial$example-link-card.adoc[]
 
 *_Endless Scrolling_*
@@ -2284,7 +2284,7 @@ Sie bietet eine rollen- und kontextabhängige Übersicht über verfügbare Appli
 Die Gestaltung unterstützt schnelle Orientierung und effiziente Navigation.
 
 :example-link-component: Portalstartseite
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/dashboard
+:example-link-url: {demo-app-url}/isy-angular-widgets/dashboard
 include::partial$example-link-card.adoc[]
 
 *_Aufbau_*
@@ -2422,7 +2422,7 @@ Die Applikationsseite bildet den Einstieg in eine Applikation.
 Sie stellt zentrale Inhalte und Funktionen bereit und dient als Ausgangspunkt für weitere Unterseiten.
 
 :example-link-component: Applikationsseite
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/objekt-suchen
+:example-link-url: {demo-app-url}/isy-angular-widgets/objekt-suchen
 include::partial$example-link-card.adoc[]
 
 *_Aufbau_*
@@ -2724,7 +2724,7 @@ Sie dienen der Absicherung kritischer Aktionen oder der Unterbindung riskanter Z
 Dafür sind modalarme Alternativen zu verwenden (vgl. <<bestaetigen-rueckgaengig>>).
 
 :example-link-component: Meldungsdialog
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-overlay#confirmdialog
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-overlay#confirmdialog
 include::partial$example-link-card.adoc[]
 
 *_Aufbau_*
@@ -3004,7 +3004,7 @@ Blockierende Modaldialoge sind zu vermeiden und nur in begründeten Ausnahmefäl
 Als Technologie-Referenz dient der PrimeNG Stepper (ab Version 20) oder eine gleichwertige Umsetzung; das Layout erfolgt mit PrimeFlex oder CSS-Grid.
 
 :example-link-component: Stepper
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-panel#stepper
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#stepper
 include::partial$example-link-card.adoc[]
 
 *_Aufbau_*
@@ -3205,7 +3205,7 @@ Ihre Ausgestaltung folgt den Vorgaben aus <<toolbar>> und konkretisiert deren An
 Die visuelle Trennung zum Inhaltsbereich ist durch eine Linie oder Schattierung klar und konsistent sicherzustellen.
 
 :example-link-component: Seiten-Toolbar
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/isy-angular-components#seitentoolbar
+:example-link-url: {demo-app-url}/isy-angular-widgets/isy-angular-components#seitentoolbar
 include::partial$example-link-card.adoc[]
 
 *_Richtlinien zur Anwendung_*
@@ -3233,7 +3233,7 @@ Die Tabellen-Toolbar steht unmittelbar oberhalb einer Tabelle und bündelt Aktio
 Ihre Gestaltung und Interaktion folgen den allgemeinen Vorgaben aus <<toolbar>>.
 
 :example-link-component: Tabelle mit Toolbar
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/objekt-suchen
+:example-link-url: {demo-app-url}/isy-angular-widgets/objekt-suchen
 include::partial$example-link-card.adoc[]
 
 *_Richtlinien zur Anwendung_*
@@ -3324,7 +3324,7 @@ So wird der Fokus auf genau dieses Inhaltsfragment gelegt.
 Eine klassische Anwendung hat das Akkordeon beispielsweise in FAQs.
 
 :example-link-component: Akkordeon
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-panel#accordion
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#accordion
 include::partial$example-link-card.adoc[]
 
 Fürs Aus- und Einklappen eines Akkordeonelements kann der gesamte Akkordeon-Header angeklickt werden.
@@ -3345,7 +3345,7 @@ So können Nutzende alle Informationsgruppen eigenständig anzeigen oder bei Bed
 Klassischerweise werden Panels in <<formulare,Formularstrecken>> verwendet.
 
 :example-link-component: Panel
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-panel#panel
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#panel
 include::partial$example-link-card.adoc[]
 
 
@@ -3371,7 +3371,7 @@ Ein konsistentes Design fördert die Orientierung und das Vertrauen der Nutzende
 Beim Klick auf das gesamte Element klappt die Liste aus und ein Element kann angewählt werden.
 
 :example-link-component: Dropdown
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#dropdown
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#dropdown
 include::partial$example-link-card.adoc[]
 
 Die Listenelemente sind mindestens 44px hoch und so breit wie das dazugehörige Element (hier exemplarisch das Eingabefeld).
@@ -3392,7 +3392,7 @@ Menü-Buttons bestehen aus zwei Bestandteilen:
 * einem Pfeil-Icon, das per Klick die Dropdown-Liste öffnet.
 
 :example-link-component: Menübutton
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-button#splitbutton
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-button#splitbutton
 include::partial$example-link-card.adoc[]
 
 [TIP]
@@ -3413,7 +3413,7 @@ Dies lässt sich durch zwei Möglichkeiten realisieren: <<ueberschriften,Übersc
 *_Eingabefeldgruppe mit Überschrift und Bedienelement:_*
 
 :example-link-component: Eingabefeldgruppe mit Überschrift
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-form#inputtext
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputtext
 include::partial$example-link-card.adoc[]
 
 Es wird ein einspaltiges Layout verwendet.
@@ -3424,7 +3424,7 @@ Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispal
 *_Eingabefeldgruppe mit Fieldset:_*
 
 :example-link-component: Eingabefeldgruppe mit Fieldset
-:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-panel#fieldset
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#fieldset
 include::partial$example-link-card.adoc[]
 
 Bei einer bedingten Pflichtfeldgruppe (ehemals "optionale Pflichtfelder") ist das Ausfüllen mindestens eines Feldes in einer Eingabefeldgruppe Voraussetzung, um den Prozess abzuschließen.
@@ -3505,7 +3505,7 @@ Die folgenden Rahmenbedingungen müssen versionsunabhängig eingehalten werden.
 ==== Datepicker und Timepicker
 
 :example-link-component: Datepicker
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#calendar
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#calendar
 include::partial$example-link-card.adoc[]
 
 *_Funktionalität:_* Ermöglicht die Auswahl eines Datums oder Zeitpunkts über ein interaktives Widget.
@@ -3521,7 +3521,7 @@ include::partial$example-link-card.adoc[]
 ==== InputNumber
 
 :example-link-component: InputNumber
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#inputnumber
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputnumber
 include::partial$example-link-card.adoc[]
 
 *_Funktionalität:_* Ermöglicht das Eingeben numerischer Werte mit optionalen Steuerelementen (zum Beispiel Pfeile).
@@ -3537,7 +3537,7 @@ include::partial$example-link-card.adoc[]
 ==== CascadeSelect
 
 :example-link-component: CascadeSelect
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#treeselect
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#treeselect
 include::partial$example-link-card.adoc[]
 
 *_Funktionalität:_* Bietet hierarchische Auswahlmöglichkeiten, die sich in Unterkategorien verzweigen.
@@ -3555,7 +3555,7 @@ include::partial$example-link-card.adoc[]
 Genaue Details zur Umsetzung eines Dropdowns sind im Kapitel <<dropdown>> zu finden.
 
 :example-link-component: Dropdown
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#dropdown
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#dropdown
 include::partial$example-link-card.adoc[]
 
 *_Funktionalität:_* Ermöglicht die Auswahl eines einzigen Wertes aus einer vordefinierten Liste.
@@ -3960,7 +3960,7 @@ Diese Eingabehilfe erscheint direkt unter dem Textfeld.
 Sie schließt sich, wenn Nutzende neben die Eingabehilfe klicken oder innerhalb der Eingabehilfe ihre Auswahl treffen.
 
 :example-link-component: Autosuggestion
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#autocomplete
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#autocomplete
 include::partial$example-link-card.adoc[]
 
 Sobald die Nutzenden mit der Eingabe beginnen, werden mögliche Werte, die mit der getätigten Eingabe beginnen, in einem Menü unterhalb des Textfelds angezeigt.
@@ -3975,7 +3975,7 @@ Für längere Operationen kann ein Fortschritts-Balken (Progress Bar) genutzt we
 Für kürzere Vorgänge kann ein Fortschritts-Spinner (kreisrunde Fortschrittsanzeige) verwendet werden.
 
 :example-link-component: Progress Spinner
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-misc#progressspinner
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-misc#progressspinner
 include::partial$example-link-card.adoc[]
 
 
@@ -4016,7 +4016,7 @@ Folgende Meldungsarten können als Toast-Notification verwendet werden:
 * Erfolg
 
 :example-link-component: Toast-Notification
-:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-messages#toast
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-messages#toast
 include::partial$example-link-card.adoc[]
 
 *_Hinweisdialoge und -popups_* WiP
