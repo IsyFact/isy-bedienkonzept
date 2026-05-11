@@ -543,7 +543,7 @@ Das Verhalten folgt den allgemeinen <<gestaltungsprinzipien, Prinzipien zur Lesb
 
 [[image-zielkorridor]]
 .Zielkorridor für responsive Layouts mit zentriertem, maximal begrenztem Inhaltsbereich
-image::zielkorridor_maxwidth.png[align="center", scaledwidth="100%",width="1123",height="750"]
+image::zielkorridor.wireframe.drawio.svg[align="center"]
 
 *_Richtlinien_*
 
@@ -570,7 +570,7 @@ Ziel ist ein konsistentes, flexibles und leicht wartbares Layout über alle Bild
 
 [[image-raster-abstaende-layout]]
 .Responsives Layout - Breakpoint-basierte Spaltenzahl
-image::raster_abstaende_layout.png[align="center", scaledwidth="100%",width="1123",height="680"]
+image::spaltenlayout.wireframe.drawio.svg[align="center"]
 
 *_Gestaltungsregeln_*
 
@@ -597,7 +597,7 @@ Bei geringer Bildschirmbreite oder eingeschränktem Platzangebot wird das Layout
 
 [[image-formular-layouts]]
 .Formularraster - Spaltenzahl stufenweise über Breakpoints
-image::formular_layouts.png[align="center", scaledwidth="100%",width="1123",height="794"]
+image::formularlayout.wireframe.drawio.svg[align="center"]
 
 *_Umsetzungshinweise_*
 
@@ -1952,7 +1952,7 @@ Für eine homogene Darstellung sind folgende Abstände einzuhalten:
 
 [[image-checkboxen-mit-einheiten]]
 .Vermaßung von Checkboxen horizontal und vertikal
-image::24_BE_checkboxen_measured.png[align="center"]
+image::checkboxes.wireframe.drawio.svg[align="center"]
 
 *_Dos_*
 
@@ -1996,7 +1996,7 @@ Für eine homogene Darstellung sind folgende Abstände einzuhalten:
 
 [[image-radiobutton-mit-einheiten]]
 .Vermaßung von Radiobuttons horizontal und vertikal
-image::24_BE_radiobutton_measured.png[align="center"]
+image::radiobuttons.wireframe.drawio.svg[align="center"]
 
 *_Dos_*
 
@@ -2074,7 +2074,7 @@ Icons sind mindestens 17px x 17px groß.
 
 [[image-tabview-measured]]
 .Exemplarische Vermaßung des Tabview
-image::24_BE_tabmenu_measured.png[align="center"]
+image::tabmenu.wireframe.drawio.svg[align="center"]
 
 *_Dos:_*
 
@@ -3412,20 +3412,20 @@ Dies lässt sich durch zwei Möglichkeiten realisieren: <<ueberschriften,Übersc
 
 *_Eingabefeldgruppe mit Überschrift und Bedienelement:_*
 
-[[image-eingabefeldgruppe]]
-.Eingabefeldgruppe Beispiel: Persönliche Angaben
-image::24_DP_persoenliche_angaben.png[align="center"]
+:example-link-component: Eingabefeldgruppe mit Überschrift
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-form#inputtext
+include::partial$example-link-card.adoc[]
 
 Es wird ein einspaltiges Layout verwendet.
-Jedes Eingabefeld ist ein Pflichtfeld, gekennzeichnet durch einen Asterisk (*).
+Jedes Pflichtfeld ist durch einen Asterisk (*) gekennzeichnet.
 Eingabefeldgruppen bedürfen keiner zusätzlichen optischen Gruppierung.
 Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends (siehe <<image-vertikalerschnitt>>) folgen.
 
 *_Eingabefeldgruppe mit Fieldset:_*
 
-[[image-bedingtepflichtfeldgruppe]]
-.Eingabefeldgruppe mit bedingten Pflichtfeldern
-image::24_DP_bedingte_pflichtfeldgruppe.png[align="center"]
+:example-link-component: Eingabefeldgruppe mit Fieldset
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-panel#fieldset
+include::partial$example-link-card.adoc[]
 
 Bei einer bedingten Pflichtfeldgruppe (ehemals "optionale Pflichtfelder") ist das Ausfüllen mindestens eines Feldes in einer Eingabefeldgruppe Voraussetzung, um den Prozess abzuschließen.
 
@@ -3446,17 +3446,13 @@ Vielmehr sollte überlegt werden, ob es einen verständlicheren fachlichen Lösu
 *_Beispielhafte Verwendung von Gruppen und inhaltlich logische Gruppierung:_*
 
 * Personendaten (rosa Overlay, vertikal gruppiert)
-* Identitätsnachweis (oranger Overlay, vertikal gruppiert)
-
-[[image-variationeingabefeldgruppen]]
-.Verschiedene Eingabefeldgruppen vertikal gruppiert
-image::24_DP_variation_eingabefeldgruppen.png[align="center"]
+* Identitätsnachweis (vertikal gruppiert)
 
 [[image-mehrspaltigegruppen]]
 .Mehrspaltige inhaltliche Gruppe
-image::24_DP_mehrspaltige_inhaltliche_Gruppe.png[align="center"]
+image::eingabefeldgruppen.wireframe.drawio.svg[align="center"]
 
-Hier wird deutlich, dass in einem mehrspaltigen Layout verschiedene Kombinationen an Eingabefeldern in zweispaltiger (horizontaler) Anordnung einer Hauptgruppe (in Lila) unterliegen.
+Hier wird deutlich, dass in einem mehrspaltigen Layout verschiedene Kombinationen an Eingabefeldern in zweispaltiger (horizontaler) Anordnung einer Hauptgruppe unterliegen.
 Die blockartige Anordnung erleichtert das Erfassen und ermöglicht eine thematische Untergruppen-Clusterung.
 
 [[wertehilfen]]
