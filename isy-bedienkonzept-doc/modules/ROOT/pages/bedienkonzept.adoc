@@ -1823,15 +1823,9 @@ Optisch kann das Eingabefeld der Konsistenz entsprechend länger sein.
 
 Um das erwartete Eingabeformat von Eingabefeldern anzuzeigen und als Bedienhilfe die Fehlerwahrscheinlichkeit zu minimieren, werden Masks verwendet.
 
-[[image-eingabefeldmask]]
-.Eingabefeld und Mask
-image::24_BE_eingabefeld_mask.png[align="center"]
-
-oder
-
-[[image_eingabefeldmask-bold]]
-.Eingabefeld und Mask mit "bold"-Label
-image::24_BE_eingabefeld_bold_mask.png[align="center"]
+:example-link-component: Eingabefeld mit Mask-Option
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#inputmask
+include::partial$example-link-card.adoc[]
 
 Eine Mask kann nur im aktiven State angezeigt werden und entspricht der regulären Schriftfarbe.
 Die Mask ist dem erwarteten Inhalt entsprechend fachlich logisch und nachvollziehbar gewählt.
@@ -1845,15 +1839,9 @@ Eine Mask kann in Einzelfällen auch dem Platzhalter entsprechen.
 Für häufig verwendete Eingaben gibt es die Möglichkeit Input-Optionen für das Eingabefeld anzeigen zu lassen.
 Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsweise die Eingabe eines Datums bei einem Date-Picker oder die Sicherstellung besonderer Zeichen beim "Sonderzeichenpicker".
 
-[[image-eingabefeldinputoption-sonderzeichen]]
-.Eingabefeld und Input-Option Sonderzeichen
-image::24_BE_eingabefeld_input_full.png[align="center"]
-
-oder
-
-[[image-eingabefeldinputoption_bold-sonderzeichen]]
-.Eingabefeld und Input-Option Sonderzeichen mit "bold"-Label
-image::24_BE_eingabefeld_bold_input_full.png[align="center"]
+:example-link-component: Eingabefeld mit Input-Option
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#inputgroup
+include::partial$example-link-card.adoc[]
 
 Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem <<image-eingabefeldplatzhalter,normalen Eingabefeld>>.
 Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung <<image-eingabefeldinputoption>>) oder eine Datumseingabe.
@@ -1868,33 +1856,11 @@ Die Schaltfläche der Input-Option ist mindestens 44px x 44px.
 Der Sonderzeichen-Picker ist eine Input-Option, um nicht übliche Zeichen ohne weitere Hilfsmittel eingeben zu können.
 Die Input-Option des Sonderzeichen-Picker ist immer am Ende eines Eingabefelds und entweder vollständig ausgefüllt mit der Primärfarbe oder alternativ im "Outline"-Styling (siehe folgende Abbildungen).
 
-[[image-eingabefeldinputoption-full]]
-.Eingabefeld und Input-Option Sonderzeichen
-image::24_BE_eingabefeld_input_full.png[align="center"]
-
-oder
-
-[[image-eingabefeldinputoption-bold-full]]
-.Eingabefeld und Input-Option Sonderzeichen mit "bold"-Label
-image::24_BE_eingabefeld_bold_input_full.png[align="center"]
-
-Alternativ:
-
-[[image-eingabefeldinputoption]]
-.Eingabefeld und Input-Option Sonderzeichen im "Outline"-Style
-image::24_BE_eingabefeld_input.png[align="center"]
-
-oder
-
-[[image-eingabefeldinputoption_bold]]
-.Eingabefeld und Input-Option Sonderzeichen mit "bold"-Label im "Outline"-Style
-image::24_BE_eingabefeld_bold_input.png[align="center"]
-
 Beim Klick auf die Input-Option öffnet sich in der Mitte des Frontends der Sonderzeichenpicker als Overlay.
 
-[[image_sonderzeichenpicker]]
-.Sonderzeichen-Picker
-image::24_BE_sonderzeichenpicker.png[align="center"]
+:example-link-component: Sonderzeichenpicker
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/isy-angular-components#inputchar
+include::partial$example-link-card.adoc[]
 
 Mit dem Sonderzeichenpicker lässt sich nun ein Sonderzeichen wählen und einfügen.
 
@@ -1934,9 +1900,10 @@ Listen können in den verschiedensten Ausprägungen eingesetzt werden:
 
 Die einfachste Form einer Liste ist die rein textuelle Liste.
 
-[[image-liste]]
-.Einfache Liste
-image::24_BE_liste.png[align="center"]
+
+:example-link-component: Liste
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#dropdown
+include::partial$example-link-card.adoc[]
 
 Eine Liste kann theoretisch beliebig viele Einträge enthalten, was aber die <<usability-und-benutzerfreundlichkeit,Usability>> verschlechtert.
 Im optimalen Fall haben Listen eine überschaubare Anzahl an logisch relevanten Einträgen.
@@ -1970,23 +1937,15 @@ Der gezielte Einsatz von Checkboxen bei kurzen Listen gibt den Nutzenden die Mö
 
 Checkboxen können auch alleinstehend als boolean-Wert genutzt werden (zum Beispiel, um das Lesen der AGB zu bestätigen).
 
-[[image-checkboxen]]
-.Checkboxen
-image::24_BE_checkboxen.png[align="center"]
-
 Checkboxen sind 24px x 24px groß und weisen für mobile Geräte mindestens einen 44px x 44px großen Klickbereich (Click-Target-Area) auf.
 Checkboxen haben immer ein rechtsstehendes Label mit einer Schriftgröße von mindestens 14pt (hier exemplarisch 16pt).
 
 Eine Checkbox repräsentiert eine unabhängige, nicht-exklusive Auswahl, bei der die Nutzenden beliebig viele Optionen auswählen können.
 Dabei können Checkboxen vertikal oder auch horizontal angeordnet werden.
 
-[[image-checkboxen-vertikal]]
-.Vertikale Gruppe von Checkboxen
-image::24_BE_checkboxen_vertikal.png[align="center"]
-
-[[image-checkboxen-horizontal]]
-.Horizontale Gruppe von Checkboxen
-image::24_BE_checkboxen_horizontal.png[align="center"]
+:example-link-component: Checkboxen
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#checkbox
+include::partial$example-link-card.adoc[]
 
 Wichtig ist, dass jede Checkbox einem Label zugeordnet ist.
 Für eine homogene Darstellung sind folgende Abstände einzuhalten:
@@ -2021,10 +1980,6 @@ Beim Einsatz von Radiobuttons wird den Nutzenden sehr schnell gezeigt, dass sie 
 
 Radiobuttons können nicht alleine verwendet werden, da sie nicht wieder abwählbar sind.
 
-[[image-radiobutton]]
-.Radiobuttons
-image::24_BE_radiobutton.png[align="center"]
-
 Radiobuttons sind 24px groß und weisen für mobile Geräte mindestens einen 44px x 44px großen Klickbereich (Click-Target-Area) auf.
 Radiobuttons haben immer ein rechtsstehendes Label mit einer Schriftgröße von mindestens 14pt (hier exemplarisch 16pt).
 
@@ -2032,13 +1987,9 @@ Ein Radiobutton repräsentiert eine exklusive Auswahl.
 Es kann innerhalb der Gruppe genau eine Option ausgewählt werden.
 Dabei können Radiobuttons vertikal oder horizontal angeordnet werden.
 
-[[image-radiobutton-vertikal]]
-.Vertikale Gruppe von Radiobuttons
-image::24_BE_radiobutton_vertikal.png[align="center"]
-
-[[image-radiobutton-horizontal]]
-.Horizontale Gruppe von Radiobuttons
-image::24_BE_radiobutton_horizontal.png[align="center"]
+:example-link-component: Radiobuttons
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#radiobutton
+include::partial$example-link-card.adoc[]
 
 Wichtig ist, dass jeder Radiobutton einem Label zugeordnet ist.
 Für eine homogene Darstellung sind folgende Abstände einzuhalten:
@@ -2069,9 +2020,9 @@ Per Default ist immer ein Wert gesetzt: inaktiv (ausgeschaltet) oder aktiv (eing
 Um den Nutzenden zu vermitteln welche Funktion oder Eigenschaft ein- beziehungsweise ausgeschaltet werden kann, sollte ein <<label>> links oder rechts neben dem Input Switch platziert werden.
 Das verwendete Label sollte aussagekräftig und eindeutig sein.
 
-[[image-inputswitch]]
-.Input Switch
-image::24_BE_Input_Switch.png[align="center"]
+:example-link-component: Input Switch
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-form#inputswitch
+include::partial$example-link-card.adoc[]
 
 *_Dos_*
 
@@ -2094,24 +2045,12 @@ Durch die Verwendung von Tabs können Nutzende schnell und einfach zwischen vers
 Dies fördert nicht nur die Benutzerfreundlichkeit, sondern auch die Effizienz bei der Informationssuche.
 Tabviews ermöglichen Entwickelnden, Inhalte logisch zu organisieren und sorgen für eine klare Struktur, die die Benutzerbindung und Zufriedenheit steigert.
 
-[[image-tabview]]
-.Tabview
-image::24_BE_tabmenu.png[align="center"]
-
 Ein Tabview hat initial einen aktivierten, aber nicht markierten/fokussierten State (siehe <<image-tabview>>).
 Sobald ein Tab aktiv ausgewählt wird, wird auch die Markierung im Reiter visuell deutlich.
 Der aktive Tab erhält eine visuelle Hervorhebung, beispielsweise in Form einer Markierungslinie.
 
-[[image-tabview-active]]
-.Tabview mit aktivem Reiter
-image::24_BE_tabmenu_active.png[align="center"]
-
 Tabviews können ihre Reiter auch mit visuellen <<icons>> unterstützen.
 Diese verhalten sich analog zum Tab-Label.
-
-[[image-tabview-mit-icons]]
-.Tabview mit Icons und aktivem Reiter
-image::24_BE_tabmenu_icon.png[align="center"]
 
 Es ist ratsam ein Tabview zu nutzen, wenn der Inhalt nicht ohne starkes Scrolling innerhalb des Screens dargestellt werden kann.
 Dabei ist eine fachlich logische Aufgliederung vorauszusetzen.
@@ -2119,17 +2058,13 @@ Dabei ist eine fachlich logische Aufgliederung vorauszusetzen.
 Sollte es fachlich zwingend notwendig sein, mehr Tabs anzubieten, so kann technisch ein „TabOverflow“ via Scrolling eingesetzt werden.
 Dieses Element ist ein „Überlängen-Tabview“.
 
-[[image-tabview-overlong]]
-.Initiales Aussehen eines Überlängen-Tabview
-image::24_BE_tabmenu_long1.png[align="center"]
-
 Das Tabview nutzt dabei die volle, ihm zur Verfügung stehende Breite und signalisiert visuell, dass weitere Tabs außerhalb des sichtbaren Bereichs vorhanden sind.
 Darüber liegt ein Pfeil, der es ermöglicht, zu den nächsten Tabs zu gelangen.
 Wurde dieser angeklickt, so springt das Tabview entsprechend viele Einträge weiter.
 
-[[image-tabview-overlong-skipped]]
-.Überlängen-Tabview mit mindestens einem Seitensprung
-image::24_BE_tabmenu_long2.png[align="center"]
+:example-link-component: Tabs
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-panel#tabs
+include::partial$example-link-card.adoc[]
 
 Die Schriftgröße eines Labels im Tabview sollte 14pt nicht unterschreiten.
 Ist die Standardschriftgröße gewählt, so erhöht sich diese bei aktiven Elementen um 2pt (hier exemplarisch auf 16pt).
@@ -2165,9 +2100,9 @@ Für diesen Zweck wird ein Wizard genutzt.
 
 Eine Tabelle dient der übersichtlichen Anzeige von größeren Datenmengen und besteht aus mehreren Spalten, die zur Sortierung verwendet werden können.
 
-[[image-tabelle]]
-.Beispiel Tabelle
-image::24_BE_Tabelle.png[align="center"]
+:example-link-component: Tabelle
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-data#table
+include::partial$example-link-card.adoc[]
 
 Tabellenzeilen sind standardmäßig nicht anwählbar, was aber durch eine fachliche Notwendigkeit umgesetzt werden kann.
 So steht es der Anwendung frei:
@@ -2265,13 +2200,9 @@ Um den Umgang mit solchen Tabellen zu vereinfachen, sollten nicht alle Daten ini
 * Der Paginator zeigt immer den Stand der angezeigten Menge an (zum Beispiel: "1-10").
 * Der Paginator bietet die Möglichkeit ganz ans Ende oder ganz an den Anfang zu springen.
 
-[[image-initial-paginator]]
-.Initialer Paginator
-image::24_DP_Initial_paginator.png[align="center"]
-
-[[image-active-paginator]]
-.Aktive Auswahl am Paginator (Seite 5 ausgewählt)
-image::24_DP_active-item_paginator.png[align="center"]
+:example-link-component: Paginator
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-data#paginator
+include::partial$example-link-card.adoc[]
 
 *_Endless Scrolling_*
 
@@ -2316,14 +2247,6 @@ Gleichwertige Implementierungen sind zulässig, sofern die beschriebenen Anforde
 Der Login stellt den initialen Zugang zur Fachanwendung bereit.
 Er ist klar, verständlich und auf einen reibungslosen Einstieg ausgerichtet.
 
-{empty} +
-
-[[image-loginscreen]]
-.Login Screen
-image::01_Login.png[align="center", width="629", height="528"]
-
-{empty} +
-
 *_Layout und Struktur_*
 
 * *Header:* Der Header ist ohne Hauptnavigation darzustellen.
@@ -2360,19 +2283,19 @@ Die Portalstartseite dient als zentraler Einstieg nach dem Login.
 Sie bietet eine rollen- und kontextabhängige Übersicht über verfügbare Applikationen und Informationen.
 Die Gestaltung unterstützt schnelle Orientierung und effiziente Navigation.
 
-{empty} +
+:example-link-component: Portalstartseite
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/dashboard
+include::partial$example-link-card.adoc[]
 
-[[image-dashboard]]
-.Dashboard
-image::02_Dashboard.png[align="center", width="629", height="528"]
+*_Aufbau_*
+
+{empty} +
 
 [[image-aufbau-portalstartseite]]
 .Aufbau Portalstartseite
 image::portalstartseite.wireframe.drawio.svg[align="center"]
 
 {empty} +
-
-*_Aufbau_*
 
 * *Headerbereich:* Der Aufbau entspricht vollständig dem definierten <<header-bereich>>.
 
@@ -2498,19 +2421,19 @@ Für umfangreiche Inhalte können Tabs oder Accordions eingesetzt werden.
 Die Applikationsseite bildet den Einstieg in eine Applikation.
 Sie stellt zentrale Inhalte und Funktionen bereit und dient als Ausgangspunkt für weitere Unterseiten.
 
-{empty} +
+:example-link-component: Applikationsseite
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/objekt-suchen
+include::partial$example-link-card.adoc[]
 
-[[image-app-page]]
-.Abbildung: Applikationsseite (Beispiel)
-image::04_Applikationsseite.png[align="center", width="629", height="528"]
+*_Aufbau_*
+
+{empty} +
 
 [[image-app-page-structure]]
 .Aufbau einer Applikationsseite
 image::applikationsseite.wireframe.drawio.svg[align="center"]
 
 {empty} +
-
-*_Aufbau_*
 
 * *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten <<header-bereich>>.
 
@@ -2536,17 +2459,6 @@ image::applikationsseite.wireframe.drawio.svg[align="center"]
 Applikationen sind, sofern fachlich möglich, zu Applikationsgruppen zusammenzufassen.
 Jede Applikationsgruppe bzw. jede eigenständige Applikation erhält eine eindeutige farbliche Kennzeichnung (<<applikationsfarben>>) und – sofern verwendet – ein konsistentes Applikationsicon.
 
-{empty} +
-
-[[image-farbmarkierung]]
-.Dashboard-Widget – Farbmarkierung und Applikationsicon
-image::Applikation_Widget.png[align="center", width="343",height="145"]
-
-[[image-farbmarkierungdetail]]
-.Farbmarkierung Detailseite und Dialog
-image::Applikation_Farbmarkierung.png[align="center", width="629",height="557"]
-
-{empty} +
 
 [[r-app-kennzeichnung]]
 *_Richtlinien zur Kennzeichnung_*
@@ -2568,17 +2480,14 @@ Wird ein Applikationsicon eingesetzt, ist es an allen vorgesehenen Stellen konsi
 ** Subnavigation (Flyout) – <<image-applikationsicon,Icon der Applikation>>
 ** Gruppierungsüberschriften auf Applikationsseiten – <<image-applikationsicon,Icon in Überschriften>>
 
-{empty} +
-
-[[image-applikationsicon]]
-.Applikationsicon auf Applikationsseite
-image::Applikation_Hauptseite2a.png[align="center", width="627",height="521"]
 
 [[applikations-detailseite]]
 ==== Applikations-Detailseite
 
 Die Applikations-Detailseite stellt genau ein einzelnes Objekt dar.
 Sie bündelt objektbezogene Informationen und Aktionen in einer klar strukturierten Darstellung.
+
+*_Aufbau_*
 
 {empty} +
 
@@ -2587,8 +2496,6 @@ Sie bündelt objektbezogene Informationen und Aktionen in einer klar strukturier
 image::applikation-detailseite.wireframe.drawio.svg[align="center", width="629",height="526"]
 
 {empty} +
-
-*_Aufbau_*
 
 [[r-detail-headerbereich]]
 * *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten <<header-bereich>>.
@@ -2734,6 +2641,14 @@ Sie werden primär eingesetzt für kurze, fokussierte Aufgaben, rechtlich notwen
 
 *_Aufbau_*
 
+{empty} +
+
+[[image-aufbau-abc]]
+.Aufbau Dialog
+image::dialog.wireframe.drawio.svg[align="center"]
+
+{empty} +
+
 * *Titelzeile (A):* Die Titelzeile ist aussagekräftig und benennt Aktion und Zielobjekt (z. B. „Personalie XY löschen“).
 Ein optionaler Subtitel kann die Situation präzisieren (z. B. „Personalie hinzufügen – Registerdatensatz XY“; Haupttitel „Personalie hinzufügen“, Subtitel „Registerdatensatz XY“).
 Eine Farbmarkierung im Rahmen der Applikation ist zulässig.
@@ -2744,13 +2659,6 @@ Optional kann ein oberer Hinweis- oder Validierungsbereich zur Rückmeldung genu
 * *Buttonleiste \(C):* Die Buttonleiste enthält Primäraktion (z. B. Löschen, Speichern), Sekundäraktion(en) und Abbrechen.
 Reihenfolge und Benennung sind in der gesamten Anwendung einheitlich zu halten.
 
-{empty} +
-
-[[image-aufbau-abc]]
-.Aufbau Dialog
-image::dialog.wireframe.drawio.svgC.png[align="center"]
-
-{empty} +
 
 *_Richtlinien zur Anwendung_*
 
@@ -2815,20 +2723,19 @@ Sie dienen der Absicherung kritischer Aktionen oder der Unterbindung riskanter Z
 * Meldungsdialoge sind nicht für reine Informationen oder reversible Aktionen einzusetzen.
 Dafür sind modalarme Alternativen zu verwenden (vgl. <<bestaetigen-rueckgaengig>>).
 
+:example-link-component: Meldungsdialog
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-overlay#confirmdialog
+include::partial$example-link-card.adoc[]
+
+*_Aufbau_*
+
 {empty} +
-
-[[image-meldungsdialogobjloeschen]]
-.Meldungsdialog – Objekt löschen
-image::Dialog_Meldung_ObjektLoeschen.png[align="center", width="329",height="163"]
-
 
 [[image-aufbaumeldungsdialog]]
 .Aufbau Meldungsdialog
 image::meldungsdialog.wireframe.drawio.svg[align="center"]
 
 {empty} +
-
-*_Aufbau_*
 
 * *Titelzeile (A):* Die Titelzeile formuliert Aktion und Zielobjekt eindeutig (z. B. „Vorgang 4711 löschen“).
 
@@ -3096,15 +3003,15 @@ Der Stepper wird seitenintern im Inhaltsbereich oder in einem Drawer eingesetzt.
 Blockierende Modaldialoge sind zu vermeiden und nur in begründeten Ausnahmefällen zulässig (z. B. rechtlich erforderliche Bestätigung).
 Als Technologie-Referenz dient der PrimeNG Stepper (ab Version 20) oder eine gleichwertige Umsetzung; das Layout erfolgt mit PrimeFlex oder CSS-Grid.
 
-[[image-stepper1]]
-.Beispiel eines Dialog Wizards
-image::Stepper_Beispiel.png[align="center", scaledwidth="96%"]
+:example-link-component: Stepper
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-panel#stepper
+include::partial$example-link-card.adoc[]
+
+*_Aufbau_*
 
 [[image-stepper2]]
 .Aufbau eines Steppers
 image::stepper.wireframe.drawio.svg[align="center"]
-
-*_Aufbau_*
 
 * *Titelzeile (A):* Die Titelzeile beschreibt die Aufgabe verständlich (z. B. „Neuen Antrag anlegen“) und verortet sie fachlich.
 Die Regeln für Titelzeilen entsprechen denen von Dialogen.
@@ -3177,14 +3084,14 @@ Die Schrittanzeige ist als `p-steplist` mit `p-step`-Elementen strukturiert.
 Alle Use Cases einer Fachanwendung müssen, gegebenenfalls nach Anwendungskomponenten oder Anwendungen gruppiert, direkt über einen Eintrag in der Navigation ansprechbar sein.
 
 [[image_beispiel_navigation]]
-.Beispielnavigation
-image::24_DP_beispiel_navigation.png[align="center"]
+.Darstellung verschiedener Navigationsebenen
+image::navigation.wireframe.drawio.svg[align="center"]
 
 Die IsyFact sieht drei Navigationsebenen vor:
 
-* Die Hauptnavigation (auch horizontale Navigation genannt)
-* Die darin enthaltene Subnavigation (Menüitems der Hauptnavigation)
-* Die Linksnavigation (Liste von Einträgen am linken Rand der Applikation)
+* (A) Die *Hauptnavigation (A)* (auch horizontale Navigation genannt)
+* (B) Die darin enthaltene *Subnavigation (B)*  (Menüitems der Hauptnavigation)
+* (C) Die *Linksnavigation \(C)* (Liste von Einträgen am linken Rand der Applikation)
 
 Innerhalb einer Anwendungslandschaft oder einer einzelnen Fachanwendung muss die Navigation einheitlich strukturiert sein.
 
@@ -3217,10 +3124,6 @@ Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
 Im optimalen Fall hat die Hauptnavigation nicht mehr als 4-7 Menüpunkte.
 Die Hauptnavigation ist nicht scrollbar und enthält kein TabOverflow.
 
-[[image-hauptnavigation]]
-.Hauptnavigation
-image::24_DP_hauptnavigation.png[align="center"]
-
 Unterhalb der Hauptnavigation wird ein Farbbalken angezeigt.
 Die Farbe repräsentiert eine Anwendung oder eine Anwendungsgruppe und kann entsprechend ihrer aktiven Auswahl die Farbe ändern.
 Die Subnavigation öffnet sich per Mausklick.
@@ -3234,10 +3137,6 @@ Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
 Nach Möglichkeit sind die Menüpunkte logisch gruppiert.
 Die Subnavigation ist nicht scrollbar.
 
-[[image-subnavigation]]
-.Subnavigation
-image::24_DP_subnavigation.png[align="center"]
-
 Die Subnavigation wird zum Öffnen von Anwendungskomponenten oder Anwendungen, deren Navigation sich in der Linksnavigation fortsetzt, genutzt.
 
 [[linksnavigation]]
@@ -3249,15 +3148,7 @@ Die Linksnavigation wird mit Menüpunkten von oben nach unten befüllt.
 Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
 Nach Möglichkeit sind die Menüpunkte logisch gruppiert.
 
-[[image-linksnavigation]]
-.Linksnavigation geschlossen (gruppiert)
-image::24_DP_linksnavigation_closed.png[align="center"]
-
 Per Mausklick lassen sich in der Linksnavigation die Gruppierungen öffnen.
-
-[[image-linknavigation-offen]]
-.Linksnavigation geöffnet (gruppiert)
-image::24_DP_linksnavigation_open.png[align="center"]
 
 Diese bleiben auch beim weiteren Öffnen von anderen Gruppen weiterhin offen und verhalten sich an dieser Stelle wie ein <<panel>>.
 Die Linksnavigation enthält optional übergeordnet den Anwendungs- oder Anwendungskomponentennamen.
@@ -3313,9 +3204,9 @@ Sie bündelt seitenspezifische Aktionen (z. B. Navigation, Drucken, Hilfe) und s
 Ihre Ausgestaltung folgt den Vorgaben aus <<toolbar>> und konkretisiert deren Anwendung für Detailseiten.
 Die visuelle Trennung zum Inhaltsbereich ist durch eine Linie oder Schattierung klar und konsistent sicherzustellen.
 
-.Seiten-Toolbar auf Detailseite
-[[image-seitentoolbardetailseite]]
-image::Toolbar_Seiten_Toolbar.png[align="center", width="992",height="91"]
+:example-link-component: Seiten-Toolbar
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/isy-angular-components#seitentoolbar
+include::partial$example-link-card.adoc[]
 
 *_Richtlinien zur Anwendung_*
 
@@ -3341,13 +3232,9 @@ Labels dürfen per Ellipsis verkürzt werden; bedeutungstragende Icons sind beiz
 Die Tabellen-Toolbar steht unmittelbar oberhalb einer Tabelle und bündelt Aktionen für die Tabelle sowie für ausgewählte Tabellenzeilen.
 Ihre Gestaltung und Interaktion folgen den allgemeinen Vorgaben aus <<toolbar>>.
 
-.Tabellen-Toolbar
-[[image-tabellentoolbar]]
-image::Toolbar_Tabelle.png[align="center", width="992",height="94"]
-
-.Filter im Spalten-Header
-[[image-filter-spalten-header]]
-image::Filter_Spalten_Header.png[align="center", width="992",height="100"]
+:example-link-component: Tabelle mit Toolbar
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/objekt-suchen
+include::partial$example-link-card.adoc[]
 
 *_Richtlinien zur Anwendung_*
 
@@ -3375,10 +3262,6 @@ Aktionen, die eine Auswahl voraussetzen, werden bei fehlender Auswahl deaktivier
 
 Auf Detailseiten kann optional eine Toolbar in Eingabefeldgruppen eingesetzt werden, um Objekte der jeweiligen Gruppe zu bearbeiten.
 Die Ausgestaltung der Toolbar folgt den Vorgaben aus <<toolbar>>.
-
-.Eingabefeldgruppen mit Toolbar
-[[eingabefeldgruppen-mit-toolbar]]
-image::Eingabefeldgruppen_Toolbar.png[align="center", width="626", height="161"]
 
 *_Richtlinien zur Anwendung_*
 
@@ -3440,13 +3323,9 @@ Alle anderen Akkordeonelemente sind oder werden eingeklappt.
 So wird der Fokus auf genau dieses Inhaltsfragment gelegt.
 Eine klassische Anwendung hat das Akkordeon beispielsweise in FAQs.
 
-[[image-akkordeon-eingeklappt]]
-.Akkordeon ohne ausgeklapptes Element
-image::24_DP_akkordeon_eingeklappt.png[align="center"]
-
-[[image-akkordeon-ausgeklappt]]
-.Akkordeon mit ausgeklapptem Element
-image::24_DP_akkordeon_ausgeklappt.png[align="center"]
+:example-link-component: Akkordeon
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-panel#accordion
+include::partial$example-link-card.adoc[]
 
 Fürs Aus- und Einklappen eines Akkordeonelements kann der gesamte Akkordeon-Header angeklickt werden.
 Zusätzlich befindet sich auf der linken Seite neben dem Label ein Icon, das den Zustand (ein- oder ausgeklappt) des Akkordeonelements anzeigt.
@@ -3465,13 +3344,10 @@ Weitere Panels innerhalb des Frontends werden durch ein Aus- oder Einklappen nic
 So können Nutzende alle Informationsgruppen eigenständig anzeigen oder bei Bedarf ausblenden.
 Klassischerweise werden Panels in <<formulare,Formularstrecken>> verwendet.
 
-[[image-panel-eingeklappt]]
-.Eingeklapptes Panel
-image::24_DP_panel_eingeklappt.png[align="center"]
+:example-link-component: Panel
+:example-link-url: https://isyfact.github.io/isy-angular-widgetss/primeng-panel#panel
+include::partial$example-link-card.adoc[]
 
-[[image-panel-ausgeklappt]]
-.Ausgeklapptes Panel
-image::24_DP_panel_ausgeklappt.png[align="center"]
 
 Fürs Aus- und Einklappen eines Panels befindet sich auf der linken Seite auf der Höhe des Labels ein Icon.
 Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen <<image-panel-ausgeklappt>> und <<image-panel-eingeklappt>>).
@@ -3492,15 +3368,11 @@ Eingabefeldlisten setzen Standards für interaktive <<eingabefeld,Eingabefelder>
 Dadurch wird sichergestellt, dass alle Eingabefelder auf dem Frontend einheitlich gestaltet sind und den besten Praktiken hinsichtlich <<usability-und-benutzerfreundlichkeit,Benutzerfreundlichkeit>> und <<barrierefreiheit>> entsprechen.
 Ein konsistentes Design fördert die Orientierung und das Vertrauen der Nutzenden, was letztendlich zu einer höheren Zufriedenheit und Effizienz führt.
 
-[[image-eingabefeldliste-dropdown]]
-.Eingabefeld mit hinterlegten Auswahlmöglichkeiten
-image::24_DP_eingabefeldliste.png[align="center"]
-
 Beim Klick auf das gesamte Element klappt die Liste aus und ein Element kann angewählt werden.
 
-[[image-eingabefeldliste-aktiv-aktives-dropdown]]
-.Aktives Dropdown
-image::24_DP_eingabefeldliste_aufgeklappt.png[align="center"]
+:example-link-component: Dropdown
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#dropdown
+include::partial$example-link-card.adoc[]
 
 Die Listenelemente sind mindestens 44px hoch und so breit wie das dazugehörige Element (hier exemplarisch das Eingabefeld).
 Aktive Listenelemente sind in der Highlightfarbe und hinterlegt dargestellt.
@@ -3519,9 +3391,9 @@ Menü-Buttons bestehen aus zwei Bestandteilen:
 * einem <<icons,Icon>> beziehungsweise einem <<label>> oder einer Kombination von Icon und Label.
 * einem Pfeil-Icon, das per Klick die Dropdown-Liste öffnet.
 
-[[image-menuebuttonbeispiel]]
-.Menü-Button
-image::24_DP_Menue_Button.png[align="center"]
+:example-link-component: Menübutton
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-button#splitbutton
+include::partial$example-link-card.adoc[]
 
 [TIP]
 Das Icon sollte inhaltlich eindeutig zur Funktion passen.
@@ -3636,9 +3508,9 @@ Die folgenden Rahmenbedingungen müssen versionsunabhängig eingehalten werden.
 [[datepicker-wertehilfe]]
 ==== Datepicker und Timepicker
 
-[[image-datepicker-werte]]
-.Beispiel eines Datepicker
-image::24_DP_Datepicker-werte.png[align="center"]
+:example-link-component: Datepicker
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#calendar
+include::partial$example-link-card.adoc[]
 
 *_Funktionalität:_* Ermöglicht die Auswahl eines Datums oder Zeitpunkts über ein interaktives Widget.
 
@@ -3652,9 +3524,9 @@ image::24_DP_Datepicker-werte.png[align="center"]
 [[inputnumber-wertehilfe]]
 ==== InputNumber
 
-[[image-inputnumber-werte]]
-.Beispiel eines InputNumber-Elements
-image::24_DP_Inputnumber-werte.png[align="center"]
+:example-link-component: InputNumber
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#inputnumber
+include::partial$example-link-card.adoc[]
 
 *_Funktionalität:_* Ermöglicht das Eingeben numerischer Werte mit optionalen Steuerelementen (zum Beispiel Pfeile).
 
@@ -3668,9 +3540,9 @@ image::24_DP_Inputnumber-werte.png[align="center"]
 [[cascadeselect-wertehilfe]]
 ==== CascadeSelect
 
-[[image-cascadeselect-werte]]
-.Beispiel eines CascadeSelect-Elements
-image::24_DP_Cascadeselect-werte.png[align="center"]
+:example-link-component: CascadeSelect
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#treeselect
+include::partial$example-link-card.adoc[]
 
 *_Funktionalität:_* Bietet hierarchische Auswahlmöglichkeiten, die sich in Unterkategorien verzweigen.
 
@@ -3686,9 +3558,9 @@ image::24_DP_Cascadeselect-werte.png[align="center"]
 
 Genaue Details zur Umsetzung eines Dropdowns sind im Kapitel <<dropdown>> zu finden.
 
-[[image-dropdown-werte]]
-.Beispiel eines Dropdown-Elements
-image::24_DP_Dropdown-werte.png[align="center"]
+:example-link-component: Dropdown
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#dropdown
+include::partial$example-link-card.adoc[]
 
 *_Funktionalität:_* Ermöglicht die Auswahl eines einzigen Wertes aus einer vordefinierten Liste.
 
@@ -3702,10 +3574,6 @@ image::24_DP_Dropdown-werte.png[align="center"]
 [[multiselect-wertehilfe]]
 ==== MultiSelect
 
-[[image-multiselect-werte]]
-.Beispiel eines MultiSelect-Elements
-image::24_DP_Multiselect-werte.png[align="center"]
-
 *_Funktionalität:_* Ermöglicht die Auswahl mehrerer Werte aus einer Liste.
 
 *_Bedienung:_*
@@ -3717,10 +3585,6 @@ image::24_DP_Multiselect-werte.png[align="center"]
 
 [[context-Group-wertehilfe]]
 ==== Context Group
-
-[[image-context-group-werte]]
-.Beispiel einer Context Group
-image::24_DP_Contextgroup-werte.png[align="center"]
 
 *_Funktionalität:_* Ermöglicht das Hinzufügen oder Entfernen von kontextbezogenen gruppierten Eingabefeldern und Eingabemöglichkeiten (zum Beispiel "Wohnort", bestehend aus mehreren Adressinformationen).
 
@@ -4099,9 +3963,9 @@ Sie dient dazu, Eingaben durch Vorschläge zu vervollständigen und somit zu bes
 Diese Eingabehilfe erscheint direkt unter dem Textfeld.
 Sie schließt sich, wenn Nutzende neben die Eingabehilfe klicken oder innerhalb der Eingabehilfe ihre Auswahl treffen.
 
-[[image-autosuggestion]]
-.Darstellung einer funktionalen Autosuggestion
-image::24_EF_autosuggestion.png[align="center"]
+:example-link-component: Autosuggestion
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-form#autocomplete
+include::partial$example-link-card.adoc[]
 
 Sobald die Nutzenden mit der Eingabe beginnen, werden mögliche Werte, die mit der getätigten Eingabe beginnen, in einem Menü unterhalb des Textfelds angezeigt.
 Nutzende können nun weiter tippen oder direkt einen Wert aus dem Menü auswählen und somit ihre Eingabe verkürzen.
@@ -4114,13 +3978,10 @@ Feedback-Konzepte für Ladezeiten sind ein sehr wichtiges Instrument, um eine gu
 Für längere Operationen kann ein Fortschritts-Balken (Progress Bar) genutzt werden, der sich entsprechend dem Fortschritt des Vorgangs füllt.
 Für kürzere Vorgänge kann ein Fortschritts-Spinner (kreisrunde Fortschrittsanzeige) verwendet werden.
 
-[[image-spinnerbar]]
-.Spinner und Progressbar
-image::24_EF_spinner_and_bar.png[align="center"]
+:example-link-component: Progress Spinner
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-misc#progressspinner
+include::partial$example-link-card.adoc[]
 
-[[image-spinnerbarlist]]
-.Spinner in einer Liste angewandt
-image::24_EF_spinner_and_bar_in_list.png[align="center"]
 
 *_Grundlegende Anwendungshinweise:_*
 
@@ -4158,9 +4019,9 @@ Folgende Meldungsarten können als Toast-Notification verwendet werden:
 * Fehler
 * Erfolg
 
-[[image-toastnotification]]
-.Verschiedene Toast-Notifications
-image::24_UC_toast_notification.png[align="center"]
+:example-link-component: Toast-Notification
+:example-link-url: https://isyfact.github.io/isy-angular-widgets/primeng-messages#toast
+include::partial$example-link-card.adoc[]
 
 *_Hinweisdialoge und -popups_* WiP
 
