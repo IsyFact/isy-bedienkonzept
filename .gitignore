@@ -14,3 +14,11 @@ bin/
 
 # Ignore diagrams.net-specific files
 *.dn.svg.bkp
+
+# Ignore generated documents and macOS Finder metadata
+*.pdf
+.DS_Store
+
+# Ignore local Node.js dependencies and Antora build output
+node_modules/
+build/

@@ -1,0 +1,140 @@
+ifndef::example-link-card-css-included[]
+:example-link-card-css-included:
+
+++++
+<style>
+  .example-link-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    background: #f6f8fa;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  }
+
+  .example-link-card:hover {
+    border-color: #0969da;
+    box-shadow: 0 4px 14px rgba(9, 105, 218, 0.12);
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+
+  .example-link-card__main {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 0;
+  }
+
+  .example-link-card__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 999px;
+    background: #ddf4ff;
+    color: #0969da;
+  }
+
+  .example-link-card__icon svg {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+
+  .example-link-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 0;
+  }
+
+  .example-link-card__label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #57606a;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .example-link-card__title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #24292f;
+  }
+
+  .example-link-card__description {
+    font-size: 0.95rem;
+    color: #57606a;
+  }
+
+  .example-link-card__action {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-weight: 700;
+    color: #0969da;
+  }
+
+  @media (max-width: 640px) {
+    .example-link-card {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .example-link-card__main {
+      align-items: flex-start;
+    }
+
+    .example-link-card__action {
+      white-space: normal;
+      padding-left: 3.75rem;
+    }
+  }
+</style>
+++++
+endif::[]
+
+[subs=attributes+]
+++++
+<a
+  class="example-link-card"
+  href="{example-link-url}"
+  target="_blank"
+  rel="noopener">
+  <span class="example-link-card__main">
+    <span class="example-link-card__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" role="img">
+        <path
+          d="M4 5.5C4 4.67 4.67 4 5.5 4h13c.83 0 1.5.67 1.5 1.5v9c0 .83-.67 1.5-1.5 1.5h-13C4.67 16 4 15.33 4 14.5v-9Z"
+          stroke="currentColor"
+          stroke-width="1.8"/>
+        <path
+          d="M9.5 19h5M12 16v3"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"/>
+        <path
+          d="M10 8l4 2-4 2V8Z"
+          fill="currentColor"/>
+      </svg>
+    </span>
+
+    <span class="example-link-card__content">
+      <span class="example-link-card__label">Live-Beispiel</span>
+      <span class="example-link-card__title">{example-link-component} ansehen</span>
+      <span class="example-link-card__description">
+        Öffnet das Beispiel zur Komponente in der Demo-Anwendung.
+      </span>
+    </span>
+  </span>
+
+  <span class="example-link-card__action">Beispiel öffnen →</span>
+</a>
+++++
