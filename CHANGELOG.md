@@ -1,6 +1,6 @@
 # 1.0.0
 ## Dokumentation
-- IFS-4541: Unterabschnitt zu Eingabefeldern für Datum und Uhrzeit wurde hinzugefügt
+- IFS-4541: Unterabschnitt zu Eingabefeldern für Datum, Uhrzeit und Zeiträume wurde hinzugefügt
 - IFS-2992: Kapitel Benutzereingaben wurde hinzugefügt
 - IFS-5176: Entfernung konkreter Farbvorgaben und Umstellung auf allgemein gehaltene Farbangaben
 - IFS-2865: Die Kapitel *Primäre Fenstertypen*, *Sekundäre Fenstertypen* und *Interaktionsmuster* wurden hinzugefügt
