@@ -22,7 +22,7 @@ asciidoc:
     figure-caption: Abbildung
     table-caption: Tabelle
     listing-caption: Listing
-    demo-app-url: https://isyfact.github.io/
+    demo-app-url: http://localhost:4200
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
