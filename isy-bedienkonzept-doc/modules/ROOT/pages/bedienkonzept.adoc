@@ -1847,9 +1847,75 @@ Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem <<image-ei
 Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung <<image-eingabefeldinputoption>>) oder eine Datumseingabe.
 Die Schaltfläche der Input-Option ist mindestens 44px x 44px.
 
-*_Date-Picker_* *WiP*
+*_Datum- und Uhrzeit-Eingaben_*
 
-*_Time-Picker_* *WiP*
+Datum- und Uhrzeit-Eingaben werden verwendet, wenn Nutzende Datumswerte, Zeitpunkte oder Zeiträume erfassen sollen.
+Sie bestehen aus einem Eingabefeld und können zusätzlich eine Input-Option enthalten, zum Beispiel eine Kalender- oder Uhrzeitauswahl.
+
+Die Input-Option dient als Unterstützung bei der Eingabe.
+Sie ersetzt nicht die Möglichkeit, Werte direkt über die Tastatur einzugeben.
+Das erwartete Eingabeformat muss für die Nutzenden eindeutig erkennbar sein, zum Beispiel durch einen Platzhalter, eine Mask oder einen kurzen Hinweistext.
+
+Für Datum- und Uhrzeit-Eingaben gelten die allgemeinen Richtlinien für Eingabefelder entsprechend.
+Dazu gehören insbesondere sichtbare Labels, eindeutige Pflichtfeldkennzeichnung, verständliche Hinweis- und Fehlermeldungen, ausreichend große Bedienelemente sowie die Möglichkeit zur Bedienung per Tastatur.
+Fehlerhafte Eingaben werden wie bei anderen Eingabefeldern visuell als fehlerhaft gekennzeichnet und zusätzlich mit einem verständlichen Hinweistext erläutert.
+Die Kennzeichnung darf nicht ausschließlich über Farbe erfolgen.
+
+*_Eingabe von Datumswerten_*
+
+Für die Eingabe eines Zeitpunkts mit Datum und Uhrzeit wird ein Eingabefeld verwendet, das beide Informationen eindeutig zusammenführt.
+Das erwartete Format muss klar erkennbar sein, zum Beispiel „TT.MM.JJJJ HH:MM“.
+
+:example-link-component: Eingabe von Datumswerten
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#date-picker
+include::partial$example-link-card.adoc[]
+
+Die Kalenderauswahl unterstützt die Nutzenden bei der Eingabe eines gültigen Datums.
+Die direkte Eingabe über die Tastatur muss weiterhin möglich sein.
+Ungültige Datumswerte, unvollständige Eingaben oder Eingaben im falschen Format müssen mit einer verständlichen Fehlermeldung erläutert werden.
+
+*_Eingabe von Datum mit Uhrzeit_*
+
+Für die Eingabe eines Zeitpunktes mit Datum und Uhrzeit wird ein Eingabefeld verwendet, das beide Informationen eindeutig zusammenführt.
+Das erwartete Format muss klar erkennbar sein, zum Beispiel „TT.MM.JJJJ HH:MM“.
+
+:example-link-component: Eingabe von Datum mit Uhrzeit
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#date-time-picker
+include::partial$example-link-card.adoc[]
+
+Die Uhrzeit wird in der Regel im 24-Stunden-Format angegeben.
+Wenn Datum und Uhrzeit gemeinsam fachlich einen Zeitpunkt beschreiben, können sie in einem gemeinsamen Eingabefeld erfasst werden.
+
+Alternativ können Datum und Uhrzeit in getrennten Eingabefeldern dargestellt werden, wenn dies fachlich verständlicher ist oder wenn beide Werte unabhängig voneinander bearbeitet werden sollen.
+In diesem Fall müssen beide Eingabefelder eindeutig beschriftet und als zusammengehörige Eingabegruppe erkennbar sein.
+
+*_Eingabe von Zeiträumen_*
+
+Für die Eingabe von Zeiträumen ist zwischen reinen Datumszeiträumen und Zeiträumen mit Datum und Uhrzeit zu unterscheiden.
+
+Reine Datumszeiträume können als zusammenhängende Von-bis-Auswahl umgesetzt werden.
+Dabei müssen Beginn und Ende des Zeitraums eindeutig erkennbar sein.
+Das erwartete Format muss auch hier sichtbar angegeben werden, zum Beispiel „TT.MM.JJJJ - TT.MM.JJJJ“.
+
+:example-link-component: Eingabe von Zeiträumen
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#date-range
+include::partial$example-link-card.adoc[]
+
+Bei Zeiträumen mit Datum und Uhrzeit sollen Beginn und Ende getrennt erfasst werden.
+Dadurch können Beschriftungen, Hilfetexte, Fehlermeldungen und Validierungsregeln eindeutig zugeordnet werden.
+
+:example-link-component: Eingabe von Zeiträumen mit Datum und Uhrzeit
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#date-time-range
+include::partial$example-link-card.adoc[]
+
+Ein Zeitraum mit Datum und Uhrzeit besteht in der Regel aus folgenden Angaben:
+
+* Beginn mit Datum und Uhrzeit
+* Ende mit Datum und Uhrzeit
+
+Die Eingaben für Beginn und Ende müssen visuell und semantisch als zusammengehörige Eingabegruppe gestaltet werden.
+Zusätzlich muss geprüft werden, dass das Ende nicht vor dem Beginn liegt.
+Eine fehlerhafte Reihenfolge wird mit einer verständlichen Fehlermeldung ausgegeben.
 
 *_Sonderzeichen-Picker_*
 
