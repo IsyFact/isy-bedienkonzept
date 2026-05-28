@@ -1,5 +1,6 @@
 # 1.0.0
 ## Dokumentation
+- IFS-5465: Das Bedienkonzept wurde technologieunabhängig ausgerichtet und von PrimeNG entkoppelt
 - IFS-4541: Unterabschnitt zu Eingabefeldern für Datum, Uhrzeit und Zeiträume wurde hinzugefügt
 - IFS-2992: Kapitel Benutzereingaben wurde hinzugefügt
 - IFS-5176: Entfernung konkreter Farbvorgaben und Umstellung auf allgemein gehaltene Farbangaben
