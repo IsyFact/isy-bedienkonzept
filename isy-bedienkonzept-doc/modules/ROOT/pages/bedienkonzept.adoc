@@ -22,20 +22,34 @@ Es ist eine xref:referenzimplementierung.adoc[Referenzimplementierung ("Live-Dem
 [[einfuehrung-in-das-bedienkonzept]]
 === Einführung in das Bedienkonzept
 
-*_Gültigkeit und Anwendung_*
+*_Geltungsbereich_*
 
-Dieses Konzept ist für jedes Frontend relevant, unabhängig von dessen Komplexität oder Zielgruppe.
-Es ist gültig für alle Neuentwicklungen und für Überarbeitungen von Frontends, die einem Major Change oder Technologiewechsel unterliegen.
+Dieses Bedienkonzept beschreibt übergreifende Gestaltungs- und Interaktionsrichtlinien für Frontends.
+Es legt Anforderungen an Struktur, Bedienung, Barrierefreiheit, Layout und wiederkehrende Interaktionsmuster fest.
+
+Der Fokus liegt auf Anwendungen, die dem IT-Systemtyp Frontend zugeordnet sind.
+Das Bedienkonzept ist insbesondere auf moderne webbasierte Anwendungen ausgelegt, die nach dem Architekturprinzip einer Single Page Application umgesetzt werden.
+
+Es ist für alle Neuentwicklungen sowie für Überarbeitungen von Frontends relevant, die einem Major Change oder Technologiewechsel unterliegen.
 
 IMPORTANT: Ausgeschlossen sind minimale Bugfixes und die grundsätzliche Wartung von Bestandsanwendungen.
 Für diese Fälle bleibt das xref:3.3.0@isyfact-standards-doku:isy-bedienkonzept:bedienkonzept.adoc[alte Bedienkonzept (ehemals Styleguide)] mit den damals geltenden Inhalten gültig.
+
+Die beschriebenen Vorgaben sind grundsätzlich unabhängig von einer konkreten technologischen Umsetzung anzuwenden.
+Sie definieren fachliche, gestalterische und barrierefreie Anforderungen an die Benutzeroberfläche, ohne eine bestimmte UI-Bibliothek oder ein bestimmtes Framework verpflichtend vorzugeben.
+
+Im IsyFact-Kontext ist das Bedienkonzept besonders gut mit dem IsyFact-Baustein Angular kompatibel.
+Dieser kann als technische Unterstützung für die Umsetzung der beschriebenen Vorgaben genutzt werden.
+
+NOTE: Die technische Umsetzung kann je Projekt variieren.
+Maßgeblich ist, dass die beschriebenen Anforderungen an Bedienbarkeit, Konsistenz, Responsivität und Barrierefreiheit erfüllt werden.
 
 *_Rolle von Designenden, Entwickelnden und Fachlichkeit_*
 
 Designende und Entwickelnde spielen eine entscheidende Rolle bei der Umsetzung des Bedienkonzepts.
 Während Designende für die Gestaltung der Benutzeroberfläche verantwortlich sind und sicherstellen, dass sie den festgelegten Standards entspricht, liegt es in der Verantwortung der Entwickelnden, diese Gestaltung in einem funktionierenden Frontend umzusetzen.
 Eine enge Zusammenarbeit zwischen Design- und Entwicklungsteams ist unerlässlich, um sicherzustellen, dass das Endprodukt den gestalterischen und funktionalen Anforderungen entspricht.
-Insbesondere bei komplexen Frontends ist es ratsam so früh wie möglich die Fachlichkeit hinzuzuziehen und den erarbeiteten Stand der Konzeption zu evaluieren.
+Insbesondere bei komplexen Frontends ist es ratsam, so früh wie möglich die Fachlichkeit hinzuzuziehen und den erarbeiteten Stand der Konzeption zu evaluieren.
 
 *_Einhaltung von Standards und Best Practices_*
 
@@ -198,7 +212,7 @@ Technische Standardmöglichkeiten sollen genutzt und gegebenenfalls mit entsprec
 Das Designprinzip der "Effizienz" bezieht sich darauf, wie gut ein Frontend die Bedürfnisse und Ziele der Nutzenden mit minimalen Aufwänden erfüllt.
 Effizientes Design strebt danach, unnötige Komplexität zu vermeiden und die Interaktionen der Nutzenden so reibungslos wie möglich zu gestalten.
 Dies umfasst Aspekte wie schnelle Ladezeiten, intuitive Navigation, gut platzierte Call-to-Actions und eine klare Informationsarchitektur.
-Ein effizientes Design stellt sicher, dass Nutzende ihre Ziele schnell erreichen können, ohne dabei Zeit oder Mühe zu verschwenden – sei es beim Finden von Informationen, beim Abschließen eines Kaufs oder beim Ausführen einer bestimmten Aktion.
+Ein effizientes Design stellt sicher, dass Nutzende ihre Ziele schnell erreichen können, ohne dabei Zeit oder Mühe zu verschwenden - sei es beim Finden von Informationen, beim Abschließen eines Kaufs oder beim Ausführen einer bestimmten Aktion.
 
 *_Zugänglichkeit_*
 
@@ -240,7 +254,7 @@ Alle hier genannten Maßnahmen sind besonders hervorzuheben und unabdinglich fü
 
 *Dos*
 
-* <<eingabefeld,Eingabefelder>> müssen nach der Aktivierung eines Hochkontrastmodus/Farbfilters zu 50 % bestehen bleiben – eine einzelne Linie als Bestandteil ist nicht ausreichend als Identifizierung eines Eingabefeldes.
+* <<eingabefeld,Eingabefelder>> müssen nach der Aktivierung eines Hochkontrastmodus/Farbfilters zu 50 % bestehen bleiben - eine einzelne Linie als Bestandteil ist nicht ausreichend als Identifizierung eines Eingabefeldes.
 * Die Textgröße soll zum Erreichen der WCAG 2.1 AA-Anforderungen mindestens 14pt für Labels und 12pt für Fließtexte betragen.
 * Der Textkontrast muss mindestens 4,5:1 und bei großer Schrift mindestens 3:1 betragen.
 * Alle Bilder benötigen ein inhaltlich sinnvolles, beschreibendes <<alt-tag,Alt-Attribut>>.
@@ -497,18 +511,6 @@ Es wird nicht aus ästhetischen oder stilistischen Gründen gesetzt.
     </body>
 </html>
 
-[[technische-rahmenbedingungen]]
-== Technische Rahmenbedingungen
-
-Die technischen Rahmenbedingungen legen fest, welche Technologien und Plattformen für die Umsetzung des Bedienkonzepts verwendet werden sollen.
-
-* Für die Entwicklung von Frontends kommt primär die auf Angular basierte Widget Bibliothek https://primeng.org/installation[PrimeNG] zum Einsatz.
-* Ergänzend zu PrimeNG stellt die IsyFact einen Angular-Baustein zur Verfügung.
-Dieser beinhaltet behördenspezifische Widgets wie den Anwendungsrahmen oder Eingabefelder für Sonderzeichen.
-* Der Baustein liefert ein eigenes Theme, welches die im Bedienkonzept beschriebenen <<allgemeine-prinzipien,allgemeinen Prinzipien>> weitestgehend umsetzt.
-Dieses Theme kann bei Bedarf auch durch ein projektspezifisches Theme ersetzt werden.
-* Primär ist der Baustein für die Nutzung auf Desktopgeräten konzipiert, kann aber durch die grundlegende Responsivität auch auf mobilen Geräten genutzt werden.
-
 [[fenstertypen-layout]]
 == Fenstertypen und Layout
 
@@ -517,7 +519,7 @@ Ziel ist eine einheitliche, effiziente und barrierefreie Nutzererfahrung in mode
 
 Die in Kapitel 2 <<Barrierefreiheit>> beschriebenen Anforderungen der WCAG 2.1 AA gelten uneingeschränkt und bilden den verbindlichen Rahmen.
 
-Die Vorgaben dieses Kapitels sind technologienah formuliert und berücksichtigen die Umsetzung mit Angular sowie den Frameworks PrimeNG und PrimeFlex.
+Die Vorgaben dieses Kapitels sind technologieunabhängig formuliert und beschreiben das erwartete Verhalten sowie die gestalterischen Anforderungen an Layout, Responsivität und Barrierefreiheit.
 Grundlegende Interaktionsmuster werden im Kapitel <<design-pattern>> beschrieben.
 
 Die folgenden Gestaltungsprinzipien definieren zentrale Regeln für Struktur, Lesbarkeit und Anpassungsfähigkeit der Benutzeroberfläche und sichern ein konsistentes Erscheinungsbild sowie eine barrierefreie Bedienung über alle Fenstertypen hinweg.
@@ -535,7 +537,7 @@ Schriften und Interaktionsflächen werden nicht bis zur Unbedienbarkeit verklein
 Nutzende erkennen vertraute Muster wieder und müssen keine neuen Bedienweisen erlernen.
 * *Standardmäßig barrierearm:* Fokuszustände sind deutlich sichtbar, die Reihenfolge semantisch korrekt, und überlagernde Elemente verdecken den Fokus nicht.
 Eine vollständige Tastaturbedienung ist jederzeit möglich.
-* *Flexibel, aber geprüft:* Abweichungen innerhalb definierter Spielräume – etwa bei maximalen Breiten – sind zulässig, sofern sie dokumentiert und die festgelegten Akzeptanzkriterien erfüllt sind.
+* *Flexibel, aber geprüft:* Abweichungen innerhalb definierter Spielräume - etwa bei maximalen Breiten - sind zulässig, sofern sie dokumentiert und die festgelegten Akzeptanzkriterien erfüllt sind.
 
 Die konkreten Fenster‑ und Seitentypen (z. B. Login, Dashboard, Dashboard-Unterseite, Applikationsseite, Applikations-Detailseite) sind im Kapitel Entwurfsmuster (<<primaere-fenstertypen>> und <<sekundaere-fenstertypen>>) beschrieben.
 Die hier definierten Prinzipien bilden die verbindliche Grundlage für deren Gestaltung und technische Umsetzung.
@@ -565,15 +567,16 @@ Der Hauptinhalt befindet sich in einem zentrierten Container mit begrenzter Zeil
 Im Fließtext darf auch bei 400 % Zoom kein horizontales Scrollen erforderlich sein.
 
 [[r-keine-layoutspruenge]]
-* *Planbarer Reflow:* Für dynamisch erscheinende Inhalte – etwa Bilder, Fehlermeldungen oder Platzhalter – wird ausreichend Raum vorgesehen, um Layoutsprünge zu vermeiden.
+* *Planbarer Reflow:* Für dynamisch erscheinende Inhalte - etwa Bilder, Fehlermeldungen oder Platzhalter - wird ausreichend Raum vorgesehen, um Layoutsprünge zu vermeiden.
 
 [[r-fokus-nicht-ueberdeckt]]
 * *Stabile Überlagerungen:* Overlays und feste Elemente (z. B. Header oder Toolbars) überlagern den Inhalt, anstatt den Dokumentenfluss nachträglich zu verschieben.
 Der Fokus bleibt dabei steuerbar und stets sichtbar.
 
-==== Raster, Abstände und Layout-Hilfen
+==== Raster und Abstände
 
-Das Raster ordnet Inhalte in Spalten, während Container und Layout-Utilities die Abstände und die Ausrichtung der Elemente steuern.
+Das Raster ordnet Inhalte in Spalten.
+Container legen die Breite, Abstände und Ausrichtung der Inhalte fest.
 Ziel ist ein konsistentes, flexibles und leicht wartbares Layout über alle Bildschirmgrößen hinweg.
 
 [[image-raster-abstaende-layout]]
@@ -584,11 +587,11 @@ image::spaltenlayout.wireframe.drawio.svg[align="center"]
 
 [[r-spaltenreduktion-3-2-1]]
 * *Breakpoints*: Die Spaltenanzahl wird stufenweise je nach Bildschirmgröße definiert (z. B. 3 → 2 → 1); dies unterstützt skalierbare Layouts ohne Funktionsverlust.
-Individuelle Sondergrößen außerhalb der definierten Design-Tokens sind zu vermeiden.
+Individuelle Sondergrößen außerhalb der definierten Layout-Vorgaben sind zu vermeiden.
 
 [[r-konsistente-abstaende]]
-* *Abstände*: Zwischenräume werden zentral über Container-Gaps gesteuert.
-Gestapelte Margins zwischen Komponenten sollen vermieden werden, um konsistente Abstände sicherzustellen.
+* *Abstände*: Zwischenräume werden einheitlich und nachvollziehbar festgelegt.
+Überlagernde oder unkontrollierte Abstände zwischen Komponenten sollen vermieden werden, um ein konsistentes Layout sicherzustellen.
 
 [[r-keine-festen-breiten]]
 * *Flexible Breiten*: Komponenten passen sich dynamisch der verfügbaren Spaltenbreite an.
@@ -735,8 +738,7 @@ Die Informationen zum angemeldeten Nutzenden zeigen mindestens den Namen oder di
 ==== Inhaltsbereich
 
 Der Inhaltsbereich stellt den zentralen Arbeitsraum der Anwendung dar.
-Er nutzt ein gemeinsames, responsives Raster, das eine konsistente Anordnung von Komponenten, Formularen und Navigationselementen über alle Fenstertypen hinweg gewährleistet.
-Das Layout basiert auf der Angular-Implementierung der IsyFact-Widgets unter Verwendung von PrimeNG und PrimeFlex.
+Er nutzt ein gemeinsames, responsives Gestaltungsraster, das eine konsistente, verständliche und barrierefreie Anordnung von Komponenten, Formularen und Navigationselementen über alle Fenstertypen hinweg gewährleistet.
 
 Im Inhaltsbereich werden sowohl Fachinhalte als auch interaktive Elemente angezeigt.
 Die Gestaltung orientiert sich an den Prinzipien aus Kapitel <<layout-resizing>> (z. B. Reflow, Spacing, Barrierefreiheit) und berücksichtigt insbesondere:
@@ -757,14 +759,14 @@ Die konkreten Fenster- und Seitentypen, die dieses gemeinsame Raster verwenden, 
 === Modalarme Interaktionen (Grundsatz)
 Modale Dialoge sind blockierende Overlays innerhalb der Anwendung, die den Hintergrund sperren, den Tastaturfokus einfangen und eine Entscheidung erfordern, bevor weitergearbeitet werden kann.
 Dies unterbricht den Arbeitsfluss und erschwert die Orientierung.
-Deshalb sollen Interaktionen möglichst im Kontext stattfinden – ohne blockierende Dialoge.
+Deshalb sollen Interaktionen möglichst im Kontext stattfinden - ohne blockierende Dialoge.
 Dieses Prinzip verbessert Effizienz, Barrierefreiheit und die allgemeine Nutzererfahrung.
 
 *_Grundprinzip_*
 
-* *Bevorzugte Muster:* Statt vollständig modaler Fenster werden bevorzugt kontextbezogene Interaktionsmuster eingesetzt – beispielsweise Drawer, Inline-Bestätigungsleisten, Popover, Tooltips oder aufklappbare Bereiche (Accordions/Expander).
+* *Bevorzugte Muster:* Statt vollständig modaler Fenster werden bevorzugt kontextbezogene Interaktionsmuster eingesetzt - beispielsweise Drawer, Inline-Bestätigungsleisten, Popover, Tooltips oder aufklappbare Bereiche (Accordions/Expander).
 
-* *Modale Dialoge nur bei zwingendem Bedarf:* Ein modaler Dialog darf nur verwendet werden, wenn dies fachlich oder rechtlich erforderlich ist – etwa bei sicherheitsrelevanten oder bestätigungspflichtigen Aktionen.
+* *Modale Dialoge nur bei zwingendem Bedarf:* Ein modaler Dialog darf nur verwendet werden, wenn dies fachlich oder rechtlich erforderlich ist - etwa bei sicherheitsrelevanten oder bestätigungspflichtigen Aktionen.
 Solche Fälle müssen im Design-Review begründet werden.
 
 *_Fokus-Management_*
@@ -773,7 +775,7 @@ Solche Fälle müssen im Design-Review begründet werden.
 * Beim Öffnen wird der Fokus automatisch auf das erste sinnvolle Element oder den Header des neu geöffneten Bereichs gesetzt.
 
 [[r-dialog-fokusfalle]]
-* Der Fokus ist innerhalb des Dialogs einzuschließen („Focus Trap“) – Tab und Shift+Tab dürfen nicht aus dem Dialog hinausführen.
+* Der Fokus ist innerhalb des Dialogs einzuschließen („Focus Trap“) - Tab und Shift+Tab dürfen nicht aus dem Dialog hinausführen.
 
 [[r-dialog-esc-schliessen]]
 * Der Escape-Key (ESC) sollte, sofern fachlich erlaubt, den Dialog schließen.
@@ -794,7 +796,7 @@ Für interaktive Elemente gelten die Mindestgrößen gemäß den Vorgaben im bar
 *_Alternativen zu Drag-Interaktionen_*
 
 [[r-drag-alternative]]
-Interaktionen, die standardmäßig Drag-and-Drop verwenden (z. B. Sortieren oder Umordnen), müssen immer auch ohne Drag-Gesten bedienbar sein – beispielsweise über Schaltflächen, Menüeinträge oder Tastaturbefehle.
+Interaktionen, die standardmäßig Drag-and-Drop verwenden (z. B. Sortieren oder Umordnen), müssen immer auch ohne Drag-Gesten bedienbar sein - beispielsweise über Schaltflächen, Menüeinträge oder Tastaturbefehle.
 
 *_Overflow und Lesbarkeit_*
 
@@ -833,10 +835,9 @@ Diese verhindern, dass Tabellenzeilen oder Inhaltsboxen auf mehrere Seiten „ze
 Standardmäßig ist Anpassung durch den User Agent erlaubt; mit dem Wert `exact` kann eine exakte Farbwiedergabe erzwungen werden (sofern vom Browser unterstützt).
 
 [[r-druck-margin-boxes]]
-* *Laufende Kopf-/Fußzeilen und Seitenzahlen:* In Chromium-basierten Browsern ab Version 131 (z. B. Chrome/Edge) können per `@page`-Margin-Boxes automatisch Inhalte wie Titel und Seitenzahlen in die Seitenränder gesetzt werden.
-Andere Browser (u. a. Firefox/Safari) befinden sich noch in der Umsetzung.
-Es sollte daher Progressive Enhancement mit `@supports` eingesetzt werden.
-Wo keine native Unterstützung besteht, kann auf Browser-Standardfunktionen oder spezialisierte Engines wie `Paged.js` oder `Prince` zurückgegriffen werden.
+* *Laufende Kopf-/Fußzeilen und Seitenzahlen:* Laufende Kopf- und Fußzeilen sowie Seitenzahlen sind projektspezifisch zu prüfen und nach Möglichkeit über standardisierte Druckfunktionen umzusetzen.
+Die Unterstützung durch Browser und Ausgabekanäle kann variieren.
+Für nicht unterstützte Funktionen sind geeignete Fallbacks vorzusehen.
 
 ==== Richtlinien zur Anwendung
 
@@ -866,7 +867,7 @@ Einzelne Inhaltsbereiche (z. B. Tabellen, Detailansichten) können über dedizie
 * Die allgemeinen Regeln des Drucklayouts gelten weiterhin. Navigation, Buttons und Toolbars werden ausgeblendet, nur inhaltliche Daten werden ausgegeben.
 * Eine Druckvorschau-Ansicht sollte auf einer separaten, druckoptimierten Route dargestellt werden.
 ** Oberhalb der Seite befindet sich ein prominenter „Drucken“-Button, der den Browser-Druckdialog auslöst.
-** Versteckte oder verschachtelte Inhalte (z. B. Tabs, Master-Detail-Bereiche) müssen vollständig linearisiert werden, sodass alle Abschnitte untereinander erscheinen – jeweils mit klarer Überschrift.
+** Versteckte oder verschachtelte Inhalte (z. B. Tabs, Master-Detail-Bereiche) müssen vollständig linearisiert werden, sodass alle Abschnitte untereinander erscheinen - jeweils mit klarer Überschrift.
 * Metainformationen wie Titel und Seitenzahl sollten pro Seite eingebunden werden (je nach Browser-Unterstützung über Margin-Boxen oder Fallbacks).
 
 *_Tabellen:_*
@@ -896,7 +897,7 @@ Im Folgenden beziehen sich die Begriffe „Farbpalette“, „Statusvarianten“
 
 Die eingesetzte Farbpalette kann im Rahmen technischer, gesetzlicher oder gestalterischer Weiterentwicklungen angepasst werden.
 Die jeweils gültigen Farbdefinitionen sowie die zugehörigen Kontrastwerte sind der Designdokumentation zu entnehmen.
-Ergänzende Informationen zu Farbgrundlagen und Farbnutzung sind im https://styleguide.bundesregierung.de/sg-de/basiselemente/farben[Styleguide der Bundesregierung – Farben] zu finden.
+Ergänzende Informationen zu Farbgrundlagen und Farbnutzung sind im https://styleguide.bundesregierung.de/sg-de/basiselemente/farben[Styleguide der Bundesregierung - Farben] zu finden.
 
 Farben sind funktional und semantisch konsistent einzusetzen.
 Folgende Bedeutungsbereiche sind visuell eindeutig unterscheidbar zu gestalten:
@@ -947,11 +948,11 @@ Sie trägt keine semantische Bedeutung im Sinne von Status- oder Systemmeldungen
 Die Identifikationsfarbe kann u. a. an folgenden Stellen eingesetzt werden:
 
 // ToDo: Beispielbild kann hier ergänzend eingefügt werden
-* Hauptnavigation – Farbbalken unterhalb des Headers
-* Submenü (Flyout) – Farbbalken am oberen Rand des Menüs
-* Widget auf Dashboard – Farbbalken am oberen Rand
-* Titelzeile von Detailseiten – Hintergrundfarbe der Titelzeile
-* Dialoge der Applikation – Farbbalken oberhalb der Titelzeile
+* Hauptnavigation - Farbbalken unterhalb des Headers
+* Submenü (Flyout) - Farbbalken am oberen Rand des Menüs
+* Widget auf Dashboard - Farbbalken am oberen Rand
+* Titelzeile von Detailseiten - Hintergrundfarbe der Titelzeile
+* Dialoge der Applikation - Farbbalken oberhalb der Titelzeile
 
 *_Dos_*
 
@@ -968,201 +969,84 @@ Die Identifikationsfarbe kann u. a. an folgenden Stellen eingesetzt werden:
 === Icons
 
 Icons können als zusätzliche Elemente genutzt werden, um Funktionen und Inhalte auch visuell kenntlich zu machen.
-Dabei sollten Icons primär mit <<text>> genutzt werden und so wenig wie möglich alleine stehen.
-Wenn Icons alleine als <<icon-button,Icon-Buttons>> oder Aktionselemente genutzt werden, sollte sich auf eine kleinstmögliche Menge beschränkt werden.
-Es wird empfohlen alleinstehende Icons mit einer weit verbreiteten und allgemein bekannten Bedeutung zu nutzen.
+Dabei sollten Icons primär zusammen mit <<text>> verwendet werden und nur in begründeten Fällen alleinstehend eingesetzt werden.
+Wenn Icons alleinstehend als <<icon-button,Icon-Buttons>> oder Aktionselemente genutzt werden, sollte ihre Anzahl auf das notwendige Minimum beschränkt werden.
+Es wird empfohlen, alleinstehende Icons nur mit weit verbreiteter und allgemein bekannter Bedeutung zu verwenden.
 
-In der folgenden Tabelle sind mögliche Icons, deren Funktionen sowie die dazugehörige CSS-Klasse aufgeführt.
-Eine Gesamtübersicht der zur Verfügung stehenden Icons ist unter https://www.primefaces.org/diamond/icons.xhtml[PrimeFaces Icons] zu finden.
+In der folgenden Tabelle sind häufig verwendete symbolische Bedeutungen und deren empfohlene Einsatzbereiche aufgeführt.
+Sie dient der einheitlichen Verwendung von Symbolen innerhalb der Benutzeroberfläche.
 
-.Übersicht häufig verwendeter Icons
-ifdef::backend-pdf[]
-[cols="^1a,2,5", options="header", align="center"]
-endif::[]
-ifdef::backend-html5[]
-[cols="^1,2,5", options="header", align="center"]
-endif::[]
+Die konkrete Auswahl, Gestaltung und technische Einbindung eines Icon-Sets erfolgt in der jeweiligen Umsetzung oder Referenzimplementierung.
+Maßgeblich ist, dass Symbole konsistent, verständlich und barrierefrei eingesetzt werden.
+
+.Übersicht symbolischer Bedeutungen und Einsatzbereiche
+[cols="2,5", options="header"]
 |====
-|Icon |CSS-Klasse |Funktionen
+|Symbolische Bedeutung |Empfohlener Einsatzbereich
 
-a|image::primeicons/times.svg[width=32,height=32]
-|pi-times
-|Abbrechen, Ablehnen, Filterzelle leeren, Stornieren
+|Schließen / Abbrechen
+|Abbrechen, Ablehnen, Stornieren, Dialog schließen oder Eingabe verwerfen
 
-a|image::primeicons/car.svg[width=32,height=32]
-|pi-car
-|Abholen
+|Bestätigen / Abschließen
+|Akzeptieren, Annehmen, Erledigen, Zustimmen oder erfolgreichen Abschluss kennzeichnen
 
-a|image::primeicons/sign-out.svg[width=32,height=32]
-|pi-sign-out
-|Abmelden
+|Hinzufügen
+|Einträge, Datensätze, Dateien oder weitere Eingabefelder ergänzen
 
-a|image::primeicons/sign-in.svg[width=32,height=32]
-|pi-sign-in
-|Anmelden
+|Entfernen / Löschen
+|Einträge entfernen, Inhalte löschen oder Zuordnungen aufheben.
+Bei destruktiven Aktionen muss die Bedeutung eindeutig erkennbar sein.
 
-a|image::primeicons/unlock.svg[width=32,height=32]
-|pi-unlock
-|Aktivieren, Freischalten
+|Bearbeiten
+|Vorhandene Inhalte ändern, korrigieren oder eine Bearbeitung fortsetzen
 
-a|image::primeicons/sync.svg[width=32,height=32]
-|pi-sync
-|Aktualisieren, Synchronisieren
+|Anzeigen / Öffnen
+|Details anzeigen, Inhalte öffnen oder zu einer Detailansicht wechseln
 
-a|image::primeicons/check.svg[width=32,height=32]
-|pi-check
-|Akzeptieren, Annehmen, Erledigen, Zustimmen
+|Suchen
+|Suchfunktion auslösen, Inhalte durchsuchen oder eine Suche erneut ausführen
 
-a|image::primeicons/paperclip.svg[width=32,height=32]
-|pi-paperclip
-|Anhänge
+|Speichern
+|Eingaben sichern, Änderungen übernehmen oder einen Bearbeitungsstand speichern
 
-a|image::primeicons/reply.svg[width=32,height=32]
-|pi-reply
-|Antworten
+|Zurück / Weiter
+|Innerhalb eines Ablaufs navigieren, zur vorherigen Ansicht zurückkehren oder zum nächsten Schritt wechseln
 
-a|image::primeicons/eye.svg[width=32,height=32]
-|pi-eye
-|Anzeigen
+|Aktualisieren / Wiederholen
+|Inhalte neu laden, Daten synchronisieren oder eine Aktion erneut ausführen
 
-a|image::primeicons/file.svg[width=32,height=32]
-|pi-file
-|Archiv, aus Archiv zurückholen, Dokument erstellen, Erstmeldung
+|Hochladen / Herunterladen
+|Dateien oder Daten importieren, exportieren, hochladen oder herunterladen
 
-a|image::primeicons/pencil.svg[width=32,height=32]
-|pi-pencil
-|Bearbeiten, Bearbeitung fortsetzen, Editieren, Korrigieren
-
-a|image::primeicons/user.svg[width=32,height=32]
-|pi-user
-|Benutzende, Anwendende, Nutzende, Person
-
-a|image::primeicons/image.svg[width=32,height=32]
-|pi-image
-|Bild, Bild anzeigen
-
-a|image::primeicons/language.svg[width=32,height=32]
-|pi-language
-|Buchstaben-Picker
-
-a|image::primeicons/download.svg[width=32,height=32]
-|pi-download
-|Datei laden, Download, Herunterladen, Laden von Daten
-
-a|image::primeicons/list.svg[width=32,height=32]
-|pi-list
-|Datensatz anzeigen, Detailauskunft, List-Picker (Objektauswahl), Trefferliste
-
-a|image::primeicons/share-alt.svg[width=32,height=32]
-|pi-share-alt
-|Daten senden, Daten übermitteln, Senden, Versenden, Teilen
-
-a|image::primeicons/print.svg[width=32,height=32]
-|pi-print
 |Drucken
+|Inhalte drucken oder eine druckoptimierte Ansicht öffnen
 
-a|image::primeicons/cog.svg[width=32,height=32]
-|pi-cog
-|Einstellung, Einstellungen
+|Information / Hilfe
+|Zusätzliche Hinweise, Erläuterungen, Kontextinformationen oder Hilfetexte anzeigen
 
-a|image::primeicons/arrow-up-right.svg[width=32,height=32]
-|pi-arrow-up-right
-|Eintrag auswählen
+|Warnung / Fehler
+|Warnungen, Fehler, kritische Zustände oder erforderliche Nutzeraktionen kennzeichnen
 
-a|image::primeicons/minus.svg[width=32,height=32]
-|pi-minus
-|Entfernen, Löschen
+|Erfolg / Status
+|Positive Rückmeldungen, abgeschlossene Aktionen oder erfolgreiche Verarbeitung kennzeichnen
 
-a|image::primeicons/plus.svg[width=32,height=32]
-|pi-plus
-|Ergänzen, Hinzufügen
+|Kalender / Zeit
+|Datum, Uhrzeit, Zeiträume oder Wiedervorlagen auswählen
 
-a|image::primeicons/bell.svg[width=32,height=32]
-|pi-bell
-|Erinnerung
+|Benutzende / Personen
+|Personen, Nutzende, Rollen, Kontakte oder Zuständigkeiten kennzeichnen
 
-a|image::primeicons/upload.svg[width=32,height=32]
-|pi-upload
-|Hochladen, Upload
+|Nachrichten / Kommunikation
+|Nachrichten, E-Mails, Benachrichtigungen oder Kommunikation darstellen
 
-a|image::primeicons/exclamation-triangle.svg[width=32,height=32]
-|pi-exclamation-triangle
-|Fehler, Fehlerhaft, Warnung
+|Anhänge / Dokumente
+|Dateien, Anhänge, Dokumente, Archivobjekte oder Nachweise kennzeichnen
 
-a|image::primeicons/eraser.svg[width=32,height=32]
-|pi-eraser
-|Felder leeren
+|Einstellungen
+|Konfigurationen, Optionen oder anpassbare Eigenschaften öffnen
 
-a|image::primeicons/check-circle.svg[width=32,height=32]
-|pi-check-circle
-|Fertig, Abgeschlossen
-
-a|image::primeicons/history.svg[width=32,height=32]
-|pi-history
 |Historie
-
-a|image::primeicons/info-circle.svg[width=32,height=32]
-|pi-info-circle
-|Info
-
-a|image::primeicons/arrow-circle-down.svg[width=32,height=32]
-|pi-arrow-circle-down
-|Importieren
-
-// ToDo: arrow circle up muss noch hochgeladen werden
-//a|image::primeicons/arrow-circle-up.svg[width=32,height=32]
-//|pi-arrow-circle-up
-//|Exportieren
-
-a|image::primeicons/calendar.svg[width=32,height=32]
-|pi-calendar
-|Kalender
-
-ifdef::backend-html5[]
-a|image::primeicons/id-card.svg[width=32,height=32]
-|pi-id-card
-|Kontakt
-endif::[]
-
-a|image::primeicons/trash.svg[width=32,height=32]
-|pi-trash
-|Löschen
-
-a|image::primeicons/envelope.svg[width=32,height=32]
-|pi-envelope
-|Mail, Nachrichten
-
-a|image::primeicons/folder-open.svg[width=32,height=32]
-|pi-folder-open
-|Seite öffnen
-
-a|image::primeicons/save.svg[width=32,height=32]
-|pi-save
-|Sichern, Speichern
-
-a|image::primeicons/search.svg[width=32,height=32]
-|pi-search
-|Suchen, Suche wiederholen, Neue Suche, Durchsuchen, letzte Suche
-
-a|image::primeicons/arrow-circle-left.svg[width=32,height=32]
-|pi-arrow-circle-left
-|Vorheriger, Zurück (Navigation)
-
-a|image::primeicons/arrow-circle-right.svg[width=32,height=32]
-|pi-arrow-circle-right
-|Weiter, Nächster
-
-a|image::primeicons/refresh.svg[width=32,height=32]
-|pi-refresh
-|Wiederholen
-
-a|image::primeicons/clock.svg[width=32,height=32]
-|pi-clock
-|Zeit, Time-Picker
-
-a|image::primeicons/star-fill.svg[width=32,height=32]
-|pi-star-fill
-|Wiedervorlage
+|Verlauf, Änderungsstände, frühere Bearbeitungen oder Protokolle anzeigen
 |====
 
 [[text]]
@@ -1188,7 +1072,7 @@ Diese Schriftart wurde extra für Inhalte des Bundes entwickelt und zur Verfügu
 Die BundesSans ist eine humanistische serifenlose Schrift.
 Rationalität und äußerste Klarheit kennzeichnen ihre Formensprache.
 Die BundesSans gehört zu den sogenannten humanistischen Serifenlosen und entspricht den Empfehlungen des https://www.dbsv.org/[DBSV] hinsichtlich der Leserlichkeit von Schrift.
-Auch in der DIN 1450 – Leserlichkeit – werden Humanistische Antiqua (mit Serifen) und Groteskschriften (ohne Serifen) als besonders gut leserlich bezeichnet.
+Auch in der DIN 1450 - Leserlichkeit - werden Humanistische Antiqua (mit Serifen) und Groteskschriften (ohne Serifen) als besonders gut leserlich bezeichnet.
 
 _Sprachumfang_
 
@@ -1378,7 +1262,7 @@ Es wird empfohlen das Asterisk farblich nicht vom Label abzuheben.
 Labels sollten kurz und prägnant sein, um die Benutzerfreundlichkeit zu maximieren.
 Labels mit mehr als drei Wörtern sollten vermieden werden.
 * *Nähe zum Eingabefeld:*
-Labels sollten in unmittelbarer Nähe des zugehörigen Eingabefelds platziert werden – entweder darüber oder links davon, um eine klare Zuordnung zu gewährleisten.
+Labels sollten in unmittelbarer Nähe des zugehörigen Eingabefelds platziert werden - entweder darüber oder links davon, um eine klare Zuordnung zu gewährleisten.
 * *Ausrichtung:*
 Labels können linksbündig oder rechtsbündig zum Eingabefeld ausgerichtet sein, wobei linksbündige Labels tendenziell besser lesbar und benutzerfreundlicher sind.
 
@@ -1800,7 +1684,7 @@ Erläuterungen können dabei unterschiedlich realisiert werden, sortiert von kur
 
 Alle Erläuterungstexte, die mehr als zwei Zeilen einer Eingabefeldlänge benötigen, sind zu komplex gestaltet und bedürfen einer fachlichen Neugestaltung.
 Sollte dies nicht möglich sein, so ist ein vorangehendes Textelement über dem Eingabefeld notwendig.
-Erklärungshilfen, sollen nicht dynamisch versteckt werden – entweder ist die Erläuterung notwendig, dann sollte sie sichtbar sein oder sie ist nicht notwendig, sodass sie entfernt werden kann.
+Erklärungshilfen, sollen nicht dynamisch versteckt werden - entweder ist die Erläuterung notwendig, dann sollte sie sichtbar sein oder sie ist nicht notwendig, sodass sie entfernt werden kann.
 
 *_Allgemeine Hinweise zu Eingabefeldern:_*
 
@@ -2129,12 +2013,10 @@ Diese verhalten sich analog zum Tab-Label.
 Es ist ratsam ein Tabview zu nutzen, wenn der Inhalt nicht ohne starkes Scrolling innerhalb des Screens dargestellt werden kann.
 Dabei ist eine fachlich logische Aufgliederung vorauszusetzen.
 
-Sollte es fachlich zwingend notwendig sein, mehr Tabs anzubieten, so kann technisch ein „TabOverflow“ via Scrolling eingesetzt werden.
-Dieses Element ist ein „Überlängen-Tabview“.
+Sollte es fachlich zwingend notwendig sein, mehr Tabs anzubieten, kann eine horizontale Navigation innerhalb der Tab-Leiste eingesetzt werden.
 
 Das Tabview nutzt dabei die volle, ihm zur Verfügung stehende Breite und signalisiert visuell, dass weitere Tabs außerhalb des sichtbaren Bereichs vorhanden sind.
-Darüber liegt ein Pfeil, der es ermöglicht, zu den nächsten Tabs zu gelangen.
-Wurde dieser angeklickt, so springt das Tabview entsprechend viele Einträge weiter.
+Eine geeignete Navigation ermöglicht den Zugriff auf die weiteren Tabs.
 
 :example-link-component: Tabs
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#tabs
@@ -2153,7 +2035,7 @@ image::tabmenu.wireframe.drawio.svg[align="center"]
 *_Dos:_*
 
 * Tabs werden eingesetzt, wenn die Komplexität der UI reduziert werden soll und eine sinnvolle Gruppierung einzelner Bereiche vorgenommen werden kann.
-* Die optimale Anzahl an Tabs ist 4 – 7.
+* Die optimale Anzahl an Tabs ist 4 - 7.
 * Labels für die Tabreiter sollten kurz und aussagekräftig sein.
 Es kann auch mit sinnvollen und verständlichen Abkürzungen gearbeitet werden.
 * Überlängen-Tabview sollten nur genutzt werden, wenn es keine andere Möglichkeit zur Gestaltung gibt.
@@ -2311,7 +2193,8 @@ Sie definieren den kontextbezogenen Darstellungsrahmen sowie das funktionale und
 In ihrer Gesamtheit bilden die Seitentypen die verbindliche Strukturierungsgrundlage für sämtliche Ansichten im Hauptfenster.
 Die nachfolgend beschriebenen Festlegungen zu den einzelnen Seitentypen sind verbindlich anzuwenden.
 
-Die technische Umsetzung kann mit Angular sowie PrimeNG/PrimeFlex erfolgen.
+Die konkrete technische Umsetzung ist nicht Bestandteil des Bedienkonzepts.
+Maßgeblich sind die beschriebenen Struktur-, Layout-, Bedienungs- und Barrierefreiheitsanforderungen.
 Genannte Komponenten dienen als Referenz für Interaktions- und Anzeigeverhalten.
 Gleichwertige Implementierungen sind zulässig, sofern die beschriebenen Anforderungen eingehalten werden.
 
@@ -2411,7 +2294,7 @@ Bestätigungspflichtige Aktionen erfolgen bevorzugt inline.
 * *Platzierung:* Teilbereich *B* liegt auf dem Desktop in der mittleren Spalte.
 
 * *Zweck:* Applikations-Widgets dienen als Einstieg zu Applikationen oder Applikationsgruppen.
-Sie werden als Kacheln oder Panels mit Titel, optionalem Icon und kurzer Beschreibung umgesetzt (z. B. `p-card`/`p-panel`).
+Sie werden als Kacheln oder Panels mit Titel, optionalem Icon und kurzer Beschreibung umgesetzt.
 
 * *Gruppierung:* Applikationen sind thematisch zu bündeln; einzelne Applikationen können eigene Widgets erhalten.
 
@@ -2531,7 +2414,7 @@ image::applikationsseite.wireframe.drawio.svg[align="center"]
 *_Kennzeichnung von Applikationsgruppen und Applikationen_*
 
 Applikationen sind, sofern fachlich möglich, zu Applikationsgruppen zusammenzufassen.
-Jede Applikationsgruppe bzw. jede eigenständige Applikation erhält eine eindeutige farbliche Kennzeichnung (<<applikationsfarben>>) und – sofern verwendet – ein konsistentes Applikationsicon.
+Jede Applikationsgruppe bzw. jede eigenständige Applikation erhält eine eindeutige farbliche Kennzeichnung (<<applikationsfarben>>) und - sofern verwendet - ein konsistentes Applikationsicon.
 
 
 [[r-app-kennzeichnung]]
@@ -2540,19 +2423,19 @@ Jede Applikationsgruppe bzw. jede eigenständige Applikation erhält eine eindeu
 * *Kennzeichnung über Applikationsfarben:* Jede Applikationsgruppe bzw. jede eigenständige Applikation ist durch eine farbliche Markierung zu kennzeichnen (siehe Kapitel <<applikationsfarben>>).
 
 * *Einsatzorte der Farbcodierung:* Die Applikationsfarbe ist an den folgenden Stellen der Anwendung konsistent einzusetzen:
-** Hauptnavigation – Farbbalken unterhalb des Headers
-** Subnavigation (Flyout) – Farbbalken am oberen Rand des Menüs
-** Dashboard-Widget – Farbbalken am oberen Rand
-** Detailseiten – Hintergrundfarbe der Titelzeile
-** Dialoge der Applikation – Farbbalken oberhalb der Titelzeile
+** Hauptnavigation - Farbbalken unterhalb des Headers
+** Subnavigation (Flyout) - Farbbalken am oberen Rand des Menüs
+** Dashboard-Widget - Farbbalken am oberen Rand
+** Detailseiten - Hintergrundfarbe der Titelzeile
+** Dialoge der Applikation - Farbbalken oberhalb der Titelzeile
 
 * *Applikationsicon:* Die Verwendung eines Applikationsicons ist optional.
 Wird ein Applikationsicon eingesetzt, ist es an allen vorgesehenen Stellen konsistent zu verwenden.
 
 * *Einsatzorte des Applikationsicons:* Das Applikationsicon kann an folgenden Stellen eingesetzt werden:
-** Dashboard-Widget – <<image-farbmarkierung,Farbmarkierung>> und Applikationsicon
-** Subnavigation (Flyout) – <<image-applikationsicon,Icon der Applikation>>
-** Gruppierungsüberschriften auf Applikationsseiten – <<image-applikationsicon,Icon in Überschriften>>
+** Dashboard-Widget - <<image-farbmarkierung,Farbmarkierung>> und Applikationsicon
+** Subnavigation (Flyout) - <<image-applikationsicon,Icon der Applikation>>
+** Gruppierungsüberschriften auf Applikationsseiten - <<image-applikationsicon,Icon in Überschriften>>
 
 
 [[applikations-detailseite]]
@@ -2590,10 +2473,10 @@ Der Rücksprung in die auslösende Übersicht erfolgt über die Seiten-Toolbar (
 
 ** *Beispiele (Struktur):*
 *** *2 Ebenen:* _Label Ebene 2_: Objektname / ID
-*** *3 Ebenen:* _Label Ebene 2 – Label Ebene 3_: Objektname / ID
+*** *3 Ebenen:* _Label Ebene 2 - Label Ebene 3_: Objektname / ID
 
 [[r-detail-toolbar]]
-* *Seiten-Toolbar (B):* Die Seiten-Toolbar bündelt die zentralen objektbezogenen Aktionen wie „Zurück zur Liste“, „Drucken“ und „Hilfe“ sowie – sofern vorgesehen – Aktionen zum Bearbeiten.
+* *Seiten-Toolbar (B):* Die Seiten-Toolbar bündelt die zentralen objektbezogenen Aktionen wie „Zurück zur Liste“, „Drucken“ und „Hilfe“ sowie - sofern vorgesehen - Aktionen zum Bearbeiten.
 Beschriftung und Reihenfolge sind innerhalb der Anwendung konsistent zu halten.
 
 * *Informationsbereich (C, optional):*
@@ -2663,45 +2546,33 @@ Beim Schließen kehrt der Fokus an das auslösende Element zurück.
 * *Reflow und Responsivität:* Overlays sind im Rahmen der Reflow-Anforderungen ohne horizontales Scrollen nutzbar.
 Layoutsprünge bei Zustandsänderungen sind zu vermeiden.
 
-[[container-overlays-matrix]]
-*Entscheidungsmatrix*
-
-Die folgende Entscheidungsmatrix legt fest, welche Container- und Overlay-Typen für typische Interaktionsfälle einzusetzen sind.
-Sie stellt sicher, dass vergleichbare Situationen konsistent gelöst werden, die kognitive Last gering bleibt und grundlegende Anforderungen an Barrierefreiheit und User Experience eingehalten werden.
-
-[cols="3,3,4,2", options="header"]
+[cols="3,3,4", options="header"]
 |===
-| Interaktionsfall | Empfohlener Container | Begründung | PrimeNG (Bezug)
+| Interaktionsfall | Empfohlener Container | Begründung
 
 | Kurze, reversible Bestätigung
 | Popover nahe Auslöser
-| Die Entscheidung erfolgt im Kontext; minimaler Fokuswechsel; optionale Rückgängig-Option per Toast
-| `p-popover`, `p-toast`
+| Die Entscheidung erfolgt im Kontext; minimaler Fokuswechsel; optionale Rückgängig-Option über eine nicht blockierende Statusmeldung
 
-| Kontextnahe Bearbeitung (ein Formularabschnitt)
-| Drawer/Side Panel (nicht blockierend)
-| Der Arbeitskontext bleibt sichtbar; geringere kognitive Last als Modal
-| `p-sidebar`
+| Nebenaufgabe oder Detailbearbeitung
+| Drawer oder Side Panel
+| Der Seitenkontext bleibt erhalten; die Aufgabe ist klar vom Hauptinhalt getrennt
 
-| Mehrschritt-Anlage oder komplexer Flow
-| Seiteneigener Stepper (nicht modal)
-| Bessere Orientierung, History und Deeplinks sind möglich; Inline-Validierung
-| `p-stepper`, `p-message`
+| Mehrschrittiger Prozess
+| Stepper
+| Die Nutzenden werden schrittweise durch einen linearen oder bedingt linearen Prozess geführt; Validierung und Rückmeldung erfolgen feldnah
 
-| Rechtlich/irreversibel/hochriskant
-| Modaler Dialog (nur wenn zwingend)
-| Explizite Willensbekundung ist erforderlich; Input-Fokus ist abgesichert
-| `p-dialog [modal]="true"`
+| Rechtlich, sicherheitskritisch oder irreversibel
+| Modal
+| Die Entscheidung muss bewusst getroffen werden; der Hintergrund wird blockiert
 
-| Systemhinweis oder Status
-| Toast/Snackbar (global) oder Inline-Message
-| Nicht blockierend; Screenreader-kompatibles Live-Region-Verhalten
-| `p-toast`, `p-message`
+| Feedback oder Hinweis
+| Nicht blockierende Benachrichtigung oder feldnahe Meldung
+| Die Information wird sichtbar und zugänglich dargestellt, ohne den Arbeitsfluss unnötig zu unterbrechen
 
-| Hilfe oder Kontextinfo
-| Popover oder Expander (inline)
-| Zusatzinfos ohne Unterbrechung des Workflows
-| `p-popover`, `p-accordion`, `p-panel`
+| Kontextbezogene Hilfe oder Zusatzinformation
+| Popover, aufklappbarer Bereich oder Panel
+| Die Information wird im direkten Kontext angeboten und kann bei Bedarf ein- oder ausgeblendet werden
 |===
 
 Die nachfolgenden Abschnitte konkretisieren den in dieser Entscheidungsmatrix aufgeführten Dialog als Overlay-Typ und legen Aufbau, Einsatz und spezielle Varianten (z. B. Meldungsdialoge für Bestätigungen und Warnungen) verbindlich fest.
@@ -2724,7 +2595,7 @@ image::dialog.wireframe.drawio.svg[align="center"]
 {empty} +
 
 * *Titelzeile (A):* Die Titelzeile ist aussagekräftig und benennt Aktion und Zielobjekt (z. B. „Personalie XY löschen“).
-Ein optionaler Subtitel kann die Situation präzisieren (z. B. „Personalie hinzufügen – Registerdatensatz XY“; Haupttitel „Personalie hinzufügen“, Subtitel „Registerdatensatz XY“).
+Ein optionaler Subtitel kann die Situation präzisieren (z. B. „Personalie hinzufügen - Registerdatensatz XY“; Haupttitel „Personalie hinzufügen“, Subtitel „Registerdatensatz XY“).
 Eine Farbmarkierung im Rahmen der Applikation ist zulässig.
 
 * *Inhaltsbereich (B):* Der Inhaltsbereich bleibt kompakt und beschränkt sich auf die konkrete Eingabe bzw. Information.
@@ -2738,7 +2609,7 @@ Reihenfolge und Benennung sind in der gesamten Anwendung einheitlich zu halten.
 
 [[r-dialoge-modalitaet]]
 * *Modalität:* Modalität wird nur bei fachlicher Erforderlichkeit eingesetzt.
-Inline-Muster oder Confirm-Popups sind vorzuziehen.
+Inline-Muster oder kontextnahe Bestätigungen sind vorzuziehen.
 
 * *Stapelung:* Dialog-Kaskaden sind zu vermeiden.
 Eine zweite Ebene ist nur in Ausnahmefällen zulässig.
@@ -2754,28 +2625,22 @@ Die Anordnung passt sich responsiv an und bleibt auch in schmalen Viewports übe
 
 *Dialog-Typen*
 
-[cols="1,3,2", options="header"]
+[cols="1,3", options="header"]
 |===
 | Dialog-Typ
 | Beschreibung und empfohlener Einsatz
-| PrimeNG (Bezug)
 
 | Modal
 | Blockiert den Hintergrund. Der Einsatz ist nur für rechtlich erforderliche, irreversible, sicherheitskritische oder transaktionale Commit-Aktionen vorgesehen.
-| `p-dialog [modal]="true"`
 
 | Modeless
-| Blockiert den Hintergrund nicht, überlagert nur den Inhalt. Der Einsatz ist für ergänzende, kurze Aufgaben vorgesehen (z. B. Details bearbeiten).
-| `p-dialog [modal]="false"`
+| Blockiert den Hintergrund nicht, sondern überlagert nur den Inhalt. Der Einsatz ist für ergänzende, kurze Aufgaben vorgesehen, bei denen der Seitenkontext erhalten bleiben soll.
 
-| Sheet (Bottom/Side Sheet)
-| Am Rand angedockt, weniger intrusiv. Der Einsatz ist für mobile bzw. kompakte Bestätigungen oder sekundäre Panels vorgesehen.
-| `p-dialog [modal]="true" position="bottom"` oder `p-sidebar position="right/left"`
+| Sheet
+| Ist am Rand des Viewports angedockt und weniger intrusiv als ein modaler Dialog. Der Einsatz ist für sekundäre Aufgaben, Detailinformationen oder ergänzende Bearbeitungen vorgesehen.
 
 | Vollbild
 | Nutzt den gesamten Viewport. Der Einsatz ist nur bei sehr komplexen, zeitlich fokussierten Aufgaben mit klarer Rückkehr in den Ausgangskontext vorgesehen.
-| `p-dialog [modal]="true" [style]="{width:'100vw', height:'100vh'}` +
-oder eigene Route (bevorzugt)
 |===
 
 [[meldungsdialoge]]
@@ -2832,7 +2697,8 @@ Ziel ist eine effiziente und konsistente Bedienung mit möglichst wenigen modale
 Inline-, Drawer-, Popover- oder Drill-Down-Lösungen haben Vorrang vor blockierenden Dialogen.
 Klare Aktionslabels, Rückgängig-Optionen (wo möglich) sowie feldnahe Validierung mit ergänzender Statusmeldung unterstützen dieses Ziel.
 
-Die Muster berücksichtigen die Anforderungen an Tastatur- und Screenreader-Bedienbarkeit gemäß Kapitel <<barrierefreiheit>> und greifen auf Angular und PrimeNG/PrimeFlex zurück (Komponenten dienen als Referenz).
+Die Muster berücksichtigen die Anforderungen an Tastatur- und Screenreader-Bedienbarkeit gemäß Kapitel <<barrierefreiheit>>.
+Die konkrete technische Umsetzung erfolgt in der Referenzimplementierung oder projektspezifischen Implementierung.
 Entscheidungskriterien und Barrierefreiheitsgrundlagen sind in <<container-overlays>> beschrieben.
 
 [[bestaetigen-rueckgaengig]]
@@ -2846,7 +2712,7 @@ Wo immer fachlich vertretbar, ist eine Rückgängig-Option vorzusehen.
 * *Inline-Bestätigungsleiste:* Am betroffenen Bereich erscheint eine kurze Bestätigung.
 Diese benennt Aktion und Objekt und zeigt eine eindeutig beschriftete Primär- sowie Alternativaktion.
 
-* *Angedockte Bestätigung am Auslöser:* Neben dem auslösenden Element erscheint ein kompakter Popover oder ConfirmPopup.
+* *Angedockte Bestätigung am Auslöser:* Neben dem auslösenden Element erscheint eine kompakte, kontextnahe Bestätigung.
 Aktion und Objekt sind klar benannt; die Auswahl erfolgt direkt im Sichtkontext.
 
 * *Rückgängig-Hinweis:* Nach schnellen, reversiblen Aktionen ist eine Rückgängig-Option vorzusehen, die Nutzende unmittelbar ausführen können.
@@ -2861,7 +2727,7 @@ Formulierungen wie „Ja/Nein“ sind zu vermeiden.
 
 [[r-bestaetigen-undo]]
 * *Rücknahme ermöglichen:* Reversible Aktionen erhalten eine Rückgängig-Option.
-Diese bleibt für eine angemessene Zeit verfügbar (in der Regel 5–10 s) und wird danach entfernt oder deaktiviert.
+Diese bleibt für eine angemessene Zeit verfügbar (in der Regel 5-10 s) und wird danach entfernt oder deaktiviert.
 
 * *Barrierefreiheit & Fokus:* Bestätigungen übernehmen den Fokus nicht dauerhaft.
 Beim Schließen kehrt der Fokus zum Auslöser zurück.
@@ -2878,13 +2744,13 @@ Die Tab-Reihenfolge ist logisch, stabil und folgt dem Lesefluss.
 * *Mobil:* Touch-Ziele erfüllen die Mindestgröße und den Mindestabstand gemäß den geltenden <<barrierefreies-layoutverhalten,Barrierefreiheitsvorgaben>>.
 Platzierung und Größe von Popovers dürfen keine für den aktuellen Task erforderlichen Interaktionen verdecken.
 
-*_PrimeNG-Mapping (Referenz)_*
+*_Umsetzungshinweise_*
 
-* *Inline-Leiste:* Für Inline-Bestätigungen kommt eine Message-Komponente oder ein eigener Inline-Container mit `p-button` zum Einsatz.
+* *Inline-Leiste:* Inline-Bestätigungen werden direkt im betroffenen Inhaltsbereich angezeigt und enthalten klar beschriftete Aktionen.
 
-* *Angedockt:* Für angedockte Bestätigungen ist `p-popover` oder `p-confirmPopup` mit klar beschrifteten Aktionen vorgesehen.
+* *Angedockt:* Kontextnahe Bestätigungen werden nahe am auslösenden Element angezeigt und enthalten eindeutig benannte Entscheidungsoptionen.
 
-* *Rückgängig-Option:* Für die Rückgängig-Option kommt `p-toast` (via `MessageService`) mit interaktiver Aktion (Button oder Link) zum Einsatz.
+* *Rückgängig-Option:* Reversible Aktionen können über eine zeitlich begrenzte, nicht blockierende Statusmeldung mit Rückgängig-Aktion angeboten werden.
 
 [[inline-edit_inline_validation]]
 ==== Inline-Edit und Inline-Validation
@@ -2899,7 +2765,7 @@ Sind diese Voraussetzungen nicht erfüllt, ist stattdessen das <<drilldown_detai
 
 *_Aufbau_*
 
-* *Inline-Edit im Kontext:* Bearbeitungsbereiche erscheinen dort, wo die Information gelesen wird – z. B. in einem Detailabschnitt, einer Karte oder in einer Tabellenzeile.
+* *Inline-Edit im Kontext:* Bearbeitungsbereiche erscheinen dort, wo die Information gelesen wird - z. B. in einem Detailabschnitt, einer Karte oder in einer Tabellenzeile.
 Orientierung und Vergleichbarkeit bleiben erhalten.
 
 * *Feldnahe Hilfen und Fehler:* Hinweise und Fehlertexte sind eindeutig dem Feld zugeordnet, z. B. über `aria-describedby`.
@@ -2930,20 +2796,21 @@ Die Verknüpfung von Hilfs- und Fehlertexten erfolgt über `aria-describedby`.
 * *Tastatur:* Innerhalb des Bearbeitungsbereichs speichert Enter bei gültigen Eingaben; Esc verwirft die Änderungen im aktuellen Bereich.
 Ausgeblendete oder nicht relevante Bedienelemente sind von der Tab-Reihenfolge auszunehmen.
 
-* *Rückmeldung:* Erfolgsmeldungen erscheinen als nicht blockierende Hinweise (z. B. inline oder als Toast).
+* *Rückmeldung:* Erfolgsmeldungen erscheinen als nicht blockierende Hinweise, entweder direkt im Kontext oder als globale Benachrichtigung.
 Fehlermeldungen bleiben sichtbar und dem Feld zugeordnet, bis der Fehler behoben ist.
 
 * *Strukturierung:* Große Bereiche sind in Tabs oder Accordion-Panels zu gliedern.
 Die Panels bleiben einzeln validier- und speicherbar, sofern dies fachlich vorgesehen ist.
 
-*_PrimeNG-Mapping (Referenz)_*
+*_Umsetzungshinweise_*
 
-* *Formular-Implementierung:* Für die Umsetzung kommt Angular `FormGroup` mit PrimeNG-Inputs (`p-inputText`, `p-dropdown` usw.) und konsistenter, feldnaher Fehleranzeige zum Einsatz.
+* *Formular-Implementierung:* Eingaben werden feldnah validiert und mit klaren, verständlichen Fehlermeldungen versehen.
 
-* *Tabellen-Edit:* Die Bearbeitung in `p-table` erfolgt als Zeilen- oder Zellen-Edit mit Speichern und Abbrechen.
+* *Tabellen-Edit:* Die Bearbeitung in Tabellen kann als Zeilen- oder Zellenbearbeitung mit Speichern und Abbrechen erfolgen.
 Bei hoher Komplexität ist zusätzlich pro Zeile ein Drill-Down-Einstieg vorzusehen.
 
-* *Fehlermeldungen:* Die feldnahe Rückmeldung erfolgt über `p-message`, optional zusätzlich global über `p-toast` (z. B. für zusammenfassende Hinweise).
+* *Fehlermeldungen:* Feldnahe Rückmeldungen werden direkt am betroffenen Eingabeelement angezeigt.
+Zusammenfassende Hinweise können ergänzend als nicht blockierende Statusmeldung dargestellt werden.
 
 [[drilldown_detailansicht]]
 ==== Drill-Down (Detailansicht)
@@ -2964,7 +2831,7 @@ Die Verwendung von Breadcrumbs ist optional.
 Die Fehlerübersicht dient als Sprungliste mit direkter Navigation zu den betroffenen Feldern.
 
 * *Formular und Aktionen:* Die Inhalte sind nach Fachlogik gruppiert (Abschnitte, Tabs oder Accordion).
-Die Aktionen „Speichern“ und „Abbrechen“ sind konsistent platziert – immer an derselben Stelle, bei Bedarf oben und unten.
+Die Aktionen „Speichern“ und „Abbrechen“ sind konsistent platziert - immer an derselben Stelle, bei Bedarf oben und unten.
 Feldnahe Hilfen und Fehler bleiben sichtbar.
 
 *_Richtlinien zur Anwendung_*
@@ -3005,17 +2872,19 @@ Nach erfolgreichem Speichern bleibt der Fokus stabil.
 * *Screenreader:* Titel und Struktur benennen Objekt und Modus eindeutig.
 Die Ankündigung von Statusmeldungen erfolgt über eine Live-Region ohne Fokusübernahme.
 
-*_PrimeNG-Mapping (Referenz)_*
+*_Umsetzungshinweise_*
 
-* *Routing:* Der Angular Router unterstützt eine Rückkehrlogik für Fokus und Scrollposition.
+* *Rückkehrlogik:* Beim Verlassen und Zurückkehren zur Detailansicht sollen Fokus und Scrollposition nachvollziehbar wiederhergestellt werden.
 
-* *Orientierung:* Optional ist `p-breadcrumb` einsetzbar; im Kopfbereich steht eine `p-toolbar` mit Zurück-Button (`p-button`).
+* *Orientierung:* Eine klare Orientierung kann über Breadcrumbs, Seitentitel und eine eindeutig platzierte Zurück-Aktion unterstützt werden.
 
-* *Struktur:* Für die Strukturierung kommen `p-card` oder `p-panel` sowie `p-tabView` oder `p-accordion` zum Einsatz.
+* *Struktur:* Umfangreiche Inhalte können über Karten, Panels, Tabs oder aufklappbare Bereiche gegliedert werden.
 
-* *Validierung und Feedback:* Die feldnahe Rückmeldung erfolgt über `p-message`, optional zusätzlich global über `p-toast`.
+* *Validierung und Feedback:* Feldnahe Rückmeldungen werden direkt im Kontext angezeigt.
+Zusammenfassende Hinweise können ergänzend als nicht blockierende Statusmeldung dargestellt werden.
 
-* *Ungespeicherte Änderungen:* Das Abfangen erfolgt über einen Angular Guard; die Bestätigung erfolgt bevorzugt nicht-modal (Popover oder Inline-Leiste), ein Meldungsdialog ist nur bei drohendem Datenverlust zulässig (vgl. <<meldungsdialoge>>).
+* *Ungespeicherte Änderungen:* Bei drohendem Datenverlust ist eine verständliche Bestätigung vorzusehen.
+Diese erfolgt bevorzugt nicht-modal; ein Meldungsdialog ist nur bei fachlicher Notwendigkeit zulässig.
 
 [[benachrichtigungen]]
 ==== Benachrichtigungen
@@ -3025,7 +2894,7 @@ Die Meldungen unterstützen das Verständnis und zeigen nächste Schritte auf, o
 
 *_Aufbau_*
 
-* *Globale Benachrichtigungen:* Für asynchrone Ereignisse (Erfolg, Hinweis, Warnung, Fehler) kommen Toast- oder Snackbar-Meldungen zum Einsatz.
+* *Globale Benachrichtigungen:* Asynchrone Ereignisse wie Erfolg, Hinweis, Warnung oder Fehler werden als nicht blockierende Benachrichtigungen angezeigt.
 Die Meldungen sind kurz und verständlich zu halten.
 Hinweise auf nächste Schritte sind zulässig.
 
@@ -3037,7 +2906,7 @@ Die feldnahen Fehlertexte bleiben die Primärquelle.
 
 *_Richtlinien zur Anwendung_*
 
-* *Schließen und Timeout:* Info-Toasts dürfen automatisch ausblenden.
+* *Schließen und Timeout:* Reine Informationsmeldungen dürfen automatisch ausblenden.
 Warnungen und Fehler erfordern in der Regel ein explizites Schließen oder bleiben sichtbar, bis der Zustand behoben ist.
 
 [[r-benachrichtigungen-status]]
@@ -3060,11 +2929,11 @@ Interaktive Elemente (z. B. Rückgängig-Link) sind per Tastatur erreichbar und 
 * *Mobil:* Platzierung und Größe der Meldungen dürfen keine primären Inhalte oder Aktionen verdecken.
 Wichtige Meldungen müssen auffindbar bleiben.
 
-*_PrimeNG-Mapping (Referenz)_*
+*_Umsetzungshinweise_*
 
-* *Global:* Für Ereignisse außerhalb des direkten Feldkontexts kommt `p-toast` (mit `MessageService`) zum Einsatz.
+* *Global:* Ereignisse außerhalb des direkten Feldkontexts werden als nicht blockierende, gut wahrnehmbare Benachrichtigung angezeigt.
 
-* *Inline:* Für feld- oder abschnittsnahe Hinweise ist `p-message` vorgesehen.
+* *Inline:* Feld- oder abschnittsnahe Hinweise werden direkt im jeweiligen Kontext angezeigt.
 
 [[stepper]]
 ==== Stepper
@@ -3075,7 +2944,8 @@ Durch die Aufteilung in klar benannte Schritte sinkt die wahrgenommene Komplexit
 
 Der Stepper wird seitenintern im Inhaltsbereich oder in einem Drawer eingesetzt.
 Blockierende Modaldialoge sind zu vermeiden und nur in begründeten Ausnahmefällen zulässig (z. B. rechtlich erforderliche Bestätigung).
-Als Technologie-Referenz dient der PrimeNG Stepper (ab Version 20) oder eine gleichwertige Umsetzung; das Layout erfolgt mit PrimeFlex oder CSS-Grid.
+Die konkrete technische Umsetzung ist nicht vorgegeben.
+Maßgeblich sind eine klare Schrittstruktur, eine nachvollziehbare Navigation, feldnahe Validierung und eine barrierefreie Bedienung.
 
 :example-link-component: Stepper
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#stepper
@@ -3130,7 +3000,7 @@ Die Darstellung passt sich responsiv an; die Steuerleiste bleibt erreichbar.
 * *Anti-Pattern (vermeiden):* Ein Stepper im modalen Dialog ist ohne zwingenden Grund nicht zulässig.
 Komplexe Branching-Szenarien mit stark divergierenden Pfaden erschweren die Orientierung (besser: Vorab-Entscheid, dann schlanke Linie).
 Uneinheitliche Primäraktionen wie „OK“ statt „Weiter“ oder „Abschließen“ sind zu vermeiden.
-Fehler dürfen nicht ausschließlich als Toast ohne feldnahe Erklärung erscheinen.
+Fehler dürfen nicht ausschließlich als globale Benachrichtigung ohne feldnahe Erklärung erscheinen.
 Der Formularzustand darf beim Navigieren (Zurück oder Weiter) nicht verloren gehen.
 
 *_Verhalten_*
@@ -3141,16 +3011,17 @@ Nach erfolgreichem Schrittwechsel bleibt der Fokus stabil auf dem neuen Inhalt.
 * *Screenreader:* Titel und Struktur des Steppers benennen den aktuellen Schritt und den Gesamtfortschritt eindeutig.
 Die Ankündigung von Statusmeldungen erfolgt über eine Live-Region ohne Fokusübernahme.
 
-*_PrimeNG-Mapping (Referenz)_*
+*_Umsetzungshinweise_*
 
-* *Stepper-Komponente:* Für die Umsetzung kommt `p-stepper` (ab Version 20) zum Einsatz.
-Die Schrittanzeige ist als `p-steplist` mit `p-step`-Elementen strukturiert.
+* *Schrittanzeige:* Die aktuelle Position innerhalb des Ablaufs ist jederzeit erkennbar.
+Schrittnamen und Fortschritt werden verständlich dargestellt.
 
-* *Inhaltsbereich:* Die Inhalte der einzelnen Schritte sind in `p-steppanels` mit `p-steppanel`-Elementen organisiert.
+* *Inhaltsbereich:* Die Inhalte der einzelnen Schritte sind klar voneinander getrennt und logisch strukturiert.
 
-* *Steuerleiste:* Für die Navigation kommen `p-button`-Elemente zum Einsatz; die Platzierung erfolgt konsistent am unteren Rand des Inhaltsbereichs.
+* *Steuerleiste:* Die Navigation zwischen den Schritten wird konsistent am unteren Rand des Inhaltsbereichs platziert.
 
-* *Validierung und Feedback:* Die feldnahe Rückmeldung erfolgt über `p-message`, optional zusätzlich global über `p-toast` (z. B. für zusammenfassende Hinweise).
+* *Validierung und Feedback:* Fehlermeldungen werden feldnah angezeigt.
+Zusammenfassende Hinweise können ergänzend als nicht blockierende Statusmeldung dargestellt werden.
 
 [[navigation]]
 === Navigation
@@ -3196,7 +3067,7 @@ Die Hauptnavigation ist eine horizontale Navigation, die stets am unteren Rand d
 Sie wird mit Menüpunkten von links nach rechts befüllt.
 Im optimalen Fall sind die Menüpunkte ihrer Priorität nach angeordnet.
 Im optimalen Fall hat die Hauptnavigation nicht mehr als 4-7 Menüpunkte.
-Die Hauptnavigation ist nicht scrollbar und enthält kein TabOverflow.
+Die Hauptnavigation ist nicht scrollbar und zeigt alle Menüpunkte direkt sichtbar an.
 
 Unterhalb der Hauptnavigation wird ein Farbbalken angezeigt.
 Die Farbe repräsentiert eine Anwendung oder eine Anwendungsgruppe und kann entsprechend ihrer aktiven Auswahl die Farbe ändern.
@@ -3258,7 +3129,7 @@ Für alle Toolbar-Varianten gelten die allgemeinen Anforderungen an Barrierefrei
 * In einer Toolbar finden sich die wichtigsten oder am häufigsten genutzten Funktionen an einem zentralen Platz.
 * Bedienelemente in einer Toolbar sollten entsprechend ihrer Verfügbarkeit aktiviert oder deaktiviert werden.
 * Nicht aussagekräftige Icons sollten mit einem Label versehen werden.
-* Die Anordnung der Elemente innerhalb einer Toolbar sollte nach deren Priorität beziehungsweise nach deren Nutzungsfrequenz erfolgen – häufig genutzte Funktionen links, weniger häufig genutzte Funktionen rechts.
+* Die Anordnung der Elemente innerhalb einer Toolbar sollte nach deren Priorität beziehungsweise nach deren Nutzungsfrequenz erfolgen - häufig genutzte Funktionen links, weniger häufig genutzte Funktionen rechts.
 * Zusammengehörige Funktionen können aus Platzgründen in <<menu-button,Menü-Buttons>> zusammengefasst werden.
 * Wird die Größe des Browserfensters verändert, so wächst die Toolbar in die Breite mit.
 Die Elemente in der Toolbar behalten ihre ursprüngliche Größe und Position bei.
@@ -3354,7 +3225,7 @@ Innerhalb des Button-Clusters sind die Aktionen linksbündig auszurichten.
 
 * *Responsives Verhalten:* Der Kopfbereich der Gruppe ist nach Möglichkeit einzeilig auszuführen.
 Die Reihenfolge der Aktionen (Primär, Sekundär, Destruktiv, Mehr) bleibt verbindlich bestehen.
-Falls ein Umbruch erforderlich ist, wird die Toolbar in einer zweiten Zeile unterhalb der Überschrift dargestellt – ohne Änderung der Aktionsreihenfolge und ohne Layoutsprünge.
+Falls ein Umbruch erforderlich ist, wird die Toolbar in einer zweiten Zeile unterhalb der Überschrift dargestellt - ohne Änderung der Aktionsreihenfolge und ohne Layoutsprünge.
 
 * *Barrierefreiheit:* Die Gruppenüberschrift ist als semantische Überschrift umzusetzen.
 Die Toolbar erhält ein semantisches Toolbar-Rollenmodell (z. B. `role="toolbar"`) sowie ein eindeutiges, programmatisch ermittelbares Label (z. B. `aria-label="Aktionen der Gruppe"`).
@@ -3429,7 +3300,7 @@ Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Elem
 Die Interaktion steht hier im Vordergrund.
 Weiterführende Aktionen können entweder rechts im Panel Header oder in einer Footer Sektion unterhalb des Inhaltsbereichs eingebaut werden.
 
-Technisch sind Panels meist flexibler, beziehungsweise nicht so restriktiv, wie ein Akkordeon.
+Panels bieten in der Regel mehr Freiraum für komplexe Inhalte und Interaktionen als ein Akkordeon.
 Eine Gegenüberstellung, wann ein Panel und wann ein Akkordeon sinnvoll ist, befindet sich im Kapitel <<panel-akkordeon-ueberschrift>>.
 
 [[dropdown]]
@@ -3454,8 +3325,8 @@ Aktive Listenelemente sind in der Highlightfarbe und hinterlegt dargestellt.
 [[menu-button]]
 === Menü-Button
 
-Ein Menü-Button, technisch Split-Button, ist eine Kombination aus einem <<button>> und einem <<dropdown,Dropdown>>.
-Die linke Hälfte des Buttons löst beim Betätigen eine Standardaktion aus (zum Beispiel Speichern) und die rechte Hälfte öffnet eine Auswahl an Funktionen (zum Beispiel Speichern als PDF oder Speichern als XLS).
+Ein Menü-Button kombiniert eine primäre Aktion mit einer zusätzlichen Auswahl weiterer Aktionen.
+Der primäre Bereich löst beim Betätigen eine Standardaktion aus (zum Beispiel Speichern), während der zusätzliche Bereich eine Auswahl weiterer Funktionen öffnet (zum Beispiel Speichern als PDF oder Speichern als XLS).
 
 Diese Button-Art wird hauptsächlich in Toolbars eingesetzt und muss immer mehrere Funktionen, die in einen logischen Zusammenhang zueinander stehen, beinhalten.
 Eine mögliche Verwendung ist das Zusammenfassen von mehreren Exportmöglichkeiten.
@@ -3570,10 +3441,8 @@ Sollte eine barrierefreie Umsetzung der Wertehilfe nicht möglich sein, oder gar
 * Keine zwingende Nutzung von Werten aus der Hilfe, wenn eine manuelle Eingabe zulässig ist.
 * Keine automatische Aktivierung von Wertehilfen, die ohne Nutzerinteraktion starten.
 
-IMPORTANT: Die für die IsyFact gültigen Wertehilfen basieren auf PrimeNG-Komponenten.
-Diese werden ständig weiterentwickelt und aktualisiert.
-Dadurch können sie optisch von dem hier dokumentierten Stand abweichen.
-Die folgenden Rahmenbedingungen müssen versionsunabhängig eingehalten werden.
+IMPORTANT: Die konkrete technische Umsetzung der Wertehilfen kann sich je nach Projekt und Referenzimplementierung unterscheiden.
+Die folgenden Rahmenbedingungen sind unabhängig von der eingesetzten Technologie einzuhalten.
 
 [[datepicker-wertehilfe]]
 ==== Datepicker und Timepicker
@@ -3777,7 +3646,8 @@ Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entspreche
 [[browse-and-collect]]
 ==== Browse & Collect
 
-In der IsyFact wird als Basis das PrimeNG Widget "PickList" genutzt.
+In der IsyFact wird dieses Muster als zweigeteilte Auswahlliste umgesetzt.
+Die konkrete technische Komponente ist nicht Bestandteil des Bedienkonzepts.
 
 *_Funktionalität:_* Die Browse & Collect-Funktion ermöglicht es Benutzenden, durch umfangreiche Inhalte zu navigieren und dabei relevante Elemente zu markieren oder in eine Sammlung aufzunehmen.
 Dies wird häufig in Kontexten genutzt, in denen eine Auswahl von Daten für spätere Aktionen erforderlich ist (zum Beispiel Warenkorb, Favoritenliste).
@@ -3785,7 +3655,7 @@ Dies wird häufig in Kontexten genutzt, in denen eine Auswahl von Daten für sp�
 *_Best Practices:_*
 
 * Übersichtliche Navigation: Inhalte sollten logisch gegliedert und mit <<filter-selektion,Filter>>-, <<suche-selektion,Such>>- und <<selektion,Selektionsmöglichkeiten>> kombinierbar sein.
-* Markierung und <<system-meldungen,Rückmeldung>>: Markierte Elemente sollten visuell hervorgehoben und durch dynamische Hinweise (zum Beispiel Toast-Benachrichtigungen) bestätigt werden.
+* Markierung und <<system-meldungen,Rückmeldung>>: Markierte Elemente sollten visuell hervorgehoben und durch dynamische Hinweise bestätigt werden.
 * Sammlung bearbeiten: Benutzende müssen die Möglichkeit haben, gesammelte Elemente zu überprüfen, zu ändern oder zu entfernen.
 
 *_Barrierefreiheit:_*
@@ -4075,21 +3945,21 @@ Der Fortschritts-Spinner empfiehlt sich aufgrund seiner geringen Maße insbesond
 [[system-meldungen]]
 ==== System-Meldungen
 
-Beim Verfassen von System-Benachrichtigungen – wie beispielsweise <<fehlermeldungen>> – muss auf eine verständliche und konsistente Formulierung geachtet werden.
-Neben <<image-eingabefelderror,Fehlermeldungen, die am Eingabeobjekt auftreten>>, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden (*Achtung:* dynamisch nachgeladene Elemente müssen auch einem Screenreader mitgeteilt werden, sodass auch Personen mit Einschränkungen diese Hinweise mitbekommen).
-Dies geschieht mithilfe von Toast-Notifications, welche immer am unteren rechten Rand des Browserfensters angezeigt werden.
+Beim Verfassen von System-Benachrichtigungen - wie beispielsweise <<fehlermeldungen>> - muss auf eine verständliche und konsistente Formulierung geachtet werden.
+Neben <<image-eingabefelderror,Fehlermeldungen, die am Eingabeobjekt auftreten>>, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden.
 
-Jede Toast-Notification muss eine Schließen-Aktion für den Nutzenden anbieten.
-Um die <<barrierefreiheit>> einzuhalten, muss die Notification dauerhaft eingeblendet bleiben, bis sie von den Nutzenden geschlossen wird, siehe https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html[WCAG 2.1 SC 1.4.13].
+Dynamisch nachgeladene Meldungen müssen auch für Screenreader wahrnehmbar sein, damit alle Nutzenden die Hinweise erfassen können.
+Nicht blockierende Benachrichtigungen müssen eine Schließen-Aktion anbieten.
+Um die <<barrierefreiheit>> einzuhalten, muss die Benachrichtigung dauerhaft eingeblendet bleiben, bis sie von den Nutzenden geschlossen wird, siehe https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html[WCAG 2.1 SC 1.4.13].
 
-Folgende Meldungsarten können als Toast-Notification verwendet werden:
+Folgende Meldungsarten können als nicht blockierende Benachrichtigung verwendet werden:
 
 * Warnung
 * Hinweis
 * Fehler
 * Erfolg
 
-:example-link-component: Toast-Notification
+:example-link-component: System-Meldung
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-messages#toast
 include::partial$example-link-card.adoc[]
 
@@ -4205,7 +4075,7 @@ Dies ist besonders dann nützlich, wenn Informationen relevant sind, jedoch nich
 *_Handlungsempfehlungen:_*
 
 "Readonly" sollte für Felder verwendet werden, deren Inhalte für Nutzende relevant sind, aber nicht verändert werden dürfen.
-Gestalte das Design so, dass die visuelle Unterscheidung klar, aber nicht störend ist – zum Beispiel durch subtile Farbveränderungen.
+Gestalte das Design so, dass die visuelle Unterscheidung klar, aber nicht störend ist - zum Beispiel durch subtile Farbveränderungen.
 Erlaube Nutzenden weiterhin Inhalte aus dem "Readonly"-Feld zu kopieren.
 
 [[disabledstate]]
@@ -4218,7 +4088,7 @@ Diese Option wird verwendet, um Nutzenden zu signalisieren, dass bestimmte Funkt
 *_Merkmale:_*
 
 * *Sichtbarkeit:* Oft wird der Inhalt des Feldes ausgegraut oder gar nicht sichtbar gemacht.
-* *Interaktivität:* Keine Interaktion möglich – weder das Bearbeiten, noch das Kopieren von Inhalten.
+* *Interaktivität:* Keine Interaktion möglich - weder das Bearbeiten, noch das Kopieren von Inhalten.
 * *Design:* Meist visuell hervorgehoben durch ausgegraute Felder oder abweichende Farbschemata, um den Zustand klar zu kommunizieren.
 
 *_Anwendungsfälle:_*
@@ -4229,7 +4099,7 @@ Diese Option wird verwendet, um Nutzenden zu signalisieren, dass bestimmte Funkt
 *_Handlungsempfehlungen:_*
 
 "Disabled" sollte für Felder verwendet werden, die Nutzenden derzeit nicht zugänglich sein sollen, um Fehlinteraktionen zu verhindern.
-Vermeide "Disabled" für wichtige Informationen, die Nutzende sehen müssen – in solchen Fällen ist "Readonly" besser geeignet.
+Vermeide "Disabled" für wichtige Informationen, die Nutzende sehen müssen - in solchen Fällen ist "Readonly" besser geeignet.
 Mache den "Disabled"-Status klar ersichtlich, indem eine deutliche visuelle Abgrenzung durch Ausgrauen oder andere farbliche Mittel verwendet wird.
 
 *_Vergleich und Fazit_*
@@ -4239,7 +4109,7 @@ Während "Readonly"-Felder Nutzenden Informationen präsentieren, die sie nicht 
 Für die Anwendung in Formularen sollten folgende Grundsätze beachtet werden:
 
 * "Readonly" ist ideal, wenn die Informationen wichtig sind und für Nutzende sichtbar bleiben müssen, aber nicht verändert werden sollen.
-* "Disabled" eignet sich, wenn Nutzende keine Informationen im Feld sehen oder bearbeiten sollen – zum Beispiel bei unzugänglichen Funktionen oder Bedingungen, die erst später erfüllt werden müssen.
+* "Disabled" eignet sich, wenn Nutzende keine Informationen im Feld sehen oder bearbeiten sollen - zum Beispiel bei unzugänglichen Funktionen oder Bedingungen, die erst später erfüllt werden müssen.
 
 [[panel-akkordeon-ueberschrift]]
 === Panel vs. Akkordeon vs. Überschrift
@@ -4248,7 +4118,8 @@ Allein aus der Beschreibung der einzelnen Elemente, <<panel>>, <<akkordeon>> und
 Alle Elemente erfüllen ihren eigenen Zweck.
 Auffällig ist jedoch die sehr ähnliche Gestaltung des Akkordeons und des Panels.
 Dies liegt an der historischen Annäherung der Elemente.
-Für Nutzende ist eine solch differenzierte Betrachtung auf die technischen Elemente in den meisten Fällen nicht möglich und auch nicht notwendig, weshalb auf eine optische und historisch gewachsene minimale Differenzierung der beiden Elemente zu Gunsten der Usability verzichtet werden kann.
+Für Nutzende ist eine solche differenzierte Betrachtung der Elemente in den meisten Fällen nicht möglich und auch nicht notwendig.
+Daher kann zugunsten der Usability auf eine optische und historisch gewachsene minimale Differenzierung der beiden Elemente verzichtet werden.
 
 Alle drei Elemente werden zur Strukturierung von Frontends und deren Inhalte benötigt.
 
@@ -4275,7 +4146,7 @@ Beide Elemente sollten sich über das gleiche Symbol aus- und einklappen lassen.
 |===
 | Anforderung | Kapitel | Normbezug | Akzeptanzkriterium
 
-| <<r-nutzungsbandbreite,Nutzungsbandbreite 320–≥1920 px>>
+| <<r-nutzungsbandbreite,Nutzungsbandbreite 320-≥1920 px>>
 | Fenstertypen und Layout / Resizing
 | WCAG 2.1 SC 1.4.10
 | Ab 320 CSS-px ohne 2-D-Scroll; Hauptinhalt bleibt lesbar/zentriert.
@@ -4412,7 +4283,7 @@ Beide Elemente sollten sich über das gleiche Symbol aus- und einklappen lassen.
 
 | <<r-druck-margin-boxes,@page Margin-Boxes (Chromium ≥ 131)>>
 | Fenstertypen und Layout / Drucklayout
-| CSS Paged Media – Margin Boxes
+| CSS Paged Media - Margin Boxes
 | Kopf-/Fußinhalte via Margin-Boxes; progressive Fallbacks.
 
 | <<r-input-erkennbarkeit,Interaktive Elemente erkennbar>>
