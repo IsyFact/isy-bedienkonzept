@@ -1,0 +1,173 @@
+[[eingabehilfen-und-fehlermeldungen]]
+== Eingabehilfen und Fehlermeldungen
+
+Eingabehilfen und Fehlermeldungen sind essenziell wichtig, um die <<usability-und-benutzerfreundlichkeit,Benutzerfreundlichkeit>> eines Frontends zu erhöhen.
+Im folgenden Kapitel werden die Grundlagen zur erfolgreichen Gestaltung von Eingabehilfen und Fehlermeldungen erläutert.
+
+[[eingabehilfen]]
+=== Eingabehilfen
+
+[[gute-labels]]
+==== Korrekte Labels
+
+Auch <<label,Labels>> gelten als Eingabehilfen.
+Klare und präzise Beschriftungen (Labels) sind für die Benutzerführung entscheidend, insbesondere für <<formulare>> und <<eingabefeld,Eingabefelder>>.
+Jedes Eingabefeld muss ein entsprechendes Label haben, das den Nutzenden genau sagt, welche Art von Information erwartet wird.
+Beispielsweise sollte ein Anmeldeformular separate Felder für "Anmeldename" und "Passwort" haben, jeweils mit deutlich sichtbaren Labels.
+
+[[placeholder]]
+==== Gute Platzhaltertexte
+
+Platzhaltertexte sind nützlich, um Nutzenden zusätzliche Hinweise oder Beispiele für die erwarteten Eingaben zu geben.
+Sie sollten jedoch nicht als Ersatz für <<label,Labels>> dienen.
+Idealerweise sollten Platzhaltertexte kurz und prägnant sein, um den Nutzenden zu helfen, die Anforderungen des jeweiligen <<eingabefeld,Eingabefelds>> besser zu verstehen, ohne den Platz zu überladen oder den Fokus zu stören.
+
+*_Beispiel 1:_*
+Es wird ein Nachname im Eingabefeld erwartet
+
+*Do:*
+Nachname
+
+*Don't:*
+Dein Nachname
+
+*_Beispiel 2:_*
+Es wird eine Telefonnummer erwartet
+
+*Do:*
++49 123 1234567
+
+*Don't:*
+Deine Telefon- oder Handynummer
+
+Sobald die Nutzenden in das Eingabefeld klicken, wird der Platzhalter ausgeblendet und es besteht die Möglichkeit, eine Mask anzeigen zu lassen (siehe Kapitel <<eingabefeld,Eingabefelder>>).
+Sie geben das gewünschte Eingabepattern vor und lassen sich fast vollständig frei gestalten.
+
+*_Gute Hinweistexte zur Erläuterung bei Eingabefeldern und Fehlermeldungen:_*
+
+Bei komplexeren <<formulare,Formularen>> oder spezifischen Eingabeanforderungen können Hinweistexte hilfreich sein, um den Nutzenden zusätzliche Anleitungen oder Kontext zu bieten.
+Diese Texte sollten in der Nähe des entsprechenden Eingabefelds platziert werden und sollten klar und präzise sein.
+Sie können beispielsweise erklären, welche Art von Informationen erwartet wird oder auf spezielle Formatierungsanforderungen hinweisen.
+
+[[autosuggestion]]
+==== Autosuggestion
+
+Autosuggestion ist eine Zusatzfunktion, die in <<eingabefeld,Eingabefeldern>> ergänzt werden kann.
+Sie dient dazu, Eingaben durch Vorschläge zu vervollständigen und somit zu beschleunigen.
+Diese Eingabehilfe erscheint direkt unter dem Textfeld.
+Sie schließt sich, wenn Nutzende neben die Eingabehilfe klicken oder innerhalb der Eingabehilfe ihre Auswahl treffen.
+
+:example-link-component: Autosuggestion
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#autocomplete
+include::partial$example-link-card.adoc[]
+
+Sobald die Nutzenden mit der Eingabe beginnen, werden mögliche Werte, die mit der getätigten Eingabe beginnen, in einem Menü unterhalb des Textfelds angezeigt.
+Nutzende können nun weiter tippen oder direkt einen Wert aus dem Menü auswählen und somit ihre Eingabe verkürzen.
+Gibt es mehr als zehn mögliche passende Werte, so werden die ersten zehn Werte angezeigt, gefolgt von einer Information, dass mehr als zehn Einträge existieren.
+
+[[fortschrittsanzeige]]
+==== Fortschrittsanzeige
+
+Feedback-Konzepte für Ladezeiten sind ein sehr wichtiges Instrument, um eine gute User Experience zu erreichen.
+Für längere Operationen kann ein Fortschritts-Balken (Progress Bar) genutzt werden, der sich entsprechend dem Fortschritt des Vorgangs füllt.
+Für kürzere Vorgänge kann ein Fortschritts-Spinner (kreisrunde Fortschrittsanzeige) verwendet werden.
+
+:example-link-component: Progress Spinner
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-misc#progressspinner
+include::partial$example-link-card.adoc[]
+
+
+*_Grundlegende Anwendungshinweise:_*
+
+* Generell sollten Vorgänge oder Operationen, die mehr als eine Sekunde in Anspruch nehmen, eine Rückmeldung in Form einer Fortschrittsanzeige an Nutzende geben.
+* Die Form der Fortschrittsanzeige richtet sich dabei nach der Länge des Vorgangs und dem Anwendungskontext.
+* Fortschrittsanzeigen werden in der Regel nur für Wartezeiten verwendet, die sich aus System-Operationen ergeben.
+Für Wartezeiten, die sich auf die Bedienung der Nutzenden zurückführen lassen, werden keine Fortschrittsanzeigen eingesetzt.
+
+*_Fortschritts-Balken (Progress Bar):_*
+
+* Fortschritts-Balken werden in der Regel für Ladevorgänge mit bestimmbarer Gesamtlänge verwendet.
+* Ein Balken zeigt den Grad der Zielerreichung an.
+Dabei füllt sich der Balken von links (0 %) nach rechts (100 %).
+
+*_Fortschritts-Spinner (kreisrunde Fortschrittsanzeige):_*
+
+* Fortschritts-Spinner werden für Ladevorgänge verwendet, deren Gesamtlänge unbekannt ist.
+* Für die Dauer der Operation dreht sich der Fortschritts-Spinner und signalisiert Nutzenden damit, dass sich ein Prozess in Gang befindet.
+Der Fortschritts-Spinner empfiehlt sich aufgrund seiner geringen Maße insbesondere in Situationen, in denen Platzbedarf von großer Bedeutung ist.
+
+[[system-meldungen]]
+==== System-Meldungen
+
+Beim Verfassen von System-Benachrichtigungen - wie beispielsweise <<fehlermeldungen>> - muss auf eine verständliche und konsistente Formulierung geachtet werden.
+Neben <<image-eingabefelderror,Fehlermeldungen, die am Eingabeobjekt auftreten>>, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden.
+
+Dynamisch nachgeladene Meldungen müssen auch für Screenreader wahrnehmbar sein, damit alle Nutzenden die Hinweise erfassen können.
+Nicht blockierende Benachrichtigungen müssen eine Schließen-Aktion anbieten.
+Um die <<barrierefreiheit>> einzuhalten, muss die Benachrichtigung dauerhaft eingeblendet bleiben, bis sie von den Nutzenden geschlossen wird, siehe https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html[WCAG 2.1 SC 1.4.13].
+
+Folgende Meldungsarten können als nicht blockierende Benachrichtigung verwendet werden:
+
+* Warnung
+* Hinweis
+* Fehler
+* Erfolg
+
+:example-link-component: System-Meldung
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-messages#toast
+include::partial$example-link-card.adoc[]
+
+*_Hinweisdialoge und -popups_*
+
+Siehe <<meldungsdialoge,Meldungsdialoge>>, <<benachrichtigungen,Benachrichtigungen>> und <<container-overlays,Container und Overlays>>.
+
+*_Dos_*
+
+* *Allgemeinverständliche und positive Sprache*
+** _Inkorrekt_:
+„Soll das Objekt gelöscht werden?“
+** _Besser_:
+„Wollen Sie das gewählte Objekt XY löschen?“
+* Verwenden einer einfachen und konsistenten Satzstruktur
+* *Präzise Formulierungen*:
+** _Inkorrekt_:
+„Nichts selektiert“
+** _Besser_:
+„Bitte selektieren Sie ein Objekt in der Liste“
+* *Positive Formulierungen*:
+** _Inkorrekt_:
+„Illegale String-Länge aufgetreten.“
+** _Besser_:
+„Es wurden zu viele Zeichen eingegeben.
+Es sind maximal 20 Zeichen möglich.“
+* Es soll nicht nur das Problem geschildert, sondern auch eine mögliche Lösung mitgeliefert werden.
+
+*_Don'ts_*
+
+* Vermeidung von redundanten Informationen
+* Vermeidung von mehrdeutigen Beschreibungen
+
+[[fehlermeldungen]]
+=== Fehlermeldungen
+
+Fehlermeldungen sind unvermeidlich, aber wie sie präsentiert werden, kann einen großen Unterschied für die Benutzererfahrung bedeuten.
+Fehlermeldungen sollten gut sichtbar und in verständlicher Sprache verfasst sein sowie klare Anweisungen zur Behebung des Fehlers enthalten.
+Idealerweise sollten Fehlermeldungen in unmittelbarer Nähe von betroffenen Objekten platziert werden (siehe als Beispiel: <<image-eingabefelderror,Eingabefelder - Fehlermeldung>>), um Nutzenden sofortiges Feedback zu geben und sie bei der Fehlerbehebung zu unterstützen.
+Neben Fehlermeldungen, die am Eingabeobjekt auftreten, kann zusätzlich ein zusammenfassender Hinweis, wie im Kapitel <<system-meldungen>> beschrieben, angezeigt werden.
+
+Ein häufig gemachter Fehler ist dabei die Verwendung von negativ anmutenden Formulierungen, die Benutzende demotivieren können.
+Die folgende Liste zeigt einige negative Bezeichnungen und ihre neutralen Äquivalente:
+
+[cols="5a,5a", options="header", align="center"]
+|====
+|Negativer Begriff |Neutraler Begriff
+
+|Illegal
+|Nicht korrekt
+
+|Fehler
+|Problem
+
+|Fehlschlagen („Speichern ist fehlgeschlagen“)
+|Nicht können („Es konnte nicht gespeichert werden“)
+|====

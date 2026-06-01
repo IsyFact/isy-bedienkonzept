@@ -1,0 +1,415 @@
+[[basiselemente]]
+== Basiselemente
+
+[[farben]]
+=== Farben
+
+Farben tragen maßgeblich zur visuellen Identität einer Benutzeroberfläche bei und beeinflussen die Stimmung und Wahrnehmung der Nutzenden.
+
+Dieses Bedienkonzept definiert keine konkreten Farbwerte, sondern regelt die semantische Verwendung von Farben innerhalb der Benutzeroberfläche.
+Die konkrete Ausprägung (Farbwerte, Kontraste, Ableitungen) ergibt sich aus den gestalterischen Vorgaben des Projekts.
+
+Im Folgenden beziehen sich die Begriffe „Farbpalette“, „Statusvarianten“ und „Gestaltungsrichtlinien“ auf die projektspezifisch definierten Vorgaben.
+
+Die eingesetzte Farbpalette kann im Rahmen technischer, gesetzlicher oder gestalterischer Weiterentwicklungen angepasst werden.
+Die jeweils gültigen Farbdefinitionen sowie die zugehörigen Kontrastwerte sind der Designdokumentation zu entnehmen.
+Ergänzende Informationen zu Farbgrundlagen und Farbnutzung sind im https://styleguide.bundesregierung.de/sg-de/basiselemente/farben[Styleguide der Bundesregierung - Farben] zu finden.
+
+Farben sind funktional und semantisch konsistent einzusetzen.
+Folgende Bedeutungsbereiche sind visuell eindeutig unterscheidbar zu gestalten:
+
+* Bestätigung / Erfolg
+* Information
+* Warnung
+* Fehler / kritische Zustände
+* Primäre Aktion
+* Sekundäre Aktion
+* Destruktive Aktion
+
+Eine Farbe darf nicht für widersprüchliche Bedeutungen verwendet werden.
+Visuelle Hervorhebungen müssen eindeutig einer semantischen Rolle zugeordnet sein.
+
+*_Dos_*
+
+* Positive Zustände und erfolgreiche Aktionen sind eindeutig als Bestätigung erkennbar.
+* Kritische oder destruktive Aktionen sind klar als solche gekennzeichnet.
+* Primäre und sekundäre Aktionen sind visuell unterscheidbar.
+* Die semantische Bedeutung einer Farbe ist innerhalb der Anwendung konsistent.
+
+*_Don'ts_*
+
+* Eine Farbe wird nicht für unterschiedliche oder gegensätzliche Bedeutungen verwendet.
+* Positive Zustände dürfen nicht mit derselben visuellen Ausprägung dargestellt werden wie Fehler oder Abbrüche.
+* Sekundäre oder destruktive Aktionen dürfen nicht wie primäre Standardaktionen gestaltet sein.
+
+Sofern aus fachlichen Gründen zusätzliche Abstufungen erforderlich sind (z. B. für Hintergründe, Flächen oder Hervorhebungen), dürfen Farben aus der Farbpalette abgeleitet werden.
+
+Dabei ist sicherzustellen:
+
+* ausreichender Kontrast gemäß den geltenden Barrierefreiheitsanforderungen
+* visuelle Konsistenz innerhalb der Anwendung
+* eindeutige Zuordnung zur jeweiligen semantischen Rolle
+
+Helle Farbvarianten dürfen auf hellen Hintergründen nur eingesetzt werden, wenn die Anforderungen an Kontrast und Lesbarkeit erfüllt sind.
+
+[[applikationsfarben]]
+=== Applikationsfarben
+
+Applikationen können aus Gründen der fachlichen Strukturierung in Gruppen zusammengefasst werden.
+Jeder Applikationsgruppe kann eine eindeutige Identifikationsfarbe zugeordnet werden.
+
+Diese Identifikationsfarbe dient ausschließlich der Wiedererkennbarkeit und Navigation.
+Sie trägt keine semantische Bedeutung im Sinne von Status- oder Systemmeldungen.
+
+Die Identifikationsfarbe kann u. a. an folgenden Stellen eingesetzt werden:
+
+// ToDo: Beispielbild kann hier ergänzend eingefügt werden
+* Hauptnavigation - Farbbalken unterhalb des Headers
+* Submenü (Flyout) - Farbbalken am oberen Rand des Menüs
+* Widget auf Dashboard - Farbbalken am oberen Rand
+* Titelzeile von Detailseiten - Hintergrundfarbe der Titelzeile
+* Dialoge der Applikation - Farbbalken oberhalb der Titelzeile
+
+*_Dos_*
+
+* Eine Applikationsgruppe besitzt genau eine Identifikationsfarbe.
+* Applikationen innerhalb einer Gruppe verwenden dieselbe Identifikationsfarbe.
+* Die Farbwahl unterstützt ein harmonisches Gesamtbild.
+
+*_Don'ts_*
+
+* Identifikationsfarben dürfen nicht mit Statusfarben (z. B. Fehler, Warnung, Erfolg) verwechselt werden.
+* Innerhalb einer Applikationsgruppe werden keine unterschiedlichen Identifikationsfarben verwendet.
+
+[[icons]]
+=== Icons
+
+Icons können als zusätzliche Elemente genutzt werden, um Funktionen und Inhalte auch visuell kenntlich zu machen.
+Dabei sollten Icons primär zusammen mit <<text>> verwendet werden und nur in begründeten Fällen alleinstehend eingesetzt werden.
+Wenn Icons alleinstehend als <<icon-button,Icon-Buttons>> oder Aktionselemente genutzt werden, sollte ihre Anzahl auf das notwendige Minimum beschränkt werden.
+Es wird empfohlen, alleinstehende Icons nur mit weit verbreiteter und allgemein bekannter Bedeutung zu verwenden.
+
+In der folgenden Tabelle sind häufig verwendete symbolische Bedeutungen und deren empfohlene Einsatzbereiche aufgeführt.
+Sie dient der einheitlichen Verwendung von Symbolen innerhalb der Benutzeroberfläche.
+
+Die konkrete Auswahl, Gestaltung und technische Einbindung eines Icon-Sets erfolgt in der jeweiligen Umsetzung oder Referenzimplementierung.
+Maßgeblich ist, dass Symbole konsistent, verständlich und barrierefrei eingesetzt werden.
+
+.Übersicht symbolischer Bedeutungen und Einsatzbereiche
+[cols="2,5", options="header"]
+|====
+|Symbolische Bedeutung |Empfohlener Einsatzbereich
+
+|Schließen / Abbrechen
+|Abbrechen, Ablehnen, Stornieren, Dialog schließen oder Eingabe verwerfen
+
+|Bestätigen / Abschließen
+|Akzeptieren, Annehmen, Erledigen, Zustimmen oder erfolgreichen Abschluss kennzeichnen
+
+|Hinzufügen
+|Einträge, Datensätze, Dateien oder weitere Eingabefelder ergänzen
+
+|Entfernen / Löschen
+|Einträge entfernen, Inhalte löschen oder Zuordnungen aufheben.
+Bei destruktiven Aktionen muss die Bedeutung eindeutig erkennbar sein.
+
+|Bearbeiten
+|Vorhandene Inhalte ändern, korrigieren oder eine Bearbeitung fortsetzen
+
+|Anzeigen / Öffnen
+|Details anzeigen, Inhalte öffnen oder zu einer Detailansicht wechseln
+
+|Suchen
+|Suchfunktion auslösen, Inhalte durchsuchen oder eine Suche erneut ausführen
+
+|Speichern
+|Eingaben sichern, Änderungen übernehmen oder einen Bearbeitungsstand speichern
+
+|Zurück / Weiter
+|Innerhalb eines Ablaufs navigieren, zur vorherigen Ansicht zurückkehren oder zum nächsten Schritt wechseln
+
+|Aktualisieren / Wiederholen
+|Inhalte neu laden, Daten synchronisieren oder eine Aktion erneut ausführen
+
+|Hochladen / Herunterladen
+|Dateien oder Daten importieren, exportieren, hochladen oder herunterladen
+
+|Drucken
+|Inhalte drucken oder eine druckoptimierte Ansicht öffnen
+
+|Information / Hilfe
+|Zusätzliche Hinweise, Erläuterungen, Kontextinformationen oder Hilfetexte anzeigen
+
+|Warnung / Fehler
+|Warnungen, Fehler, kritische Zustände oder erforderliche Nutzeraktionen kennzeichnen
+
+|Erfolg / Status
+|Positive Rückmeldungen, abgeschlossene Aktionen oder erfolgreiche Verarbeitung kennzeichnen
+
+|Kalender / Zeit
+|Datum, Uhrzeit, Zeiträume oder Wiedervorlagen auswählen
+
+|Benutzende / Personen
+|Personen, Nutzende, Rollen, Kontakte oder Zuständigkeiten kennzeichnen
+
+|Nachrichten / Kommunikation
+|Nachrichten, E-Mails, Benachrichtigungen oder Kommunikation darstellen
+
+|Anhänge / Dokumente
+|Dateien, Anhänge, Dokumente, Archivobjekte oder Nachweise kennzeichnen
+
+|Einstellungen
+|Konfigurationen, Optionen oder anpassbare Eigenschaften öffnen
+
+|Historie
+|Verlauf, Änderungsstände, frühere Bearbeitungen oder Protokolle anzeigen
+|====
+
+[[text]]
+=== Text
+
+Textelemente spielen eine entscheidende Rolle bei der Kommunikation mit den Nutzenden.
+Um benutzerfreundliche Texte verfassen zu können, ist es wichtig, die Art und Weise zu verstehen, wie Nutzende Texte auffassen und verarbeiten.
+In westlichen Kulturen wird in der Regel von links nach rechts und von oben nach unten gelesen.
+In Bezug auf Software und User-Interface-Design gilt diese Tatsache jedoch nur eingeschränkt, denn Nutzende lesen die Texte auf einem Bildschirm meistens nicht vollständig, sondern überfliegen sie nur kurz, um die für sie relevanten Informationen zu finden.
+
+Die beim Design eines Frontends eingesetzten Elemente unterscheiden sich auch dadurch, wie stark sie die Aufmerksamkeit der Nutzenden auf sich ziehen.
+So werden <<button,Schaltflächen>>, <<label,Labels>> und andere interaktive Elemente gewöhnlich zuerst wahrgenommen, während statischer Text eher selten gelesen wird.
+Dieser Abschnitt definiert die typografischen Standards, sprachlichen Richtlinien und Längenbeschränkungen, die dazu beitragen, dass Texte klar, verständlich und ansprechend sind.
+
+Frontends des Bundes sollen über die IT-Landschaft hinweg ein einheitliches Look-and-Feel bieten.
+Dies wird über den Einsatz der IsyFact und deren Komponenten gewährleistet.
+Dafür ist es notwendig auch bei der Schrift (im weiteren Font) einheitlich vorzugehen.
+Zur Anwendung kommt primär BundesSans.
+
+*_BundesSans_*
+
+Diese Schriftart wurde extra für Inhalte des Bundes entwickelt und zur Verfügung gestellt.
+Die BundesSans ist eine humanistische serifenlose Schrift.
+Rationalität und äußerste Klarheit kennzeichnen ihre Formensprache.
+Die BundesSans gehört zu den sogenannten humanistischen Serifenlosen und entspricht den Empfehlungen des https://www.dbsv.org/[DBSV] hinsichtlich der Leserlichkeit von Schrift.
+Auch in der DIN 1450 - Leserlichkeit - werden Humanistische Antiqua (mit Serifen) und Groteskschriften (ohne Serifen) als besonders gut leserlich bezeichnet.
+
+_Sprachumfang_
+
+Folgende Sprachen werden von den Schriften BundesSerif, BundesSans und BundesSans Condensed unterstützt (nur lateinische Schriftzeichen):
+
+Afrikaans, Albanisch, Aserbaidschanisch, Asu, Baskisch, Bemba, Bena, Bosnisch, Bretonisch, Cebuano, Chiga, Deutsch, Dänisch, Embu, Englisch, Esperanto, Estnisch, Filipino, Finnisch, Französisch,  Friaulisch, Färöisch, Galizisch, Ganda, Grönländisch, Gusii, Hawaiianisch, Ido, Inari-Samisch, Indonesisch, Interlingua, Irisch, Isländisch, Italienisch, Javanisch, Jju, Jola-Fonyi, Kabuverdianu, Kalenjin, Kamba, Katalanisch, Kikuyu, Kinyarwanda, Kornisch, Korsisch, Kroatisch, Kurdisch, Kölnisch, Lettisch, Ligurisch, Litauisch, Lojban, Lombardisch, Luhya, Luo, Luxemburgisch, Machame, Makhuwa, Makhuwa-Meetto, Makonde, Malagasy, Malaiisch, Maltesisch, Manx, Meru, Mohawk, Morisyen, Māori, Niederdeutsch, Niederländisch, Niedersorbisch, Nord-Ndebele, Nord-Sami, Nord-Sotho, Norwegisch (Bokmål), Norwegisch (Nynorsk), Nyanja, Nyankole, Obersorbisch, Okzitanisch, Oromo, Polnisch, Portugiesisch, Quechua, Rejang, Rombo, Rukiga, Rumänisch, Rundi, Rwa, Rätoromanisch, Samburu, Samoanisch, Sango, Sangu, Sardisch, Schlesisch, Schottisches Gälisch, Schwedisch, Schweizerdeutsch, Sena, Shambala, Shona, Siswati, Slowakisch, Slowenisch, Soga, Somali, Spanisch, Sundanesisch, Swahili, Süd-Ndebele, Süd-Sotho, Taita, Taroko, Teso, Tongaisch, Tschechisch, Tsong, Tswana, Turkmenisch, Türkisch, Ungarisch, Usbekisch, Vunjo, Walisisch, Walliserdeutsch, Wallonisch, Westfriesisch, Wolastoqey, Wolof, Xhosa, Zhuang, Zulu
+
+Die Liste entspricht der Sprachenzeichennorm ISO 639-1-3.
+
+_Nicht-lateinische Fließtextschriften_
+
+Nicht-lateinische Schriften umfassen Schriftsysteme, die anstelle lateinischer Schriftzeichen zum Beispiel arabische, kyrillische oder chinesische Zeichen beinhalten.
+Mit einem Schriftsystem lassen sich meist mehrere Sprachen schreiben (zum Beispiel mit dem arabischen Schriftsystem Sprachen wie Arabisch, Urdu, Paschtu, Persisch (Dari/Farsi)).
+
+Die Notwendigkeit der Darstellung nicht-lateinischer Schriften ergibt sich durch die DIN 91379 „Zeichen und definierte Zeichensequenzen in Unicode für die elektronische Verarbeitung von Namen und den Datenaustausch in Europa“ mit Ausgabedatum 2022-08.
+Basierend auf UNICODE wurde für jedes nicht-lateinische Zeichen, das in EU-Mitgliedsstaaten verwendet wird, beispielsweise griechische oder kyrillische Zeichen, eine eindeutige Zuordnung zu einem lateinischen Zeichen vorgenommen.
+Die DIN 91379 wendet sich vorrangig an Behörden und Organisationen, die IT-Verfahren betreiben, welche dem behördenübergreifenden Datenaustausch oder dem Datenaustausch mit Bürgerinnen, Bürgern sowie der Wirtschaft dienen und deckt in ihrer Gesamtheit die EU-Amtssprachen und die Amtssprachen Islands, Liechtensteins, Norwegens und der Schweiz ab sowie die deutschen Minderheitensprachen.
+Um fehlende UNICODE-Zeichen in der BundesSans zu ergänzen, kommt sekundär die Schriftart *Liberation* zum Einsatz.
+
+*_Liberation_*
+
+Die Schriftart Liberation soll ausschließlich für fehlende UNICODE-Zeichen in der BundesSans verwendet werden.
+Denn beim Einsatz von Liberation muss beachtet werden, dass bei dieser Schriftart das große I und das kleine l leicht verwechselt werden können.
+Da dies die Lesbarkeit und damit die Barrierefreiheit beeinträchtigen kann, muss bei der Darstellung von I und l in jedem Fall auf BundesSans zurückgegriffen werden.
+
+*_Barrierefreiheit von Text_*
+
+Zusätzlich zu einem klar leserlichen Schriftschnitt sind auch die Gestaltungsmerkmale von Text, <<farben,Farbe>> und Größe entsprechend zu berücksichtigen.
+Die fehlerhafte Anwendung von Texten kann somit direkt zu einer Reduzierung der Benutzerfreundlichkeit des entsprechenden Frontends führen.
+
+Die Standard-Schriftart für <<bedienelemente>> und Inhalte ist BundesSans (14 pt, regular).
+Grundsätzlich gilt, ausreichende Schriftgrößen sind abhängig vom Betrachtungsabstand, von der Art des Textes und von der Sehschärfe der Lesenden.
+Individuelle Schriftgrößen können mit dem Schriftgrößenrechner auf https://www.leserlich.info/werkzeuge/schriftgroessenrechner/index.php[leserlich.info] ermittelt und entsprechend an den Nutzungskreis angepasst werden.
+
+*_Rechtschreibung_*
+
+Zu einem klaren, professionellen Gesamterscheinungsbild trägt auch eine korrekte Rechtschreibung sowie eine konsistente Groß- und Kleinschreibung bei.
+Während bei englischsprachigen Frontends zwischen verschiedenen Formen der Groß- und Kleinschreibung unterschieden wird, reicht es bei deutschsprachigen Frontends aus, die korrekte deutsche Rechtschreibung anzuwenden.
+Eine Ausnahme besteht darin, dass das erste Wort der Beschriftung eines <<bedienelemente,Bedienelements>> immer großgeschrieben wird, unabhängig von der jeweiligen Wortart.
+
+*_Vermeidung von technischem Jargon_*
+
+Text muss immer in der Sprache der Nutzenden verfasst werden.
+Im Folgenden werden einige Beispiele für technische Begriffe und deren Übersetzung in allgemein verständliche Sprache aufgezeigt.
+
+[cols="5a,5a", options="header", align="center"]
+|====
+|Technischer Begriff |Allgemeiner Begriff
+
+|Dirty State
+|Nicht gespeicherte Änderungen
+
+|Mouse-Up-Event
+|Maus-Klick
+
+|Reboot
+|Neustart
+
+|String-Länge
+|Anzahl der Zeichen
+
+|Data Grid
+|Tabelle
+|====
+
+*_Dos_*
+
+* Die Verwendung verschiedener Schriftarten (über die im Bedienkonzept hinaus vorgegebenen Schriftarten) muss vermieden werden.
+* Die Schriftgröße muss immer ausreichend groß sein.
+Ein Unterschreiten von Mindestgrößen zugunsten des Platzgewinns muss vermieden werden.
+Stattdessen werden andere, platzsparende Mechanismen angewandt wie <<expander>>.
+* Die Anzahl verschiedener Schriftgrößen muss auf ein notwendiges Minimum reduziert werden.
+* Als Standard-Schrift wird BundesSans 14 pt Regular empfohlen.
+* Es muss sichergestellt sein, dass der <<barrierefreier-einsatz-von-farben,Kontrast der Schriftfarbe zur Hintergrundfarbe>> ausreichend groß ist.
+Hier ist der Kontrast größtmöglich zu wählen (zum Beispiel dunkelgraue Schrift auf weißem Hintergrund).
+Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss der Kontrast bei kleiner Schrift mindestens 4,5:1 entsprechen.
+* <<ueberschriften>> und großer/dicker Text müssen einen Mindestkontrast von 3:1 aufweisen.
+* Die Nutzung von Fachterminologie muss entsprechend konsistent verwendet werden.
+
+*_Don'ts_*
+
+* Inkonsistente Terminologie.
+* Inkonsistente und falsche Groß- und Kleinschreibung.
+* Die Verwendung von zu langen Texten und Textblöcken.
+* Nutzung von unterstrichenem Text in Textpassagen, außer für <<link,Hyperlinks>>.
+* Die Verwendung von redundanten Textinformationen.
+* Nutzung von technischem Jargon statt der Sprache der Nutzenden.
+
+[[grafiken]]
+=== Grafiken
+
+Bilder und Grafiken ergänzen den <<text>> und vermitteln Informationen auf visuelle Weise.
+Sie unterliegen in erster Linie der Fachlichkeit beziehungsweise dem inhaltlichen Kontext und sollten nicht allzu oft als Schmuckgrafiken in Frontends integriert werden.
+Hier werden die Leitlinien für die Verwendung von Grafiken festgelegt, einschließlich Stilrichtlinien, Bildgrößen und im Ansatz deren <<barrierefreiheit>>.
+
+Jedes Bild benötigt eine Bildunterschrift und ein aussagekräftiges <<alt-tag,Alt-Attribut>>, um die Barrierefreiheit von Frontends zu unterstützen.
+So können die Inhalte für alternative Ausgabegeräte oder beim fehlerhaften Laden zugänglich gemacht werden.
+Des Weiteren soll die Bildgröße an den Inhalt angepasst werden, um sicherzustellen, dass die Informationen den Nutzenden übermittelt werden und kein horizontales Scrolling erforderlich ist.
+
+*_Schriftgrafiken_*
+
+Schriftgrafiken können nicht oder nur eingeschränkt an Benutzeranforderungen angepasst werden, weshalb sie nicht genutzt werden dürfen.
+Logos sind hiervon ausgenommen.
+Gründe dafür sind, dass ihre Farben und Schriftgrößen nicht individuell eingestellt werden können und die Schriftkanten bei einer Zoomvergrößerung meist unscharf werden.
+
+*_Schmuckgrafiken_*
+
+Schmuckgrafiken können zwar genutzt werden, sollten jedoch so wenig wie möglich eingesetzt werden.
+Solche Grafiken müssen entsprechend als Schmuckgrafik gekennzeichnet sein und benötigen deshalb auch keine Alt-Attribute.
+
+*_Dos_*
+
+* Bilder benötigen eine Bildunterschrift.
+* Grafiken müssen ein aussagekräftiges <<alt-tag,Alt-Attribut>> besitzen.
+* Das Bildmaterial muss ausreichend hoch aufgelöst sein, sodass keine Fragmente erkennbar sind.
+* Schmuckgrafiken sind erlaubt, müssen jedoch entsprechend gekennzeichnet werden.
+
+*_Don'ts_*
+
+* Bilder dürfen nicht gegen deutsches Recht verstoßen, politisch, sexuell oder angreifend sein.
+* Bilder dürfen keine Schriftgrafiken enthalten, ausgenommen Logos.
+In Ausnahmefällen muss die Schriftgrafik beispielsweise durch Alt-Attribute ausreichend beschrieben sein.
+
+[[ueberschriften]]
+=== Überschriften
+
+Überschriften ermöglichen es Nutzenden, schnell die Hauptthemen einer Seite zu erfassen und sich zu orientieren.
+Sie helfen, Inhalte in logische Abschnitte zu gliedern, wodurch Nutzende die Informationen leichter aufnehmen und navigieren können.
+
+*_Best Practices für die Verwendung von Überschriften_*
+
+* *Hierarchische Ordnung:*
+Überschriften sollten in einer klaren hierarchischen Struktur verwendet werden.
+Die Hauptüberschrift (<h1>) sollte nur einmal pro Seite verwendet werden, gefolgt von Unterüberschriften (<h2>, <h3>, etc.) in absteigender Reihenfolge.
+* *Einheitliches Design:*
+Überschriften sollten über das gesamte Frontend hinweg einheitlich gestaltet sein, um ein kohärentes Erscheinungsbild zu gewährleisten.
+Dies umfasst Schriftart, -größe, -farbe und -stil.
+* *Abstände und Margins:*
+Angemessene Abstände vor und nach den Überschriften verbessern die Lesbarkeit und visuelle Struktur der Seite.
+
+*_Zugänglichkeit_*
+
+* *Beschreibende Texte:*
+Überschriften sollten aussagekräftig und beschreibend sein, um den Inhalt des folgenden Abschnitts klar zu kommunizieren.
+Dies hilft sowohl Nutzenden als auch Suchmaschinen, die Relevanz des Inhalts zu erkennen.
+* *Verwendung von ARIA-Rollen:*
+In Fällen, in denen Überschriften nicht aus Standard-HTML-Überschriften-Tags bestehen, können ARIA-Rollen verwendet werden, um die Struktur zu erhalten.
+Beispiel:
+[source,xml]
+<div role="heading" aria-level="2">Unterüberschrift</div>
+
+*_Typografie und Design_*
+
+* *Klarheit und Lesbarkeit:*
+Die zu verwendende Schriftart ist BundesSans und sollte mindestens 14pt groß sein.
+Die Hauptüberschrift sollte deutlich größer und auffälliger als der normale <<text>> sein.
+* *Kontrast:*
+Der Kontrast sollte mindestens 4,5:1 sein, um die Lesbarkeit zu maximieren.
+
+*_Stile und Akzente_*
+
+* *Fettdruck und Kursivschrift:*
+Fettdruck oder Kursivschrift können verwendet werden, um wichtige Überschriften hervorzuheben, jedoch sollte dies sparsam geschehen, um eine Überladung zu vermeiden.
+* *Farben:*
+<<farben>> können verwendet werden, um Hierarchieebenen zu betonen, sollten jedoch mit Bedacht gewählt werden, um ein harmonisches Gesamtbild zu bewahren.
+Es wird empfohlen, die festgelegte Farbpalette zu verwenden.
+
+[[label]]
+=== Label
+
+Labels dienen dazu, <<eingabefeld,Eingabefelder>> und andere <<bedienelemente>> klar zu kennzeichnen, sodass Nutzende genau verstehen, welche Informationen erforderlich sind und welche Aktionen durchgeführt werden können.
+Ein konsistentes und gut durchdachtes Design von Labels trägt wesentlich zur Verbesserung der Benutzererfahrung bei.
+
+Labels sind nicht nur visuelle Hinweise, sondern auch wesentliche Bestandteile der <<barrierefreiheit>>.
+Sie ermöglichen es Screenreadern, die Beziehung zwischen einem Eingabefeld und seiner Beschreibung zu verstehen, was besonders für sehbehinderte Nutzende von großer Bedeutung ist.
+Ein korrekt implementiertes Label sorgt dafür, dass alle Nutzenden, unabhängig von ihren Fähigkeiten, <<formulare>> und andere interaktive Elemente problemlos nutzen können.
+
+*_Best Practices für die Verwendung von Labels_*
+
+* *Eindeutige Beschreibung:*
+Labels sollten klar und eindeutig beschreiben, was von den Nutzenden erwartet wird.
+Beispielsweise sollte ein Label für ein Namensfeld "Vollständiger Name" und nicht nur "Name" lauten.
+* *Eindeutige Kennzeichnung von Pflichtfeldern:*
+Labels, die ein Pflichtfeld kennzeichnen, werden immer am Ende mit einem Asterisk (pass:[*]) gekennzeichnet.
+Es wird empfohlen das Asterisk farblich nicht vom Label abzuheben.
+* *Kurze Formulierungen:*
+Labels sollten kurz und prägnant sein, um die Benutzerfreundlichkeit zu maximieren.
+Labels mit mehr als drei Wörtern sollten vermieden werden.
+* *Nähe zum Eingabefeld:*
+Labels sollten in unmittelbarer Nähe des zugehörigen Eingabefelds platziert werden - entweder darüber oder links davon, um eine klare Zuordnung zu gewährleisten.
+* *Ausrichtung:*
+Labels können linksbündig oder rechtsbündig zum Eingabefeld ausgerichtet sein, wobei linksbündige Labels tendenziell besser lesbar und benutzerfreundlicher sind.
+
+*_Zugänglichkeit_*
+
+* *HTML-For-Attribut:*
+Jedes Label sollte das for-Attribut verwenden, das mit der ID des entsprechenden Eingabefelds übereinstimmt.
+Dies stellt sicher, dass Screenreader die Verbindung zwischen Label und Eingabefeld korrekt interpretieren können.
+Beispiel:
+[source,xml]
+<label for="email">E-Mail-Adresse</label>
+<input type="email" id="email">
+
+* *Vermeidung von Platzhaltern als Labels:*
+Platzhaltertexte (Placeholder) sollten nicht als Ersatz für Labels verwendet werden, da sie verschwinden, sobald der Nutzende mit der Eingabe beginnt.
+Dies kann die Benutzerfreundlichkeit und Zugänglichkeit beeinträchtigen.
+
+*_Stil und Design_*
+
+* *Lesbarkeit:*
+Labels sollten in einer gut lesbaren Schriftart und -größe dargestellt werden - mindestens 14pt.
+Der Kontrast muss mindestens 4,5:1 betragen, um auch bei schlechten Lichtverhältnissen gut lesbar zu sein.
+* *Konsistenz:*
+Die Gestaltung von Labels sollte über das gesamte Frontend hinweg konsistent sein.
+Einheitliche <<text,Schriftarten>>, Größen und Abstände tragen zur Benutzerfreundlichkeit und einem professionellen Erscheinungsbild bei.
+
+*_Interaktive Elemente_*
+
+*Schaltflächen und Links:*
+Labels können auch für interaktive Elemente wie <<button,Schaltflächen>> und <<link,Links>> verwendet werden.
+Hier sollten <<aria-labels,ARIA-Labels>> (aria-label) oder ARIA-Beschreibungen (aria-labelledby) eingesetzt werden, um die Zugänglichkeit zu verbessern.
+Beispiel:
+[source,xml]
+<button aria-label="Schließen">X</button>

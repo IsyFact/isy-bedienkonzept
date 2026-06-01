@@ -1,0 +1,710 @@
+[[bedienelemente]]
+== Bedienelemente
+
+Bedienelemente sind die Bausteine der Benutzeroberfläche, die es den Nutzenden ermöglichen, mit dem Frontend zu interagieren.
+Dieser Abschnitt definiert die verschiedenen Bedienelemente und legt fest, wie sie gestaltet und angeordnet werden sollen, um eine intuitive Benutzererfahrung zu gewährleisten.
+Sie folgen den im Kapitel <<benutzereingaben>> definierten Grundprinzipien.
+
+[[button]]
+=== Button
+
+Ein Button dient dazu, Aktionen auszulösen, wie das Einreichen von <<formulare,Formularen>>, das Navigieren zu anderen Seiten oder das Ausführen spezifischer Funktionen innerhalb der Anwendung.
+Bei der Gestaltung von Buttons ist es wichtig, auf klare Beschriftungen, ansprechende visuelle Gestaltung und intuitive Platzierung zu achten, um die Benutzerfreundlichkeit zu maximieren.
+Nachfolgend werden die verschiedenen Arten von Buttons und ihre Anwendung in der IsyFact beschrieben.
+
+[[colored-button]]
+==== Kolorierte Buttons
+
+Kolorierte Buttons oder auch farbig gefüllte Buttons sind die am häufigsten verwendete Button-Variante.
+Grundsätzlich handelt es sich um minimal abgerundete Rechtecke, die ein <<label,Textlabel>>, ein <<icons,Icon>> oder eine Kombination aus beidem enthalten und farblich gefüllt sind.
+Aufgrund ihrer deutlichen visuellen Hervorhebung werden sie häufig als CTA-Buttons (Call-to-Action) bezeichnet.
+
+Je nach Zustand des Buttons unterscheiden sich die visuelle Darstellung und die Interaktionsrückmeldungen.
+Dabei sind insbesondere die Zustände Normal, Hover, Pressed, Disabled sowie Focus/Active eindeutig voneinander unterscheidbar zu gestalten.
+
+Im Hover- und Pressed-Zustand wird die Darstellung des Buttons so angepasst, dass eine Interaktion klar erkennbar ist.
+Im Disabled-Zustand ist der Button als nicht verfügbar erkennbar und darf keine Aktion auslösen.
+Im aktiven beziehungsweise fokussierten Zustand ist ein sichtbarer Fokusindikator vorzusehen, der die Anforderungen an die Barrierefreiheit erfüllt.
+
+*_Visuelle Hierarchie bei Buttons_*
+
+Buttons werden entsprechend ihrer Bedeutung innerhalb einer inhaltlichen Gruppe unterschiedlich hervorgehoben.
+Innerhalb eines zusammengehörigen Bereichs darf genau eine Aktion als Primäraktion visuell hervorgehoben sein.
+Die Primäraktion ist die wichtigste oder am häufigsten genutzte Handlung innerhalb dieser Gruppe.
+Alle weiteren Aktionen sind als sekundäre oder alternative Aktionen visuell zurückhaltender zu gestalten.
+
+Pro sichtbarem Bereich ist in der Regel nur eine Primäraktion hervorzuheben, um eine klare Handlungsorientierung zu gewährleisten.
+
+Für Aktionen mit besonderer semantischer Bedeutung sind die definierten Statusvarianten zu verwenden.
+Insbesondere bei irreversiblen Aktionen ist eine deutlich erkennbare visuelle Kennzeichnung erforderlich, die zusätzlich durch Text, Symbole oder andere visuelle Merkmale unterstützt wird.
+
+Insgesamt sollte die Anzahl unterschiedlicher Hervorhebungsvarianten innerhalb einer Benutzeroberfläche begrenzt werden, um die Oberfläche nicht zu überladen.
+
+:example-link-component: Button Varianten
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-button#colored-buttons
+include::partial$example-link-card.adoc[]
+
+*_Platzierung der Buttons_*
+
+Bei der Platzierung der Buttons innerhalb eines Frontends wird zwischen zwei Use Cases unterschieden.
+Bei kleinen Dialogfenstern, in denen lediglich zwischen Akzeptieren und Abbrechen einer Aktion unterschieden wird, wird der Primär-Button rechts unten platziert.
+
+Auf <<formulare,Formularseiten>> oder auch Full-Page-Designs ist die Häufigkeit der Verwendung der Buttons ausschlaggebend.
+Buttons für primäre, einleitende und abschließende Aktionen können prominent in der Mitte des Frontends angeordnet werden.
+Buttons für navigierende und häufiger verwendete Aktionen werden bevorzugt rechts angeordnet, da die Aufmerksamkeit der Nutzenden während des Lesens oder Hinzufügens von Informationen dorthin gerichtet ist.
+Es ist darauf zu achten, dass die Anordnung der Buttons mit identischem Zweck über das gesamte Frontend hinweg konsistent bleibt.
+
+*_Abgrenzung zu anderen Bedienelementen_*
+
+Da Buttons als Aktionselemente eingesetzt werden, dürfen diese nicht genutzt werden, um Selektionen aus einer Gruppe von Optionen zu treffen.
+Stattdessen werden <<radiobutton,Radiobuttons>>, <<checkbox,Checkboxen>> oder <<input-switch,Input Switches>> verwendet.
+Wenn nur das Textlabel ohne farbliche und räumliche Abgrenzung zum Hintergrund verwendet wird, kommt kein Button, sondern ein <<link>> zum Einsatz (beispielsweise bei Fließtexten oder Seitenleisten).
+
+*_Dos_*
+
+* Beim Aktivieren eines Buttons wird immer eine Funktion ausgelöst oder eine (Fehler-)Meldung sichtbar.
+* Die wichtigste oder am häufigsten genutzte Aktion ist als Primäraktion visuell hervorgehoben darzustellen.
+  Falls unklar ist, welche Aktion wichtiger ist, gilt die fachlich vorgesehene Standardaktion als Primäraktion.
+* Das <<label>> sollte kurz und selbsterklärend sein.
+* Das Label sollte die auszuführende Aktion beschreiben (zum Beispiel Öffnen, Löschen, Speichern, Weiter).
+* Wenn ein Button einen Dialog aufruft, sollte der resultierende Dialog die Beschriftung des Buttons als Titel wiederholen.
+* Die Schaltfläche für Buttons beträgt mindestens 44px x 44px.
+* Die Breite eines Buttons soll sich am enthaltenen Label orientieren.
+* Nebeneinanderstehende Buttons können unterschiedlich breit sein, wenn die jeweiligen Labels unterschiedlich groß sind.
+* Ein Button soll nach Möglichkeit so platziert werden, dass mögliche Beziehungen zu anderen Elementen deutlich werden.
+* Wenn nach einem Klick auf einen Button die Ergebnisaktion nicht sofort ersichtlich ist, soll dies durch ein System-Feedback (zum Beispiel durch eine <<fortschrittsanzeige>>) veranschaulicht werden.
+
+*_Don'ts_*
+
+* Buttons werden nicht zum Selektieren oder Auswählen von Inhalten verwendet.
+Hier werden die Bedienelemente <<radiobutton>> und <<checkbox>> eingesetzt.
+* Zum Ein- oder Ausschalten von Inhalten werden keine Buttons verwendet, sondern spezielle <<input-switch,Input Switches>>.
+* Innerhalb von Fließtexten oder zum Verweisen auf externe Inhalte kommen keine Buttons zum Einsatz.
+Stattdessen werden <<link,Links>> genutzt.
+* Um die Benutzeroberfläche nicht zu überladen, sollen nicht zu viele unterschiedliche Hervorhebungsvarianten eingesetzt werden.
+
+[[inverted-button]]
+==== Invertierte Buttons
+
+Falls die hervorgehobenen Button-Varianten innerhalb einer Seite zu dominant wirken, können für sekundäre Funktionen zurückhaltendere Varianten verwendet werden.
+
+Innerhalb einer Seite muss eine Primäraktion klar visuell erkennbar sein.
+Diese darf nicht ausschließlich in einer zurückhaltenden oder sekundären Variante dargestellt werden.
+
+:example-link-component: Invertierte Buttons
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-button#outlined-buttons
+include::partial$example-link-card.adoc[]
+
+Bei der invertierten Button-Variante wird auf eine vollflächige Hervorhebung verzichtet.
+Stattdessen erfolgt die visuelle Abgrenzung über Kontur und Beschriftung.
+
+Die unterschiedlichen Button-Zustände sind eindeutig voneinander unterscheidbar zu gestalten.
+Im Hover- und Pressed-Zustand muss die Interaktion klar erkennbar sein.
+Im Disabled-Zustand ist der Button als nicht verfügbar erkennbar und darf keine Aktion auslösen.
+Im aktiven beziehungsweise fokussierten Zustand ist ein sichtbarer Fokusindikator vorzusehen, der die Anforderungen an die Barrierefreiheit erfüllt.
+
+[TIP]
+Invertierte Buttons werden häufig genutzt, wenn es mehr als zwei Aktionen auf einer Seite gibt oder wenn einer Aktion ein besonderer Fokus eingeräumt werden soll, wie zum Beispiel beim "Registrieren".
+Das heißt nach der Nutzung einer hervorgehobenen Primäraktion kann auf zurückhaltendere Varianten umgestiegen werden.
+Eine Kombination aus hervorgehobenen und zurückhaltenden Button-Varianten ist jedoch nicht zulässig.
+Es sollte eine der beiden Varianten konsistent im gesamten Frontend benutzt werden.
+
+[[icon-button]]
+==== Icon-Button
+
+Icon-Buttons sind Buttons, die kein sichtbares Label haben, sondern nur aus einem aussagekräftigen <<icons,Icon>> bestehen.
+Sie sind rund und haben einen farbigen Rand, um sich vom Hintergrund oder anderen <<basiselemente,Basis>>- und <<bedienelemente,Bedienelementen>> abzugrenzen.
+Dabei ist es essenziell, dass das Icon die dahinterstehende Funktionalität ausdrückt.
+Bei der Entwicklung muss darauf geachtet werden, dass Icon-Buttons durch ein <<aria-labels,ARIA-Label>> für Screenreader zugänglich sind.
+
+Generell sollten Icon-Buttons mit Bedacht eingesetzt werden und können somit nicht jeden beliebigen beschrifteten Button ersetzen.
+Am häufigsten wird diese Button-Art in Kombination mit einer Aktion eines Bedienelements oder <<design-pattern,Design Patterns>> genutzt, wie zum Beispiel in der Aktionsspalte einer Tabelle oder zum Hinzufügen oder Löschen von Elementen.
+
+:example-link-component: Icon Buttons
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-button#icon-buttons
+include::partial$example-link-card.adoc[]
+
+Der Einsatz und die verschiedenen Zustände der Icon-Buttons entsprechen den zuvor beschriebenen Button-Varianten.
+Icon-Buttons können in unterschiedlichen semantischen Varianten eingesetzt werden (z. B. bestätigend, informierend oder destruktiv).
+Die jeweilige Ausprägung richtet sich nach den festgelegten Statusvarianten.
+Sie unterscheiden sich lediglich in Form und Größe von anderen Button-Varianten.
+
+Beim Hovern über einen Icon-Button kann ein Tooltip angezeigt werden, der die entsprechende Funktionalität beschreibt.
+Ist diese Beschreibung jedoch zu lang (mehr als drei Wörter), ist das Icon nicht dazu geeignet, einen beschrifteten Button zu ersetzen.
+
+*Sonderfall:*
+
+In speziellen Fällen werden Icon-Buttons auch ohne ihre Border dargestellt.
+Hierbei ist es besonders wichtig, dass die Icon-Buttons passend zum projektspezifisch definierten Design Pattern gewählt werden.
+Diese werden beispielsweise innerhalb von Tabellenheadern zum Sortieren und Filtern der Tabelleninhalte verwendet und sehen wie folgt aus:
+
+
+*_Dos_*
+
+* Die Schaltfläche für Icon-Buttons beträgt mindestens 44px x 44px.
+* Ein Icon-Button ohne Border muss so platziert werden, dass die Beziehungen zu anderen Elementen deutlich werden.
+
+[[link]]
+=== Hyperlink
+
+Hyperlinks sind verlinkte <<text,Texte>> (oder auch <<grafiken>>), die im Wesentlichen als Navigationsmechanismus dienen, zum Beispiel um neue Fenster mit anderen Inhalten zu öffnen.
+Wird die Maus über einen Hyperlink bewegt, ändert sich der Cursor vom Pfeil zum Handsymbol.
+Hyperlinks folgen per Default einem einheitlichen Styling und sind in der Regel unterstrichen.
+Da Nutzende daran gewöhnt sind, weiterführende Informationen/Links in einem Fließtext oder auf einer Seite anhand des unterstrichenen Textes zu erkennen, ist es nicht ratsam, daran etwas zu ändern.
+
+Hyperlinks können den Status (State) "normal", "hovered/focus" und "clicked" haben.
+
+Hyperlinks benötigen zwingend ein farbunabhängiges Element zum Identifizieren und Erkennen des States.
+
+[TIP]
+Hyperlinks sollten aussagekräftig beschriftet sein.
+Generische Phrasen wie „Hier klicken“ sind nicht hilfreich und sollten vermieden werden.
+
+[[eingabefeld]]
+=== Eingabefeld
+
+Eingabefelder sind grundlegende Interaktionselemente in einer Benutzeroberfläche, die es den Nutzenden ermöglichen, Daten einzugeben, zu bearbeiten oder auszuwählen.
+Sie spielen eine zentrale Rolle bei der Interaktion zwischen Nutzenden und System.
+Sie kommen in verschiedensten Formen und Kontexten vor, sei es in Form von Textfeldern, <<dropdown,Dropdown-Menüs>>, <<liste,Auswahllisten>> oder Datumsauswahlkalendern.
+Die Gestaltung und Platzierung von Eingabefeldern hat direkten Einfluss auf die Benutzererfahrung und die Effizienz der Dateneingabe.
+
+Eingabefelder sind dynamisch.
+Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (<<placeholder,Placeholder>>) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
+
+
+:example-link-component: Eingabefeld
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputtext
+include::partial$example-link-card.adoc[]
+
+
+Aktive Eingabefelder werden durch eine um 1 px stärkere Umrandung visuell hervorgehoben.
+Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung <<image-eingabefeldaktiv>>) oder eine Mask enthalten (siehe Abbildung <<image-eingabefeldmask>>).
+
+Wenn eine Eingabe in einem Eingabefeld getätigt wurde und das Feld wieder verlassen wird, wechselt das Eingabefeld wieder in den Normalzustand mit dem Unterschied, dass der Platzhalter verschwunden ist und die Eingabe angezeigt wird.
+
+*_Disabled:_*
+
+Deaktivierte Eingabefelder (disabled) sind grau hinterlegt und geben zusätzlich über einen Mouse-Cursor-Wechsel beim Hovern den Disabled State wieder.
+Disabled Felder werden *nur* eingesetzt, wenn der Inhalt zum aktuellen Zeitpunkt nicht relevant ist.
+Disabled-Elemente müssen nicht für den Screenreader oder andere Unterstützungstechnologien zugänglich sein.
+
+*_Readonly:_*
+
+Im Gegensatz zu einem deaktivierten Eingabefeld sind Readonly-Eingabefelder für Screenreader und andere Unterstützungstechnologien zugänglich und ihr Inhalt für die Nutzenden zum Zeitpunkt der Interaktion relevant.
+Deaktivierte Felder haben einen Standardhintergrund und sehr hellen Rand.
+Die enthaltene Information lässt sich aus dem Eingabefeld auslesen (auch durch Screenreader oder andere Unterstützungstechnologien) zum Beispiel durch die Tastenkombination "Strg + C".
+Die Information ist zum aktuellen Zeitpunkt relevant, kann aber nicht verändert werden.
+
+*_Eingabefeld als Pflichtfeld:_*
+
+Ein Eingabefeld als Pflichtfeld ist im Grunde ein normales Eingabefeld mit der Besonderheit, dass es befüllt werden muss.
+Die "Pflicht"-Kennzeichnung erfolgt dabei durch das Label und wird durch einen Asterisk (*) dargestellt.
+Der Asterisk wird immer ans Ende eines Labels gestellt.
+Pflichtfelder haben immer eine Validierung und eine entsprechende Fehlermeldung, die bei einer fehlerhaften Eingabe unterhalb des Eingabefeldes sichtbar wird (siehe zum Beispiel Abbildung <<image-eingabefelderror>>).
+
+[NOTE]
+Ein Pflichtfeld kann zusätzlich durch die Deklaration des Platzhalters mit "Pflichtfeld" oder "required" gekennzeichnet werden.
+
+*_Eingabefeld mit Fehlermeldung und Hinweis:_*
+
+Bei einer Fehlermeldung wird das betroffene Eingabefeld visuell als fehlerhaft gekennzeichnet und zusätzlich ein verständlicher Hinweistext ausgegeben. Die Kennzeichnung darf nicht ausschließlich über Farbe erfolgen.
+Das Label des Eingabefeldes wird bei einem Fehler nicht verändert.
+
+Eingabefelder, die eine Erläuterung benötigen, sollen diese immer so kurz wie möglich und so lang wie nötig gestalten.
+Erläuterungen können dabei unterschiedlich realisiert werden, sortiert von kurz nach lang:
+
+* als Platzhalter im Eingabefeld selbst.
+* als Klammeranhang am Label, um das Label zu erläutern, zum Beispiel: Name (gemeint ist der eingetragene Familienname).
+* als maximal zweizeiliger Hinweistext unter oder über dem Label (bitte nach Entscheidung konsistent im gesamten Frontend damit fortfahren).
+
+Alle Erläuterungstexte, die mehr als zwei Zeilen einer Eingabefeldlänge benötigen, sind zu komplex gestaltet und bedürfen einer fachlichen Neugestaltung.
+Sollte dies nicht möglich sein, so ist ein vorangehendes Textelement über dem Eingabefeld notwendig.
+Erklärungshilfen, sollen nicht dynamisch versteckt werden - entweder ist die Erläuterung notwendig, dann sollte sie sichtbar sein oder sie ist nicht notwendig, sodass sie entfernt werden kann.
+
+*_Allgemeine Hinweise zu Eingabefeldern:_*
+
+Ein Eingabefeld hat keine fixe Länge.
+Ein Eingabefeld ist so lang, wie es der fachliche Kontext notwendig macht.
+Wenn beispielsweise 95 % der erwarteten Eingaben deutlich kürzer sind als Einzelfälle, sollte die Länge so gewählt werden, dass 95 % der Eingaben ohne Interaktion vollständig gelesen werden können.
+Die Mindesthöhe eines Eingabefelds von 44px darf nicht unterschritten werden, um die Barrierefreiheit von <<eingabefeld-mit-button,Input-Optionen>> zu gewährleisten.
+
+Die Schriftgröße von Labeln, Platzhaltern und Hinweistexten sollte 14pt nicht unterschreiten.
+Der Abstand eines Eingabefelds zum darunter liegenden Label eines weiteren Eingabefelds soll ca. dem doppelten Abstand zwischen einem Label-Eingabefeld-Paar entsprechen, um eine eindeutige Zuordnung zu gewährleisten.
+
+*_Dos:_*
+
+* Die unmittelbare Nähe der <<label,Labels>> zu den dazugehörigen <<bedienelemente,Bedienelementen>> verbessert die visuelle Verbindung und ermöglicht es den Nutzenden, <<formulare>> schneller und effizienter auszufüllen.
+* Gleichmäßige Feldlängen unterstützen den Lesefluss der Nutzenden.
+* Die Feldlängen sollten erwartungskonform gewählt werden.
+Soll zum Beispiel eine Postleitzahl innerhalb Deutschlands eingegeben werden, so ist es sinnvoll, die Feldlänge auf fünf Stellen zu begrenzen.
+Optisch kann das Eingabefeld der Konsistenz entsprechend länger sein.
+* Pflichtfelder werden mit einem Asterisk (*) gekennzeichnet.
+
+*_Don'ts:_*
+
+* Labels enden nicht mit einem Doppelpunkt.
+* Bei sehr langen Labels sollten sinnvolle Abkürzungen verwendet werden.
+
+[[eingabefeld-mit-mask]]
+==== Eingabefeld mit Mask-Option
+
+Um das erwartete Eingabeformat von Eingabefeldern anzuzeigen und als Bedienhilfe die Fehlerwahrscheinlichkeit zu minimieren, werden Masks verwendet.
+
+:example-link-component: Eingabefeld mit Mask-Option
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputmask
+include::partial$example-link-card.adoc[]
+
+Eine Mask kann nur im aktiven State angezeigt werden und entspricht der regulären Schriftfarbe.
+Die Mask ist dem erwarteten Inhalt entsprechend fachlich logisch und nachvollziehbar gewählt.
+Zum Beispiel entspricht „mobile number“ dem Pattern: +0012 345 / 678 999 oder Ländervorwahl, Vorwahl, Rufnummer.
+Masks können dabei auch frei gestaltet und den fachlichen Bedürfnissen entsprechend angepasst werden, beispielsweise für Aktenzeichen.
+Eine Mask kann in Einzelfällen auch dem Platzhalter entsprechen.
+
+[[eingabefeld-mit-button]]
+==== Eingabefeld mit Input-Option
+
+Für häufig verwendete Eingaben gibt es die Möglichkeit Input-Optionen für das Eingabefeld anzeigen zu lassen.
+Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsweise die Eingabe eines Datums bei einem Date-Picker oder die Sicherstellung besonderer Zeichen beim "Sonderzeichenpicker".
+
+:example-link-component: Eingabefeld mit Input-Option
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputgroup
+include::partial$example-link-card.adoc[]
+
+Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem <<image-eingabefeldplatzhalter,normalen Eingabefeld>>.
+Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung <<image-eingabefeldinputoption>>) oder eine Datumseingabe.
+Die Schaltfläche der Input-Option ist mindestens 44px x 44px.
+
+*_Datum- und Uhrzeit-Eingaben_*
+
+Datum- und Uhrzeit-Eingaben werden verwendet, wenn Nutzende Datumswerte, Zeitpunkte oder Zeiträume erfassen sollen.
+Sie bestehen aus einem Eingabefeld und können zusätzlich eine Input-Option enthalten, zum Beispiel eine Kalender- oder Uhrzeitauswahl.
+
+Die Input-Option dient als Unterstützung bei der Eingabe.
+Sie ersetzt nicht die Möglichkeit, Werte direkt über die Tastatur einzugeben.
+Das erwartete Eingabeformat muss für die Nutzenden eindeutig erkennbar sein, zum Beispiel durch einen Platzhalter, eine Mask oder einen kurzen Hinweistext.
+
+Für Datum- und Uhrzeit-Eingaben gelten die allgemeinen Richtlinien für Eingabefelder entsprechend.
+Dazu gehören insbesondere sichtbare Labels, eindeutige Pflichtfeldkennzeichnung, verständliche Hinweis- und Fehlermeldungen, ausreichend große Bedienelemente sowie die Möglichkeit zur Bedienung per Tastatur.
+Fehlerhafte Eingaben werden wie bei anderen Eingabefeldern visuell als fehlerhaft gekennzeichnet und zusätzlich mit einem verständlichen Hinweistext erläutert.
+Die Kennzeichnung darf nicht ausschließlich über Farbe erfolgen.
+
+*_Eingabe von Datumswerten_*
+
+Für die Eingabe eines Zeitpunkts mit Datum und Uhrzeit wird ein Eingabefeld verwendet, das beide Informationen eindeutig zusammenführt.
+Das erwartete Format muss klar erkennbar sein, zum Beispiel „TT.MM.JJJJ HH:MM“.
+
+:example-link-component: Eingabe von Datumswerten
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#date-picker
+include::partial$example-link-card.adoc[]
+
+Die Kalenderauswahl unterstützt die Nutzenden bei der Eingabe eines gültigen Datums.
+Die direkte Eingabe über die Tastatur muss weiterhin möglich sein.
+Ungültige Datumswerte, unvollständige Eingaben oder Eingaben im falschen Format müssen mit einer verständlichen Fehlermeldung erläutert werden.
+
+*_Eingabe von Datum mit Uhrzeit_*
+
+Für die Eingabe eines Zeitpunktes mit Datum und Uhrzeit wird ein Eingabefeld verwendet, das beide Informationen eindeutig zusammenführt.
+Das erwartete Format muss klar erkennbar sein, zum Beispiel „TT.MM.JJJJ HH:MM“.
+
+:example-link-component: Eingabe von Datum mit Uhrzeit
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#date-time-picker
+include::partial$example-link-card.adoc[]
+
+Die Uhrzeit wird in der Regel im 24-Stunden-Format angegeben.
+Wenn Datum und Uhrzeit gemeinsam fachlich einen Zeitpunkt beschreiben, können sie in einem gemeinsamen Eingabefeld erfasst werden.
+
+Alternativ können Datum und Uhrzeit in getrennten Eingabefeldern dargestellt werden, wenn dies fachlich verständlicher ist oder wenn beide Werte unabhängig voneinander bearbeitet werden sollen.
+In diesem Fall müssen beide Eingabefelder eindeutig beschriftet und als zusammengehörige Eingabegruppe erkennbar sein.
+
+*_Eingabe von Zeiträumen_*
+
+Für die Eingabe von Zeiträumen ist zwischen reinen Datumszeiträumen und Zeiträumen mit Datum und Uhrzeit zu unterscheiden.
+
+Reine Datumszeiträume können als zusammenhängende Von-bis-Auswahl umgesetzt werden.
+Dabei müssen Beginn und Ende des Zeitraums eindeutig erkennbar sein.
+Das erwartete Format muss auch hier sichtbar angegeben werden, zum Beispiel „TT.MM.JJJJ - TT.MM.JJJJ“.
+
+:example-link-component: Eingabe von Zeiträumen
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#date-range
+include::partial$example-link-card.adoc[]
+
+Bei Zeiträumen mit Datum und Uhrzeit sollen Beginn und Ende getrennt erfasst werden.
+Dadurch können Beschriftungen, Hilfetexte, Fehlermeldungen und Validierungsregeln eindeutig zugeordnet werden.
+
+:example-link-component: Eingabe von Zeiträumen mit Datum und Uhrzeit
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#date-time-range
+include::partial$example-link-card.adoc[]
+
+Ein Zeitraum mit Datum und Uhrzeit besteht in der Regel aus folgenden Angaben:
+
+* Beginn mit Datum und Uhrzeit
+* Ende mit Datum und Uhrzeit
+
+Die Eingaben für Beginn und Ende müssen visuell und semantisch als zusammengehörige Eingabegruppe gestaltet werden.
+Zusätzlich muss geprüft werden, dass das Ende nicht vor dem Beginn liegt.
+Eine fehlerhafte Reihenfolge wird mit einer verständlichen Fehlermeldung ausgegeben.
+
+*_Sonderzeichen-Picker_*
+
+Der Sonderzeichen-Picker ist eine Input-Option, um nicht übliche Zeichen ohne weitere Hilfsmittel eingeben zu können.
+Die Input-Option des Sonderzeichen-Picker ist immer am Ende eines Eingabefelds und entweder vollständig ausgefüllt mit der Primärfarbe oder alternativ im "Outline"-Styling (siehe folgende Abbildungen).
+
+Beim Klick auf die Input-Option öffnet sich in der Mitte des Frontends der Sonderzeichenpicker als Overlay.
+
+:example-link-component: Sonderzeichenpicker
+:example-link-url: {demo-app-url}/isy-angular-widgets/isy-angular-components#inputchar
+include::partial$example-link-card.adoc[]
+
+Mit dem Sonderzeichenpicker lässt sich nun ein Sonderzeichen wählen und einfügen.
+
+[[textbox]]
+==== Textbox
+
+Eingabefelder können auch eine unbestimmte Menge an Zeichen erwarten.
+Dann wird von einer Textbox gesprochen.
+Diese unterscheiden sich in der Größe und Form von gewöhnlichen <<eingabefeld,Eingabefeldern>>.
+
+:example-link-component: Textbox
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#textarea
+include::partial$example-link-card.adoc[]
+
+Bei der Eingabe von Text können Textboxen manuell in ihrer Größe verändert werden, sodass der gesamte Inhalt angezeigt werden kann.
+Textboxen sollten mindestens so groß gestaltet werden, dass der am häufigsten zu erwartende Inhalt hineinpasst, ohne manuell die Box anzupassen.
+
+[TIP]
+Textboxen haben die gleichen States und Styles wie Eingabefelder.
+
+[[liste]]
+=== Liste
+
+Listen sind zentrale Bestandteile in Frontends und insbesondere von Fachanwendungen.
+Sie dienen dazu, Inhalte zu strukturieren und erfassbar zu machen.
+Listen ermöglichen es Nutzenden, zulässige Werte auszuwählen.
+Dadurch werden Fehleingaben und unerwartete Ergebnisse reduziert.
+
+Listen bestehen optisch aus einem geschlossenen Rahmen und bestenfalls aus logisch sortierten Elementen.
+
+Listen können in den verschiedensten Ausprägungen eingesetzt werden:
+
+* Eingabefeld + Liste
+* Eingabefeld + Suchbox + Liste
+* Menüitem + Liste
+* etc.
+
+Die einfachste Form einer Liste ist die rein textuelle Liste.
+
+
+:example-link-component: Liste
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#dropdown
+include::partial$example-link-card.adoc[]
+
+Eine Liste kann theoretisch beliebig viele Einträge enthalten, was aber die <<usability-und-benutzerfreundlichkeit,Usability>> verschlechtert.
+Im optimalen Fall haben Listen eine überschaubare Anzahl an logisch relevanten Einträgen.
+Die Einträge sind eindeutig und prägnant.
+Bei langen Einträgen können auch sinnvolle Abkürzungen genutzt werden.
+
+Die Listenelemente sind mindestens 44px hoch und entsprechend dem dazugehörigen Element breit (hier exemplarisch das Eingabefeld).
+Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
+
+*_Dos_*
+
+* Listen sollen inhaltlich so einfach wie möglich gestaltet werden.
+* Listeneinträge sollten so kurz wie möglich formuliert sein.
+* Listeneinträge sind eindeutig unterscheidbar.
+* Wenn Listen viele Einträge haben, so sollten andere Elemente die Durchsuchbarkeit, Filterung oder Kategorisierung ermöglichen.
+* Listen können mit unterschiedlichen interaktiven Elementen kombiniert werden, um den Nutzenden eine Hilfestellung zu bieten.
+* Bei einer kleinen Liste kann auch eine Radio-Button-Gruppe genutzt werden.
+
+*_Don'ts_*
+
+* Listeneinträge sollten nie mehrzeilig sein.
+* Listeneinträge sollten nicht doppelt vorhanden sein.
+* Listen sollten nicht unsortiert und sehr lang sein.
+* Listeneinträge mit ganzen Sätzen sollten, wenn möglich, vermieden werden.
+
+[[checkbox]]
+=== Checkbox
+
+Checkboxen ermöglichen es Nutzenden, *mehrere* Optionen aus einer (offenen) Liste auszuwählen und spielen eine wichtige Rolle bei der Interaktivität und Benutzerführung.
+Der gezielte Einsatz von Checkboxen bei kurzen Listen gibt den Nutzenden die Möglichkeit, die Optionen schnell zu erkennen und auszufüllen.
+
+Checkboxen können auch alleinstehend als boolean-Wert genutzt werden (zum Beispiel, um das Lesen der AGB zu bestätigen).
+
+Checkboxen sind 24px x 24px groß und weisen für mobile Geräte mindestens einen 44px x 44px großen Klickbereich (Click-Target-Area) auf.
+Checkboxen haben immer ein rechtsstehendes Label mit einer Schriftgröße von mindestens 14pt (hier exemplarisch 16pt).
+
+Eine Checkbox repräsentiert eine unabhängige, nicht-exklusive Auswahl, bei der die Nutzenden beliebig viele Optionen auswählen können.
+Dabei können Checkboxen vertikal oder auch horizontal angeordnet werden.
+
+:example-link-component: Checkboxen
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#checkbox
+include::partial$example-link-card.adoc[]
+
+Wichtig ist, dass jede Checkbox einem Label zugeordnet ist.
+Für eine homogene Darstellung sind folgende Abstände einzuhalten:
+
+[[image-checkboxen-mit-einheiten]]
+.Vermaßung von Checkboxen horizontal und vertikal
+image::checkboxes.wireframe.drawio.svg[align="center"]
+
+*_Dos_*
+
+* Das Ein- oder Ausschalten einer Checkbox kann dazu genutzt werden, andere Elemente dynamisch zu aktivieren/anzuzeigen oder zu deaktivieren/unsichtbar zu machen.
+Zum Beispiel können Eingabefelder eingeblendet werden, wenn per Checkbox "Abweichende Lieferadresse" ausgewählt wird.
+* Nicht nur die Box und Target-Area, sondern auch das Label sollten anklickbar sein.
+* Eine Gruppe von Checkboxen sollte immer eine Beschriftung aufweisen.
+Bei einer einzelnen Checkbox kann diese entfallen.
+* Für optimale Lesbarkeit sollten Checkboxen untereinander angeordnet sein.
+* Bei Checkboxen mit mehreren Ebenen gilt:
+** Solange die Werte der untergeordneten Optionen gleich sind (alle „Aus“ oder alle „An“), zeigt dies die übergeordnete Checkbox mit dem entsprechenden Wert an.
+** Sind die Werte der untergeordneten Optionen jedoch nicht mehr homogen gesetzt, so schaltet die übergeordnete Checkbox in den Zustand „nicht definiert“.
+Dieser Zustand wird häufig mit einem Quadrat innerhalb der Checkbox symbolisiert.
+
+*_Don'ts_*
+
+* Checkboxen sind kein alleinstehender Ein- und Aus-Schalter, dafür gibt es die Komponente _<<input-switch>>_.
+* Eine Checkbox soll keine Funktionen (drucken, speichern, etc.) auslösen oder Seiten öffnen/verlinken.
+
+[[radiobutton]]
+=== Radiobutton
+
+Radiobuttons ermöglichen es Nutzenden, *eine* Option aus einer (offenen) Liste auszuwählen und spielen eine wichtige Rolle bei der Interaktivität und Benutzerführung.
+Beim Einsatz von Radiobuttons wird den Nutzenden sehr schnell gezeigt, dass sie sich zwischen allen Optionen für eine entscheiden müssen.
+
+Radiobuttons können nicht alleine verwendet werden, da sie nicht wieder abwählbar sind.
+
+Radiobuttons sind 24px groß und weisen für mobile Geräte mindestens einen 44px x 44px großen Klickbereich (Click-Target-Area) auf.
+Radiobuttons haben immer ein rechtsstehendes Label mit einer Schriftgröße von mindestens 14pt (hier exemplarisch 16pt).
+
+Ein Radiobutton repräsentiert eine exklusive Auswahl.
+Es kann innerhalb der Gruppe genau eine Option ausgewählt werden.
+Dabei können Radiobuttons vertikal oder horizontal angeordnet werden.
+
+:example-link-component: Radiobuttons
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#radiobutton
+include::partial$example-link-card.adoc[]
+
+Wichtig ist, dass jeder Radiobutton einem Label zugeordnet ist.
+Für eine homogene Darstellung sind folgende Abstände einzuhalten:
+
+[[image-radiobutton-mit-einheiten]]
+.Vermaßung von Radiobuttons horizontal und vertikal
+image::radiobuttons.wireframe.drawio.svg[align="center"]
+
+*_Dos_*
+
+* Die Verwendung von Radiobuttons empfiehlt sich für eine kleinere Anzahl an Optionen.
+Ist die Menge der zur Verfügung stehenden Optionen sehr groß oder hat der Platzbedarf eine große Bedeutung, so kann der Einsatz eines <<dropdown,Dropdowns>> in Betracht gezogen werden.
+* Eine Gruppe von Radiobuttons sollte immer eine Beschriftung aufweisen.
+* Für optimale Lesbarkeit sollten Radiobuttons untereinander angeordnet sein.
+* Falls alle oder keine der angebotenen Optionen zutreffen können, sollte eine zusätzliche allgemeine Meta-Option, zum Beispiel "keine Option" oder "alle", hinzugefügt werden.
+
+*_Don't_*
+
+Ein Radiobutton darf nicht genutzt werden, um unmittelbar Funktionen auszuführen oder Aktionen auszulösen.
+Für diese Zwecke sollten <<button,Buttons>> verwendet werden.
+
+[[input-switch]]
+=== Input Switch
+
+Ein Input Switch, auch Eingabeschalter genannt, kommt zum Einsatz, wenn eine bestimmte Funktion oder Eigenschaft ein- und ausgeschaltet werden muss.
+Per Default ist immer ein Wert gesetzt: inaktiv (ausgeschaltet) oder aktiv (eingeschaltet).
+
+Um den Nutzenden zu vermitteln welche Funktion oder Eigenschaft ein- beziehungsweise ausgeschaltet werden kann, sollte ein <<label>> links oder rechts neben dem Input Switch platziert werden.
+Das verwendete Label sollte aussagekräftig und eindeutig sein.
+
+:example-link-component: Input Switch
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputswitch
+include::partial$example-link-card.adoc[]
+
+*_Dos_*
+
+* Ein Input Switch wird zum Ein- und Ausschalten von Funktionen oder Eigenschaften benutzt.
+* Die Funktion sollte eindeutig benannt werden (zum Beispiel: Zeige ausgeblendete Felder).
+
+*_Don'ts_*
+
+* Input Switches sollten nicht bei mehr als einer Option gewählt werden.
+* Input Switches sollten nicht in Sätze eingebaut werden.
+* <<checkbox,Checkboxen>> und Input Switches sollen nicht zusammen genutzt werden.
+Eine Kombination aus beiden <<bedienelemente,Bedienelementen>> zum Ein- und Ausschalten von Funktionalitäten ist nicht intuitiv für Nutzende.
+
+[[tabview]]
+=== Tabview
+
+Ein Tabview ist ein wesentliches Element im modernen Design, das die Benutzererfahrung erheblich verbessert.
+Es bietet eine intuitive Möglichkeit, verschiedene Inhalte oder Abschnitte eines Frontends übersichtlich und platzsparend darzustellen.
+Durch die Verwendung von Tabs können Nutzende schnell und einfach zwischen verschiedenen Bereichen navigieren, ohne die Seite ständig neu laden zu müssen.
+Dies fördert nicht nur die Benutzerfreundlichkeit, sondern auch die Effizienz bei der Informationssuche.
+Tabviews ermöglichen Entwickelnden, Inhalte logisch zu organisieren und sorgen für eine klare Struktur, die die Benutzerbindung und Zufriedenheit steigert.
+
+Ein Tabview hat initial einen aktivierten, aber nicht markierten/fokussierten State (siehe <<image-tabview>>).
+Sobald ein Tab aktiv ausgewählt wird, wird auch die Markierung im Reiter visuell deutlich.
+Der aktive Tab erhält eine visuelle Hervorhebung, beispielsweise in Form einer Markierungslinie.
+
+Tabviews können ihre Reiter auch mit visuellen <<icons>> unterstützen.
+Diese verhalten sich analog zum Tab-Label.
+
+Es ist ratsam ein Tabview zu nutzen, wenn der Inhalt nicht ohne starkes Scrolling innerhalb des Screens dargestellt werden kann.
+Dabei ist eine fachlich logische Aufgliederung vorauszusetzen.
+
+Sollte es fachlich zwingend notwendig sein, mehr Tabs anzubieten, kann eine horizontale Navigation innerhalb der Tab-Leiste eingesetzt werden.
+
+Das Tabview nutzt dabei die volle, ihm zur Verfügung stehende Breite und signalisiert visuell, dass weitere Tabs außerhalb des sichtbaren Bereichs vorhanden sind.
+Eine geeignete Navigation ermöglicht den Zugriff auf die weiteren Tabs.
+
+:example-link-component: Tabs
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#tabs
+include::partial$example-link-card.adoc[]
+
+Die Schriftgröße eines Labels im Tabview sollte 14pt nicht unterschreiten.
+Ist die Standardschriftgröße gewählt, so erhöht sich diese bei aktiven Elementen um 2pt (hier exemplarisch auf 16pt).
+Die Höhe eines Tabreiters ist mindestens 44px.
+Die Breite ist abhängig vom <<label>>.
+Icons sind mindestens 17px x 17px groß.
+
+[[image-tabview-measured]]
+.Exemplarische Vermaßung des Tabview
+image::tabmenu.wireframe.drawio.svg[align="center"]
+
+*_Dos:_*
+
+* Tabs werden eingesetzt, wenn die Komplexität der UI reduziert werden soll und eine sinnvolle Gruppierung einzelner Bereiche vorgenommen werden kann.
+* Die optimale Anzahl an Tabs ist 4 - 7.
+* Labels für die Tabreiter sollten kurz und aussagekräftig sein.
+Es kann auch mit sinnvollen und verständlichen Abkürzungen gearbeitet werden.
+* Überlängen-Tabview sollten nur genutzt werden, wenn es keine andere Möglichkeit zur Gestaltung gibt.
+
+*_Don'ts:_*
+
+* Seiten sollten nicht mit nur einem Tabreiter gestaltet werden.
+Bei weniger als drei Tabreitern, ist eventuell ein dynamisches <<panel>> das passendere Element.
+* Muss der Inhalt verschiedener Tabreiter verglichen/abgestimmt werden, sollte anstelle eines Tabreiters lieber ein dynamisches Panel verwendet werden.
+* Tabreiter stellen nicht verschiedene Sichten zu gleichen Daten dar.
+* Tabreiter sind keine Prozessschritte.
+Für diesen Zweck wird ein Wizard genutzt.
+* Tabreiter sollen keine Abhängigkeiten untereinander haben.
+* Labels, die länger als 26 Zeichen sind, sollten nicht genutzt werden.
+
+[[tabelle]]
+=== Tabelle
+
+Eine Tabelle dient der übersichtlichen Anzeige von größeren Datenmengen und besteht aus mehreren Spalten, die zur Sortierung verwendet werden können.
+
+:example-link-component: Tabelle
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-data#table
+include::partial$example-link-card.adoc[]
+
+Tabellenzeilen sind standardmäßig nicht anwählbar, was aber durch eine fachliche Notwendigkeit umgesetzt werden kann.
+So steht es der Anwendung frei:
+
+* Keine Zeile auswählbar zu machen.
+* Eine Zeile mit Klick auswählbar zu machen.
+* Eine Zeile mit Doppelklick, zum Beispiel direkt in der Detailansicht, zu öffnen.
+* Eine Zeile mit einer Spalte und Checkbox auswählbar zu machen.
+
+[IMPORTANT]
+Es ist wichtig, das Verhalten von Tabellen innerhalb der Anwendung konsistent zu halten.
+Unterschiedliches Verhalten von Tabellen ist *NICHT* zulässig!
+
+Wenn mehrere Aktionen für eine Tabellenzeile erfolgen können, dann werden Folgeaktionen über Aktionselemente in der letzten Spalte "Aktionen" bereitgestellt.
+Falls eine Doppelklick-Aktion in einer Zeile implementiert wird, sollte dies die primäre Funktion der möglichen Tabellenzeilen-Aktionen sein.
+
+* Doppelklick = Detailansicht öffnen; folglich ist die erste/primäre Aktion = "Detailansicht öffnen".
+* Die aktive oder fokussierte Zeile muss visuell eindeutig hervorgehoben sein.
+
+*_Dos:_*
+
+* Tabellen werden genutzt, um große Mengen von Daten oder Objekten anzuzeigen.
+* Tabellen sollten übersichtlich bleiben.
+Weniger wichtige Spalten können ausgeblendet werden.
+Es ist nicht zielführend alle Daten anzuzeigen.
+Die Fachlichkeit sollte sich auf eine Teilmenge von wichtigen Informationen beschränken.
+* Überlaufende Textlabels werden abgetrennt und mit einem Tooltip ergänzt.
+* Spaltentitel sollten so kurz wie möglich und prägnant gewählt werden.
+Abkürzungen sind zulässig.
+* Die initiale oder maximale Breite von Spalten muss sich an den zu erwartenden Inhalten orientieren, auch wenn der Spaltentitel dadurch abgeschnitten wird (es gibt keine feste maximale Buchstabenanzahl).
+* Tabellenspalten können unterschiedlich breit sein.
+* Vertikales Scrolling ist zu vermeiden.
+* Die Spalten sollten ihrer Wichtigkeit nach angeordnet werden.
+* Tabellen sollten nach Möglichkeit maximal 20 Zeilen anzeigen und dann eine Paginierung nutzen.
+Sollte es fachlich notwendig sein, kann auch endless-scrolling eingesetzt werden.
+* <<icons,Symbole>> und <<grafiken,Bilder>> können zur schnelleren visuellen Unterscheidung von Listeneinträgen genutzt werden.
+
+*_Don'ts:_*
+
+* Es sollten keine Tabellen mit nur 1-2 Spalten erzeugt werden.
+* Bei Tabellen sollte nicht vertikal gescrollt werden.
+* Wenn nur ein einziger Eintrag länger ist als der Durchschnitt, sollte sich die Breite der Spalten nicht nach diesem Eintrag richten.
+* Wenn sich Symbole oder Bilder nur wiederholen, sollte auf sie verzichtet werden.
+
+[[sortierung-tabelle]]
+==== Sortierung
+
+Tabellen sollten aufgrund ihrer großen Datenmengen pro Spalte sortierbar sein und eine auf- und absteigende Sortierung anbieten (zwei Pfeile im Tabellenheader).
+Der Klickbereich des Icons ist dabei 44px x 44px groß (siehe <<image-tabelle>>).
+
+* Der erste Klick auf die Sortiericons sortiert die Tabelle nach den Werten in der gewählten Spalte aufsteigend.
+* Ein zweiter Klick auf die Sortiericons sortiert die Tabelle entsprechend absteigend.
+* Das wechselnde Icon zeigt die aktuelle Sortierung an.
+
+[[filterung-tabelle]]
+==== Filterung
+
+Es bietet sich an, dass Tabellen auch filterbar gestaltet werden.
+Dafür können verschiedene fachliche Filter definiert werden.
+Die Filter lassen sich in beliebiger Weise kombinieren.
+Über den übergeordneten <<icon-button>> "Löschen" werden alle Filter gelöscht und die Tabelle aktualisiert.
+
+* Eine Spalte kann mehrere Filter anwenden.
+* Filter sind nur pro Spalte gültig.
+* Es können gleichzeitig mehrere Filter auf unterschiedliche Spalten angewendet werden.
+* Filter werden sofort nach Auswahl angewandt (Aktualisierung der Tabelle).
+* Aktive Filter sollten deutlich erkennbar sein.
+
+[[selektionsverhalten-tabelle]]
+==== Selektionsverhalten
+
+Es gibt verschiedene Möglichkeiten, ein Element in einer Tabelle zu selektieren.
+Dabei ist die notwendige Fachlichkeit maßgeblich für das Verhalten verantwortlich.
+
+Es kann vorkommen, dass es in einer Anwendung sinnvoll ist, große Datenmengen auszuwählen und dass es in einer anderen Anwendung wiederum besser ist, gar keine Auswahl zuzulassen.
+Grundsätzlich gilt, dass ausgewählte Zeilen farbig hinterlegt werden müssen.
+Alle nachfolgenden Punkte sind Möglichkeiten, die eingesetzt werden *können*.
+Sollte ein entsprechendes Verhalten angewendet werden, so ist darauf zu achten, dass sich alle Tabellen in der Anwendung konsistent verhalten.
+
+* Die Kennzeichnung eines Objektes (Name, ID, etc.) kann als Link zur Navigation genutzt werden, um weitere Details anzuzeigen.
+* Der Doppelklick auf eine Zeile kann zum Beispiel die Details eines Elements öffnen.
+* Die erste Zeile kann per Default selektiert werden.
+
+[[bigdata-tabelle]]
+==== Große Datenmengen
+
+Tabellen können sehr viele Daten enthalten und gegebenenfalls sehr lang werden.
+Um den Umgang mit solchen Tabellen zu vereinfachen, sollten nicht alle Daten initial in der Tabelle angezeigt werden.
+Über einen Paginator, Endless Scrolling oder einen "Mehr anzeigen"-Button können Nutzende sich bei Bedarf mehr Daten anzeigen lassen.
+
+*_Paginator_*
+
+* Der Paginator wird nach 5, 10 oder 20 Zeilen am Ende der Tabelle angezeigt.
+* Der Paginator erlaubt es, die nächste Seite aber auch weiter entfernte Seiten auszuwählen.
+* Der Paginator zeigt immer den Stand der angezeigten Menge an (zum Beispiel: "1-10").
+* Der Paginator bietet die Möglichkeit ganz ans Ende oder ganz an den Anfang zu springen.
+
+:example-link-component: Paginator
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-data#paginator
+include::partial$example-link-card.adoc[]
+
+*_Endless Scrolling_*
+
+* Die Tabelle wird initial mit den ersten 10 oder 20 Zeilen angezeigt.
+* Standardmäßig erscheint eine Scrollbar und beim Scrollen werden nach und nach weitere Zeilen eingeblendet, während die oberen Zeilen aus dem View verschwinden.
+
+[NOTE]
+Es kann Lazy Loading verwendet werden.
+
+*_"Mehr anzeigen"-Button_*
+
+* Die Tabelle wird initial mit den ersten 10 oder 20 Zeilen angezeigt.
+* Nach einem Klick auf den "Mehr anzeigen"-Button werden die nächsten 9 oder 19 Items nachgeladen.
+Dadurch soll erkenntlich sein, dass es genau am Ende des letzten Eintrags weitergeht.

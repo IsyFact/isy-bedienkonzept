@@ -1,0 +1,120 @@
+[[designrichtlinien]]
+== Designrichtlinien
+
+*WiP*
+
+[[Screenareas]]
+=== Screenbereiche (Screenareas)
+
+*WiP* (beinhaltet die Grundstruktur einer Frontend-Seite anhand der isy-angular-widgets Komponente isy-hauptfenster)
+
+[[Header]]
+==== Header
+
+*WiP* (beinhaltet die Hauptnavigation des isy-hauptfensters)
+
+[[Contentarea]]
+==== Contentbereich (Contentarea)
+
+*WiP*
+
+*_Content only (Fullsize)_* *WiP*
+
+*_Content mit Sidebar_* *WiP* (beinhaltet die Linksnavigation und den Informationsbereich des isy-hauptfensters)
+
+[[Footer]]
+==== Footer
+
+*WiP*
+
+[[modale-dialoge]]
+=== Umgang mit modalen Dialogen
+
+*WiP*
+
+[[readonly-vs-disabled]]
+=== Readonly vs. Disabled
+
+<<readonlystate,Readonly>> und<<disabledstate,Disabled>> Zustände habe klar definierte Unterschiede, die gezielt genutzt werden können.
+
+[[readonlystate]]
+==== "Readonly" State
+
+Ein "Readonly"-Feld erlaubt es, die darin enthaltenen Daten zu sehen, jedoch nicht zu ändern.
+Dies ist besonders dann nützlich, wenn Informationen relevant sind, jedoch nicht modifiziert werden sollen.
+
+*_Merkmale:_*
+
+* *Sichtbarkeit:* Der Inhalt des Feldes kann von Nutzenden vollständig gesehen und von Screenreadern erfasst werden.
+* *Interaktivität:* Die Daten können nicht bearbeitet werden, jedoch bleiben Funktionen wie das Markieren und Kopieren erhalten.
+* *Design:* Optisch wird das <<image-eingabefeldreadonly,Eingabefeld>> leicht modifiziert mit leichteren Farben oder Formen dargestellt.
+
+*_Anwendungsfälle:_*
+
+* *Bestätigungsseiten:* Nach der Eingabe eines Formulars kann ein "Readonly"-Zustand verwendet werden, um die eingegebenen Daten zur Überprüfung anzuzeigen.
+* *Informationsanzeige:* Felder, die wichtige Daten enthalten, die jedoch von bestimmten Nutzergruppen nicht verändert werden sollen (zum Beispiel automatisch generierte ID-Nummern, erfasste Zeitstempel).
+
+*_Handlungsempfehlungen:_*
+
+"Readonly" sollte für Felder verwendet werden, deren Inhalte für Nutzende relevant sind, aber nicht verändert werden dürfen.
+Gestalte das Design so, dass die visuelle Unterscheidung klar, aber nicht störend ist - zum Beispiel durch subtile Farbveränderungen.
+Erlaube Nutzenden weiterhin Inhalte aus dem "Readonly"-Feld zu kopieren.
+
+[[disabledstate]]
+==== "Disabled" State
+
+Ein "Disabled"-Feld hingegen ist vollständig inaktiv.
+Nutzende können den Inhalt nicht oder schlecht sehen, nicht bearbeiten und auch keine Interaktion (wie Kopieren) durchführen.
+Diese Option wird verwendet, um Nutzenden zu signalisieren, dass bestimmte Funktionen oder Eingaben derzeit nicht zur Verfügung stehen.
+
+*_Merkmale:_*
+
+* *Sichtbarkeit:* Oft wird der Inhalt des Feldes ausgegraut oder gar nicht sichtbar gemacht.
+* *Interaktivität:* Keine Interaktion möglich - weder das Bearbeiten, noch das Kopieren von Inhalten.
+* *Design:* Meist visuell hervorgehoben durch ausgegraute Felder oder abweichende Farbschemata, um den Zustand klar zu kommunizieren.
+
+*_Anwendungsfälle:_*
+
+* *Zugriffssteuerung:* Felder, die nur von Nutzergruppen mit bestimmten Rechten bearbeitet werden dürfen, können für andere "disabled" sein.
+* *Bedingte Formularfelder:* Wenn bestimmte Eingaben erst aktiviert werden sollen, nachdem vorherige Felder korrekt ausgefüllt wurden, können diese initial "disabled" sein.
+
+*_Handlungsempfehlungen:_*
+
+"Disabled" sollte für Felder verwendet werden, die Nutzenden derzeit nicht zugänglich sein sollen, um Fehlinteraktionen zu verhindern.
+Vermeide "Disabled" für wichtige Informationen, die Nutzende sehen müssen - in solchen Fällen ist "Readonly" besser geeignet.
+Mache den "Disabled"-Status klar ersichtlich, indem eine deutliche visuelle Abgrenzung durch Ausgrauen oder andere farbliche Mittel verwendet wird.
+
+*_Vergleich und Fazit_*
+
+Der wesentliche Unterschied zwischen "Readonly" und "Disabled" liegt in der Sichtbarkeit und der Interaktivität der Felder.
+Während "Readonly"-Felder Nutzenden Informationen präsentieren, die sie nicht bearbeiten dürfen, aber weiterhin sehen und kopieren können, sind "Disabled"-Felder vollständig gesperrt und weder sichtbar noch interaktiv.
+Für die Anwendung in Formularen sollten folgende Grundsätze beachtet werden:
+
+* "Readonly" ist ideal, wenn die Informationen wichtig sind und für Nutzende sichtbar bleiben müssen, aber nicht verändert werden sollen.
+* "Disabled" eignet sich, wenn Nutzende keine Informationen im Feld sehen oder bearbeiten sollen - zum Beispiel bei unzugänglichen Funktionen oder Bedingungen, die erst später erfüllt werden müssen.
+
+[[panel-akkordeon-ueberschrift]]
+=== Panel vs. Akkordeon vs. Überschrift
+
+Allein aus der Beschreibung der einzelnen Elemente, <<panel>>, <<akkordeon>> und <<ueberschriften,Überschrift>>, lässt sich eine konkrete und präferierte Anwendung der einzelnen Elemente ableiten.
+Alle Elemente erfüllen ihren eigenen Zweck.
+Auffällig ist jedoch die sehr ähnliche Gestaltung des Akkordeons und des Panels.
+Dies liegt an der historischen Annäherung der Elemente.
+Für Nutzende ist eine solche differenzierte Betrachtung der Elemente in den meisten Fällen nicht möglich und auch nicht notwendig.
+Daher kann zugunsten der Usability auf eine optische und historisch gewachsene minimale Differenzierung der beiden Elemente verzichtet werden.
+
+Alle drei Elemente werden zur Strukturierung von Frontends und deren Inhalte benötigt.
+
+*_Elemente:_*
+
+* Überschriften sind aus Sicht der Barrierefreiheit mindestens in erster Ebene notwendig und sollten zur Strukturierung des Frontends genutzt werden.
+* Akkordeons sollten für lange und rein informative Inhalte genutzt werden (zum Beispiel FAQ-Bereich).
+* Panels sollten für lange und komplexe interaktive Inhalte genutzt werden (zum Beispiel <<formulare>>).
+
+*_Übergeordnete Verwendung:_*
+
+Eine Frontend-Page sollte mindestens eine Überschrift (`h1`) enthalten und nur einen Widget-Typ nutzen (Akkordeon oder Panel).
+Eine Vermengung beider Elemente soll vermieden werden, da unterschiedliches Verhalten optisch ähnlicher Elemente Verwirrung bei Nutzenden herbeiführt.
+
+Zur Vereinfachung der Usability wird empfohlen, die <<akkordeon>> und <<panel>> optisch anzunähern.
+Beide Elemente sollten sich über das gleiche Symbol aus- und einklappen lassen.
