@@ -86,7 +86,7 @@ Die Identifikationsfarbe kann u. a. an folgenden Stellen eingesetzt werden:
 
 Icons können als zusätzliche Elemente genutzt werden, um Funktionen und Inhalte auch visuell kenntlich zu machen.
 Dabei sollten Icons primär zusammen mit <<text>> verwendet werden und nur in begründeten Fällen alleinstehend eingesetzt werden.
-Wenn Icons alleinstehend als <<icon-button,Icon-Buttons>> oder Aktionselemente genutzt werden, sollte ihre Anzahl auf das notwendige Minimum beschränkt werden.
+Wenn Icons alleinstehend als xref:06-bedienelemente.adoc#icon-button[Icon-Buttons] oder Aktionselemente genutzt werden, sollte ihre Anzahl auf das notwendige Minimum beschränkt werden.
 Es wird empfohlen, alleinstehende Icons nur mit weit verbreiteter und allgemein bekannter Bedeutung zu verwenden.
 
 In der folgenden Tabelle sind häufig verwendete symbolische Bedeutungen und deren empfohlene Einsatzbereiche aufgeführt.
@@ -174,7 +174,7 @@ In westlichen Kulturen wird in der Regel von links nach rechts und von oben nach
 In Bezug auf Software und User-Interface-Design gilt diese Tatsache jedoch nur eingeschränkt, denn Nutzende lesen die Texte auf einem Bildschirm meistens nicht vollständig, sondern überfliegen sie nur kurz, um die für sie relevanten Informationen zu finden.
 
 Die beim Design eines Frontends eingesetzten Elemente unterscheiden sich auch dadurch, wie stark sie die Aufmerksamkeit der Nutzenden auf sich ziehen.
-So werden <<button,Schaltflächen>>, <<label,Labels>> und andere interaktive Elemente gewöhnlich zuerst wahrgenommen, während statischer Text eher selten gelesen wird.
+So werden xref:06-bedienelemente.adoc#button[Schaltflächen], <<label,Labels>> und andere interaktive Elemente gewöhnlich zuerst wahrgenommen, während statischer Text eher selten gelesen wird.
 Dieser Abschnitt definiert die typografischen Standards, sprachlichen Richtlinien und Längenbeschränkungen, die dazu beitragen, dass Texte klar, verständlich und ansprechend sind.
 
 Frontends des Bundes sollen über die IT-Landschaft hinweg ein einheitliches Look-and-Feel bieten.
@@ -219,7 +219,7 @@ Da dies die Lesbarkeit und damit die Barrierefreiheit beeinträchtigen kann, mus
 Zusätzlich zu einem klar leserlichen Schriftschnitt sind auch die Gestaltungsmerkmale von Text, <<farben,Farbe>> und Größe entsprechend zu berücksichtigen.
 Die fehlerhafte Anwendung von Texten kann somit direkt zu einer Reduzierung der Benutzerfreundlichkeit des entsprechenden Frontends führen.
 
-Die Standard-Schriftart für <<bedienelemente>> und Inhalte ist BundesSans (14 pt, regular).
+Die Standard-Schriftart für xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] und Inhalte ist BundesSans (14 pt, regular).
 Grundsätzlich gilt, ausreichende Schriftgrößen sind abhängig vom Betrachtungsabstand, von der Art des Textes und von der Sehschärfe der Lesenden.
 Individuelle Schriftgrößen können mit dem Schriftgrößenrechner auf https://www.leserlich.info/werkzeuge/schriftgroessenrechner/index.php[leserlich.info] ermittelt und entsprechend an den Nutzungskreis angepasst werden.
 
@@ -227,7 +227,7 @@ Individuelle Schriftgrößen können mit dem Schriftgrößenrechner auf https://
 
 Zu einem klaren, professionellen Gesamterscheinungsbild trägt auch eine korrekte Rechtschreibung sowie eine konsistente Groß- und Kleinschreibung bei.
 Während bei englischsprachigen Frontends zwischen verschiedenen Formen der Groß- und Kleinschreibung unterschieden wird, reicht es bei deutschsprachigen Frontends aus, die korrekte deutsche Rechtschreibung anzuwenden.
-Eine Ausnahme besteht darin, dass das erste Wort der Beschriftung eines <<bedienelemente,Bedienelements>> immer großgeschrieben wird, unabhängig von der jeweiligen Wortart.
+Eine Ausnahme besteht darin, dass das erste Wort der Beschriftung eines xref:06-bedienelemente.adoc#bedienelemente[Bedienelements] immer großgeschrieben wird, unabhängig von der jeweiligen Wortart.
 
 *_Vermeidung von technischem Jargon_*
 
@@ -259,10 +259,10 @@ Im Folgenden werden einige Beispiele für technische Begriffe und deren Überset
 * Die Verwendung verschiedener Schriftarten (über die im Bedienkonzept hinaus vorgegebenen Schriftarten) muss vermieden werden.
 * Die Schriftgröße muss immer ausreichend groß sein.
 Ein Unterschreiten von Mindestgrößen zugunsten des Platzgewinns muss vermieden werden.
-Stattdessen werden andere, platzsparende Mechanismen angewandt wie <<expander>>.
+Stattdessen werden andere, platzsparende Mechanismen angewandt wie xref:07-design-pattern.adoc#expander[Expander (Progressive Disclosure)].
 * Die Anzahl verschiedener Schriftgrößen muss auf ein notwendiges Minimum reduziert werden.
 * Als Standard-Schrift wird BundesSans 14 pt Regular empfohlen.
-* Es muss sichergestellt sein, dass der <<barrierefreier-einsatz-von-farben,Kontrast der Schriftfarbe zur Hintergrundfarbe>> ausreichend groß ist.
+* Es muss sichergestellt sein, dass der xref:02-barrierefreiheit.adoc#barrierefreier-einsatz-von-farben[Kontrast der Schriftfarbe zur Hintergrundfarbe] ausreichend groß ist.
 Hier ist der Kontrast größtmöglich zu wählen (zum Beispiel dunkelgraue Schrift auf weißem Hintergrund).
 Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss der Kontrast bei kleiner Schrift mindestens 4,5:1 entsprechen.
 * <<ueberschriften>> und großer/dicker Text müssen einen Mindestkontrast von 3:1 aufweisen.
@@ -273,7 +273,7 @@ Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss d
 * Inkonsistente Terminologie.
 * Inkonsistente und falsche Groß- und Kleinschreibung.
 * Die Verwendung von zu langen Texten und Textblöcken.
-* Nutzung von unterstrichenem Text in Textpassagen, außer für <<link,Hyperlinks>>.
+* Nutzung von unterstrichenem Text in Textpassagen, außer für xref:06-bedienelemente.adoc#link[Hyperlinks].
 * Die Verwendung von redundanten Textinformationen.
 * Nutzung von technischem Jargon statt der Sprache der Nutzenden.
 
@@ -282,9 +282,9 @@ Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss d
 
 Bilder und Grafiken ergänzen den <<text>> und vermitteln Informationen auf visuelle Weise.
 Sie unterliegen in erster Linie der Fachlichkeit beziehungsweise dem inhaltlichen Kontext und sollten nicht allzu oft als Schmuckgrafiken in Frontends integriert werden.
-Hier werden die Leitlinien für die Verwendung von Grafiken festgelegt, einschließlich Stilrichtlinien, Bildgrößen und im Ansatz deren <<barrierefreiheit>>.
+Hier werden die Leitlinien für die Verwendung von Grafiken festgelegt, einschließlich Stilrichtlinien, Bildgrößen und im Ansatz deren xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit].
 
-Jedes Bild benötigt eine Bildunterschrift und ein aussagekräftiges <<alt-tag,Alt-Attribut>>, um die Barrierefreiheit von Frontends zu unterstützen.
+Jedes Bild benötigt eine Bildunterschrift und ein aussagekräftiges xref:02-barrierefreiheit.adoc#alt-tag[Alt-Attribut], um die Barrierefreiheit von Frontends zu unterstützen.
 So können die Inhalte für alternative Ausgabegeräte oder beim fehlerhaften Laden zugänglich gemacht werden.
 Des Weiteren soll die Bildgröße an den Inhalt angepasst werden, um sicherzustellen, dass die Informationen den Nutzenden übermittelt werden und kein horizontales Scrolling erforderlich ist.
 
@@ -302,7 +302,7 @@ Solche Grafiken müssen entsprechend als Schmuckgrafik gekennzeichnet sein und b
 *_Dos_*
 
 * Bilder benötigen eine Bildunterschrift.
-* Grafiken müssen ein aussagekräftiges <<alt-tag,Alt-Attribut>> besitzen.
+* Grafiken müssen ein aussagekräftiges xref:02-barrierefreiheit.adoc#alt-tag[Alt-Attribut] besitzen.
 * Das Bildmaterial muss ausreichend hoch aufgelöst sein, sodass keine Fragmente erkennbar sind.
 * Schmuckgrafiken sind erlaubt, müssen jedoch entsprechend gekennzeichnet werden.
 
@@ -359,12 +359,12 @@ Es wird empfohlen, die festgelegte Farbpalette zu verwenden.
 [[label]]
 === Label
 
-Labels dienen dazu, <<eingabefeld,Eingabefelder>> und andere <<bedienelemente>> klar zu kennzeichnen, sodass Nutzende genau verstehen, welche Informationen erforderlich sind und welche Aktionen durchgeführt werden können.
+Labels dienen dazu, xref:06-bedienelemente.adoc#eingabefeld[Eingabefelder] und andere xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] klar zu kennzeichnen, sodass Nutzende genau verstehen, welche Informationen erforderlich sind und welche Aktionen durchgeführt werden können.
 Ein konsistentes und gut durchdachtes Design von Labels trägt wesentlich zur Verbesserung der Benutzererfahrung bei.
 
-Labels sind nicht nur visuelle Hinweise, sondern auch wesentliche Bestandteile der <<barrierefreiheit>>.
+Labels sind nicht nur visuelle Hinweise, sondern auch wesentliche Bestandteile der xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit].
 Sie ermöglichen es Screenreadern, die Beziehung zwischen einem Eingabefeld und seiner Beschreibung zu verstehen, was besonders für sehbehinderte Nutzende von großer Bedeutung ist.
-Ein korrekt implementiertes Label sorgt dafür, dass alle Nutzenden, unabhängig von ihren Fähigkeiten, <<formulare>> und andere interaktive Elemente problemlos nutzen können.
+Ein korrekt implementiertes Label sorgt dafür, dass alle Nutzenden, unabhängig von ihren Fähigkeiten, xref:05-benutzereingaben.adoc#benutzereingaben[Benutzereingaben] und andere interaktive Elemente problemlos nutzen können.
 
 *_Best Practices für die Verwendung von Labels_*
 
@@ -408,8 +408,8 @@ Einheitliche <<text,Schriftarten>>, Größen und Abstände tragen zur Benutzerfr
 *_Interaktive Elemente_*
 
 *Schaltflächen und Links:*
-Labels können auch für interaktive Elemente wie <<button,Schaltflächen>> und <<link,Links>> verwendet werden.
-Hier sollten <<aria-labels,ARIA-Labels>> (aria-label) oder ARIA-Beschreibungen (aria-labelledby) eingesetzt werden, um die Zugänglichkeit zu verbessern.
+Labels können auch für interaktive Elemente wie xref:06-bedienelemente.adoc#button[Schaltflächen] und xref:06-bedienelemente.adoc#link[Links] verwendet werden.
+Hier sollten xref:02-barrierefreiheit.adoc#aria-labels[ARIA-Labels] (aria-label) oder ARIA-Beschreibungen (aria-labelledby) eingesetzt werden, um die Zugänglichkeit zu verbessern.
 Beispiel:
 [source,xml]
 <button aria-label="Schließen">X</button>

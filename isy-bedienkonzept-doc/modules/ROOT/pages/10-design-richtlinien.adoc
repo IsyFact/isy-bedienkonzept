@@ -47,7 +47,7 @@ Dies ist besonders dann nützlich, wenn Informationen relevant sind, jedoch nich
 
 * *Sichtbarkeit:* Der Inhalt des Feldes kann von Nutzenden vollständig gesehen und von Screenreadern erfasst werden.
 * *Interaktivität:* Die Daten können nicht bearbeitet werden, jedoch bleiben Funktionen wie das Markieren und Kopieren erhalten.
-* *Design:* Optisch wird das <<image-eingabefeldreadonly,Eingabefeld>> leicht modifiziert mit leichteren Farben oder Formen dargestellt.
+* *Design:* Optisch wird das Eingabefeld leicht modifiziert mit leichteren Farben oder Formen dargestellt.
 
 *_Anwendungsfälle:_*
 
@@ -96,7 +96,7 @@ Für die Anwendung in Formularen sollten folgende Grundsätze beachtet werden:
 [[panel-akkordeon-ueberschrift]]
 === Panel vs. Akkordeon vs. Überschrift
 
-Allein aus der Beschreibung der einzelnen Elemente, <<panel>>, <<akkordeon>> und <<ueberschriften,Überschrift>>, lässt sich eine konkrete und präferierte Anwendung der einzelnen Elemente ableiten.
+Allein aus der Beschreibung der einzelnen Elemente, xref:07-design-pattern.adoc#panel[Panel], xref:07-design-pattern.adoc#akkordeon[Akkordeon] und xref:04-basiselemente.adoc#ueberschriften[Überschrift], lässt sich eine konkrete und präferierte Anwendung der einzelnen Elemente ableiten.
 Alle Elemente erfüllen ihren eigenen Zweck.
 Auffällig ist jedoch die sehr ähnliche Gestaltung des Akkordeons und des Panels.
 Dies liegt an der historischen Annäherung der Elemente.
@@ -109,12 +109,12 @@ Alle drei Elemente werden zur Strukturierung von Frontends und deren Inhalte ben
 
 * Überschriften sind aus Sicht der Barrierefreiheit mindestens in erster Ebene notwendig und sollten zur Strukturierung des Frontends genutzt werden.
 * Akkordeons sollten für lange und rein informative Inhalte genutzt werden (zum Beispiel FAQ-Bereich).
-* Panels sollten für lange und komplexe interaktive Inhalte genutzt werden (zum Beispiel <<formulare>>).
+* Panels sollten für lange und komplexe interaktive Inhalte genutzt werden (zum Beispiel xref:05-benutzereingaben.adoc#benutzereingaben[Benutzereingaben]).
 
 *_Übergeordnete Verwendung:_*
 
 Eine Frontend-Page sollte mindestens eine Überschrift (`h1`) enthalten und nur einen Widget-Typ nutzen (Akkordeon oder Panel).
 Eine Vermengung beider Elemente soll vermieden werden, da unterschiedliches Verhalten optisch ähnlicher Elemente Verwirrung bei Nutzenden herbeiführt.
 
-Zur Vereinfachung der Usability wird empfohlen, die <<akkordeon>> und <<panel>> optisch anzunähern.
+Zur Vereinfachung der Usability wird empfohlen, die xref:07-design-pattern.adoc#akkordeon[Akkordeon] und xref:07-design-pattern.adoc#panel[Panel] optisch anzunähern.
 Beide Elemente sollten sich über das gleiche Symbol aus- und einklappen lassen.

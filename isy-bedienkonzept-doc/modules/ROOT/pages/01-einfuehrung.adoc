@@ -9,9 +9,9 @@ So soll sichergestellt werden, dass Nutzende das Frontend ohne Schwierigkeiten v
 
 In den folgenden Kapiteln werden die benötigten Elemente von "klein nach groß" beschrieben.
 *Der allgemeine Rahmen und die übergreifenden Prinzipien* werden in den ersten Kapiteln beschrieben.
-Darauf folgen die *<<basiselemente>>* (wie zum Beispiel <<text>> und <<farben>>), die den Grundstein für die nachfolgenden Kapitel legen und von essenzieller Bedeutung sind.
-Danach kommen die *<<bedienelemente>>*, die einfachste Ausprägung eines Interaktionselements.
-*<<design-pattern>>* stellen eine Bündelung von Bedienelementen und Basiselementen dar und können letztendlich in beliebiger Kombination als vollständige *<<use-cases>>* beschrieben werden.
+Darauf folgen die *xref:04-basiselemente.adoc#basiselemente[Basiselemente]*, wie zum Beispiel xref:04-basiselemente.adoc#text[Text] und xref:04-basiselemente.adoc#farben[Farben], die den Grundstein für die nachfolgenden Kapitel legen und von essenzieller Bedeutung sind.
+Danach kommen die *xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente]*, die einfachste Ausprägung eines Interaktionselements.
+*xref:07-design-pattern.adoc#design-pattern[Design Patterns]* stellen eine Bündelung von Bedienelementen und Basiselementen dar und beschreiben wiederkehrende Lösungsansätze für vollständige Interaktions- und Darstellungsanforderungen.
 
 Es ist eine xref:referenzimplementierung.adoc[Referenzimplementierung ("Live-Demo")] zu den Richtlinien dieses Bedienkonzepts verfügbar.
 
@@ -50,7 +50,7 @@ Insbesondere bei komplexen Frontends ist es ratsam, so früh wie möglich die Fa
 *_Einhaltung von Standards und Best Practices_*
 
 Das Bedienkonzept legt Standards und Best Practices fest, die von Designenden und Entwickelnden eingehalten werden müssen.
-Diese Standards können sich auf verschiedene Aspekte der Gestaltung und Interaktion beziehen, wie Typografie, <<farben,Farbgebung>>, <<bedienelemente>> und <<barrierefreiheit>>.
+Diese Standards können sich auf verschiedene Aspekte der Gestaltung und Interaktion beziehen, wie Typografie, xref:04-basiselemente.adoc#farben[Farbgebung], xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] und xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit].
 Durch die Einhaltung dieser Standards gewährleisten Designende und Entwickelnde nicht nur eine konsistente Benutzeroberfläche, sondern auch die Kompatibilität dieser Oberfläche mit verschiedenen Geräten und Plattformen.
 
 Genau wie jedes digitale Frontend wird auch dieses Bedienkonzept ständig weiterentwickelt.
@@ -170,7 +170,7 @@ Informationen sollten kontextbezogen und schrittweise offenbart werden, um Nutze
 Um sicherzustellen, dass die Oberfläche für eine breite Palette von Nutzenden zugänglich ist, ist es wichtig, Tests mit verschiedenen Personengruppen durchzuführen.
 Dabei sollten Nutzende mit unterschiedlichen Fähigkeiten, Geräten und technischen Kenntnissen berücksichtigt werden.
 
-Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Abschnitten zu den <<basiselemente,Basiselementen>>, <<bedienelemente,Bedienelementen>>, <<design-pattern>>, <<use-cases>> oder <<eingabehilfen-und-fehlermeldungen>> zu finden (siehe jeweils bei den Unterkapiteln "Dos and Don'ts").
+Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Abschnitten zu den xref:04-basiselemente.adoc#basiselemente[Basiselementen], xref:06-bedienelemente.adoc#bedienelemente[Bedienelementen], xref:07-design-pattern.adoc#design-pattern[Design Patterns] oder xref:09-eingabehilfen-und-fehlermeldungen.adoc#eingabehilfen-und-fehlermeldungen[Eingabehilfen und Fehlermeldungen] zu finden (siehe jeweils bei den Unterkapiteln "Dos and Don'ts").
 
 [[allgemeine-prinzipien]]
 === Allgemeine Prinzipien
@@ -190,7 +190,7 @@ Durch die Priorisierung von Klarheit im Design können Designende sicherstellen,
 *_Konsistenz_*
 
 Das Prinzip der "Konsistenz" bezieht sich auf die Notwendigkeit, ein einheitliches Erscheinungsbild und Verhalten über alle Seiten eines Frontends hinweg zu gewährleisten.
-Konsistenz bedeutet, dass Designelemente wie <<farben>>, <<text,Schriftarten>>, <<icons,Symbole>> und Layouts einheitlich angewendet werden, um eine nahtlose Benutzererfahrung zu schaffen.
+Konsistenz bedeutet, dass Designelemente wie xref:04-basiselemente.adoc#farben[Farben], xref:04-basiselemente.adoc#text[Schriftarten], xref:04-basiselemente.adoc#icons[Symbole] und Layouts einheitlich angewendet werden, um eine nahtlose Benutzererfahrung zu schaffen.
 Durch die Aufrechterhaltung einer konsistenten Gestaltung können Nutzende das Frontend leichter verstehen und navigieren, da sie sich auf bereits bekannte Muster und Interaktionen verlassen können.
 Darüber hinaus trägt die Konsistenz dazu bei, das Markenimage zu stärken und das Vertrauen der Nutzenden in das Frontend zu fördern.
 
@@ -198,10 +198,10 @@ Darüber hinaus trägt die Konsistenz dazu bei, das Markenimage zu stärken und 
 
 Das Designprinzip des "Feedbacks" bezieht sich auf die kontinuierliche Kommunikation zwischen dem Frontend und den Nutzenden.
 Feedback ist entscheidend, um den Nutzenden Rückmeldungen darüber zu geben, ob ihre Aktionen erfolgreich waren oder nicht.
-Dies kann in Form von visuellem Feedback, zum Beispiel einer Farbänderung eines <<button,Buttons>> nach einem Klick oder durch informative Nachrichten wie Bestätigungsmeldungen nach dem Absenden eines <<formulare,Formulars>>, erfolgen.
+Dies kann in Form von visuellem Feedback, zum Beispiel einer Farbänderung eines xref:06-bedienelemente.adoc#button[Buttons] nach einem Klick oder durch informative Nachrichten wie Bestätigungsmeldungen nach dem Absenden eines xref:05-benutzereingaben.adoc#benutzereingaben[Formulars], erfolgen.
 Durch effektives Feedback fühlen sich Nutzende unterstützt und informiert, was zu einer verbesserten Benutzererfahrung und einer höheren Zufriedenheit führt.
-Dies gilt insbesondere auch für Aspekte der <<barrierefreiheit>>.
-Technische Standardmöglichkeiten sollen genutzt und gegebenenfalls mit entsprechenden Hilfsmitteln (wie <<aria-labels,ARIA-Elementen>>) angereichert werden.
+Dies gilt insbesondere auch für Aspekte der xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit].
+Technische Standardmöglichkeiten sollen genutzt und gegebenenfalls mit entsprechenden Hilfsmitteln (wie xref:02-barrierefreiheit.adoc#aria-labels[ARIA-Elementen]) angereichert werden.
 
 *_Effizienz_*
 
@@ -214,6 +214,6 @@ Ein effizientes Design stellt sicher, dass Nutzende ihre Ziele schnell erreichen
 
 Das Designprinzip der "Zugänglichkeit" soll sicherstellen, dass ein Frontend für alle Nutzenden, unabhängig von ihren individuellen Fähigkeiten oder Einschränkungen, leicht zugänglich ist.
 Dies beinhaltet die Gestaltung und Entwicklung des Frontends unter Berücksichtigung verschiedener Bedürfnisse, zum Beispiel Sehbehinderungen, Hörbehinderungen oder motorische Einschränkungen.
-Zugängliches Design beinhaltet die Verwendung von verständlichen <<text,Texten>>, von <<barrierefreier-einsatz-von-farben,ausreichendem Kontrast zwischen Text und Hintergrund>>, von Tastaturzugänglichkeit und von <<alt-tag,alternativen Texten für Bilder>>, sowie die Vermeidung von Technologien (zum Beispiel Gestensteuerung), die für einige Personengruppen hinderlich sein könnten.
+Zugängliches Design beinhaltet die Verwendung von verständlichen xref:04-basiselemente.adoc#text[Texten], von xref:02-barrierefreiheit.adoc#barrierefreier-einsatz-von-farben[ausreichendem Kontrast zwischen Text und Hintergrund], von Tastaturzugänglichkeit und von xref:02-barrierefreiheit.adoc#alt-tag[alternativen Texten für Bilder], sowie die Vermeidung von Technologien (zum Beispiel Gestensteuerung), die für einige Personengruppen hinderlich sein könnten.
 Ein zugängliches Design gewährleistet, dass alle Nutzenden die Informationen und Funktionen des Frontends nutzen können, was zu einer inklusiven und positiven Benutzererfahrung führt.
-Dieses Prinzip wird im Kapitel <<barrierefreiheit>> und unter den einzelnen <<bedienelemente,Bedienelementen>> detaillierter beschrieben.
+Dieses Prinzip wird im Kapitel xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] und unter den einzelnen xref:06-bedienelemente.adoc#bedienelemente[Bedienelementen] detaillierter beschrieben.

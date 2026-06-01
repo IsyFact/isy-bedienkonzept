@@ -3,12 +3,12 @@
 
 Bedienelemente sind die Bausteine der Benutzeroberfläche, die es den Nutzenden ermöglichen, mit dem Frontend zu interagieren.
 Dieser Abschnitt definiert die verschiedenen Bedienelemente und legt fest, wie sie gestaltet und angeordnet werden sollen, um eine intuitive Benutzererfahrung zu gewährleisten.
-Sie folgen den im Kapitel <<benutzereingaben>> definierten Grundprinzipien.
+Sie folgen den im Kapitel xref:05-benutzereingaben.adoc#benutzereingaben[Benutzereingaben] definierten Grundprinzipien.
 
 [[button]]
 === Button
 
-Ein Button dient dazu, Aktionen auszulösen, wie das Einreichen von <<formulare,Formularen>>, das Navigieren zu anderen Seiten oder das Ausführen spezifischer Funktionen innerhalb der Anwendung.
+Ein Button dient dazu, Aktionen auszulösen, wie das Einreichen von xref:05-benutzereingaben.adoc#benutzereingaben[Formularen], das Navigieren zu anderen Seiten oder das Ausführen spezifischer Funktionen innerhalb der Anwendung.
 Bei der Gestaltung von Buttons ist es wichtig, auf klare Beschriftungen, ansprechende visuelle Gestaltung und intuitive Platzierung zu achten, um die Benutzerfreundlichkeit zu maximieren.
 Nachfolgend werden die verschiedenen Arten von Buttons und ihre Anwendung in der IsyFact beschrieben.
 
@@ -16,7 +16,7 @@ Nachfolgend werden die verschiedenen Arten von Buttons und ihre Anwendung in der
 ==== Kolorierte Buttons
 
 Kolorierte Buttons oder auch farbig gefüllte Buttons sind die am häufigsten verwendete Button-Variante.
-Grundsätzlich handelt es sich um minimal abgerundete Rechtecke, die ein <<label,Textlabel>>, ein <<icons,Icon>> oder eine Kombination aus beidem enthalten und farblich gefüllt sind.
+Grundsätzlich handelt es sich um minimal abgerundete Rechtecke, die ein xref:04-basiselemente.adoc#label[Textlabel], ein xref:04-basiselemente.adoc#icons[Icon] oder eine Kombination aus beidem enthalten und farblich gefüllt sind.
 Aufgrund ihrer deutlichen visuellen Hervorhebung werden sie häufig als CTA-Buttons (Call-to-Action) bezeichnet.
 
 Je nach Zustand des Buttons unterscheiden sich die visuelle Darstellung und die Interaktionsrückmeldungen.
@@ -49,7 +49,7 @@ include::partial$example-link-card.adoc[]
 Bei der Platzierung der Buttons innerhalb eines Frontends wird zwischen zwei Use Cases unterschieden.
 Bei kleinen Dialogfenstern, in denen lediglich zwischen Akzeptieren und Abbrechen einer Aktion unterschieden wird, wird der Primär-Button rechts unten platziert.
 
-Auf <<formulare,Formularseiten>> oder auch Full-Page-Designs ist die Häufigkeit der Verwendung der Buttons ausschlaggebend.
+Auf xref:05-benutzereingaben.adoc#benutzereingaben[Formularseiten] oder auch Full-Page-Designs ist die Häufigkeit der Verwendung der Buttons ausschlaggebend.
 Buttons für primäre, einleitende und abschließende Aktionen können prominent in der Mitte des Frontends angeordnet werden.
 Buttons für navigierende und häufiger verwendete Aktionen werden bevorzugt rechts angeordnet, da die Aufmerksamkeit der Nutzenden während des Lesens oder Hinzufügens von Informationen dorthin gerichtet ist.
 Es ist darauf zu achten, dass die Anordnung der Buttons mit identischem Zweck über das gesamte Frontend hinweg konsistent bleibt.
@@ -65,14 +65,14 @@ Wenn nur das Textlabel ohne farbliche und räumliche Abgrenzung zum Hintergrund 
 * Beim Aktivieren eines Buttons wird immer eine Funktion ausgelöst oder eine (Fehler-)Meldung sichtbar.
 * Die wichtigste oder am häufigsten genutzte Aktion ist als Primäraktion visuell hervorgehoben darzustellen.
   Falls unklar ist, welche Aktion wichtiger ist, gilt die fachlich vorgesehene Standardaktion als Primäraktion.
-* Das <<label>> sollte kurz und selbsterklärend sein.
+* Das xref:04-basiselemente.adoc#label[Label] sollte kurz und selbsterklärend sein.
 * Das Label sollte die auszuführende Aktion beschreiben (zum Beispiel Öffnen, Löschen, Speichern, Weiter).
 * Wenn ein Button einen Dialog aufruft, sollte der resultierende Dialog die Beschriftung des Buttons als Titel wiederholen.
 * Die Schaltfläche für Buttons beträgt mindestens 44px x 44px.
 * Die Breite eines Buttons soll sich am enthaltenen Label orientieren.
 * Nebeneinanderstehende Buttons können unterschiedlich breit sein, wenn die jeweiligen Labels unterschiedlich groß sind.
 * Ein Button soll nach Möglichkeit so platziert werden, dass mögliche Beziehungen zu anderen Elementen deutlich werden.
-* Wenn nach einem Klick auf einen Button die Ergebnisaktion nicht sofort ersichtlich ist, soll dies durch ein System-Feedback (zum Beispiel durch eine <<fortschrittsanzeige>>) veranschaulicht werden.
+* Wenn nach einem Klick auf einen Button die Ergebnisaktion nicht sofort ersichtlich ist, soll dies durch ein System-Feedback (zum Beispiel durch eine xref:09-eingabehilfen-und-fehlermeldungen.adoc#fortschrittsanzeige[Fortschrittsanzeige]) veranschaulicht werden.
 
 *_Don'ts_*
 
@@ -112,13 +112,13 @@ Es sollte eine der beiden Varianten konsistent im gesamten Frontend benutzt werd
 [[icon-button]]
 ==== Icon-Button
 
-Icon-Buttons sind Buttons, die kein sichtbares Label haben, sondern nur aus einem aussagekräftigen <<icons,Icon>> bestehen.
-Sie sind rund und haben einen farbigen Rand, um sich vom Hintergrund oder anderen <<basiselemente,Basis>>- und <<bedienelemente,Bedienelementen>> abzugrenzen.
+Icon-Buttons sind Buttons, die kein sichtbares Label haben, sondern nur aus einem aussagekräftigen xref:04-basiselemente.adoc#icons[Icon] bestehen.
+Sie sind rund und haben einen farbigen Rand, um sich vom Hintergrund oder anderen xref:04-basiselemente.adoc#basiselemente[Basis]- und <<bedienelemente,Bedienelementen>> abzugrenzen.
 Dabei ist es essenziell, dass das Icon die dahinterstehende Funktionalität ausdrückt.
-Bei der Entwicklung muss darauf geachtet werden, dass Icon-Buttons durch ein <<aria-labels,ARIA-Label>> für Screenreader zugänglich sind.
+Bei der Entwicklung muss darauf geachtet werden, dass Icon-Buttons durch ein xref:02-barrierefreiheit.adoc#aria-labels[ARIA-Label] für Screenreader zugänglich sind.
 
 Generell sollten Icon-Buttons mit Bedacht eingesetzt werden und können somit nicht jeden beliebigen beschrifteten Button ersetzen.
-Am häufigsten wird diese Button-Art in Kombination mit einer Aktion eines Bedienelements oder <<design-pattern,Design Patterns>> genutzt, wie zum Beispiel in der Aktionsspalte einer Tabelle oder zum Hinzufügen oder Löschen von Elementen.
+Am häufigsten wird diese Button-Art in Kombination mit einer Aktion eines Bedienelements oder xref:07-design-pattern.adoc#design-pattern[Design Patterns] genutzt, wie zum Beispiel in der Aktionsspalte einer Tabelle oder zum Hinzufügen oder Löschen von Elementen.
 
 :example-link-component: Icon Buttons
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-button#icon-buttons
@@ -147,7 +147,7 @@ Diese werden beispielsweise innerhalb von Tabellenheadern zum Sortieren und Filt
 [[link]]
 === Hyperlink
 
-Hyperlinks sind verlinkte <<text,Texte>> (oder auch <<grafiken>>), die im Wesentlichen als Navigationsmechanismus dienen, zum Beispiel um neue Fenster mit anderen Inhalten zu öffnen.
+Hyperlinks sind verlinkte xref:04-basiselemente.adoc#text[Texte] (oder auch xref:04-basiselemente.adoc#grafiken[Grafiken]), die im Wesentlichen als Navigationsmechanismus dienen, zum Beispiel um neue Fenster mit anderen Inhalten zu öffnen.
 Wird die Maus über einen Hyperlink bewegt, ändert sich der Cursor vom Pfeil zum Handsymbol.
 Hyperlinks folgen per Default einem einheitlichen Styling und sind in der Regel unterstrichen.
 Da Nutzende daran gewöhnt sind, weiterführende Informationen/Links in einem Fließtext oder auf einer Seite anhand des unterstrichenen Textes zu erkennen, ist es nicht ratsam, daran etwas zu ändern.
@@ -165,11 +165,11 @@ Generische Phrasen wie „Hier klicken“ sind nicht hilfreich und sollten vermi
 
 Eingabefelder sind grundlegende Interaktionselemente in einer Benutzeroberfläche, die es den Nutzenden ermöglichen, Daten einzugeben, zu bearbeiten oder auszuwählen.
 Sie spielen eine zentrale Rolle bei der Interaktion zwischen Nutzenden und System.
-Sie kommen in verschiedensten Formen und Kontexten vor, sei es in Form von Textfeldern, <<dropdown,Dropdown-Menüs>>, <<liste,Auswahllisten>> oder Datumsauswahlkalendern.
+Sie kommen in verschiedensten Formen und Kontexten vor, sei es in Form von Textfeldern, xref:07-design-pattern.adoc#dropdown[Dropdown-Menüs], <<liste,Auswahllisten>> oder Datumsauswahlkalendern.
 Die Gestaltung und Platzierung von Eingabefeldern hat direkten Einfluss auf die Benutzererfahrung und die Effizienz der Dateneingabe.
 
 Eingabefelder sind dynamisch.
-Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (<<placeholder,Placeholder>>) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
+Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (xref:09-eingabehilfen-und-fehlermeldungen.adoc#placeholder[Placeholder]) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
 
 
 :example-link-component: Eingabefeld
@@ -178,7 +178,7 @@ include::partial$example-link-card.adoc[]
 
 
 Aktive Eingabefelder werden durch eine um 1 px stärkere Umrandung visuell hervorgehoben.
-Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung <<image-eingabefeldaktiv>>) oder eine Mask enthalten (siehe Abbildung <<image-eingabefeldmask>>).
+Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung zum aktiven Eingabefeld) oder eine Mask enthalten (siehe Abbildung zur Eingabefeld-Mask).
 
 Wenn eine Eingabe in einem Eingabefeld getätigt wurde und das Feld wieder verlassen wird, wechselt das Eingabefeld wieder in den Normalzustand mit dem Unterschied, dass der Platzhalter verschwunden ist und die Eingabe angezeigt wird.
 
@@ -200,7 +200,7 @@ Die Information ist zum aktuellen Zeitpunkt relevant, kann aber nicht verändert
 Ein Eingabefeld als Pflichtfeld ist im Grunde ein normales Eingabefeld mit der Besonderheit, dass es befüllt werden muss.
 Die "Pflicht"-Kennzeichnung erfolgt dabei durch das Label und wird durch einen Asterisk (*) dargestellt.
 Der Asterisk wird immer ans Ende eines Labels gestellt.
-Pflichtfelder haben immer eine Validierung und eine entsprechende Fehlermeldung, die bei einer fehlerhaften Eingabe unterhalb des Eingabefeldes sichtbar wird (siehe zum Beispiel Abbildung <<image-eingabefelderror>>).
+Pflichtfelder haben immer eine Validierung und eine entsprechende Fehlermeldung, die bei einer fehlerhaften Eingabe unterhalb des Eingabefeldes sichtbar wird (siehe zum Beispiel Abbildung zur Eingabefeld-Fehlermeldung).
 
 [NOTE]
 Ein Pflichtfeld kann zusätzlich durch die Deklaration des Platzhalters mit "Pflichtfeld" oder "required" gekennzeichnet werden.
@@ -233,7 +233,7 @@ Der Abstand eines Eingabefelds zum darunter liegenden Label eines weiteren Einga
 
 *_Dos:_*
 
-* Die unmittelbare Nähe der <<label,Labels>> zu den dazugehörigen <<bedienelemente,Bedienelementen>> verbessert die visuelle Verbindung und ermöglicht es den Nutzenden, <<formulare>> schneller und effizienter auszufüllen.
+* Die unmittelbare Nähe der xref:04-basiselemente.adoc#label[Labels] zu den dazugehörigen <<bedienelemente,Bedienelementen>> verbessert die visuelle Verbindung und ermöglicht es den Nutzenden, xref:05-benutzereingaben.adoc#benutzereingaben[Benutzereingaben] schneller und effizienter auszufüllen.
 * Gleichmäßige Feldlängen unterstützen den Lesefluss der Nutzenden.
 * Die Feldlängen sollten erwartungskonform gewählt werden.
 Soll zum Beispiel eine Postleitzahl innerhalb Deutschlands eingegeben werden, so ist es sinnvoll, die Feldlänge auf fünf Stellen zu begrenzen.
@@ -270,8 +270,8 @@ Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsw
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputgroup
 include::partial$example-link-card.adoc[]
 
-Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem <<image-eingabefeldplatzhalter,normalen Eingabefeld>>.
-Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung <<image-eingabefeldinputoption>>) oder eine Datumseingabe.
+Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem normalen Eingabefeld.
+Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung zur Input-Option) oder eine Datumseingabe.
 Die Schaltfläche der Input-Option ist mindestens 44px x 44px.
 
 *_Datum- und Uhrzeit-Eingaben_*
@@ -398,7 +398,7 @@ Die einfachste Form einer Liste ist die rein textuelle Liste.
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#dropdown
 include::partial$example-link-card.adoc[]
 
-Eine Liste kann theoretisch beliebig viele Einträge enthalten, was aber die <<usability-und-benutzerfreundlichkeit,Usability>> verschlechtert.
+Eine Liste kann theoretisch beliebig viele Einträge enthalten, was aber die xref:01-einfuehrung.adoc#usability-und-benutzerfreundlichkeit[Usability] verschlechtert.
 Im optimalen Fall haben Listen eine überschaubare Anzahl an logisch relevanten Einträgen.
 Die Einträge sind eindeutig und prägnant.
 Bei langen Einträgen können auch sinnvolle Abkürzungen genutzt werden.
@@ -494,7 +494,7 @@ image::radiobuttons.wireframe.drawio.svg[align="center"]
 *_Dos_*
 
 * Die Verwendung von Radiobuttons empfiehlt sich für eine kleinere Anzahl an Optionen.
-Ist die Menge der zur Verfügung stehenden Optionen sehr groß oder hat der Platzbedarf eine große Bedeutung, so kann der Einsatz eines <<dropdown,Dropdowns>> in Betracht gezogen werden.
+Ist die Menge der zur Verfügung stehenden Optionen sehr groß oder hat der Platzbedarf eine große Bedeutung, so kann der Einsatz eines xref:07-design-pattern.adoc#dropdown[Dropdowns] in Betracht gezogen werden.
 * Eine Gruppe von Radiobuttons sollte immer eine Beschriftung aufweisen.
 * Für optimale Lesbarkeit sollten Radiobuttons untereinander angeordnet sein.
 * Falls alle oder keine der angebotenen Optionen zutreffen können, sollte eine zusätzliche allgemeine Meta-Option, zum Beispiel "keine Option" oder "alle", hinzugefügt werden.
@@ -510,7 +510,7 @@ Für diese Zwecke sollten <<button,Buttons>> verwendet werden.
 Ein Input Switch, auch Eingabeschalter genannt, kommt zum Einsatz, wenn eine bestimmte Funktion oder Eigenschaft ein- und ausgeschaltet werden muss.
 Per Default ist immer ein Wert gesetzt: inaktiv (ausgeschaltet) oder aktiv (eingeschaltet).
 
-Um den Nutzenden zu vermitteln welche Funktion oder Eigenschaft ein- beziehungsweise ausgeschaltet werden kann, sollte ein <<label>> links oder rechts neben dem Input Switch platziert werden.
+Um den Nutzenden zu vermitteln welche Funktion oder Eigenschaft ein- beziehungsweise ausgeschaltet werden kann, sollte ein xref:04-basiselemente.adoc#label[Label] links oder rechts neben dem Input Switch platziert werden.
 Das verwendete Label sollte aussagekräftig und eindeutig sein.
 
 :example-link-component: Input Switch
@@ -538,11 +538,11 @@ Durch die Verwendung von Tabs können Nutzende schnell und einfach zwischen vers
 Dies fördert nicht nur die Benutzerfreundlichkeit, sondern auch die Effizienz bei der Informationssuche.
 Tabviews ermöglichen Entwickelnden, Inhalte logisch zu organisieren und sorgen für eine klare Struktur, die die Benutzerbindung und Zufriedenheit steigert.
 
-Ein Tabview hat initial einen aktivierten, aber nicht markierten/fokussierten State (siehe <<image-tabview>>).
+Ein Tabview hat initial einen aktivierten, aber nicht markierten/fokussierten State (siehe Abbildung zum Tabview).
 Sobald ein Tab aktiv ausgewählt wird, wird auch die Markierung im Reiter visuell deutlich.
 Der aktive Tab erhält eine visuelle Hervorhebung, beispielsweise in Form einer Markierungslinie.
 
-Tabviews können ihre Reiter auch mit visuellen <<icons>> unterstützen.
+Tabviews können ihre Reiter auch mit visuellen xref:04-basiselemente.adoc#icons[Icons] unterstützen.
 Diese verhalten sich analog zum Tab-Label.
 
 Es ist ratsam ein Tabview zu nutzen, wenn der Inhalt nicht ohne starkes Scrolling innerhalb des Screens dargestellt werden kann.
@@ -560,7 +560,7 @@ include::partial$example-link-card.adoc[]
 Die Schriftgröße eines Labels im Tabview sollte 14pt nicht unterschreiten.
 Ist die Standardschriftgröße gewählt, so erhöht sich diese bei aktiven Elementen um 2pt (hier exemplarisch auf 16pt).
 Die Höhe eines Tabreiters ist mindestens 44px.
-Die Breite ist abhängig vom <<label>>.
+Die Breite ist abhängig vom xref:04-basiselemente.adoc#label[Label].
 Icons sind mindestens 17px x 17px groß.
 
 [[image-tabview-measured]]
@@ -578,7 +578,7 @@ Es kann auch mit sinnvollen und verständlichen Abkürzungen gearbeitet werden.
 *_Don'ts:_*
 
 * Seiten sollten nicht mit nur einem Tabreiter gestaltet werden.
-Bei weniger als drei Tabreitern, ist eventuell ein dynamisches <<panel>> das passendere Element.
+Bei weniger als drei Tabreitern, ist eventuell ein dynamisches xref:07-design-pattern.adoc#panel[Panel] das passendere Element.
 * Muss der Inhalt verschiedener Tabreiter verglichen/abgestimmt werden, sollte anstelle eines Tabreiters lieber ein dynamisches Panel verwendet werden.
 * Tabreiter stellen nicht verschiedene Sichten zu gleichen Daten dar.
 * Tabreiter sind keine Prozessschritte.
@@ -629,7 +629,7 @@ Abkürzungen sind zulässig.
 * Die Spalten sollten ihrer Wichtigkeit nach angeordnet werden.
 * Tabellen sollten nach Möglichkeit maximal 20 Zeilen anzeigen und dann eine Paginierung nutzen.
 Sollte es fachlich notwendig sein, kann auch endless-scrolling eingesetzt werden.
-* <<icons,Symbole>> und <<grafiken,Bilder>> können zur schnelleren visuellen Unterscheidung von Listeneinträgen genutzt werden.
+* xref:04-basiselemente.adoc#icons[Symbole] und xref:04-basiselemente.adoc#grafiken[Bilder] können zur schnelleren visuellen Unterscheidung von Listeneinträgen genutzt werden.
 
 *_Don'ts:_*
 
@@ -642,7 +642,7 @@ Sollte es fachlich notwendig sein, kann auch endless-scrolling eingesetzt werden
 ==== Sortierung
 
 Tabellen sollten aufgrund ihrer großen Datenmengen pro Spalte sortierbar sein und eine auf- und absteigende Sortierung anbieten (zwei Pfeile im Tabellenheader).
-Der Klickbereich des Icons ist dabei 44px x 44px groß (siehe <<image-tabelle>>).
+Der Klickbereich des Icons ist dabei 44px x 44px groß (siehe Abbildung zur Tabelle).
 
 * Der erste Klick auf die Sortiericons sortiert die Tabelle nach den Werten in der gewählten Spalte aufsteigend.
 * Ein zweiter Klick auf die Sortiericons sortiert die Tabelle entsprechend absteigend.

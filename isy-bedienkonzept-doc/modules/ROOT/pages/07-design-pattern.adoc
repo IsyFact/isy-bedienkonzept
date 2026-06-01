@@ -6,7 +6,7 @@ Sie erstrecken sich über mehrere Komponenten und Bereiche des Frontends und ste
 Sie bilden die verbindliche Grundlage für eine einheitliche Gestaltung und Interaktion innerhalb der Anwendung.
 
 [NOTE]
-Für alle Design Patterns gelten die allgemeinen Anforderungen an Barrierefreiheit, Fokusführung und responsives Layoutverhalten gemäß den Kapiteln <<barrierefreiheit>> und <<fenstertypen-layout>>.
+Für alle Design Patterns gelten die allgemeinen Anforderungen an Barrierefreiheit, Fokusführung und responsives Layoutverhalten gemäß den Kapiteln xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] und xref:03-fenstertypen-und-layout.adoc#fenstertypen-layout[Fenstertypen und Layout].
 
 [[primaere-fenstertypen]]
 === Primäre Fenstertypen
@@ -31,7 +31,7 @@ Er ist klar, verständlich und auf einen reibungslosen Einstieg ausgerichtet.
 *_Layout und Struktur_*
 
 * *Header:* Der Header ist ohne Hauptnavigation darzustellen.
-Aufbau, Landmark-Struktur und Fokusverhalten haben den allgemeinen Vorgaben des <<header-bereich>> zu entsprechen.
+Aufbau, Landmark-Struktur und Fokusverhalten haben den allgemeinen Vorgaben des xref:03-fenstertypen-und-layout.adoc#header-bereich[Header Bereich] zu entsprechen.
 Die visuelle Höhe ist konsistent zu halten.
 
 [[r-login-zentrierte-card]]
@@ -55,7 +55,7 @@ Zusätzlich kann eine kompakte globale Rückmeldung vorgesehen werden.
 [[r-login-passwortmanager]]
 * *Passwortmanager:* Funktionen wie „Passwort anzeigen“ oder Autofill sind nutzerfreundlich und konsistent bereitzustellen.
 
-Details sind in Kapitel <<bedienelemente>> beschrieben.
+Details sind in Kapitel xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] beschrieben.
 
 [[portalstartseite]]
 ==== Portalstartseite
@@ -78,7 +78,7 @@ image::portalstartseite.wireframe.drawio.svg[align="center"]
 
 {empty} +
 
-* *Headerbereich:* Der Aufbau entspricht vollständig dem definierten <<header-bereich>>.
+* *Headerbereich:* Der Aufbau entspricht vollständig dem definierten xref:03-fenstertypen-und-layout.adoc#header-bereich[Header Bereich].
 
 * *Inhaltsbereich:* Der Inhaltsbereich ist in drei Teilbereiche zu strukturieren:
 ** Quicklinks (*A*)
@@ -88,7 +88,7 @@ image::portalstartseite.wireframe.drawio.svg[align="center"]
 *_Richtlinien zur Anwendung (alle Teilbereiche)_*
 
 [[r-dashboard-grid]]
-* *Struktur:* Die Teilbereiche sind klar voneinander abgegrenzt und folgen einem responsiven Raster (vgl. <<layout-resizing>>).
+* *Struktur:* Die Teilbereiche sind klar voneinander abgegrenzt und folgen einem responsiven Raster (vgl. xref:03-fenstertypen-und-layout.adoc#layout-resizing[Layout und Resizing]).
 
 * *Relevanz:* Inhalte werden abhängig von Rolle und Nutzungskontext angezeigt.
 Nicht relevante Inhalte werden nicht dargestellt.
@@ -126,7 +126,7 @@ Sie werden als Kacheln oder Panels mit Titel, optionalem Icon und kurzer Beschre
 
 * *Sichtbarkeit:* Die Sichtbarkeit erfolgt rollen- bzw. berechtigungsbasiert.
 
-* *Kennzeichnung:* <<applikationsfarben>> und ggf. Applikationsicons sind konsistent einzusetzen.
+* *Kennzeichnung:* xref:04-basiselemente.adoc#applikationsfarben[Applikationsfarben] und ggf. Applikationsicons sind konsistent einzusetzen.
 
 *_Informationen \(C)_*
 
@@ -155,7 +155,7 @@ Dekorative Icons sind so umzusetzen, dass sie von assistiven Technologien ignori
 *** einem Widget-Titel,
 *** der Bezeichnung der Applikationsgruppe oder der Applikation,
 *** optional einem Applikationsicon,
-*** einer Farbmarkierung gemäß den festgelegten <<applikationsfarben>>,
+*** einer Farbmarkierung gemäß den festgelegten xref:04-basiselemente.adoc#applikationsfarben[Applikationsfarben],
 *** Links zu Unterbereichen bzw. Funktionen (Benennung entsprechend <<navigation,Navigationsebene>> 2).
 
 ** *Konsistenzanforderungen:* Farbmarkierungen sind pro Applikationsgruppe bzw. Applikation einheitlich einzusetzen.
@@ -177,7 +177,7 @@ image::dashboard-unterseite.wireframe.drawio.svg[align="center"]
 
 *_Aufbau_*
 
-* *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten <<header-bereich>>.
+* *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten xref:03-fenstertypen-und-layout.adoc#header-bereich[Header Bereich].
 
 * *Seiten-Toolbar:* Kontextbezogene Aktionen wie „Zurück zur Übersicht“, „Drucken“ oder „Hilfe“ sind konsistent bereitzustellen.
 
@@ -216,7 +216,7 @@ image::applikationsseite.wireframe.drawio.svg[align="center"]
 
 {empty} +
 
-* *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten <<header-bereich>>.
+* *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten xref:03-fenstertypen-und-layout.adoc#header-bereich[Header Bereich].
 
 * *Optionale Linksnavigation (A):* Die Linksnavigation bildet applikationsinterne Bereiche und Funktionsgruppen ab.
 
@@ -228,7 +228,7 @@ image::applikationsseite.wireframe.drawio.svg[align="center"]
 
 * *Inhaltsumfang je Applikation:* Umfang und Struktur sind applikationsspezifisch festzulegen.
 
-* *Optionale Linksnavigation:* Die Applikationsseite kann eine optionale Linksnavigation enthalten, die applikationsinterne Bereiche und Funktionsgruppen abbildet (siehe Kapitel <<Linksnavigation>>).
+* *Optionale Linksnavigation:* Die Applikationsseite kann eine optionale Linksnavigation enthalten, die applikationsinterne Bereiche und Funktionsgruppen abbildet (siehe Kapitel <<linksnavigation>>).
 
 * *Inhaltsbereich ohne Linksnavigation:* Entfällt die Linksnavigation, nutzt der Inhaltsbereich die gesamte verfügbare Breite.
 
@@ -238,13 +238,13 @@ image::applikationsseite.wireframe.drawio.svg[align="center"]
 *_Kennzeichnung von Applikationsgruppen und Applikationen_*
 
 Applikationen sind, sofern fachlich möglich, zu Applikationsgruppen zusammenzufassen.
-Jede Applikationsgruppe bzw. jede eigenständige Applikation erhält eine eindeutige farbliche Kennzeichnung (<<applikationsfarben>>) und - sofern verwendet - ein konsistentes Applikationsicon.
+Jede Applikationsgruppe bzw. jede eigenständige Applikation erhält eine eindeutige farbliche Kennzeichnung (xref:04-basiselemente.adoc#applikationsfarben[Applikationsfarben]) und - sofern verwendet - ein konsistentes Applikationsicon.
 
 
 [[r-app-kennzeichnung]]
 *_Richtlinien zur Kennzeichnung_*
 
-* *Kennzeichnung über Applikationsfarben:* Jede Applikationsgruppe bzw. jede eigenständige Applikation ist durch eine farbliche Markierung zu kennzeichnen (siehe Kapitel <<applikationsfarben>>).
+* *Kennzeichnung über Applikationsfarben:* Jede Applikationsgruppe bzw. jede eigenständige Applikation ist durch eine farbliche Markierung zu kennzeichnen (siehe Kapitel xref:04-basiselemente.adoc#applikationsfarben[Applikationsfarben]).
 
 * *Einsatzorte der Farbcodierung:* Die Applikationsfarbe ist an den folgenden Stellen der Anwendung konsistent einzusetzen:
 ** Hauptnavigation - Farbbalken unterhalb des Headers
@@ -257,9 +257,9 @@ Jede Applikationsgruppe bzw. jede eigenständige Applikation erhält eine eindeu
 Wird ein Applikationsicon eingesetzt, ist es an allen vorgesehenen Stellen konsistent zu verwenden.
 
 * *Einsatzorte des Applikationsicons:* Das Applikationsicon kann an folgenden Stellen eingesetzt werden:
-** Dashboard-Widget - <<image-farbmarkierung,Farbmarkierung>> und Applikationsicon
-** Subnavigation (Flyout) - <<image-applikationsicon,Icon der Applikation>>
-** Gruppierungsüberschriften auf Applikationsseiten - <<image-applikationsicon,Icon in Überschriften>>
+** Dashboard-Widget - Farbmarkierung und Applikationsicon
+** Subnavigation (Flyout) - Icon der Applikation
+** Gruppierungsüberschriften auf Applikationsseiten - Icon in Überschriften
 
 
 [[applikations-detailseite]]
@@ -279,7 +279,7 @@ image::applikation-detailseite.wireframe.drawio.svg[align="center", width="629",
 {empty} +
 
 [[r-detail-headerbereich]]
-* *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten <<header-bereich>>.
+* *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten xref:03-fenstertypen-und-layout.adoc#header-bereich[Header Bereich].
 
 * *Titelzeile:* Die Titelzeile benennt Objekt und Kontext eindeutig.
 
@@ -335,7 +335,7 @@ Mischformen auf derselben Hierarchieebene sind zu vermeiden, um Orientierung und
 Sekundäre Fenstertypen ergänzen die in Kapitel <<primaere-fenstertypen>> beschriebenen Seitentypen um temporäre, kontextsensitive Anzeigekontexte.
 Sie werden als Overlay- oder kontextbezogene Container-Muster dargestellt und dienen insbesondere der Fokussierung, Bestätigung oder Ergänzung von Arbeitsvorgängen.
 
-Für sekundäre Fenstertypen gelten die gleichen Grundlagen zu <<barrierefreiheit>>, Struktur und technischer Umsetzung wie in Kapitel <<primaere-fenstertypen>> beschrieben.
+Für sekundäre Fenstertypen gelten die gleichen Grundlagen zu xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit], Struktur und technischer Umsetzung wie in Kapitel <<primaere-fenstertypen>> beschrieben.
 Zusätzlich ist ein modalarmes Interaktionsverhalten sicherzustellen.
 
 [[container-overlays]]
@@ -344,8 +344,8 @@ Zusätzlich ist ein modalarmes Interaktionsverhalten sicherzustellen.
 Container- und Overlay-Komponenten stellen eigenständige Anzeigekontexte dar.
 Sie können den regulären Seitenfluss kontextbezogen erweitern oder bestehende Inhalte temporär überlagern.
 
-Kontextnahe, nicht blockierende Muster (z. B. Drawer/Sidebars, Popover oder Inline-Leisten) sind grundsätzlich gegenüber stark modalen Lösungen zu bevorzugen.
-Modale Dialoge kommen ausschließlich dann zum Einsatz, wenn sie fachlich, rechtlich oder sicherheitsrelevant erforderlich sind (vgl. <<modalarme-interaktionen>>).
+Kontextnahe, nicht blockierende Muster (z. B. Drawer/Side Panels, Popover oder Inline-Leisten) sind grundsätzlich gegenüber stark modalen Lösungen zu bevorzugen.
+Modale Dialoge kommen ausschließlich dann zum Einsatz, wenn sie fachlich, rechtlich oder sicherheitsrelevant erforderlich sind (vgl. xref:03-fenstertypen-und-layout.adoc#modalarme-interaktionen[Modalarme Interaktionen (Grundsatz)]).
 
 Sekundäre Fenstertypen sind so zu gestalten, dass sie den Arbeitsfluss möglichst wenig unterbrechen und die Orientierung erhalten bleibt.
 
@@ -353,7 +353,7 @@ Die folgenden Unterkapitel konkretisieren Aufbau, Inhalte und Interaktionsverhal
 
 *_Barrierefreiheits-Baseline (Overlays)_*
 
-Detailanforderungen sind in Kapitel <<barrierefreiheit>> beschrieben.
+Detailanforderungen sind in Kapitel xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] beschrieben.
 
 [[r-overlays-tastatur]]
 * *Tastaturbedienbarkeit:* Alle interaktiven Elemente innerhalb von Overlays sind vollständig per Tastatur bedienbar.
@@ -391,7 +391,7 @@ Layoutsprünge bei Zustandsänderungen sind zu vermeiden.
 | Die Nutzenden werden schrittweise durch einen linearen oder bedingt linearen Prozess geführt; Validierung und Rückmeldung erfolgen feldnah
 
 | Rechtlich, sicherheitskritisch oder irreversibel
-| Modal
+| Modaler Dialog
 | Die Entscheidung muss bewusst getroffen werden; der Hintergrund wird blockiert
 
 | Feedback oder Hinweis
@@ -449,7 +449,7 @@ Der Dialog darf intern scrollen; bei modaler Verwendung bleibt der Hintergrund g
 Horizontales Scrollen ist zu vermeiden.
 
 * *Konsistentes Raster:* Formulare im Dialog folgen demselben Feldlayout wie im Ansichtsmodus.
-Die Anordnung passt sich responsiv an und bleibt auch in schmalen Viewports übersichtlich (vgl. <<layout-resizing>>).
+Die Anordnung passt sich responsiv an und bleibt auch in schmalen Viewports übersichtlich (vgl. xref:03-fenstertypen-und-layout.adoc#layout-resizing[Layout und Resizing]).
 
 *Dialog-Typen*
 
@@ -458,10 +458,10 @@ Die Anordnung passt sich responsiv an und bleibt auch in schmalen Viewports übe
 | Dialog-Typ
 | Beschreibung und empfohlener Einsatz
 
-| Modal
+| Modaler Dialog
 | Blockiert den Hintergrund. Der Einsatz ist nur für rechtlich erforderliche, irreversible, sicherheitskritische oder transaktionale Commit-Aktionen vorgesehen.
 
-| Modeless
+| Nicht-modaler Dialog
 | Blockiert den Hintergrund nicht, sondern überlagert nur den Inhalt. Der Einsatz ist für ergänzende, kurze Aufgaben vorgesehen, bei denen der Seitenkontext erhalten bleiben soll.
 
 | Vollbild
@@ -523,7 +523,7 @@ Ziel ist eine effiziente und konsistente Bedienung mit möglichst wenigen modale
 Inline-, Drawer-, Popover- oder Drill-Down-Lösungen haben Vorrang vor blockierenden Dialogen.
 Klare Aktionslabels, Rückgängig-Optionen (wo möglich) sowie feldnahe Validierung mit ergänzender Statusmeldung unterstützen dieses Ziel.
 
-Die Muster berücksichtigen die Anforderungen an Tastatur- und Screenreader-Bedienbarkeit gemäß Kapitel <<barrierefreiheit>>.
+Die Muster berücksichtigen die Anforderungen an Tastatur- und Screenreader-Bedienbarkeit gemäß Kapitel xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit].
 Die konkrete technische Umsetzung erfolgt in der Referenzimplementierung oder projektspezifischen Implementierung.
 Entscheidungskriterien und Barrierefreiheitsgrundlagen sind in <<container-overlays>> beschrieben.
 
@@ -568,7 +568,7 @@ Die Tab-Reihenfolge ist logisch, stabil und folgt dem Lesefluss.
 * *Screenreader:* Kurztexte und Labels benennen Aktion und Objekt (z. B. „Datei löschen“).
 „Rückgängig“ wird von Screenreadern als Bedienelement (z. B. Button oder Link) angekündigt.
 
-* *Mobil:* Touch-Ziele erfüllen die Mindestgröße und den Mindestabstand gemäß den geltenden <<barrierefreies-layoutverhalten,Barrierefreiheitsvorgaben>>.
+* *Mobil:* Touch-Ziele erfüllen die Mindestgröße und den Mindestabstand gemäß den geltenden xref:03-fenstertypen-und-layout.adoc#barrierefreies-layoutverhalten[Barrierefreiheitsvorgaben].
 Platzierung und Größe von Popovers dürfen keine für den aktuellen Task erforderlichen Interaktionen verdecken.
 
 *_Umsetzungshinweise_*
@@ -793,7 +793,7 @@ Optional ist die Anzeige des Fortschritts (n von gesamt) vorgesehen.
 
 * *Inhaltsbereich \(C):* Der Inhaltsbereich enthält Formulare und Komponenten des aktiven Schritts.
 Leer-, Lade- und Fehlerzustände sind zu definieren.
-Das Layout folgt dem allgemeinen Raster gemäß <<layout-resizing>>.
+Das Layout folgt dem allgemeinen Raster gemäß xref:03-fenstertypen-und-layout.adoc#layout-resizing[Layout und Resizing].
 
 * *Steuerleiste (D):* Die Primäraktionen umfassen „Weiter“ sowie „Abschließen“ (im letzten Schritt) und „Zurück“.
 Die Sekundäraktionen umfassen „Abbrechen“ und „Zwischenspeichern“ oder „Ablegen“ (falls fachlich sinnvoll).
@@ -933,9 +933,9 @@ Diese können statisch implementiert sein (zum Beispiel über "häufige Aufgaben
 [[toolbar]]
 === Toolbar
 
-Eine Toolbar stellt ein Set von <<bedienelemente,Bedienelementen>>, wie zum Beispiel <<button,Buttons>> oder <<dropdown,Dropdown-Menüs>>, in einer Leiste zur Verfügung.
+Eine Toolbar stellt ein Set von xref:06-bedienelemente.adoc#bedienelemente[Bedienelementen], wie zum Beispiel xref:06-bedienelemente.adoc#button[Buttons] oder <<dropdown,Dropdown-Menüs>>, in einer Leiste zur Verfügung.
 Diese ist oberhalb eines bestimmten Inhaltsbereichs angebracht und sollte optisch, beispielsweise durch eine Linie oder Schattierung, vom Inhalt abgegrenzt sein.
-Die einzelnen Funktionen innerhalb der Toolbar werden typischerweise durch ein aussagekräftiges <<icons,Icon>>, gegebenenfalls ergänzt um ein zusätzliches <<label>>, repräsentiert.
+Die einzelnen Funktionen innerhalb der Toolbar werden typischerweise durch ein aussagekräftiges xref:04-basiselemente.adoc#icons[Icon], gegebenenfalls ergänzt um ein zusätzliches xref:04-basiselemente.adoc#label[Label], repräsentiert.
 
 Die Toolbar soll das Gefühl einer schnellen und simplen Interaktion vermitteln.
 Daher sollten keine komplexen Funktionalitäten in der Toolbar untergebracht werden.
@@ -949,7 +949,7 @@ Folgende Toolbars gibt es:
 * <<eingabefeldgruppen-toolbar,Eingabefeldgruppen mit Toolbar>>
 
 [NOTE]
-Für alle Toolbar-Varianten gelten die allgemeinen Anforderungen an Barrierefreiheit, Fokusführung und responsives Layoutverhalten gemäß den Kapiteln <<barrierefreiheit>> und <<barrierefreies-layoutverhalten>>.
+Für alle Toolbar-Varianten gelten die allgemeinen Anforderungen an Barrierefreiheit, Fokusführung und responsives Layoutverhalten gemäß den Kapiteln xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] und xref:03-fenstertypen-und-layout.adoc#barrierefreies-layoutverhalten[Barrierefreies Layoutverhalten].
 
 *_Dos:_*
 
@@ -1067,21 +1067,21 @@ Nicht verfügbare Aktionen werden deaktiviert dargestellt statt ausgeblendet.
 Mit einem Expander können bestimmte Inhaltsbereiche per Mausklick dynamisch ein- und ausgeblendet werden.
 Das zugrundeliegende Prinzip wird häufig als „Progressive Disclosure“ („schrittweises Enthüllen“) oder auch als „Information Hiding“ („Ausblenden von Information“) bezeichnet.
 
-Ein Expander wird genutzt, um die Informationskomplexität zu reduzieren und um vertikal Platz einzusparen (beispielsweise bei langen <<formulare,Formularen>>).
+Ein Expander wird genutzt, um die Informationskomplexität zu reduzieren und um vertikal Platz einzusparen (beispielsweise bei langen xref:05-benutzereingaben.adoc#benutzereingaben[Formularen]).
 Hierfür werden die Inhalte in logische Gruppen zusammengefasst, die sich zur besseren Übersicht ein- und ausklappen lassen.
-In einem Expander können sowohl <<basiselemente,Basis>>- und <<bedienelemente>> als auch <<design-pattern,Design Patterns>> angezeigt werden.
+In einem Expander können sowohl xref:04-basiselemente.adoc#basiselemente[Basis]- und xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] als auch <<design-pattern,Design Patterns>> angezeigt werden.
 
 Der grundlegende Aufbau eines Expanders ist wie folgt:
 
 * Einen Header-Bereich mit
-** einem gruppierenden <<label>>, das den Inhalt der Gruppe prägnant beschreibt,
-** und einem <<icons,Icon>>, das den Zustand des Expanders anzeigt.
+** einem gruppierenden xref:04-basiselemente.adoc#label[Label], das den Inhalt der Gruppe prägnant beschreibt,
+** und einem xref:04-basiselemente.adoc#icons[Icon], das den Zustand des Expanders anzeigt.
 * Einen Content-Bereich, der die Inhalte der Gruppe enthält.
 
 Expander nehmen dabei immer die ihnen zur Verfügung stehende Breite ein.
 
 [NOTE]
-Anstatt mehrere Expander in einer Ansicht zu nutzen, sollte überlegt werden, ob die fachlich gesplitteten Gruppierungen besser in <<tabview,Tabs>> oder sogar in eigenen Frontendseiten dargestellt werden sollten.
+Anstatt mehrere Expander in einer Ansicht zu nutzen, sollte überlegt werden, ob die fachlich gesplitteten Gruppierungen besser in xref:06-bedienelemente.adoc#tabview[Tabs] oder sogar in eigenen Frontendseiten dargestellt werden sollten.
 Dadurch wird die kognitive Belastung der Nutzenden reduziert und das Fehlerhandling vereinfacht.
 Des Weiteren ist es barrierefreier, wenn weniger Inhalt auf einem Frontend direkt sichtbar ist.
 Screenreader können dadurch schneller und einfacher durch die Inhalte navigieren.
@@ -1101,7 +1101,7 @@ include::partial$example-link-card.adoc[]
 
 Fürs Aus- und Einklappen eines Akkordeonelements kann der gesamte Akkordeon-Header angeklickt werden.
 Zusätzlich befindet sich auf der linken Seite neben dem Label ein Icon, das den Zustand (ein- oder ausgeklappt) des Akkordeonelements anzeigt.
-Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen <<image-akkordeon-ausgeklappt>> und <<image-akkordeon-eingeklappt>>).
+Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen zum ein- und ausgeklappten Akkordeon).
 
 Die Interaktion wird dabei in der Regel auf die reine Wissensvermittlung reduziert.
 Entsprechend soll auf weiterführende Interaktion, über das aus- und einklappen hinaus, verzichtet werden.
@@ -1114,7 +1114,7 @@ In einem Panel werden ebenso zu einem übergeordneten Thema kompakt Gruppen an I
 Dabei lässt sich das ausgewählte Panel ausklappen.
 Weitere Panels innerhalb des Frontends werden durch ein Aus- oder Einklappen nicht beeinflusst.
 So können Nutzende alle Informationsgruppen eigenständig anzeigen oder bei Bedarf ausblenden.
-Klassischerweise werden Panels in <<formulare,Formularstrecken>> verwendet.
+Klassischerweise werden Panels in xref:05-benutzereingaben.adoc#benutzereingaben[Formularstrecken] verwendet.
 
 :example-link-component: Panel
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#panel
@@ -1122,13 +1122,13 @@ include::partial$example-link-card.adoc[]
 
 
 Fürs Aus- und Einklappen eines Panels befindet sich auf der linken Seite auf der Höhe des Labels ein Icon.
-Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen <<image-panel-ausgeklappt>> und <<image-panel-eingeklappt>>).
+Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen zum ein- und ausgeklappten Panel).
 
 Die Interaktion steht hier im Vordergrund.
 Weiterführende Aktionen können entweder rechts im Panel Header oder in einer Footer Sektion unterhalb des Inhaltsbereichs eingebaut werden.
 
 Panels bieten in der Regel mehr Freiraum für komplexe Inhalte und Interaktionen als ein Akkordeon.
-Eine Gegenüberstellung, wann ein Panel und wann ein Akkordeon sinnvoll ist, befindet sich im Kapitel <<panel-akkordeon-ueberschrift>>.
+Eine Gegenüberstellung, wann ein Panel und wann ein Akkordeon sinnvoll ist, befindet sich im Kapitel xref:10-design-richtlinien.adoc#panel-akkordeon-ueberschrift[Panel vs. Akkordeon vs. Überschrift].
 
 [[dropdown]]
 === Eingabefeldliste (Dropdown)
@@ -1136,8 +1136,8 @@ Eine Gegenüberstellung, wann ein Panel und wann ein Akkordeon sinnvoll ist, bef
 Ein Eingabefeld mit hinterlegten Werten ist in seiner einfachsten Form ein Eingabefeld mit Liste.
 Die Liste ist die bekannteste Art eines interaktiven Eingabefelds, besser bekannt als Dropdown.
 
-Eingabefeldlisten setzen Standards für interaktive <<eingabefeld,Eingabefelder>>, Dropdown-Menüs, enthaltene Kontrollkästchen und andere interaktive Elemente.
-Dadurch wird sichergestellt, dass alle Eingabefelder auf dem Frontend einheitlich gestaltet sind und den besten Praktiken hinsichtlich <<usability-und-benutzerfreundlichkeit,Benutzerfreundlichkeit>> und <<barrierefreiheit>> entsprechen.
+Eingabefeldlisten setzen Standards für interaktive xref:06-bedienelemente.adoc#eingabefeld[Eingabefelder], Dropdown-Menüs, enthaltene Kontrollkästchen und andere interaktive Elemente.
+Dadurch wird sichergestellt, dass alle Eingabefelder auf dem Frontend einheitlich gestaltet sind und den besten Praktiken hinsichtlich xref:01-einfuehrung.adoc#usability-und-benutzerfreundlichkeit[Benutzerfreundlichkeit] und xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] entsprechen.
 Ein konsistentes Design fördert die Orientierung und das Vertrauen der Nutzenden, was letztendlich zu einer höheren Zufriedenheit und Effizienz führt.
 
 Beim Klick auf das gesamte Element klappt die Liste aus und ein Element kann angewählt werden.
@@ -1160,7 +1160,7 @@ Eine mögliche Verwendung ist das Zusammenfassen von mehreren Exportmöglichkeit
 
 Menü-Buttons bestehen aus zwei Bestandteilen:
 
-* einem <<icons,Icon>> beziehungsweise einem <<label>> oder einer Kombination von Icon und Label.
+* einem xref:04-basiselemente.adoc#icons[Icon] beziehungsweise einem xref:04-basiselemente.adoc#label[Label] oder einer Kombination von Icon und Label.
 * einem Pfeil-Icon, das per Klick die Dropdown-Liste öffnet.
 
 :example-link-component: Menübutton
@@ -1179,8 +1179,8 @@ In fast jedem Frontend beziehungsweise in den häufigsten Anwendungsfällen lass
 Häufig verwendete Gruppen sind beispielsweise „Angaben zur Person“ (mit den Eingabefeldern Vorname, Familienname, Nationalität, Geschlecht etc.), Adressdaten (Straße, Hausnummer, Postleitzahl, Ort) oder Bezahldaten (Art der Bezahlung, Kartennummer etc).
 Eingabefeldgruppen sind eine Möglichkeit solche Gruppierungen darzustellen.
 
-Eingabefeldgruppen bestehen immer aus mindestens einer Gruppenüberschrift beziehungsweise einem Gruppenlabel, mehreren <<eingabefeld,Eingabefeldern>> und gegebenenfalls weiteren <<bedienelemente,Bedienelementen>>. +
-Dies lässt sich durch zwei Möglichkeiten realisieren: <<ueberschriften,Überschrift>> und <<bedienelemente>> oder Fieldset mit Bedienelementen.
+Eingabefeldgruppen bestehen immer aus mindestens einer Gruppenüberschrift beziehungsweise einem Gruppenlabel, mehreren xref:06-bedienelemente.adoc#eingabefeld[Eingabefeldern] und gegebenenfalls weiteren xref:06-bedienelemente.adoc#bedienelemente[Bedienelementen]. +
+Dies lässt sich durch zwei Möglichkeiten realisieren: xref:04-basiselemente.adoc#ueberschriften[Überschrift] und xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] oder Fieldset mit Bedienelementen.
 
 *_Eingabefeldgruppe mit Überschrift und Bedienelement:_*
 
@@ -1191,7 +1191,7 @@ include::partial$example-link-card.adoc[]
 Es wird ein einspaltiges Layout verwendet.
 Jedes Pflichtfeld ist durch einen Asterisk (*) gekennzeichnet.
 Eingabefeldgruppen bedürfen keiner zusätzlichen optischen Gruppierung.
-Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends (siehe <<image-vertikalerschnitt>>) folgen.
+Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends (siehe xref:08-use-cases.adoc#image-vertikalerschnitt[image-vertikalerschnitt]) folgen.
 
 *_Eingabefeldgruppe mit Fieldset:_*
 
@@ -1237,7 +1237,7 @@ Sie dienen dazu, die Eingabe durch vorgeschlagene oder vorausgewählte Werte zu 
 
 * *_Barrierefreiheit_*
 ** Tastaturzugänglichkeit: Wertehilfen müssen vollständig mit der Tastatur bedienbar sein, einschließlich <<navigation>>, Auswahl und Schließen.
-** Screenreader-Unterstützung: Alle interaktiven Elemente müssen mit sinnvollen Labels versehen sein und korrekt angekündigt werden (zum Beispiel mittels <<aria-labels,aria-label>> oder aria-live-Regionen).
+** Screenreader-Unterstützung: Alle interaktiven Elemente müssen mit sinnvollen Labels versehen sein und korrekt angekündigt werden (zum Beispiel mittels xref:02-barrierefreiheit.adoc#aria-labels[aria-label] oder aria-live-Regionen).
 * *_Usability_*
 ** Intuitive Nutzung: Wertehilfen sollten verständlich gestaltet und optisch hervorgehoben werden, sobald sie aktiv sind.
 ** Fehlerminimierung: Eingabevalidierungen sollten Nutzenden bei ungültigen Werten direkt Hinweise geben.
@@ -1251,7 +1251,7 @@ Sollte eine barrierefreie Umsetzung der Wertehilfe nicht möglich sein, oder gar
 
 * *_<<dropdown,Dropdowns:>>_*
 ** Zur Auswahl vordefinierter Werte, zum Beispiel aus einer Liste von Bundesländern.
-* *_<<autosuggestion,Autovervollständigung:>>_*
+* *_xref:09-eingabehilfen-und-fehlermeldungen.adoc#autosuggestion[Autovervollständigung:]_*
 ** Nutzende geben Text ein, und die Anwendung schlägt passende Werte vor.
 * *_<<datepicker-wertehilfe,Datumsauswahl:>>_*
 ** Ein Kalender-Widget unterstützt bei der Auswahl eines Datums.
@@ -1369,7 +1369,7 @@ Sie dienen zur Auswahl einzelner oder mehrerer Werte aus einer meist vordefinier
 Sie können beliebig kombiniert werden, um die Fehleranfälligkeit zu reduzieren und die Auswahlmöglichkeiten zu optimieren.
 
 Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern>> und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
-Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entsprechenden Unterkapitel des Kapitels <<bedienelemente>> einzusehen.
+Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entsprechenden Unterkapitel des Kapitels xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] einzusehen.
 
 [[checkbox-selektion]]
 ==== Checkbox
@@ -1384,8 +1384,8 @@ Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entspreche
 
 *_Barrierefreiheit:_*
 
-* Nutzung von aria-checked und <<aria-labels,aria-label>> zur Beschreibung.
-* Gruppierung ähnlicher <<checkbox,Checkboxen>> mit fieldset und legend.
+* Nutzung von aria-checked und xref:02-barrierefreiheit.adoc#aria-labels[aria-label] zur Beschreibung.
+* Gruppierung ähnlicher xref:06-bedienelemente.adoc#checkbox[Checkboxen] mit fieldset und legend.
 * Click-Target-Area ist mindestens 44x44 Pixel.
 
 [[radiobutton-selektion]]
@@ -1395,7 +1395,7 @@ Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entspreche
 
 *_Best Practices:_*
 
-* <<radiobutton,Radiobuttons>> sollten immer beschriftet und in logischer Reihenfolge angeordnet sein.
+* xref:06-bedienelemente.adoc#radiobutton[Radiobuttons] sollten immer beschriftet und in logischer Reihenfolge angeordnet sein.
 * Fokus- und Hover-Stile müssen klar erkennbar sein.
 
 *_Barrierefreiheit:_*
@@ -1456,7 +1456,7 @@ Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entspreche
 
 *_Best Practices:_*
 
-* Eingabefeld: Sollte klar beschriftet und mit einer <<autosuggestion,Autovervollständigungsfunktion>> ausgestattet sein, falls sinnvoll.
+* Eingabefeld: Sollte klar beschriftet und mit einer xref:09-eingabehilfen-und-fehlermeldungen.adoc#autosuggestion[Autovervollständigungsfunktion] ausgestattet sein, falls sinnvoll.
 * Filterbare Ergebnisse: Die Suchergebnisse sollten weiter eingegrenzt werden können (zum Beispiel durch zusätzliche <<filter-selektion,Filteroptionen>>).
 
 *_Barrierefreiheit:_*
@@ -1482,7 +1482,7 @@ Dies wird häufig in Kontexten genutzt, in denen eine Auswahl von Daten für sp�
 *_Best Practices:_*
 
 * Übersichtliche Navigation: Inhalte sollten logisch gegliedert und mit <<filter-selektion,Filter>>-, <<suche-selektion,Such>>- und <<selektion,Selektionsmöglichkeiten>> kombinierbar sein.
-* Markierung und <<system-meldungen,Rückmeldung>>: Markierte Elemente sollten visuell hervorgehoben und durch dynamische Hinweise bestätigt werden.
+* Markierung und xref:09-eingabehilfen-und-fehlermeldungen.adoc#system-meldungen[Rückmeldung]: Markierte Elemente sollten visuell hervorgehoben und durch dynamische Hinweise bestätigt werden.
 * Sammlung bearbeiten: Benutzende müssen die Möglichkeit haben, gesammelte Elemente zu überprüfen, zu ändern oder zu entfernen.
 
 *_Barrierefreiheit:_*
@@ -1493,7 +1493,7 @@ Dies wird häufig in Kontexten genutzt, in denen eine Auswahl von Daten für sp�
 
 *_Beispielanwendung:_* Durchstöbern eines digitalen Archivs mit der Möglichkeit, relevante Dokumente zu markieren und später als PDF herunterzuladen.
 
-Diese Funktionalität verbessert die Benutzerfreundlichkeit in datenintensiven Anwendungen und stellt sicher, dass alle Interaktionen den Anforderungen an <<barrierefreiheit,Barrierefreiheit>> und Benutzererlebnis gerecht werden.
+Diese Funktionalität verbessert die Benutzerfreundlichkeit in datenintensiven Anwendungen und stellt sicher, dass alle Interaktionen den Anforderungen an xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] und Benutzererlebnis gerecht werden.
 
 Alle Selektionskomponenten müssen die Anforderungen an Barrierefreiheit und Nutzerfreundlichkeit erfüllen, einschließlich:
 
@@ -1507,7 +1507,7 @@ Alle Selektionskomponenten müssen die Anforderungen an Barrierefreiheit und Nut
 [[output-via-table]]
 ==== Datenausgabe mit Tabellen
 
-Zur strukturierten Darstellung von vielen Daten bietet es sich an <<tabelle,Tabellen>> zu nutzen.
+Zur strukturierten Darstellung von vielen Daten bietet es sich an xref:06-bedienelemente.adoc#tabelle[Tabellen] zu nutzen.
 Bei der Nutzung von Tabellen sind in der IsyFact über die grundsätzlich zur Tabelle geltenden Regeln folgende Richtlinien zu berücksichtigen:
 
 * Klare Struktur: Überschriften müssen mit semantischen Tags (<th>) ausgezeichnet sein, um die Bedeutung der Inhalte zu verdeutlichen.
@@ -1537,7 +1537,7 @@ Dies verbessert die Effizienz, da Benutzende nicht zwischen Ansichts- und Bearbe
 *_Barrierefreiheit:_*
 
 * Fokussierung aller interaktiven Elemente innerhalb der Zeile per Tabulator.
-* Klare visuelle und sprachliche <<system-meldungen,Rückmeldungen>> bei Aktionen (zum Beispiel „Änderung gespeichert“).
+* Klare visuelle und sprachliche xref:09-eingabehilfen-und-fehlermeldungen.adoc#system-meldungen[Rückmeldungen] bei Aktionen (zum Beispiel „Änderung gespeichert“).
 * Beschriftungen und ARIA-Attribute für Screenreader.
 
 Diese Funktionalität fördert eine intuitive und zugängliche Datenbearbeitung.
@@ -1575,6 +1575,6 @@ Formulierungen wie „Ja“ oder „Nein“ sind zu vermeiden.
 
 *_Barrierefreiheit:_*
 
-* Klare visuelle und sprachliche <<system-meldungen,Rückmeldungen>> bei Aktionen (zum Beispiel „Datensatz gelöscht“).
+* Klare visuelle und sprachliche xref:09-eingabehilfen-und-fehlermeldungen.adoc#system-meldungen[Rückmeldungen] bei Aktionen (zum Beispiel „Datensatz gelöscht“).
 * Beschriftungen und ARIA-Attribute für Screenreader.
 * Bei nicht blockierenden Rückgängig-Hinweisen erfolgt die Ankündigung über eine geeignete Live-Region, ohne den Fokus zu entziehen.

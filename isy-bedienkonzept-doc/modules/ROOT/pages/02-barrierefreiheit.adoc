@@ -30,24 +30,24 @@ Alle hier genannten Maßnahmen sind besonders hervorzuheben und unabdinglich fü
 
 *Dos*
 
-* <<eingabefeld,Eingabefelder>> müssen nach der Aktivierung eines Hochkontrastmodus/Farbfilters zu 50 % bestehen bleiben - eine einzelne Linie als Bestandteil ist nicht ausreichend als Identifizierung eines Eingabefeldes.
+* xref:06-bedienelemente.adoc#eingabefeld[Eingabefelder] müssen nach der Aktivierung eines Hochkontrastmodus/Farbfilters zu 50 % bestehen bleiben - eine einzelne Linie als Bestandteil ist nicht ausreichend als Identifizierung eines Eingabefeldes.
 * Die Textgröße soll zum Erreichen der WCAG 2.1 AA-Anforderungen mindestens 14pt für Labels und 12pt für Fließtexte betragen.
 * Der Textkontrast muss mindestens 4,5:1 und bei großer Schrift mindestens 3:1 betragen.
 * Alle Bilder benötigen ein inhaltlich sinnvolles, beschreibendes <<alt-tag,Alt-Attribut>>.
-* <<grafiken,Bilder>>, die ausschließlich der Gestaltung dienen (zum Beispiel Trennlinien), müssen als solche (Schmuckgrafik) gekennzeichnet werden.
+* xref:04-basiselemente.adoc#grafiken[Bilder], die ausschließlich der Gestaltung dienen (zum Beispiel Trennlinien), müssen als solche (Schmuckgrafik) gekennzeichnet werden.
 * *Tastatur-Navigation:*
 Nicht alle Nutzenden können eine Maus verwenden.
 Daher ist es wichtig, dass alle Interaktionen auf dem Frontend auch über die Tastatur möglich sind.
-Dies bedeutet, dass alle Navigationselemente, <<link,Links>> und interaktiven Elemente leicht per Tastatur zugänglich sein müssen.
+Dies bedeutet, dass alle Navigationselemente, xref:06-bedienelemente.adoc#link[Links] und interaktiven Elemente leicht per Tastatur zugänglich sein müssen.
 
 *Don'ts*
 
 * Es sollten keine Schriftgrafiken genutzt werden.
 * Schwache Kontraste, zum Beispiel Hellblau auf Grau, sollen vermieden werden.
 * *Vermeidung von reinen Farbunterscheidungen:*
-Informationen sollten nicht allein durch <<farben,Farbe>> vermittelt werden, da einige Nutzende Farben nicht unterscheiden können.
-Daher sollten auch andere visuelle Elemente, wie <<icons,Symbole>> oder Muster genutzt werden, um wichtige Informationen zu vermitteln.
-* Aktionen sollen nicht durch <<bedienelemente>> ausgelöst werden, wenn diese nicht dazu vorgesehen sind (zum Beispiel <<radiobutton>> und <<checkbox,Checkboxen>>).
+Informationen sollten nicht allein durch xref:04-basiselemente.adoc#farben[Farbe] vermittelt werden, da einige Nutzende Farben nicht unterscheiden können.
+Daher sollten auch andere visuelle Elemente, wie xref:04-basiselemente.adoc#icons[Symbole] oder Muster genutzt werden, um wichtige Informationen zu vermitteln.
+* Aktionen sollen nicht durch xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] ausgelöst werden, wenn diese nicht dazu vorgesehen sind (zum Beispiel xref:06-bedienelemente.adoc#radiobutton[Radiobuttons] und xref:06-bedienelemente.adoc#checkbox[Checkboxen]).
 
 [[tastatursteuerung]]
 === Tastaturbedienbarkeit und Tastaturkombinationen
@@ -57,11 +57,11 @@ Wichtig ist dabei die Einhaltung standardisierter Bedienmuster, um eine intuitiv
 Anwendungen der IsyFact nutzen daher die bekannten Standardkombinationen, verzichten somit auf eigene Tastenkombinationen und bilden so die Basis für eine einheitliche und barrierefreie Bedienung.
 Beispiele hierfür sind:
 
-* *Tabulator:* Navigation zwischen interaktiven Elementen wie <<link,Links>>, <<button,Buttons>> oder <<eingabefeld,Eingabefeldern>>.
+* *Tabulator:* Navigation zwischen interaktiven Elementen wie xref:06-bedienelemente.adoc#link[Links], xref:06-bedienelemente.adoc#button[Buttons] oder xref:06-bedienelemente.adoc#eingabefeld[Eingabefeldern].
 * *Shift + Tab:* Navigation rückwärts zwischen interaktiven Elementen.
-* *Enter:* Aktivierung von Buttons, <<link,Links>> und anderen interaktiven Elementen.
-* *Leertaste:* Scrollen in Seiten (bei nicht fokussierten Elementen) oder Aktivieren von <<checkbox,Checkboxen>> (bei fokussierten Checkboxen).
-* *Pfeiltasten:* Navigation in <<liste,Listen>>, <<dropdown,Dropdowns>> oder <<textbox,Textfeldern>>.
+* *Enter:* Aktivierung von Buttons, xref:06-bedienelemente.adoc#link[Links] und anderen interaktiven Elementen.
+* *Leertaste:* Scrollen in Seiten (bei nicht fokussierten Elementen) oder Aktivieren von xref:06-bedienelemente.adoc#checkbox[Checkboxen] (bei fokussierten Checkboxen).
+* *Pfeiltasten:* Navigation in xref:06-bedienelemente.adoc#liste[Listen], xref:07-design-pattern.adoc#dropdown[Dropdowns] oder xref:06-bedienelemente.adoc#textbox[Textfeldern].
 * *Esc:* Schließen von Dialogen oder Dropdowns.
 
 Der reine Einsatz von Standardkombinationen in der Tastatursteuerung ist nicht ausreichend, eine größtmögliche <<barrierefreiheit,Barrierefreiheit>> sicherzustellen.
@@ -71,7 +71,7 @@ So gibt es noch weitere "Dos and Don'ts" im Rahmen der Tastatursteuerung zu beac
 
 * *Fokussteuerung:* Alle interaktiven Elemente müssen in einer logischen Reihenfolge fokussierbar sein, ohne unerwartete Wechsel oder Sprünge.
 * *Tastaturzugänglichkeit:* Dynamische Elemente wie Dropdowns, Dialoge oder modale Fenster sind vollständig mit der Tastatur bedienbar.
-* *Feedback:* <<fehlermeldungen>> und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
+* *Feedback:* xref:09-eingabehilfen-und-fehlermeldungen.adoc#fehlermeldungen[Fehlermeldungen] und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
 * *Standardbedienmuster:* Es werden nur Standard-Tastenkombinationen verwendet, um Konflikte mit Browserfunktionen oder Assistenzsoftware zu vermeiden.
 
 *_Don'ts_*
@@ -132,7 +132,7 @@ Die Einhaltung dieser Standards ermöglicht eine barrierefreie und effiziente Na
 [[barrierefreier-einsatz-von-farben]]
 === Barrierefreier Einsatz von Farben
 
-Farben sind ein zentrales Gestaltungsmittel in Benutzeroberflächen und unterstützen die Orientierung sowie das Verständnis von Zuständen und Aktionen (siehe <<farben>>).
+Farben sind ein zentrales Gestaltungsmittel in Benutzeroberflächen und unterstützen die Orientierung sowie das Verständnis von Zuständen und Aktionen (siehe xref:04-basiselemente.adoc#farben[Farben]).
 
 Um eine gute Wahrnehmbarkeit und Lesbarkeit sicherzustellen, müssen ausreichende Kontrastverhältnisse zwischen Vorder- und Hintergrund gewährleistet sein.
 Maßgeblich sind die Anforderungen der Web Content Accessibility Guidelines (WCAG) 2.1 auf Konformitätsstufe AA.
@@ -159,7 +159,7 @@ Nicht zulässige Kombinationen dürfen nicht eingesetzt werden.
 [[alt-tag]]
 === Alt-Attribute für Bilder
 
-Alt-Attribute (alternative Texte) sind textuelle Beschreibungen, die in den HTML-Code von <<grafiken,Bildern>> eingebettet werden.
+Alt-Attribute (alternative Texte) sind textuelle Beschreibungen, die in den HTML-Code von xref:04-basiselemente.adoc#grafiken[Bildern] eingebettet werden.
 Sie dienen mehreren wichtigen Zwecken:
 
 * *Zugänglichkeit:*
@@ -187,7 +187,7 @@ Bei einem Bild eines Einkaufswagens auf einer E-Commerce-Seite könnte der Alt-T
 * *Keine redundante Information:*
 Informationen, die bereits im umgebenden Text enthalten sind, müssen nicht im Alt-Text wiederholt werden.
 Beispiel:
-Wenn ein Bild neben einer <<ueberschriften,Überschrift>> „Teamfoto 2024“ steht, sollte der Alt-Text nicht einfach „Teamfoto 2024“ wiederholen.
+Wenn ein Bild neben einer xref:04-basiselemente.adoc#ueberschriften[Überschrift] „Teamfoto 2024“ steht, sollte der Alt-Text nicht einfach „Teamfoto 2024“ wiederholen.
 * *Vermeidung von Keyword-Stuffing:*
 Der Alt-Text sollte nicht mit Schlüsselwörtern überladen werden, da dies die Zugänglichkeit beeinträchtigt.
 * *Verwendung von leeren Alt-Attributen für dekorative Bilder:*
@@ -203,7 +203,7 @@ Sie bieten zusätzliche Informationen für Screenreader, insbesondere für Eleme
 
 *_Implementierung von ARIA-Labels:_*
 
-ARIA-Labels kommen zum Einsatz, wenn ein <<bedienelemente,Bedienelement>> keinen eindeutigen für Screenreader zugänglichen Text enthält.
+ARIA-Labels kommen zum Einsatz, wenn ein xref:06-bedienelemente.adoc#bedienelemente[Bedienelement] keinen eindeutigen für Screenreader zugänglichen Text enthält.
 Hier sind die wichtigsten ARIA-Attribute und ihre Anwendungen:
 
 * *aria-label:*
@@ -270,7 +270,7 @@ Wenn einzelne Abschnitte oder Elemente in einer anderen Sprache verfasst sind, s
 Dies ist besonders wichtig für mehrsprachige Frontends, Dokumente und die korrekte Aussprache durch Screenreader.
 Wenn nötig, können auch spezifische Sprachvarianten oder Dialekte mithilfe von Codes für Regionen oder Länder angegeben werden (zum Beispiel: en-US für amerikanisches Englisch, en-GB für britisches Englisch).
 
-Das lang-Attribut wird nur verwendet, wenn der <<text>> tatsächlich in einer anderen Sprache verfasst ist.
+Das lang-Attribut wird nur verwendet, wenn der xref:04-basiselemente.adoc#text[Text] tatsächlich in einer anderen Sprache verfasst ist.
 Es wird nicht aus ästhetischen oder stilistischen Gründen gesetzt.
 
 *_Beispiel:_*

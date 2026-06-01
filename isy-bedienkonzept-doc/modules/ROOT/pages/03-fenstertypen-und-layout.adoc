@@ -4,10 +4,10 @@
 Fenstertypen und Layout bilden die verbindliche Grundlage für Struktur und Verhalten aller Seiten.
 Ziel ist eine einheitliche, effiziente und barrierefreie Nutzererfahrung in modernen Fachanwendungen.
 
-Die in Kapitel 2 <<Barrierefreiheit>> beschriebenen Anforderungen der WCAG 2.1 AA gelten uneingeschränkt und bilden den verbindlichen Rahmen.
+Die in Kapitel 2 xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] beschriebenen Anforderungen der WCAG 2.1 AA gelten uneingeschränkt und bilden den verbindlichen Rahmen.
 
 Die Vorgaben dieses Kapitels sind technologieunabhängig formuliert und beschreiben das erwartete Verhalten sowie die gestalterischen Anforderungen an Layout, Responsivität und Barrierefreiheit.
-Grundlegende Interaktionsmuster werden im Kapitel <<design-pattern>> beschrieben.
+Grundlegende Interaktionsmuster werden im Kapitel xref:07-design-pattern.adoc#design-pattern[Design Patterns] beschrieben.
 
 Die folgenden Gestaltungsprinzipien definieren zentrale Regeln für Struktur, Lesbarkeit und Anpassungsfähigkeit der Benutzeroberfläche und sichern ein konsistentes Erscheinungsbild sowie eine barrierefreie Bedienung über alle Fenstertypen hinweg.
 
@@ -26,7 +26,7 @@ Nutzende erkennen vertraute Muster wieder und müssen keine neuen Bedienweisen e
 Eine vollständige Tastaturbedienung ist jederzeit möglich.
 * *Flexibel, aber geprüft:* Abweichungen innerhalb definierter Spielräume - etwa bei maximalen Breiten - sind zulässig, sofern sie dokumentiert und die festgelegten Akzeptanzkriterien erfüllt sind.
 
-Die konkreten Fenster‑ und Seitentypen (z. B. Login, Dashboard, Dashboard-Unterseite, Applikationsseite, Applikations-Detailseite) sind im Kapitel Entwurfsmuster (<<primaere-fenstertypen>> und <<sekundaere-fenstertypen>>) beschrieben.
+Die konkreten Fenster‑ und Seitentypen (z. B. Login, Dashboard, Dashboard-Unterseite, Applikationsseite, Applikations-Detailseite) sind im Kapitel Entwurfsmuster (xref:07-design-pattern.adoc#primaere-fenstertypen[Primäre Fenstertypen] und xref:07-design-pattern.adoc#sekundaere-fenstertypen[Sekundäre Fenstertypen]) beschrieben.
 Die hier definierten Prinzipien bilden die verbindliche Grundlage für deren Gestaltung und technische Umsetzung.
 
 [[layout-resizing]]
@@ -195,19 +195,19 @@ Der Header-Bereich enthält allgemeine Informationen zur Anwendungslandschaft, z
 .Aufbau des Header-Bereiches
 image::header.wireframe.drawio.svg[align="center"]
 
-<<image-header-aufbau>> zeigt die Bestandteile des Headers:
+Abbildung zeigt die Bestandteile des Headers:
 
 * *A* Logo des Anbieters der Anwendungslandschaft
 * *B* Balken als Identitätselement der Anwendungslandschaft gemäß gestalterischen Vorgaben
 * *C* Logo der Anwendungslandschaft
 * *D* Informationen zum angemeldeten Nutzenden
-* *E/F* Haupt- und Subnavigation als Flyout (zur Nutzung siehe <<hauptnavigation>>)
+* *E/F* Haupt- und Subnavigation als Flyout (zur Nutzung siehe xref:07-design-pattern.adoc#hauptnavigation[Hauptnavigation])
 
 [[r-header-barrierefrei]]
 Der Header ist für alle Seiten innerhalb einer Anwendungslandschaft gestalterisch identisch.
 Beim Anpassen der Fenstergröße bleiben links ausgerichtete Elemente links und rechts ausgerichtete Elemente rechts; der Raum dazwischen passt sich flexibel an.
 
-Der Header ist vollständig barrierefrei umgesetzt: Fokusreihenfolge, Kontrast und Tastaturbedienung entsprechen den in Kapitel <<barrierefreiheit>> definierten Anforderungen.
+Der Header ist vollständig barrierefrei umgesetzt: Fokusreihenfolge, Kontrast und Tastaturbedienung entsprechen den in Kapitel xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] definierten Anforderungen.
 Die Informationen zum angemeldeten Nutzenden zeigen mindestens den Namen oder die Kennung und sind auch über Screenreader eindeutig identifizierbar.
 
 *_Richtlinien_*
@@ -234,13 +234,13 @@ Die Gestaltung orientiert sich an den Prinzipien aus Kapitel <<layout-resizing>>
 * *Responsivität*: Anpassung an verschiedene Bildschirmgrößen und Zoomstufen ohne Informationsverlust.
 * *Barrierefreiheit*: Klare Fokusreihenfolge, ausreichende Kontraste und vollständige Tastaturbedienbarkeit.
 * *Modularität*: Wiederverwendung standardisierter Komponenten (Widgets, Panels, Tabellen, Dialoge).
-Die konkreten Fenster- und Seitentypen, die dieses gemeinsame Raster verwenden, sind in Kapitel <<primaere-fenstertypen>> detailliert beschrieben:
+Die konkreten Fenster- und Seitentypen, die dieses gemeinsame Raster verwenden, sind in Kapitel xref:07-design-pattern.adoc#primaere-fenstertypen[Primäre Fenstertypen] detailliert beschrieben:
 
-** <<login>>
-** <<portalstartseite>>
-** <<dashboard-unterseite>>
-** <<applikationsseite>>
-** <<applikations-detailseite>>
+** xref:07-design-pattern.adoc#login[Login]
+** xref:07-design-pattern.adoc#portalstartseite[Portalstartseite]
+** xref:07-design-pattern.adoc#dashboard-unterseite[Dashboard-Unterseite]
+** xref:07-design-pattern.adoc#applikationsseite[Applikationsseite]
+** xref:07-design-pattern.adoc#applikations-detailseite[Applikations-Detailseite]
 
 [[modalarme-interaktionen]]
 === Modalarme Interaktionen (Grundsatz)

@@ -1,7 +1,7 @@
 [[eingabehilfen-und-fehlermeldungen]]
 == Eingabehilfen und Fehlermeldungen
 
-Eingabehilfen und Fehlermeldungen sind essenziell wichtig, um die <<usability-und-benutzerfreundlichkeit,Benutzerfreundlichkeit>> eines Frontends zu erhöhen.
+Eingabehilfen und Fehlermeldungen sind essenziell wichtig, um die xref:01-einfuehrung.adoc#usability-und-benutzerfreundlichkeit[Benutzerfreundlichkeit] eines Frontends zu erhöhen.
 Im folgenden Kapitel werden die Grundlagen zur erfolgreichen Gestaltung von Eingabehilfen und Fehlermeldungen erläutert.
 
 [[eingabehilfen]]
@@ -10,8 +10,8 @@ Im folgenden Kapitel werden die Grundlagen zur erfolgreichen Gestaltung von Eing
 [[gute-labels]]
 ==== Korrekte Labels
 
-Auch <<label,Labels>> gelten als Eingabehilfen.
-Klare und präzise Beschriftungen (Labels) sind für die Benutzerführung entscheidend, insbesondere für <<formulare>> und <<eingabefeld,Eingabefelder>>.
+Auch xref:04-basiselemente.adoc#label[Labels] gelten als Eingabehilfen.
+Klare und präzise Beschriftungen (Labels) sind für die Benutzerführung entscheidend, insbesondere für xref:05-benutzereingaben.adoc#benutzereingaben[Benutzereingaben] und xref:06-bedienelemente.adoc#eingabefeld[Eingabefelder].
 Jedes Eingabefeld muss ein entsprechendes Label haben, das den Nutzenden genau sagt, welche Art von Information erwartet wird.
 Beispielsweise sollte ein Anmeldeformular separate Felder für "Anmeldename" und "Passwort" haben, jeweils mit deutlich sichtbaren Labels.
 
@@ -19,8 +19,8 @@ Beispielsweise sollte ein Anmeldeformular separate Felder für "Anmeldename" und
 ==== Gute Platzhaltertexte
 
 Platzhaltertexte sind nützlich, um Nutzenden zusätzliche Hinweise oder Beispiele für die erwarteten Eingaben zu geben.
-Sie sollten jedoch nicht als Ersatz für <<label,Labels>> dienen.
-Idealerweise sollten Platzhaltertexte kurz und prägnant sein, um den Nutzenden zu helfen, die Anforderungen des jeweiligen <<eingabefeld,Eingabefelds>> besser zu verstehen, ohne den Platz zu überladen oder den Fokus zu stören.
+Sie sollten jedoch nicht als Ersatz für xref:04-basiselemente.adoc#label[Labels] dienen.
+Idealerweise sollten Platzhaltertexte kurz und prägnant sein, um den Nutzenden zu helfen, die Anforderungen des jeweiligen xref:06-bedienelemente.adoc#eingabefeld[Eingabefelds] besser zu verstehen, ohne den Platz zu überladen oder den Fokus zu stören.
 
 *_Beispiel 1:_*
 Es wird ein Nachname im Eingabefeld erwartet
@@ -40,19 +40,19 @@ Es wird eine Telefonnummer erwartet
 *Don't:*
 Deine Telefon- oder Handynummer
 
-Sobald die Nutzenden in das Eingabefeld klicken, wird der Platzhalter ausgeblendet und es besteht die Möglichkeit, eine Mask anzeigen zu lassen (siehe Kapitel <<eingabefeld,Eingabefelder>>).
+Sobald die Nutzenden in das Eingabefeld klicken, wird der Platzhalter ausgeblendet und es besteht die Möglichkeit, eine Mask anzeigen zu lassen (siehe Kapitel xref:06-bedienelemente.adoc#eingabefeld[Eingabefelder]).
 Sie geben das gewünschte Eingabepattern vor und lassen sich fast vollständig frei gestalten.
 
 *_Gute Hinweistexte zur Erläuterung bei Eingabefeldern und Fehlermeldungen:_*
 
-Bei komplexeren <<formulare,Formularen>> oder spezifischen Eingabeanforderungen können Hinweistexte hilfreich sein, um den Nutzenden zusätzliche Anleitungen oder Kontext zu bieten.
+Bei komplexeren xref:05-benutzereingaben.adoc#benutzereingaben[Formularen] oder spezifischen Eingabeanforderungen können Hinweistexte hilfreich sein, um den Nutzenden zusätzliche Anleitungen oder Kontext zu bieten.
 Diese Texte sollten in der Nähe des entsprechenden Eingabefelds platziert werden und sollten klar und präzise sein.
 Sie können beispielsweise erklären, welche Art von Informationen erwartet wird oder auf spezielle Formatierungsanforderungen hinweisen.
 
 [[autosuggestion]]
 ==== Autosuggestion
 
-Autosuggestion ist eine Zusatzfunktion, die in <<eingabefeld,Eingabefeldern>> ergänzt werden kann.
+Autosuggestion ist eine Zusatzfunktion, die in xref:06-bedienelemente.adoc#eingabefeld[Eingabefeldern] ergänzt werden kann.
 Sie dient dazu, Eingaben durch Vorschläge zu vervollständigen und somit zu beschleunigen.
 Diese Eingabehilfe erscheint direkt unter dem Textfeld.
 Sie schließt sich, wenn Nutzende neben die Eingabehilfe klicken oder innerhalb der Eingabehilfe ihre Auswahl treffen.
@@ -100,11 +100,11 @@ Der Fortschritts-Spinner empfiehlt sich aufgrund seiner geringen Maße insbesond
 ==== System-Meldungen
 
 Beim Verfassen von System-Benachrichtigungen - wie beispielsweise <<fehlermeldungen>> - muss auf eine verständliche und konsistente Formulierung geachtet werden.
-Neben <<image-eingabefelderror,Fehlermeldungen, die am Eingabeobjekt auftreten>>, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden.
+Neben Fehlermeldungen, die am Eingabeobjekt auftreten, kann zusätzlich ein zusammenfassender Hinweis angezeigt werden.
 
 Dynamisch nachgeladene Meldungen müssen auch für Screenreader wahrnehmbar sein, damit alle Nutzenden die Hinweise erfassen können.
 Nicht blockierende Benachrichtigungen müssen eine Schließen-Aktion anbieten.
-Um die <<barrierefreiheit>> einzuhalten, muss die Benachrichtigung dauerhaft eingeblendet bleiben, bis sie von den Nutzenden geschlossen wird, siehe https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html[WCAG 2.1 SC 1.4.13].
+Um die xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] einzuhalten, muss die Benachrichtigung dauerhaft eingeblendet bleiben, bis sie von den Nutzenden geschlossen wird, siehe https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html[WCAG 2.1 SC 1.4.13].
 
 Folgende Meldungsarten können als nicht blockierende Benachrichtigung verwendet werden:
 
@@ -119,7 +119,7 @@ include::partial$example-link-card.adoc[]
 
 *_Hinweisdialoge und -popups_*
 
-Siehe <<meldungsdialoge,Meldungsdialoge>>, <<benachrichtigungen,Benachrichtigungen>> und <<container-overlays,Container und Overlays>>.
+Siehe xref:07-design-pattern.adoc#meldungsdialoge[Meldungsdialoge], xref:07-design-pattern.adoc#benachrichtigungen[Benachrichtigungen] und xref:07-design-pattern.adoc#container-overlays[Container und Overlays].
 
 *_Dos_*
 
@@ -152,7 +152,7 @@ Es sind maximal 20 Zeichen möglich.“
 
 Fehlermeldungen sind unvermeidlich, aber wie sie präsentiert werden, kann einen großen Unterschied für die Benutzererfahrung bedeuten.
 Fehlermeldungen sollten gut sichtbar und in verständlicher Sprache verfasst sein sowie klare Anweisungen zur Behebung des Fehlers enthalten.
-Idealerweise sollten Fehlermeldungen in unmittelbarer Nähe von betroffenen Objekten platziert werden (siehe als Beispiel: <<image-eingabefelderror,Eingabefelder - Fehlermeldung>>), um Nutzenden sofortiges Feedback zu geben und sie bei der Fehlerbehebung zu unterstützen.
+Idealerweise sollten Fehlermeldungen in unmittelbarer Nähe von betroffenen Objekten platziert werden (siehe als Beispiel: Eingabefelder - Fehlermeldung), um Nutzenden sofortiges Feedback zu geben und sie bei der Fehlerbehebung zu unterstützen.
 Neben Fehlermeldungen, die am Eingabeobjekt auftreten, kann zusätzlich ein zusammenfassender Hinweis, wie im Kapitel <<system-meldungen>> beschrieben, angezeigt werden.
 
 Ein häufig gemachter Fehler ist dabei die Verwendung von negativ anmutenden Formulierungen, die Benutzende demotivieren können.

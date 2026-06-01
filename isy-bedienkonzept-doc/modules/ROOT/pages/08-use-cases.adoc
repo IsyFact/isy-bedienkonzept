@@ -2,7 +2,7 @@
 == Use Cases
 
 Use Cases stellen typische Szenarien oder Seiten dar, die bestimmte Funktionalitäten oder Aktionen erfordern.
-Dieser Abschnitt kombiniert <<design-pattern,Design Patterns>>, um benutzerfreundliche Lösungen für spezifische Anwendungsfälle zu präsentieren und ihre Umsetzung anhand von Beispiel-Screens zu veranschaulichen.
+Dieser Abschnitt kombiniert xref:07-design-pattern.adoc#design-pattern[Design Patterns], um benutzerfreundliche Lösungen für spezifische Anwendungsfälle zu präsentieren und ihre Umsetzung anhand von Beispiel-Screens zu veranschaulichen.
 
 [[formulare]]
 === Formulare
@@ -17,8 +17,8 @@ Dabei sind alle Spalten innerhalb eines Formulars gleich breit aufgebaut.
 .Drei-Spalten Layout
 image::24_UC_3_spalten.png[align="center"]
 
-Formulare bestehen mindestens aus einer <<eingabefeldgruppen,Eingabefeldgruppe>> und einer beliebigen Anzahl weiterer Elemente.
-Alle Regeln für <<eingabefeld,Eingabefelder>> und <<label>> haben hier auch ihre Gültigkeit.
+Formulare bestehen mindestens aus einer xref:07-design-pattern.adoc#eingabefeldgruppen[Eingabefeldgruppe] und einer beliebigen Anzahl weiterer Elemente.
+Alle Regeln für xref:06-bedienelemente.adoc#eingabefeld[Eingabefelder] und xref:04-basiselemente.adoc#label[Label] haben hier auch ihre Gültigkeit.
 
 Die inhaltliche Gruppierung folgt dabei keinem starren Muster, sondern kann fachlich entsprechend angepasst werden.
 Diese Gruppierung der Inhalte kann dabei sowohl horizontal als auch vertikal gestaltet werden.

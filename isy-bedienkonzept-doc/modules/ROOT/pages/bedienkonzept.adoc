@@ -2,27 +2,7 @@
 
 glossary:licence:partial$licence.adoc
 
-include::partial$bedienkonzept/01-einfuehrung.adoc[]
-
-include::partial$bedienkonzept/02-barrierefreiheit.adoc[]
-
-include::partial$bedienkonzept/03-fenstertypen-und-layout.adoc[]
-
-include::partial$bedienkonzept/04-basiselemente.adoc[]
-
-include::partial$bedienkonzept/05-benutzereingaben.adoc[]
-
-include::partial$bedienkonzept/06-bedienelemente.adoc[]
-
-include::partial$bedienkonzept/07-design-pattern.adoc[]
-
-include::partial$bedienkonzept/09-eingabehilfen-und-fehlermeldungen.adoc[]
-
-include::partial$bedienkonzept/11-normative-gesamtmatrix.adoc[]
-
-// Nicht Bestandteil der veröffentlichten Version 1.0:
-// include::partial$bedienkonzept/draft/08-use-cases.adoc[]
-// include::partial$bedienkonzept/draft/10-design-richtlinien.adoc[]
+include::01-einfuehrung.adoc[]
 
 :example-link-component!:
 :example-link-url!:
