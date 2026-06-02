@@ -1,0 +1,494 @@
+[[normative-gesamtmatrix]]
+== Normative Gesamtmatrix
+
+=== Normative Bezüge
+
+[cols="1,1,1,2", options="header"]
+|===
+| Anforderung | Kapitel | Normbezug | Akzeptanzkriterium
+
+| xref:03-fenstertypen-und-layout.adoc#r-nutzungsbandbreite[Nutzungsbandbreite 320-≥1920 px]
+| Fenstertypen und Layout / Resizing
+| WCAG 2.1 SC 1.4.10
+| Ab 320 CSS-px ohne 2-D-Scroll; Hauptinhalt bleibt lesbar/zentriert.
+
+| xref:03-fenstertypen-und-layout.adoc#r-textvergroesserung-200[200 % Text-Resize]
+| Fenstertypen und Layout / Resizing
+| WCAG 2.1 SC 1.4.4
+| Bei 200 % keine Funktions-/Informationsverluste.
+
+| xref:03-fenstertypen-und-layout.adoc#r-reflow-400[Reflow 400 %/320 px ohne X-Scroll]
+| Fenstertypen und Layout / Resizing
+| WCAG 2.1 SC 1.4.10
+| Im Fließtext bei 400 %/320 px kein horizontales Scrollen.
+
+| xref:03-fenstertypen-und-layout.adoc#r-keine-layoutspruenge[Reflow ohne Layoutsprünge]
+| Fenstertypen und Layout / Resizing
+| WCAG 2.1 SC 1.4.10
+| Dynamik (Bilder/Fehler/Platzhalter) erzeugt keine Sprünge.
+
+| xref:03-fenstertypen-und-layout.adoc#r-fokus-nicht-ueberdeckt[Fokus nicht verdeckt (Sticky/Overlays)]
+| Fenstertypen und Layout / Resizing
+| WCAG 2.1 SC 2.4.7
+| Fokusindikator stets sichtbar, nicht überlagert.
+
+| xref:03-fenstertypen-und-layout.adoc#r-spaltenreduktion-3-2-1[Spaltenreduktion 3→2→1]
+| Fenstertypen und Layout / Resizing
+| WCAG 2.1 SC 1.4.10
+| Reflow in Stufen ohne Informationsverlust.
+
+| xref:03-fenstertypen-und-layout.adoc#r-konsistente-abstaende[Konsistente Abstände / Text-Spacing]
+| Fenstertypen und Layout / Resizing
+| WCAG 2.1 SC 1.4.12
+| Erhöhtes Spacing bricht Layout nicht.
+
+| xref:03-fenstertypen-und-layout.adoc#r-keine-festen-breiten[Keine festen Pixelbreiten]
+| Fenstertypen und Layout / Resizing
+| WCAG 2.1 SC 1.4.10
+| Keine Hard-Widths, die X-Scroll erzwingen.
+
+| xref:03-fenstertypen-und-layout.adoc#r-kontextabhaengige-dichte[Kontextabhängige Dichte]
+| Fenstertypen und Layout / Resizing
+| WCAG 2.1 SC 1.4.12
+| Bei hohem Zoom wachsen Zeilenhöhe/Targets leicht.
+
+| xref:03-fenstertypen-und-layout.adoc#r-label-feld-naehe[Label-Feld-Nähe & Semantik]
+| Fenstertypen und Layout / Formulare
+| WCAG 2.1 SC 1.3.1 / 3.3.2
+| Labels programmatisch zugeordnet, visuell feldnah.
+
+| xref:03-fenstertypen-und-layout.adoc#r-formular-einspaltig[Formulare einspaltig (schmal)]
+| Fenstertypen und Layout / Formulare
+| WCAG 2.1 SC 1.4.10
+| Unterhalb Mid-Breakpoint linearisiert.
+
+| xref:03-fenstertypen-und-layout.adoc#r-fehlermeldungen-feldnah[Feldnahe Fehlermeldungen]
+| Fenstertypen und Layout / Formulare
+| WCAG 2.1 SC 3.3.1 / 3.3.3
+| Fehler feldnah, verständlich; Layout bleibt ruhig.
+
+| xref:03-fenstertypen-und-layout.adoc#r-tastatur-fokusreihenfolge[Tastatur: Fokusreihenfolge]
+| Fenstertypen und Layout / Allgemein
+| WCAG 2.1 SC 2.1.1 / 2.4.3
+| Vollständige Tastaturbedienung ohne Sprünge.
+
+| xref:03-fenstertypen-und-layout.adoc#r-tabellen-responsiv[Tabellen responsiv (gestapelt/X-Scroll)]
+| Fenstertypen und Layout / Tabellen
+| WCAG 2.1 SC 1.4.10 / 1.3.1
+| Schmal: gestapelt mit Labels; breit: X-Scroll, Köpfe sichtbar.
+
+| xref:03-fenstertypen-und-layout.adoc#r-tabellen-priorisierung[Wesentliches priorisieren]
+| Fenstertypen und Layout / Tabellen
+| WCAG 2.1 SC 1.3.1
+| Kernspalten sichtbar; Details ausgelagert.
+
+| xref:03-fenstertypen-und-layout.adoc#r-tabellen-stabilitaet[Stabile Leer-/Lade-/Fehlerzustände]
+| Fenstertypen und Layout / Tabellen
+| WCAG 2.1 SC 1.4.10
+| Zustände belegen konstanten Raum; keine Sprünge.
+
+| xref:03-fenstertypen-und-layout.adoc#r-zielgroessen-minimum[Zielgrößen ≥ 24×24 (44×44 empfohlen)]
+| Fenstertypen und Layout / Barrierefreies Layoutverhalten
+| WCAG 2.1 AA
+| Ziele ≥ 24×24 px; Touch 44×44 empfohlen.
+
+| xref:03-fenstertypen-und-layout.adoc#r-fokus-sichtbarkeit-reihenfolge[Fokus sichtbar & Reihenfolge korrekt]
+| Fenstertypen und Layout / Barrierefreies Layoutverhalten
+| WCAG 2.1 SC 2.4.7 / 2.4.3
+| Fokus klar sichtbar, nicht verdeckt; Reihenfolge logisch.
+
+| xref:03-fenstertypen-und-layout.adoc#r-lange-inhalte-zugriff[Lange Inhalte: Zugriff behalten]
+| Fenstertypen und Layout / Barrierefreies Layoutverhalten
+| WCAG 2.1 SC 1.4.13 / 1.4.10
+| Gekürztes via Tooltip/Detail vollständig zugänglich.
+
+| xref:03-fenstertypen-und-layout.adoc#r-scrollrichtung-vertikal[Primär vertikales Scrollen]
+| Fenstertypen und Layout / Barrierefreies Layoutverhalten
+| WCAG 2.1 SC 1.4.10
+| X-Scroll nur, wenn fachlich nötig.
+
+| xref:03-fenstertypen-und-layout.adoc#r-header-barrierefrei[Header barrierefrei]
+| Fenstertypen und Layout / Header
+| WCAG 2.1 SC 2.4.3 / 2.4.7 / 1.4.11
+| Tastaturbedienbar; Fokus sichtbar; UI-Kontraste erfüllt.
+
+| xref:03-fenstertypen-und-layout.adoc#r-skip-link[Bypass Blocks / Skip-Link]
+| Fenstertypen und Layout / Header
+| WCAG 2.1 SC 2.4.1
+| Fokussierbarer „Zum Inhalt springen“-Link setzt den Fokus korrekt ins `<main>`.
+
+| xref:03-fenstertypen-und-layout.adoc#r-landmarks[Semantische Landmark-Struktur]
+| Fenstertypen und Layout / Header
+| WCAG 2.1 SC 1.3.1 / Technik ARIA11
+| Eindeutige Landmarks: ein `<header>`/banner, benannte `<nav>`, genau ein `<main>`.
+
+| xref:03-fenstertypen-und-layout.adoc#r-konsistente-navigation[Konsistente Navigation & Identifikation]
+| Fenstertypen und Layout / Header
+| WCAG 2.1 SC 3.2.3 / 3.2.4
+| Reihenfolge/Bezeichnungen wiederkehrender Navigation bleiben konsistent.
+
+| xref:03-fenstertypen-und-layout.adoc#r-druck-print-stylesheet[Print-Stylesheet & @page]
+| Fenstertypen und Layout / Drucklayout
+| CSS Paged Media
+| Druck/PDF via `@media print` + `@page` (Format, Ränder, Kopf/Fuß).
+
+| xref:03-fenstertypen-und-layout.adoc#r-druck-fragmentierung[Seitenumbrüche stabil]
+| Fenstertypen und Layout / Drucklayout
+| CSS Fragmentation
+| `break-inside: avoid` verhindert „Zerschneiden“.
+
+| xref:03-fenstertypen-und-layout.adoc#r-druck-farbanpassung[Farbhandhabung im Druck]
+| Fenstertypen und Layout / Drucklayout
+| CSS Color Adjustment
+| `print-color-adjust` (ggf. `exact`) steuert Farbwiedergabe.
+
+| xref:03-fenstertypen-und-layout.adoc#r-druck-margin-boxes[@page Margin-Boxes (Chromium ≥ 131)]
+| Fenstertypen und Layout / Drucklayout
+| CSS Paged Media - Margin Boxes
+| Kopf-/Fußinhalte via Margin-Boxes; progressive Fallbacks.
+
+| xref:05-benutzereingaben.adoc#r-input-erkennbarkeit[Interaktive Elemente erkennbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 1.3.1 / 4.1.2
+| Interaktive Elemente sind semantisch korrekt ausgezeichnet und programmatisch identifizierbar.
+
+| xref:05-benutzereingaben.adoc#r-input-label-zuordnung[Beschriftung programmatisch zugeordnet]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 1.3.1 / 4.1.2
+| Eingabefelder sind eindeutig beschriftet und programmatisch zugeordnet.
+
+| xref:05-benutzereingaben.adoc#r-input-konsistenz[Konsistentes Verhalten]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 3.2.3 / 3.2.4
+| Gleichartige Elemente verhalten sich konsistent und erwartungskonform.
+
+| xref:05-benutzereingaben.adoc#r-input-zustandswahrnehmung[Zustandsänderungen wahrnehmbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 4.1.3
+| Zustandsänderungen sind wahrnehmbar und werden assistiven Technologien mitgeteilt.
+
+| xref:05-benutzereingaben.adoc#r-input-keine-farbalternative[Information nicht nur über Farbe]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 1.4.1
+| Informationen werden nicht ausschließlich über Farbe vermittelt.
+
+| xref:05-benutzereingaben.adoc#r-input-vorhersehbarkeit[Keine unerwarteten Kontextwechsel]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 3.2.2 / 3.2.3
+| Keine unerwarteten Kontextwechsel oder automatischen Statusänderungen ohne Nutzeraktion.
+
+| xref:05-benutzereingaben.adoc#r-input-reversibilitaet[Reversibilität kritischer Aktionen]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 3.3.4
+| Kritische Aktionen sind reversibel oder erfordern Bestätigung.
+
+| xref:05-benutzereingaben.adoc#r-input-zustand-unterscheidbar[Zustände unterscheidbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 1.4.11
+| Zustände erfüllen Mindestkontrastanforderungen für Nicht-Text-Inhalte.
+
+| xref:05-benutzereingaben.adoc#r-input-deaktiviert-erkennbar[Deaktivierte Elemente erkennbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 1.3.1 / 4.1.2
+| Deaktivierte oder schreibgeschützte Elemente sind programmatisch erkennbar.
+
+| xref:05-benutzereingaben.adoc#r-input-pflichtfelder[Pflichtfelder gekennzeichnet]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 3.3.2
+| Eingabeanforderungen sind klar kommuniziert.
+
+| xref:05-benutzereingaben.adoc#r-input-fehler-nicht-nur-farbe[Fehler nicht nur farblich]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 1.4.1
+| Fehlerzustände sind nicht ausschließlich farblich hervorgehoben.
+
+| xref:05-benutzereingaben.adoc#r-input-zustandswechsel-stabil[Stabile Zustandsänderungen]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 3.2.2 / 1.4.10
+| Zustandsänderungen führen nicht zu unerwarteten Kontextwechseln oder Reflow-Problemen.
+
+| xref:05-benutzereingaben.adoc#r-input-tastatur[Vollständig per Tastatur bedienbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.1.1
+| Alle Funktionen sind vollständig per Tastatur nutzbar.
+
+| xref:05-benutzereingaben.adoc#r-input-keine-tastaturfalle[Keine Tastaturfalle]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.1.2
+| Der Fokus kann jederzeit weitergeführt oder verlassen werden.
+
+| xref:05-benutzereingaben.adoc#r-input-fokusreihenfolge[Logische Fokusreihenfolge]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.4.3
+| Fokus folgt einer logischen und nachvollziehbaren Reihenfolge.
+
+| xref:05-benutzereingaben.adoc#r-input-fokus-sichtbar[Fokus sichtbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.4.7
+| Aktiver Fokus ist visuell eindeutig erkennbar.
+
+| xref:05-benutzereingaben.adoc#r-input-startfokus[Sinnvoller Startfokus]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.4.3
+| Beim Öffnen neuer Kontexte wird ein sinnvoller Initialfokus gesetzt.
+
+| xref:05-benutzereingaben.adoc#r-input-fokus-rueckkehr[Fokus kehrt zurück]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.4.3
+| Nach Schließen eines Kontexts kehrt der Fokus nachvollziehbar zurück.
+
+| xref:05-benutzereingaben.adoc#r-input-enter-escape[Enter & Escape korrekt nutzbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.1.1
+| Primäraktionen sind per Tastatur auslösbar; Escape beendet Kontexte.
+
+| xref:05-benutzereingaben.adoc#r-input-shortcuts[Keine Konflikte durch Shortcuts]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.1.4
+| Tastenkombinationen beeinträchtigen keine System- oder Assistenzfunktionen.
+
+| xref:05-benutzereingaben.adoc#r-input-target-size[Mindestzielgröße eingehalten]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 AA
+| Interaktive Elemente erfüllen die im Bedienkonzept festgelegte Mindestzielgröße.
+
+| xref:05-benutzereingaben.adoc#r-input-gesten-alternative[Alternative zu komplexen Gesten]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.5.1
+| Komplexe Gesten besitzen alternative Bedienformen.
+
+| xref:05-benutzereingaben.adoc#r-input-pointer-cancel[Pointer-Aktionen abbrechbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.5.2
+| Pointer-Aktionen sind abbrechbar oder werden erst bei Abschluss ausgelöst.
+
+| xref:05-benutzereingaben.adoc#r-input-dragdrop-alternative[Alternative zu Drag-and-Drop]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.1.1
+| Drag-Bewegungen besitzen alternative Bedienwege.
+
+| xref:05-benutzereingaben.adoc#r-input-formatverhalten[Transparente Formatierung & Validierung]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 3.3.1 / 3.3.3
+| Formatierungen und Korrekturen erfolgen transparent und nachvollziehbar.
+
+| xref:05-benutzereingaben.adoc#r-input-alternative-eingabeweisen[Alternative Eingabeweisen akzeptiert]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 3.3.1 / 3.3.2
+| Alternative Eingabeweisen werden akzeptiert.
+
+| xref:05-benutzereingaben.adoc#r-input-fehler-zuordnung[Fehler feldnah identifizierbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 3.3.1 / 3.3.3
+| Fehler sind feldnah identifiziert und enthalten konkrete Hinweise.
+
+| xref:05-benutzereingaben.adoc#r-input-fehler-sichtbar[Fehlerzustände bleiben sichtbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 3.3.1
+| Fehlerzustände bleiben wahrnehmbar, bis sie behoben sind.
+
+| xref:05-benutzereingaben.adoc#r-input-fehler-uebersicht[Fehlerübersicht möglich]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 3.3.1 / 4.1.3
+| Mehrere Fehler können zusätzlich zusammengefasst dargestellt werden.
+
+| xref:05-benutzereingaben.adoc#r-input-autocomplete[Autocomplete unterstützt]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 1.3.5
+| Felder mit bekanntem Zweck unterstützen Autovervollständigung.
+
+| xref:05-benutzereingaben.adoc#r-input-ladezustand[Ladezustände erkennbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 4.1.3
+| Lade- und Validierungszustände sind programmatisch erkennbar.
+
+| xref:05-benutzereingaben.adoc#r-input-statusmeldungen[Statusmeldungen wahrnehmbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 4.1.3
+| Statusmeldungen sind wahrnehmbar ohne erzwungene Fokusübernahme.
+
+| xref:05-benutzereingaben.adoc#r-input-dynamischer-fokus[Dynamische Fokusführung]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.4.3
+| Fokus wird bei dynamischen Änderungen sinnvoll gesetzt.
+
+| xref:05-benutzereingaben.adoc#r-input-fokus-entfernung[Fokus logisch weitergeführt]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.4.3
+| Beim Entfernen eines fokussierten Elements wird der Fokus logisch weitergeführt.
+
+| xref:05-benutzereingaben.adoc#r-input-live-region[Live-Region korrekt umgesetzt]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 4.1.3
+| Status- und Fehlermeldungen werden assistiven Technologien mitgeteilt.
+
+| xref:05-benutzereingaben.adoc#r-input-komponenten-zustand[Komponenten-Zustände ermittelbar]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 1.3.1 / 4.1.2
+| Zustände interaktiver Komponenten sind programmatisch ermittelbar.
+
+| xref:05-benutzereingaben.adoc#r-input-komponenten-navigation[Konsistente Komponenten-Navigation]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 3.2.3
+| Navigation innerhalb von Komponenten ist konsistent.
+
+| xref:05-benutzereingaben.adoc#r-input-komponenten-fokus[Nachvollziehbare Fokusführung in Komponenten]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 2.4.3
+| Kontextwechsel innerhalb von Komponenten führen zu nachvollziehbarer Fokusführung.
+
+| xref:05-benutzereingaben.adoc#r-input-komponenten-aktivierungszustand[Aktivierungszustände eindeutig]
+| Benutzereingaben / Interaktion
+| WCAG 2.1 SC 4.1.2
+| Aktivierungs- und Auswahlzustände sind programmatisch identifizierbar.
+
+| xref:07-design-pattern.adoc#r-login-zentrierte-card[Zentrierte Login-Card, reflow-fähig]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 1.4.10 / 1.3.2
+| Bis 400 %/320 px einspaltig nutzbar; Struktur/Lesereihenfolge bleibt erhalten.
+
+| xref:07-design-pattern.adoc#r-login-hilfe-kontakt[Hilfe/Support unter Formular/Expander]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 4.1.2
+| Hilfe konsistent unter Formular oder im Expander; Expander fokussierbar.
+
+| xref:07-design-pattern.adoc#r-login-felder-autocomplete[autocomplete für Benutzername/Passwort]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 1.3.5
+| Felder mit `autocomplete="username"` / `autocomplete="current-password"`; Passwortmanager funktionieren.
+
+| xref:07-design-pattern.adoc#r-login-validierung-inline-global[Fehler feldnah und global, ohne Layoutsprünge]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 3.3.1 / 3.3.3 / 4.1.3
+| Fehler feldnah und global verständlich; programmatisch als Statusmeldung erkennbar.
+
+| xref:07-design-pattern.adoc#r-login-passwortmanager[„Passwort anzeigen“-Toggle tastaturbedienbar]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 2.1.1 / 4.1.2
+| Toggle tastaturbedienbar, korrekt benannt; verhindert weder Einfügen noch Autofill.
+
+| xref:07-design-pattern.adoc#r-dashboard-grid[Dashboard-Grid 3→2→1, kein X-Scroll]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 1.4.10
+| Dashboard reflowt 3→2→1 bis 400 %/320 px; kein horizontales Scrollen.
+
+| xref:07-design-pattern.adoc#r-dashboard-zustaende[Leere/Lade/Fehler stabil, ohne Layoutsprünge]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 1.4.10 / 4.1.3
+| Leer-/Lade-/Fehlerzustände klar als Status erkennbar; keine Layoutsprünge.
+
+| xref:07-design-pattern.adoc#r-dsub-bezug[Unterseite spiegelt Titel/Icon/Farbe der Kachel]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 3.2.4
+| Titel/Icon/Farbe kennzeichnen denselben Kontext konsistent.
+
+| xref:07-design-pattern.adoc#r-dsub-navigation[„Zurück zur Übersicht“ und Vorheriges/Nächstes]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 2.4.3 / 2.4.5
+| Treffermenge seitenweise durchlaufbar; Rückkehr zur Übersicht jederzeit möglich.
+
+| xref:07-design-pattern.adoc#r-app-inhalte-dsub-layout[Unterseite: Grid 3→2→1, stabile Zustände]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 1.3.1 / 1.4.10
+| Inhalte in klaren Abschnitten; 3→2→1-Reflow ohne horizontales Scrollen.
+
+| xref:07-design-pattern.adoc#r-app-erkennbarkeit[App-Name prominent/programmatisch erkennbar]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 2.4.6
+| App-Name als Überschrift/Label klar wahrnehmbar und programmatisch identifizierbar.
+
+| xref:07-design-pattern.adoc#r-app-inhalte-dsub-layout[Abschnitte ohne Misch-Widgets; Tabs/Accordion bei Bedarf]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 1.3.1 / 1.4.10
+| Pro Abschnitt ein Inhaltstyp; umfangreiche Inhalte via Tabs/Accordion strukturiert.
+																					
+| xref:07-design-pattern.adoc#r-app-kennzeichnung[Farben/Icons konsistent, nicht allein Information]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 1.4.1 / 1.4.11
+| Farben/Icons kennzeichnen Apps konsistent; Information nicht nur über Farbe; Nicht-Text-Kontrast erfüllt.
+
+| xref:07-design-pattern.adoc#r-detail-titelzeile[Titelzeile Pflicht; Kontext eindeutig]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 2.4.6
+| Titelzeile benennt Objekt und Kontext eindeutig; fungiert als Überschrift.
+
+| xref:07-design-pattern.adoc#r-detail-toolbar[Toolbar konsistent; Enter/Esc-Konvention]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 2.1.1 / 3.2.3
+| Toolbar einheitlich, vollständig tastaturbedienbar; Verhalten appweit konsistent.
+
+| xref:07-design-pattern.adoc#r-detail-tabs-accordion[Tabs für gleichrangig; Accordion für optional]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 1.3.1 / 1.4.10
+| Gleichrangiges in Tabs, optional/nachgeordnet in Accordions; Gliederung bleibt auch bei Reflow klar.																			 
+
+| xref:07-design-pattern.adoc#r-overlays-tastatur[Tastaturbedienbarkeit Overlays]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 2.1.1 / 2.1.2 / 2.4.7
+| Overlays vollständig per Tastatur bedienbar; sichtbarer Fokus; keine Tastaturfalle.
+
+| xref:07-design-pattern.adoc#r-overlays-fokus[Fokusführung Overlays]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 2.4.3 / 2.4.7
+| Beim Öffnen sinnvoller Initialfokus; Fokusreihenfolge folgt der visuellen Struktur.
+
+| xref:07-design-pattern.adoc#r-overlays-name-rolle-wert[Overlays programmatisch erkennbar (Name/Rolle/Wert)]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 4.1.2
+| Overlays und Controls mit programmatisch ermittelbarem Name/Rolle/Zustand; modale Overlays nutzen `aria-modal`.
+
+| xref:07-design-pattern.adoc#r-overlays-reflow[Overlays: Reflow & Responsivität]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 1.4.10
+| Bis 400 %/320 px ohne horizontales Scrollen nutzbar; Inhalte/Funktionen bleiben erhalten.
+
+| xref:07-design-pattern.adoc#r-dialoge-modalitaet[Dialoge: Modalität nur bei Erforderlichkeit]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 3.3.4
+| Stark modale Dialoge nur bei rechtlich/finanziell/datenkritischen Aktionen; unterstützen Prüfen/Bestätigen.
+
+| xref:07-design-pattern.adoc#r-meldungsdialoge-einsatzfaelle[Meldungsdialoge: zwingende Einsatzfälle]
+| Design Patterns / Fenstertypen
+| WCAG 2.1 SC 3.3.4
+| Meldungsdialoge sperren Hintergrund nur bei irreversiblen, sicherheitskritischen Aktionen oder drohendem Datenverlust; sonst modalarme Muster.
+
+| xref:07-design-pattern.adoc#r-bestaetigen-undo[Bestätigen und Rückgängig: Rückgängig-Option]
+| Design Patterns / Interaktionsmuster
+| WCAG 2.1 SC 3.3.4 / 4.1.3
+| Reversible Aktionen mit zeitlich begrenzter Rückgängig-Option; Status-/Rückgängig-Meldungen programmatisch als Status erkennbar (z. B. `aria-live`).
+
+| xref:07-design-pattern.adoc#r-inlineedit-validierung[Inline-Edit: Validierung & Fehlerbeschreibung]
+| Design Patterns / Interaktionsmuster
+| WCAG 2.1 SC 3.3.1 / 3.3.3 / 4.1.3
+| Fehler feldnah textlich beschrieben, ggf. zusammengefasst; konkrete Korrekturhinweise; Zuordnung z. B. via `aria-describedby`.
+
+| xref:07-design-pattern.adoc#r-drilldown-fokus-rueckkehr[Drill-Down: Fokusführung & Rückkehr]
+| Design Patterns / Interaktionsmuster
+| WCAG 2.1 SC 2.4.3 / 2.4.7
+| Initialfokus in Detailansicht sinnvoll; beim Zurückkehren Fokus auf Auslöser/Zeile/Karte; keine „Fokus-Verluste“.
+
+| xref:07-design-pattern.adoc#r-drilldown-validierung[Drill-Down: Fehlerzusammenfassung & Sprünge]
+| Design Patterns / Interaktionsmuster
+| WCAG 2.1 SC 3.3.1 / 3.3.3 / 4.1.3
+| Fehler feldnah und optional als Sprungliste zusammengefasst; Fokus zur Zusammenfassung oder zum ersten fehlerhaften Feld.
+
+| xref:07-design-pattern.adoc#r-benachrichtigungen-status[Benachrichtigungen: Statusmeldungen ohne Fokus-Hijack]
+| Design Patterns / Interaktionsmuster
+| WCAG 2.1 SC 4.1.3
+| Benachrichtigungen per `aria-live` angekündigt, ohne Fokuswechsel; Schweregrad und nächste Schritte sprachlich beschrieben.
+
+| xref:07-design-pattern.adoc#r-stepper-validierung[Stepper: Validierung und Fehlerbehandlung]
+| Design Patterns / Interaktionsmuster
+| WCAG 2.1 SC 3.3.1 / 3.3.3
+| Ungültige Pflichtfelder verhindern Fortfahren; Fehler textlich gekennzeichnet und ggf. zusammengefasst.
+
+| xref:07-design-pattern.adoc#r-stepper-navigation[Stepper: Fokusführung & Tastaturbedienung]
+| Design Patterns / Interaktionsmuster
+| WCAG 2.1 SC 2.1.1 / 2.4.3 / 2.4.7
+| Stepper vollständig tastaturbedienbar; Fokus springt beim Schrittwechsel nachvollziehbar zur Überschrift oder zum ersten Inhalt.
+
+| xref:07-design-pattern.adoc#r-stepper-reflow[Stepper: Zustände & Reflow]
+| Design Patterns / Interaktionsmuster
+| WCAG 2.1 SC 1.4.10
+| Stepper reflowt 3→2→1 ohne horizontales Scrollen; Leer/Lade/Fehlerzustände verursachen keine störenden Layoutsprünge.
+|===

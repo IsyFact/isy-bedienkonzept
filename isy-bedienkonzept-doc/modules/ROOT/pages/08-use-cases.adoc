@@ -1,0 +1,89 @@
+[[use-cases]]
+== Use Cases
+
+Use Cases stellen typische Szenarien oder Seiten dar, die bestimmte Funktionalitäten oder Aktionen erfordern.
+Dieser Abschnitt kombiniert xref:07-design-pattern.adoc#design-pattern[Design Patterns], um benutzerfreundliche Lösungen für spezifische Anwendungsfälle zu präsentieren und ihre Umsetzung anhand von Beispiel-Screens zu veranschaulichen.
+
+[[formulare]]
+=== Formulare
+
+Inhalte von Formularen sollten sich an einem virtuellen, nicht visuell dargestellten Raster ausrichten.
+Formulare sollen einem einspaltigen, zweispaltigen oder dreispaltigen Layout folgen.
+Dabei sind alle Spalten innerhalb eines Formulars gleich breit aufgebaut.
+
+*_Beispielhaftes Formular dreispaltig:_*
+
+[[image-dreispaltenlayout]]
+.Drei-Spalten Layout
+image::24_UC_3_spalten.png[align="center"]
+
+Formulare bestehen mindestens aus einer xref:07-design-pattern.adoc#eingabefeldgruppen[Eingabefeldgruppe] und einer beliebigen Anzahl weiterer Elemente.
+Alle Regeln für xref:06-bedienelemente.adoc#eingabefeld[Eingabefelder] und xref:04-basiselemente.adoc#label[Label] haben hier auch ihre Gültigkeit.
+
+Die inhaltliche Gruppierung folgt dabei keinem starren Muster, sondern kann fachlich entsprechend angepasst werden.
+Diese Gruppierung der Inhalte kann dabei sowohl horizontal als auch vertikal gestaltet werden.
+Hierbei ist wichtig, dass die Inhaltselemente über eine Gruppenüberschrift logisch zusammengefasst werden.
+
+*_Exemplarische inhaltliche Nutzung der Spalten:_*
+
+[[image-vertikalerschnitt]]
+.Drei-Spalten Layout mit unterschiedlich breiten inhaltlichen Gruppen
+image::24_UC_vertikaler_schnitt.png[align="center"]
+
+Durch die saubere Anwendung der Gruppenüberschriften, Titel und Eingabefeldgruppen ist auch ein Wechsel der vertikalen Gruppierungsgröße nicht negativ auffällig.
+Jede inhaltliche Gruppe (dreispaltig in der ersten Gruppe (rosa, orange, gelb) und einspaltig in der nächsten Gruppe (grün)) wird ganzheitlich als logisches Element wahrgenommen.
+
+*_Wahrnehmung der inhaltlichen Gruppen:_*
+
+[[image-wahrnehmunghorizontalegruppe]]
+.Wahrnehmung der inhaltlichen Gruppen Hierarchie
+image::24_UC_horizontale_inhaltlichte_gruppe.png[align="center"]
+
+Gleichmäßige Feldlängen unterstützen den Lesefluss der Nutzenden.
+Die letzten Eingabefelder können bei Bedarf ihrem Inhalt entsprechend gekürzt werden.
+Dies unterstützt die inhaltlich logische Gruppierung und signalisiert den Nutzenden auch visuell ein Ende der inhaltlichen Gruppe.
+
+Bei geringeren Auflösungen sollten Eingabefelder untereinander angeordnet werden, um sich der begrenzten Breite anzupassen.
+
+Die Größenanpassung erfolgt innerhalb von gewissen Bereichen:
+
+* Wird das Browserfenster kleiner als der darzustellende Inhalt (in der Regel bei Tablets und Smartphones), so wird das gesamte Fenster vertikal scrollbar.
+* Der vertikale Abstand zwischen Gruppen und Eingabefeldern bleibt unabhängig von der Bildschirmgröße konstant.
+* Der Abstand zwischen Eingabefeldern und Labeln bleibt ebenfalls unverändert.
+* Bei einer Veränderung der Browserfenster-Größe sollte sich die Breite der Spalten dynamisch an den verfügbaren Platz anpassen, ohne dabei die Lesbarkeit zu beeinträchtigen.
+
+*_Beispielhafte Gesamtumsetzung eines Formulars im Anwendungsrahmen:_*
+
+[[image-beispielgesamtumsetzung]]
+.Beispielhafte Gesamtumsetzung eines Beispielformulars im Anwendungsrahmen
+image::24_UC_fullexample_formular.png[align="center"]
+
+[[login-form]]
+=== Login
+
+*WiP*
+
+[[objekt-suche]]
+=== Objekt suchen
+
+*WiP*
+
+[[objekt-anzeigen]]
+=== Objekt anzeigen
+
+*WiP*
+
+[[objekt-beabeiten]]
+=== Objekt bearbeiten
+
+*WiP*
+
+[[objekt-loeschen]]
+=== Objekt löschen
+
+*WiP*
+
+[[objekt-neu-anlegen]]
+=== Objekt neu anlegen
+
+*WiP*

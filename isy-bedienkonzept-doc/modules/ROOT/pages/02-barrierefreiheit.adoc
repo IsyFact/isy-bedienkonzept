@@ -1,0 +1,288 @@
+[[barrierefreiheit]]
+== Barrierefreiheit
+
+Barrierefreiheit setzt das Prinzip der Zugänglichkeit um.
+Das heißt: Ein Frontend muss von allen Nutzenden unabhängig von ihren individuellen Fähigkeiten oder Einschränkungen verwendet werden können.
+Für dieses Bedienkonzept wird Barrierefreiheit über die Web Content Accessibility Guidelines (WCAG) 2.1 auf Konformitätsstufe AA konkretisiert.
+
+Die relevanten Regelwerke stehen dabei in folgendem Zusammenhang:
+
+* Die *Web Content Accessibility Guidelines (WCAG) 2.1* sind der internationale technische Standard für barrierefreie Webinhalte.
+Sie beschreiben testbare Erfolgskriterien und bilden damit die maßgebliche Grundlage für die konkrete Umsetzung im Frontend.
+* Die *EN 301 549* ist die europäische Norm für die Barrierefreiheit von IKT-Produkten und -Diensten.
+Für Webinhalte verweist sie auf Anforderungen der WCAG und ordnet diese in einen europäischen Normenkontext ein.
+* Die *BITV 2.0* ist die deutsche Verordnung zur Barrierefreiheit von Informationstechnik.
+Sie setzt die Anforderungen für öffentliche Stellen des Bundes rechtlich um und verweist auf die jeweils maßgeblichen harmonisierten europäischen Normen.
+
+Für die weitere Ausgestaltung dieses Bedienkonzepts ist ausschließlich die *WCAG 2.1 auf Konformitätsstufe AA* maßgeblich.
+Verweise in den folgenden Kapiteln beziehen sich daher nur auf die WCAG 2.1.
+Durch die Umsetzung der WCAG 2.1 AA werden die für Webinhalte relevanten Anforderungen aus EN 301 549 und BITV 2.0 mit berücksichtigt.
+
+Die detaillierten Anforderungen sind zu finden unter:
+
+* https://www.w3.org/TR/WCAG21/[WCAG 2.1]
+* https://www.etsi.org/deliver/etsi_en/301500_301599/301549/[EN 301 549]
+* https://www.gesetze-im-internet.de/bitv_2_0/[BITV 2.0]
+
+Vor der Auflistung der einzelnen Kriterien sind im Kontext der IsyFact einige Kriterien der Barrierefreiheit besonders herauszustellen und bereits bei der fachlichen Konzeption zu berücksichtigen.
+In der Regel sind die genannten Anforderungen durch die Nutzung der Standardelemente der IsyFact erfüllt oder es wird die Möglichkeit geboten, zum Beispiel durch das Theme, diese in einem Frontend umzusetzen.
+Alle hier genannten Maßnahmen sind besonders hervorzuheben und unabdinglich für ein barrierefreies Frontend.
+
+*Dos*
+
+* xref:06-bedienelemente.adoc#eingabefeld[Eingabefelder] müssen nach der Aktivierung eines Hochkontrastmodus/Farbfilters zu 50 % bestehen bleiben - eine einzelne Linie als Bestandteil ist nicht ausreichend als Identifizierung eines Eingabefeldes.
+* Die Textgröße soll zum Erreichen der WCAG 2.1 AA-Anforderungen mindestens 14pt für Labels und 12pt für Fließtexte betragen.
+* Der Textkontrast muss mindestens 4,5:1 und bei großer Schrift mindestens 3:1 betragen.
+* Alle Bilder benötigen ein inhaltlich sinnvolles, beschreibendes <<alt-tag,Alt-Attribut>>.
+* xref:04-basiselemente.adoc#grafiken[Bilder], die ausschließlich der Gestaltung dienen (zum Beispiel Trennlinien), müssen als solche (Schmuckgrafik) gekennzeichnet werden.
+* *Tastatur-Navigation:*
+Nicht alle Nutzenden können eine Maus verwenden.
+Daher ist es wichtig, dass alle Interaktionen auf dem Frontend auch über die Tastatur möglich sind.
+Dies bedeutet, dass alle Navigationselemente, xref:06-bedienelemente.adoc#link[Links] und interaktiven Elemente leicht per Tastatur zugänglich sein müssen.
+
+*Don'ts*
+
+* Es sollten keine Schriftgrafiken genutzt werden.
+* Schwache Kontraste, zum Beispiel Hellblau auf Grau, sollen vermieden werden.
+* *Vermeidung von reinen Farbunterscheidungen:*
+Informationen sollten nicht allein durch xref:04-basiselemente.adoc#farben[Farbe] vermittelt werden, da einige Nutzende Farben nicht unterscheiden können.
+Daher sollten auch andere visuelle Elemente, wie xref:04-basiselemente.adoc#icons[Symbole] oder Muster genutzt werden, um wichtige Informationen zu vermitteln.
+* Aktionen sollen nicht durch xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] ausgelöst werden, wenn diese nicht dazu vorgesehen sind (zum Beispiel xref:06-bedienelemente.adoc#radiobutton[Radiobuttons] und xref:06-bedienelemente.adoc#checkbox[Checkboxen]).
+
+[[tastatursteuerung]]
+=== Tastaturbedienbarkeit und Tastaturkombinationen
+
+Die Tastatursteuerung ist eine elementare Art der Navigation für Frontends.
+Wichtig ist dabei die Einhaltung standardisierter Bedienmuster, um eine intuitive und konfliktfreie Nutzung zu gewährleisten.
+Anwendungen der IsyFact nutzen daher die bekannten Standardkombinationen, verzichten somit auf eigene Tastenkombinationen und bilden so die Basis für eine einheitliche und barrierefreie Bedienung.
+Beispiele hierfür sind:
+
+* *Tabulator:* Navigation zwischen interaktiven Elementen wie xref:06-bedienelemente.adoc#link[Links], xref:06-bedienelemente.adoc#button[Buttons] oder xref:06-bedienelemente.adoc#eingabefeld[Eingabefeldern].
+* *Shift + Tab:* Navigation rückwärts zwischen interaktiven Elementen.
+* *Enter:* Aktivierung von Buttons, xref:06-bedienelemente.adoc#link[Links] und anderen interaktiven Elementen.
+* *Leertaste:* Scrollen in Seiten (bei nicht fokussierten Elementen) oder Aktivieren von xref:06-bedienelemente.adoc#checkbox[Checkboxen] (bei fokussierten Checkboxen).
+* *Pfeiltasten:* Navigation in xref:06-bedienelemente.adoc#liste[Listen], xref:07-design-pattern.adoc#dropdown[Dropdowns] oder xref:06-bedienelemente.adoc#textbox[Textfeldern].
+* *Esc:* Schließen von Dialogen oder Dropdowns.
+
+Der reine Einsatz von Standardkombinationen in der Tastatursteuerung ist nicht ausreichend, eine größtmögliche <<barrierefreiheit,Barrierefreiheit>> sicherzustellen.
+So gibt es noch weitere "Dos and Don'ts" im Rahmen der Tastatursteuerung zu beachten:
+
+*_Dos_*
+
+* *Fokussteuerung:* Alle interaktiven Elemente müssen in einer logischen Reihenfolge fokussierbar sein, ohne unerwartete Wechsel oder Sprünge.
+* *Tastaturzugänglichkeit:* Dynamische Elemente wie Dropdowns, Dialoge oder modale Fenster sind vollständig mit der Tastatur bedienbar.
+* *Feedback:* xref:09-eingabehilfen-und-fehlermeldungen.adoc#fehlermeldungen[Fehlermeldungen] und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
+* *Standardbedienmuster:* Es werden nur Standard-Tastenkombinationen verwendet, um Konflikte mit Browserfunktionen oder Assistenzsoftware zu vermeiden.
+
+*_Don'ts_*
+
+* *Eingeschränkte Zugänglichkeit:* Kein interaktives Element darf ausschließlich mit der Maus bedienbar sein.
+* *Unklare Zustände:* Elemente wie Buttons oder Links dürfen keinen unklaren oder schwer erkennbaren Fokuszustand haben.
+* *Unübersichtliche Navigation:* Eine übermäßige Anzahl von Tab-Stops oder unlogische Fokuswechsel müssen vermieden werden.
+
+Unter Beachtung der oben genannten Richtlinien ist eine effiziente und klare Bedienung möglich.
+Weitere Kombinationen im Browser zur Steigerung der Effektivität sind (Abweichungen möglich):
+
+*_Navigation und grundlegende Aktionen_*
+
+. Strg + L / Cmd + L: Fokus auf die Adressleiste.
+. Strg + T / Cmd + T: Öffnen eines neuen Tabs.
+. Strg + W / Cmd + W: Schließen des aktuellen Tabs.
+. Strg + Tab / Cmd + Tab: Wechseln zum nächsten Tab.
+. Strg + Shift + Tab / Cmd + Shift + Tab: Wechseln zum vorherigen Tab.
+. Strg + R / Cmd + R: Neuladen der aktuellen Seite.
+. Alt + Pfeil nach links: Zurück zur vorherigen Seite.
+. Alt + Pfeil nach rechts: Vorwärts zur nächsten Seite.
+. F5: Neuladen der Seite.
+. Shift + F5: Erzwungenes Neuladen (ohne Cache).
+
+*_Textbearbeitung und Eingabe_*
+
+. Strg + A / Cmd + A: Gesamten Text auswählen.
+. Strg + C / Cmd + C: Kopieren des ausgewählten Textes.
+. Strg + V / Cmd + V: Einfügen aus der Zwischenablage.
+. Strg + X / Cmd + X: Ausschneiden des ausgewählten Textes.
+. Strg + Z / Cmd + Z: Rückgängig machen der letzten Aktion.
+. Strg + Y / Cmd + Shift + Z: Zurückholen der zuletzt rückgängig gemachten Aktion.
+. Strg + F / Cmd + F: Öffnen der Suchfunktion.
+. F3: Weiter zur nächsten Suchergebnismarkierung springen.
+. Strg + P / Cmd + P: Öffnen des Druckdialogs.
+. Tab: Wechsel zwischen Formularfeldern oder interaktiven Elementen.
+. Shift + Enter: Absenden eines Formulars (bei ausgewählten Textfeldern oder Buttons).
+
+*_Zoom und Anzeige_*
+
+. Strg + Plus (pass:[+]) / Cmd + Plus (pass:[+]): Vergrößern des Seiteninhalts.
+. Strg + Minus (-) / Cmd + Minus (-): Verkleinern des Seiteninhalts.
+. Strg + 0 / Cmd + 0: Zurücksetzen des Zooms auf die Standardgröße.
+. F11: Umschalten in den Vollbildmodus.
+
+*_Bedienung mit Screenreadern_*
+
+. Tab: Navigieren zwischen Fokusbereichen.
+. Shift + Tab: Rückwärts navigieren zwischen Fokusbereichen.
+. Pfeil nach unten / oben: Zeilenweises Navigieren in Listen und Text.
+. Strg + Pfeil nach rechts / links: Springen zwischen Wörtern in Textfeldern.
+. Alt + Shift + Pfeil nach unten / oben: Navigieren zwischen Absätzen.
+
+Diese Kombinationen ergänzen die grundlegenden Funktionen und gewährleisten eine nahtlose Integration mit Browser-Standards und assistiven Technologien wie Screenreadern.
+Die Einhaltung dieser Standards ermöglicht eine barrierefreie und effiziente Navigation für alle Nutzergruppen.
+
+
+[[barrierefreier-einsatz-von-farben]]
+=== Barrierefreier Einsatz von Farben
+
+Farben sind ein zentrales Gestaltungsmittel in Benutzeroberflächen und unterstützen die Orientierung sowie das Verständnis von Zuständen und Aktionen (siehe xref:04-basiselemente.adoc#farben[Farben]).
+
+Um eine gute Wahrnehmbarkeit und Lesbarkeit sicherzustellen, müssen ausreichende Kontrastverhältnisse zwischen Vorder- und Hintergrund gewährleistet sein.
+Maßgeblich sind die Anforderungen der Web Content Accessibility Guidelines (WCAG) 2.1 auf Konformitätsstufe AA.
+
+Folgende Mindestkontrastwerte sind einzuhalten:
+
+* Fließtext und Labels (Normaltext): mindestens 4,5 : 1
+* Große Schrift (z. B. Überschriften ab 18 pt bzw. 14 pt fett): mindestens 3 : 1
+* Grafische Bedienelemente, Icons, Fokusindikatoren und andere nicht-textuelle UI-Komponenten: mindestens 3 : 1
+
+Für besonders wichtige Inhalte (z. B. rechtlich relevante Seiten oder zentrale Einstiegsbereiche) wird ein Kontrast von mindestens 7 : 1 empfohlen.
+
+Der Kontrast ist grundsätzlich so hoch wie möglich zu wählen.
+
+Informationen dürfen nicht ausschließlich durch Farbe vermittelt werden.
+Status-, Warn- oder Fehlermeldungen sind zusätzlich durch Text, Symbole oder andere visuelle Merkmale eindeutig kenntlich zu machen.
+
+Kombinationen von Vorder- und Hintergrundfarben, die die Mindestanforderungen nicht erfüllen, dürfen nicht verwendet werden.
+Die Einhaltung der Kontrastanforderungen ist projektseitig zu prüfen und zu dokumentieren.
+
+Maßgeblich sind die jeweils projektspezifisch definierten Farben und deren nachgewiesene Kontrastverhältnisse gemäß den geltenden Barrierefreiheitsanforderungen.
+Nicht zulässige Kombinationen dürfen nicht eingesetzt werden.
+
+[[alt-tag]]
+=== Alt-Attribute für Bilder
+
+Alt-Attribute (alternative Texte) sind textuelle Beschreibungen, die in den HTML-Code von xref:04-basiselemente.adoc#grafiken[Bildern] eingebettet werden.
+Sie dienen mehreren wichtigen Zwecken:
+
+* *Zugänglichkeit:*
+Screenreader verwenden Alt-Attribute, um sehbehinderten oder blinden Nutzenden den Inhalt und Zweck eines Bildes zu vermitteln.
+* *Fehlertoleranz:*
+Wenn ein Bild aus irgendeinem Grund nicht geladen werden kann, zeigt der Browser den Alt-Text anstelle des Bildes an.
+
+*_Best Practices für das Schreiben von Alt-Attributen_*
+
+Beim Erstellen von Alt-Texten sollten folgende Richtlinien beachtet werden:
+
+* *Beschreibend und prägnant:*
+Der Alt-Text sollte den Inhalt und Zweck des Bildes kurz und genau beschreiben.
+Beispiel:
+[source,xml]
+<img src="blume.jpg" alt="Gelbe Tulpe im Frühlingsgarten">.
+
+* *Kontextbezogen:*
+Der Alt-Text sollte den Kontext berücksichtigen, in dem das Bild verwendet wird.
+Beispiel:
+Bei einem Bild eines Einkaufswagens auf einer E-Commerce-Seite könnte der Alt-Text lauten:
+[source,xml]
+<img src="cart.png" alt="Warenkorb">.
+
+* *Keine redundante Information:*
+Informationen, die bereits im umgebenden Text enthalten sind, müssen nicht im Alt-Text wiederholt werden.
+Beispiel:
+Wenn ein Bild neben einer xref:04-basiselemente.adoc#ueberschriften[Überschrift] „Teamfoto 2024“ steht, sollte der Alt-Text nicht einfach „Teamfoto 2024“ wiederholen.
+* *Vermeidung von Keyword-Stuffing:*
+Der Alt-Text sollte nicht mit Schlüsselwörtern überladen werden, da dies die Zugänglichkeit beeinträchtigt.
+* *Verwendung von leeren Alt-Attributen für dekorative Bilder:*
+Wenn ein Bild rein dekorativ ist und keinen informativen Wert hat, sollte das Alt-Attribut leer sein (alt=""), um Screenreadern zu signalisieren, dass sie das Bild ignorieren können.
+
+[[aria-labels]]
+=== ARIA-Labels für andere Bedienelemente
+
+*_Bedeutung von ARIA-Labels:_*
+
+ARIA-Labels (Accessible Rich Internet Applications) sind ein Set von Attributen, die entwickelt wurden, um die Zugänglichkeit von dynamischen Inhalten und Benutzeroberflächen zu verbessern.
+Sie bieten zusätzliche Informationen für Screenreader, insbesondere für Elemente, die keine standardisierten HTML-Attribute zur Beschreibung ihres Zwecks haben.
+
+*_Implementierung von ARIA-Labels:_*
+
+ARIA-Labels kommen zum Einsatz, wenn ein xref:06-bedienelemente.adoc#bedienelemente[Bedienelement] keinen eindeutigen für Screenreader zugänglichen Text enthält.
+Hier sind die wichtigsten ARIA-Attribute und ihre Anwendungen:
+
+* *aria-label:*
+Wird verwendet, um ein Element zu beschreiben.
+Es ist besonders nützlich für Bedienelemente ohne sichtbaren Text.
+Beispiel:
+[source,xml]
+<button aria-label="Schließen">X</button>.
+
+* *aria-labelledby:*
+Verweist auf ein anderes Element, dessen Text als Beschriftung dient.
+Beispiel:
+[source,xml]
+<button aria-labelledby="closeButtonText">X</button>
+<span id="closeButtonText" hidden>Schließen</span>.
+
+* *aria-describedby:*
+Gibt ein anderes Element an, das eine ausführlichere Beschreibung des aktuellen Elements enthält.
+Beispiel:
+[source,xml]
+<input type="text" aria-describedby="nameDesc">
+<span id="nameDesc">Bitte geben Sie Ihren vollständigen Namen ein.</span>.
+
+*_Best Practices für die Verwendung von ARIA-Labels_*
+
+Um sicherzustellen, dass ARIA-Labels effektiv eingesetzt werden, sollten folgende Richtlinien beachtet werden:
+
+* *Klarheit und Präzision:*
+ARIA-Labels sollten klar und präzise sein, um den Zweck des Elements genau zu vermitteln.
+* *Vermeidung von Redundanz:*
+ARIA-Labels sollten nicht redundant zu bereits vorhandenen textuellen Beschreibungen sein.
+* *Konsistenz:*
+Die Verwendung von ARIA-Labels sollte konsistent über das gesamte Frontend hinweg erfolgen, um eine einheitliche Benutzererfahrung zu gewährleisten.
+* *Testen:*
+Die implementierten ARIA-Labels sollten regelmäßig mit verschiedenen Screenreadern getestet werden, um sicherzustellen, dass sie korrekt interpretiert werden.
+
+*_Zusammenfassung:_*
+
+<<alt-tag,Alt-Attribute>> und ARIA-Labels sind unverzichtbare Werkzeuge, um die Zugänglichkeit und Benutzerfreundlichkeit von Frontends zu gewährleisten.
+Durch sorgfältige Planung und Implementierung dieser Attribute können Designende und Entwickelnde sicherstellen, dass ihre Inhalte für alle Nutzenden zugänglich sind.
+Das Beachten der Best Practices beim Schreiben von Alt-Attributen und der Implementierung von ARIA-Labels trägt wesentlich dazu bei, eine inklusive und effiziente Benutzererfahrung zu schaffen.
+
+=== Language Tag
+
+Das lang-Attribut informiert Browser und Unterstützungstechnologien über die Sprache des Inhalts.
+Dies hat mehrere Vorteile:
+
+* *Zugänglichkeit:*
+Screenreader verwenden das lang-Attribut, um die richtige Aussprache und die korrekten Sprachregeln anzuwenden, was für Nutzende mit Sehbehinderungen von entscheidender Bedeutung ist.
+* *Mehrsprachige Frontends:*
+Das lang-Attribut ermöglicht es, verschiedene Sprachversionen eines Frontends korrekt zu kennzeichnen und so die Benutzererfahrung zu verbessern.
+
+Um die Sprache zu definieren, können die standardisierten ISO 639-1 Sprachcodes (zwei Buchstaben) genutzt werden (zum Beispiel: de = deutsch).
+Dabei gilt es folgende Grundregeln zu beachten:
+
+*_Festlegen der Hauptsprache eines Dokuments_*
+
+Das lang-Attribut sollte im <html>-Tag des Dokuments festgelegt werden, um die Hauptsprache der gesamten Seite anzugeben.
+Dies stellt sicher, dass alle Inhalte auf der Seite als in dieser Sprache verfasst erkannt werden.
+
+*_Festlegen der Sprache für spezifische Elemente_*
+
+Wenn einzelne Abschnitte oder Elemente in einer anderen Sprache verfasst sind, sollte das lang-Attribut entsprechend auf diese Elemente angewendet werden.
+Dies ist besonders wichtig für mehrsprachige Frontends, Dokumente und die korrekte Aussprache durch Screenreader.
+Wenn nötig, können auch spezifische Sprachvarianten oder Dialekte mithilfe von Codes für Regionen oder Länder angegeben werden (zum Beispiel: en-US für amerikanisches Englisch, en-GB für britisches Englisch).
+
+Das lang-Attribut wird nur verwendet, wenn der xref:04-basiselemente.adoc#text[Text] tatsächlich in einer anderen Sprache verfasst ist.
+Es wird nicht aus ästhetischen oder stilistischen Gründen gesetzt.
+
+*_Beispiel:_*
+[source,xml]
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mehrsprachige Frontends</title>
+    </head>
+    <body>
+        <h1>Willkommen auf unserem Frontend</h1>
+            <p>Dies ist ein Beispieltext in deutscher Sprache.</p>
+            <p lang="en">This is a sample text in English.</p>
+    </body>
+</html>

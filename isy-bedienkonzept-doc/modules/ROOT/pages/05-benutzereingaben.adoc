@@ -1,0 +1,164 @@
+[[benutzereingaben]]
+== Benutzereingaben
+
+Benutzereingaben beschreiben sämtliche Interaktionen, durch die Nutzende mit der Anwendung kommunizieren.
+Sie umfassen das Auslösen von Aktionen, das Eingeben und Bearbeiten von Daten sowie das Navigieren und Verändern von Zuständen.
+
+Dieses Kapitel legt die grundlegenden Prinzipien fest, die für alle interaktiven Elemente verbindlich gelten.
+Die beschriebenen Anforderungen betreffen sowohl einzelne Bedienelemente als auch komplexe Komponenten, Dialoge und dynamische Inhalte.
+
+Alle Interaktionen sind konsistent, nachvollziehbar und geräteunabhängig auszugestalten.
+Eingaben müssen mit Tastatur, Zeigegeräten und assistiven Technologien gleichermaßen nutzbar sein.
+Zustände, Veränderungen und Rückmeldungen sind eindeutig wahrnehmbar und programmatisch erfassbar umzusetzen.
+
+*_Interaktionsprinzipien_*
+
+[[r-input-erkennbarkeit]]
+* Interaktive Elemente sind eindeutig als solche erkennbar und semantisch korrekt ausgezeichnet.
+
+[[r-input-label-zuordnung]]
+* Eingabefelder besitzen eine eindeutige, programmatisch zugeordnete Beschriftung.
+
+[[r-input-konsistenz]]
+* Gleichartige Elemente verhalten sich in vergleichbaren Situationen konsistent.
+
+[[r-input-zustandswahrnehmung]]
+* Zustände und Veränderungen sind unmittelbar wahrnehmbar.
+
+[[r-input-keine-farbalternative]]
+* Informationen werden nicht ausschließlich über Farbe vermittelt.
+
+[[r-input-vorhersehbarkeit]]
+* Interaktionen führen nicht zu unerwarteten Kontextwechseln oder automatischen Änderungen ohne bewusste Auslösung.
+
+[[r-input-reversibilitaet]]
+* Bedienhandlungen sind reversibel oder erfordern bei kritischen Aktionen eine bewusste Bestätigung.
+
+Die Anwendung vermeidet überraschende oder nicht erwartungskonforme Interaktionen.
+
+*_Zustände von Eingabeelementen_*
+
+Eingabeelemente können unterschiedliche Zustände einnehmen (z. B. aktiv, deaktiviert, schreibgeschützt, ausgewählt, fehlerhaft).
+
+[[r-input-zustand-unterscheidbar]]
+* Zustände sind visuell klar unterscheidbar und erfüllen die geltenden Kontrastanforderungen.
+
+[[r-input-deaktiviert-erkennbar]]
+* Deaktivierte oder schreibgeschützte Elemente bleiben als solche eindeutig erkennbar.
+
+[[r-input-pflichtfelder]]
+* Pflichtfelder sind eindeutig gekennzeichnet.
+
+[[r-input-fehler-nicht-nur-farbe]]
+* Fehlerzustände sind nicht ausschließlich farblich hervorgehoben.
+
+[[r-input-zustandswechsel-stabil]]
+* Änderungen von Zuständen erfolgen nachvollziehbar und ohne unerwartete visuelle Verschiebungen.
+
+*_Tastatur_*
+
+Die Tastatur ist ein gleichwertiges Eingabemedium für alle Interaktionen innerhalb der Anwendung.
+
+[[r-input-tastatur]]
+* Alle Funktionen sind ohne den Einsatz von Zeigegeräten nutzbar.
+
+[[r-input-keine-tastaturfalle]]
+* Der Fokus kann jederzeit logisch weitergeführt oder verlassen werden.
+
+[[r-input-fokusreihenfolge]]
+* Die Fokusreihenfolge folgt einer klaren und nachvollziehbaren Struktur.
+
+[[r-input-fokus-sichtbar]]
+* Der aktive Fokus ist jederzeit eindeutig sichtbar und ausreichend kontrastreich dargestellt.
+
+[[r-input-startfokus]]
+* Beim Öffnen neuer Kontexte wird ein sinnvoller Startfokus gesetzt.
+
+[[r-input-fokus-rueckkehr]]
+* Beim Schließen kehrt der Fokus an die auslösende Stelle zurück.
+
+[[r-input-enter-escape]]
+* Enter aktiviert die jeweilige Primäraktion; Escape beendet oder schließt den aktuellen Kontext, sofern fachlich vorgesehen.
+
+[[r-input-shortcuts]]
+* Tastenkombinationen sind nicht vorausgesetzt und dürfen bestehende System- oder Assistenzfunktionen nicht beeinträchtigen.
+
+*_Zeigegeräte (Maus, Touch, Stift)_*
+
+Interaktionen über Zeigegeräte sind konsistent, fehlertolerant und gleichwertig zur Tastaturbedienung.
+
+* Klicks oder Taps lösen die jeweils erwartete Aktion aus.
+
+[[r-input-target-size]]
+* Interaktive Elemente sind ausreichend groß und klar bedienbar.
+
+[[r-input-gesten-alternative]]
+* Komplexe Gesten besitzen eine alternative Bedienmöglichkeit.
+
+[[r-input-pointer-cancel]]
+* Aktionen werden bewusst ausgelöst und können vor Abschluss abgebrochen oder korrigiert werden.
+
+[[r-input-hover-inhalte]]
+* Inhalte, die bei Hover erscheinen, sind auch per Fokus erreichbar, überdeckungsfrei nutzbar und wieder schließbar.
+
+[[r-input-dragdrop-alternative]]
+* Drag-and-Drop-Interaktionen verfügen über eine alternative Bedienform.
+
+*_Eingabeverhalten und Validierung_*
+
+Eingaben sind fehlertolerant, transparent und unterstützen eine effiziente Datenerfassung.
+
+[[r-input-formatverhalten]]
+* Formatierungen und automatische Korrekturen erfolgen transparent, nachvollziehbar und ohne Informationsverlust.
+
+[[r-input-alternative-eingabeweisen]]
+* Gängige alternative Eingabeweisen werden akzeptiert.
+
+[[r-input-fehler-zuordnung]]
+* Validierungsfehler stehen in direktem Zusammenhang mit dem betroffenen Feld und enthalten konkrete Hinweise zur Behebung.
+
+[[r-input-fehler-sichtbar]]
+* Fehlerzustände bleiben sichtbar, bis sie behoben wurden.
+
+[[r-input-fehler-uebersicht]]
+* Mehrere Fehler können zusätzlich in einer zusammenfassenden Übersicht dargestellt werden.
+
+[[r-input-autocomplete]]
+* Felder mit bekanntem Eingabezweck unterstützen Autovervollständigung.
+
+*_Rückmeldungen und zeitliche Abläufe_*
+
+Eingaben lösen unmittelbare oder zeitversetzte Rückmeldungen aus, die den aktuellen Systemzustand transparent machen.
+
+[[r-input-ladezustand]]
+* Ladezustände und asynchrone Validierungen sind klar erkennbar und programmatisch wahrnehmbar.
+
+[[r-input-statusmeldungen]]
+* Status- und Erfolgsmeldungen sind programmatisch wahrnehmbar und erfordern keine erzwungene Fokusübernahme.
+
+*_Fokusführung bei dynamischen Änderungen_*
+
+[[r-input-dynamischer-fokus]]
+* Beim Öffnen neuer Bereiche wird der Fokus in den neuen Kontext geführt.
+
+[[r-input-fokus-entfernung]]
+* Wird ein fokussiertes Element entfernt, wird der Fokus logisch weitergeführt.
+
+[[r-input-live-region]]
+* Status- und Fehlermeldungen werden wahrnehmbar kommuniziert, ohne den Fokus unnötig zu verschieben.
+
+*_Tastaturbedienung interaktiver Komponenten_*
+
+Interaktive Komponenten wie Tabs, Accordions, Dropdowns, Datumsauswahlen oder Tabellen folgen etablierten Interaktionsmustern.
+
+[[r-input-komponenten-zustand]]
+* Zustände interaktiver Komponenten sind eindeutig erkennbar und programmatisch ermittelbar.
+
+[[r-input-komponenten-navigation]]
+* Navigation innerhalb einer Komponente erfolgt konsistent und erwartungskonform.
+
+[[r-input-komponenten-fokus]]
+* Kontextwechsel innerhalb von Komponenten führen den Fokus nachvollziehbar zurück.
+
+[[r-input-komponenten-aktivierungszustand]]
+* Sortier-, Auswahl- oder Aktivierungszustände sind eindeutig wahrnehmbar.
