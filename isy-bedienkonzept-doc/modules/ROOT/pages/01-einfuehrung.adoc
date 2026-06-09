@@ -7,9 +7,11 @@ Indem es einheitliche Standards und Best Practices festlegt, trägt es maßgebli
 Das Hauptziel ist dabei, die Benutzererfahrung zu verbessern und die Zufriedenheit und Produktivität der Nutzenden zu maximieren.
 So soll sichergestellt werden, dass Nutzende das Frontend ohne Schwierigkeiten verwenden können und dabei ihre Ziele *effizient* erreichen.
 
+#NgD: Hier sollten alle Pages (01-11) kurz beschreiben werden und nicht nur ausgewählte#
+
 In den folgenden Kapiteln werden die benötigten Elemente von "klein nach groß" beschrieben.
 *Der allgemeine Rahmen und die übergreifenden Prinzipien* werden in den ersten Kapiteln beschrieben.
-Darauf folgen die *xref:04-basiselemente.adoc#basiselemente[Basiselemente]*, wie zum Beispiel xref:04-basiselemente.adoc#text[Text] und xref:04-basiselemente.adoc#farben[Farben], die den Grundstein für die nachfolgenden Kapitel legen und von essenzieller Bedeutung sind.
+Darauf folgen die *xref:04-basiselemente.adoc#basiselemente[Basiselemente]*, wie zum Beispiel xref:04-basiselemente.adoc#text[Text] und xref:04-basiselemente.adoc#farben[Farben], die den Grundstein für die nachfolgenden Kapitel legen.
 Danach kommen die *xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente]*, die einfachste Ausprägung eines Interaktionselements.
 *xref:07-design-pattern.adoc#design-pattern[Design Patterns]* stellen eine Bündelung von Bedienelementen und Basiselementen dar und beschreiben wiederkehrende Lösungsansätze für vollständige Interaktions- und Darstellungsanforderungen.
 
@@ -49,7 +51,7 @@ Insbesondere bei komplexen Frontends ist es ratsam, so früh wie möglich die Fa
 
 *_Einhaltung von Standards und Best Practices_*
 
-Das Bedienkonzept legt Standards und Best Practices fest, die von Designenden und Entwickelnden eingehalten werden müssen.
+Das Bedienkonzept legt Standards und Best Practices fest, die von Designenden und Entwickelnden eingehalten werden sollen. In begründeten Ausnahmefällen kann davon abgewichen werden.
 Diese Standards können sich auf verschiedene Aspekte der Gestaltung und Interaktion beziehen, wie Typografie, xref:04-basiselemente.adoc#farben[Farbgebung], xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] und xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit].
 Durch die Einhaltung dieser Standards gewährleisten Designende und Entwickelnde nicht nur eine konsistente Benutzeroberfläche, sondern auch die Kompatibilität dieser Oberfläche mit verschiedenen Geräten und Plattformen.
 
@@ -114,7 +116,7 @@ Usability ist eng mit dem Design der Benutzeroberfläche verknüpft.
 Eine gut gestaltete UI ermöglicht es den Benutzenden, intuitiv zu navigieren, schnell zu verstehen, wie sie Aufgaben ausführen können und bietet klare, konsistente visuelle Hinweise.
 Besonders bei komplexen Fachanwendungen ist es wichtig, dass eine gute UI sich nahtlos in die fachlich notwendigen Geschäftsprozesse integrieren lässt.
 
-*_Begriff der Benutzerfreundlichkeit (User Experience - UX)_*
+*_Begriff der Benutzerfreundlichkeit (User Experience - UX)_* #NgD: Sollte das hier nicht mit Benutzererlebnis übersetzt werden? Sonst widerspricht es dem vorherigen Abschnitt, wo Usability = Benutzerfreundlichkeit#
 
 Benutzerfreundlichkeit oder User Experience (UX) geht über die reine Usability hinaus und bezieht sich auf das gesamte Erlebnis der Nutzenden mit einem Produkt oder einer Dienstleistung.
 UX umfasst alle Aspekte der Interaktion, einschließlich der emotionalen, psychologischen und praktischen Reaktionen auf das Produkt.
@@ -176,7 +178,7 @@ Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Absch
 === Allgemeine Prinzipien
 
 Das Bedienkonzept basiert auf einer Reihe von allgemeinen Prinzipien, die als Leitfaden für die Gestaltung von Benutzeroberflächen dienen.
-Diese Prinzipien umfassen Klarheit, Konsistenz, Feedback, Effizienz und Zugänglichkeit und bilden das Fundament für eine benutzerzentrierte Gestaltung.
+Bei diesen Prinzipien handelt es sich um Klarheit, Konsistenz, Feedback, Effizienz und Zugänglichkeit. Sie bilden das Fundament für eine benutzerzentrierte Gestaltung.
 Viele dieser Prinzipien werden beispielsweise in der https://de.wikipedia.org/wiki/ISO_9241[ISO 9241] und in https://en.wikipedia.org/wiki/Web_usability#Web_Usability_Criteria[Nielsen’s Web Usability Criteria] beschrieben.
 Zusätzlich liefert https://lawsofux.com/[lawsofux] eine anschauliche Sammlung von *Designprinzipien*.
 
@@ -191,14 +193,14 @@ Durch die Priorisierung von Klarheit im Design können Designende sicherstellen,
 
 Das Prinzip der "Konsistenz" bezieht sich auf die Notwendigkeit, ein einheitliches Erscheinungsbild und Verhalten über alle Seiten eines Frontends hinweg zu gewährleisten.
 Konsistenz bedeutet, dass Designelemente wie xref:04-basiselemente.adoc#farben[Farben], xref:04-basiselemente.adoc#text[Schriftarten], xref:04-basiselemente.adoc#icons[Symbole] und Layouts einheitlich angewendet werden, um eine nahtlose Benutzererfahrung zu schaffen.
-Durch die Aufrechterhaltung einer konsistenten Gestaltung können Nutzende das Frontend leichter verstehen und navigieren, da sie sich auf bereits bekannte Muster und Interaktionen verlassen können.
+Durch die Aufrechterhaltung einer konsistenten Gestaltung können Nutzende das Frontend leichter verstehen und darin navigieren, da sie sich auf bereits bekannte Muster und Interaktionen verlassen können.
 Darüber hinaus trägt die Konsistenz dazu bei, das Markenimage zu stärken und das Vertrauen der Nutzenden in das Frontend zu fördern.
 
 *_Feedback_*
 
 Das Designprinzip des "Feedbacks" bezieht sich auf die kontinuierliche Kommunikation zwischen dem Frontend und den Nutzenden.
 Feedback ist entscheidend, um den Nutzenden Rückmeldungen darüber zu geben, ob ihre Aktionen erfolgreich waren oder nicht.
-Dies kann in Form von visuellem Feedback, zum Beispiel einer Farbänderung eines xref:06-bedienelemente.adoc#button[Buttons] nach einem Klick oder durch informative Nachrichten wie Bestätigungsmeldungen nach dem Absenden eines xref:05-benutzereingaben.adoc#benutzereingaben[Formulars], erfolgen.
+Dies kann in Form von visuellem Feedback erfolgen, zum Beispiel durch eine Farbänderung eines xref:06-bedienelemente.adoc#button[Buttons] nach einem Klick oder durch informative Nachrichten wie Bestätigungsmeldungen nach dem Absenden eines xref:05-benutzereingaben.adoc#benutzereingaben[Formulars].
 Durch effektives Feedback fühlen sich Nutzende unterstützt und informiert, was zu einer verbesserten Benutzererfahrung und einer höheren Zufriedenheit führt.
 Dies gilt insbesondere auch für Aspekte der xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit].
 Technische Standardmöglichkeiten sollen genutzt und gegebenenfalls mit entsprechenden Hilfsmitteln (wie xref:02-barrierefreiheit.adoc#aria-labels[ARIA-Elementen]) angereichert werden.
