@@ -1,6 +1,6 @@
 [[basiselemente]]
 == Basiselemente
-
+#NgD: Kurze Einleitung, was unter Basiselemente gefasst wird#
 [[farben]]
 === Farben
 
@@ -178,7 +178,6 @@ So werden xref:06-bedienelemente.adoc#button[Schaltflächen], <<label,Labels>> u
 Dieser Abschnitt definiert die typografischen Standards, sprachlichen Richtlinien und Längenbeschränkungen, die dazu beitragen, dass Texte klar, verständlich und ansprechend sind.
 
 Frontends des Bundes sollen über die IT-Landschaft hinweg ein einheitliches Look-and-Feel bieten.
-Dies wird über den Einsatz der IsyFact und deren Komponenten gewährleistet.
 Dafür ist es notwendig auch bei der Schrift (im weiteren Font) einheitlich vorzugehen.
 Zur Anwendung kommt primär BundesSans.
 
@@ -205,7 +204,7 @@ Mit einem Schriftsystem lassen sich meist mehrere Sprachen schreiben (zum Beispi
 
 Die Notwendigkeit der Darstellung nicht-lateinischer Schriften ergibt sich durch die DIN 91379 „Zeichen und definierte Zeichensequenzen in Unicode für die elektronische Verarbeitung von Namen und den Datenaustausch in Europa“ mit Ausgabedatum 2022-08.
 Basierend auf UNICODE wurde für jedes nicht-lateinische Zeichen, das in EU-Mitgliedsstaaten verwendet wird, beispielsweise griechische oder kyrillische Zeichen, eine eindeutige Zuordnung zu einem lateinischen Zeichen vorgenommen.
-Die DIN 91379 wendet sich vorrangig an Behörden und Organisationen, die IT-Verfahren betreiben, welche dem behördenübergreifenden Datenaustausch oder dem Datenaustausch mit Bürgerinnen, Bürgern sowie der Wirtschaft dienen und deckt in ihrer Gesamtheit die EU-Amtssprachen und die Amtssprachen Islands, Liechtensteins, Norwegens und der Schweiz ab sowie die deutschen Minderheitensprachen.
+Die DIN 91379 wendet sich vorrangig an Behörden und Organisationen, die IT-Verfahren betreiben, welche dem behördenübergreifenden Datenaustausch oder dem Datenaustausch mit Bürgerinnen und Bürgern sowie der Wirtschaft dienen und deckt in ihrer Gesamtheit die EU-Amtssprachen und die Amtssprachen Islands, Liechtensteins, Norwegens und der Schweiz ab sowie die deutschen Minderheitensprachen.
 Um fehlende UNICODE-Zeichen in der BundesSans zu ergänzen, kommt sekundär die Schriftart *Liberation* zum Einsatz.
 
 *_Liberation_*
@@ -266,14 +265,14 @@ Stattdessen werden andere, platzsparende Mechanismen angewandt wie xref:07-desig
 Hier ist der Kontrast größtmöglich zu wählen (zum Beispiel dunkelgraue Schrift auf weißem Hintergrund).
 Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss der Kontrast bei kleiner Schrift mindestens 4,5:1 entsprechen.
 * <<ueberschriften>> und großer/dicker Text müssen einen Mindestkontrast von 3:1 aufweisen.
-* Die Nutzung von Fachterminologie muss entsprechend konsistent verwendet werden.
+* Die Nutzung von Fachterminologie muss entsprechend konsistent erfolgen.
 
 *_Don'ts_*
 
 * Inkonsistente Terminologie.
 * Inkonsistente und falsche Groß- und Kleinschreibung.
 * Die Verwendung von zu langen Texten und Textblöcken.
-* Nutzung von unterstrichenem Text in Textpassagen, außer für xref:06-bedienelemente.adoc#link[Hyperlinks].
+* Nutzung von unterstrichenem Text in Textpassagen (außer für xref:06-bedienelemente.adoc#link[Hyperlinks]).
 * Die Verwendung von redundanten Textinformationen.
 * Nutzung von technischem Jargon statt der Sprache der Nutzenden.
 
