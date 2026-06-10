@@ -1,7 +1,7 @@
 [[fenstertypen-layout]]
 == Fenstertypen und Layout
 
-Fenstertypen und Layout bilden die verbindliche Grundlage für Struktur und Verhalten aller Seiten.
+Fenstertypen und Layout bilden die verbindliche Grundlage für die Struktur und das Verhalten aller Seiten.
 Ziel ist eine einheitliche, effiziente und barrierefreie Nutzererfahrung in modernen Fachanwendungen.
 
 Die in Kapitel 2 xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] beschriebenen Anforderungen der WCAG 2.1 AA gelten uneingeschränkt und bilden den verbindlichen Rahmen.
@@ -26,7 +26,8 @@ Nutzende erkennen vertraute Muster wieder und müssen keine neuen Bedienweisen e
 Eine vollständige Tastaturbedienung ist jederzeit möglich.
 * *Flexibel, aber geprüft:* Abweichungen innerhalb definierter Spielräume - etwa bei maximalen Breiten - sind zulässig, sofern sie dokumentiert und die festgelegten Akzeptanzkriterien erfüllt sind.
 
-Die konkreten Fenster‑ und Seitentypen (z. B. Login, Dashboard, Dashboard-Unterseite, Applikationsseite, Applikations-Detailseite) sind im Kapitel Entwurfsmuster (xref:07-design-pattern.adoc#primaere-fenstertypen[Primäre Fenstertypen] und xref:07-design-pattern.adoc#sekundaere-fenstertypen[Sekundäre Fenstertypen]) beschrieben.
+#NgD: Gehört das nicht eher an den Anfang von Abschnitt 1.2 (Hauptfenster)?#
+Die spezifischen Fenster‑ und Seitentypen (z. B. Login, Dashboard, Dashboard-Unterseite, Applikationsseite, Applikations-Detailseite) sind im Kapitel Design Patterns (xref:07-design-pattern.adoc#primaere-fenstertypen[Primäre Fenstertypen] und xref:07-design-pattern.adoc#sekundaere-fenstertypen[Sekundäre Fenstertypen]) beschrieben.
 Die hier definierten Prinzipien bilden die verbindliche Grundlage für deren Gestaltung und technische Umsetzung.
 
 [[layout-resizing]]
@@ -34,9 +35,9 @@ Die hier definierten Prinzipien bilden die verbindliche Grundlage für deren Ges
 
 ==== Zielkorridor & Reflow
 
-Layout und Inhalt müssen auch bei Größenänderungen nutzbar bleiben.
+Das Layout und  der Inhalt müssen auch bei Größenänderungen nutzbar bleiben.
 Reflows dürfen die Orientierung der Nutzenden nicht beeinträchtigen.
-Das Verhalten folgt den allgemeinen <<gestaltungsprinzipien, Prinzipien zur Lesbarkeit und Anpassungsfähigkeit>>.
+Das Verhalten folgt den allgemeinen <<gestaltungsprinzipien, Gestaltungsprinzipien>>.
 
 [[image-zielkorridor]]
 .Zielkorridor für responsive Layouts mit zentriertem, maximal begrenztem Inhaltsbereich
@@ -70,7 +71,7 @@ Ziel ist ein konsistentes, flexibles und leicht wartbares Layout über alle Bild
 .Responsives Layout - Breakpoint-basierte Spaltenzahl
 image::spaltenlayout.wireframe.drawio.svg[align="center"]
 
-*_Gestaltungsregeln_*
+*_Richtlinien_*
 
 [[r-spaltenreduktion-3-2-1]]
 * *Breakpoints*: Die Spaltenanzahl wird stufenweise je nach Bildschirmgröße definiert (z. B. 3 → 2 → 1); dies unterstützt skalierbare Layouts ohne Funktionsverlust.
@@ -93,11 +94,12 @@ Auf kleineren Geräten oder bei hohem Zoom werden Zeilenhöhe und Interaktionsfl
 Formulare führen Nutzende linear durch logisch zusammenhängende Feldgruppen.
 Bei geringer Bildschirmbreite oder eingeschränktem Platzangebot wird das Layout automatisch einspaltig dargestellt.
 
+#NgD: Fehler in Beschriftung: Reihenfolge nicht Reichenfolge#
 [[image-formular-layouts]]
 .Formularraster - Spaltenzahl stufenweise über Breakpoints
 image::formularlayout.wireframe.drawio.svg[align="center"]
 
-*_Umsetzungshinweise_*
+*_Richtlinien_*
 
 [[r-label-feld-naehe]]
 * *Label-Feld-Einheit:* Labels und Eingabefelder werden räumlich zusammen platziert.
@@ -123,7 +125,7 @@ Navigation mit Tab und Shift + Tab erfolgt ohne Sprünge.
 Tabellen müssen auch bei begrenztem Platz verständlich und gut nutzbar bleiben.
 Die Zuordnung von Spaltenköpfen zu Zellen ist jederzeit nachvollziehbar.
 
-*_Darstellungsstrategien_*
+*_Richtlinien_*
 
 [[r-tabellen-responsiv]]
 * *Responsives Verhalten:* Je nach Kontext kann zwischen einer gestapelten Darstellung (Zellen enthalten ihr Label) oder einem horizontal scrollbaren Container gewählt werden.
@@ -272,6 +274,8 @@ Solche Fälle müssen im Design-Review begründet werden.
 [[r-keine-sticky-ueberdeckung]]
 * Fokuselemente dürfen niemals durch fixierte oder klebende (sticky) Layoutbereiche verdeckt werden.
 Falls erforderlich, ist dies durch geeignete Layout-Abstände (z. B. +scroll-margin-top+) sicherzustellen.
+
+#NgD: Hier fehlt mir der klare Bezuug zu modalarmer Interaktion. Es scheint mir über modale Dialoge hinauszugehen und eher allgemein zu gelten? Woher kommt denn der Begriff "modalarm" überhaupt? Finde den sonst so nicht#
 
 *_Zielgrößen_*
 
