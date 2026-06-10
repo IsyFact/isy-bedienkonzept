@@ -81,7 +81,7 @@ Die Tastatur ist ein gleichwertiges Eingabemedium für alle Interaktionen innerh
 * Enter aktiviert die jeweilige Primäraktion; Escape beendet oder schließt den aktuellen Kontext, sofern fachlich vorgesehen.
 
 [[r-input-shortcuts]]
-* Tastenkombinationen sind nicht vorausgesetzt und dürfen bestehende System- oder Assistenzfunktionen nicht beeinträchtigen.
+* Tastenkombinationen sind nicht vorausgesetzt #NgD: Was soll das in diesem Kontext heißen?# und dürfen bestehende System- oder Assistenzfunktionen nicht beeinträchtigen.
 
 *_Zeigegeräte (Maus, Touch, Stift)_*
 
@@ -146,6 +146,8 @@ Eingaben lösen unmittelbare oder zeitversetzte Rückmeldungen aus, die den aktu
 
 [[r-input-live-region]]
 * Status- und Fehlermeldungen werden wahrnehmbar kommuniziert, ohne den Fokus unnötig zu verschieben.
+
+#Bezieht sich das nur auf die Tastatursteuerung von interaktiven Komponenten? Wenn ja, warum wird es dann nicht unter dem Abschnitt Tastatur aufgeführt?#
 
 *_Tastaturbedienung interaktiver Komponenten_*
 
