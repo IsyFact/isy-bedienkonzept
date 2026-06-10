@@ -69,7 +69,7 @@ So gibt es noch weitere "Dos and Don'ts" im Rahmen der Tastatursteuerung zu beac
 
 *_Dos_*
 
-* *Fokussteuerung:* Alle interaktiven Elemente müssen in einer logischen Reihenfolge fokussierbar sein, ohne unerwartete Wechsel oder Sprünge.
+* *Fokussteuerung:* Alle interaktiven Elemente müssen in einer logischen Reihenfolge fokussierbar sein ohne unerwartete Wechsel oder Sprünge.
 * *Tastaturzugänglichkeit:* Dynamische Elemente wie Dropdowns, Dialoge oder modale Fenster sind vollständig mit der Tastatur bedienbar.
 * *Feedback:* xref:09-eingabehilfen-und-fehlermeldungen.adoc#fehlermeldungen[Fehlermeldungen] und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
 * *Standardbedienmuster:* Es werden nur Standard-Tastenkombinationen verwendet, um Konflikte mit Browserfunktionen oder Assistenzsoftware zu vermeiden.
