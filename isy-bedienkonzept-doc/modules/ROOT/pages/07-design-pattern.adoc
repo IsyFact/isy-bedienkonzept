@@ -165,7 +165,7 @@ Links verfügen über ein sichtbares Textlabel.
 [[dashboard-unterseite]]
 ==== Dashboard-Unterseite
 
-#NgD: Welches Dashboard? Davon war bisher noch nicht die Rde. Ist die Portalstartseite gemeint?#
+#NgD: Welches Dashboard? Davon war bisher noch nicht die Rede. Ist die Portalstartseite gemeint?#
 
 Die Dashboard-Unterseite stellt weiterführende Inhalte bereit, die nicht vollständig auf dem Dashboard abgebildet werden können.
 
@@ -863,11 +863,13 @@ Alle Use Cases einer Fachanwendung müssen, gegebenenfalls nach Anwendungskompon
 .Darstellung verschiedener Navigationsebenen
 image::navigation.wireframe.drawio.svg[align="center"]
 
+#NgD: in der Abbildung sollte auch B gekennzeichnet werden.#
+
 Die IsyFact sieht drei Navigationsebenen vor:
 
 * (A) Die *Hauptnavigation (A)* (auch horizontale Navigation genannt)
 * (B) Die darin enthaltene *Subnavigation (B)*  (Menüitems der Hauptnavigation)
-* (C) Die *Linksnavigation \(C)* (Liste von Einträgen am linken Rand der Applikation)
+* \(C) Die *Linksnavigation \(C)* (Liste von Einträgen am linken Rand der Applikation) 
 
 Innerhalb einer Anwendungslandschaft oder einer einzelnen Fachanwendung muss die Navigation einheitlich strukturiert sein.
 
@@ -1105,7 +1107,7 @@ include::partial$example-link-card.adoc[]
 
 Fürs Aus- und Einklappen eines Akkordeonelements kann der gesamte Akkordeon-Header angeklickt werden.
 Zusätzlich befindet sich auf der linken Seite neben dem Label ein Icon, das den Zustand (ein- oder ausgeklappt) des Akkordeonelements anzeigt.
-Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen zum ein- und ausgeklappten Akkordeon).
+Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt #NgD: In der Demo-Anwendung ist das anders. Wenn ausgeklappt, dann nach oben. Eingeklappt nach unten. Das Icon ist auch nicht links, sondern rechts?#
 
 Die Interaktion wird dabei in der Regel auf die reine Wissensvermittlung reduziert.
 Entsprechend soll auf weiterführende Interaktion, über das aus- und einklappen hinaus, verzichtet werden.
@@ -1126,13 +1128,13 @@ include::partial$example-link-card.adoc[]
 
 
 Fürs Aus- und Einklappen eines Panels befindet sich auf der linken Seite auf der Höhe des Labels ein Icon.
-Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen zum ein- und ausgeklappten Panel).
+Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt #NgD: In der Demoanwendung ist das Icon rechts und es ist ein Minuszeichen#
 
 Die Interaktion steht hier im Vordergrund.
 Weiterführende Aktionen können entweder rechts im Panel Header oder in einer Footer Sektion unterhalb des Inhaltsbereichs eingebaut werden.
 
 Panels bieten in der Regel mehr Freiraum für komplexe Inhalte und Interaktionen als ein Akkordeon.
-Eine Gegenüberstellung, wann ein Panel und wann ein Akkordeon sinnvoll ist, befindet sich im Kapitel xref:10-design-richtlinien.adoc#panel-akkordeon-ueberschrift[Panel vs. Akkordeon vs. Überschrift].
+Eine Gegenüberstellung, wann ein Panel und wann ein Akkordeon sinnvoll ist, befindet sich im Kapitel xref:10-design-richtlinien.adoc#panel-akkordeon-ueberschrift[Panel vs. Akkordeon vs. Überschrift]. #NgD: Das Kapitel befindet sich auf einer ausgeblendeten Seite, die in der Navigation nicht angezeigt wird, was unglücklich ist. Außerdem würde ich inhaltlich diesen Vergleich einfach unter diesen Punkt packen#
 
 [[dropdown]]
 === Eingabefeldliste (Dropdown)
@@ -1159,7 +1161,7 @@ Aktive Listenelemente sind in der Highlightfarbe und hinterlegt dargestellt.
 Ein Menü-Button kombiniert eine primäre Aktion mit einer zusätzlichen Auswahl weiterer Aktionen.
 Der primäre Bereich löst beim Betätigen eine Standardaktion aus (zum Beispiel Speichern), während der zusätzliche Bereich eine Auswahl weiterer Funktionen öffnet (zum Beispiel Speichern als PDF oder Speichern als XLS).
 
-Diese Button-Art wird hauptsächlich in Toolbars eingesetzt und muss immer mehrere Funktionen, die in einen logischen Zusammenhang zueinander stehen, beinhalten.
+Diese Button-Art wird hauptsächlich in Toolbars eingesetzt und muss immer mehrere Funktionen beinhalten, die in einem logischen Zusammenhang zueinander stehen.
 Eine mögliche Verwendung ist das Zusammenfassen von mehreren Exportmöglichkeiten.
 
 Menü-Buttons bestehen aus zwei Bestandteilen:
@@ -1192,10 +1194,12 @@ Dies lässt sich durch zwei Möglichkeiten realisieren: xref:04-basiselemente.ad
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputtext
 include::partial$example-link-card.adoc[]
 
+#NgD: Das Beispiel in der Demo-Anwendung verstehe ich nicht. Wo ist da eine Eingabefeldgruppe?#
+
 Es wird ein einspaltiges Layout verwendet.
 Jedes Pflichtfeld ist durch einen Asterisk (*) gekennzeichnet.
 Eingabefeldgruppen bedürfen keiner zusätzlichen optischen Gruppierung.
-Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends (siehe xref:08-use-cases.adoc#image-vertikalerschnitt[image-vertikalerschnitt]) folgen.
+Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends (siehe xref:08-use-cases.adoc#image-vertikalerschnitt[image-vertikalerschnitt]) folgen. #NgD: Hier wird wieder auf einer ausgeblendete Page verwiesen#
 
 *_Eingabefeldgruppe mit Fieldset:_*
 
@@ -1221,7 +1225,7 @@ Vielmehr sollte überlegt werden, ob es einen verständlicheren fachlichen Lösu
 
 *_Beispielhafte Verwendung von Gruppen und inhaltlich logische Gruppierung:_*
 
-* Personendaten (rosa Overlay, vertikal gruppiert)
+* Personendaten (rosa Overlay, vertikal gruppiert) #NgD: rosa Overlay?#
 * Identitätsnachweis (vertikal gruppiert)
 
 [[image-mehrspaltigegruppen]]
@@ -1368,11 +1372,11 @@ include::partial$example-link-card.adoc[]
 [[selektion]]
 === Selektion
 
-Selektionsmöglichkeiten in einem Frontend sind grundlegend bei der Bedienung eines Frontends notwendig.
+Selektionsmöglichkeiten in einem Frontend sind bei der Bedienung eines Frontends grundlegend notwendig.
 Sie dienen zur Auswahl einzelner oder mehrerer Werte aus einer meist vordefinierten Menge.
 Sie können beliebig kombiniert werden, um die Fehleranfälligkeit zu reduzieren und die Auswahlmöglichkeiten zu optimieren.
 
-Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern>> und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
+Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern, Design Pattern>> und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
 Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entsprechenden Unterkapitel des Kapitels xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] einzusehen.
 
 [[checkbox-selektion]]
@@ -1470,7 +1474,7 @@ Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entspreche
 
 *_Integration von Suche und Filter_*
 
-* Die Kombination aus Such- und Filterfunktionen erhöht die Effizienz bei der Navigation durch große Datenmengen.
+* Die Kombination aus Such- und Filterfunktionen erhöht die Effizienz bei der Navigation bei großen Datenmengen.
 * Alle Interaktionen müssen tastaturzugänglich und in dynamischen Kontexten (aria-live) barrierefrei implementiert werden.
 * Sicherstellung, dass Filtereinstellungen beim Verlassen der Seite erhalten bleiben, sofern es sinnvoll ist.
 
@@ -1550,7 +1554,7 @@ Diese Funktionalität fördert eine intuitive und zugängliche Datenbearbeitung.
 ==== Drucken
 
 Drucken ermöglicht das direkte Drucken von Daten der Tabellenzeile.
-Dabei können nicht nur die aus der Tabelle angezeigten Daten gedrückt werden, sondern je nach Funktionalität auch weiterführende Daten aus einer optionalen Detailansicht.
+Dabei können nicht nur die aus der Tabelle angezeigten Daten gedruckt werden, sondern je nach Funktionalität auch weiterführende Daten aus einer optionalen Detailansicht.
 
 *_Funktionalität:_* Durch einen Klick oder eine Tastaturinteraktion wird eine Zeile mit optional weiterführenden Daten ausgedruckt (die Druckvorschau des Browsers wird geöffnet).
 
