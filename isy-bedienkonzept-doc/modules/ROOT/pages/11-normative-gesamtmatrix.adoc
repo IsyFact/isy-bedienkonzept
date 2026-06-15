@@ -2,6 +2,7 @@
 == Normative Gesamtmatrix
 
 === Normative Bezüge
+#Ngd: Hier fände ich eine kurze Einleitung schön#
 
 [cols="1,1,1,2", options="header"]
 |===
