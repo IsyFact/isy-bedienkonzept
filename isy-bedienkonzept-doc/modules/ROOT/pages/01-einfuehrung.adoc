@@ -58,23 +58,16 @@ Die Entwicklungen und Änderungen werden entsprechend dem Stand der Technik und 
 
 *_Technische Kompatibilität_*
 
-Wenn Frontends anhand dieses Bedienkonzepts erstellt werden, müssen die korrekte Darstellung und Funktionsweisen des Frontends inklusive ihrer Browser-Funktionen, wie beispielsweise "Vor" und "Zurück", geprüft werden.
-Dafür muss für jedes Projekt der primäre Browser und dessen Versionen ermittelt und geprüft werden.
+Frontends, die anhand dieses Bedienkonzepts erstellt werden, müssen in den unterstützten Browsern korrekt dargestellt werden und funktionieren – einschließlich browser-spezifischer Funktionen wie „Vor" und „Zurück".
 
-In der Regel soll sichergestellt sein, dass folgende Browser unterstützt werden:
+.icon:university[title=Architekturregel] Browser-Unterstützung
+****
+Frontends müssen die jeweils zwei aktuellsten Hauptversionen folgender Browser unterstützen:
 
-|===
-|Browser |Neuste Version aus Channel
-
-|Microsoft Edge
-|Stable Channel
-
-|Firefox
-|ESR
-
-|Chrome
-|Stable Channel
-|===
+* Microsoft Edge (Stable Channel)
+* Firefox (aktuellste Version sowie Extended Support Release – ESR)
+* Chrome (Stable Channel)
+****
 
 Soweit notwendig wird auf browser-spezifische Eigenheiten eingegangen.
 Dabei sind folgende Auflösungen zu berücksichtigen:
