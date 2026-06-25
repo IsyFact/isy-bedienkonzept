@@ -1,5 +1,6 @@
 # 1.0.0
 ## Dokumentation
+- IFS-5002: Unterstütze Browser werden über Architekturregel festgelegt
 - IFS-5467: Das Bedienkonzept wurde bereinigt und die AsciiDoc-Inhalte wurden modularisiert
 - IFS-5465: Das Bedienkonzept wurde technologieunabhängig ausgerichtet und von PrimeNG entkoppelt
 - IFS-5466: Die Barrierefreiheitsreferenzen wurden im Bedienkonzept auf WCAG 2.1 Level AA vereinheitlicht
