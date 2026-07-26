@@ -103,11 +103,9 @@ Im Hover- und Pressed-Zustand muss die Interaktion klar erkennbar sein.
 Im Disabled-Zustand ist der Button als nicht verfügbar erkennbar und darf keine Aktion auslösen.
 Im aktiven beziehungsweise fokussierten Zustand ist ein sichtbarer Fokusindikator vorzusehen, der die Anforderungen an die Barrierefreiheit erfüllt.
 
-[TIP]
-Invertierte Buttons werden häufig genutzt, wenn es mehr als zwei Aktionen auf einer Seite gibt oder wenn einer Aktion ein besonderer Fokus eingeräumt werden soll, wie zum Beispiel beim "Registrieren".
-Das heißt nach der Nutzung einer hervorgehobenen Primäraktion kann auf zurückhaltendere Varianten umgestiegen werden.
-Eine Kombination aus hervorgehobenen und zurückhaltenden Button-Varianten ist jedoch nicht zulässig.
-Es sollte eine der beiden Varianten konsistent im gesamten Frontend benutzt werden.
+Invertierte Buttons eignen sich vor allem für sekundäre oder alternative Aktionen, wenn eine vollflächige Hervorhebung zu dominant wäre.
+Innerhalb einer zusammengehörigen Aktionsgruppe kann eine hervorgehobene Primäraktion mit zurückhaltenderen, invertierten Buttons kombiniert werden, sofern die visuelle Hierarchie eindeutig bleibt.
+Nicht zulässig ist eine uneinheitliche Verwendung gleicher Aktionen in vergleichbaren Situationen, beispielsweise wenn dieselbe Aktion einmal als hervorgehobener Button und an anderer Stelle ohne fachlichen Grund als invertierter Button dargestellt wird.
 
 [[icon-button]]
 ==== Icon-Button
@@ -134,9 +132,10 @@ Ist diese Beschreibung jedoch zu lang (mehr als drei Wörter), ist das Icon nich
 
 *Sonderfall:*
 
-In speziellen Fällen werden Icon-Buttons auch ohne ihre Border dargestellt.
-Hierbei ist es besonders wichtig, dass die Icon-Buttons passend zum projektspezifisch definierten Design Pattern gewählt werden.
-Diese werden beispielsweise innerhalb von Tabellenheadern zum Sortieren und Filtern der Tabelleninhalte verwendet und sehen wie folgt aus:
+In speziellen Fällen können Icon-Buttons auch ohne Rahmen dargestellt werden.
+Dabei ist sicherzustellen, dass diese Variante zum projektspezifisch definierten Design Pattern passt.
+
+Rahmenlose Icon-Buttons werden beispielsweise in Tabellenheadern zum Sortieren oder Filtern von Tabelleninhalten eingesetzt.
 
 
 *_Dos_*
@@ -147,10 +146,14 @@ Diese werden beispielsweise innerhalb von Tabellenheadern zum Sortieren und Filt
 [[link]]
 === Hyperlink
 
-Hyperlinks sind verlinkte xref:04-basiselemente.adoc#text[Texte] (oder auch xref:04-basiselemente.adoc#grafiken[Grafiken]), die im Wesentlichen als Navigationsmechanismus dienen, zum Beispiel um neue Fenster mit anderen Inhalten zu öffnen.
+Hyperlinks sind mit einem Link versehene xref:04-basiselemente.adoc#text[Texte] (oder auch xref:04-basiselemente.adoc#grafiken[Grafiken]), die im Wesentlichen als Navigationsmechanismus dienen, zum Beispiel um neue Fenster mit anderen Inhalten zu öffnen.
 Wird die Maus über einen Hyperlink bewegt, ändert sich der Cursor vom Pfeil zum Handsymbol.
-Hyperlinks folgen per Default einem einheitlichen Styling und sind in der Regel unterstrichen.
-Da Nutzende daran gewöhnt sind, weiterführende Informationen/Links in einem Fließtext oder auf einer Seite anhand des unterstrichenen Textes zu erkennen, ist es nicht ratsam, daran etwas zu ändern.
+
+Hyperlinks folgen per Default einem einheitlichen Styling und müssen als Links eindeutig erkennbar sein.
+In der Regel werden sie im Normalzustand farblich hervorgehoben.
+Im Hover- und Fokuszustand wird zusätzlich eine Unterstreichung angezeigt, damit der Zustand nicht ausschließlich über Farbe vermittelt wird.
+
+Da Nutzende daran gewöhnt sind, weiterführende Informationen oder Verweise im Fließtext eindeutig erkennen zu können, darf die visuelle Kennzeichnung von Hyperlinks nicht entfernt oder uneinheitlich verwendet werden.
 
 Hyperlinks können den Status (State) "normal", "hovered/focus" und "clicked" haben.
 
@@ -178,7 +181,7 @@ include::partial$example-link-card.adoc[]
 
 
 Aktive Eingabefelder werden durch eine um 1 px stärkere Umrandung visuell hervorgehoben.
-Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Abbildung zum aktiven Eingabefeld) oder eine Mask enthalten (siehe Abbildung zur Eingabefeld-Mask).
+Sie verlieren ihren Platzhalter und können entweder geleert werden (siehe Beispiel zum aktiven Eingabefeld) oder eine Mask enthalten (siehe Beispiel zur Eingabefeld-Mask).
 
 Wenn eine Eingabe in einem Eingabefeld getätigt wurde und das Feld wieder verlassen wird, wechselt das Eingabefeld wieder in den Normalzustand mit dem Unterschied, dass der Platzhalter verschwunden ist und die Eingabe angezeigt wird.
 
@@ -200,7 +203,7 @@ Die Information ist zum aktuellen Zeitpunkt relevant, kann aber nicht verändert
 Ein Eingabefeld als Pflichtfeld ist im Grunde ein normales Eingabefeld mit der Besonderheit, dass es befüllt werden muss.
 Die "Pflicht"-Kennzeichnung erfolgt dabei durch das Label und wird durch einen Asterisk (*) dargestellt.
 Der Asterisk wird immer ans Ende eines Labels gestellt.
-Pflichtfelder haben immer eine Validierung und eine entsprechende Fehlermeldung, die bei einer fehlerhaften Eingabe unterhalb des Eingabefeldes sichtbar wird (siehe zum Beispiel Abbildung zur Eingabefeld-Fehlermeldung).
+Pflichtfelder haben immer eine Validierung und eine entsprechende Fehlermeldung, die bei einer fehlerhaften Eingabe unterhalb des Eingabefeldes sichtbar wird (siehe zum Beispiel zur Eingabefeld-Fehlermeldung).
 
 [NOTE]
 Ein Pflichtfeld kann zusätzlich durch die Deklaration des Platzhalters mit "Pflichtfeld" oder "required" gekennzeichnet werden.
@@ -271,7 +274,7 @@ Dies erleichtert den Nutzenden die Eingabe von festgelegten Formaten, beispielsw
 include::partial$example-link-card.adoc[]
 
 Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem normalen Eingabefeld.
-Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen Sonderzeichen-Picker (zu sehen in der Abbildung zur Input-Option) oder eine Datumseingabe.
+Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen <<sonderzeichen-picker,Sonderzeichen-Picker>> oder eine Datumseingabe.
 Die Schaltfläche der Input-Option ist mindestens 44px x 44px.
 
 *_Datum- und Uhrzeit-Eingaben_*
@@ -290,8 +293,8 @@ Die Kennzeichnung darf nicht ausschließlich über Farbe erfolgen.
 
 *_Eingabe von Datumswerten_*
 
-Für die Eingabe eines Zeitpunkts mit Datum und Uhrzeit wird ein Eingabefeld verwendet, das beide Informationen eindeutig zusammenführt.
-Das erwartete Format muss klar erkennbar sein, zum Beispiel „TT.MM.JJJJ HH:MM“.
+Für die Eingabe eines Datumswertes wird ein Eingabefeld verwendet, das das erwartete Datum eindeutig erfasst.
+Das erwartete Format muss klar erkennbar sein, zum Beispiel „TT.MM.JJJJ“.
 
 :example-link-component: Eingabe von Datumswerten
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#date-picker
@@ -344,10 +347,11 @@ Die Eingaben für Beginn und Ende müssen visuell und semantisch als zusammengeh
 Zusätzlich muss geprüft werden, dass das Ende nicht vor dem Beginn liegt.
 Eine fehlerhafte Reihenfolge wird mit einer verständlichen Fehlermeldung ausgegeben.
 
+[[sonderzeichen-picker]]
 *_Sonderzeichen-Picker_*
 
 Der Sonderzeichen-Picker ist eine Input-Option, um nicht übliche Zeichen ohne weitere Hilfsmittel eingeben zu können.
-Die Input-Option des Sonderzeichen-Picker ist immer am Ende eines Eingabefelds und entweder vollständig ausgefüllt mit der Primärfarbe oder alternativ im "Outline"-Styling (siehe folgende Abbildungen).
+Die Input-Option des Sonderzeichen-Picker ist immer am Ende eines Eingabefelds und entweder vollständig ausgefüllt mit der Primärfarbe oder alternativ im "Outline"-Styling.
 
 Beim Klick auf die Input-Option öffnet sich in der Mitte des Frontends der Sonderzeichenpicker als Overlay.
 
@@ -398,7 +402,7 @@ Die einfachste Form einer Liste ist die rein textuelle Liste.
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#dropdown
 include::partial$example-link-card.adoc[]
 
-Eine Liste kann theoretisch beliebig viele Einträge enthalten, was aber die xref:01-einfuehrung.adoc#usability-und-benutzerfreundlichkeit[Usability] verschlechtert.
+Eine Liste kann theoretisch beliebig viele Einträge enthalten, was aber die xref:01-einfuehrung.adoc#usability-ui-ux[Usability] verschlechtert.
 Im optimalen Fall haben Listen eine überschaubare Anzahl an logisch relevanten Einträgen.
 Die Einträge sind eindeutig und prägnant.
 Bei langen Einträgen können auch sinnvolle Abkürzungen genutzt werden.
@@ -452,7 +456,7 @@ image::checkboxes.wireframe.drawio.svg[align="center"]
 * Das Ein- oder Ausschalten einer Checkbox kann dazu genutzt werden, andere Elemente dynamisch zu aktivieren/anzuzeigen oder zu deaktivieren/unsichtbar zu machen.
 Zum Beispiel können Eingabefelder eingeblendet werden, wenn per Checkbox "Abweichende Lieferadresse" ausgewählt wird.
 * Nicht nur die Box und Target-Area, sondern auch das Label sollten anklickbar sein.
-* Eine Gruppe von Checkboxen sollte immer eine Beschriftung aufweisen.
+* Eine Gruppe von Checkboxen sollte immer eine Überschrift aufweisen.
 Bei einer einzelnen Checkbox kann diese entfallen.
 * Für optimale Lesbarkeit sollten Checkboxen untereinander angeordnet sein.
 * Bei Checkboxen mit mehreren Ebenen gilt:
@@ -495,13 +499,13 @@ image::radiobuttons.wireframe.drawio.svg[align="center"]
 
 * Die Verwendung von Radiobuttons empfiehlt sich für eine kleinere Anzahl an Optionen.
 Ist die Menge der zur Verfügung stehenden Optionen sehr groß oder hat der Platzbedarf eine große Bedeutung, so kann der Einsatz eines xref:07-design-pattern.adoc#dropdown[Dropdowns] in Betracht gezogen werden.
-* Eine Gruppe von Radiobuttons sollte immer eine Beschriftung aufweisen.
+* Eine Gruppe von Radiobuttons sollte immer eine Überschrift aufweisen.
 * Für optimale Lesbarkeit sollten Radiobuttons untereinander angeordnet sein.
 * Falls alle oder keine der angebotenen Optionen zutreffen können, sollte eine zusätzliche allgemeine Meta-Option, zum Beispiel "keine Option" oder "alle", hinzugefügt werden.
 
 *_Don't_*
 
-Ein Radiobutton darf nicht genutzt werden, um unmittelbar Funktionen auszuführen oder Aktionen auszulösen.
+* Ein Radiobutton darf nicht genutzt werden, um unmittelbar Funktionen auszuführen oder Aktionen auszulösen.
 Für diese Zwecke sollten <<button,Buttons>> verwendet werden.
 
 [[input-switch]]
@@ -595,7 +599,7 @@ Eine Tabelle dient der übersichtlichen Anzeige von größeren Datenmengen und b
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-data#table
 include::partial$example-link-card.adoc[]
 
-Tabellenzeilen sind standardmäßig nicht anwählbar, was aber durch eine fachliche Notwendigkeit umgesetzt werden kann.
+Tabellenzeilen sind standardmäßig nicht anwählbar, was aber bei einer fachlichen Notwendigkeit umgesetzt werden kann.
 So steht es der Anwendung frei:
 
 * Keine Zeile auswählbar zu machen.

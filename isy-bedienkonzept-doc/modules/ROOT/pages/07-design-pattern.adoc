@@ -295,7 +295,7 @@ Ein Informationsbereich (optional) kann ein- und ausgeblendet werden.
 Ohne verständlichen, aussagekräftigen Text darf keine Detailseite bereitgestellt werden.
 Der Rücksprung in die auslösende Übersicht erfolgt über die Seiten-Toolbar („Zurück zur Liste“).
 
-** *Beispiele (Struktur):*
+** *Beispiele für den Aufbau der Titelzeile:*
 *** *2 Ebenen:* _Label Ebene 2_: Objektname / ID
 *** *3 Ebenen:* _Label Ebene 2 - Label Ebene 3_: Objektname / ID
 
@@ -332,11 +332,10 @@ Mischformen auf derselben Hierarchieebene sind zu vermeiden, um Orientierung und
 [[sekundaere-fenstertypen]]
 === Sekundäre Fenstertypen
 
-Sekundäre Fenstertypen ergänzen die in Kapitel <<primaere-fenstertypen>> beschriebenen Seitentypen um temporäre, kontextsensitive Anzeigekontexte.
+Sekundäre Fenstertypen ergänzen die in Abschnitt <<primaere-fenstertypen>> beschriebenen Seitentypen um temporäre, kontextsensitive Anzeigekontexte.
 Sie werden als Overlay- oder kontextbezogene Container-Muster dargestellt und dienen insbesondere der Fokussierung, Bestätigung oder Ergänzung von Arbeitsvorgängen.
 
-Für sekundäre Fenstertypen gelten die gleichen Grundlagen zu xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit], Struktur und technischer Umsetzung wie in Kapitel <<primaere-fenstertypen>> beschrieben.
-Zusätzlich ist ein modalarmes Interaktionsverhalten sicherzustellen.
+Für sekundäre Fenstertypen gelten die gleichen Grundlagen zu xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit], Struktur und technischer Umsetzung wie im Abschnitt <<primaere-fenstertypen>> beschrieben.
 
 [[container-overlays]]
 ==== Container und Overlays
@@ -349,7 +348,7 @@ Modale Dialoge kommen ausschließlich dann zum Einsatz, wenn sie fachlich, recht
 
 Sekundäre Fenstertypen sind so zu gestalten, dass sie den Arbeitsfluss möglichst wenig unterbrechen und die Orientierung erhalten bleibt.
 
-Die folgenden Unterkapitel konkretisieren Aufbau, Inhalte und Interaktionsverhalten der einzelnen Overlay- und Dialogtypen.
+Die folgenden Unterabschnitte konkretisieren Aufbau, Inhalte und Interaktionsverhalten der einzelnen Overlay- und Dialogtypen.
 
 *_Barrierefreiheits-Baseline (Overlays)_*
 
@@ -558,7 +557,7 @@ Diese bleibt für eine angemessene Zeit verfügbar (in der Regel 5-10 s) und wir
 * *Barrierefreiheit & Fokus:* Bestätigungen übernehmen den Fokus nicht dauerhaft.
 Beim Schließen kehrt der Fokus in der Regel an das auslösende Element zurück.
 Wenn der Bedienfluss einen anderen sinnvollen Zielpunkt erfordert, wird der Fokus nachvollziehbar dorthin geführt.
-Die Ankündigung von Statusmeldungen erfolgt über eine Live-Region, ohne dass sich der Fokus verschiebt.
+Statusmeldungen werden so umgesetzt, dass sie von assistiven Technologien automatisch wahrgenommen werden können, ohne den Tastaturfokus zu verschieben.
 
 *_Verhalten_*
 
@@ -697,7 +696,7 @@ Alle Links sind programmatisch fokussierbar und vollständig per Tastatur bedien
 Nach erfolgreichem Speichern bleibt der Fokus stabil.
 
 * *Screenreader:* Titel und Struktur benennen Objekt und Modus eindeutig.
-Die Ankündigung von Statusmeldungen erfolgt über eine Live-Region ohne Fokusübernahme.
+Statusmeldungen werden so umgesetzt, dass sie von assistiven Technologien automatisch wahrgenommen werden können, ohne den Tastaturfokus zu verschieben.
 
 *_Umsetzungshinweise_*
 
@@ -740,7 +739,7 @@ Warnungen und Fehler erfordern in der Regel ein explizites Schließen oder bleib
 * *Kein Fokus-Hijack:* Die Ankündigung von Meldungen erfolgt über `aria-live` (in der Regel `polite`).
 Der Fokus verbleibt bei den Nutzenden.
 
-* *Text statt Farbe:* Schweregrade sind sprachlich zu benennen (z. B. „Warnung“, „Fehler“).
+* *Text vor Farbe:* Schweregrade sind sprachlich zu benennen (z. B. „Warnung“, „Fehler“).
 Die Farbe dient als ergänzendes Unterscheidungsmerkmal.
 
 * *Anzahl gleichzeitiger Meldungen:* Mehrere Meldungen dürfen keine Primäraktionen verdecken.
@@ -836,7 +835,7 @@ Der Formularzustand darf beim Navigieren (Zurück oder Weiter) nicht verloren ge
 Nach erfolgreichem Schrittwechsel bleibt der Fokus stabil auf dem neuen Inhalt.
 
 * *Screenreader:* Titel und Struktur des Steppers benennen den aktuellen Schritt und den Gesamtfortschritt eindeutig.
-Die Ankündigung von Statusmeldungen erfolgt über eine Live-Region ohne Fokusübernahme.
+Statusmeldungen werden so umgesetzt, dass sie von assistiven Technologien automatisch wahrgenommen werden können, ohne den Tastaturfokus zu verschieben.
 
 *_Umsetzungshinweise_*
 
@@ -863,7 +862,7 @@ Die IsyFact sieht drei Navigationsebenen vor:
 
 * (A) Die *Hauptnavigation (A)* (auch horizontale Navigation genannt)
 * (B) Die darin enthaltene *Subnavigation (B)*  (Menüitems der Hauptnavigation)
-* (C) Die *Linksnavigation \(C)* (Liste von Einträgen am linken Rand der Applikation)
+* \(C) Die *Linksnavigation \(C)* (Liste von Einträgen am linken Rand der Applikation)
 
 Innerhalb einer Anwendungslandschaft oder einer einzelnen Fachanwendung muss die Navigation einheitlich strukturiert sein.
 
@@ -1099,9 +1098,9 @@ Eine klassische Anwendung hat das Akkordeon beispielsweise in FAQs.
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#accordion
 include::partial$example-link-card.adoc[]
 
-Fürs Aus- und Einklappen eines Akkordeonelements kann der gesamte Akkordeon-Header angeklickt werden.
-Zusätzlich befindet sich auf der linken Seite neben dem Label ein Icon, das den Zustand (ein- oder ausgeklappt) des Akkordeonelements anzeigt.
-Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen zum ein- und ausgeklappten Akkordeon).
+Zum Ein- und Ausklappen eines Akkordeonelements kann der gesamte Akkordeon-Header angeklickt werden.
+Zusätzlich wird ein Icon als Zustandsindikator verwendet, das anzeigt, ob das Akkordeonelement ein- oder ausgeklappt ist.
+Die konkrete Position und Darstellung des Icons richtet sich nach der Referenzimplementierung.
 
 Die Interaktion wird dabei in der Regel auf die reine Wissensvermittlung reduziert.
 Entsprechend soll auf weiterführende Interaktion, über das aus- und einklappen hinaus, verzichtet werden.
@@ -1121,14 +1120,13 @@ Klassischerweise werden Panels in xref:05-benutzereingaben.adoc#benutzereingaben
 include::partial$example-link-card.adoc[]
 
 
-Fürs Aus- und Einklappen eines Panels befindet sich auf der linken Seite auf der Höhe des Labels ein Icon.
-Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen zum ein- und ausgeklappten Panel).
+Zum Ein- und Ausklappen eines Panels wird ein Zustandsindikator verwendet.
+Dieser zeigt an, ob der Inhaltsbereich aktuell ein- oder ausgeklappt ist. Die konkrete Darstellung richtet sich nach der Referenzimplementierung.
 
 Die Interaktion steht hier im Vordergrund.
 Weiterführende Aktionen können entweder rechts im Panel Header oder in einer Footer Sektion unterhalb des Inhaltsbereichs eingebaut werden.
 
 Panels bieten in der Regel mehr Freiraum für komplexe Inhalte und Interaktionen als ein Akkordeon.
-Eine Gegenüberstellung, wann ein Panel und wann ein Akkordeon sinnvoll ist, befindet sich im Kapitel xref:10-design-richtlinien.adoc#panel-akkordeon-ueberschrift[Panel vs. Akkordeon vs. Überschrift].
 
 [[dropdown]]
 === Eingabefeldliste (Dropdown)
@@ -1137,7 +1135,7 @@ Ein Eingabefeld mit hinterlegten Werten ist in seiner einfachsten Form ein Einga
 Die Liste ist die bekannteste Art eines interaktiven Eingabefelds, besser bekannt als Dropdown.
 
 Eingabefeldlisten setzen Standards für interaktive xref:06-bedienelemente.adoc#eingabefeld[Eingabefelder], Dropdown-Menüs, enthaltene Kontrollkästchen und andere interaktive Elemente.
-Dadurch wird sichergestellt, dass alle Eingabefelder auf dem Frontend einheitlich gestaltet sind und den besten Praktiken hinsichtlich xref:01-einfuehrung.adoc#usability-und-benutzerfreundlichkeit[Benutzerfreundlichkeit] und xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] entsprechen.
+Dadurch wird sichergestellt, dass alle Eingabefelder auf dem Frontend einheitlich gestaltet sind und den besten Praktiken hinsichtlich xref:01-einfuehrung.adoc#usability-ui-ux[Benutzerfreundlichkeit] und xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] entsprechen.
 Ein konsistentes Design fördert die Orientierung und das Vertrauen der Nutzenden, was letztendlich zu einer höheren Zufriedenheit und Effizienz führt.
 
 Beim Klick auf das gesamte Element klappt die Liste aus und ein Element kann angewählt werden.
@@ -1155,7 +1153,7 @@ Aktive Listenelemente sind in der Highlightfarbe und hinterlegt dargestellt.
 Ein Menü-Button kombiniert eine primäre Aktion mit einer zusätzlichen Auswahl weiterer Aktionen.
 Der primäre Bereich löst beim Betätigen eine Standardaktion aus (zum Beispiel Speichern), während der zusätzliche Bereich eine Auswahl weiterer Funktionen öffnet (zum Beispiel Speichern als PDF oder Speichern als XLS).
 
-Diese Button-Art wird hauptsächlich in Toolbars eingesetzt und muss immer mehrere Funktionen, die in einen logischen Zusammenhang zueinander stehen, beinhalten.
+Diese Button-Art wird hauptsächlich in Toolbars eingesetzt und muss immer mehrere Funktionen beinhalten, die in einem logischen Zusammenhang zueinander stehen.
 Eine mögliche Verwendung ist das Zusammenfassen von mehreren Exportmöglichkeiten.
 
 Menü-Buttons bestehen aus zwei Bestandteilen:
@@ -1191,7 +1189,7 @@ include::partial$example-link-card.adoc[]
 Es wird ein einspaltiges Layout verwendet.
 Jedes Pflichtfeld ist durch einen Asterisk (*) gekennzeichnet.
 Eingabefeldgruppen bedürfen keiner zusätzlichen optischen Gruppierung.
-Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends (siehe xref:08-use-cases.adoc#image-vertikalerschnitt[image-vertikalerschnitt]) folgen.
+Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends folgen.
 
 *_Eingabefeldgruppe mit Fieldset:_*
 
@@ -1217,7 +1215,7 @@ Vielmehr sollte überlegt werden, ob es einen verständlicheren fachlichen Lösu
 
 *_Beispielhafte Verwendung von Gruppen und inhaltlich logische Gruppierung:_*
 
-* Personendaten (rosa Overlay, vertikal gruppiert)
+* Personendaten (zusammengehörige Eingabegruppe, vertikal gruppiert)
 * Identitätsnachweis (vertikal gruppiert)
 
 [[image-mehrspaltigegruppen]]
@@ -1364,11 +1362,11 @@ include::partial$example-link-card.adoc[]
 [[selektion]]
 === Selektion
 
-Selektionsmöglichkeiten in einem Frontend sind grundlegend bei der Bedienung eines Frontends notwendig.
+Selektionsmöglichkeiten in einem Frontend sind bei der Bedienung eines Frontends grundlegend notwendig.
 Sie dienen zur Auswahl einzelner oder mehrerer Werte aus einer meist vordefinierten Menge.
 Sie können beliebig kombiniert werden, um die Fehleranfälligkeit zu reduzieren und die Auswahlmöglichkeiten zu optimieren.
 
-Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern>> und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
+Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern, Design Pattern>> und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
 Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entsprechenden Unterkapitel des Kapitels xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] einzusehen.
 
 [[checkbox-selektion]]
@@ -1466,7 +1464,7 @@ Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entspreche
 
 *_Integration von Suche und Filter_*
 
-* Die Kombination aus Such- und Filterfunktionen erhöht die Effizienz bei der Navigation durch große Datenmengen.
+* Die Kombination aus Such- und Filterfunktionen erhöht die Effizienz bei der Navigation bei großen Datenmengen.
 * Alle Interaktionen müssen tastaturzugänglich und in dynamischen Kontexten (aria-live) barrierefrei implementiert werden.
 * Sicherstellung, dass Filtereinstellungen beim Verlassen der Seite erhalten bleiben, sofern es sinnvoll ist.
 
@@ -1546,7 +1544,7 @@ Diese Funktionalität fördert eine intuitive und zugängliche Datenbearbeitung.
 ==== Drucken
 
 Drucken ermöglicht das direkte Drucken von Daten der Tabellenzeile.
-Dabei können nicht nur die aus der Tabelle angezeigten Daten gedrückt werden, sondern je nach Funktionalität auch weiterführende Daten aus einer optionalen Detailansicht.
+Dabei können nicht nur die aus der Tabelle angezeigten Daten gedruckt werden, sondern je nach Funktionalität auch weiterführende Daten aus einer optionalen Detailansicht.
 
 *_Funktionalität:_* Durch einen Klick oder eine Tastaturinteraktion wird eine Zeile mit optional weiterführenden Daten ausgedruckt (die Druckvorschau des Browsers wird geöffnet).
 
@@ -1577,4 +1575,4 @@ Formulierungen wie „Ja“ oder „Nein“ sind zu vermeiden.
 
 * Klare visuelle und sprachliche xref:09-eingabehilfen-und-fehlermeldungen.adoc#system-meldungen[Rückmeldungen] bei Aktionen (zum Beispiel „Datensatz gelöscht“).
 * Beschriftungen und ARIA-Attribute für Screenreader.
-* Bei nicht blockierenden Rückgängig-Hinweisen erfolgt die Ankündigung über eine geeignete Live-Region, ohne den Fokus zu entziehen.
+* Bei nicht blockierenden Rückgängig-Hinweisen wird die Statusmeldung so umgesetzt, dass sie von assistiven Technologien automatisch wahrgenommen werden kann, ohne den Tastaturfokus zu verschieben.
