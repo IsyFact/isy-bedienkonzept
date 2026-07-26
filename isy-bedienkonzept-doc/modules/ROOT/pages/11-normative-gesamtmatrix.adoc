@@ -455,7 +455,7 @@ Die Akzeptanzkriterien beschreiben, woran die Einhaltung der jeweiligen Anforder
 | xref:07-design-pattern.adoc#r-meldungsdialoge-einsatzfaelle[Meldungsdialoge: zwingende Einsatzfälle]
 | Design Patterns / Fenstertypen
 | WCAG 2.1 SC 3.3.4
-| Meldungsdialoge sperren Hintergrund nur bei irreversiblen, sicherheitskritischen Aktionen oder drohendem Datenverlust; sonst modalarme Muster.
+| Meldungsdialoge sperren Hintergrund nur bei irreversiblen, sicherheitskritischen Aktionen oder drohendem Datenverlust; sonst nicht-modale und kontextbezogene Muster.
 
 | xref:07-design-pattern.adoc#r-bestaetigen-undo[Bestätigen und Rückgängig: Rückgängig-Option]
 | Design Patterns / Interaktionsmuster

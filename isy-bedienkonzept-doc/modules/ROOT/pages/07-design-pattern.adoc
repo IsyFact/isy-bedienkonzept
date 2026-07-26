@@ -344,7 +344,7 @@ Container- und Overlay-Komponenten stellen eigenständige Anzeigekontexte dar.
 Sie können den regulären Seitenfluss kontextbezogen erweitern oder bestehende Inhalte temporär überlagern.
 
 Kontextnahe, nicht blockierende Muster (z. B. Drawer/Side Panels, Popover oder Inline-Leisten) sind grundsätzlich gegenüber stark modalen Lösungen zu bevorzugen.
-Modale Dialoge kommen ausschließlich dann zum Einsatz, wenn sie fachlich, rechtlich oder sicherheitsrelevant erforderlich sind (vgl. xref:03-fenstertypen-und-layout.adoc#modalarme-interaktionen[Modalarme Interaktionen (Grundsatz)]).
+Modale Dialoge kommen ausschließlich dann zum Einsatz, wenn sie fachlich, rechtlich oder sicherheitsrelevant erforderlich sind (vgl. xref:03-fenstertypen-und-layout.adoc#nicht-modale-und-kontextbezogene-interaktionen[Nicht-modale und kontextbezogene Interaktionen (Grundsatz)]).
 
 Sekundäre Fenstertypen sind so zu gestalten, dass sie den Arbeitsfluss möglichst wenig unterbrechen und die Orientierung erhalten bleibt.
 
@@ -485,7 +485,7 @@ Sie dienen der Absicherung kritischer Aktionen oder der Unterbindung riskanter Z
 * Nicht fortsetzbare Fehlerzustände erfordern eine unmittelbare Kenntnisnahme oder Handlung, z. B. Sitzung abgelaufen oder Authentifizierung fehlgeschlagen.
 
 * Meldungsdialoge sind nicht für reine Informationen oder reversible Aktionen einzusetzen.
-Dafür sind modalarme Alternativen zu verwenden (vgl. <<bestaetigen-rueckgaengig>>).
+Dafür sind nicht-modale und kontextbezogene Alternativen zu verwenden (vgl. <<bestaetigen-rueckgaengig>>).
 
 :example-link-component: Meldungsdialog
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-overlay#confirmdialog
