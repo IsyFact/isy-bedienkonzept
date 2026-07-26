@@ -1121,7 +1121,8 @@ include::partial$example-link-card.adoc[]
 
 
 Zum Ein- und Ausklappen eines Panels wird ein Zustandsindikator verwendet.
-Dieser zeigt an, ob der Inhaltsbereich aktuell ein- oder ausgeklappt ist. Die konkrete Darstellung richtet sich nach der Referenzimplementierung.
+Dieser zeigt an, ob der Inhaltsbereich aktuell ein- oder ausgeklappt ist.
+Die konkrete Darstellung richtet sich nach der Referenzimplementierung.
 
 Die Interaktion steht hier im Vordergrund.
 Weiterführende Aktionen können entweder rechts im Panel Header oder in einer Footer Sektion unterhalb des Inhaltsbereichs eingebaut werden.

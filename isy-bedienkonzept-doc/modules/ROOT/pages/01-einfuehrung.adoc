@@ -100,7 +100,8 @@ Gleichzeitig stehen sie in engem Zusammenhang miteinander.
 
 *_Begriff der Usability (Benutzerfreundlichkeit)_*
 
-Usability, also Benutzerfreundlichkeit, beschreibt, wie leicht Nutzende eine Anwendung verstehen, erlernen und bedienen können. Dabei geht es darum, ob Nutzende ihre Ziele mit einem Frontend einfach, effizient und zufriedenstellend erreichen können.
+Usability, also Benutzerfreundlichkeit, beschreibt, wie leicht Nutzende eine Anwendung verstehen, erlernen und bedienen können.
+Dabei geht es darum, ob Nutzende ihre Ziele mit einem Frontend einfach, effizient und zufriedenstellend erreichen können.
 
 * *Effektivität:*
 Die Fähigkeit eines Frontends, den Nutzenden die Möglichkeit zu geben, ihre Ziele vollständig und korrekt zu erreichen.
@@ -177,7 +178,8 @@ Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Absch
 === Allgemeine Prinzipien
 
 Das Bedienkonzept basiert auf einer Reihe von allgemeinen Prinzipien, die als Leitfaden für die Gestaltung von Benutzeroberflächen dienen.
-Bei diesen Prinzipien handelt es sich um Klarheit, Konsistenz, Feedback, Effizienz und Zugänglichkeit. Sie bilden das Fundament für eine benutzerzentrierte Gestaltung.
+Bei diesen Prinzipien handelt es sich um Klarheit, Konsistenz, Feedback, Effizienz und Zugänglichkeit.
+Sie bilden das Fundament für eine benutzerzentrierte Gestaltung.
 Viele dieser Prinzipien werden beispielsweise in der https://de.wikipedia.org/wiki/ISO_9241[ISO 9241] und in https://en.wikipedia.org/wiki/Web_usability#Web_Usability_Criteria[Nielsen’s Web Usability Criteria] beschrieben.
 Zusätzlich liefert https://lawsofux.com/[lawsofux] eine anschauliche Sammlung von *Designprinzipien*.
 
