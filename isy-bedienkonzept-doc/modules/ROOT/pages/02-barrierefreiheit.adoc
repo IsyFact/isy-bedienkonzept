@@ -61,7 +61,7 @@ Beispiele hierfür sind:
 * *Shift + Tab:* Navigation rückwärts zwischen interaktiven Elementen.
 * *Enter:* Aktivierung von Buttons, xref:06-bedienelemente.adoc#link[Links] und anderen interaktiven Elementen.
 * *Leertaste:* Scrollen in Seiten (bei nicht fokussierten Elementen) oder Aktivieren von xref:06-bedienelemente.adoc#checkbox[Checkboxen] (bei fokussierten Checkboxen).
-* *Pfeiltasten:* Navigation in xref:06-bedienelemente.adoc#liste[Listen], xref:07-design-pattern.adoc#dropdown[Dropdowns] oder xref:06-bedienelemente.adoc#textbox[Textfeldern].
+* *Pfeiltasten:* Navigation in xref:06-bedienelemente.adoc#auswahlliste[Auswahllisten] oder xref:06-bedienelemente.adoc#textbox[Textfeldern].
 * *Esc:* Schließen von Dialogen oder Dropdowns.
 
 Der reine Einsatz von Standardkombinationen in der Tastatursteuerung ist nicht ausreichend, eine größtmögliche <<barrierefreiheit,Barrierefreiheit>> sicherzustellen.

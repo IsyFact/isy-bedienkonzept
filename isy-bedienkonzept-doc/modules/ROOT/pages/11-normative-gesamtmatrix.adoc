@@ -92,10 +92,10 @@ Die Akzeptanzkriterien beschreiben, woran die Einhaltung der jeweiligen Anforder
 | WCAG 2.1 SC 1.4.10
 | Zustände belegen konstanten Raum; keine Sprünge.
 
-| xref:03-fenstertypen-und-layout.adoc#r-zielgroessen-minimum[Zielgrößen ≥ 24×24 (44×44 empfohlen)]
+| xref:03-fenstertypen-und-layout.adoc#r-zielgroessen-minimum[Zielgrößen ≥ 24x24 (44x44 empfohlen)]
 | Fenstertypen und Layout / Barrierefreies Layoutverhalten
 | WCAG 2.1 AA
-| Ziele ≥ 24×24 px; Touch 44×44 empfohlen.
+| Ziele ≥ 24x24 px; Touch 44x44 empfohlen.
 
 | xref:03-fenstertypen-und-layout.adoc#r-fokus-sichtbarkeit-reihenfolge[Fokus sichtbar & Reihenfolge korrekt]
 | Fenstertypen und Layout / Barrierefreies Layoutverhalten

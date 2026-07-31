@@ -2,14 +2,14 @@
 == Fenstertypen und Layout
 
 Fenstertypen und Layout bilden die verbindliche Grundlage für die Struktur und das Verhalten aller Seiten.
-Ziel ist eine einheitliche, effiziente und barrierefreie Nutzererfahrung in modernen Fachanwendungen.
+Ziel ist eine einheitliche und effiziente Nutzererfahrung in modernen Fachanwendungen.
 
 Die in Kapitel 2 xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] beschriebenen Anforderungen der WCAG 2.1 AA gelten uneingeschränkt und bilden den verbindlichen Rahmen.
 
-Die Vorgaben dieses Kapitels sind technologieunabhängig formuliert und beschreiben das erwartete Verhalten sowie die gestalterischen Anforderungen an Layout, Responsivität und Barrierefreiheit.
+Die Vorgaben dieses Kapitels sind technologieunabhängig formuliert und beschreiben das erwartete Verhalten sowie die gestalterischen Anforderungen an Layout und Responsivität.
 Grundlegende Interaktionsmuster werden im Kapitel xref:07-design-pattern.adoc#design-pattern[Design Patterns] beschrieben.
 
-Die folgenden Gestaltungsprinzipien definieren zentrale Regeln für Struktur, Lesbarkeit und Anpassungsfähigkeit der Benutzeroberfläche und sichern ein konsistentes Erscheinungsbild sowie eine barrierefreie Bedienung über alle Fenstertypen hinweg.
+Die folgenden Gestaltungsprinzipien definieren zentrale Regeln für Struktur, Lesbarkeit und Anpassungsfähigkeit der Benutzeroberfläche und sichern ein konsistentes Erscheinungsbild über alle Fenstertypen hinweg.
 
 [[gestaltungsprinzipien]]
 *_Gestaltungsprinzipien_*
@@ -112,7 +112,7 @@ Dadurch werden Layoutsprünge und visuelle Unruhe vermieden.
 Sekundäraktionen bleiben sichtbar, sind jedoch gestalterisch zurückgenommen.
 
 [[r-tastatur-fokusreihenfolge]]
-* *Tastaturbedienung:* Die Fokusreihenfolge entspricht der visuellen Lesereihenfolge, bildet eine durchgängige „Focus Order“ gemäß WCAG 2.1 SC 2.4.3 und folgt den allgemeinen <<barrierefreies-layoutverhalten,Barrierefreiheitsvorgaben>>.
+* *Tastaturbedienung:* Die Fokusreihenfolge entspricht der visuellen Lesereihenfolge und bildet eine durchgängige „Focus Order“.
 Navigation mit Tab und Shift + Tab erfolgt ohne Sprünge.
 
 ==== Tabellen und dichte Inhalte
@@ -133,7 +133,7 @@ In beiden Fällen bleiben Spaltenköpfe erkennbar.
 Zeilenhöhen bleiben kompakt, ohne die Bedienbarkeit zu beeinträchtigen.
 
 [[r-tabellen-stabilitaet]]
-* *Stabilität:* Leere, Lade- oder Fehlerzustände belegen konstanten Raum, damit das Layout ruhig und stabil bleibt. Das Scrollverhalten orientiert sich an den <<barrierefreies-layoutverhalten,Grundsätzen des barrierefreien Layoutverhaltens>>.
+* *Stabilität:* Leere, Lade- oder Fehlerzustände belegen konstanten Raum, damit das Layout ruhig und stabil bleibt.
 
 [[barrierefreies-layoutverhalten]]
 ==== Barrierefreies Layoutverhalten
@@ -144,8 +144,8 @@ Interaktionsziele müssen gut erreichbar, Fokuszustände klar erkennbar und Übe
 *_Kriterien_*
 
 [[r-zielgroessen-minimum]]
-* *Zielgrößen:* Interaktive Elemente müssen mindestens 24 × 24 CSS-Pixel groß sein.
-Für eine komfortable Touch-Bedienung wird eine Größe von 44 × 44 CSS-Pixel empfohlen.
+* *Zielgrößen:* Interaktive Elemente müssen mindestens 24 x 24 CSS-Pixel groß sein.
+Für eine komfortable Touch-Bedienung wird eine Größe von 44 x 44 CSS-Pixel empfohlen.
 
 [[r-fokus-sichtbarkeit-reihenfolge]]
 * *Fokusführung:* Der Fokusindikator ist deutlich und kontrastreich.
@@ -177,8 +177,6 @@ image::hauptfenster.wireframe.drawio.svg[align="center"]
 
 * *Effizienz:* Schnell erfassbare Informationen und klarer Zugang zu Funktionen.
 
-* *Barrierefreiheit:* Erfüllung der Anforderungen gemäß WCAG 2.1 AA, z. B. klare Fokusführung, ausreichende Kontraste und vollständige Tastaturbedienbarkeit.
-
 * *Responsivität:* Anpassungsfähigkeit an verschiedene Bildschirmgrößen ohne Informationsverlust.
 
 Der Header bleibt in Aufbau und Funktion über alle Anwendungen hinweg einheitlich.
@@ -206,7 +204,6 @@ Abbildung zeigt die Bestandteile des Headers:
 Der Header ist für alle Seiten innerhalb einer Anwendungslandschaft gestalterisch identisch.
 Beim Anpassen der Fenstergröße bleiben links ausgerichtete Elemente links und rechts ausgerichtete Elemente rechts; der Raum dazwischen passt sich flexibel an.
 
-Der Header ist vollständig barrierefrei umgesetzt: Fokusreihenfolge, Kontrast und Tastaturbedienung entsprechen den in Kapitel xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] definierten Anforderungen.
 Die Informationen zum angemeldeten Nutzenden zeigen mindestens den Namen oder die Kennung und sind auch über Screenreader eindeutig identifizierbar.
 
 *_Richtlinien_*
@@ -224,14 +221,13 @@ Die Informationen zum angemeldeten Nutzenden zeigen mindestens den Namen oder di
 ==== Inhaltsbereich
 
 Der Inhaltsbereich stellt den zentralen Arbeitsraum der Anwendung dar.
-Er nutzt ein gemeinsames, responsives Gestaltungsraster, das eine konsistente, verständliche und barrierefreie Anordnung von Komponenten, Formularen und Navigationselementen über alle Fenstertypen hinweg gewährleistet.
+Er nutzt ein gemeinsames, responsives Gestaltungsraster, das eine konsistente und verständliche Anordnung von Komponenten, Formularen und Navigationselementen über alle Fenstertypen hinweg gewährleistet.
 
 Im Inhaltsbereich werden sowohl Fachinhalte als auch interaktive Elemente angezeigt.
-Die Gestaltung orientiert sich an den Prinzipien aus Kapitel <<layout-resizing>> (z. B. Reflow, Spacing, Barrierefreiheit) und berücksichtigt insbesondere:
+Die Gestaltung orientiert sich an den Prinzipien aus Kapitel <<layout-resizing>> (z. B. Reflow und Spacing) und berücksichtigt insbesondere:
 
 * *Konsistenz*: Einheitliche Struktur und Abstände für alle Seiten und Anwendungstypen.
 * *Responsivität*: Anpassung an verschiedene Bildschirmgrößen und Zoomstufen ohne Informationsverlust.
-* *Barrierefreiheit*: Klare Fokusreihenfolge, ausreichende Kontraste und vollständige Tastaturbedienbarkeit.
 * *Modularität*: Wiederverwendung standardisierter Komponenten (Widgets, Panels, Tabellen, Dialoge).
 Die konkreten Fenster- und Seitentypen, die dieses gemeinsame Raster verwenden, sind in Kapitel xref:07-design-pattern.adoc#primaere-fenstertypen[Primäre Fenstertypen] detailliert beschrieben:
 
@@ -292,8 +288,6 @@ Interaktionen, die standardmäßig Drag-and-Drop verwenden (z. B. Sortieren oder
 *_Overflow und Lesbarkeit_*
 
 Layouts mit dichten Benutzeroberflächen sollen klar strukturiert und scrollbar bleiben.
-
-* Standard ist eine vertikale Scrollrichtung; horizontales Scrollen wird nur eingesetzt, wenn es fachlich zwingend erforderlich ist (z. B. bei breiten Tabellen).
 
 * Lange Texte oder Werte werden automatisch umgebrochen oder mit Auslassungspunkten verkürzt.
 Vollständige Inhalte bleiben über Tooltip oder Detailansicht zugänglich.

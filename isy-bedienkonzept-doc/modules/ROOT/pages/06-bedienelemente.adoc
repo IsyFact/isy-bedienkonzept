@@ -28,17 +28,16 @@ Im aktiven beziehungsweise fokussierten Zustand ist ein sichtbarer Fokusindikato
 
 *_Visuelle Hierarchie bei Buttons_*
 
-Buttons werden entsprechend ihrer Bedeutung innerhalb einer inhaltlichen Gruppe unterschiedlich hervorgehoben.
-Innerhalb eines zusammengehörigen Bereichs darf genau eine Aktion als Primäraktion visuell hervorgehoben sein.
-Die Primäraktion ist die wichtigste oder am häufigsten genutzte Handlung innerhalb dieser Gruppe.
-Alle weiteren Aktionen sind als sekundäre oder alternative Aktionen visuell zurückhaltender zu gestalten.
+Buttons werden entsprechend ihrer Bedeutung unterschiedlich hervorgehoben.
 
-Pro sichtbarem Bereich ist in der Regel nur eine Primäraktion hervorzuheben, um eine klare Handlungsorientierung zu gewährleisten.
+Pro Seite beziehungsweise sichtbarem Bereich darf nur eine Aktion als Primäraktion visuell hervorgehoben sein.
+Sie kennzeichnet die wichtigste oder am häufigsten genutzte Handlung.
+Alle weiteren Aktionen werden als sekundäre oder alternative Aktionen zurückhaltender dargestellt.
 
-Für Aktionen mit besonderer semantischer Bedeutung sind die definierten Statusvarianten zu verwenden.
-Insbesondere bei irreversiblen Aktionen ist eine deutlich erkennbare visuelle Kennzeichnung erforderlich, die zusätzlich durch Text, Symbole oder andere visuelle Merkmale unterstützt wird.
+Für Aktionen mit besonderer Bedeutung, beispielsweise irreversible oder destruktive Aktionen, sind die festgelegten Statusvarianten zu verwenden.
+Ihre Bedeutung muss zusätzlich durch eine eindeutige Beschriftung oder ein verständliches Symbol erkennbar sein.
 
-Insgesamt sollte die Anzahl unterschiedlicher Hervorhebungsvarianten innerhalb einer Benutzeroberfläche begrenzt werden, um die Oberfläche nicht zu überladen.
+Die Anzahl unterschiedlicher Button-Varianten ist auf das notwendige Minimum zu beschränken.
 
 :example-link-component: Button Varianten
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-button#colored-buttons
@@ -46,42 +45,34 @@ include::partial$example-link-card.adoc[]
 
 *_Platzierung der Buttons_*
 
-Bei der Platzierung der Buttons innerhalb eines Frontends wird zwischen zwei Use Cases unterschieden.
-Bei kleinen Dialogfenstern, in denen lediglich zwischen Akzeptieren und Abbrechen einer Aktion unterschieden wird, wird der Primär-Button rechts unten platziert.
+Primäre Buttons werden in Dialogen, xref:05-benutzereingaben.adoc#benutzereingaben[Formularen] und anderen Inhaltsbereichen rechts angeordnet.
+Sekundäre oder alternative Aktionen werden links neben der Primäraktion platziert.
 
-Auf xref:05-benutzereingaben.adoc#benutzereingaben[Formularseiten] oder auch Full-Page-Designs ist die Häufigkeit der Verwendung der Buttons ausschlaggebend.
-Buttons für primäre, einleitende und abschließende Aktionen können prominent in der Mitte des Frontends angeordnet werden.
-Buttons für navigierende und häufiger verwendete Aktionen werden bevorzugt rechts angeordnet, da die Aufmerksamkeit der Nutzenden während des Lesens oder Hinzufügens von Informationen dorthin gerichtet ist.
-Es ist darauf zu achten, dass die Anordnung der Buttons mit identischem Zweck über das gesamte Frontend hinweg konsistent bleibt.
+Die Reihenfolge und Platzierung von Buttons mit vergleichbarer Funktion muss im gesamten Frontend konsistent sein.
 
 *_Abgrenzung zu anderen Bedienelementen_*
 
-Da Buttons als Aktionselemente eingesetzt werden, dürfen diese nicht genutzt werden, um Selektionen aus einer Gruppe von Optionen zu treffen.
-Stattdessen werden <<radiobutton,Radiobuttons>>, <<checkbox,Checkboxen>> oder <<input-switch,Input Switches>> verwendet.
-Wenn nur das Textlabel ohne farbliche und räumliche Abgrenzung zum Hintergrund verwendet wird, kommt kein Button, sondern ein <<link>> zum Einsatz (beispielsweise bei Fließtexten oder Seitenleisten).
+Da Buttons als Aktionselemente eingesetzt werden, dürfen sie nicht verwendet werden, um Optionen auszuwählen.
+Stattdessen werden <<radiobutton,Radiobuttons>>, <<checkbox,Checkboxen>> oder <<input-switch,Input Switches>> eingesetzt.
+
+Wenn nur ein Textlabel ohne farbliche und räumliche Abgrenzung zum Hintergrund verwendet wird, kommt kein Button, sondern ein <<link,Link>> zum Einsatz, beispielsweise innerhalb von Fließtexten oder Seitenleisten.
 
 *_Dos_*
 
-* Beim Aktivieren eines Buttons wird immer eine Funktion ausgelöst oder eine (Fehler-)Meldung sichtbar.
-* Die wichtigste oder am häufigsten genutzte Aktion ist als Primäraktion visuell hervorgehoben darzustellen.
-  Falls unklar ist, welche Aktion wichtiger ist, gilt die fachlich vorgesehene Standardaktion als Primäraktion.
-* Das xref:04-basiselemente.adoc#label[Label] sollte kurz und selbsterklärend sein.
-* Das Label sollte die auszuführende Aktion beschreiben (zum Beispiel Öffnen, Löschen, Speichern, Weiter).
-* Wenn ein Button einen Dialog aufruft, sollte der resultierende Dialog die Beschriftung des Buttons als Titel wiederholen.
-* Die Schaltfläche für Buttons beträgt mindestens 44px x 44px.
-* Die Breite eines Buttons soll sich am enthaltenen Label orientieren.
-* Nebeneinanderstehende Buttons können unterschiedlich breit sein, wenn die jeweiligen Labels unterschiedlich groß sind.
-* Ein Button soll nach Möglichkeit so platziert werden, dass mögliche Beziehungen zu anderen Elementen deutlich werden.
-* Wenn nach einem Klick auf einen Button die Ergebnisaktion nicht sofort ersichtlich ist, soll dies durch ein System-Feedback (zum Beispiel durch eine xref:09-eingabehilfen-und-fehlermeldungen.adoc#fortschrittsanzeige[Fortschrittsanzeige]) veranschaulicht werden.
+* Beim Aktivieren eines Buttons wird eine Funktion ausgelöst oder eine Rückmeldung angezeigt.
+* Das xref:04-basiselemente.adoc#label[Label] ist kurz und eindeutig und beschreibt die auszuführende Aktion, beispielsweise „Öffnen“, „Löschen“, „Speichern“ oder „Weiter“.
+* Wenn ein Button einen Dialog öffnet, sollte sich seine Beschriftung im Dialogtitel wiederfinden.
+* Die Schaltfläche ist mindestens 44 px x 44 px groß.
+* Die Breite des Buttons orientiert sich am enthaltenen Label.
+* Nebeneinanderstehende Buttons können unterschiedlich breit sein, wenn ihre Labels unterschiedlich lang sind.
+* Ist das Ergebnis einer Aktion nicht sofort erkennbar, wird ein entsprechendes System-Feedback angezeigt, beispielsweise eine xref:09-eingabehilfen-und-fehlermeldungen.adoc#fortschrittsanzeige[Fortschrittsanzeige].
 
 *_Don'ts_*
 
-* Buttons werden nicht zum Selektieren oder Auswählen von Inhalten verwendet.
-Hier werden die Bedienelemente <<radiobutton>> und <<checkbox>> eingesetzt.
-* Zum Ein- oder Ausschalten von Inhalten werden keine Buttons verwendet, sondern spezielle <<input-switch,Input Switches>>.
-* Innerhalb von Fließtexten oder zum Verweisen auf externe Inhalte kommen keine Buttons zum Einsatz.
-Stattdessen werden <<link,Links>> genutzt.
-* Um die Benutzeroberfläche nicht zu überladen, sollen nicht zu viele unterschiedliche Hervorhebungsvarianten eingesetzt werden.
+* Buttons werden nicht zum Auswählen von Optionen verwendet. Dafür werden <<radiobutton,Radiobuttons>> oder <<checkbox,Checkboxen>> eingesetzt.
+* Buttons werden nicht zum dauerhaften Ein- oder Ausschalten von Funktionen verwendet. Dafür werden <<input-switch,Input Switches>> eingesetzt.
+* Innerhalb von Fließtexten und für Verweise auf externe Inhalte werden <<link,Links>> anstelle von Buttons verwendet.
+* Es werden nicht mehr Button-Varianten eingesetzt, als für eine eindeutige visuelle Hierarchie erforderlich sind.
 
 [[inverted-button]]
 ==== Invertierte Buttons
@@ -168,8 +159,10 @@ Generische Phrasen wie „Hier klicken“ sind nicht hilfreich und sollten vermi
 
 Eingabefelder sind grundlegende Interaktionselemente in einer Benutzeroberfläche, die es den Nutzenden ermöglichen, Daten einzugeben, zu bearbeiten oder auszuwählen.
 Sie spielen eine zentrale Rolle bei der Interaktion zwischen Nutzenden und System.
-Sie kommen in verschiedensten Formen und Kontexten vor, sei es in Form von Textfeldern, xref:07-design-pattern.adoc#dropdown[Dropdown-Menüs], <<liste,Auswahllisten>> oder Datumsauswahlkalendern.
+Sie kommen in verschiedensten Formen und Kontexten vor, sei es in Form von Textfeldern, <<dropdown,Dropdowns und Auswahllisten>> oder Datumsauswahlkalendern.
 Die Gestaltung und Platzierung von Eingabefeldern hat direkten Einfluss auf die Benutzererfahrung und die Effizienz der Dateneingabe.
+
+Weitere Hinweise zur Anordnung und Gruppierung mehrerer Eingabefelder sind in den Abschnitten xref:07-design-pattern.adoc#eingabefeldgruppen[Eingabefeldgruppen] und xref:07-design-pattern.adoc#context-group[Context Groups] beschrieben.
 
 Eingabefelder sind dynamisch.
 Sie bestehen aus dem Eingabefeld selbst, einem vorbelegten Platzhalter (xref:09-eingabehilfen-und-fehlermeldungen.adoc#placeholder[Placeholder]) und optional aus einer daraus entstehenden <<eingabefeld-mit-mask,Vorschau (Mask)>> zur Anzeige des erwarteten Formats.
@@ -263,6 +256,20 @@ Zum Beispiel entspricht „mobile number“ dem Pattern: +0012 345 / 678 999 ode
 Masks können dabei auch frei gestaltet und den fachlichen Bedürfnissen entsprechend angepasst werden, beispielsweise für Aktenzeichen.
 Eine Mask kann in Einzelfällen auch dem Platzhalter entsprechen.
 
+[[zahlenfeld]]
+==== Zahlenfeld (InputNumber)
+
+Ein Zahlenfeld ermöglicht die Eingabe numerischer Werte.
+Optional können Steuerelemente, beispielsweise Pfeil-Buttons, zum schrittweisen Erhöhen oder Verringern des Wertes angeboten werden.
+
+:example-link-component: InputNumber
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputnumber
+include::partial$example-link-card.adoc[]
+
+Die direkte Eingabe über die Tastatur muss möglich sein.
+Zusätzliche Steuerelemente sind vollständig per Tastatur bedienbar und verfügen über eindeutige Beschriftungen für assistive Technologien.
+Für Wertebereiche, Schrittweiten und ungültige Eingaben gelten die allgemeinen Anforderungen an Eingabefelder und Fehlermeldungen.
+
 [[eingabefeld-mit-button]]
 ==== Eingabefeld mit Input-Option
 
@@ -277,6 +284,7 @@ Ein Eingabefeld mit Input-Option ist von der Basis identisch zu einem normalen E
 Allerdings gibt es am rechten, äußeren Ende des Eingabefelds eine Schaltfläche, um eine Eingabeoption zu aktivieren, zum Beispiel einen <<sonderzeichen-picker,Sonderzeichen-Picker>> oder eine Datumseingabe.
 Die Schaltfläche der Input-Option ist mindestens 44px x 44px.
 
+[[datepicker]]
 *_Datum- und Uhrzeit-Eingaben_*
 
 Datum- und Uhrzeit-Eingaben werden verwendet, wenn Nutzende Datumswerte, Zeitpunkte oder Zeiträume erfassen sollen.
@@ -378,53 +386,87 @@ Textboxen sollten mindestens so groß gestaltet werden, dass der am häufigsten 
 [TIP]
 Textboxen haben die gleichen States und Styles wie Eingabefelder.
 
-[[liste]]
-=== Liste
+[[auswahlliste]]
+[[dropdown]]
+=== Auswahlliste (Dropdown)
 
-Listen sind zentrale Bestandteile in Frontends und insbesondere von Fachanwendungen.
-Sie dienen dazu, Inhalte zu strukturieren und erfassbar zu machen.
-Listen ermöglichen es Nutzenden, zulässige Werte auszuwählen.
-Dadurch werden Fehleingaben und unerwartete Ergebnisse reduziert.
+Eine Auswahlliste stellt mehrere vorgegebene Werte bereit, aus denen Nutzende einen oder mehrere Einträge auswählen können.
 
-Listen bestehen optisch aus einem geschlossenen Rahmen und bestenfalls aus logisch sortierten Elementen.
+Ein Dropdown ist eine platzsparende Form der Auswahlliste.
+Die verfügbaren Optionen werden erst beim Öffnen angezeigt und ermöglichen die Auswahl genau eines Wertes.
+Für die Auswahl mehrerer Werte aus einer umfangreicheren Menge wird eine <<mehrfachauswahl,Mehrfachauswahl (MultiSelect)>> verwendet.
 
-Listen können in den verschiedensten Ausprägungen eingesetzt werden:
+Auswahllisten werden beispielsweise innerhalb eines Dropdowns, einer Auswahlkomponente mit Suchfeld oder eines Menüs eingesetzt.
 
-* Eingabefeld + Liste
-* Eingabefeld + Suchbox + Liste
-* Menüitem + Liste
-* etc.
+Typische Anwendungsbeispiele sind:
 
-Die einfachste Form einer Liste ist die rein textuelle Liste.
+* Auswahl eines Landes in einem Dropdown
+* Auswahl einer zuständigen Person über ein Eingabefeld mit Suchfunktion
+* Auswahl einer Kategorie innerhalb eines Menüs
+* Auswahl mehrerer Werte in einer Mehrfachauswahl
 
+Die Einträge müssen eindeutig, verständlich und möglichst kurz formuliert sein.
+Bei vielen verfügbaren Werten sollte die Auswahlliste durch eine Such-, Filter- oder Gruppierungsfunktion unterstützt werden.
 
-:example-link-component: Liste
+:example-link-component: Auswahlliste
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#dropdown
 include::partial$example-link-card.adoc[]
 
-Eine Liste kann theoretisch beliebig viele Einträge enthalten, was aber die xref:01-einfuehrung.adoc#usability-ui-ux[Usability] verschlechtert.
-Im optimalen Fall haben Listen eine überschaubare Anzahl an logisch relevanten Einträgen.
-Die Einträge sind eindeutig und prägnant.
-Bei langen Einträgen können auch sinnvolle Abkürzungen genutzt werden.
+Eine Auswahlliste kann theoretisch beliebig viele Einträge enthalten, was aber die xref:01-einfuehrung.adoc#usability-ui-ux[Usability] verschlechtert.
+Im optimalen Fall enthält sie eine überschaubare Anzahl an fachlich relevanten Einträgen.
+Bei wenigen, direkt vergleichbaren Optionen ist eine <<radiobutton,Gruppe von Radiobuttons>> in der Regel besser geeignet.
 
-Die Listenelemente sind mindestens 44px hoch und entsprechend dem dazugehörigen Element breit (hier exemplarisch das Eingabefeld).
-Aktive Elemente sind in der Highlightfarbe und hinterlegt dargestellt.
+Die Listenelemente sind mindestens 44px hoch und entsprechend dem dazugehörigen Element breit, beispielsweise dem Eingabefeld.
+Aktive beziehungsweise ausgewählte Elemente sind visuell eindeutig hervorgehoben.
+
+*_Bedienung und Barrierefreiheit_*
+
+* Die Auswahlliste lässt sich mit Maus und Tastatur öffnen und schließen.
+* Die Navigation innerhalb der Liste erfolgt über die Pfeiltasten.
+* Enter bestätigt eine Auswahl; Escape schließt die Liste ohne unerwartete Änderung.
+* Der geöffnete beziehungsweise geschlossene Zustand und die aktuelle Auswahl sind für assistive Technologien programmatisch ermittelbar.
+* Beim Schließen bleibt der Fokus am auslösenden Bedienelement erhalten.
 
 *_Dos_*
 
-* Listen sollen inhaltlich so einfach wie möglich gestaltet werden.
-* Listeneinträge sollten so kurz wie möglich formuliert sein.
-* Listeneinträge sind eindeutig unterscheidbar.
-* Wenn Listen viele Einträge haben, so sollten andere Elemente die Durchsuchbarkeit, Filterung oder Kategorisierung ermöglichen.
-* Listen können mit unterschiedlichen interaktiven Elementen kombiniert werden, um den Nutzenden eine Hilfestellung zu bieten.
-* Bei einer kleinen Liste kann auch eine Radio-Button-Gruppe genutzt werden.
+* Einträge sind kurz, eindeutig und voneinander unterscheidbar.
+* Einträge werden in einer fachlich nachvollziehbaren Reihenfolge dargestellt, beispielsweise alphabetisch oder nach Häufigkeit.
+* Umfangreiche Auswahllisten bieten eine Such-, Filter- oder Gruppierungsfunktion.
+* Die Breite der Auswahlliste orientiert sich am zugehörigen Eingabefeld und an den erwarteten Inhalten.
 
 *_Don'ts_*
 
-* Listeneinträge sollten nie mehrzeilig sein.
-* Listeneinträge sollten nicht doppelt vorhanden sein.
-* Listen sollten nicht unsortiert und sehr lang sein.
-* Listeneinträge mit ganzen Sätzen sollten, wenn möglich, vermieden werden.
+* Einträge werden nicht doppelt angeboten.
+* Auswahllisten werden nicht ohne nachvollziehbare Reihenfolge dargestellt.
+* Lange Sätze oder mehrzeilige Einträge sollten vermieden werden.
+* Sehr umfangreiche Auswahllisten werden nicht ohne Such- oder Filtermöglichkeit angeboten.
+* Auswahllisten werden nicht verwendet, wenn nur sehr wenige Optionen zur Verfügung stehen und diese direkt dargestellt werden können.
+
+[[cascadeselect-wertehilfe]]
+==== Hierarchische Auswahlliste (CascadeSelect)
+
+Eine hierarchische Auswahlliste stellt Auswahlmöglichkeiten in mehreren aufeinander aufbauenden Ebenen dar.
+Sie eignet sich für fachlich hierarchische Strukturen, beispielsweise Kategorien und Unterkategorien.
+
+:example-link-component: CascadeSelect
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#treeselect
+include::partial$example-link-card.adoc[]
+
+Alle Ebenen müssen mit der Tastatur erreichbar sein.
+Die aktuelle Ebene, vorhandene Unterkategorien sowie die ausgewählte Option sind visuell und für assistive Technologien eindeutig erkennbar.
+
+[[mehrfachauswahl]]
+==== Mehrfachauswahl (MultiSelect)
+
+Eine Mehrfachauswahl ermöglicht es, mehrere Werte aus einer umfangreicheren Liste auszuwählen.
+Bei wenigen direkt sichtbaren und voneinander unabhängigen Optionen sind <<checkbox,Checkboxen>> in der Regel besser geeignet.
+
+Die Liste lässt sich mit Maus und Tastatur öffnen und bedienen.
+Die Navigation erfolgt über die Pfeiltasten; die Auswahl oder Abwahl eines Eintrags erfolgt über Enter oder die Leertaste.
+
+Ausgewählte Werte müssen sowohl in der geöffneten Liste als auch am geschlossenen Bedienelement erkennbar sein.
+Der Auswahlzustand ist für assistive Technologien programmatisch zu vermitteln.
+Besteht eine maximale Auswahlanzahl, muss diese vor und nach Erreichen der Grenze verständlich kommuniziert werden.
 
 [[checkbox]]
 === Checkbox
@@ -498,7 +540,7 @@ image::radiobuttons.wireframe.drawio.svg[align="center"]
 *_Dos_*
 
 * Die Verwendung von Radiobuttons empfiehlt sich für eine kleinere Anzahl an Optionen.
-Ist die Menge der zur Verfügung stehenden Optionen sehr groß oder hat der Platzbedarf eine große Bedeutung, so kann der Einsatz eines xref:07-design-pattern.adoc#dropdown[Dropdowns] in Betracht gezogen werden.
+Ist die Menge der zur Verfügung stehenden Optionen sehr groß oder hat der Platzbedarf eine große Bedeutung, so kann der Einsatz eines <<dropdown,Dropdowns>> in Betracht gezogen werden.
 * Eine Gruppe von Radiobuttons sollte immer eine Überschrift aufweisen.
 * Für optimale Lesbarkeit sollten Radiobuttons untereinander angeordnet sein.
 * Falls alle oder keine der angebotenen Optionen zutreffen können, sollte eine zusätzliche allgemeine Meta-Option, zum Beispiel "keine Option" oder "alle", hinzugefügt werden.
@@ -533,42 +575,42 @@ include::partial$example-link-card.adoc[]
 * <<checkbox,Checkboxen>> und Input Switches sollen nicht zusammen genutzt werden.
 Eine Kombination aus beiden <<bedienelemente,Bedienelementen>> zum Ein- und Ausschalten von Funktionalitäten ist nicht intuitiv für Nutzende.
 
-[[tabview]]
-=== Tabview
+[[tabs]]
+=== Tabs (Reiter)
 
-Ein Tabview ist ein wesentliches Element im modernen Design, das die Benutzererfahrung erheblich verbessert.
-Es bietet eine intuitive Möglichkeit, verschiedene Inhalte oder Abschnitte eines Frontends übersichtlich und platzsparend darzustellen.
+Tabs sind wesentliche Elemente im modernen Design, die die Benutzererfahrung erheblich verbessern.
+Sie bieten eine intuitive Möglichkeit, verschiedene Inhalte oder Abschnitte eines Frontends übersichtlich und platzsparend darzustellen.
 Durch die Verwendung von Tabs können Nutzende schnell und einfach zwischen verschiedenen Bereichen navigieren, ohne die Seite ständig neu laden zu müssen.
 Dies fördert nicht nur die Benutzerfreundlichkeit, sondern auch die Effizienz bei der Informationssuche.
-Tabviews ermöglichen Entwickelnden, Inhalte logisch zu organisieren und sorgen für eine klare Struktur, die die Benutzerbindung und Zufriedenheit steigert.
+Tabs ermöglichen Entwickelnden, Inhalte logisch zu organisieren, und sorgen für eine klare Struktur.
 
-Ein Tabview hat initial einen aktivierten, aber nicht markierten/fokussierten State (siehe Abbildung zum Tabview).
+Zu Beginn ist ein Tab ausgewählt, aber nicht markiert beziehungsweise fokussiert.
 Sobald ein Tab aktiv ausgewählt wird, wird auch die Markierung im Reiter visuell deutlich.
 Der aktive Tab erhält eine visuelle Hervorhebung, beispielsweise in Form einer Markierungslinie.
 
-Tabviews können ihre Reiter auch mit visuellen xref:04-basiselemente.adoc#icons[Icons] unterstützen.
+Tabs können ihre Reiter zusätzlich mit visuellen xref:04-basiselemente.adoc#icons[Icons] unterstützen.
 Diese verhalten sich analog zum Tab-Label.
 
-Es ist ratsam ein Tabview zu nutzen, wenn der Inhalt nicht ohne starkes Scrolling innerhalb des Screens dargestellt werden kann.
+Es ist ratsam, Tabs zu nutzen, wenn der Inhalt nicht ohne starkes Scrollen innerhalb des sichtbaren Bereichs dargestellt werden kann.
 Dabei ist eine fachlich logische Aufgliederung vorauszusetzen.
 
 Sollte es fachlich zwingend notwendig sein, mehr Tabs anzubieten, kann eine horizontale Navigation innerhalb der Tab-Leiste eingesetzt werden.
 
-Das Tabview nutzt dabei die volle, ihm zur Verfügung stehende Breite und signalisiert visuell, dass weitere Tabs außerhalb des sichtbaren Bereichs vorhanden sind.
+Die Tab-Leiste nutzt dabei die volle verfügbare Breite und signalisiert visuell, dass weitere Tabs außerhalb des sichtbaren Bereichs vorhanden sind.
 Eine geeignete Navigation ermöglicht den Zugriff auf die weiteren Tabs.
 
 :example-link-component: Tabs
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#tabs
 include::partial$example-link-card.adoc[]
 
-Die Schriftgröße eines Labels im Tabview sollte 14pt nicht unterschreiten.
+Die Schriftgröße eines Labels innerhalb eines Reiters sollte 14pt nicht unterschreiten.
 Ist die Standardschriftgröße gewählt, so erhöht sich diese bei aktiven Elementen um 2pt (hier exemplarisch auf 16pt).
 Die Höhe eines Tabreiters ist mindestens 44px.
 Die Breite ist abhängig vom xref:04-basiselemente.adoc#label[Label].
 Icons sind mindestens 17px x 17px groß.
 
-[[image-tabview-measured]]
-.Exemplarische Vermaßung des Tabview
+[[image-tabs-measured]]
+.Exemplarische Vermaßung der Tabs
 image::tabmenu.wireframe.drawio.svg[align="center"]
 
 *_Dos:_*
@@ -577,13 +619,13 @@ image::tabmenu.wireframe.drawio.svg[align="center"]
 * Die optimale Anzahl an Tabs ist 4 - 7.
 * Labels für die Tabreiter sollten kurz und aussagekräftig sein.
 Es kann auch mit sinnvollen und verständlichen Abkürzungen gearbeitet werden.
-* Überlängen-Tabview sollten nur genutzt werden, wenn es keine andere Möglichkeit zur Gestaltung gibt.
+* Tabs mit horizontalem Überlauf sollten nur genutzt werden, wenn es keine andere Möglichkeit zur Gestaltung gibt.
 
 *_Don'ts:_*
 
 * Seiten sollten nicht mit nur einem Tabreiter gestaltet werden.
-Bei weniger als drei Tabreitern, ist eventuell ein dynamisches xref:07-design-pattern.adoc#panel[Panel] das passendere Element.
-* Muss der Inhalt verschiedener Tabreiter verglichen/abgestimmt werden, sollte anstelle eines Tabreiters lieber ein dynamisches Panel verwendet werden.
+Bei weniger als drei Tabreitern ist eventuell ein dynamisches xref:07-design-pattern.adoc#panel[Panel] das passendere Element.
+* Muss der Inhalt verschiedener Tabreiter verglichen oder abgestimmt werden, sollte anstelle eines Tabreiters lieber ein dynamisches Panel verwendet werden.
 * Tabreiter stellen nicht verschiedene Sichten zu gleichen Daten dar.
 * Tabreiter sind keine Prozessschritte.
 Für diesen Zweck wird ein Wizard genutzt.
@@ -598,6 +640,8 @@ Eine Tabelle dient der übersichtlichen Anzeige von größeren Datenmengen und b
 :example-link-component: Tabelle
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-data#table
 include::partial$example-link-card.adoc[]
+
+Weiterführende Hinweise zum Einsatz von Tabellen für die Datenausgabe sowie zur Schnellbearbeitung, zum Drucken und zum Exportieren sind im Abschnitt xref:07-design-pattern.adoc#output[Ausgabemuster] beschrieben.
 
 Tabellenzeilen sind standardmäßig nicht anwählbar, was aber bei einer fachlichen Notwendigkeit umgesetzt werden kann.
 So steht es der Anwendung frei:
