@@ -162,40 +162,6 @@ Dekorative Icons sind so umzusetzen, dass sie von assistiven Technologien ignori
 Icons derselben Ebene sind konsistent zu gestalten.
 Links verfügen über ein sichtbares Textlabel.
 
-[[dashboard-unterseite]]
-==== Dashboard-Unterseite
-
-Die Dashboard-Unterseite stellt weiterführende Inhalte bereit, die nicht vollständig auf dem Dashboard abgebildet werden können.
-
-{empty} +
-
-[[image-aufbau-dashboard-subpage]]
-.Aufbau Dashboard-Unterseite
-image::dashboard-unterseite.wireframe.drawio.svg[align="center"]
-
-{empty} +
-
-*_Aufbau_*
-
-* *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten xref:03-fenstertypen-und-layout.adoc#header-bereich[Header Bereich].
-
-* *Seiten-Toolbar:* Kontextbezogene Aktionen wie „Zurück zur Übersicht“, „Drucken“ oder „Hilfe“ sind konsistent bereitzustellen.
-
-* *Inhaltsbereich:* Inhalte sind modular aufgebaut und folgen denselben Strukturprinzipien wie das Dashboard.
-
-*_Richtlinien zur Anwendung_*
-
-[[r-dsub-bezug]]
-* *Bezug und Orientierung:* Titel, Icon und Farbmarkierung entsprechen der auslösenden Dashboard-Kachel bzw. -Gruppe.
-
-[[r-dsub-navigation]]
-* *Navigation:* „Zurück zur Übersicht“ führt zur auslösenden Stelle auf dem Dashboard (ggf. mit Anker).
-Listen bieten eine „Vorheriges/Nächstes“-Navigation innerhalb derselben Treffermenge.
-
-[[r-app-inhalte-dsub-layout]]
-* *Layout und Inhalte:* Pro Abschnitt gilt das Ein-Inhaltstyp-Prinzip.
-Für umfangreiche Inhalte können Tabs oder Accordions eingesetzt werden.
-
 [[applikationsseite]]
 ==== Applikationsseite
 

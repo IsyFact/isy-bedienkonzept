@@ -1,7 +1,6 @@
 name: isy-bedienkonzept-doc
 title: Bedienkonzept
-version: '1.0.x'
-prerelease: '(DEV)'
+version: '1.0.0'
 start_page: ROOT:bedienkonzept.adoc
 nav:
   - modules/ROOT/nav.adoc

@@ -164,7 +164,7 @@ Horizontal wird nur gescrollt, wenn es fachlich erforderlich ist, beispielsweise
 
 Das Hauptfenster bildet den zentralen Rahmen jeder Anwendung.
 Es definiert die Grundstruktur aus Header-Bereich und Inhaltsbereich und legt damit das Erscheinungsbild, die Orientierung und die Navigation fest.
-Die spezifischen Fenster- und Seitentypen (z. B. Login, Dashboard, Dashboard-Unterseite, Applikationsseite, Applikations-Detailseite) sind im Kapitel Design Patterns (xref:07-design-pattern.adoc#primaere-fenstertypen[Primäre Fenstertypen] und xref:07-design-pattern.adoc#sekundaere-fenstertypen[Sekundäre Fenstertypen]) beschrieben.
+Die spezifischen Fenster- und Seitentypen (z. B. Login, Dashboard, Applikationsseite, Applikations-Detailseite) sind im Kapitel Design Patterns (xref:07-design-pattern.adoc#primaere-fenstertypen[Primäre Fenstertypen] und xref:07-design-pattern.adoc#sekundaere-fenstertypen[Sekundäre Fenstertypen]) beschrieben.
 Die hier definierten Prinzipien bilden die verbindliche Grundlage für deren Gestaltung und technische Umsetzung.
 
 [[image-hauptfenster-aufbau]]
@@ -233,7 +233,6 @@ Die konkreten Fenster- und Seitentypen, die dieses gemeinsame Raster verwenden, 
 
 ** xref:07-design-pattern.adoc#login[Login]
 ** xref:07-design-pattern.adoc#portalstartseite[Portalstartseite]
-** xref:07-design-pattern.adoc#dashboard-unterseite[Dashboard-Unterseite]
 ** xref:07-design-pattern.adoc#applikationsseite[Applikationsseite]
 ** xref:07-design-pattern.adoc#applikations-detailseite[Applikations-Detailseite]
 
