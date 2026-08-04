@@ -81,7 +81,22 @@ Die Tastatur ist ein gleichwertiges Eingabemedium für alle Interaktionen innerh
 * Enter aktiviert die jeweilige Primäraktion; Escape beendet oder schließt den aktuellen Kontext, sofern fachlich vorgesehen.
 
 [[r-input-shortcuts]]
-* Tastenkombinationen sind nicht vorausgesetzt und dürfen bestehende System- oder Assistenzfunktionen nicht beeinträchtigen.
+* Tastenkombinationen dürfen nur ergänzend eingesetzt werden.
+Alle Funktionen müssen auch ohne spezielle Tastenkombinationen bedienbar sein und bestehende System-, Browser- oder Funktionen assistiver Technologien dürfen nicht beeinträchtigt werden.
+
+Für interaktive Komponenten wie Tabs, Accordions, Dropdowns, Datumsauswahlen oder Tabellen gelten zusätzlich etablierte Tastatur-Interaktionsmuster.
+
+[[r-input-komponenten-zustand]]
+* Zustände interaktiver Komponenten sind eindeutig erkennbar und programmatisch ermittelbar.
+
+[[r-input-komponenten-navigation]]
+* Navigation innerhalb einer Komponente erfolgt konsistent und erwartungskonform.
+
+[[r-input-komponenten-fokus]]
+* Kontextwechsel innerhalb von Komponenten führen den Fokus nachvollziehbar weiter oder zurück.
+
+[[r-input-komponenten-aktivierungszustand]]
+* Sortier-, Auswahl- oder Aktivierungszustände sind eindeutig wahrnehmbar.
 
 *_Zeigegeräte (Maus, Touch, Stift)_*
 
@@ -146,19 +161,3 @@ Eingaben lösen unmittelbare oder zeitversetzte Rückmeldungen aus, die den aktu
 
 [[r-input-live-region]]
 * Status- und Fehlermeldungen werden wahrnehmbar kommuniziert, ohne den Fokus unnötig zu verschieben.
-
-*_Tastaturbedienung interaktiver Komponenten_*
-
-Interaktive Komponenten wie Tabs, Accordions, Dropdowns, Datumsauswahlen oder Tabellen folgen etablierten Interaktionsmustern.
-
-[[r-input-komponenten-zustand]]
-* Zustände interaktiver Komponenten sind eindeutig erkennbar und programmatisch ermittelbar.
-
-[[r-input-komponenten-navigation]]
-* Navigation innerhalb einer Komponente erfolgt konsistent und erwartungskonform.
-
-[[r-input-komponenten-fokus]]
-* Kontextwechsel innerhalb von Komponenten führen den Fokus nachvollziehbar zurück.
-
-[[r-input-komponenten-aktivierungszustand]]
-* Sortier-, Auswahl- oder Aktivierungszustände sind eindeutig wahrnehmbar.

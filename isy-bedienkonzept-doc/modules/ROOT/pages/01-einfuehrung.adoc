@@ -7,13 +7,19 @@ Indem es einheitliche Standards und Best Practices festlegt, trägt es maßgebli
 Das Hauptziel ist dabei, die Benutzererfahrung zu verbessern und die Zufriedenheit und Produktivität der Nutzenden zu maximieren.
 So soll sichergestellt werden, dass Nutzende das Frontend ohne Schwierigkeiten verwenden können und dabei ihre Ziele *effizient* erreichen.
 
-In den folgenden Kapiteln werden die benötigten Elemente von "klein nach groß" beschrieben.
-*Der allgemeine Rahmen und die übergreifenden Prinzipien* werden in den ersten Kapiteln beschrieben.
-Darauf folgen die *xref:04-basiselemente.adoc#basiselemente[Basiselemente]*, wie zum Beispiel xref:04-basiselemente.adoc#text[Text] und xref:04-basiselemente.adoc#farben[Farben], die den Grundstein für die nachfolgenden Kapitel legen und von essenzieller Bedeutung sind.
-Danach kommen die *xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente]*, die einfachste Ausprägung eines Interaktionselements.
-*xref:07-design-pattern.adoc#design-pattern[Design Patterns]* stellen eine Bündelung von Bedienelementen und Basiselementen dar und beschreiben wiederkehrende Lösungsansätze für vollständige Interaktions- und Darstellungsanforderungen.
+In den folgenden Kapiteln werden die Bestandteile des Bedienkonzepts von grundlegenden Anforderungen bis hin zu übergreifenden Interaktionsmustern und beispielhaften Anwendungen beschrieben.
 
-Es ist eine xref:referenzimplementierung.adoc[Referenzimplementierung ("Live-Demo")] zu den Richtlinien dieses Bedienkonzepts verfügbar.
+* *Einführung:* beschreibt Ziel, Geltungsbereich und grundlegende Prinzipien des Bedienkonzepts.
+* xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit]: definiert verbindliche Anforderungen für eine zugängliche und inklusive Nutzung.
+* xref:03-fenstertypen-und-layout.adoc#fenstertypen-layout[Fenstertypen und Layout]: legt Struktur, Seitenaufbau und responsives Layoutverhalten fest.
+* xref:04-basiselemente.adoc#basiselemente[Basiselemente]: beschreibt grundlegende Gestaltungselemente wie xref:04-basiselemente.adoc#text[Text], xref:04-basiselemente.adoc#farben[Farben], Icons und Typografie.
+* xref:05-benutzereingaben.adoc#benutzereingaben[Benutzereingaben]: regelt allgemeine Interaktions- und Eingabeprinzipien, inklusive Validierung und Zustandsverhalten.
+* xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente]: beschreibt die konkreten UI-Komponenten und deren Einsatz.
+* xref:07-design-pattern.adoc#design-pattern[Design Patterns]: bündelt Bedienelemente zu wiederkehrenden Lösungsansätzen für vollständige Nutzungssituationen.
+* xref:09-eingabehilfen-und-fehlermeldungen.adoc#eingabehilfen-und-fehlermeldungen[Eingabehilfen und Fehlermeldungen]: konkretisiert unterstützende Hinweise, Fehlerrückmeldungen und Systemfeedback.
+* xref:11-normative-gesamtmatrix.adoc#normative-gesamtmatrix[Normative Gesamtmatrix]: ordnet die Anforderungen den relevanten Normbezügen und Akzeptanzkriterien zu.
+
+Zur Unterstützung der Umsetzung ist eine xref:referenzimplementierung.adoc[Referenzimplementierung ("Live-Demo")] zu den Richtlinien dieses Bedienkonzepts verfügbar.
 
 [[einfuehrung-in-das-bedienkonzept]]
 === Einführung in das Bedienkonzept
@@ -49,7 +55,8 @@ Insbesondere bei komplexen Frontends ist es ratsam, so früh wie möglich die Fa
 
 *_Einhaltung von Standards und Best Practices_*
 
-Das Bedienkonzept legt Standards und Best Practices fest, die von Designenden und Entwickelnden eingehalten werden müssen.
+Das Bedienkonzept legt Standards und Best Practices fest, die von Designenden und Entwickelnden eingehalten werden sollen.
+In begründeten Ausnahmefällen kann davon abgewichen werden.
 Diese Standards können sich auf verschiedene Aspekte der Gestaltung und Interaktion beziehen, wie Typografie, xref:04-basiselemente.adoc#farben[Farbgebung], xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] und xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit].
 Durch die Einhaltung dieser Standards gewährleisten Designende und Entwickelnde nicht nur eine konsistente Benutzeroberfläche, sondern auch die Kompatibilität dieser Oberfläche mit verschiedenen Geräten und Plattformen.
 
@@ -58,14 +65,14 @@ Die Entwicklungen und Änderungen werden entsprechend dem Stand der Technik und 
 
 *_Technische Kompatibilität_*
 
-Frontends, die anhand dieses Bedienkonzepts erstellt werden, müssen in den unterstützten Browsern korrekt dargestellt werden und funktionieren – einschließlich browser-spezifischer Funktionen wie „Vor" und „Zurück".
+Frontends, die anhand dieses Bedienkonzepts erstellt werden, müssen in den unterstützten Browsern korrekt dargestellt werden und funktionieren - einschließlich browser-spezifischer Funktionen wie „Vor" und „Zurück".
 
 .icon:university[title=Architekturregel] Browser-Unterstützung
 ****
 Frontends müssen die jeweils zwei aktuellsten Hauptversionen folgender Browser unterstützen:
 
 * Microsoft Edge (Stable Channel)
-* Firefox (aktuellste Version sowie Extended Support Release – ESR)
+* Firefox (aktuellste Version sowie Extended Support Release - ESR)
 * Chrome (Stable Channel)
 ****
 
@@ -85,31 +92,32 @@ Mit dem Fortschreiten der Technologie und den sich ändernden Anforderungen der 
 Dadurch wird sichergestellt, dass das Bedienkonzept stets den aktuellen Standards und Best Practices entspricht.
 Diese kontinuierliche Weiterentwicklung erfordert eine enge Zusammenarbeit zwischen allen Beteiligten und eine offene Kommunikation über Änderungen und Aktualisierungen - insbesondere zwischen Umsetzungsprojekten, Stakeholdern und den Designenden, die mit diesem Dokument arbeiten.
 
-[[usability-und-benutzerfreundlichkeit]]
-=== Usability (UI) und Benutzerfreundlichkeit (UX)
+[[usability-ui-ux]]
+=== Usability, User Interface (UI) und User Experience (UX)
 
-Obwohl die Begriffe oft synonym verwendet werden, gibt es wichtige Unterschiede und Zusammenhänge, die sie voneinander unterscheiden und gleichzeitig miteinander verbinden.
+Obwohl die Begriffe Usability, User Interface und User Experience häufig synonym verwendet werden, beschreiben sie unterschiedliche Aspekte der Nutzung eines Produkts.
+Gleichzeitig stehen sie in engem Zusammenhang miteinander.
 
-*_Begriff der Usability (User Interface - UI)_*
+*_Begriff der Usability (Benutzerfreundlichkeit)_*
 
-Usability oder Gebrauchstauglichkeit bezieht sich auf die Benutzerfreundlichkeit einer Oberfläche (UI).
-Dabei geht es darum, wie leicht Nutzende ein Frontend verstehen und die Bedienung erlernen können.
-Zu den Hauptkomponenten der Usability gehören:
+Usability, also Benutzerfreundlichkeit, beschreibt, wie leicht Nutzende eine Anwendung verstehen, erlernen und bedienen können.
+Dabei geht es darum, ob Nutzende ihre Ziele mit einem Frontend einfach, effizient und zufriedenstellend erreichen können.
 
 * *Effektivität:*
-Die Fähigkeit eines Frontends, den Nutzenden die Möglichkeit zu geben, ihre Ziele zu erreichen.
+Die Fähigkeit eines Frontends, den Nutzenden die Möglichkeit zu geben, ihre Ziele vollständig und korrekt zu erreichen.
 * *Effizienz:*
 Die Fähigkeit eines Frontends den Nutzenden zu ermöglichen, ihre Ziele mit möglichst geringem Zeit- und Arbeitsaufwand zu erreichen.
 * *Zufriedenheit:*
-Das Maß an Komfort und positiver Erfahrung der Benutzenden bei der Nutzung des Frontends.
+Das Maß an Komfort und positiver Wahrnehmung der Nutzenden bei der Bedienung des Frontends.
 
 Usability ist eng mit dem Design der Benutzeroberfläche verknüpft.
 Eine gut gestaltete UI ermöglicht es den Benutzenden, intuitiv zu navigieren, schnell zu verstehen, wie sie Aufgaben ausführen können und bietet klare, konsistente visuelle Hinweise.
+
 Besonders bei komplexen Fachanwendungen ist es wichtig, dass eine gute UI sich nahtlos in die fachlich notwendigen Geschäftsprozesse integrieren lässt.
 
-*_Begriff der Benutzerfreundlichkeit (User Experience - UX)_*
+*_Begriff der User Experience (User Experience - UX)_*
 
-Benutzerfreundlichkeit oder User Experience (UX) geht über die reine Usability hinaus und bezieht sich auf das gesamte Erlebnis der Nutzenden mit einem Produkt oder einer Dienstleistung.
+Nutzungserlebnis oder User Experience (UX) geht über die reine Usability hinaus und bezieht sich auf das gesamte Erlebnis der Nutzenden mit einem Produkt oder einer Dienstleistung.
 UX umfasst alle Aspekte der Interaktion, einschließlich der emotionalen, psychologischen und praktischen Reaktionen auf das Produkt.
 
 *Hauptkomponenten der UX sind:*
@@ -125,10 +133,11 @@ Die Wahrnehmung des Nutzens und der Wertschöpfung durch das Produkt.
 
 UX berücksichtigt nicht nur die Interaktion mit der Benutzeroberfläche, sondern auch die gesamte Benutzerreise von der ersten Wahrnehmung des Produkts bis zur fortlaufenden Nutzung und Unterstützung.
 
-*_Zusammenhänge zwischen Usability (UI) und Benutzerfreundlichkeit (UX)_*
+*_Zusammenhänge zwischen Usability, User Interface (UI) und User Experience (UX)_*
 
-Usability ist ein integraler Bestandteil der Benutzerfreundlichkeit.
-Ein benutzerfreundliches Frontend muss eine hohe Usability aufweisen, da die Benutzeroberfläche der primäre Kontaktpunkt zwischen den Benutzenden und dem Frontend ist.
+Usability, also Benutzerfreundlichkeit, ist ein wichtiger Bestandteil der User Experience.
+Ein benutzerfreundliches Frontend muss eine hohe Usability aufweisen, da die Benutzeroberfläche, also das User Interface, der primäre Kontaktpunkt zwischen den Benutzenden und dem Frontend ist.
+
 Gute Usability sorgt für:
 
 * *Reibungslose und intuitive Interaktion:*
@@ -136,12 +145,12 @@ Benutzende können problemlos navigieren und ihre Ziele erreichen, was zu einer 
 * *Effizienz:*
 Benutzende brauchen weniger Zeit und Mühe, um Aufgaben zu erledigen, was ihre Zufriedenheit erhöht und die Gesamt-UX verbessert.
 
-*_Unterschiede zwischen Usability (UI) und Benutzerfreundlichkeit (UX)_*
+*_Unterschiede zwischen Usability und User Experience (UX)_*
 
-Trotz ihrer engen Verbindung gibt es klare Unterschiede zwischen UI und UX:
+Trotz ihrer engen Verbindung gibt es klare Unterschiede zwischen Usability und UX:
 
 * *Fokusbereich:*
-Usability konzentriert sich auf die Effizienz und Effektivität der Benutzeroberfläche, während UX das gesamte Erlebnis der Nutzenden mit dem Produkt betrachtet.
+Usability konzentriert sich auf die Benutzerfreundlichkeit, Effizienz und Effektivität der Benutzeroberfläche, während UX das gesamte Erlebnis der Nutzenden mit dem Produkt betrachtet.
 * *Umfang:*
 Usability befasst sich hauptsächlich mit den funktionalen Aspekten der Interaktion wie Navigation und Bedienbarkeit, während UX auch emotionale und psychologische Faktoren einbezieht wie Freude und Zufriedenheit.
 * *Messbarkeit:*
@@ -169,7 +178,8 @@ Weitere Informationen zu einer besseren Benutzerfreundlichkeit sind in den Absch
 === Allgemeine Prinzipien
 
 Das Bedienkonzept basiert auf einer Reihe von allgemeinen Prinzipien, die als Leitfaden für die Gestaltung von Benutzeroberflächen dienen.
-Diese Prinzipien umfassen Klarheit, Konsistenz, Feedback, Effizienz und Zugänglichkeit und bilden das Fundament für eine benutzerzentrierte Gestaltung.
+Bei diesen Prinzipien handelt es sich um Klarheit, Konsistenz, Feedback, Effizienz und Zugänglichkeit.
+Sie bilden das Fundament für eine benutzerzentrierte Gestaltung.
 Viele dieser Prinzipien werden beispielsweise in der https://de.wikipedia.org/wiki/ISO_9241[ISO 9241] und in https://en.wikipedia.org/wiki/Web_usability#Web_Usability_Criteria[Nielsen’s Web Usability Criteria] beschrieben.
 Zusätzlich liefert https://lawsofux.com/[lawsofux] eine anschauliche Sammlung von *Designprinzipien*.
 
@@ -184,14 +194,14 @@ Durch die Priorisierung von Klarheit im Design können Designende sicherstellen,
 
 Das Prinzip der "Konsistenz" bezieht sich auf die Notwendigkeit, ein einheitliches Erscheinungsbild und Verhalten über alle Seiten eines Frontends hinweg zu gewährleisten.
 Konsistenz bedeutet, dass Designelemente wie xref:04-basiselemente.adoc#farben[Farben], xref:04-basiselemente.adoc#text[Schriftarten], xref:04-basiselemente.adoc#icons[Symbole] und Layouts einheitlich angewendet werden, um eine nahtlose Benutzererfahrung zu schaffen.
-Durch die Aufrechterhaltung einer konsistenten Gestaltung können Nutzende das Frontend leichter verstehen und navigieren, da sie sich auf bereits bekannte Muster und Interaktionen verlassen können.
+Durch die Aufrechterhaltung einer konsistenten Gestaltung können Nutzende das Frontend leichter verstehen und darin navigieren, da sie sich auf bereits bekannte Muster und Interaktionen verlassen können.
 Darüber hinaus trägt die Konsistenz dazu bei, das Markenimage zu stärken und das Vertrauen der Nutzenden in das Frontend zu fördern.
 
 *_Feedback_*
 
 Das Designprinzip des "Feedbacks" bezieht sich auf die kontinuierliche Kommunikation zwischen dem Frontend und den Nutzenden.
 Feedback ist entscheidend, um den Nutzenden Rückmeldungen darüber zu geben, ob ihre Aktionen erfolgreich waren oder nicht.
-Dies kann in Form von visuellem Feedback, zum Beispiel einer Farbänderung eines xref:06-bedienelemente.adoc#button[Buttons] nach einem Klick oder durch informative Nachrichten wie Bestätigungsmeldungen nach dem Absenden eines xref:05-benutzereingaben.adoc#benutzereingaben[Formulars], erfolgen.
+Dies kann in Form von visuellem Feedback erfolgen, zum Beispiel durch eine Farbänderung eines xref:06-bedienelemente.adoc#button[Buttons] nach einem Klick oder durch informative Nachrichten wie Bestätigungsmeldungen nach dem Absenden eines xref:05-benutzereingaben.adoc#benutzereingaben[Formulars].
 Durch effektives Feedback fühlen sich Nutzende unterstützt und informiert, was zu einer verbesserten Benutzererfahrung und einer höheren Zufriedenheit führt.
 Dies gilt insbesondere auch für Aspekte der xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit].
 Technische Standardmöglichkeiten sollen genutzt und gegebenenfalls mit entsprechenden Hilfsmitteln (wie xref:02-barrierefreiheit.adoc#aria-labels[ARIA-Elementen]) angereichert werden.

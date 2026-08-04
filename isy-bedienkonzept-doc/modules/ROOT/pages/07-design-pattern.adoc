@@ -162,40 +162,6 @@ Dekorative Icons sind so umzusetzen, dass sie von assistiven Technologien ignori
 Icons derselben Ebene sind konsistent zu gestalten.
 Links verfügen über ein sichtbares Textlabel.
 
-[[dashboard-unterseite]]
-==== Dashboard-Unterseite
-
-Die Dashboard-Unterseite stellt weiterführende Inhalte bereit, die nicht vollständig auf dem Dashboard abgebildet werden können.
-
-{empty} +
-
-[[image-aufbau-dashboard-subpage]]
-.Aufbau Dashboard-Unterseite
-image::dashboard-unterseite.wireframe.drawio.svg[align="center"]
-
-{empty} +
-
-*_Aufbau_*
-
-* *Headerbereich:* Aufbau und Verhalten entsprechen vollständig dem definierten xref:03-fenstertypen-und-layout.adoc#header-bereich[Header Bereich].
-
-* *Seiten-Toolbar:* Kontextbezogene Aktionen wie „Zurück zur Übersicht“, „Drucken“ oder „Hilfe“ sind konsistent bereitzustellen.
-
-* *Inhaltsbereich:* Inhalte sind modular aufgebaut und folgen denselben Strukturprinzipien wie das Dashboard.
-
-*_Richtlinien zur Anwendung_*
-
-[[r-dsub-bezug]]
-* *Bezug und Orientierung:* Titel, Icon und Farbmarkierung entsprechen der auslösenden Dashboard-Kachel bzw. -Gruppe.
-
-[[r-dsub-navigation]]
-* *Navigation:* „Zurück zur Übersicht“ führt zur auslösenden Stelle auf dem Dashboard (ggf. mit Anker).
-Listen bieten eine „Vorheriges/Nächstes“-Navigation innerhalb derselben Treffermenge.
-
-[[r-app-inhalte-dsub-layout]]
-* *Layout und Inhalte:* Pro Abschnitt gilt das Ein-Inhaltstyp-Prinzip.
-Für umfangreiche Inhalte können Tabs oder Accordions eingesetzt werden.
-
 [[applikationsseite]]
 ==== Applikationsseite
 
@@ -295,7 +261,7 @@ Ein Informationsbereich (optional) kann ein- und ausgeblendet werden.
 Ohne verständlichen, aussagekräftigen Text darf keine Detailseite bereitgestellt werden.
 Der Rücksprung in die auslösende Übersicht erfolgt über die Seiten-Toolbar („Zurück zur Liste“).
 
-** *Beispiele (Struktur):*
+** *Beispiele für den Aufbau der Titelzeile:*
 *** *2 Ebenen:* _Label Ebene 2_: Objektname / ID
 *** *3 Ebenen:* _Label Ebene 2 - Label Ebene 3_: Objektname / ID
 
@@ -332,11 +298,10 @@ Mischformen auf derselben Hierarchieebene sind zu vermeiden, um Orientierung und
 [[sekundaere-fenstertypen]]
 === Sekundäre Fenstertypen
 
-Sekundäre Fenstertypen ergänzen die in Kapitel <<primaere-fenstertypen>> beschriebenen Seitentypen um temporäre, kontextsensitive Anzeigekontexte.
+Sekundäre Fenstertypen ergänzen die in Abschnitt <<primaere-fenstertypen>> beschriebenen Seitentypen um temporäre, kontextsensitive Anzeigekontexte.
 Sie werden als Overlay- oder kontextbezogene Container-Muster dargestellt und dienen insbesondere der Fokussierung, Bestätigung oder Ergänzung von Arbeitsvorgängen.
 
-Für sekundäre Fenstertypen gelten die gleichen Grundlagen zu xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit], Struktur und technischer Umsetzung wie in Kapitel <<primaere-fenstertypen>> beschrieben.
-Zusätzlich ist ein modalarmes Interaktionsverhalten sicherzustellen.
+Für sekundäre Fenstertypen gelten die gleichen Grundlagen zu xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit], Struktur und technischer Umsetzung wie im Abschnitt <<primaere-fenstertypen>> beschrieben.
 
 [[container-overlays]]
 ==== Container und Overlays
@@ -345,11 +310,11 @@ Container- und Overlay-Komponenten stellen eigenständige Anzeigekontexte dar.
 Sie können den regulären Seitenfluss kontextbezogen erweitern oder bestehende Inhalte temporär überlagern.
 
 Kontextnahe, nicht blockierende Muster (z. B. Drawer/Side Panels, Popover oder Inline-Leisten) sind grundsätzlich gegenüber stark modalen Lösungen zu bevorzugen.
-Modale Dialoge kommen ausschließlich dann zum Einsatz, wenn sie fachlich, rechtlich oder sicherheitsrelevant erforderlich sind (vgl. xref:03-fenstertypen-und-layout.adoc#modalarme-interaktionen[Modalarme Interaktionen (Grundsatz)]).
+Modale Dialoge kommen ausschließlich dann zum Einsatz, wenn sie fachlich, rechtlich oder sicherheitsrelevant erforderlich sind (vgl. xref:03-fenstertypen-und-layout.adoc#nicht-modale-und-kontextbezogene-interaktionen[Nicht-modale und kontextbezogene Interaktionen (Grundsatz)]).
 
 Sekundäre Fenstertypen sind so zu gestalten, dass sie den Arbeitsfluss möglichst wenig unterbrechen und die Orientierung erhalten bleibt.
 
-Die folgenden Unterkapitel konkretisieren Aufbau, Inhalte und Interaktionsverhalten der einzelnen Overlay- und Dialogtypen.
+Die folgenden Unterabschnitte konkretisieren Aufbau, Inhalte und Interaktionsverhalten der einzelnen Overlay- und Dialogtypen.
 
 *_Barrierefreiheits-Baseline (Overlays)_*
 
@@ -406,7 +371,7 @@ Layoutsprünge bei Zustandsänderungen sind zu vermeiden.
 Die nachfolgenden Abschnitte konkretisieren Dialoge als spezielle Overlay-Typen und legen Aufbau, Einsatz und Varianten, z. B. Meldungsdialoge für Bestätigungen und Warnungen, verbindlich fest.
 
 [[dialoge]]
-==== Dialoge
+===== Dialoge
 
 Dialoge sind ein in <<container-overlays>> definierter Overlay-Typ.
 Sie sind sekundäre Fenster über dem Hauptinhalt, die bei modaler Verwendung den Seitenkontext blockieren.
@@ -470,7 +435,7 @@ Bei dauerhaft komplexen oder navigationsrelevanten Aufgaben ist eine eigene Seit
 |===
 
 [[meldungsdialoge]]
-==== Meldungsdialoge
+===== Meldungsdialoge
 
 Meldungsdialoge sind eine spezialisierte Form von Dialogen.
 Sie sind blockierende Overlays, die den Hintergrund sperren und eine sofortige bewusste Kenntnisnahme oder Entscheidung erfordern.
@@ -486,7 +451,7 @@ Sie dienen der Absicherung kritischer Aktionen oder der Unterbindung riskanter Z
 * Nicht fortsetzbare Fehlerzustände erfordern eine unmittelbare Kenntnisnahme oder Handlung, z. B. Sitzung abgelaufen oder Authentifizierung fehlgeschlagen.
 
 * Meldungsdialoge sind nicht für reine Informationen oder reversible Aktionen einzusetzen.
-Dafür sind modalarme Alternativen zu verwenden (vgl. <<bestaetigen-rueckgaengig>>).
+Dafür sind nicht-modale und kontextbezogene Alternativen zu verwenden (vgl. <<bestaetigen-rueckgaengig>>).
 
 :example-link-component: Meldungsdialog
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-overlay#confirmdialog
@@ -558,7 +523,7 @@ Diese bleibt für eine angemessene Zeit verfügbar (in der Regel 5-10 s) und wir
 * *Barrierefreiheit & Fokus:* Bestätigungen übernehmen den Fokus nicht dauerhaft.
 Beim Schließen kehrt der Fokus in der Regel an das auslösende Element zurück.
 Wenn der Bedienfluss einen anderen sinnvollen Zielpunkt erfordert, wird der Fokus nachvollziehbar dorthin geführt.
-Die Ankündigung von Statusmeldungen erfolgt über eine Live-Region, ohne dass sich der Fokus verschiebt.
+Statusmeldungen werden so umgesetzt, dass sie von assistiven Technologien automatisch wahrgenommen werden können, ohne den Tastaturfokus zu verschieben.
 
 *_Verhalten_*
 
@@ -697,7 +662,7 @@ Alle Links sind programmatisch fokussierbar und vollständig per Tastatur bedien
 Nach erfolgreichem Speichern bleibt der Fokus stabil.
 
 * *Screenreader:* Titel und Struktur benennen Objekt und Modus eindeutig.
-Die Ankündigung von Statusmeldungen erfolgt über eine Live-Region ohne Fokusübernahme.
+Statusmeldungen werden so umgesetzt, dass sie von assistiven Technologien automatisch wahrgenommen werden können, ohne den Tastaturfokus zu verschieben.
 
 *_Umsetzungshinweise_*
 
@@ -740,7 +705,7 @@ Warnungen und Fehler erfordern in der Regel ein explizites Schließen oder bleib
 * *Kein Fokus-Hijack:* Die Ankündigung von Meldungen erfolgt über `aria-live` (in der Regel `polite`).
 Der Fokus verbleibt bei den Nutzenden.
 
-* *Text statt Farbe:* Schweregrade sind sprachlich zu benennen (z. B. „Warnung“, „Fehler“).
+* *Text vor Farbe:* Schweregrade sind sprachlich zu benennen (z. B. „Warnung“, „Fehler“).
 Die Farbe dient als ergänzendes Unterscheidungsmerkmal.
 
 * *Anzahl gleichzeitiger Meldungen:* Mehrere Meldungen dürfen keine Primäraktionen verdecken.
@@ -836,7 +801,7 @@ Der Formularzustand darf beim Navigieren (Zurück oder Weiter) nicht verloren ge
 Nach erfolgreichem Schrittwechsel bleibt der Fokus stabil auf dem neuen Inhalt.
 
 * *Screenreader:* Titel und Struktur des Steppers benennen den aktuellen Schritt und den Gesamtfortschritt eindeutig.
-Die Ankündigung von Statusmeldungen erfolgt über eine Live-Region ohne Fokusübernahme.
+Statusmeldungen werden so umgesetzt, dass sie von assistiven Technologien automatisch wahrgenommen werden können, ohne den Tastaturfokus zu verschieben.
 
 *_Umsetzungshinweise_*
 
@@ -850,8 +815,14 @@ Schrittnamen und Fortschritt werden verständlich dargestellt.
 * *Validierung und Feedback:* Fehlermeldungen werden feldnah angezeigt.
 Zusammenfassende Hinweise können ergänzend als nicht blockierende Statusmeldung dargestellt werden.
 
+[[navigations-und-aktionsmuster]]
+=== Navigations- und Aktionsmuster
+
+Navigations- und Aktionsmuster beschreiben, wie Nutzende Bereiche der Anwendung erreichen und kontextbezogene Funktionen ausführen.
+Sie sorgen dafür, dass Navigationsebenen, Aktionsleisten und zusammengehörige Aktionen anwendungsweit konsistent bereitgestellt werden.
+
 [[navigation]]
-=== Navigation
+==== Navigation
 
 Alle Use Cases einer Fachanwendung müssen, gegebenenfalls nach Anwendungskomponenten oder Anwendungen gruppiert, direkt über einen Eintrag in der Navigation ansprechbar sein.
 
@@ -863,7 +834,7 @@ Die IsyFact sieht drei Navigationsebenen vor:
 
 * (A) Die *Hauptnavigation (A)* (auch horizontale Navigation genannt)
 * (B) Die darin enthaltene *Subnavigation (B)*  (Menüitems der Hauptnavigation)
-* (C) Die *Linksnavigation \(C)* (Liste von Einträgen am linken Rand der Applikation)
+* \(C) Die *Linksnavigation \(C)* (Liste von Einträgen am linken Rand der Applikation)
 
 Innerhalb einer Anwendungslandschaft oder einer einzelnen Fachanwendung muss die Navigation einheitlich strukturiert sein.
 
@@ -888,7 +859,7 @@ In komplexeren übergreifenden Szenarien kann eine Navigation wie folgt aussehen
 Dies sind nur exemplarische Möglichkeiten eine Hierarchie innerhalb der zur Verfügung stehenden Elemente aufzubauen.
 
 [[hauptnavigation]]
-==== Hauptnavigation
+===== Hauptnavigation
 
 Die Hauptnavigation ist eine horizontale Navigation, die stets am unteren Rand des Header-Bereichs dargestellt wird.
 Sie wird mit Menüpunkten von links nach rechts befüllt.
@@ -901,7 +872,7 @@ Die Farbe repräsentiert eine Anwendung oder eine Anwendungsgruppe und kann ents
 Die Subnavigation öffnet sich per Mausklick.
 
 [[subnavigation]]
-==== Subnavigation
+===== Subnavigation
 
 Die Subnavigation ist eine vertikale Navigation, die immer an einem Menüpunkt der Hauptnavigation beginnt.
 Sie wird mit Menüpunkten von oben nach unten befüllt.
@@ -912,7 +883,7 @@ Die Subnavigation ist nicht scrollbar.
 Die Subnavigation wird zum Öffnen von Anwendungskomponenten oder Anwendungen, deren Navigation sich in der Linksnavigation fortsetzt, genutzt.
 
 [[linksnavigation]]
-==== Linksnavigation
+===== Linksnavigation
 
 Die Linksnavigation ist eine vertikale Navigation am linken Bildschirmrand.
 Sie lässt sich ein und ausblenden.
@@ -931,9 +902,9 @@ Müssen Anwendende häufig auf bestimmte Funktionen oder Objekte zugreifen, so k
 Diese können statisch implementiert sein (zum Beispiel über "häufige Aufgaben") oder sich dynamisch ändern, je nach Nutzung (zum Beispiel über "häufig benutzt").
 
 [[toolbar]]
-=== Toolbar
+==== Toolbar
 
-Eine Toolbar stellt ein Set von xref:06-bedienelemente.adoc#bedienelemente[Bedienelementen], wie zum Beispiel xref:06-bedienelemente.adoc#button[Buttons] oder <<dropdown,Dropdown-Menüs>>, in einer Leiste zur Verfügung.
+Eine Toolbar stellt ein Set von xref:06-bedienelemente.adoc#bedienelemente[Bedienelementen], wie zum Beispiel xref:06-bedienelemente.adoc#button[Buttons] oder xref:06-bedienelemente.adoc#dropdown[Dropdown-Menüs], in einer Leiste zur Verfügung.
 Diese ist oberhalb eines bestimmten Inhaltsbereichs angebracht und sollte optisch, beispielsweise durch eine Linie oder Schattierung, vom Inhalt abgegrenzt sein.
 Die einzelnen Funktionen innerhalb der Toolbar werden typischerweise durch ein aussagekräftiges xref:04-basiselemente.adoc#icons[Icon], gegebenenfalls ergänzt um ein zusätzliches xref:04-basiselemente.adoc#label[Label], repräsentiert.
 
@@ -1061,8 +1032,36 @@ Toggle-Aktionen vermitteln ihren aktuellen Zustand programmatisch (z. B. über `
 Beim Öffnen eines Overflow-Menüs wird der Fokus in das Menü gesetzt und beim Schließen wieder an den auslösenden Button zurückgeführt.
 Nicht verfügbare Aktionen werden deaktiviert dargestellt statt ausgeblendet.
 
+[[menu-button]]
+==== Menü-Button
+
+Ein Menü-Button kombiniert eine primäre Aktion mit einer zusätzlichen Auswahl weiterer Aktionen.
+Der primäre Bereich löst beim Betätigen eine Standardaktion aus (zum Beispiel Speichern), während der zusätzliche Bereich eine Auswahl weiterer Funktionen öffnet (zum Beispiel Speichern als PDF oder Speichern als XLS).
+
+Diese Button-Art wird hauptsächlich in Toolbars eingesetzt und muss immer mehrere Funktionen beinhalten, die in einem logischen Zusammenhang zueinander stehen.
+Eine mögliche Verwendung ist das Zusammenfassen von mehreren Exportmöglichkeiten.
+
+Menü-Buttons bestehen aus zwei Bestandteilen:
+
+* einem xref:04-basiselemente.adoc#icons[Icon] beziehungsweise einem xref:04-basiselemente.adoc#label[Label] oder einer Kombination von Icon und Label.
+* einem Pfeil-Icon, das per Klick die Dropdown-Liste öffnet.
+
+:example-link-component: Menübutton
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-button#splitbutton
+include::partial$example-link-card.adoc[]
+
+[TIP]
+Das Icon sollte inhaltlich eindeutig zur Funktion passen.
+Es sollten bereits bekannte Symbole (zum Beispiel Diskette = Speichern) genutzt werden.
+Bei der Gestaltung sollte darauf geachtet werden, dass die Icon-Sprache über die gesamte Anwendung konsistent bleibt.
+
+[[strukturierungs-und-darstellungsmuster]]
+=== Strukturierungs- und Darstellungsmuster
+
+Strukturierungs- und Darstellungsmuster gliedern zusammengehörige Inhalte und unterstützen eine übersichtliche, schrittweise oder kontextbezogene Darstellung.
+
 [[expander]]
-=== Expander (Progressive Disclosure)
+==== Expander (Progressive Disclosure)
 
 Mit einem Expander können bestimmte Inhaltsbereiche per Mausklick dynamisch ein- und ausgeblendet werden.
 Das zugrundeliegende Prinzip wird häufig als „Progressive Disclosure“ („schrittweises Enthüllen“) oder auch als „Information Hiding“ („Ausblenden von Information“) bezeichnet.
@@ -1081,13 +1080,13 @@ Der grundlegende Aufbau eines Expanders ist wie folgt:
 Expander nehmen dabei immer die ihnen zur Verfügung stehende Breite ein.
 
 [NOTE]
-Anstatt mehrere Expander in einer Ansicht zu nutzen, sollte überlegt werden, ob die fachlich gesplitteten Gruppierungen besser in xref:06-bedienelemente.adoc#tabview[Tabs] oder sogar in eigenen Frontendseiten dargestellt werden sollten.
+Anstatt mehrere Expander in einer Ansicht zu nutzen, sollte überlegt werden, ob die fachlich gesplitteten Gruppierungen besser in xref:06-bedienelemente.adoc#tabs[Tabs] oder sogar in eigenen Frontendseiten dargestellt werden sollten.
 Dadurch wird die kognitive Belastung der Nutzenden reduziert und das Fehlerhandling vereinfacht.
 Des Weiteren ist es barrierefreier, wenn weniger Inhalt auf einem Frontend direkt sichtbar ist.
 Screenreader können dadurch schneller und einfacher durch die Inhalte navigieren.
 
 [[akkordeon]]
-==== Akkordeon
+===== Akkordeon
 
 In einem Akkordeon werden zu einem übergeordneten Thema strukturiert und gegliedert Inhalte dargestellt.
 Dabei lässt sich nur ein Akkordeonelement gleichzeitig ausklappen.
@@ -1099,15 +1098,15 @@ Eine klassische Anwendung hat das Akkordeon beispielsweise in FAQs.
 :example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#accordion
 include::partial$example-link-card.adoc[]
 
-Fürs Aus- und Einklappen eines Akkordeonelements kann der gesamte Akkordeon-Header angeklickt werden.
-Zusätzlich befindet sich auf der linken Seite neben dem Label ein Icon, das den Zustand (ein- oder ausgeklappt) des Akkordeonelements anzeigt.
-Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen zum ein- und ausgeklappten Akkordeon).
+Zum Ein- und Ausklappen eines Akkordeonelements kann der gesamte Akkordeon-Header angeklickt werden.
+Zusätzlich wird ein Icon als Zustandsindikator verwendet, das anzeigt, ob das Akkordeonelement ein- oder ausgeklappt ist.
+Die konkrete Position und Darstellung des Icons richtet sich nach der Referenzimplementierung.
 
 Die Interaktion wird dabei in der Regel auf die reine Wissensvermittlung reduziert.
 Entsprechend soll auf weiterführende Interaktion, über das aus- und einklappen hinaus, verzichtet werden.
 
 [[panel]]
-==== Panel
+===== Panel
 
 Ein Panel ist einem <<akkordeon>> recht ähnlich.
 In einem Panel werden ebenso zu einem übergeordneten Thema kompakt Gruppen an Informationen dargestellt.
@@ -1121,59 +1120,17 @@ Klassischerweise werden Panels in xref:05-benutzereingaben.adoc#benutzereingaben
 include::partial$example-link-card.adoc[]
 
 
-Fürs Aus- und Einklappen eines Panels befindet sich auf der linken Seite auf der Höhe des Labels ein Icon.
-Als Icon wird ein Chevron genutzt, das entweder nach rechts zeigt, wenn das Element eingeklappt ist, oder nach unten, wenn das Element ausgeklappt (siehe Abbildungen zum ein- und ausgeklappten Panel).
+Zum Ein- und Ausklappen eines Panels wird ein Zustandsindikator verwendet.
+Dieser zeigt an, ob der Inhaltsbereich aktuell ein- oder ausgeklappt ist.
+Die konkrete Darstellung richtet sich nach der Referenzimplementierung.
 
 Die Interaktion steht hier im Vordergrund.
 Weiterführende Aktionen können entweder rechts im Panel Header oder in einer Footer Sektion unterhalb des Inhaltsbereichs eingebaut werden.
 
 Panels bieten in der Regel mehr Freiraum für komplexe Inhalte und Interaktionen als ein Akkordeon.
-Eine Gegenüberstellung, wann ein Panel und wann ein Akkordeon sinnvoll ist, befindet sich im Kapitel xref:10-design-richtlinien.adoc#panel-akkordeon-ueberschrift[Panel vs. Akkordeon vs. Überschrift].
-
-[[dropdown]]
-=== Eingabefeldliste (Dropdown)
-
-Ein Eingabefeld mit hinterlegten Werten ist in seiner einfachsten Form ein Eingabefeld mit Liste.
-Die Liste ist die bekannteste Art eines interaktiven Eingabefelds, besser bekannt als Dropdown.
-
-Eingabefeldlisten setzen Standards für interaktive xref:06-bedienelemente.adoc#eingabefeld[Eingabefelder], Dropdown-Menüs, enthaltene Kontrollkästchen und andere interaktive Elemente.
-Dadurch wird sichergestellt, dass alle Eingabefelder auf dem Frontend einheitlich gestaltet sind und den besten Praktiken hinsichtlich xref:01-einfuehrung.adoc#usability-und-benutzerfreundlichkeit[Benutzerfreundlichkeit] und xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] entsprechen.
-Ein konsistentes Design fördert die Orientierung und das Vertrauen der Nutzenden, was letztendlich zu einer höheren Zufriedenheit und Effizienz führt.
-
-Beim Klick auf das gesamte Element klappt die Liste aus und ein Element kann angewählt werden.
-
-:example-link-component: Dropdown
-:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#dropdown
-include::partial$example-link-card.adoc[]
-
-Die Listenelemente sind mindestens 44px hoch und so breit wie das dazugehörige Element (hier exemplarisch das Eingabefeld).
-Aktive Listenelemente sind in der Highlightfarbe und hinterlegt dargestellt.
-
-[[menu-button]]
-=== Menü-Button
-
-Ein Menü-Button kombiniert eine primäre Aktion mit einer zusätzlichen Auswahl weiterer Aktionen.
-Der primäre Bereich löst beim Betätigen eine Standardaktion aus (zum Beispiel Speichern), während der zusätzliche Bereich eine Auswahl weiterer Funktionen öffnet (zum Beispiel Speichern als PDF oder Speichern als XLS).
-
-Diese Button-Art wird hauptsächlich in Toolbars eingesetzt und muss immer mehrere Funktionen, die in einen logischen Zusammenhang zueinander stehen, beinhalten.
-Eine mögliche Verwendung ist das Zusammenfassen von mehreren Exportmöglichkeiten.
-
-Menü-Buttons bestehen aus zwei Bestandteilen:
-
-* einem xref:04-basiselemente.adoc#icons[Icon] beziehungsweise einem xref:04-basiselemente.adoc#label[Label] oder einer Kombination von Icon und Label.
-* einem Pfeil-Icon, das per Klick die Dropdown-Liste öffnet.
-
-:example-link-component: Menübutton
-:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-button#splitbutton
-include::partial$example-link-card.adoc[]
-
-[TIP]
-Das Icon sollte inhaltlich eindeutig zur Funktion passen.
-Es sollten bereits bekannte Symbole (zum Beispiel Diskette = Speichern) genutzt werden.
-Bei der Gestaltung sollte darauf geachtet werden, dass die Icon-Sprache über die gesamte Anwendung konsistent bleibt.
 
 [[eingabefeldgruppen]]
-=== Eingabefeldgruppen
+==== Eingabefeldgruppen
 
 In fast jedem Frontend beziehungsweise in den häufigsten Anwendungsfällen lassen sich Eingabefelder inhaltlich zu (homogenen) Gruppen zusammenfassen.
 Häufig verwendete Gruppen sind beispielsweise „Angaben zur Person“ (mit den Eingabefeldern Vorname, Familienname, Nationalität, Geschlecht etc.), Adressdaten (Straße, Hausnummer, Postleitzahl, Ort) oder Bezahldaten (Art der Bezahlung, Kartennummer etc).
@@ -1191,7 +1148,7 @@ include::partial$example-link-card.adoc[]
 Es wird ein einspaltiges Layout verwendet.
 Jedes Pflichtfeld ist durch einen Asterisk (*) gekennzeichnet.
 Eingabefeldgruppen bedürfen keiner zusätzlichen optischen Gruppierung.
-Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends (siehe xref:08-use-cases.adoc#image-vertikalerschnitt[image-vertikalerschnitt]) folgen.
+Sie können durch ihre inhaltlich logische Struktur dem zu empfehlenden dreispaltigen Layout des Frontends folgen.
 
 *_Eingabefeldgruppe mit Fieldset:_*
 
@@ -1217,7 +1174,7 @@ Vielmehr sollte überlegt werden, ob es einen verständlicheren fachlichen Lösu
 
 *_Beispielhafte Verwendung von Gruppen und inhaltlich logische Gruppierung:_*
 
-* Personendaten (rosa Overlay, vertikal gruppiert)
+* Personendaten (zusammengehörige Eingabegruppe, vertikal gruppiert)
 * Identitätsnachweis (vertikal gruppiert)
 
 [[image-mehrspaltigegruppen]]
@@ -1227,326 +1184,211 @@ image::eingabefeldgruppen.wireframe.drawio.svg[align="center"]
 Hier wird deutlich, dass in einem mehrspaltigen Layout verschiedene Kombinationen an Eingabefeldern in zweispaltiger (horizontaler) Anordnung einer Hauptgruppe unterliegen.
 Die blockartige Anordnung erleichtert das Erfassen und ermöglicht eine thematische Untergruppen-Clusterung.
 
-[[wertehilfen]]
-=== Wertehilfen
+[[context-group]]
+===== Dynamische Eingabefeldgruppen (Context Groups)
 
-Wertehilfen in Frontends sind interaktive Unterstützungselemente, die Benutzenden helfen, Formulare schneller und fehlerfrei auszufüllen.
-Sie dienen dazu, die Eingabe durch vorgeschlagene oder vorausgewählte Werte zu erleichtern (zum Beispiel als <<datepicker-wertehilfe,Datepicker>>).
+Context Groups sind eine dynamische Form von Eingabefeldgruppen.
+Sie ermöglichen das Hinzufügen oder Entfernen zusammengehöriger Gruppen von Eingabefeldern und Eingabemöglichkeiten, beispielsweise für mehrere Wohnorte, Adressen oder Kontaktpersonen.
+
+*_Bedienung:_*
+
+* Maus: Ein Klick auf „+ weiteres Element“ erzeugt eine weitere Context Group.
+Ein Klick auf das Löschen-Icon entfernt die ausgewählte Context Group.
+* Tastatur: Alle Funktionen zum Hinzufügen, Bearbeiten und Entfernen sind über die Tabulatortaste erreichbar und mit Enter beziehungsweise Leertaste ausführbar.
+
+*_Barrierefreiheit:_* Die Gruppen müssen über eine eindeutige Überschrift verfügen.
+Hinzugefügte oder entfernte Gruppen und die daraus entstehenden Statusänderungen sind für assistive Technologien verständlich zu kommunizieren.
+
+[[eingabe-und-auswahlmuster]]
+=== Eingabe- und Auswahlmuster
+
+Eingabe- und Auswahlmuster unterstützen Nutzende bei der Eingabe, Suche und Auswahl fachlicher Werte.
+Die grundlegende Gestaltung einzelner Komponenten ist im Kapitel xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] beschrieben.
+
+[[wertehilfen]]
+==== Wertehilfen
+
+Wertehilfen sind interaktive Unterstützungen, die Nutzenden helfen, Eingaben schneller und fehlerarm vorzunehmen.
+Sie ergänzen Eingabefelder beispielsweise durch vorgeschlagene, vorausgewählte oder strukturiert auswählbare Werte.
+
+Die grundlegende Gestaltung und Bedienung der jeweiligen Komponenten ist im Kapitel xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] beschrieben.
+Dieser Abschnitt legt die übergreifenden Anforderungen für ihren Einsatz als Wertehilfe fest.
 
 *_Anforderungen an Wertehilfen:_*
 
 * *_Barrierefreiheit_*
-** Tastaturzugänglichkeit: Wertehilfen müssen vollständig mit der Tastatur bedienbar sein, einschließlich <<navigation>>, Auswahl und Schließen.
-** Screenreader-Unterstützung: Alle interaktiven Elemente müssen mit sinnvollen Labels versehen sein und korrekt angekündigt werden (zum Beispiel mittels xref:02-barrierefreiheit.adoc#aria-labels[aria-label] oder aria-live-Regionen).
+** Tastaturzugänglichkeit: Wertehilfen müssen vollständig mit der Tastatur bedienbar sein, einschließlich Öffnen, Navigation, Auswahl und Schließen.
+** Screenreader-Unterstützung: Alle interaktiven Elemente müssen sinnvoll beschriftet sein.
+Zustände, Auswahländerungen und dynamische Ergebnisse werden verständlich angekündigt.
 * *_Usability_*
-** Intuitive Nutzung: Wertehilfen sollten verständlich gestaltet und optisch hervorgehoben werden, sobald sie aktiv sind.
-** Fehlerminimierung: Eingabevalidierungen sollten Nutzenden bei ungültigen Werten direkt Hinweise geben.
-* *_Responsive Design_*
-** Wertehilfen müssen auf verschiedenen Bildschirmgrößen und bei Zoom (mindestens 200 %) einwandfrei funktionieren.
+** Intuitive Nutzung: Wertehilfen sind verständlich gestaltet und im aktiven Zustand eindeutig erkennbar.
+** Fehlerminimierung: Ungültige Eingaben werden direkt am betroffenen Eingabefeld erläutert.
+** Alternative Eingabe: Soweit fachlich möglich, bleibt die direkte Eingabe über die Tastatur erhalten.
+* *_Responsives Design_*
+** Wertehilfen müssen auf unterschiedlichen Bildschirmgrößen und bei Zoom bis mindestens 200 % nutzbar bleiben.
 
 [NOTE]
-Sollte eine barrierefreie Umsetzung der Wertehilfe nicht möglich sein, oder gar eine Barriere darstellen, so sollte diese vor assistiven Technologien verborgen werden und es muss eine (alternative) barrierefreie Tastatureingabe möglich sein.
+Kann eine ergänzende Wertehilfe nicht barrierefrei umgesetzt werden, darf sie die Nutzung des zugehörigen Eingabefeldes nicht behindern.
+In diesem Fall ist eine gleichwertige barrierefreie Eingabemöglichkeit bereitzustellen.
 
-*_Beispiele für Wertehilfen_*
+*_Beispiele und weiterführende Beschreibungen_*
 
-* *_<<dropdown,Dropdowns:>>_*
-** Zur Auswahl vordefinierter Werte, zum Beispiel aus einer Liste von Bundesländern.
-* *_xref:09-eingabehilfen-und-fehlermeldungen.adoc#autosuggestion[Autovervollständigung:]_*
-** Nutzende geben Text ein, und die Anwendung schlägt passende Werte vor.
-* *_<<datepicker-wertehilfe,Datumsauswahl:>>_*
-** Ein Kalender-Widget unterstützt bei der Auswahl eines Datums.
-* *_Zahlen-Spinner:_*
-** Ermöglicht die Erhöhung oder Verringerung eines Wertes durch Pfeiltasten.
+* *Dropdown:* Zur Auswahl genau eines vorgegebenen Wertes, beispielsweise eines Bundeslandes.
+Gestaltung und Bedienung sind unter xref:06-bedienelemente.adoc#auswahlliste[Auswahlliste (Dropdown)] beschrieben.
+
+* *Mehrfachauswahl:* Zur Auswahl mehrerer Werte aus einer umfangreicheren Menge.
+Siehe xref:06-bedienelemente.adoc#mehrfachauswahl[Mehrfachauswahl (MultiSelect)].
+
+* *Datum- und Uhrzeitauswahl:* Ein Kalender- oder Uhrzeit-Widget unterstützt bei der Eingabe eines Datums oder Zeitpunktes.
+Siehe xref:06-bedienelemente.adoc#datepicker[Datum- und Uhrzeit-Eingaben].
+
+* *Zahlenfeld:* Optionale Steuerelemente unterstützen beim schrittweisen Erhöhen oder Verringern numerischer Werte.
+Siehe xref:06-bedienelemente.adoc#zahlenfeld[Zahlenfeld (InputNumber)].
+
+[[cascadeselect-wertehilfe]]
+* *Hierarchische Auswahl:* Mehrstufige Kategorien können über eine hierarchische Auswahlliste ausgewählt werden.
+Siehe xref:06-bedienelemente.adoc#cascadeselect-wertehilfe[Hierarchische Auswahlliste (CascadeSelect)].
+
+* *Autovervollständigung:* Nutzende geben Text ein und erhalten passende Vorschläge.
+Die Anforderungen sind unter xref:09-eingabehilfen-und-fehlermeldungen.adoc#autosuggestion[Autovervollständigung] beschrieben.
 
 *_Dos:_*
 
-* Hinweise bei ungültigen Eingaben direkt am Interaktionselement anzeigen.
-* Inhalte und Beschriftungen so gestalten, dass sie klar und leicht verständlich sind.
+* Wertehilfen werden nur eingesetzt, wenn sie die Eingabe tatsächlich vereinfachen oder Fehler reduzieren.
+* Hinweise bei ungültigen Eingaben werden direkt am Interaktionselement angezeigt.
+* Inhalte und Beschriftungen sind klar und leicht verständlich.
+* Auswahl und Schließen führen nicht zu einem unerwarteten Fokuswechsel.
 
 *_Don'ts:_*
 
-* Keine zwingende Nutzung von Werten aus der Hilfe, wenn eine manuelle Eingabe zulässig ist.
-* Keine automatische Aktivierung von Wertehilfen, die ohne Nutzerinteraktion starten.
-
-IMPORTANT: Die konkrete technische Umsetzung der Wertehilfen kann sich je nach Projekt und Referenzimplementierung unterscheiden.
-Die folgenden Rahmenbedingungen sind unabhängig von der eingesetzten Technologie einzuhalten.
-
-[[datepicker-wertehilfe]]
-==== Datepicker und Timepicker
-
-:example-link-component: Datepicker
-:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#calendar
-include::partial$example-link-card.adoc[]
-
-*_Funktionalität:_* Ermöglicht die Auswahl eines Datums oder Zeitpunkts über ein interaktives Widget.
-
-*_Bedienung:_*
-
-* Maus: Klick auf das Eingabefeld öffnet den Kalender, ein weiterer Klick auf das gewünschte Datum wählt dieses aus.
-* Tastatur: Tabulator zur Fokussierung, Pfeiltasten zur Navigation, Enter zur Auswahl.
-
-*_Barrierefreiheit:_* Screenreader sollten die aktuelle Auswahl sowie Navigationsanweisungen klar ansagen.
-
-[[inputnumber-wertehilfe]]
-==== InputNumber
-
-:example-link-component: InputNumber
-:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#inputnumber
-include::partial$example-link-card.adoc[]
-
-*_Funktionalität:_* Ermöglicht das Eingeben numerischer Werte mit optionalen Steuerelementen (zum Beispiel Pfeile).
-
-*_Bedienung:_*
-
-* Maus: Pfeilsymbole erhöhen oder verringern den Wert.
-* Tastatur: Direkte Eingabe von Zahlen, Pfeiltasten zur Erhöhung/Verringerung.
-
-*_Barrierefreiheit:_* Klare Beschriftungen und ARIA-Attribute für eine verständliche Ansage durch Screenreader.
-
-[[cascadeselect-wertehilfe]]
-==== CascadeSelect
-
-:example-link-component: CascadeSelect
-:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#treeselect
-include::partial$example-link-card.adoc[]
-
-*_Funktionalität:_* Bietet hierarchische Auswahlmöglichkeiten, die sich in Unterkategorien verzweigen.
-
-*_Bedienung:_*
-
-* Maus: Klick auf die oberste Kategorie öffnet die Unterkategorien.
-* Tastatur: Navigation mit Tab und Pfeiltasten, Enter zur Auswahl.
-
-*_Barrierefreiheit:_* Jede Ebene sollte korrekt fokussierbar sein, mit klaren Hinweisen auf Unterkategorien.
-
-[[dropdown-wertehilfe]]
-==== Dropdown
-
-Genaue Details zur Umsetzung eines Dropdowns sind im Kapitel <<dropdown>> zu finden.
-
-:example-link-component: Dropdown
-:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-form#dropdown
-include::partial$example-link-card.adoc[]
-
-*_Funktionalität:_* Ermöglicht die Auswahl eines einzigen Wertes aus einer vordefinierten Liste.
-
-*_Bedienung:_*
-
-* Maus: Klick öffnet die Liste, ein weiterer Klick wählt den Eintrag.
-* Tastatur: Tab zur Navigation, Pfeiltasten zur Auswahl, Enter zur Bestätigung.
-
-*_Barrierefreiheit:_* Dropdown-Elemente müssen deutlich beschriftet sein, mit guter Unterstützung für Screenreader.
-
-[[multiselect-wertehilfe]]
-==== MultiSelect
-
-*_Funktionalität:_* Ermöglicht die Auswahl mehrerer Werte aus einer Liste.
-
-*_Bedienung:_*
-
-* Maus: Klick auf Kontrollkästchen oder Listenpunkte zur Mehrfachauswahl.
-* Tastatur: Tabulator zur Fokussierung, Pfeiltasten zur Navigation, Space zur Auswahl.
-
-*_Barrierefreiheit:_* Klarer Fokus und Ansagen für den Status (ausgewählt/nicht ausgewählt) bei Screenreadern.
-
-[[context-Group-wertehilfe]]
-==== Context Group
-
-*_Funktionalität:_* Ermöglicht das Hinzufügen oder Entfernen von kontextbezogenen gruppierten Eingabefeldern und Eingabemöglichkeiten (zum Beispiel "Wohnort", bestehend aus mehreren Adressinformationen).
-
-*_Bedienung:_*
-
-* Maus: Ein Klick auf "+ weiteres Element" erzeugt eine weitere Context Group und ein Klick auf Delete-Icon löscht die ausgewählte Context-Group.
-* Tastatur: Tabulator zur Fokussierung, Pfeiltasten zur Navigation, Enter zur Auswahl.
-
-*_Barrierefreiheit:_* Klarer Fokus und Ansagen für den Status (ausgewählt/nicht ausgewählt) bei Screenreadern.
+* Werte aus einer Hilfe werden nicht erzwungen, wenn eine fachlich zulässige manuelle Eingabe vorgesehen ist.
+* Wertehilfen werden nicht ohne Nutzerinteraktion automatisch geöffnet.
+* Komponenten werden an dieser Stelle nicht erneut beschrieben; maßgeblich sind die verlinkten Abschnitte unter „Bedienelemente“.
 
 [[selektion]]
-=== Selektion
+==== Selektion
 
-Selektionsmöglichkeiten in einem Frontend sind grundlegend bei der Bedienung eines Frontends notwendig.
-Sie dienen zur Auswahl einzelner oder mehrerer Werte aus einer meist vordefinierten Menge.
-Sie können beliebig kombiniert werden, um die Fehleranfälligkeit zu reduzieren und die Auswahlmöglichkeiten zu optimieren.
+Selektionsmuster unterstützen Nutzende bei der Auswahl eines oder mehrerer Werte aus einer vorgegebenen Menge.
+Welches Bedienelement eingesetzt wird, richtet sich nach der Anzahl der Optionen, der möglichen Anzahl ausgewählter Werte und dem verfügbaren Platz.
 
-Eine Gruppe aus den folgenden Elementen bildet für die Selektion ein <<design-pattern>> und ist mit den aufgeführten Rahmenbedingungen einzusetzen.
-Die genauen Definitionen und Umsetzung der einzelnen Elemente sind im entsprechenden Unterkapitel des Kapitels xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] einzusehen.
+Die grundlegende Gestaltung, die Zustände und die Bedienung der einzelnen Komponenten sind im Kapitel xref:06-bedienelemente.adoc#bedienelemente[Bedienelemente] beschrieben.
+In diesem Abschnitt wird festgelegt, in welchen Nutzungssituationen die jeweiligen Auswahlformen eingesetzt werden.
 
-[[checkbox-selektion]]
-==== Checkbox
+*_Entscheidungshilfe:_*
 
-*_Funktionalität:_* Erlaubt die Auswahl mehrerer unabhängiger Optionen.
+* *Radiobuttons:* Für die Auswahl genau einer Option aus mehreren direkt sichtbaren Möglichkeiten werden xref:06-bedienelemente.adoc#radiobutton[Radiobuttons] verwendet.
+Sie eignen sich insbesondere für eine kleine und überschaubare Anzahl von Optionen.
 
-*_Best Practices:_*
+* *Checkboxen:* Für die Auswahl mehrerer voneinander unabhängiger Optionen werden xref:06-bedienelemente.adoc#checkbox[Checkboxen] verwendet.
 
-* Klarer visueller Fokus bei Navigation mit der Tastatur.
-* Zustände (aktiviert, deaktiviert, teilweise ausgewählt) müssen durch Screenreader korrekt angesagt werden.
-* Mindestkontrast von 4,5:1 für alle Zustände (inklusive Hover und Fokus).
+* *Dropdown:* Für die platzsparende Auswahl genau eines Wertes aus einer umfangreicheren Menge wird eine xref:06-bedienelemente.adoc#auswahlliste[Auswahlliste (Dropdown)] verwendet.
 
-*_Barrierefreiheit:_*
+* *MultiSelect:* Für die Auswahl mehrerer Werte aus einer umfangreicheren Menge wird eine xref:06-bedienelemente.adoc#mehrfachauswahl[Mehrfachauswahl (MultiSelect)] verwendet.
+Ausgewählte Werte müssen visuell erkennbar und für assistive Technologien programmatisch ermittelbar sein.
 
-* Nutzung von aria-checked und xref:02-barrierefreiheit.adoc#aria-labels[aria-label] zur Beschreibung.
-* Gruppierung ähnlicher xref:06-bedienelemente.adoc#checkbox[Checkboxen] mit fieldset und legend.
-* Click-Target-Area ist mindestens 44x44 Pixel.
+Für alle Selektionsmuster gelten folgende übergreifende Anforderungen:
 
-[[radiobutton-selektion]]
-==== Radiobutton
-
-*_Funktionalität:_* Erlaubt die Auswahl einer einzigen Option aus einer Gruppe.
-
-*_Best Practices:_*
-
-* xref:06-bedienelemente.adoc#radiobutton[Radiobuttons] sollten immer beschriftet und in logischer Reihenfolge angeordnet sein.
-* Fokus- und Hover-Stile müssen klar erkennbar sein.
-
-*_Barrierefreiheit:_*
-
-* Verwendung von `role="radiogroup"` für zusammengehörige Optionen.
-* Klare Statusmeldung wie "ausgewählt" über Screenreader.
-* Click-Target-Area ist mindestens 44x44 Pixel.
-
-[[dropdown-selektion]]
-==== Dropdown
-
-*_Funktionalität:_* Bietet eine kompakte Möglichkeit zur Auswahl eines Wertes aus einer Liste.
-
-*_Best Practices:_*
-
-* <<dropdown,Dropdowns>> sollten sich mit der Tastatur öffnen, navigieren und schließen lassen.
-* Keine automatische Auswahl beim Öffnen; Nutzende müssen die Auswahl explizit bestätigen.
-
-*_Barrierefreiheit:_*
-
-* Nutzung von aria-expanded und aria-haspopup zur Kommunikation des Zustands.
-* Liste muss tastaturzugänglich sein, und der Fokus sollte nicht verloren gehen.
-
-[[multiselct-selektion]]
-==== MultiSelect
-
-*_Funktionalität:_* Erlaubt die Auswahl mehrerer Werte aus einer Liste.
-
-*_Best Practices:_*
-
-* Ausgewählte Elemente sollten visuell hervorgehoben werden.
-* Klarer Hinweis, wenn die maximale Auswahlanzahl erreicht ist.
-
-*_Barrierefreiheit:_*
-
-* Verwendung von aria-selected zur Kennzeichnung ausgewählter Elemente.
-* Unterstützung von Tastenkombinationen für das schnelle Auswählen/Deselektieren.
+* Alle Funktionen sind vollständig per Tastatur bedienbar.
+* Auswahlzustände werden visuell eindeutig dargestellt und durch Screenreader verständlich angesagt.
+* Labels und Gruppenbezeichnungen beschreiben die angebotenen Optionen eindeutig.
+* Änderungen dynamischer Ergebnisse werden für assistive Technologien wahrnehmbar kommuniziert.
 
 [[filter-selektion]]
-==== Filter
-
-*_Funktionalität:_* Ermöglicht das Eingrenzen von Datenmengen anhand vordefinierter Kriterien (zum Beispiel Kategorien, Preisbereiche).
-
-*_Best Practices:_*
-
-* Logische Gruppierung: Filteroptionen sollten thematisch gruppiert und leicht zugänglich sein.
-* Interaktivität: Änderungen an Filtereinstellungen sollten das Ergebnis direkt aktualisieren (zum Beispiel durch Live-Aktualisierung).
-
-*_Barrierefreiheit:_*
-
-* Filterkomponenten sollten mittels fieldset und legend strukturiert sein.
-* Klarer visueller Fokus und hörbare Rückmeldungen für Screenreader bei Änderungen.
-
 [[suche-selektion]]
-==== Suche
+===== Suche und Filter
 
-*_Funktionalität:_* Ermöglicht das gezielte Finden von Inhalte oder Daten innerhalb einer Anwendung.
+Suche und Filter ermöglichen es, umfangreiche Datenmengen gezielt zu durchsuchen und anhand fachlicher Kriterien einzugrenzen.
+Sie können einzeln oder kombiniert eingesetzt werden.
+
+*_Funktionalität:_*
+
+* Eine Suche ermöglicht das gezielte Finden von Inhalten oder Daten innerhalb einer Anwendung.
+* Filter grenzen eine vorhandene Datenmenge anhand vordefinierter Kriterien ein, beispielsweise nach Status, Kategorie oder Zeitraum.
 
 *_Best Practices:_*
 
-* Eingabefeld: Sollte klar beschriftet und mit einer xref:09-eingabehilfen-und-fehlermeldungen.adoc#autosuggestion[Autovervollständigungsfunktion] ausgestattet sein, falls sinnvoll.
-* Filterbare Ergebnisse: Die Suchergebnisse sollten weiter eingegrenzt werden können (zum Beispiel durch zusätzliche <<filter-selektion,Filteroptionen>>).
+* Suchfelder sind eindeutig zu beschriften und können, sofern fachlich sinnvoll, durch eine xref:09-eingabehilfen-und-fehlermeldungen.adoc#autosuggestion[Autovervollständigung] unterstützt werden.
+* Filteroptionen sind thematisch zu gruppieren und leicht zugänglich bereitzustellen.
+* Änderungen an Filtereinstellungen sollen das Ergebnis nachvollziehbar aktualisieren.
+* Suchergebnisse können durch zusätzliche Filter weiter eingegrenzt werden.
+* Aktive Filter sind deutlich erkennbar und können gezielt oder vollständig zurückgesetzt werden.
+* Filter- und Suchzustände sollten beim Verlassen und Zurückkehren erhalten bleiben, sofern dies fachlich sinnvoll ist.
 
 *_Barrierefreiheit:_*
 
-* Einsatz von aria-live für dynamische Ergebnislisten.
-* Sicherstellung, dass Screenreader alle Interaktionen klar kommunizieren (zum Beispiel „X Ergebnisse gefunden“).
-
-*_Integration von Suche und Filter_*
-
-* Die Kombination aus Such- und Filterfunktionen erhöht die Effizienz bei der Navigation durch große Datenmengen.
-* Alle Interaktionen müssen tastaturzugänglich und in dynamischen Kontexten (aria-live) barrierefrei implementiert werden.
-* Sicherstellung, dass Filtereinstellungen beim Verlassen der Seite erhalten bleiben, sofern es sinnvoll ist.
+* Such- und Filterfunktionen sind vollständig per Tastatur bedienbar.
+* Zusammengehörige Filteroptionen werden semantisch gruppiert, beispielsweise mit `fieldset` und `legend`.
+* Dynamische Ergebnisänderungen werden über ein geeignetes Status-Element angekündigt, beispielsweise „12 Ergebnisse gefunden“.
+* Der Fokus bleibt bei der auslösenden Interaktion stabil und wird durch die Aktualisierung der Ergebnisliste nicht unerwartet verschoben.
 
 [[browse-and-collect]]
-==== Browse & Collect
+===== Browse & Collect
 
 In der IsyFact wird dieses Muster als zweigeteilte Auswahlliste umgesetzt.
 Die konkrete technische Komponente ist nicht Bestandteil des Bedienkonzepts.
 
-*_Funktionalität:_* Die Browse & Collect-Funktion ermöglicht es Benutzenden, durch umfangreiche Inhalte zu navigieren und dabei relevante Elemente zu markieren oder in eine Sammlung aufzunehmen.
-Dies wird häufig in Kontexten genutzt, in denen eine Auswahl von Daten für spätere Aktionen erforderlich ist (zum Beispiel Warenkorb, Favoritenliste).
+*_Funktionalität:_* Die Browse-&-Collect-Funktion ermöglicht es Nutzenden, umfangreiche Inhalte zu durchsuchen und relevante Elemente zu markieren oder in eine Sammlung aufzunehmen.
+Dies wird in Nutzungssituationen eingesetzt, in denen eine Auswahl von Daten für spätere Aktionen erforderlich ist, beispielsweise für einen Warenkorb, eine Favoritenliste oder eine Dokumentensammlung.
 
 *_Best Practices:_*
 
-* Übersichtliche Navigation: Inhalte sollten logisch gegliedert und mit <<filter-selektion,Filter>>-, <<suche-selektion,Such>>- und <<selektion,Selektionsmöglichkeiten>> kombinierbar sein.
-* Markierung und xref:09-eingabehilfen-und-fehlermeldungen.adoc#system-meldungen[Rückmeldung]: Markierte Elemente sollten visuell hervorgehoben und durch dynamische Hinweise bestätigt werden.
-* Sammlung bearbeiten: Benutzende müssen die Möglichkeit haben, gesammelte Elemente zu überprüfen, zu ändern oder zu entfernen.
+* *Übersichtliche Navigation:* Inhalte sind logisch zu gliedern und mit <<filter-selektion,Filter>>-, <<suche-selektion,Such>>- und <<selektion,Selektionsmöglichkeiten>> kombinierbar.
+* *Markierung und Rückmeldung:* Markierte Elemente werden visuell hervorgehoben und durch eine verständliche xref:09-eingabehilfen-und-fehlermeldungen.adoc#system-meldungen[Rückmeldung] bestätigt.
+* *Sammlung bearbeiten:* Nutzende können gesammelte Elemente überprüfen, ändern oder entfernen.
+* *Status und Umfang:* Die Anzahl ausgewählter Elemente und gegebenenfalls bestehende Auswahlgrenzen sind jederzeit erkennbar.
 
 *_Barrierefreiheit:_*
 
-* Tastaturbedienung: Alle Aktionen müssen mit der Tastatur steuerbar sein, zum Beispiel durch Tab- und Enter-Tasten oder spezifische Pfeiltasten-Navigation.
-* Screenreader-Unterstützung: Markierte Elemente und deren Status müssen eindeutig angesagt werden.
-* Visuelle Kontraste: Hervorgehobene und markierte Elemente sollten mindestens ein Kontrastverhältnis von 4,5:1 erfüllen.
+* Alle Aktionen sind mit der Tastatur erreichbar und ausführbar.
+* Markierte Elemente und deren Status werden durch Screenreader eindeutig angesagt.
+* Fokusführung und Lesereihenfolge bleiben beim Verschieben von Elementen zwischen den Listen nachvollziehbar.
+* Hervorgehobene und markierte Elemente erfüllen die geltenden Kontrastanforderungen.
 
-*_Beispielanwendung:_* Durchstöbern eines digitalen Archivs mit der Möglichkeit, relevante Dokumente zu markieren und später als PDF herunterzuladen.
+*_Beispielanwendung:_* Durchstöbern eines digitalen Archivs mit der Möglichkeit, relevante Dokumente zu markieren und anschließend gemeinsam herunterzuladen oder weiterzuverarbeiten.
 
-Diese Funktionalität verbessert die Benutzerfreundlichkeit in datenintensiven Anwendungen und stellt sicher, dass alle Interaktionen den Anforderungen an xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit] und Benutzererlebnis gerecht werden.
-
-Alle Selektionskomponenten müssen die Anforderungen an Barrierefreiheit und Nutzerfreundlichkeit erfüllen, einschließlich:
-
-* Tastaturzugänglichkeit für alle Funktionen.
-* Screenreader-Kompatibilität durch semantische ARIA-Attribute.
-* Visuelle Klarheit durch hohe Kontraste und verständliche Beschriftungen.
+Dieses Muster verbessert die Bedienbarkeit in datenintensiven Anwendungen und stellt sicher, dass Auswahl, Rückmeldung und Weiterverarbeitung konsistent umgesetzt werden.
 
 [[output]]
-=== Ausgabe
+=== Ausgabemuster
+
+Ausgabemuster beschreiben die strukturierte Darstellung, Bearbeitung und Weiterverarbeitung von Daten.
 
 [[output-via-table]]
 ==== Datenausgabe mit Tabellen
 
-Zur strukturierten Darstellung von vielen Daten bietet es sich an xref:06-bedienelemente.adoc#tabelle[Tabellen] zu nutzen.
-Bei der Nutzung von Tabellen sind in der IsyFact über die grundsätzlich zur Tabelle geltenden Regeln folgende Richtlinien zu berücksichtigen:
+Tabellen werden eingesetzt, wenn umfangreiche, gleichartig strukturierte Daten übersichtlich dargestellt, verglichen oder weiterverarbeitet werden sollen.
 
-* Klare Struktur: Überschriften müssen mit semantischen Tags (<th>) ausgezeichnet sein, um die Bedeutung der Inhalte zu verdeutlichen.
-* Responsives Design: Tabellen sollen sich an verschiedene Bildschirmgrößen anpassen und bei Platzmangel scrollbar sein.
-* Barrierefreiheit: Screenreader-Unterstützung durch ARIA-Attribute wie aria-labelledby und klare Fokusführung bei der Navigation.
-* Interaktivität: Sortier-, Filter- und Exportmöglichkeiten, die über Tastatur und Maus zugänglich sind.
+Die grundlegenden Anforderungen an Aufbau, Darstellung, Sortierung, Filterung, Auswahl und große Datenmengen sind im Abschnitt xref:06-bedienelemente.adoc#tabelle[Tabelle] beschrieben.
 
-Tabellen fördern die effiziente Verarbeitung und Analyse umfangreicher Datenmengen.
-Für eine bestmögliche Verwendung in den verschiedensten Anwendungen der IsyFact ist es ratsam ein einheitliches Pattern zu berücksichtigen.
-Tabelleneinträge können mit der Maus und Tastatur ausgewählt werden und mit Klick oder Enter zur Ansicht/Bearbeitung geöffnet werden.
-Optional ist es mögliche eine „adhoc“- Detailansicht unterhalb der Tabelle einzusetzen, diese ist vom Fachbereich individuell zu definieren.
-Weiterführende Aktionen, wie zum Beispiel Schnellbearbeitung, Drucken, Download oder Löschen, sind in der Aktionsleiste unterzubringen.
-Durch die vielen verschiedenen fachlichen Ansprüche ist es nicht möglich und sinnvoll alle Ausprägungen an weiterführenden Aktionen abzubilden und vorzudefinieren.
-Die häufig genutzten Aktionen, wie Schnellbearbeitung (<<editable-row-output,editable Row>>), Drucken, Download und Löschen, sollten über alle Anwendungen hinweg einheitlich genutzt werden.
+Weiterführende Aktionen wie Schnellbearbeitung, Drucken, Exportieren oder Löschen sind konsistent bereitzustellen.
+Tabellenbezogene Aktionen werden in der Regel über eine xref:07-design-pattern.adoc#tabellen-toolbar[Tabellen-Toolbar] oder über eine eindeutig gekennzeichnete Aktionsspalte angeboten.
+
+Abhängig von der Komplexität erfolgt die Bearbeitung entweder direkt innerhalb der Tabelle oder über eine separate Detailansicht.
+Für lokale und überschaubare Änderungen kann die <<editable-row-output,Schnellbearbeitung in Tabellen>> eingesetzt werden.
+Bei umfangreichen oder fachlich komplexen Änderungen ist das <<drilldown_detailansicht,Drill-Down-Pattern>> zu verwenden.
 
 [[editable-row-output]]
 ==== Schnellbearbeitung in Tabellen
 
-Schnellbearbeitung (Editable Row) ermöglicht das direkte Bearbeiten von Daten innerhalb einer Tabellenzeile.
+Die Schnellbearbeitung ermöglicht es, einzelne Werte direkt innerhalb einer Tabellenzeile zu ändern, ohne die Tabelle oder den aktuellen Seitenkontext zu verlassen.
 
-*_Funktionalität:_* Ermöglicht das direkte Bearbeiten von Daten innerhalb einer Tabellenzeile.
-Dies verbessert die Effizienz, da Benutzende nicht zwischen Ansichts- und Bearbeitungsmodi wechseln müssen.
+Sie eignet sich für lokale und überschaubare Änderungen mit wenigen Feldern und einfachen Validierungsregeln.
+Bei umfangreichen Änderungen, feldübergreifender Validierung oder komplexen fachlichen Abhängigkeiten ist stattdessen das <<drilldown_detailansicht,Drill-Down-Pattern>> zu verwenden.
 
-*_Bedienung:_* Durch einen Klick auf "Bearbeiten" wird eine Zeile in den Bearbeitungsmodus versetzt, und Eingabefelder werden aktiviert.
-Änderungen können direkt gespeichert oder verworfen werden.
+Die Bearbeitung wird über eine eindeutig beschriftete Aktion gestartet.
+Die betroffene Zeile wechselt in einen klar erkennbaren Bearbeitungsmodus und stellt Aktionen zum Speichern und Abbrechen bereit.
 
-*_Barrierefreiheit:_*
+Alle Eingabefelder und Aktionen sind vollständig per Tastatur erreichbar.
+Fehlermeldungen werden direkt am betroffenen Feld angezeigt.
+Nach dem Speichern oder Abbrechen wird der Fokus nachvollziehbar in die bearbeitete Zeile zurückgeführt.
 
-* Fokussierung aller interaktiven Elemente innerhalb der Zeile per Tabulator.
-* Klare visuelle und sprachliche xref:09-eingabehilfen-und-fehlermeldungen.adoc#system-meldungen[Rückmeldungen] bei Aktionen (zum Beispiel „Änderung gespeichert“).
-* Beschriftungen und ARIA-Attribute für Screenreader.
-
-Diese Funktionalität fördert eine intuitive und zugängliche Datenbearbeitung.
+Die allgemeinen Anforderungen an Inline-Bearbeitung und Validierung sind im Abschnitt <<inline-edit_inline_validation,Inline-Edit und Inline-Validation>> beschrieben.
 
 [[print-output]]
 ==== Drucken
 
 Drucken ermöglicht das direkte Drucken von Daten der Tabellenzeile.
-Dabei können nicht nur die aus der Tabelle angezeigten Daten gedrückt werden, sondern je nach Funktionalität auch weiterführende Daten aus einer optionalen Detailansicht.
+Dabei können nicht nur die aus der Tabelle angezeigten Daten gedruckt werden, sondern je nach Funktionalität auch weiterführende Daten aus einer optionalen Detailansicht.
 
 *_Funktionalität:_* Durch einen Klick oder eine Tastaturinteraktion wird eine Zeile mit optional weiterführenden Daten ausgedruckt (die Druckvorschau des Browsers wird geöffnet).
 
@@ -1577,4 +1419,3 @@ Formulierungen wie „Ja“ oder „Nein“ sind zu vermeiden.
 
 * Klare visuelle und sprachliche xref:09-eingabehilfen-und-fehlermeldungen.adoc#system-meldungen[Rückmeldungen] bei Aktionen (zum Beispiel „Datensatz gelöscht“).
 * Beschriftungen und ARIA-Attribute für Screenreader.
-* Bei nicht blockierenden Rückgängig-Hinweisen erfolgt die Ankündigung über eine geeignete Live-Region, ohne den Fokus zu entziehen.

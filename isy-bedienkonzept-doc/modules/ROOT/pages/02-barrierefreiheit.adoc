@@ -61,7 +61,7 @@ Beispiele hierfür sind:
 * *Shift + Tab:* Navigation rückwärts zwischen interaktiven Elementen.
 * *Enter:* Aktivierung von Buttons, xref:06-bedienelemente.adoc#link[Links] und anderen interaktiven Elementen.
 * *Leertaste:* Scrollen in Seiten (bei nicht fokussierten Elementen) oder Aktivieren von xref:06-bedienelemente.adoc#checkbox[Checkboxen] (bei fokussierten Checkboxen).
-* *Pfeiltasten:* Navigation in xref:06-bedienelemente.adoc#liste[Listen], xref:07-design-pattern.adoc#dropdown[Dropdowns] oder xref:06-bedienelemente.adoc#textbox[Textfeldern].
+* *Pfeiltasten:* Navigation in xref:06-bedienelemente.adoc#auswahlliste[Auswahllisten] oder xref:06-bedienelemente.adoc#textbox[Textfeldern].
 * *Esc:* Schließen von Dialogen oder Dropdowns.
 
 Der reine Einsatz von Standardkombinationen in der Tastatursteuerung ist nicht ausreichend, eine größtmögliche <<barrierefreiheit,Barrierefreiheit>> sicherzustellen.
@@ -69,7 +69,7 @@ So gibt es noch weitere "Dos and Don'ts" im Rahmen der Tastatursteuerung zu beac
 
 *_Dos_*
 
-* *Fokussteuerung:* Alle interaktiven Elemente müssen in einer logischen Reihenfolge fokussierbar sein, ohne unerwartete Wechsel oder Sprünge.
+* *Fokussteuerung:* Alle interaktiven Elemente müssen in einer logischen Reihenfolge fokussierbar sein ohne unerwartete Wechsel oder Sprünge.
 * *Tastaturzugänglichkeit:* Dynamische Elemente wie Dropdowns, Dialoge oder modale Fenster sind vollständig mit der Tastatur bedienbar.
 * *Feedback:* xref:09-eingabehilfen-und-fehlermeldungen.adoc#fehlermeldungen[Fehlermeldungen] und Erfolgshinweise werden sowohl visuell als auch über Screenreader wahrnehmbar angezeigt.
 * *Standardbedienmuster:* Es werden nur Standard-Tastenkombinationen verwendet, um Konflikte mit Browserfunktionen oder Assistenzsoftware zu vermeiden.

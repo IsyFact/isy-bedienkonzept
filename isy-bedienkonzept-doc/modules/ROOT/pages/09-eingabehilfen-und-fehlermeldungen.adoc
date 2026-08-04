@@ -1,7 +1,7 @@
 [[eingabehilfen-und-fehlermeldungen]]
 == Eingabehilfen und Fehlermeldungen
 
-Eingabehilfen und Fehlermeldungen sind essenziell wichtig, um die xref:01-einfuehrung.adoc#usability-und-benutzerfreundlichkeit[Benutzerfreundlichkeit] eines Frontends zu erhöhen.
+Eingabehilfen und Fehlermeldungen sind essenziell wichtig, um die xref:01-einfuehrung.adoc#usability-ui-ux[Benutzerfreundlichkeit] eines Frontends zu erhöhen.
 Im folgenden Kapitel werden die Grundlagen zur erfolgreichen Gestaltung von Eingabehilfen und Fehlermeldungen erläutert.
 
 [[eingabehilfen]]

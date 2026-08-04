@@ -1,6 +1,12 @@
 [[basiselemente]]
 == Basiselemente
 
+Basiselemente bilden die gestalterische und inhaltliche Grundlage einer Benutzeroberfläche.
+Dazu gehören grundlegende visuelle und sprachliche Bestandteile wie Farben, Icons, Texte, Grafiken, Überschriften und Labels.
+
+Sie sorgen dafür, dass Frontends konsistent, verständlich und wiedererkennbar gestaltet werden.
+Gleichzeitig unterstützen sie die Benutzerfreundlichkeit, Orientierung und Barrierefreiheit innerhalb der Anwendung.
+
 [[farben]]
 === Farben
 
@@ -85,9 +91,14 @@ Die Identifikationsfarbe kann u. a. an folgenden Stellen eingesetzt werden:
 === Icons
 
 Icons können als zusätzliche Elemente genutzt werden, um Funktionen und Inhalte auch visuell kenntlich zu machen.
-Dabei sollten Icons primär zusammen mit <<text>> verwendet werden und nur in begründeten Fällen alleinstehend eingesetzt werden.
+Dabei sollten Icons primär zusammen mit <<text>> verwendet und nur in begründeten Fällen alleinstehend eingesetzt werden.
 Wenn Icons alleinstehend als xref:06-bedienelemente.adoc#icon-button[Icon-Buttons] oder Aktionselemente genutzt werden, sollte ihre Anzahl auf das notwendige Minimum beschränkt werden.
-Es wird empfohlen, alleinstehende Icons nur mit weit verbreiteter und allgemein bekannter Bedeutung zu verwenden.
+Es wird empfohlen, alleinstehende Icons nur mit weit verbreiteter und im jeweiligen Kontext eindeutig verständlicher Bedeutung zu verwenden.
+
+Alleinstehende interaktive Icons müssen über eine eindeutige zugängliche Bezeichnung verfügen.
+Ist ihre Funktion anhand des Symbols und des Kontexts nicht unmittelbar verständlich, sollte zusätzlich ein Tooltip angezeigt werden.
+Ein Tooltip ersetzt die zugängliche Bezeichnung nicht.
+Tooltips müssen sowohl mit der Maus als auch über den Tastaturfokus zugänglich sein.
 
 In der folgenden Tabelle sind häufig verwendete symbolische Bedeutungen und deren empfohlene Einsatzbereiche aufgeführt.
 Sie dient der einheitlichen Verwendung von Symbolen innerhalb der Benutzeroberfläche.
@@ -178,7 +189,6 @@ So werden xref:06-bedienelemente.adoc#button[Schaltflächen], <<label,Labels>> u
 Dieser Abschnitt definiert die typografischen Standards, sprachlichen Richtlinien und Längenbeschränkungen, die dazu beitragen, dass Texte klar, verständlich und ansprechend sind.
 
 Frontends des Bundes sollen über die IT-Landschaft hinweg ein einheitliches Look-and-Feel bieten.
-Dies wird über den Einsatz der IsyFact und deren Komponenten gewährleistet.
 Dafür ist es notwendig auch bei der Schrift (im weiteren Font) einheitlich vorzugehen.
 Zur Anwendung kommt primär BundesSans.
 
@@ -194,25 +204,19 @@ _Sprachumfang_
 
 Folgende Sprachen werden von den Schriften BundesSerif, BundesSans und BundesSans Condensed unterstützt (nur lateinische Schriftzeichen):
 
-Afrikaans, Albanisch, Aserbaidschanisch, Asu, Baskisch, Bemba, Bena, Bosnisch, Bretonisch, Cebuano, Chiga, Deutsch, Dänisch, Embu, Englisch, Esperanto, Estnisch, Filipino, Finnisch, Französisch,  Friaulisch, Färöisch, Galizisch, Ganda, Grönländisch, Gusii, Hawaiianisch, Ido, Inari-Samisch, Indonesisch, Interlingua, Irisch, Isländisch, Italienisch, Javanisch, Jju, Jola-Fonyi, Kabuverdianu, Kalenjin, Kamba, Katalanisch, Kikuyu, Kinyarwanda, Kornisch, Korsisch, Kroatisch, Kurdisch, Kölnisch, Lettisch, Ligurisch, Litauisch, Lojban, Lombardisch, Luhya, Luo, Luxemburgisch, Machame, Makhuwa, Makhuwa-Meetto, Makonde, Malagasy, Malaiisch, Maltesisch, Manx, Meru, Mohawk, Morisyen, Māori, Niederdeutsch, Niederländisch, Niedersorbisch, Nord-Ndebele, Nord-Sami, Nord-Sotho, Norwegisch (Bokmål), Norwegisch (Nynorsk), Nyanja, Nyankole, Obersorbisch, Okzitanisch, Oromo, Polnisch, Portugiesisch, Quechua, Rejang, Rombo, Rukiga, Rumänisch, Rundi, Rwa, Rätoromanisch, Samburu, Samoanisch, Sango, Sangu, Sardisch, Schlesisch, Schottisches Gälisch, Schwedisch, Schweizerdeutsch, Sena, Shambala, Shona, Siswati, Slowakisch, Slowenisch, Soga, Somali, Spanisch, Sundanesisch, Swahili, Süd-Ndebele, Süd-Sotho, Taita, Taroko, Teso, Tongaisch, Tschechisch, Tsong, Tswana, Turkmenisch, Türkisch, Ungarisch, Usbekisch, Vunjo, Walisisch, Walliserdeutsch, Wallonisch, Westfriesisch, Wolastoqey, Wolof, Xhosa, Zhuang, Zulu
+Afrikaans, Albanisch, Aserbaidschanisch, Asu, Baskisch, Bemba, Bena, Bosnisch, Bretonisch, Cebuano, Chiga, Deutsch, Dänisch, Embu, Englisch, Esperanto, Estnisch, Filipino, Finnisch, Französisch, Friaulisch, Färöisch, Galizisch, Ganda, Grönländisch, Gusii, Hawaiianisch, Ido, Inari-Samisch, Indonesisch, Interlingua, Irisch, Isländisch, Italienisch, Javanisch, Jju, Jola-Fonyi, Kabuverdianu, Kalenjin, Kamba, Katalanisch, Kikuyu, Kinyarwanda, Kornisch, Korsisch, Kroatisch, Kurdisch, Kölnisch, Lettisch, Ligurisch, Litauisch, Lojban, Lombardisch, Luhya, Luo, Luxemburgisch, Machame, Makhuwa, Makhuwa-Meetto, Makonde, Malagasy, Malaiisch, Maltesisch, Manx, Meru, Mohawk, Morisyen, Māori, Niederdeutsch, Niederländisch, Niedersorbisch, Nord-Ndebele, Nord-Sami, Nord-Sotho, Norwegisch (Bokmål), Norwegisch (Nynorsk), Nyanja, Nyankole, Obersorbisch, Okzitanisch, Oromo, Polnisch, Portugiesisch, Quechua, Rejang, Rombo, Rukiga, Rumänisch, Rundi, Rwa, Rätoromanisch, Samburu, Samoanisch, Sango, Sangu, Sardisch, Schlesisch, Schottisches Gälisch, Schwedisch, Schweizerdeutsch, Sena, Shambala, Shona, Siswati, Slowakisch, Slowenisch, Soga, Somali, Spanisch, Sundanesisch, Swahili, Süd-Ndebele, Süd-Sotho, Taita, Taroko, Teso, Tongaisch, Tschechisch, Tsong, Tswana, Turkmenisch, Türkisch, Ungarisch, Usbekisch, Vunjo, Walisisch, Walliserdeutsch, Wallonisch, Westfriesisch, Wolastoqey, Wolof, Xhosa, Zhuang, Zulu
 
 Die Liste entspricht der Sprachenzeichennorm ISO 639-1-3.
 
-_Nicht-lateinische Fließtextschriften_
+_Darstellung nicht-lateinischer Zeichen_
 
-Nicht-lateinische Schriften umfassen Schriftsysteme, die anstelle lateinischer Schriftzeichen zum Beispiel arabische, kyrillische oder chinesische Zeichen beinhalten.
-Mit einem Schriftsystem lassen sich meist mehrere Sprachen schreiben (zum Beispiel mit dem arabischen Schriftsystem Sprachen wie Arabisch, Urdu, Paschtu, Persisch (Dari/Farsi)).
+Anwendungen müssen die in der DIN 91379 vorgesehenen Unicode-Zeichen korrekt verarbeiten und darstellen.
+Dazu gehören insbesondere nicht-lateinische Zeichen wie griechische oder kyrillische Schriftzeichen.
 
-Die Notwendigkeit der Darstellung nicht-lateinischer Schriften ergibt sich durch die DIN 91379 „Zeichen und definierte Zeichensequenzen in Unicode für die elektronische Verarbeitung von Namen und den Datenaustausch in Europa“ mit Ausgabedatum 2022-08.
-Basierend auf UNICODE wurde für jedes nicht-lateinische Zeichen, das in EU-Mitgliedsstaaten verwendet wird, beispielsweise griechische oder kyrillische Zeichen, eine eindeutige Zuordnung zu einem lateinischen Zeichen vorgenommen.
-Die DIN 91379 wendet sich vorrangig an Behörden und Organisationen, die IT-Verfahren betreiben, welche dem behördenübergreifenden Datenaustausch oder dem Datenaustausch mit Bürgerinnen, Bürgern sowie der Wirtschaft dienen und deckt in ihrer Gesamtheit die EU-Amtssprachen und die Amtssprachen Islands, Liechtensteins, Norwegens und der Schweiz ab sowie die deutschen Minderheitensprachen.
-Um fehlende UNICODE-Zeichen in der BundesSans zu ergänzen, kommt sekundär die Schriftart *Liberation* zum Einsatz.
-
-*_Liberation_*
-
-Die Schriftart Liberation soll ausschließlich für fehlende UNICODE-Zeichen in der BundesSans verwendet werden.
-Denn beim Einsatz von Liberation muss beachtet werden, dass bei dieser Schriftart das große I und das kleine l leicht verwechselt werden können.
-Da dies die Lesbarkeit und damit die Barrierefreiheit beeinträchtigen kann, muss bei der Darstellung von I und l in jedem Fall auf BundesSans zurückgegriffen werden.
+Als Standardschrift wird BundesSans verwendet.
+Enthält die BundesSans ein benötigtes Zeichen nicht, wird für dieses Zeichen die Schriftart Liberation als Ersatzschrift verwendet.
+In der technischen Umsetzung ist Liberation daher als nachgelagerte Schriftart in der Font-Fallback-Kette einzubinden.
+Dabei ist zu beachten, dass bei Liberation das große I und das kleine l leicht verwechselt werden können.
 
 *_Barrierefreiheit von Text_*
 
@@ -266,51 +270,16 @@ Stattdessen werden andere, platzsparende Mechanismen angewandt wie xref:07-desig
 Hier ist der Kontrast größtmöglich zu wählen (zum Beispiel dunkelgraue Schrift auf weißem Hintergrund).
 Ist dies aus technischer oder fachlicher Notwendigkeit nicht möglich, so muss der Kontrast bei kleiner Schrift mindestens 4,5:1 entsprechen.
 * <<ueberschriften>> und großer/dicker Text müssen einen Mindestkontrast von 3:1 aufweisen.
-* Die Nutzung von Fachterminologie muss entsprechend konsistent verwendet werden.
+* Die Nutzung von Fachterminologie muss entsprechend konsistent erfolgen.
 
 *_Don'ts_*
 
 * Inkonsistente Terminologie.
 * Inkonsistente und falsche Groß- und Kleinschreibung.
 * Die Verwendung von zu langen Texten und Textblöcken.
-* Nutzung von unterstrichenem Text in Textpassagen, außer für xref:06-bedienelemente.adoc#link[Hyperlinks].
+* Nutzung von unterstrichenem Text in Textpassagen (außer für xref:06-bedienelemente.adoc#link[Hyperlinks]).
 * Die Verwendung von redundanten Textinformationen.
 * Nutzung von technischem Jargon statt der Sprache der Nutzenden.
-
-[[grafiken]]
-=== Grafiken
-
-Bilder und Grafiken ergänzen den <<text>> und vermitteln Informationen auf visuelle Weise.
-Sie unterliegen in erster Linie der Fachlichkeit beziehungsweise dem inhaltlichen Kontext und sollten nicht allzu oft als Schmuckgrafiken in Frontends integriert werden.
-Hier werden die Leitlinien für die Verwendung von Grafiken festgelegt, einschließlich Stilrichtlinien, Bildgrößen und im Ansatz deren xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit].
-
-Jedes Bild benötigt eine Bildunterschrift und ein aussagekräftiges xref:02-barrierefreiheit.adoc#alt-tag[Alt-Attribut], um die Barrierefreiheit von Frontends zu unterstützen.
-So können die Inhalte für alternative Ausgabegeräte oder beim fehlerhaften Laden zugänglich gemacht werden.
-Des Weiteren soll die Bildgröße an den Inhalt angepasst werden, um sicherzustellen, dass die Informationen den Nutzenden übermittelt werden und kein horizontales Scrolling erforderlich ist.
-
-*_Schriftgrafiken_*
-
-Schriftgrafiken können nicht oder nur eingeschränkt an Benutzeranforderungen angepasst werden, weshalb sie nicht genutzt werden dürfen.
-Logos sind hiervon ausgenommen.
-Gründe dafür sind, dass ihre Farben und Schriftgrößen nicht individuell eingestellt werden können und die Schriftkanten bei einer Zoomvergrößerung meist unscharf werden.
-
-*_Schmuckgrafiken_*
-
-Schmuckgrafiken können zwar genutzt werden, sollten jedoch so wenig wie möglich eingesetzt werden.
-Solche Grafiken müssen entsprechend als Schmuckgrafik gekennzeichnet sein und benötigen deshalb auch keine Alt-Attribute.
-
-*_Dos_*
-
-* Bilder benötigen eine Bildunterschrift.
-* Grafiken müssen ein aussagekräftiges xref:02-barrierefreiheit.adoc#alt-tag[Alt-Attribut] besitzen.
-* Das Bildmaterial muss ausreichend hoch aufgelöst sein, sodass keine Fragmente erkennbar sind.
-* Schmuckgrafiken sind erlaubt, müssen jedoch entsprechend gekennzeichnet werden.
-
-*_Don'ts_*
-
-* Bilder dürfen nicht gegen deutsches Recht verstoßen, politisch, sexuell oder angreifend sein.
-* Bilder dürfen keine Schriftgrafiken enthalten, ausgenommen Logos.
-In Ausnahmefällen muss die Schriftgrafik beispielsweise durch Alt-Attribute ausreichend beschrieben sein.
 
 [[ueberschriften]]
 === Überschriften
@@ -335,10 +304,9 @@ Angemessene Abstände vor und nach den Überschriften verbessern die Lesbarkeit 
 Überschriften sollten aussagekräftig und beschreibend sein, um den Inhalt des folgenden Abschnitts klar zu kommunizieren.
 Dies hilft sowohl Nutzenden als auch Suchmaschinen, die Relevanz des Inhalts zu erkennen.
 * *Verwendung von ARIA-Rollen:*
-In Fällen, in denen Überschriften nicht aus Standard-HTML-Überschriften-Tags bestehen, können ARIA-Rollen verwendet werden, um die Struktur zu erhalten.
-Beispiel:
-[source,xml]
-<div role="heading" aria-level="2">Unterüberschrift</div>
+Überschriften sollten grundsätzlich mit den dafür vorgesehenen Überschriftselementen umgesetzt werden.
+ARIA-Rollen sind nur in begründeten Ausnahmefällen zu verwenden, wenn dies nicht möglich ist.
+Sie stellen keinen gleichwertigen Ersatz für semantische Überschriften dar.
 
 *_Typografie und Design_*
 
@@ -350,11 +318,12 @@ Der Kontrast sollte mindestens 4,5:1 sein, um die Lesbarkeit zu maximieren.
 
 *_Stile und Akzente_*
 
-* *Fettdruck und Kursivschrift:*
-Fettdruck oder Kursivschrift können verwendet werden, um wichtige Überschriften hervorzuheben, jedoch sollte dies sparsam geschehen, um eine Überladung zu vermeiden.
+* *Schriftgewicht und Kursivschrift:*
+Überschriften können abhängig von ihrer Hierarchie durch unterschiedliches Schriftgewicht hervorgehoben werden.
+Kursivschrift wird in Überschriften nicht verwendet.
 * *Farben:*
-<<farben>> können verwendet werden, um Hierarchieebenen zu betonen, sollten jedoch mit Bedacht gewählt werden, um ein harmonisches Gesamtbild zu bewahren.
-Es wird empfohlen, die festgelegte Farbpalette zu verwenden.
+Überschriften werden ausschließlich dunkelgrau dargestellt.
+Unterschiedliche Hierarchieebenen werden klar durch Schriftgröße, Schriftgewicht und Abstände voneinander abgegrenzt, nicht durch unterschiedliche Farben.
 
 [[label]]
 === Label
@@ -413,3 +382,40 @@ Hier sollten xref:02-barrierefreiheit.adoc#aria-labels[ARIA-Labels] (aria-label)
 Beispiel:
 [source,xml]
 <button aria-label="Schließen">X</button>
+
+[[grafiken]]
+=== Grafiken
+
+Bilder und Grafiken ergänzen den <<text>> und vermitteln Informationen auf visuelle Weise.
+Sie unterliegen in erster Linie der Fachlichkeit beziehungsweise dem inhaltlichen Kontext und sollten nicht allzu oft als Schmuckgrafiken in Frontends integriert werden.
+Hier werden die Leitlinien für die Verwendung von Grafiken festgelegt, einschließlich Stilrichtlinien, Bildgrößen und im Ansatz deren xref:02-barrierefreiheit.adoc#barrierefreiheit[Barrierefreiheit].
+
+Jedes Bild benötigt eine Bildunterschrift und ein aussagekräftiges xref:02-barrierefreiheit.adoc#alt-tag[Alt-Attribut], um die Barrierefreiheit von Frontends zu unterstützen.
+So können die Inhalte für alternative Ausgabegeräte oder beim fehlerhaften Laden zugänglich gemacht werden.
+Des Weiteren soll die Bildgröße an den Inhalt angepasst werden, um sicherzustellen, dass die Informationen den Nutzenden übermittelt werden und kein horizontales Scrolling erforderlich ist.
+
+*_Schriftgrafiken_*
+
+Schriftgrafiken können nicht oder nur eingeschränkt an Benutzeranforderungen angepasst werden, weshalb sie nicht genutzt werden dürfen.
+Logos sind hiervon ausgenommen.
+Gründe dafür sind, dass ihre Farben und Schriftgrößen nicht individuell eingestellt werden können und die Schriftkanten bei einer Zoomvergrößerung meist unscharf werden.
+
+*_Schmuckgrafiken_*
+
+Schmuckgrafiken können zwar genutzt werden, sollten jedoch so wenig wie möglich eingesetzt werden.
+Solche Grafiken müssen entsprechend als Schmuckgrafik gekennzeichnet sein und benötigen deshalb auch keine Alt-Attribute.
+
+*_Dos_*
+
+* Bilder benötigen eine Bildunterschrift.
+* Grafiken müssen ein aussagekräftiges xref:02-barrierefreiheit.adoc#alt-tag[Alt-Attribut] besitzen.
+* Das Bildmaterial muss ausreichend hoch aufgelöst sein, sodass keine Fragmente erkennbar sind.
+* Schmuckgrafiken sind erlaubt, müssen jedoch entsprechend gekennzeichnet werden.
+
+*_Don'ts_*
+
+* Bilder dürfen nicht gegen deutsches Recht verstoßen, politisch, sexuell oder angreifend sein.
+* Bilder dürfen keine Schriftgrafiken enthalten, ausgenommen Logos.
+In Ausnahmefällen muss die Schriftgrafik beispielsweise durch Alt-Attribute ausreichend beschrieben sein.
+
+

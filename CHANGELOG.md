@@ -1,5 +1,6 @@
 # 1.0.0
 ## Dokumentation
+- IFS-5468: Das Bedienkonzept wurde auf Grundlage der zusammengeführten Review-Rückmeldungen aktualisiert.
 - IFS-2989: Verwendung von Links zur Demo-Anwendung und Wireframes anstelle von Screenshots
 - IFS-5002: Unterstütze Browser werden über Architekturregel festgelegt
 - IFS-5467: Das Bedienkonzept wurde bereinigt und die AsciiDoc-Inhalte wurden modularisiert
