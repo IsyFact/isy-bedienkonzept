@@ -18,8 +18,10 @@ Die konkrete Ausprägung (Farbwerte, Kontraste, Ableitungen) ergibt sich aus den
 Im Folgenden beziehen sich die Begriffe „Farbpalette“, „Statusvarianten“ und „Gestaltungsrichtlinien“ auf die projektspezifisch definierten Vorgaben.
 
 Die eingesetzte Farbpalette kann im Rahmen technischer, gesetzlicher oder gestalterischer Weiterentwicklungen angepasst werden.
-Die jeweils gültigen Farbdefinitionen sowie die zugehörigen Kontrastwerte sind der Designdokumentation zu entnehmen.
-Ergänzende Informationen zu Farbgrundlagen und Farbnutzung sind im https://styleguide.bundesregierung.de/sg-de/basiselemente/farben[Styleguide der Bundesregierung - Farben] zu finden.
+Die jeweils gültigen Farbdefinitionen sowie die zugehörigen Kontrastwerte sind vorrangig dem BVA-internen Styleguide zu entnehmen, übergreifend gilt der Styleguide der Bundesregierung:
+
+* https://confluence.zssi.bva.in.bund.de/spaces/intranet014/pages/362416417/Corporate+Design#expand-Farben[BVA Corporate Design – Farben] _(nur im Behördennetzwerk erreichbar)_
+* https://styleguide.bundesregierung.de/sg-de/basiselemente/farben[Styleguide der Bundesregierung – Farben]
 
 Farben sind funktional und semantisch konsistent einzusetzen.
 Folgende Bedeutungsbereiche sind visuell eindeutig unterscheidbar zu gestalten:
