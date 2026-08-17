@@ -1,7 +1,6 @@
 # 1.0.0
 ## Dokumentation
-- Die Einführung wurde als eigener Menüpunkt in die linke Seitenleistennavigation aufgenommen.
-- IFS-5468: Das Bedienkonzept wurde auf Grundlage der zusammengeführten Review-Rückmeldungen aktualisiert.
+- IFS-5468: Das Bedienkonzept wurde auf Grundlage der zusammengeführten Review-Rückmeldungen aktualisiert; unter anderem wurde die Einführung als eigener Menüpunkt in die linke Seitenleistennavigation aufgenommen.
 - IFS-2989: Verwendung von Links zur Demo-Anwendung und Wireframes anstelle von Screenshots
 - IFS-5002: Unterstütze Browser werden über Architekturregel festgelegt
 - IFS-5467: Das Bedienkonzept wurde bereinigt und die AsciiDoc-Inhalte wurden modularisiert
