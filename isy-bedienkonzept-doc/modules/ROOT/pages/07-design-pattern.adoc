@@ -523,7 +523,7 @@ Diese bleibt für eine angemessene Zeit verfügbar (in der Regel 5-10 s) und wir
 * *Barrierefreiheit & Fokus:* Bestätigungen übernehmen den Fokus nicht dauerhaft.
 Beim Schließen kehrt der Fokus in der Regel an das auslösende Element zurück.
 Wenn der Bedienfluss einen anderen sinnvollen Zielpunkt erfordert, wird der Fokus nachvollziehbar dorthin geführt.
-Statusmeldungen werden so umgesetzt, dass sie von assistiven Technologien automatisch wahrgenommen werden können, ohne den Tastaturfokus zu verschieben.
+Statusmeldungen werden so umgesetzt, dass sie von assistiven Technologien automatisch erfasst werden können, ohne den Tastaturfokus zu verschieben.
 
 *_Verhalten_*
 
@@ -662,7 +662,7 @@ Alle Links sind programmatisch fokussierbar und vollständig per Tastatur bedien
 Nach erfolgreichem Speichern bleibt der Fokus stabil.
 
 * *Screenreader:* Titel und Struktur benennen Objekt und Modus eindeutig.
-Statusmeldungen werden so umgesetzt, dass sie von assistiven Technologien automatisch wahrgenommen werden können, ohne den Tastaturfokus zu verschieben.
+Statusmeldungen werden so umgesetzt, dass sie von assistiven Technologien automatisch erfasst werden können, ohne den Tastaturfokus zu verschieben.
 
 *_Umsetzungshinweise_*
 
@@ -801,7 +801,7 @@ Der Formularzustand darf beim Navigieren (Zurück oder Weiter) nicht verloren ge
 Nach erfolgreichem Schrittwechsel bleibt der Fokus stabil auf dem neuen Inhalt.
 
 * *Screenreader:* Titel und Struktur des Steppers benennen den aktuellen Schritt und den Gesamtfortschritt eindeutig.
-Statusmeldungen werden so umgesetzt, dass sie von assistiven Technologien automatisch wahrgenommen werden können, ohne den Tastaturfokus zu verschieben.
+Statusmeldungen werden so umgesetzt, dass sie von assistiven Technologien automatisch erfasst werden können, ohne den Tastaturfokus zu verschieben.
 
 *_Umsetzungshinweise_*
 
