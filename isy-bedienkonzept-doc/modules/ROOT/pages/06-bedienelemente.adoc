@@ -69,10 +69,10 @@ Wenn nur ein Textlabel ohne farbliche und räumliche Abgrenzung zum Hintergrund 
 
 *_Don'ts_*
 
-* Buttons werden nicht zum Auswählen von Optionen verwendet. Dafür werden <<radiobutton,Radiobuttons>> oder <<checkbox,Checkboxen>> eingesetzt.
-* Buttons werden nicht zum dauerhaften Ein- oder Ausschalten von Funktionen verwendet. Dafür werden <<input-switch,Input Switches>> eingesetzt.
+* Buttons werden zum Auswählen von Optionen verwendet. → <<radiobutton,Radiobuttons>> oder <<checkbox,Checkboxen>>
+* Buttons werden zum dauerhaften Ein- oder Ausschalten von Funktionen verwendet. → <<input-switch,Input Switches>>
 * Innerhalb von Fließtexten und für Verweise auf externe Inhalte werden <<link,Links>> anstelle von Buttons verwendet.
-* Es werden nicht mehr Button-Varianten eingesetzt, als für eine eindeutige visuelle Hierarchie erforderlich sind.
+* Es werden mehr Button-Varianten eingesetzt, als für eine eindeutige visuelle Hierarchie erforderlich sind.
 
 [[inverted-button]]
 ==== Invertierte Buttons
@@ -238,7 +238,7 @@ Optisch kann das Eingabefeld der Konsistenz entsprechend länger sein.
 
 *_Don'ts:_*
 
-* Labels enden nicht mit einem Doppelpunkt.
+* Labels enden mit einem Doppelpunkt.
 * Bei sehr langen Labels sollten sinnvolle Abkürzungen verwendet werden.
 
 [[eingabefeld-mit-mask]]
@@ -436,11 +436,11 @@ Aktive beziehungsweise ausgewählte Elemente sind visuell eindeutig hervorgehobe
 
 *_Don'ts_*
 
-* Einträge werden nicht doppelt angeboten.
-* Einträge werden nicht in einer schwer nachvollziehbaren oder zufälligen Reihenfolge dargestellt.
+* Einträge werden doppelt angeboten.
+* Einträge werden in einer schwer nachvollziehbaren oder zufälligen Reihenfolge dargestellt.
 * Lange Sätze oder mehrzeilige Einträge sollten vermieden werden.
-* Sehr umfangreiche Auswahllisten werden nicht ohne Such- oder Filtermöglichkeit angeboten.
-* Auswahllisten werden nicht verwendet, wenn nur sehr wenige Optionen zur Verfügung stehen und diese direkt dargestellt werden können.
+* Sehr umfangreiche Auswahllisten werden ohne Such- oder Filtermöglichkeit angeboten.
+* Auswahllisten werden verwendet, wenn nur sehr wenige Optionen zur Verfügung stehen und diese direkt dargestellt werden können.
 
 [[cascadeselect-wertehilfe]]
 ==== Hierarchische Auswahlliste (CascadeSelect)
@@ -508,8 +508,8 @@ Dieser Zustand wird häufig mit einem Quadrat innerhalb der Checkbox symbolisier
 
 *_Don'ts_*
 
-* Checkboxen sind kein alleinstehender Ein- und Aus-Schalter, dafür gibt es die Komponente _<<input-switch>>_.
-* Eine Checkbox soll keine Funktionen (drucken, speichern, etc.) auslösen oder Seiten öffnen/verlinken.
+* Checkboxen sind ein alleinstehender Ein- und Aus-Schalter. → _<<input-switch>>_
+* Eine Checkbox soll Funktionen (drucken, speichern, etc.) auslösen oder Seiten öffnen/verlinken.
 
 [[radiobutton]]
 === Radiobutton
@@ -547,8 +547,7 @@ Ist die Menge der zur Verfügung stehenden Optionen sehr groß oder hat der Plat
 
 *_Don't_*
 
-* Ein Radiobutton darf nicht genutzt werden, um unmittelbar Funktionen auszuführen oder Aktionen auszulösen.
-Für diese Zwecke sollten <<button,Buttons>> verwendet werden.
+* Ein Radiobutton wird genutzt, um unmittelbar Funktionen auszuführen oder Aktionen auszulösen. → <<button,Buttons>>
 
 [[input-switch]]
 === Input Switch
@@ -570,9 +569,9 @@ include::partial$example-link-card.adoc[]
 
 *_Don'ts_*
 
-* Input Switches sollten nicht bei mehr als einer Option gewählt werden.
-* Input Switches sollten nicht in Sätze eingebaut werden.
-* <<checkbox,Checkboxen>> und Input Switches sollen nicht zusammen genutzt werden.
+* Input Switches sollten bei mehr als einer Option gewählt werden.
+* Input Switches sollten in Sätze eingebaut werden.
+* <<checkbox,Checkboxen>> und Input Switches sollen zusammen genutzt werden.
 Eine Kombination aus beiden <<bedienelemente,Bedienelementen>> zum Ein- und Ausschalten von Funktionalitäten ist nicht intuitiv für Nutzende.
 
 [[tabs]]
@@ -623,14 +622,13 @@ Es kann auch mit sinnvollen und verständlichen Abkürzungen gearbeitet werden.
 
 *_Don'ts:_*
 
-* Seiten sollten nicht mit nur einem Tabreiter gestaltet werden.
+* Seiten sollten mit nur einem Tabreiter gestaltet werden.
 Bei weniger als drei Tabreitern ist eventuell ein dynamisches xref:07-design-pattern.adoc#panel[Panel] das passendere Element.
 * Muss der Inhalt verschiedener Tabreiter verglichen oder abgestimmt werden, sollte anstelle eines Tabreiters lieber ein dynamisches Panel verwendet werden.
-* Tabreiter stellen nicht verschiedene Sichten zu gleichen Daten dar.
-* Tabreiter sind keine Prozessschritte.
-Für diesen Zweck wird ein Wizard genutzt.
-* Tabreiter sollen keine Abhängigkeiten untereinander haben.
-* Labels, die länger als 26 Zeichen sind, sollten nicht genutzt werden.
+* Tabreiter stellen verschiedene Sichten zu gleichen Daten dar.
+* Tabreiter sind Prozessschritte. → Wizard
+* Tabreiter sollen Abhängigkeiten untereinander haben.
+* Labels, die länger als 26 Zeichen sind, sollten genutzt werden.
 
 [[tabelle]]
 === Tabelle
@@ -681,9 +679,9 @@ Sollte es fachlich notwendig sein, kann auch endless-scrolling eingesetzt werden
 
 *_Don'ts:_*
 
-* Es sollten keine Tabellen mit nur 1-2 Spalten erzeugt werden.
-* Bei Tabellen sollte nicht vertikal gescrollt werden.
-* Wenn nur ein einziger Eintrag länger ist als der Durchschnitt, sollte sich die Breite der Spalten nicht nach diesem Eintrag richten.
+* Es sollten Tabellen mit nur 1-2 Spalten erzeugt werden.
+* Bei Tabellen sollte vertikal gescrollt werden.
+* Wenn nur ein einziger Eintrag länger ist als der Durchschnitt, sollte sich die Breite der Spalten nach diesem Eintrag richten.
 * Wenn sich Symbole oder Bilder nur wiederholen, sollte auf sie verzichtet werden.
 
 [[sortierung-tabelle]]
