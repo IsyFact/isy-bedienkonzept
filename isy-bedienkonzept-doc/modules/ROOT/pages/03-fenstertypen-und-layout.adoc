@@ -251,7 +251,7 @@ Dieses Prinzip verbessert Effizienz, Barrierefreiheit und die allgemeine Nutzere
 
 * *Bevorzugte Muster:* Statt vollständig modaler Fenster werden bevorzugt kontextbezogene und möglichst nicht-blockierende Interaktionsmuster eingesetzt - beispielsweise Inline-Bestätigungsleisten, nicht-modale Drawer, Popover, Tooltips oder aufklappbare Bereiche (Accordions/Expander).
 
-* *Modale Dialoge nur bei zwingendem Bedarf:* Ein modaler Dialog darf nur verwendet werden, wenn eine Unterbrechung des Arbeitsflusses fachlich, rechtlich oder sicherheitsrelevant erforderlich ist - etwa bei kritischen, destruktiven oder bestätigungspflichtigen Aktionen.
+* *Modale Dialoge nur bei zwingendem Bedarf:* Ein modaler Dialog darf nur verwendet werden, wenn eine Unterbrechung des Arbeitsflusses fachlich, rechtlich oder auf Grund von Sicherheitsvorgaben erforderlich ist - etwa bei kritischen, destruktiven oder bestätigungspflichtigen Aktionen.
 Solche Fälle müssen im Design-Review begründet werden.
 
 *_Fokus-Management_*

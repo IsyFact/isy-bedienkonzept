@@ -6,7 +6,7 @@
 Die folgende Matrix ordnet die Anforderungen des Bedienkonzepts den jeweiligen Kapiteln und Normbezügen zu.
 Sie dient als kompakte Referenz für Prüfung, Umsetzung und Nachweisführung.
 
-Die Akzeptanzkriterien beschreiben, woran die Einhaltung der jeweiligen Anforderung überprüft werden kann.
+Die Akzeptanzkriterien beschreiben, in welcher Weise die Einhaltung der jeweiligen Anforderung überprüft werden kann.
 
 [cols="1,1,1,2", options="header"]
 |===

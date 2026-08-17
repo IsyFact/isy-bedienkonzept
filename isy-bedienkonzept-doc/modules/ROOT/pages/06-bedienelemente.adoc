@@ -437,7 +437,7 @@ Aktive beziehungsweise ausgewählte Elemente sind visuell eindeutig hervorgehobe
 *_Don'ts_*
 
 * Einträge werden nicht doppelt angeboten.
-* Auswahllisten werden nicht ohne nachvollziehbare Reihenfolge dargestellt.
+* Einträge werden nicht in einer schwer nachvollziehbaren oder zufälligen Reihenfolge dargestellt.
 * Lange Sätze oder mehrzeilige Einträge sollten vermieden werden.
 * Sehr umfangreiche Auswahllisten werden nicht ohne Such- oder Filtermöglichkeit angeboten.
 * Auswahllisten werden nicht verwendet, wenn nur sehr wenige Optionen zur Verfügung stehen und diese direkt dargestellt werden können.
