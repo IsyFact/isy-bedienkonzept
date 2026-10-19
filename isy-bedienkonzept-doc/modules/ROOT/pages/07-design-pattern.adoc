@@ -826,6 +826,10 @@ Sie sorgen dafür, dass Navigationsebenen, Aktionsleisten und zusammengehörige 
 
 Alle Use Cases einer Fachanwendung müssen, gegebenenfalls nach Anwendungskomponenten oder Anwendungen gruppiert, direkt über einen Eintrag in der Navigation ansprechbar sein.
 
+:example-link-component: Navigationsmuster
+:example-link-url: {demo-app-url}/isy-angular-widgets/navigation
+include::partial$example-link-card.adoc[]
+
 [[image_beispiel_navigation]]
 .Darstellung verschiedener Navigationsebenen
 image::navigation.wireframe.drawio.svg[align="center"]
