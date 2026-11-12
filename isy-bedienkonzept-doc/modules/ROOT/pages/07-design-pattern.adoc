@@ -1010,6 +1010,10 @@ Aktionen, die eine Auswahl voraussetzen, werden bei fehlender Auswahl deaktivier
 Auf Detailseiten kann optional eine Toolbar in Eingabefeldgruppen eingesetzt werden, um Objekte der jeweiligen Gruppe zu bearbeiten.
 Die Ausgestaltung der Toolbar folgt den Vorgaben aus <<toolbar>>.
 
+:example-link-component: Eingabefeldgruppen mit Toolbar
+:example-link-url: {demo-app-url}/isy-angular-widgets/primeng-widgets/primeng-panel#fieldset-toolbar
+include::partial$example-link-card.adoc[]
+
 *_Richtlinien zur Anwendung_*
 
 * *Darstellung:* Die Toolbar innerhalb von Eingabefeldgruppen verwendet ausschließlich Icon-Buttons.
