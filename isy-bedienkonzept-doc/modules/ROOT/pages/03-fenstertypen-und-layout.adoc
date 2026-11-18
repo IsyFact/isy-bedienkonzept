@@ -200,6 +200,10 @@ Abbildung zeigt die Bestandteile des Headers:
 * *D* Informationen zum angemeldeten Nutzenden
 * *E/F* Haupt- und Subnavigation als Flyout (zur Nutzung siehe xref:07-design-pattern.adoc#hauptnavigation[Hauptnavigation])
 
+:example-link-component: Navigationsmuster
+:example-link-url: {demo-app-url}/isy-angular-widgets/navigation
+include::partial$example-link-card.adoc[]
+
 [[r-header-barrierefrei]]
 Der Header ist für alle Seiten innerhalb einer Anwendungslandschaft gestalterisch identisch.
 Beim Anpassen der Fenstergröße bleiben links ausgerichtete Elemente links und rechts ausgerichtete Elemente rechts; der Raum dazwischen passt sich flexibel an.
